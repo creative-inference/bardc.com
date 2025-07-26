@@ -1,0 +1,245 @@
+/* --- Global & Theme Setup --- */
+:root {
+  --primary-color: #e53935;  /* Vibrant Red from logo */
+  --secondary-color: #fdd835; /* Bright Yellow from logo */
+  --accent-color: #03a9f4;   /* Electric Blue from logo */
+  --background-color: #121212;
+  --surface-color: #1e1e1e;
+  --text-primary: #ffffff;
+  --text-secondary: #aaaaaa;
+  --font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: 1.6;
+  background-color: var(--background-color);
+  color: var(--text-primary);
+  margin: 0;
+  padding: 2rem 1rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+/* --- [CHANGED] Header & Logo --- */
+header {
+  /* From centered to a flexible row */
+  display: flex;
+  align-items: center; /* Vertically align logo and title */
+  margin-bottom: 3rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo-link {
+  display: inline-block;
+}
+
+.logo {
+  /* Made the logo significantly smaller */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  /* Reduced the glow effect to match the smaller size */
+  box-shadow: 0 0 10px rgba(229, 57, 53, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+header h1 {
+  /* Made the H1 smaller and adjusted margins */
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 0 1rem; /* Removed top margin, added left margin */
+}
+
+/* --- [NEW] Category Cloud --- */
+.category-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1rem 0;
+  margin-bottom: 3rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.category-tag {
+  display: inline-block;
+  background-color: var(--surface-color);
+  color: var(--text-secondary);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.category-tag:hover {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  border-color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+/* --- [NEW] Category Cloud Size Modifiers --- */
+.category-tag.size-1 {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.category-tag.size-2 {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+.category-tag.size-3 {
+  font-size: 1.1rem; /* The "normal" size */
+  font-weight: 600;
+}
+.category-tag.size-4 {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.category-tag.size-5 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0.6rem 1.2rem;
+  background-color: var(--accent-color);
+  color: var(--background-color);
+}
+
+/* --- Homepage Venue Grid & Cards --- */
+.venue-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.venue-card {
+  background: var(--surface-color);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.venue-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  border-color: var(--accent-color);
+}
+
+.card-content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+  color: var(--text-primary);
+}
+
+.card-content .card-category {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.card-content .card-cta {
+  color: var(--secondary-color);
+  font-weight: 600;
+  margin-top: 1.5rem;
+  display: inline-block;
+  transition: letter-spacing 0.3s ease;
+}
+
+.venue-card:hover .card-cta {
+  letter-spacing: 1px;
+}
+
+
+/* --- Venue Profile Page --- */
+.venue-profile {
+  background: var(--surface-color);
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.venue-profile h1 {
+    /* Hide the H1 in the body, since it's now in the header */
+    display: none;
+}
+
+.venue-profile .venue-details {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.venue-profile p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+}
+
+.venue-profile p strong {
+  color: var(--text-primary);
+}
+
+.venue-profile .venue-description {
+  line-height: 1.7;
+}
+
+.btn-website, .btn-back {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.btn-website {
+  background-color: var(--primary-color);
+  color: #fff;
+  margin-right: 1rem;
+}
+
+.btn-website:hover {
+  background-color: #c62828;
+  box-shadow: 0 0 15px rgba(229, 57, 53, 0.5);
+}
+
+.btn-back {
+  color: var(--accent-color);
+}
+
+.btn-back:hover {
+  text-decoration: underline;
+}
+
+/* --- Footer --- */
+footer {
+  text-align: center;
+  padding: 3rem 0 1rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
