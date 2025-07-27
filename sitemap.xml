@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
   <url>
     <loc>https://bardc.com/</loc>
   </url>
-
-  
   <url>
     <loc>https://bardc.com/bars/9-30-club/</loc>
   </url>
@@ -750,345 +747,124 @@
   <url>
     <loc>https://bardc.com/bars/zaytinya/</loc>
   </url>
-
-  
   <url>
-    <loc>https://bardc.com/categories/all-day-breakfast/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/american/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/american-restaurant/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/auditorium/</loc>
+    <loc>https://bardc.com/categories/whiskey-bar/</loc>
   </url>
   <url>
     <loc>https://bardc.com/categories/bar/</loc>
   </url>
   <url>
-    <loc>https://bardc.com/categories/bbq/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/beer-bar/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/beer-garden/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/beer-hall/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/belgian/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/bistro/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/blues-bar/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/bookstore/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/brasserie/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/brazilian/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/brewery/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/brewpub/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/burger-bar/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/cafe/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/ceviche/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/chinese/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/cocktail-bar/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/coffee-shop/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/comedy-venue/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/concert-hall/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/cuban/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/dance-club/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/diner/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/dinner-theater/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/distillery/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/dive-bar/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/drag-bar/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/electronic-music-venue/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/event-space/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/fine-dining/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/fish-and-chips/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/french/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/french-american/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/game-bar/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/gastropub/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/general-store/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/german/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/gin-bar/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/greek/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/historic/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/historic-bar/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/historic-theatre/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/hookah-bar/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/hotel-bar/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/indian/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/irish-pub/</loc>
+    <loc>https://bardc.com/categories/lgbtq+-bar/</loc>
   </url>
   <url>
     <loc>https://bardc.com/categories/italian/</loc>
   </url>
   <url>
-    <loc>https://bardc.com/categories/japanese/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/jazz-and-blues-club/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/latin-american/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/latin-club/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/lesbian-bar/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/lgbtq+-bar/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/live-music/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/live-music-venue/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/lounge/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/mediterranean/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/mexican/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/middle-eastern/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/movie-theater/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/museum/</loc>
+    <loc>https://bardc.com/categories/tapas-bar/</loc>
   </url>
   <url>
     <loc>https://bardc.com/categories/neighborhood-bar/</loc>
   </url>
   <url>
-    <loc>https://bardc.com/categories/new-american/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/nightclub/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/north-african/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/outdoor-bar/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/oyster-bar/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/performing-arts-venue/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/peruvian/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/piano-bar/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/pinball-bar/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/pizza/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/pizza-restaurant/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/pool-hall/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/pub/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/ramen/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/raw-bar/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/regional/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/restaurant/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/retro-bar/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/rooftop-bar/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/rum-bar/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/saloon/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/sandwich-shop/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/seafood/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/seafood-restaurant/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/soul-food/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/south-american/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/southern/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/spa/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/spanish/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/speakeasy/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/sports-bar/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/steakhouse/</loc>
+    <loc>https://bardc.com/categories/brewery/</loc>
   </url>
   <url>
     <loc>https://bardc.com/categories/supper-club/</loc>
   </url>
   <url>
-    <loc>https://bardc.com/categories/sushi/</loc>
+    <loc>https://bardc.com/categories/japanese/</loc>
   </url>
   <url>
-    <loc>https://bardc.com/categories/szechuan-restaurant/</loc>
+    <loc>https://bardc.com/categories/spanish/</loc>
   </url>
   <url>
-    <loc>https://bardc.com/categories/taco-bar/</loc>
+    <loc>https://bardc.com/categories/dance-club/</loc>
   </url>
   <url>
-    <loc>https://bardc.com/categories/tapas-bar/</loc>
+    <loc>https://bardc.com/categories/dive-bar/</loc>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/brewpub/</loc>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/belgian/</loc>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/hotel-bar/</loc>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/gastropub/</loc>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/beer-bar/</loc>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/sports-bar/</loc>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/rooftop-bar/</loc>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/nightclub/</loc>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/live-music-venue/</loc>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/american-restaurant/</loc>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/historic-bar/</loc>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/cocktail-bar/</loc>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/event-space/</loc>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/outdoor-bar/</loc>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/speakeasy/</loc>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/steakhouse/</loc>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/american/</loc>
   </url>
   <url>
     <loc>https://bardc.com/categories/taproom/</loc>
   </url>
   <url>
-    <loc>https://bardc.com/categories/tasting-room/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/tequila-bar/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/tiki-bar/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/turkish/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/video-bar/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/waterfront/</loc>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/whiskey-bar/</loc>
-  </url>
-  <url>
     <loc>https://bardc.com/categories/wine-bar/</loc>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/pub/</loc>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/game-bar/</loc>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/mexican/</loc>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/restaurant/</loc>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/beer-garden/</loc>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/sushi/</loc>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/sandwich-shop/</loc>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/irish-pub/</loc>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/lounge/</loc>
   </url>
 </urlset>

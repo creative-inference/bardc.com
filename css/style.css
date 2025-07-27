@@ -1,27 +1,40 @@
 /* --- Global & Theme Setup --- */
 :root {
-  --primary-color: #e53935;  /* Vibrant Red from logo */
-  --secondary-color: #fdd835; /* Bright Yellow from logo */
-  --accent-color: #03a9f4;   /* Electric Blue from logo */
-  --background-color: #121212;
-  --surface-color: #1e1e1e;
+  --primary-color: #e53935;
+  --secondary-color: #fdd835;
+  --accent-color: #03a9f4;
+  --background-color-rgb: 18, 18, 18; /* RGB values for #121212 */
+  --surface-color-rgb: 30, 30, 30;   /* RGB values for #1e1e1e */
   --text-primary: #ffffff;
   --text-secondary: #aaaaaa;
   --font-family: 'Poppins', sans-serif;
 }
 
+/* --- Body with Background Image --- */
 body {
   font-family: var(--font-family);
   line-height: 1.6;
-  background-color: var(--background-color);
   color: var(--text-primary);
   margin: 0;
   padding: 2rem 1rem;
+
+  /* New background image properties */
+  background-image: url('/img/dc_nightlife_background.png');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; /* Creates a parallax-like scrolling effect */
+  background-repeat: no-repeat;
 }
 
+/* --- Main Container with Semi-Transparent Background --- */
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  /* New semi-transparent background */
+  background: rgba(var(--background-color-rgb), 0.9);
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
 }
 
 a {
@@ -29,11 +42,10 @@ a {
   text-decoration: none;
 }
 
-/* --- [CHANGED] Header & Logo --- */
+/* --- Header & Logo --- */
 header {
-  /* From centered to a flexible row */
   display: flex;
-  align-items: center; /* Vertically align logo and title */
+  align-items: center;
   margin-bottom: 3rem;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -44,11 +56,9 @@ header {
 }
 
 .logo {
-  /* Made the logo significantly smaller */
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  /* Reduced the glow effect to match the smaller size */
   box-shadow: 0 0 10px rgba(229, 57, 53, 0.3);
   transition: transform 0.3s ease-in-out;
 }
@@ -58,14 +68,13 @@ header {
 }
 
 header h1 {
-  /* Made the H1 smaller and adjusted margins */
   font-size: 1.8rem;
   font-weight: 600;
   color: var(--text-primary);
-  margin: 0 0 0 1rem; /* Removed top margin, added left margin */
+  margin: 0 0 0 1rem;
 }
 
-/* --- [NEW] Category Cloud --- */
+/* --- Category Cloud --- */
 .category-cloud {
   display: flex;
   flex-wrap: wrap;
@@ -96,23 +105,11 @@ header h1 {
   transform: translateY(-2px);
 }
 
-/* --- [NEW] Category Cloud Size Modifiers --- */
-.category-tag.size-1 {
-  font-size: 0.8rem;
-  font-weight: 400;
-}
-.category-tag.size-2 {
-  font-size: 0.95rem;
-  font-weight: 500;
-}
-.category-tag.size-3 {
-  font-size: 1.1rem; /* The "normal" size */
-  font-weight: 600;
-}
-.category-tag.size-4 {
-  font-size: 1.3rem;
-  font-weight: 700;
-}
+/* --- Category Cloud Size Modifiers --- */
+.category-tag.size-1 { font-size: 0.8rem; font-weight: 400; }
+.category-tag.size-2 { font-size: 0.95rem; font-weight: 500; }
+.category-tag.size-3 { font-size: 1.1rem; font-weight: 600; }
+.category-tag.size-4 { font-size: 1.3rem; font-weight: 700; }
 .category-tag.size-5 {
   font-size: 1.5rem;
   font-weight: 700;
@@ -129,7 +126,7 @@ header h1 {
 }
 
 .venue-card {
-  background: var(--surface-color);
+  background: rgba(var(--surface-color-rgb), 0.85);
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -138,6 +135,7 @@ header h1 {
   flex-direction: column;
   justify-content: space-between;
   padding: 1.5rem;
+  backdrop-filter: blur(5px);
 }
 
 .venue-card:hover {
@@ -171,20 +169,19 @@ header h1 {
   letter-spacing: 1px;
 }
 
-
 /* --- Venue Profile Page --- */
 .venue-profile {
-  background: var(--surface-color);
+  background: rgba(var(--surface-color-rgb), 0.85);
   padding: 2rem 3rem;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   max-width: 800px;
   margin: 0 auto;
+  backdrop-filter: blur(5px);
 }
 
 .venue-profile h1 {
-    /* Hide the H1 in the body, since it's now in the header */
-    display: none;
+  display: none;
 }
 
 .venue-profile .venue-details {
@@ -234,6 +231,32 @@ header h1 {
 
 .btn-back:hover {
   text-decoration: underline;
+}
+
+/* --- Happy Hour Info Box --- */
+.happy-hour-info {
+  background: rgba(253, 216, 53, 0.1);
+  border: 1px solid var(--secondary-color);
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin: 2rem 0;
+}
+
+.happy-hour-info h3 {
+  color: var(--secondary-color);
+  margin: 0 0 0.5rem 0;
+}
+
+.happy-hour-info p {
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.happy-hour-info small {
+  display: block;
+  margin-top: 1rem;
+  font-style: italic;
+  opacity: 0.7;
 }
 
 /* --- Footer --- */
