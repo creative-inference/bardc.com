@@ -129,7 +129,6 @@ header h1 {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding: 1.5rem;
   backdrop-filter: blur(5px);
-  /* Corrected Flexbox layout */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -141,11 +140,40 @@ header h1 {
   border-color: var(--accent-color);
 }
 
-.card-content h3 {
+/* --- Card Header & Logo Styles --- */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-header h3 {
   font-size: 1.5rem;
   font-weight: 600;
-  margin: 0 0 0.5rem;
+  margin: 0;
   color: var(--text-primary);
+  flex-grow: 1;
+}
+
+.card-logo-wrapper {
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  flex-shrink: 0;
+}
+
+.card-logo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 .card-content .card-category {
@@ -166,7 +194,6 @@ header h1 {
   letter-spacing: 1px;
 }
 
-/* --- [CORRECTED] Happy Hour Tag on Cards --- */
 .card-happy-hour-tag {
   background-color: var(--secondary-color);
   color: #333;
@@ -175,8 +202,8 @@ header h1 {
   font-size: 0.8rem;
   font-weight: 700;
   box-shadow: 0 1px 3px rgba(0,0,0,0.3);
-  margin-top: 1rem; /* Space between content and tag */
-  align-self: flex-start; /* Align tag to the left */
+  margin-top: 1rem;
+  align-self: flex-start;
 }
 
 /* --- Venue Profile Page --- */
@@ -192,6 +219,14 @@ header h1 {
 
 .venue-profile h1 {
   display: none;
+}
+
+.venue-profile-logo {
+  display: block;
+  max-width: 200px;
+  max-height: 80px;
+  object-fit: contain;
+  margin: 0 auto 1.5rem auto;
 }
 
 .venue-profile .venue-details {
@@ -260,10 +295,10 @@ header h1 {
   color: var(--text-primary);
 }
 .happy-hour-info small {
-    display: block;
-    margin-top: 1rem;
-    font-style: italic;
-    opacity: 0.7;
+  display: block;
+  margin-top: 1rem;
+  font-style: italic;
+  opacity: 0.7;
 }
 
 /* --- Social Media Links --- */
@@ -303,4 +338,10 @@ footer {
   padding: 3rem 0 1rem;
   color: var(--text-secondary);
   font-size: 0.9rem;
+}
+
+/* --- Hiding Logos Temporarily --- */
+.card-logo-wrapper,
+.venue-profile-logo {
+  display: none;
 }
