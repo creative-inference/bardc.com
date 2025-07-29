@@ -194,16 +194,33 @@ header h1 {
   letter-spacing: 1px;
 }
 
-.card-happy-hour-tag {
-  background-color: var(--secondary-color);
+/* --- [NEW & IMPROVED] Card Tags --- */
+.card-tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem; /* Space between tags */
+  margin-top: 1rem; /* Space between content and tags */
+}
+
+/* Base style for all tags */
+.card-happy-hour-tag,
+.card-events-tag {
   color: #333;
   padding: 4px 10px;
   border-radius: 5px;
   font-size: 0.8rem;
   font-weight: 700;
   box-shadow: 0 1px 3px rgba(0,0,0,0.3);
-  margin-top: 1rem;
-  align-self: flex-start;
+}
+
+/* Specific color for each tag */
+.card-happy-hour-tag {
+  background-color: var(--secondary-color); /* Yellow */
+}
+
+.card-events-tag {
+  background-color: var(--accent-color); /* Blue */
+  color: #fff; /* White text for better contrast on blue */
 }
 
 /* --- Venue Profile Page --- */
@@ -299,6 +316,51 @@ header h1 {
   margin-top: 1rem;
   font-style: italic;
   opacity: 0.7;
+}
+
+/* --- [NEW] Events Section on Venue Page --- */
+.events-section {
+  background: rgba(3, 169, 244, 0.1); /* Faint blue from accent color */
+  border: 1px solid var(--accent-color);
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin: 2rem 0;
+}
+
+.events-section h3 {
+  color: var(--accent-color);
+  margin: 0 0 1rem 0;
+}
+
+.event-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.75rem 0;
+  margin-bottom: 0.75rem;
+}
+.event-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.event-item h4 {
+  margin: 0 0 0.25rem 0;
+  color: var(--text-primary);
+  font-size: 1.2rem;
+}
+
+.event-item p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.events-section small {
+    display: block;
+    margin-top: 1rem;
+    font-style: italic;
+    opacity: 0.7;
+    text-align: right;
 }
 
 /* --- Social Media Links --- */
