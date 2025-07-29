@@ -394,6 +394,36 @@ header h1 {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffffff'%3E%3Cpath d='M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z'/%3E%3C/svg%3E");
 }
 
+/* --- [NEW] Google Rating Styles --- */
+.google-rating {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.rating-stars {
+  --percent: calc(var(--rating) / 5 * 100%);
+  display: inline-block;
+  font-size: 1.2rem;
+  font-family: Times; /* A font where stars are solid */
+  line-height: 1;
+  
+  background: linear-gradient(90deg, var(--secondary-color) var(--percent), #666 var(--percent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.rating-value {
+  font-weight: bold;
+  color: var(--text-primary);
+}
+
+.rating-count {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
 /* --- Footer --- */
 footer {
   text-align: center;
