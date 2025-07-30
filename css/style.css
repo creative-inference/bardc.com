@@ -318,6 +318,29 @@ header h1 {
   opacity: 0.7;
 }
 
+/* --- [NEW] Featured Event Image on Homepage --- */
+.featured-event-image {
+  width: 100%;
+  height: 150px; /* Give it a fixed height */
+  object-fit: cover; /* This will crop the image nicely */
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+/* --- [NEW] Event Thumbnail on /events page --- */
+.event-list-item {
+  /* Add this to vertically align content with the image */
+  align-items: center;
+}
+
+.event-list-thumbnail {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0; /* Prevents the image from shrinking */
+}
+
 /* --- [NEW] Events Section on Venue Page --- */
 .events-section {
   background: rgba(3, 169, 244, 0.1); /* Faint blue from accent color */
@@ -361,6 +384,19 @@ header h1 {
     font-style: italic;
     opacity: 0.7;
     text-align: right;
+}
+
+/* --- [NEW] Event Date Styling --- */
+.event-date {
+  font-weight: bold;
+  color: var(--secondary-color); /* Yellow to make it stand out */
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.featured-event-card .event-date {
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
 }
 
 /* --- Social Media Links --- */
