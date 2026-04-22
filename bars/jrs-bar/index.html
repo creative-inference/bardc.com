@@ -4,6 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JR&#39;s Bar | Bar DC</title>
+
+  
+  
+  
+  
+  
+     
+     
+  
+
+  
+  
+
+  
+  
+
+  <meta name="description" content="Visit JR&#39;s Bar in Dupont Circle, Washington DC. ✨ Vibe A legendary Dupont Circle pillar, this high-energy neighborhood haunt blends historic LGBTQ+ significance with a spirited, welcoming...">
+  <link rel="canonical" href="https://bardc.com/bars/jrs-bar/">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Bar DC">
+  <meta property="og:title" content="JR&#39;s Bar">
+  <meta property="og:description" content="Visit JR&#39;s Bar in Dupont Circle, Washington DC. ✨ Vibe A legendary Dupont Circle pillar, this high-energy neighborhood haunt blends historic LGBTQ+ significance with a spirited, welcoming...">
+  <meta property="og:url" content="https://bardc.com/bars/jrs-bar/">
+  <meta property="og:type" content="business.business">
+  
+  
+  
+  
+      
+  
+  <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fjrs-bar%2Flogo-1766593533050-66712430_2286073918311241_4889959019709464576_n.jpg?alt=media&amp;token=3118bd09-b4c8-4030-942e-2b27ee5f7ebf">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="JR&#39;s Bar">
+  <meta name="twitter:description" content="Visit JR&#39;s Bar in Dupont Circle, Washington DC. ✨ Vibe A legendary Dupont Circle pillar, this high-energy neighborhood haunt blends historic LGBTQ+ significance with a spirited, welcoming...">
+  <meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fjrs-bar%2Flogo-1766593533050-66712430_2286073918311241_4889959019709464576_n.jpg?alt=media&amp;token=3118bd09-b4c8-4030-942e-2b27ee5f7ebf">
+
     <!-- [NEW] Favicon Links -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -13,7 +52,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/masonry.css">
+
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9L0NBTF5RQ"></script>
 <script>
@@ -23,113 +64,711 @@
 
   gtag('config', 'G-9L0NBTF5RQ');
 </script>
+
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7540411251843957"
+     crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="container">
     <header>
-      <a href="/" class="logo-link">
-        <img src="/img/logo.jpg" alt="Bar DC Logo" class="logo">
-      </a>
-      <h1>JR&#39;s Bar</h1>
+      <div class="header-branding">
+        <a href="/" class="branding-link">
+          <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
+          <span class="site-title">Washington D.C. Bars & Clubs</span>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <a href="/bars/">Bars</a>
+        <a href="/map/">Map</a>
+        
+
+        <div class="nav-dropdown">
+          <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
+          <div class="dropdown-menu">
+            
+              <a href="/neighborhoods/u-street/">U Street</a>
+            
+              <a href="/neighborhoods/dupont-circle/">Dupont Circle</a>
+            
+              <a href="/neighborhoods/downtown/">Downtown</a>
+            
+              <a href="/neighborhoods/adams-morgan/">Adams Morgan</a>
+            
+              <a href="/neighborhoods/navy-yard/">Navy Yard</a>
+            
+              <a href="/neighborhoods/georgetown/">Georgetown</a>
+            
+              <a href="/neighborhoods/the-wharf/">The Wharf</a>
+            
+              <a href="/neighborhoods/h-street-ne/">H Street NE</a>
+            
+            <div class="dropdown-divider"></div>
+            <a href="/neighborhoods/" class="view-all">View All →</a>
+          </div>
+        </div>
+
+
+        <a href="/events/">Events</a>
+        <a href="/happy-hour/">Happy Hour</a>
+      </nav>
     </header>
     <main>
+      
+        <h1 class="page-title">JR&#39;s Bar</h1>
+      
       <!-- This line is critical. It injects the content from other files. -->
-      <article class="venue-profile">
+      <!-- Leaflet Map Resources -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<style>
+   /* Custom Pin Styles for Venue Page */
+   .custom-pin-icon { background: transparent; border: none; }
+   .pin-wrapper {
+     width: 40px; height: 40px; border-radius: 50%; border: 3px solid #fff;
+     box-shadow: 0 4px 10px rgba(0,0,0,0.5); background-color: #fff;
+     overflow: hidden; position: relative; transition: transform 0.2s ease, z-index 0.2s;
+   }
+   .pin-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+   .pin-wrapper.no-logo {
+     background-color: var(--primary-color, #e53935);
+     display: flex; align-items: center; justify-content: center;
+   }
+   .pin-wrapper.no-logo::after { content: ''; width: 12px; height: 12px; background: #fff; border-radius: 50%; }
+   .leaflet-container { font-family: inherit; }
+   .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: #1e1e1e; color: #fff; border: 1px solid rgba(255,255,255,0.1); }
+   .leaflet-popup-content a { color: #fff; background: var(--primary-color, #e53935); padding: 2px 8px; border-radius: 4px; text-decoration: none; }
+</style>
 
+<article class="venue-profile">
 
-    <img src="/logos/jrs-bar.png" alt="JR&#39;s Bar logo" class="venue-profile-logo">
-  
    <h1>JR's Bar</h1>
   
   <div class="venue-details">
-    <p><strong>Category:</strong> LGBTQ+ Bar, Video Bar</p>
-    <p><strong>Price:</strong> $$</p>
-    <p><strong>Address:</strong> 1519 17th St NW, Washington, DC 20036</p>
+    <div style="display:flex; align-items:flex-start; gap:1.5rem; margin-bottom:1rem; flex-wrap:wrap;">
+      
+        <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fjrs-bar%2Flogo-1766593533050-66712430_2286073918311241_4889959019709464576_n.jpg?alt=media&amp;token=3118bd09-b4c8-4030-942e-2b27ee5f7ebf" alt="JR&#39;s Bar logo" style="max-height:250px; max-width:250px; border-radius:8px; border:1px solid #eee; object-fit:contain; flex-shrink:0;">
+      
+      <div style="flex:1; min-width: 250px;">
+        <div style="display:flex; gap:1.5rem; flex-wrap:wrap; justify-content: space-between;">
+            <div style="flex:1; min-width:200px;">
+                <p><strong>Category:</strong> 
+                  
+                  
+                    <a href="/categories/gay-bars/">Gay Bars</a>, 
+                  
+                    <a href="/categories/lgbtq+-bars/">LGBTQ+ Bars</a>, 
+                  
+                    <a href="/categories/neighborhood-bars/">Neighborhood Bars</a>
+                  
+                </p>
+                
+                  <p><strong>Neighborhood:</strong> <a href="/neighborhoods/dupont-circle/">Dupont Circle</a></p>
+                
+                <p><strong>Price:</strong> $$</p>
+                
+                
+                
+                
+                
+                
+                <p><strong>Address:</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=JR&#39;s%20Bar%201519%2017th%20St%20NW%2C%20Washington%2C%20DC%2020036" target="_blank" rel="noopener noreferrer" style="text-decoration:underline; color:var(--accent-color);">1519 17th St NW, Washington, DC 20036</a></p>
+
+                <div class="venue-actions-bar" style="margin-top:1rem;">
+                  
+                    <a href="https://www.jrsbardc.com/" class="btn-website-action" target="_blank" rel="noopener noreferrer">
+                      <span>Website</span>
+                    </a>
+                  
+                  
+                  
+                  <div class="social-icons-inline">
+                    
+                      <a href="https://www.instagram.com/jrs_bar_dc" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
+                    
+                    
+                      <a href="https://www.facebook.com/jrsbardc" target="_blank" rel="noopener noreferrer" class="social-icon facebook" title="Facebook"></a>
+                    
+                    
+                      <a href="https://www.twitter.com/jrsbar_dc" target="_blank" rel="noopener noreferrer" class="social-icon twitter" title="Twitter/X"></a>
+                    
+                  </div>
+                  
+                </div>
+            </div>
+            
+            <!-- Side Map -->
+            
+            <div style="width:220px; flex-shrink:0; margin-top: 0.5rem;">
+               <div id="venue-mini-map" style="width:100%; height:220px; border-radius:12px; border:1px solid rgba(255,255,255,0.1); box-shadow:0 4px 15px rgba(0,0,0,0.3); z-index:0; cursor: pointer;"></div>
+               <script>
+                 document.addEventListener('DOMContentLoaded', function() {
+                    var lat = 38.9104798;
+                    var lng = -77.03817959999999;
+                    var map = L.map('venue-mini-map', {
+                        center: [lat, lng],
+                        zoom: 16,
+                        zoomControl: false, 
+                        attributionControl: false,
+                        dragging: false,
+                        scrollWheelZoom: false,
+                        doubleClickZoom: false,
+                        boxZoom: false,
+                        keyboard: false
+                    });
+                     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                        subdomains: 'abcd',
+                        maxZoom: 20
+                     }).addTo(map);
+
+                    var iconHTML = `<div class="pin-wrapper"><img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fjrs-bar%2Flogo-1766593533050-66712430_2286073918311241_4889959019709464576_n.jpg?alt=media&amp;token=3118bd09-b4c8-4030-942e-2b27ee5f7ebf" onerror="this.style.display='none'; this.parentElement.classList.add('no-logo');"></div>`;
+                    var icon = L.divIcon({
+                        className: 'custom-pin-icon',
+                        html: iconHTML,
+                        iconSize: [40, 40],
+                        iconAnchor: [20, 20]
+                    });
+                    
+                    L.marker([lat, lng], {icon: icon}).addTo(map);
+                    
+                    // Click to open Google Maps
+                    document.getElementById('venue-mini-map').addEventListener('click', function() {
+                        window.open('https://www.google.com/maps/search/?api=1&amp;query=JR&#39;s%20Bar%201519%2017th%20St%20NW%2C%20Washington%2C%20DC%2020036', '_blank');
+                    });
+                 });
+               </script>
+               <div style="text-align:center; margin-top:0.5rem;">
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=JR&#39;s%20Bar%201519%2017th%20St%20NW%2C%20Washington%2C%20DC%2020036" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; color:#aaa; text-decoration:none;">View on Google Maps &rarr;</a>
+               </div>
+            </div>
+            
+        </div>
+      </div>
+    </div>
   </div>
 
-    <!-- [NEW] Google Rating Display -->
+    <!-- [MOVED] Google Rating Display (Moved to Reviews Section) -->
   
-    <div class="google-rating">
-      <span class="rating-stars" style="--rating: 4.2;">★★★★★</span>
-      <span class="rating-value">4.2</span>
-      <span class="rating-count">(201 reviews)</span>
-    </div>
+    <!-- Rating moved below -->
   
   <!-- End Google Rating Display -->
 
   <div class="venue-description">
-    <p>A long-standing fixture in the Dupont Circle LGBTQ+ community, JR&#39;s is a casual and friendly video bar. It&#39;s known for its lively happy hours, pop music video sing-alongs, and a welcoming, neighborhood atmosphere that makes it a cornerstone of 17th Street.</p>
+    <h3>✨ Vibe</h3>
+<p>A legendary Dupont Circle pillar, this high-energy neighborhood haunt blends historic LGBTQ+ significance with a spirited, welcoming atmosphere where showtune sing-alongs and drag performances take center stage.</p>
+
+<h3>🍸 Best For</h3>
+<p>Showtune sing-alongs, high-energy drag shows, LGBTQ+ history tours, weekend "Sunday Fundays," and casual neighborhood drinks.</p>
+
+<h3>🔥 Highlights</h3>
+<ul>
+  <li><strong>Musical Mondays:</strong> Experience a celebrated D.C. institution every Monday night where the entire bar joins together for a spirited, choir-like sing-along to iconic musical theater videos.</li>
+  <li><strong>Historic Legacy:</strong> Proudly serving the community since 1986, JR's is the historic birthplace of the famous 17th Street High Heel Race and remains a central landmark for D.C.'s queer history and activism.</li>
+  <li><strong>The Second-Floor Overlook:</strong> The venue features a unique balcony loft that provides a perfect bird’s-eye view of the show floor "antics," stained glass windows, and high-energy performances below.</li>
+</ul>
+
+<h3>ℹ️ Need to Know</h3>
+<ul>
+  <li>Enjoy exceptional value with no cover charge, daily drink specials, and a popular weekday happy hour that runs until 8 PM.</li>
+  <li>The bar is strictly 21+ and while they don't serve a full food menu, they keep the crowd happy with complimentary fresh popcorn all night long.</li>
+</ul>
   </div>
   
-  <a href="https://www.jrsbardc.com/" class="btn-website" target="_blank" rel="noopener noreferrer">Visit Website</a>
+
   
-    <!-- [NEW] Social Media Links Section -->
-  
-  <div class="social-links">
-    
-      <a href="https://www.instagram.com/jrs_bar_dc" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
-    
-    
-      <a href="https://www.facebook.com/jrsbardc" target="_blank" rel="noopener noreferrer" class="social-icon facebook" title="Facebook"></a>
-    
-    
-      <a href="https://www.twitter.com/jrsbar_dc" target="_blank" rel="noopener noreferrer" class="social-icon twitter" title="Twitter/X"></a>
-    
-  </div>
-  
-  <!-- End Social Media Links Section -->
+
 
   <!-- [NEW] Events Section -->
-
-  <div class="events-section">
-    <h3>📅 Upcoming Events & Specials</h3>
-    
-      <div class="event-item">
-        <h4>🎶 Monday Showtunes</h4>
-        <p>Musical Mondays starting at 9 PM, with $4 draft beer &amp; Truly after 8 PM.</p>
-      </div>
-    
-      <div class="event-item">
-        <h4>🎶 퀴즈 Tuesday Flashback + Goldilocks</h4>
-        <p>Retro music and trivia night starting at 8 PM.</p>
-      </div>
-    
-      <div class="event-item">
-        <h4>🎭 Friday Vitamin C</h4>
-        <p>Themed drag shows starting at 10 PM.</p>
-      </div>
-    
-      <div class="event-item">
-        <h4>🎶 Saturday Showtunes Replay</h4>
-        <p>Relive the showtunes fun starting at 5 PM.</p>
-      </div>
-    
-      <div class="event-item">
-        <h4>☀️ Sunday Funday</h4>
-        <p>All-day specials including $4 Skyy, $4 Draft Truly, and $7 Vodka Redbulls.</p>
-      </div>
-    
-    <small>Last analyzed: Fri Nov 14 2025 13:11:29 GMT-0500 (Eastern Standard Time)</small>
-  </div>
+  <!-- [NEW] Events Section -->
 
 <!-- End Events Section -->
+
+<!-- [NEW] Recurring Events Section -->
+
+  <div class="recurring-events-section">
+    <h3>🔄 Weekly Events</h3>
+    <div class="events-grid">
+      
+        
+        <div class="event-item recurring">
+          <h4>Flashback + Goldilocks 📻</h4>
+          <p class="event-meta">
+            <span class="days-badge">Tue</span>
+          </p>
+          
+            <p>A night of retro music and trivia challenges.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>Showtunes 🎭</h4>
+          <p class="event-meta">
+            <span class="days-badge">Mon</span>
+          </p>
+          
+            <p>Musical Mondays at JRs.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>Showtunes (Musical Mondays) 🎭</h4>
+          <p class="event-meta">
+            <span class="days-badge">Mon</span>
+          </p>
+          
+            <p>A long-standing DC tradition featuring musical theater clips and sing-alongs.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>Showtunes Replay 🎶</h4>
+          <p class="event-meta">
+            <span class="days-badge">Sat</span>
+          </p>
+          
+            <p>An afternoon encore of showtunes favorites.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>Vitamin C 💊</h4>
+          <p class="event-meta">
+            <span class="days-badge">Fri</span>
+          </p>
+          
+            <p>Themed drag shows every Friday night.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>Vitamin C Drag Show 👠</h4>
+          <p class="event-meta">
+            <span class="days-badge">Fri</span>
+          </p>
+          
+            <p>Themed drag shows to kick off the weekend.</p>
+          
+        </div>
+        
+      
+    </div>
+  </div>
+
+<!-- End Recurring Events Section -->
 
     <!-- [NEW] Full Happy Hour Details Section -->
   
     <div class="happy-hour-info">
       <h3>Happy Hour</h3>
-      <p>Weekday happy hour (Mon-Fri) until 8pm: $5 rail liquors, $8 Vodka Redbulls. Sunday Funday (all day): $4 Skyy, $4 draft Truly, $7 Vodka Redbulls. Monday after 8pm: $4 draft beer, $4 draft Truly.</p>
-      <small>Last analyzed: Sun Jul 27 2025 20:13:03 GMT-0400 (Eastern Daylight Time)</small>
+      <p>$4 Skyy | $4 Draft Truly | $7 Vodka Redbulls</p>
     </div>
   
   <!-- End Happy Hour Details Section -->
+
+  <!-- [NEW] News Section -->
   
+  <div class="news-section" style="margin-top:2rem; margin-bottom:2rem;">
+    <h3>📰 In the News</h3>
+    <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
+      
+        <a href="https://epgn.com/2025/11/12/washington-d-c-delights-for-lgbtq-travelers-despite-political-turmoil" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=epgn.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Philadelphia Gay News</span>
+              <span style="margin-left:auto; text-transform:none;">Nov 12, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Washington, D.C. delights for LGBTQ+ travelers — despite political turmoil</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">JR&#39;s Bar serves as a longtime hub for nightlife, activism, and community in Washington, D.C., and is a featured stop on local LGBTQ+ history tours. The venue continues to be a central location where the city&#39;s queer history unfolds through social gatherings and visibility.</p>
+           
+        </a>
+      
+        <a href="https://fox5dc.com/news/dc-high-heel-race-2025-how-watch-road-closures-more" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=fox5dc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>FOX 5 DC</span>
+              <span style="margin-left:auto; text-transform:none;">Oct 29, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">38th Annual DC High Heel Race 2025 held in Northwest</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">JR&#39;s Bar and Grill is highlighted as the historic birthplace of the annual 17th Street High Heel Race, which began outside the venue in 1986. The bar remains a central landmark for the event, representing a significant piece of the LGBTQ+ history and community spirit in Washington, D.C.</p>
+           
+        </a>
+      
+        <a href="https://thewash.org/2025/09/16/upcoming-high-heel-race-marks-duponts-struggle-to-remain-d-c-s-lgbtq-hub" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=thewash.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>thewash.org</span>
+              <span style="margin-left:auto; text-transform:none;">Sep 16, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Upcoming High Heel Race marks Dupont’s struggle to remain D.C.’s LGBTQ+ hub</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">JR&#39;s Bar remains a landmark of Washington D.C.&#39;s Dupont Circle nightlife and serves as a key organizer for the historic 17th Street High Heel Race. General manager Eli Downs highlights the venue&#39;s resilience in the face of rising operational costs, safety concerns, and neighborhood gentrification.</p>
+           
+        </a>
+      
+        <a href="https://washingtonian.com/2025/05/07/a-guide-to-dcs-best-gay-and-lesbian-bars" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Washingtonian</span>
+              <span style="margin-left:auto; text-transform:none;">Jun 5, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">A Guide to DC’s Best Gay and Lesbian Bars</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">JR&#39;s Bar is a long-standing Dupont Circle staple that has been a fixture of the D.C. gay scene since 1986. The venue is well-known for its &quot;Musical Mondays&quot; showtune sing-alongs and offers daily drink specials, including affordable drafts and Sunday deals on vodka cocktails.</p>
+           
+        </a>
+      
+        <a href="https://storymaps.arcgis.com/stories/6dc682a2420a4556bea5f74de421b850" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=storymaps.arcgis.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>ArcGIS StoryMaps</span>
+              <span style="margin-left:auto; text-transform:none;">Jun 5, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Queer Capital: Historic LGBTQ Spaces in Washington, DC</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">JR&#39;s Bar is featured as a landmark LGBTQ+ destination in Washington, D.C., celebrated for its long-standing presence in the Dupont Circle community. The venue is recognized for its welcoming environment and historic role in the city&#39;s queer nightlife scene.</p>
+           
+        </a>
+      
+    </div>
+  </div>
+  
+  <!-- End News Section -->
+  
+
+  <!-- [NEW] Reviews Section (Server-Side) -->
+  
+  <div id="google-reviews-section" class="reviews-section">
+    
+    
+      
+    
+
+    <!-- [MOVED] Google Rating Display -->
+    
+      <div class="google-rating" style="margin-bottom: 2rem;">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJMYYLSMG3t4kR9unH0QRvjrg" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: block;">
+          <div class="rating-header">
+            <span class="rating-stars" style="--rating: 4.2;">★★★★★</span>
+            <span class="rating-value">4.2</span>
+            <span class="rating-count">(212 reviews)</span>
+            <span class="btn-read-reviews" style="margin-left: auto; margin-top: 0;">View on Google</span>
+          </div>
+        </a>
+      </div>
+    
+    <!-- End Google Rating Display -->
+
+    <h3>Recent Reviews from Google</h3>
+    <div class="reviews-grid">
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJMYYLSMG3t4kR9unH0QRvjrg" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjWKj9EGAMZ4LXCt8So5SRAYrJX0lmPuZSfhKz2RiY3THocJTsSc=s128-c0x00000000-cc-rp-mo-ba6" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">5 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Having lived in DC many years ago and frequenting JR&#39;s all the time, its was fun to go there again on a recent trip. The good thing is that this legendary Dupont Circle bar has not changed and that is...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJMYYLSMG3t4kR9unH0QRvjrg" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjWY_O19aB2gMmjy_T_0csWxHyThooZu8BozjeISlT2faQItbVhd=s128-c0x00000000-cc-rp-mo-ba6" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a month ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            I adore JR’s You must definitely make JR’s part of your romp thru town. It has happy door people, very very funny and smart artists who are fantastic  drag queens and high fun energy and smart. There...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJMYYLSMG3t4kR9unH0QRvjrg" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjX69Kf0uw3kmaWlFwj6s7J2OGl-BL6FUxb5AeXh47g_ezSbCszp=s128-c0x00000000-cc-rp-mo" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">2 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Went here to try my chances of meeting someone. Different age groups and mostly standing, but I don&#39;t mind that. Cool place with nice people. It can get very crowded and hard to hear myself think when...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJMYYLSMG3t4kR9unH0QRvjrg" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjWn8wEfjFVCz9_vNRIS-IrXjZTqH8VyJ-HTilV_d8ezBKprMMAANg=s128-c0x00000000-cc-rp-mo-ba4" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">6 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Fun vibes inside. Crowded the inside very easily. They have an overlook section.
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJMYYLSMG3t4kR9unH0QRvjrg" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjUXU8BK10V3s0a1GFHIRwzDSJwst7HOKlwRTO2q5HMMIr_iNM4=s128-c0x00000000-cc-rp-mo-ba7" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">4 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            What a nice little neighborhood bar! Located at the end of Church Street no less, stands a brick building with high ceilings, stained glass windows, a small second floor loft, with music videos of...
+          </p>
+      </a>
+      
+    </div>
+    <div class="reviews-footer">
+      <small>Reviews provided by Google</small>
+    </div>
+  </div>
+  
+
+  <!-- [NEW] Nearby Bars Section -->
+  
+  
+  <div class="nearby-section" style="margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+    <h3 style="margin-bottom: 1.5rem;">📍 Nearby Spots (Walking Distance)</h3>
+    <div class="venue-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
+      
+        <a href="/bars/astoria-dc/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fastoria-dc%2Flogo-1766104281349-217604239_201954345267645_3774229668218464149_n.jpg?alt=media&amp;token=69eef353-7d61-406b-aca9-5ddfbc807725" alt="Astoria DC" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Astoria DC</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">3m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/dukes-grocery/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; background: #333; display: flex; align-items: center; justify-content: center;">
+                <span style="font-size: 2rem;">🍸</span>
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Duke&#39;s Grocery</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">32m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/gemini-wine-shop-dinner/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fgemini-wine-shop-dinner%2Flogo-1766494636606-353683712_273087071796056_2828255797986564386_n.jpg?alt=media&amp;token=c32a8402-d2bc-4165-b748-c5aeccc40d98" alt="Gemini — Wine Shop + Dinner" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Gemini — Wine Shop + Dinner</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">45m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/the-commodore-dc/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-commodore-dc%2Flogo-1766355286462-309118175_523606426436657_8876096589395226128_n.jpg?alt=media&amp;token=978388df-f21c-418d-bb5b-f4a719c923b7" alt="The Commodore DC" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">The Commodore DC</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">212m away</p>
+          </div>
+        </a>
+      
+    </div>
+  </div>
+  
+
   <a href="/" class="btn-back">← Back to Home</a>
 </article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "JR's Bar",
+  "image": "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fjrs-bar%2Flogo-1766593533050-66712430_2286073918311241_4889959019709464576_n.jpg?alt=media&token=3118bd09-b4c8-4030-942e-2b27ee5f7ebf",
+  "address": "1519 17th St NW, Washington, DC 20036",
+  
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.2,
+    "reviewCount": 212
+  },
+  
+  
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": 4,
+      "bestRating": 5
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Michael M"
+    },
+    "reviewBody": "Having lived in DC many years ago and frequenting JR's all the time, its was fun to go there again on a recent trip. The good thing is that this legendary Dupont Circle bar has not changed and that is good. The service was fast and friendly. The drinks were strong and reasonably priced. The bar is nicely decorated and now has a great patio our front to sit and watch the eye candy go by. If you have not been to JR's, you owe it to yourself to go and check it out. You will not be disappointed!"
+  },
+  
+  
+  "priceRange": "$$", 
+  
+  
+  "telephone": "(202) 328-0090",
+  
+  "url": "https://bardc.com/venues/jrs-bar/"
+}
+</script>
     </main>
-    <footer>
-      <p>© 2025 Bar DC. A guide to Washington D.C. Nightlife.</p>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="/" aria-label="Back to Home">
+            <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="footer-logo">
+          </a>
+        </div>
+        
+        <div class="footer-links">
+
+          <div class="social-icons">
+            <a href="https://x.com/bardc_" target="_blank" rel="noopener noreferrer" class="social-icon twitter" aria-label="X (formerly Twitter)"></a>
+            <a href="https://www.facebook.com/bardc" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook"></a>
+          </div>
+          <a href="mailto:info@bardc.com" class="footer-contact">info@bardc.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Bar DC. All rights reserved.</p>
+      </div>
     </footer>
   </div>
+  <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="img01" onclick="event.stopPropagation()">
+  </div>
+  <script>
+    // Global Image Modal Logic
+    window.openImageModal = function(src) {
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("img01");
+        if(modal && modalImg) {
+            modal.style.display = "flex";
+            modalImg.src = src;
+            document.body.style.overflow = "hidden"; 
+        }
+    }
+    
+    window.closeImageModal = function() {
+        var modal = document.getElementById("imageModal");
+        if(modal) {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto"; 
+        }
+    }
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            window.closeImageModal();
+        }
+    });
+  </script>
+  <style>
+    /* Modal Styles (Global) */
+    .image-modal {
+      display: none; 
+      position: fixed; 
+      z-index: 9999; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgba(0,0,0,0.95); 
+      align-items: center;
+      justify-content: center;
+      cursor: zoom-out;
+    }
+    
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 95%;
+      max-height: 95vh;
+      border-radius: 4px;
+      object-fit: contain;
+      cursor: default;
+      animation: zoom 0.3s;
+    }
+    
+    .close-modal {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 50px;
+      font-weight: bold;
+      transition: 0.3s;
+      cursor: pointer;
+      z-index: 10000;
+      line-height: 1;
+    }
+    
+    @keyframes zoom {
+      from {transform:scale(0.8); opacity: 0;}
+      to {transform:scale(1); opacity: 1;}
+    }
+  </style>
+
 </body>
 </html>

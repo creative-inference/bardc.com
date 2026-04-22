@@ -4,6 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quadrant Bar &amp; Lounge | Bar DC</title>
+
+  
+  
+  
+  
+  
+     
+     
+  
+
+  
+  
+
+  
+  
+
+  <meta name="description" content="Visit Quadrant Bar &amp; Lounge in Foggy Bottom, Washington DC. ✨ Vibe Located within the Ritz-Carlton, Quadrant Bar &amp; Lounge is a masterclass in sophisticated design, blending moody, elegant lighting...">
+  <link rel="canonical" href="https://bardc.com/bars/quadrant-bar-lounge/">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Bar DC">
+  <meta property="og:title" content="Quadrant Bar &amp; Lounge">
+  <meta property="og:description" content="Visit Quadrant Bar &amp; Lounge in Foggy Bottom, Washington DC. ✨ Vibe Located within the Ritz-Carlton, Quadrant Bar &amp; Lounge is a masterclass in sophisticated design, blending moody, elegant lighting...">
+  <meta property="og:url" content="https://bardc.com/bars/quadrant-bar-lounge/">
+  <meta property="og:type" content="business.business">
+  
+  
+  
+  
+      
+  
+  <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fquadrant-bar-lounge%2Flogo-1767103978986-305300460_806568680473133_3357695374202508424_n.jpg?alt=media&amp;token=025fb74e-4861-4a50-ada5-7170464e0a34">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Quadrant Bar &amp; Lounge">
+  <meta name="twitter:description" content="Visit Quadrant Bar &amp; Lounge in Foggy Bottom, Washington DC. ✨ Vibe Located within the Ritz-Carlton, Quadrant Bar &amp; Lounge is a masterclass in sophisticated design, blending moody, elegant lighting...">
+  <meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fquadrant-bar-lounge%2Flogo-1767103978986-305300460_806568680473133_3357695374202508424_n.jpg?alt=media&amp;token=025fb74e-4861-4a50-ada5-7170464e0a34">
+
     <!-- [NEW] Favicon Links -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -13,7 +52,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/masonry.css">
+
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9L0NBTF5RQ"></script>
 <script>
@@ -23,62 +64,625 @@
 
   gtag('config', 'G-9L0NBTF5RQ');
 </script>
+
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7540411251843957"
+     crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="container">
     <header>
-      <a href="/" class="logo-link">
-        <img src="/img/logo.jpg" alt="Bar DC Logo" class="logo">
-      </a>
-      <h1>Quadrant Bar &amp; Lounge</h1>
+      <div class="header-branding">
+        <a href="/" class="branding-link">
+          <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
+          <span class="site-title">Washington D.C. Bars & Clubs</span>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <a href="/bars/">Bars</a>
+        <a href="/map/">Map</a>
+        
+
+        <div class="nav-dropdown">
+          <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
+          <div class="dropdown-menu">
+            
+              <a href="/neighborhoods/u-street/">U Street</a>
+            
+              <a href="/neighborhoods/dupont-circle/">Dupont Circle</a>
+            
+              <a href="/neighborhoods/downtown/">Downtown</a>
+            
+              <a href="/neighborhoods/adams-morgan/">Adams Morgan</a>
+            
+              <a href="/neighborhoods/navy-yard/">Navy Yard</a>
+            
+              <a href="/neighborhoods/georgetown/">Georgetown</a>
+            
+              <a href="/neighborhoods/the-wharf/">The Wharf</a>
+            
+              <a href="/neighborhoods/h-street-ne/">H Street NE</a>
+            
+            <div class="dropdown-divider"></div>
+            <a href="/neighborhoods/" class="view-all">View All →</a>
+          </div>
+        </div>
+
+
+        <a href="/events/">Events</a>
+        <a href="/happy-hour/">Happy Hour</a>
+      </nav>
     </header>
     <main>
+      
+        <h1 class="page-title">Quadrant Bar &amp; Lounge</h1>
+      
       <!-- This line is critical. It injects the content from other files. -->
-      <article class="venue-profile">
+      <!-- Leaflet Map Resources -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<style>
+   /* Custom Pin Styles for Venue Page */
+   .custom-pin-icon { background: transparent; border: none; }
+   .pin-wrapper {
+     width: 40px; height: 40px; border-radius: 50%; border: 3px solid #fff;
+     box-shadow: 0 4px 10px rgba(0,0,0,0.5); background-color: #fff;
+     overflow: hidden; position: relative; transition: transform 0.2s ease, z-index 0.2s;
+   }
+   .pin-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+   .pin-wrapper.no-logo {
+     background-color: var(--primary-color, #e53935);
+     display: flex; align-items: center; justify-content: center;
+   }
+   .pin-wrapper.no-logo::after { content: ''; width: 12px; height: 12px; background: #fff; border-radius: 50%; }
+   .leaflet-container { font-family: inherit; }
+   .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: #1e1e1e; color: #fff; border: 1px solid rgba(255,255,255,0.1); }
+   .leaflet-popup-content a { color: #fff; background: var(--primary-color, #e53935); padding: 2px 8px; border-radius: 4px; text-decoration: none; }
+</style>
 
+<article class="venue-profile">
 
    <h1>Quadrant Bar & Lounge</h1>
   
   <div class="venue-details">
-    <p><strong>Category:</strong> Hotel Bar, Lounge, Cocktail Bar</p>
-    <p><strong>Price:</strong> $$$$</p>
-    <p><strong>Address:</strong> 1150 22nd St NW, Washington, DC 20037</p>
+    <div style="display:flex; align-items:flex-start; gap:1.5rem; margin-bottom:1rem; flex-wrap:wrap;">
+      
+        <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fquadrant-bar-lounge%2Flogo-1767103978986-305300460_806568680473133_3357695374202508424_n.jpg?alt=media&amp;token=025fb74e-4861-4a50-ada5-7170464e0a34" alt="Quadrant Bar &amp; Lounge logo" style="max-height:250px; max-width:250px; border-radius:8px; border:1px solid #eee; object-fit:contain; flex-shrink:0;">
+      
+      <div style="flex:1; min-width: 250px;">
+        <div style="display:flex; gap:1.5rem; flex-wrap:wrap; justify-content: space-between;">
+            <div style="flex:1; min-width:200px;">
+                <p><strong>Category:</strong> 
+                  
+                  
+                    <a href="/categories/hotel-bars/">Hotel Bars</a>, 
+                  
+                    <a href="/categories/cocktail-bars/">Cocktail Bars</a>, 
+                  
+                    <a href="/categories/lounges/">Lounges</a>
+                  
+                </p>
+                
+                  <p><strong>Neighborhood:</strong> <a href="/neighborhoods/foggy-bottom/">Foggy Bottom</a></p>
+                
+                <p><strong>Price:</strong> $$$$</p>
+                
+                
+                
+                
+                
+                
+                <p><strong>Address:</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=Quadrant%20Bar%20%26%20Lounge%201150%2022nd%20St%20NW%2C%20Washington%2C%20DC%2020037" target="_blank" rel="noopener noreferrer" style="text-decoration:underline; color:var(--accent-color);">1150 22nd St NW, Washington, DC 20037</a></p>
+
+                <div class="venue-actions-bar" style="margin-top:1rem;">
+                  
+                    <a href="https://www.ritzcarlton.com/en/hotels/waswe-the-ritz-carlton-washington-d-c/dining/quadrant/" class="btn-website-action" target="_blank" rel="noopener noreferrer">
+                      <span>Website</span>
+                    </a>
+                  
+                  
+                  
+                  <div class="social-icons-inline">
+                    
+                      <a href="https://www.instagram.com/quadrant.dc/" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
+                    
+                    
+                    
+                  </div>
+                  
+                </div>
+            </div>
+            
+            <!-- Side Map -->
+            
+            <div style="width:220px; flex-shrink:0; margin-top: 0.5rem;">
+               <div id="venue-mini-map" style="width:100%; height:220px; border-radius:12px; border:1px solid rgba(255,255,255,0.1); box-shadow:0 4px 15px rgba(0,0,0,0.3); z-index:0; cursor: pointer;"></div>
+               <script>
+                 document.addEventListener('DOMContentLoaded', function() {
+                    var lat = 38.9048813;
+                    var lng = -77.04911589999999;
+                    var map = L.map('venue-mini-map', {
+                        center: [lat, lng],
+                        zoom: 16,
+                        zoomControl: false, 
+                        attributionControl: false,
+                        dragging: false,
+                        scrollWheelZoom: false,
+                        doubleClickZoom: false,
+                        boxZoom: false,
+                        keyboard: false
+                    });
+                     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                        subdomains: 'abcd',
+                        maxZoom: 20
+                     }).addTo(map);
+
+                    var iconHTML = `<div class="pin-wrapper"><img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fquadrant-bar-lounge%2Flogo-1767103978986-305300460_806568680473133_3357695374202508424_n.jpg?alt=media&amp;token=025fb74e-4861-4a50-ada5-7170464e0a34" onerror="this.style.display='none'; this.parentElement.classList.add('no-logo');"></div>`;
+                    var icon = L.divIcon({
+                        className: 'custom-pin-icon',
+                        html: iconHTML,
+                        iconSize: [40, 40],
+                        iconAnchor: [20, 20]
+                    });
+                    
+                    L.marker([lat, lng], {icon: icon}).addTo(map);
+                    
+                    // Click to open Google Maps
+                    document.getElementById('venue-mini-map').addEventListener('click', function() {
+                        window.open('https://www.google.com/maps/search/?api=1&amp;query=Quadrant%20Bar%20%26%20Lounge%201150%2022nd%20St%20NW%2C%20Washington%2C%20DC%2020037', '_blank');
+                    });
+                 });
+               </script>
+               <div style="text-align:center; margin-top:0.5rem;">
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=Quadrant%20Bar%20%26%20Lounge%201150%2022nd%20St%20NW%2C%20Washington%2C%20DC%2020037" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; color:#aaa; text-decoration:none;">View on Google Maps &rarr;</a>
+               </div>
+            </div>
+            
+        </div>
+      </div>
+    </div>
   </div>
 
-    <!-- [NEW] Google Rating Display -->
+    <!-- [MOVED] Google Rating Display (Moved to Reviews Section) -->
   
-    <div class="google-rating">
-      <span class="rating-stars" style="--rating: 4.4;">★★★★★</span>
-      <span class="rating-value">4.4</span>
-      <span class="rating-count">(295 reviews)</span>
-    </div>
+    <!-- Rating moved below -->
   
   <!-- End Google Rating Display -->
 
   <div class="venue-description">
-    <p>An elegant and sophisticated cocktail lounge located in The Ritz-Carlton, Washington, D.C., Quadrant offers a luxurious experience. It features an extensive collection of spirits, rare whiskeys, and a menu of innovative, handcrafted cocktails served in a plush, contemporary setting.</p>
+    <h3>✨ Vibe</h3>
+Located within the Ritz-Carlton, Quadrant Bar & Lounge is a masterclass in sophisticated design, blending moody, elegant lighting with plush leather seating to create an intimate and modern sanctuary in the heart of the West End.
+
+<h3>🍸 Best For</h3>
+Classy pre-dinner drinks, romantic date nights, high-end spirit tastings, live jazz enthusiasts, and upscale celebratory high tea.
+
+<h3>🔥 Highlights</h3>
+<ul>
+  <li><strong>Cutting-Edge Mixology:</strong> Led by expert mixologists, the bar features a world-class cocktail program known for theatrical presentations and innovative sound-aged spirits that offer a uniquely smooth tasting experience.</li>
+  <li><strong>Michelin-Rated Pedigree:</strong> Under the culinary leadership of the award-winning team behind Imperfecto and Seven Restaurant Group, guests enjoy globally-inspired small plates such as decadent truffle fries and artisanal crab cakes.</li>
+  <li><strong>Curated History & Rarity:</strong> Beyond its chic Meyer Davis-designed interior, the venue boasts an extensive "Reserve List" of rare spirits and a legendary drink menu inspired by the preferences of past U.S. Presidents.</li>
+</ul>
+
+<h3>ℹ️ Need to Know</h3>
+<ul>
+  <li>Check the schedule for weekly live jazz performances to elevate your evening with a soulful, lounge-style soundtrack.</li>
+  <li>While the atmosphere is welcoming, the upscale setting is the perfect excuse to "dress to impress" for a quintessential D.C. nightlife experience.</li>
+</ul>
   </div>
   
-  <a href="https://www.ritzcarlton.com/en/hotels/waswe-the-ritz-carlton-washington-d-c/dining/quadrant/" class="btn-website" target="_blank" rel="noopener noreferrer">Visit Website</a>
-  
-    <!-- [NEW] Social Media Links Section -->
-  
-  <!-- End Social Media Links Section -->
 
+  
+
+
+  <!-- [NEW] Events Section -->
   <!-- [NEW] Events Section -->
 
 <!-- End Events Section -->
 
+<!-- [NEW] Recurring Events Section -->
+
+<!-- End Recurring Events Section -->
+
     <!-- [NEW] Full Happy Hour Details Section -->
   
   <!-- End Happy Hour Details Section -->
+
+  <!-- [NEW] News Section -->
   
+  <div class="news-section" style="margin-top:2rem; margin-bottom:2rem;">
+    <h3>📰 In the News</h3>
+    <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
+      
+        <a href="https://prweb.com/releases/the_ritz_carlton_washington_d_c_opens_quadrant_chic_new_lounge_in_d_c_s_west_end/prweb12958909.htm" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=prweb.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>PRWeb</span>
+              <span style="margin-left:auto; text-transform:none;">Sep 12, 2023</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Ritz-Carlton, Washington, D.C. Opens Quadrant: Chic New Lounge In D.C.’s West End</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Quadrant Bar &amp; Lounge is a sophisticated cocktail lounge located at The Ritz-Carlton, Washington, D.C., featuring high-concept cocktails and an exclusive &#39;Reserve List&#39; of rare spirits. The venue offers a moody, elegant atmosphere designed by Meyer Davis Studio, complemented by internationally-inspired small plates and weekly live jazz performances.</p>
+           
+        </a>
+      
+        <a href="https://georgetowner.com/articles/2022/10/12/latest-dish-betting-on-d-c-expansion-sportsbooks-and-restaurant-groups" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=georgetowner.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The Georgetowner</span>
+              <span style="margin-left:auto; text-transform:none;">Oct 13, 2022</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Latest Dish : Betting on D.C. Expansion, Sportsbooks and Restaurant Groups</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Quadrant Bar &amp; Lounge, located within the Ritz-Carlton Washington DC, is operated by Seven Restaurant Group as a French-American restaurant. This management transition coincided with the group&#39;s expansion in the hotel, which included opening the Spanish-Latin fusion restaurant The Saga.</p>
+           
+        </a>
+      
+        <a href="https://dc.eater.com/2022/9/15/23354764/imperfecto-west-end-ritz-carlton-michelin-dc-coming-attractions" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Eater DC</span>
+              <span style="margin-left:auto; text-transform:none;">Sep 15, 2022</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Team Behind Imperfecto Doubles Down on the West End With a Ritz-Carlton Takeover</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Quadrant Bar &amp; Lounge at the Ritz-Carlton Washington D.C. is managed by the award-winning team behind Imperfecto, featuring leadership from Michelin-rated chef Enrique Limardo. The sophisticated lounge is recognized for its theatrical cocktail presentations, sound-aged spirits program, and high-end global small plates served in a chic lobby-level setting.</p>
+           
+        </a>
+      
+        <a href="https://insidehook.com/washington-dc/drinking-tour-cocktail-history" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=insidehook.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>InsideHook</span>
+              <span style="margin-left:auto; text-transform:none;">Sep 17, 2021</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">A Drink-by-Drink Tour of DC’s Most Historic Cocktail Bars</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Quadrant Bar &amp; Lounge at the Ritz-Carlton offers a sophisticated setting with leather club chairs and an extensive 89-page drink menu that serves as a history lesson on presidential preferences. Patrons can enjoy cocktails inspired by past leaders, such as &#39;The McKinley Delight&#39; or John Adams&#39; favored hard cider, while relaxing in the Georgetown-adjacent space.</p>
+           
+        </a>
+      
+        <a href="https://washdiplomat.com/imbibe-in-style-with-an-array-of-drink-options-in-dc-hotel-bars" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=washdiplomat.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Washington Diplomat</span>
+              <span style="margin-left:auto; text-transform:none;">Jun 29, 2018</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Imbibe in Style with an Array of Drink Options in D.C. Hotel Bars</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Quadrant Bar &amp; Lounge at the Ritz-Carlton, Washington, D.C., features lead mixologist Christopher Mendenhall and his innovative use of sound-wave technology to age spirits in hours. The venue offers a sophisticated cocktail menu highlighted by sound-aged bourbons and ryes alongside signature drinks like the Smoked Old Fashioned served with wood-smoked syrup.</p>
+           
+        </a>
+      
+    </div>
+  </div>
+  
+  <!-- End News Section -->
+  
+
+  <!-- [NEW] Reviews Section (Server-Side) -->
+  
+  <div id="google-reviews-section" class="reviews-section">
+    
+    
+      
+    
+
+    <!-- [MOVED] Google Rating Display -->
+    
+      <div class="google-rating" style="margin-bottom: 2rem;">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJh_OK8ra3t4kRBMbx8IXW6r0" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: block;">
+          <div class="rating-header">
+            <span class="rating-stars" style="--rating: 4.4;">★★★★★</span>
+            <span class="rating-value">4.4</span>
+            <span class="rating-count">(335 reviews)</span>
+            <span class="btn-read-reviews" style="margin-left: auto; margin-top: 0;">View on Google</span>
+          </div>
+        </a>
+      </div>
+    
+    <!-- End Google Rating Display -->
+
+    <h3>Recent Reviews from Google</h3>
+    <div class="reviews-grid">
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJh_OK8ra3t4kRBMbx8IXW6r0" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjVDGV69i32n8OeOYc8N0-h1-9-Dw4iedcf1PxawL_ozDsh7miMd=s128-c0x00000000-cc-rp-mo-ba7" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">4 weeks ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            While staying at the Ritz, DC we stopped in here one evening before going out for dinner.  We sat at the bar and the bartenders working were helpful and friendly.  They have a nice cocktail list,...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJh_OK8ra3t4kRBMbx8IXW6r0" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjU6DXzs_0Sj2B2GdMniz9dAJZ-K4YebDGhTRZ2nKl6xYpN6e38e=s128-c0x00000000-cc-rp-mo-ba4" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">11 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★☆☆☆☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            The Ritz Hotel&#39;s Quadrant is undeniably a stunning location, and their High Tea experience has been a favorite of ours in the past. This time, however, our visit fell short of expectations.
+
+While the...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJh_OK8ra3t4kRBMbx8IXW6r0" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocLfW7kufOUvhh-CQyuGNhhbY3eoHep74yL80uJ4lpRxudPez-W0=s128-c0x00000000-cc-rp-mo-ba4" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a month ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Let me start off by saying how gorgeous this lounge is !!!! The food is amazing, drinks are delicious ! Staff are great !!! I came back two days in a row !!!!
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJh_OK8ra3t4kRBMbx8IXW6r0" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocK8LQMO3o6zYpv2m-ji2ELy9AQ2wK_xQVKcNDpzwjxnAvms2w=s128-c0x00000000-cc-rp-mo-ba3" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">7 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            I have been here before.  I brought friends with me this time.  The service was exceptional.  I ordered the old fashioned  They accommodated me as I changed the whiskey I wanted and deviated from...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJh_OK8ra3t4kRBMbx8IXW6r0" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocItw8gTDBj3epDlYEd7xBQrh8Bn7AOKFfH_41UtKIChnpX2fg=s128-c0x00000000-cc-rp-mo-ba6" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a month ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Had a lovely evening at Quadrant Bar &amp; Lounge! The space is absolutely beautiful—modern, elegant, and perfect for a relaxed night out or a classy pre-dinner drink. The ambiance really sets the mood:...
+          </p>
+      </a>
+      
+    </div>
+    <div class="reviews-footer">
+      <small>Reviews provided by Google</small>
+    </div>
+  </div>
+  
+
+  <!-- [NEW] Nearby Bars Section -->
+  
+  
+  <div class="nearby-section" style="margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+    <h3 style="margin-bottom: 1.5rem;">📍 Nearby Spots (Walking Distance)</h3>
+    <div class="venue-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
+      
+        <a href="/bars/castas-rum-bar/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcastas-rum-bar%2Flogo-1766321747847-300095784_2177271479112809_4601225429313741555_n.jpg?alt=media&amp;token=64a28da7-3c6f-4d3e-918a-aab4867632d1" alt="Casta&#39;s Rum Bar" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Casta&#39;s Rum Bar</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">109m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/mercy-me/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fmercy-me%2Flogo-1767018076684-72484966_2628138233906338_2364661684389281792_n.jpg?alt=media&amp;token=a8d0a1cf-316d-4532-a254-bea48339752e" alt="Mercy Me" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Mercy Me</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">135m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/a-kitchen-bar-d-c/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fa-kitchen-bar-d-c%2Flogo-1766013326959-472339033_10231749287687802_7363562585620072919_n.jpg?alt=media&amp;token=c9f9e76c-a9c1-45ef-86c4-50870351f7f0" alt="a.kitchen+bar - D.C." style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">a.kitchen+bar - D.C.</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">174m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/blue-duck-tavern/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fblue-duck-tavern%2Flogo-1766317165170-891419_1436986699909870_1458523791_a.jpg?alt=media&amp;token=de0ddc87-c67b-43f5-a8ad-68ab6e60c2c1" alt="Blue Duck Tavern" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Blue Duck Tavern</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">191m away</p>
+          </div>
+        </a>
+      
+    </div>
+  </div>
+  
+
   <a href="/" class="btn-back">← Back to Home</a>
 </article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "Quadrant Bar & Lounge",
+  "image": "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fquadrant-bar-lounge%2Flogo-1767103978986-305300460_806568680473133_3357695374202508424_n.jpg?alt=media&token=025fb74e-4861-4a50-ada5-7170464e0a34",
+  "address": "1150 22nd St NW, Washington, DC 20037",
+  
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.4,
+    "reviewCount": 335
+  },
+  
+  
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": 5,
+      "bestRating": 5
+    },
+    "author": {
+      "@type": "Person",
+      "name": "F&#39;burg Foodie"
+    },
+    "reviewBody": "While staying at the Ritz, DC we stopped in here one evening before going out for dinner.  We sat at the bar and the bartenders working were helpful and friendly.  They have a nice cocktail list, though the prices are slightly high.  Drinks were made promptly and looked and tasted great.\nThe venue is cozy and intimate.  Lighting lends itself to a cozy atmosphere as well.  Would definitely stop back in."
+  },
+  
+  
+  "priceRange": "$$$$", 
+  
+  
+  "telephone": "(202) 503-4628",
+  
+  "url": "https://bardc.com/venues/quadrant-bar-lounge/"
+}
+</script>
     </main>
-    <footer>
-      <p>© 2025 Bar DC. A guide to Washington D.C. Nightlife.</p>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="/" aria-label="Back to Home">
+            <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="footer-logo">
+          </a>
+        </div>
+        
+        <div class="footer-links">
+
+          <div class="social-icons">
+            <a href="https://x.com/bardc_" target="_blank" rel="noopener noreferrer" class="social-icon twitter" aria-label="X (formerly Twitter)"></a>
+            <a href="https://www.facebook.com/bardc" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook"></a>
+          </div>
+          <a href="mailto:info@bardc.com" class="footer-contact">info@bardc.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Bar DC. All rights reserved.</p>
+      </div>
     </footer>
   </div>
+  <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="img01" onclick="event.stopPropagation()">
+  </div>
+  <script>
+    // Global Image Modal Logic
+    window.openImageModal = function(src) {
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("img01");
+        if(modal && modalImg) {
+            modal.style.display = "flex";
+            modalImg.src = src;
+            document.body.style.overflow = "hidden"; 
+        }
+    }
+    
+    window.closeImageModal = function() {
+        var modal = document.getElementById("imageModal");
+        if(modal) {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto"; 
+        }
+    }
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            window.closeImageModal();
+        }
+    });
+  </script>
+  <style>
+    /* Modal Styles (Global) */
+    .image-modal {
+      display: none; 
+      position: fixed; 
+      z-index: 9999; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgba(0,0,0,0.95); 
+      align-items: center;
+      justify-content: center;
+      cursor: zoom-out;
+    }
+    
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 95%;
+      max-height: 95vh;
+      border-radius: 4px;
+      object-fit: contain;
+      cursor: default;
+      animation: zoom 0.3s;
+    }
+    
+    .close-modal {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 50px;
+      font-weight: bold;
+      transition: 0.3s;
+      cursor: pointer;
+      z-index: 10000;
+      line-height: 1;
+    }
+    
+    @keyframes zoom {
+      from {transform:scale(0.8); opacity: 0;}
+      to {transform:scale(1); opacity: 1;}
+    }
+  </style>
+
 </body>
 </html>

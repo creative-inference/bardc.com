@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marx Cafe | Bar DC</title>
+
+  
+  
+  
+  
+  
+     
+     
+  
+
+  
+  
+
+  
+  
+
+  <meta name="description" content="Visit Marx Cafe in Columbia Heights, Washington DC. ✨ Vibe A warm, wood-paneled neighborhood staple that effortlessly transitions from a sun-drenched Mediterranean cafe into a vibrant,...">
+  <link rel="canonical" href="https://bardc.com/bars/marx-cafe-revolutionary-cuisine/">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Bar DC">
+  <meta property="og:title" content="Marx Cafe">
+  <meta property="og:description" content="Visit Marx Cafe in Columbia Heights, Washington DC. ✨ Vibe A warm, wood-paneled neighborhood staple that effortlessly transitions from a sun-drenched Mediterranean cafe into a vibrant,...">
+  <meta property="og:url" content="https://bardc.com/bars/marx-cafe-revolutionary-cuisine/">
+  <meta property="og:type" content="business.business">
+  
+  
+  
+  
+      
+  
+  <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fmarx-cafe-revolutionary-cuisine%2Flogo-1767203562018-377814052_6662695007157166_6671966441670163273_n.jpg?alt=media&amp;token=7b4d1abe-7df2-4f78-9036-28a5980844d0">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Marx Cafe">
+  <meta name="twitter:description" content="Visit Marx Cafe in Columbia Heights, Washington DC. ✨ Vibe A warm, wood-paneled neighborhood staple that effortlessly transitions from a sun-drenched Mediterranean cafe into a vibrant,...">
+  <meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fmarx-cafe-revolutionary-cuisine%2Flogo-1767203562018-377814052_6662695007157166_6671966441670163273_n.jpg?alt=media&amp;token=7b4d1abe-7df2-4f78-9036-28a5980844d0">
+
+    <!-- [NEW] Favicon Links -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <!-- End Favicon Links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/masonry.css">
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9L0NBTF5RQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9L0NBTF5RQ');
+</script>
+
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7540411251843957"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-branding">
+        <a href="/" class="branding-link">
+          <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
+          <span class="site-title">Washington D.C. Bars & Clubs</span>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <a href="/bars/">Bars</a>
+        <a href="/map/">Map</a>
+        
+
+        <div class="nav-dropdown">
+          <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
+          <div class="dropdown-menu">
+            
+              <a href="/neighborhoods/u-street/">U Street</a>
+            
+              <a href="/neighborhoods/dupont-circle/">Dupont Circle</a>
+            
+              <a href="/neighborhoods/downtown/">Downtown</a>
+            
+              <a href="/neighborhoods/adams-morgan/">Adams Morgan</a>
+            
+              <a href="/neighborhoods/navy-yard/">Navy Yard</a>
+            
+              <a href="/neighborhoods/georgetown/">Georgetown</a>
+            
+              <a href="/neighborhoods/the-wharf/">The Wharf</a>
+            
+              <a href="/neighborhoods/h-street-ne/">H Street NE</a>
+            
+            <div class="dropdown-divider"></div>
+            <a href="/neighborhoods/" class="view-all">View All →</a>
+          </div>
+        </div>
+
+
+        <a href="/events/">Events</a>
+        <a href="/happy-hour/">Happy Hour</a>
+      </nav>
+    </header>
+    <main>
+      
+        <h1 class="page-title">Marx Cafe</h1>
+      
+      <!-- This line is critical. It injects the content from other files. -->
+      <!-- Leaflet Map Resources -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<style>
+   /* Custom Pin Styles for Venue Page */
+   .custom-pin-icon { background: transparent; border: none; }
+   .pin-wrapper {
+     width: 40px; height: 40px; border-radius: 50%; border: 3px solid #fff;
+     box-shadow: 0 4px 10px rgba(0,0,0,0.5); background-color: #fff;
+     overflow: hidden; position: relative; transition: transform 0.2s ease, z-index 0.2s;
+   }
+   .pin-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+   .pin-wrapper.no-logo {
+     background-color: var(--primary-color, #e53935);
+     display: flex; align-items: center; justify-content: center;
+   }
+   .pin-wrapper.no-logo::after { content: ''; width: 12px; height: 12px; background: #fff; border-radius: 50%; }
+   .leaflet-container { font-family: inherit; }
+   .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: #1e1e1e; color: #fff; border: 1px solid rgba(255,255,255,0.1); }
+   .leaflet-popup-content a { color: #fff; background: var(--primary-color, #e53935); padding: 2px 8px; border-radius: 4px; text-decoration: none; }
+</style>
+
+<article class="venue-profile">
+
+   <h1>Marx Cafe</h1>
+  
+  <div class="venue-details">
+    <div style="display:flex; align-items:flex-start; gap:1.5rem; margin-bottom:1rem; flex-wrap:wrap;">
+      
+        <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fmarx-cafe-revolutionary-cuisine%2Flogo-1767203562018-377814052_6662695007157166_6671966441670163273_n.jpg?alt=media&amp;token=7b4d1abe-7df2-4f78-9036-28a5980844d0" alt="Marx Cafe logo" style="max-height:250px; max-width:250px; border-radius:8px; border:1px solid #eee; object-fit:contain; flex-shrink:0;">
+      
+      <div style="flex:1; min-width: 250px;">
+        <div style="display:flex; gap:1.5rem; flex-wrap:wrap; justify-content: space-between;">
+            <div style="flex:1; min-width:200px;">
+                <p><strong>Category:</strong> 
+                  
+                  
+                    <a href="/categories//"></a>
+                  
+                </p>
+                
+                  <p><strong>Neighborhood:</strong> <a href="/neighborhoods/columbia-heights/">Columbia Heights</a></p>
+                
+                <p><strong>Price:</strong> MODERATE</p>
+                
+                
+                
+                
+                
+                
+                <p><strong>Address:</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=Marx%20Cafe%203203%20Mt%20Pleasant%20St%20NW%2C%20Washington%2C%20DC%2020010%2C%20USA" target="_blank" rel="noopener noreferrer" style="text-decoration:underline; color:var(--accent-color);">3203 Mt Pleasant St NW, Washington, DC 20010, USA</a></p>
+
+                <div class="venue-actions-bar" style="margin-top:1rem;">
+                  
+                    <a href="http://www.marxcafemtp.com/" class="btn-website-action" target="_blank" rel="noopener noreferrer">
+                      <span>Website</span>
+                    </a>
+                  
+                  
+                  
+                  <div class="social-icons-inline">
+                    
+                      <a href="https://www.instagram.com/marxcafe/" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
+                    
+                    
+                    
+                  </div>
+                  
+                </div>
+            </div>
+            
+            <!-- Side Map -->
+            
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- [MOVED] Google Rating Display (Moved to Reviews Section) -->
+  
+    <!-- Rating moved below -->
+  
+  <!-- End Google Rating Display -->
+
+  <div class="venue-description">
+    <h3>✨ Vibe</h3>
+<p>A warm, wood-paneled neighborhood staple that effortlessly transitions from a sun-drenched Mediterranean cafe into a vibrant, disco-ball-lit live music hub with an intimate dance floor.</p>
+
+<h3>🍸 Best For</h3>
+<p>Weekly jazz jams, late-night Latin dancing, Mediterranean small plates, and cheering for international soccer matches.</p>
+
+<h3>🔥 Highlights</h3>
+<ul>
+  <li><strong>Eclectic Live Music:</strong> From soulful weekly jazz jam sessions on Tuesday nights to high-energy Latin genres like psychedelic cumbia and salsa, the venue is a premier destination for local talent.</li>
+  <li><strong>"Revolutionary" Mediterranean Cuisine:</strong> The menu features standout small plates like the flaming Cheese Saganaki, handcrafted beef empanadillas, and a diverse selection of craft beers and wines.</li>
+  <li><strong>Community Pillar:</strong> Beyond its nightlife, the venue is a neighborhood hub that hosts immersive theatrical performances and local initiatives, earning it a reputation as one of the area's most authentic social spaces.</li>
+</ul>
+
+<h3>ℹ️ Need to Know</h3>
+<ul>
+  <li>Check their calendar for special events, including the D.C. Jazz Collective performances and political trivia nights.</li>
+  <li>Sports enthusiasts can enjoy big-screen viewings of UEFA Soccer, MLB, and NFL games in a lively, casual setting.</li>
+</ul>
+  </div>
+  
+
+  
+
+
+  <!-- [NEW] Events Section -->
+  <!-- [NEW] Events Section -->
+
+<!-- End Events Section -->
+
+<!-- [NEW] Recurring Events Section -->
+
+  <div class="recurring-events-section">
+    <h3>🔄 Weekly Events</h3>
+    <div class="events-grid">
+      
+        
+        <div class="event-item recurring">
+          <h4>⚽ Live Sports Viewing</h4>
+          <p class="event-meta">
+            <span class="days-badge">Daily</span>
+          </p>
+          
+            <p>Watch MLB Baseball, NFL, NHL, and UEFA Soccer on one of our big screen TVs.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>🎸 Nightly Live Music &amp; DJs</h4>
+          <p class="event-meta">
+            <span class="days-badge">Daily</span>
+          </p>
+          
+            <p>Marx Cafe hosts nightly music events featuring superb live local talent performances and resident DJs.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>Live Sports Screenings ⚽</h4>
+          <p class="event-meta">
+            <span class="days-badge">Daily</span>
+          </p>
+          
+            <p>Watch MLB Baseball, NFL, NHL and UEFA Soccer on one of the big screen TVs.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>Weekly Live Music with AC Montgomery 🎸</h4>
+          <p class="event-meta">
+            <span class="days-badge">Daily</span>
+          </p>
+          
+            <p>Marx Cafe features resident performers like AC Montgomery for live music sessions every week.</p>
+          
+        </div>
+        
+      
+    </div>
+  </div>
+
+<!-- End Recurring Events Section -->
+
+    <!-- [NEW] Full Happy Hour Details Section -->
+  
+  <!-- End Happy Hour Details Section -->
+
+  <!-- [NEW] News Section -->
+  
+  <div class="news-section" style="margin-top:2rem; margin-bottom:2rem;">
+    <h3>📰 In the News</h3>
+    <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
+      
+        <a href="https://nbcwashington.com/news/local/dc-streateries-could-dwindle-as-city-increases-costs-changes-regulations/4016023" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=nbcwashington.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>NBC4 Washington</span>
+              <span style="margin-left:auto; text-transform:none;">Nov 14, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">DC streateries could dwindle as city increases costs, changes regulations</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Marx Cafe faces a potential 25% to 30% loss in revenue due to new District regulations and increased fees for outdoor dining &quot;streateries.&quot; Owner Daniel Quiroz expressed concern that the higher costs and stricter construction requirements could force the removal of outdoor setups that have become a vital part of the business&#39;s income.</p>
+           
+        </a>
+      
+        <a href="https://wusa9.com/article/news/local/dc/dc-restaurant-launches-food-bank-neighbors-need/65-3560e351-516f-4b46-a19a-2aba69d67225" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=wusa9.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>WUSA9</span>
+              <span style="margin-left:auto; text-transform:none;">Nov 13, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">DC restaurant launches food bank for neighbors in need</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Marx Café in Mt. Pleasant has launched an outdoor community food bank to provide essential groceries to neighbors in need. Spearheaded by co-owner Daniel Quiroz, the initiative invites community members to donate items to the outdoor bins to help combat local food insecurity.</p>
+           
+        </a>
+      
+        <a href="https://washingtonian.com/2025/05/28/this-comedic-play-about-dating-in-dc-turns-mt-pleasant-street-into-a-stage" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Washingtonian</span>
+              <span style="margin-left:auto; text-transform:none;">May 28, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">This Comedic Play About Dating in DC Turns Mount Pleasant Street Into a Stage</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Marx Cafe hosted a political trivia-themed scene for the immersive play &quot;DC, I Love You: First Dates,&quot; a production that turned Mount Pleasant Street into a live stage. The venue served as a key location for the Folger Shakespeare Library project, which utilized the neighborhood&#39;s authentic atmosphere to present vignettes about dating in Washington.</p>
+           
+        </a>
+      
+        <a href="https://them.us/story/washington-dc-nightlife-scene-insiders-guide-femme-fatale-takoma-station-rhizome" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=them.us" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>www.them.us</span>
+              <span style="margin-left:auto; text-transform:none;">Mar 14, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">From Go-Go Bands to Bike Parties, How to Spend a Night Out in D.C.</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Marx Cafe is a Mount Pleasant neighborhood staple that transitions from a chill Mediterranean cafe by day to a vibrant live music hub at night. The wood-paneled venue emphasizes Latin genres such as psychedelic cumbia and salsa, inviting guests to hit the intimate dance floor under a disco ball.</p>
+           
+        </a>
+      
+        <a href="https://washingtoncitypaper.com/article/744612/swing-beat-a-thriving-jazz-subscene-in-mount-pleasant" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=washingtoncitypaper.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Washington City Paper</span>
+              <span style="margin-left:auto; text-transform:none;">Jul 26, 2024</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Swing Beat: A Thriving Jazz Subscene in Mount Pleasant</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Marx Cafe in Mount Pleasant hosts a popular weekly jazz jam session every Tuesday night, currently led by singer Tibyron Quinn. The neighborhood venue also serves as a key hub for the D.C. Jazz Collective, which holds bimonthly performances as part of a unique musical exchange with the jazz scene in Bangkok.</p>
+           
+        </a>
+      
+    </div>
+  </div>
+  
+  <!-- End News Section -->
+  
+
+  <!-- [NEW] Reviews Section (Server-Side) -->
+  
+  <div id="google-reviews-section" class="reviews-section">
+    
+    
+      
+    
+
+    <!-- [MOVED] Google Rating Display -->
+    
+      <div class="google-rating" style="margin-bottom: 2rem;">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJzb4-RCHIt4kRAicxyUoU3bI" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: block;">
+          <div class="rating-header">
+            <span class="rating-stars" style="--rating: 4.3;">★★★★★</span>
+            <span class="rating-value">4.3</span>
+            <span class="rating-count">(399 reviews)</span>
+            <span class="btn-read-reviews" style="margin-left: auto; margin-top: 0;">View on Google</span>
+          </div>
+        </a>
+      </div>
+    
+    <!-- End Google Rating Display -->
+
+    <h3>Recent Reviews from Google</h3>
+    <div class="reviews-grid">
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJzb4-RCHIt4kRAicxyUoU3bI" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">6 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Really good atmosphere, great server, and I don&#39;t know how or why, but they lit my cheese on fire, and it was awesome. Recommend something off the small plates menu.
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJzb4-RCHIt4kRAicxyUoU3bI" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a month ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★☆☆☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Monday of last week my group got the $19 wine special and made sure to choose a wine that was in that price range. Unfortunately I was overcharged, likely for the full price of the bottle, and I...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJzb4-RCHIt4kRAicxyUoU3bI" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">8 years ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Great food and ambiance. They have a large drink menu. I ordered the burger and my friend ordered the trout. The only reason I am not giving this place 4 stars is because my friend’s trout had so many...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJzb4-RCHIt4kRAicxyUoU3bI" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">3 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Decent food and drinks. Great jazz nights! Would love to see more live music please
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJzb4-RCHIt4kRAicxyUoU3bI" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">8 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★☆☆☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Would not return. The food was ok (chicken gyro, farmer veggie burger, grilled chicken lemon pasta), but service was terrible. Server never brought ordered appetizer and brought wrong entree. She left...
+          </p>
+      </a>
+      
+    </div>
+    <div class="reviews-footer">
+      <small>Reviews provided by Google</small>
+    </div>
+  </div>
+  
+
+  <!-- [NEW] Nearby Bars Section -->
+  
+  
+
+  <a href="/" class="btn-back">← Back to Home</a>
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "Marx Cafe",
+  "image": "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fmarx-cafe-revolutionary-cuisine%2Flogo-1767203562018-377814052_6662695007157166_6671966441670163273_n.jpg?alt=media&token=7b4d1abe-7df2-4f78-9036-28a5980844d0",
+  "address": "3203 Mt Pleasant St NW, Washington, DC 20010, USA",
+  
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.3,
+    "reviewCount": 399
+  },
+  
+  
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": 5,
+      "bestRating": 5
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Alex Flowers"
+    },
+    "reviewBody": "Really good atmosphere, great server, and I don't know how or why, but they lit my cheese on fire, and it was awesome. Recommend something off the small plates menu."
+  },
+  
+  
+  "priceRange": "MODERATE", 
+  
+  
+  "url": "https://bardc.com/venues/marx-cafe-revolutionary-cuisine/"
+}
+</script>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="/" aria-label="Back to Home">
+            <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="footer-logo">
+          </a>
+        </div>
+        
+        <div class="footer-links">
+
+          <div class="social-icons">
+            <a href="https://x.com/bardc_" target="_blank" rel="noopener noreferrer" class="social-icon twitter" aria-label="X (formerly Twitter)"></a>
+            <a href="https://www.facebook.com/bardc" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook"></a>
+          </div>
+          <a href="mailto:info@bardc.com" class="footer-contact">info@bardc.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Bar DC. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+  <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="img01" onclick="event.stopPropagation()">
+  </div>
+  <script>
+    // Global Image Modal Logic
+    window.openImageModal = function(src) {
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("img01");
+        if(modal && modalImg) {
+            modal.style.display = "flex";
+            modalImg.src = src;
+            document.body.style.overflow = "hidden"; 
+        }
+    }
+    
+    window.closeImageModal = function() {
+        var modal = document.getElementById("imageModal");
+        if(modal) {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto"; 
+        }
+    }
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            window.closeImageModal();
+        }
+    });
+  </script>
+  <style>
+    /* Modal Styles (Global) */
+    .image-modal {
+      display: none; 
+      position: fixed; 
+      z-index: 9999; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgba(0,0,0,0.95); 
+      align-items: center;
+      justify-content: center;
+      cursor: zoom-out;
+    }
+    
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 95%;
+      max-height: 95vh;
+      border-radius: 4px;
+      object-fit: contain;
+      cursor: default;
+      animation: zoom 0.3s;
+    }
+    
+    .close-modal {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 50px;
+      font-weight: bold;
+      transition: 0.3s;
+      cursor: pointer;
+      z-index: 10000;
+      line-height: 1;
+    }
+    
+    @keyframes zoom {
+      from {transform:scale(0.8); opacity: 0;}
+      to {transform:scale(1); opacity: 1;}
+    }
+  </style>
+
+</body>
+</html>

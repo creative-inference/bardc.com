@@ -4,6 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ivy and Coney | Bar DC</title>
+
+  
+  
+  
+  
+  
+     
+     
+  
+
+  
+  
+
+  
+  
+
+  <meta name="description" content="Visit Ivy and Coney in Shaw, Washington DC. ✨ Vibe A high-energy, no-frills Midwest dive bar that brings the authentic grit and heart of Chicago and Detroit to the Shaw neighborhood....">
+  <link rel="canonical" href="https://bardc.com/bars/ivy-and-coney/">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Bar DC">
+  <meta property="og:title" content="Ivy and Coney">
+  <meta property="og:description" content="Visit Ivy and Coney in Shaw, Washington DC. ✨ Vibe A high-energy, no-frills Midwest dive bar that brings the authentic grit and heart of Chicago and Detroit to the Shaw neighborhood....">
+  <meta property="og:url" content="https://bardc.com/bars/ivy-and-coney/">
+  <meta property="og:type" content="business.business">
+  
+  
+  
+  
+      
+  
+  <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fivy-and-coney%2Flogo-1766592585162-133682427_3659067224186453_5948253432029933043_n.jpg?alt=media&amp;token=2a7deb28-ed65-480a-b72a-1f77f6d684cf">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ivy and Coney">
+  <meta name="twitter:description" content="Visit Ivy and Coney in Shaw, Washington DC. ✨ Vibe A high-energy, no-frills Midwest dive bar that brings the authentic grit and heart of Chicago and Detroit to the Shaw neighborhood....">
+  <meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fivy-and-coney%2Flogo-1766592585162-133682427_3659067224186453_5948253432029933043_n.jpg?alt=media&amp;token=2a7deb28-ed65-480a-b72a-1f77f6d684cf">
+
     <!-- [NEW] Favicon Links -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -13,7 +52,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/masonry.css">
+
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9L0NBTF5RQ"></script>
 <script>
@@ -23,76 +64,672 @@
 
   gtag('config', 'G-9L0NBTF5RQ');
 </script>
+
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7540411251843957"
+     crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="container">
     <header>
-      <a href="/" class="logo-link">
-        <img src="/img/logo.jpg" alt="Bar DC Logo" class="logo">
-      </a>
-      <h1>Ivy and Coney</h1>
+      <div class="header-branding">
+        <a href="/" class="branding-link">
+          <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
+          <span class="site-title">Washington D.C. Bars & Clubs</span>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <a href="/bars/">Bars</a>
+        <a href="/map/">Map</a>
+        
+
+        <div class="nav-dropdown">
+          <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
+          <div class="dropdown-menu">
+            
+              <a href="/neighborhoods/u-street/">U Street</a>
+            
+              <a href="/neighborhoods/dupont-circle/">Dupont Circle</a>
+            
+              <a href="/neighborhoods/downtown/">Downtown</a>
+            
+              <a href="/neighborhoods/adams-morgan/">Adams Morgan</a>
+            
+              <a href="/neighborhoods/navy-yard/">Navy Yard</a>
+            
+              <a href="/neighborhoods/georgetown/">Georgetown</a>
+            
+              <a href="/neighborhoods/the-wharf/">The Wharf</a>
+            
+              <a href="/neighborhoods/h-street-ne/">H Street NE</a>
+            
+            <div class="dropdown-divider"></div>
+            <a href="/neighborhoods/" class="view-all">View All →</a>
+          </div>
+        </div>
+
+
+        <a href="/events/">Events</a>
+        <a href="/happy-hour/">Happy Hour</a>
+      </nav>
     </header>
     <main>
+      
+        <h1 class="page-title">Ivy and Coney</h1>
+      
       <!-- This line is critical. It injects the content from other files. -->
-      <article class="venue-profile">
+      <!-- Leaflet Map Resources -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<style>
+   /* Custom Pin Styles for Venue Page */
+   .custom-pin-icon { background: transparent; border: none; }
+   .pin-wrapper {
+     width: 40px; height: 40px; border-radius: 50%; border: 3px solid #fff;
+     box-shadow: 0 4px 10px rgba(0,0,0,0.5); background-color: #fff;
+     overflow: hidden; position: relative; transition: transform 0.2s ease, z-index 0.2s;
+   }
+   .pin-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+   .pin-wrapper.no-logo {
+     background-color: var(--primary-color, #e53935);
+     display: flex; align-items: center; justify-content: center;
+   }
+   .pin-wrapper.no-logo::after { content: ''; width: 12px; height: 12px; background: #fff; border-radius: 50%; }
+   .leaflet-container { font-family: inherit; }
+   .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: #1e1e1e; color: #fff; border: 1px solid rgba(255,255,255,0.1); }
+   .leaflet-popup-content a { color: #fff; background: var(--primary-color, #e53935); padding: 2px 8px; border-radius: 4px; text-decoration: none; }
+</style>
 
+<article class="venue-profile">
 
    <h1>Ivy and Coney</h1>
   
   <div class="venue-details">
-    <p><strong>Category:</strong> Dive Bar, Sports Bar</p>
-    <p><strong>Price:</strong> $</p>
-    <p><strong>Address:</strong> 1537 7th St NW, Washington, DC 20001</p>
+    <div style="display:flex; align-items:flex-start; gap:1.5rem; margin-bottom:1rem; flex-wrap:wrap;">
+      
+        <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fivy-and-coney%2Flogo-1766592585162-133682427_3659067224186453_5948253432029933043_n.jpg?alt=media&amp;token=2a7deb28-ed65-480a-b72a-1f77f6d684cf" alt="Ivy and Coney logo" style="max-height:250px; max-width:250px; border-radius:8px; border:1px solid #eee; object-fit:contain; flex-shrink:0;">
+      
+      <div style="flex:1; min-width: 250px;">
+        <div style="display:flex; gap:1.5rem; flex-wrap:wrap; justify-content: space-between;">
+            <div style="flex:1; min-width:200px;">
+                <p><strong>Category:</strong> 
+                  
+                  
+                    <a href="/categories/sports-bars/">Sports Bars</a>, 
+                  
+                    <a href="/categories/dive-bars/">Dive Bars</a>, 
+                  
+                    <a href="/categories/pizza-bars/">Pizza Bars</a>
+                  
+                </p>
+                
+                  <p><strong>Neighborhood:</strong> <a href="/neighborhoods/shaw/">Shaw</a></p>
+                
+                <p><strong>Price:</strong> $</p>
+                
+                
+                
+                
+                
+                
+                <p><strong>Address:</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=Ivy%20and%20Coney%201537%207th%20St%20NW%2C%20Washington%2C%20DC%2020001" target="_blank" rel="noopener noreferrer" style="text-decoration:underline; color:var(--accent-color);">1537 7th St NW, Washington, DC 20001</a></p>
+
+                <div class="venue-actions-bar" style="margin-top:1rem;">
+                  
+                    <a href="https://www.ivyandconey.com/" class="btn-website-action" target="_blank" rel="noopener noreferrer">
+                      <span>Website</span>
+                    </a>
+                  
+                  
+                  
+                  <div class="social-icons-inline">
+                    
+                      <a href="https://www.instagram.com/ivyconey" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
+                    
+                    
+                    
+                  </div>
+                  
+                </div>
+            </div>
+            
+            <!-- Side Map -->
+            
+            <div style="width:220px; flex-shrink:0; margin-top: 0.5rem;">
+               <div id="venue-mini-map" style="width:100%; height:220px; border-radius:12px; border:1px solid rgba(255,255,255,0.1); box-shadow:0 4px 15px rgba(0,0,0,0.3); z-index:0; cursor: pointer;"></div>
+               <script>
+                 document.addEventListener('DOMContentLoaded', function() {
+                    var lat = 38.9106569;
+                    var lng = -77.0216532;
+                    var map = L.map('venue-mini-map', {
+                        center: [lat, lng],
+                        zoom: 16,
+                        zoomControl: false, 
+                        attributionControl: false,
+                        dragging: false,
+                        scrollWheelZoom: false,
+                        doubleClickZoom: false,
+                        boxZoom: false,
+                        keyboard: false
+                    });
+                     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                        subdomains: 'abcd',
+                        maxZoom: 20
+                     }).addTo(map);
+
+                    var iconHTML = `<div class="pin-wrapper"><img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fivy-and-coney%2Flogo-1766592585162-133682427_3659067224186453_5948253432029933043_n.jpg?alt=media&amp;token=2a7deb28-ed65-480a-b72a-1f77f6d684cf" onerror="this.style.display='none'; this.parentElement.classList.add('no-logo');"></div>`;
+                    var icon = L.divIcon({
+                        className: 'custom-pin-icon',
+                        html: iconHTML,
+                        iconSize: [40, 40],
+                        iconAnchor: [20, 20]
+                    });
+                    
+                    L.marker([lat, lng], {icon: icon}).addTo(map);
+                    
+                    // Click to open Google Maps
+                    document.getElementById('venue-mini-map').addEventListener('click', function() {
+                        window.open('https://www.google.com/maps/search/?api=1&amp;query=Ivy%20and%20Coney%201537%207th%20St%20NW%2C%20Washington%2C%20DC%2020001', '_blank');
+                    });
+                 });
+               </script>
+               <div style="text-align:center; margin-top:0.5rem;">
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=Ivy%20and%20Coney%201537%207th%20St%20NW%2C%20Washington%2C%20DC%2020001" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; color:#aaa; text-decoration:none;">View on Google Maps &rarr;</a>
+               </div>
+            </div>
+            
+        </div>
+      </div>
+    </div>
   </div>
 
-    <!-- [NEW] Google Rating Display -->
+    <!-- [MOVED] Google Rating Display (Moved to Reviews Section) -->
   
-    <div class="google-rating">
-      <span class="rating-stars" style="--rating: 4.6;">★★★★★</span>
-      <span class="rating-value">4.6</span>
-      <span class="rating-count">(752 reviews)</span>
-    </div>
+    <!-- Rating moved below -->
   
   <!-- End Google Rating Display -->
 
   <div class="venue-description">
-    <p>Tucked away above a different storefront in Shaw, Ivy and Coney is a no-frills bar that pays homage to Chicago and Detroit. Known for serving hot dogs, cheap beer, and Malört, it&#39;s a cash-only haven for Midwestern sports fans and anyone looking for a laid-back, unpretentious experience.</p>
-  </div>
-  
-  <a href="https://www.ivyandconey.com/" class="btn-website" target="_blank" rel="noopener noreferrer">Visit Website</a>
-  
-    <!-- [NEW] Social Media Links Section -->
-  
-  <div class="social-links">
-    
-      <a href="https://www.instagram.com/ivyconey" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
-    
-    
-    
-  </div>
-  
-  <!-- End Social Media Links Section -->
+    <h3>✨ Vibe</h3>
+<p>A high-energy, no-frills Midwest dive bar that brings the authentic grit and heart of Chicago and Detroit to the Shaw neighborhood.</p>
 
+<h3>🍸 Best For</h3>
+<p>Midwest sports fans, Detroit-style pizza enthusiasts, budget-friendly beer and shot combos, and festive holiday pop-ups.</p>
+
+<h3>🔥 Highlights</h3>
+<ul>
+  <li><strong>Midwest Culinary Classics:</strong> Feast on an authentic menu featuring 10/10 burgers, Chicago-style dogs, and thick Detroit "za" alongside their signature curly fries and zesty cheese sauce.</li>
+  <li><strong>The "Chai-vy & Cohen-y" Pop-Up:</strong> Every December, the bar transforms into a legendary Hanukkah destination featuring a 16-foot "shotnorah," nightly menorah lightings, and traditional family-recipe latkes.</li>
+  <li><strong>The Ultimate Sports Den:</strong> With plenty of TVs and a spirited "outdoorish" deck space, it is the city’s premier spot to catch a Michigan or Detroit game while sipping an Old Style or braving a shot of Malort.</li>
+</ul>
+
+<h3>ℹ️ Need to Know</h3>
+<ul>
+  <li>Find the entrance right above the iconic Old Style sign on 7th Street; if you're visiting in late December, look out for their signature Chinese food and movie night on Christmas Day.</li>
+</ul>
+  </div>
+  
+
+  
+
+
+  <!-- [NEW] Events Section -->
   <!-- [NEW] Events Section -->
 
 <!-- End Events Section -->
+
+<!-- [NEW] Recurring Events Section -->
+
+  <div class="recurring-events-section">
+    <h3>🔄 Weekly Events</h3>
+    <div class="events-grid">
+      
+        
+        <div class="event-item recurring">
+          <h4>Football Season Game Days 🏈</h4>
+          <p class="event-meta">
+            <span class="days-badge">Mon, Thu, Sun</span>
+          </p>
+          
+            <p>Dedicated sports viewing on Thursdays, Sundays, and Mondays during the football season.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>Live Sports Broadcasts 🏟️</h4>
+          <p class="event-meta">
+            <span class="days-badge">Daily</span>
+          </p>
+          
+            <p>Ivy and Coney is your home for watching sports. If it’s sports, they probably show it (no PPV events available). During football season, gamedays are prioritized on Thursdays, Sundays, and Mondays.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>Live Sports Screenings 🏟️</h4>
+          <p class="event-meta">
+            <span class="days-badge">Daily</span>
+          </p>
+          
+            <p>Ivy and Coney is your home for sports. If it’s sports, they probably show it (excluding PPV events).</p>
+          
+        </div>
+        
+      
+    </div>
+  </div>
+
+<!-- End Recurring Events Section -->
 
     <!-- [NEW] Full Happy Hour Details Section -->
   
     <div class="happy-hour-info">
       <h3>Happy Hour</h3>
       <p>Happy hour is daily from 5:00 PM to closing time, with closing times varying by day (Monday-Wednesday: 12:00 AM, Thursday: 2:00 AM, Friday: 3:00 AM, Saturday: 3:00 AM, Sunday: 12:00 AM).  Specific drink or food specials are not listed on the provided text.</p>
-      <small>Last analyzed: Sun Jul 27 2025 20:13:01 GMT-0400 (Eastern Daylight Time)</small>
     </div>
   
   <!-- End Happy Hour Details Section -->
+
+  <!-- [NEW] News Section -->
   
+  <div class="news-section" style="margin-top:2rem; margin-bottom:2rem;">
+    <h3>📰 In the News</h3>
+    <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
+      
+        <a href="https://wtop.com/dc/2025/12/festival-of-lights-shine-bright-inside-hanukkah-pop-up-bar-in-dcs-shaw-neighborhood" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=wtop.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>WTOP</span>
+              <span style="margin-left:auto; text-transform:none;">Dec 17, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">This Hanukkah bar has patrons getting lit by the ‘shotnorah’</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Ivy and Coney in D.C.&#39;s Shaw neighborhood transforms annually into a Hanukkah pop-up bar featuring a 16-foot-wide &#39;shotnorah&#39; used to raise funds for local charities like Bread for the City. The festive celebration includes traditional family latke recipes and provides a dedicated space for the community to gather, spin dreidels, and celebrate the Festival of Lights.</p>
+           
+        </a>
+      
+        <a href="https://popville.com/2025/12/missed-connection-ivy-and-coney-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=popville.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>PoPville</span>
+              <span style="margin-left:auto; text-transform:none;">Dec 16, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Missed Connection – Ivy and Coney</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Ivy and Coney was the site of a social encounter on December 15, 2025, involving patrons who bonded over a loud musical selection by the Miami Boys Choir. The venue is located at 1537 7th Street, NW in Washington, D.C.</p>
+           
+        </a>
+      
+        <a href="https://washingtonian.com/2025/12/03/how-ivy-and-coneys-hanukkah-pop-up-bar-was-born" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Washingtonian</span>
+              <span style="margin-left:auto; text-transform:none;">Dec 3, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Ivy and Coney’s Hanukkah Bar Started as a Joke. Now It’s a tradition.</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Ivy and Coney hosts its annual &quot;Chai-vy and Cohen-y&quot; Hanukkah pop-up, featuring a 16-foot &quot;shotnorah&quot; and traditional family-recipe latkes in D.C.&#39;s Shaw neighborhood. The festive celebration spans the month of December and includes a signature Christmas Day event with Chinese food and classic holiday films.</p>
+           
+        </a>
+      
+        <a href="https://northernvirginiamag.com/things-to-do/2025/12/01/8-ways-to-celebrate-hanukkah-in-nova-and-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=northernvirginiamag.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Northern Virginia Magazine</span>
+              <span style="margin-left:auto; text-transform:none;">Dec 1, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">8 Ways to Celebrate Hanukkah in NoVA and DC</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Ivy and Coney hosts a Hanukkah-themed pop-up bar through December 31, featuring festive blue and white decor and nightly menorah lightings. The neighborhood bar offers affordable holiday snacks and hosted a special Chinese food and movie night on December 25.</p>
+           
+        </a>
+      
+        <a href="https://popville.com/2025/11/ivy-and-coney-hanukkah" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=popville.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>PoPville</span>
+              <span style="margin-left:auto; text-transform:none;">Nov 28, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Ivy and Coney’s Annual Hanukkah Bar Pop-Up, “Chai-vy &amp; Cohen-y”, Returns Monday!!</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Ivy and Coney hosts its annual Hanukkah-themed pop-up, “Chai-vy &amp; Cohen-y,” throughout December at its 7th Street NW location. The festive transformation features traditional snacks like latkes and jelly donut shots, nightly Hanukiyah lightings, and a signature “Shotnorah” shotski, with proceeds from kosher wine sales supporting Bread for the City.</p>
+           
+        </a>
+      
+    </div>
+  </div>
+  
+  <!-- End News Section -->
+  
+
+  <!-- [NEW] Reviews Section (Server-Side) -->
+  
+  <div id="google-reviews-section" class="reviews-section">
+    
+    
+      
+    
+
+    <!-- [MOVED] Google Rating Display -->
+    
+      <div class="google-rating" style="margin-bottom: 2rem;">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJQZxM4vG3t4kRRd7V3ReX6ek" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: block;">
+          <div class="rating-header">
+            <span class="rating-stars" style="--rating: 4.6;">★★★★★</span>
+            <span class="rating-value">4.6</span>
+            <span class="rating-count">(774 reviews)</span>
+            <span class="btn-read-reviews" style="margin-left: auto; margin-top: 0;">View on Google</span>
+          </div>
+        </a>
+      </div>
+    
+    <!-- End Google Rating Display -->
+
+    <h3>Recent Reviews from Google</h3>
+    <div class="reviews-grid">
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJQZxM4vG3t4kRRd7V3ReX6ek" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjVF0K2SNI51SI96-jPLePHcOQ3rF5PxfADEg9wHV8XH82JWkVY4=s128-c0x00000000-cc-rp-mo-ba4" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">2 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Place was packed for the baseball playoffs but we found a place to wait for takeout. The burger was 10/10 awesome! I wish I would have e ordered another one just for myself. The hotdog was good and...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJQZxM4vG3t4kRRd7V3ReX6ek" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjUb-2cfcnwMwCEjnk2jwoYGDPSF_QDjTDylQsGjGLReIh8cpqf7=s128-c0x00000000-cc-rp-mo-ba3" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">5 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Great Shaw dive bar. Some of the best Chicago style dogs, cheeseburgers, and curly fries in the city! Get in above the Old Style sign on 7th. Good place to watch sports and hang out low key.
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJQZxM4vG3t4kRRd7V3ReX6ek" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXXdYfqs2uv3mSpZwMUBTzCe7olkidl4QHqsVsuzR7TQAHLKAd7=s128-c0x00000000-cc-rp-mo-ba5" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">3 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Good dive bar. It’s Detroit themed and even though I’m an eagles fan and from Pennsylvania I can still respect the theme. I always just kind of find myself at this bar when I’m not sure where else to...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJQZxM4vG3t4kRRd7V3ReX6ek" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjU-XXfRgNChs5TUJt6hlBX53VE3ouiY_4BHlXvYavnZwvbtdTer=s128-c0x00000000-cc-rp-mo-ba3" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a month ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            I&#39;m not even a Michigan fan, but best place to catch a game and some &#39;za
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJQZxM4vG3t4kRRd7V3ReX6ek" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjUdwBpbjeRtZOe8FF3BghnWyXedQGLfDojnyQzItnUTbQ6oMAg=s128-c0x00000000-cc-rp-mo-ba4" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">2 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Great food and drinks, good vibes, and plenty of Midwest sports all at a modest price
+Chicago dog, Italian beef, Detroit Pizza, malort, old style &quot;ish&quot; they have it all
+A must-go dive in the...
+          </p>
+      </a>
+      
+    </div>
+    <div class="reviews-footer">
+      <small>Reviews provided by Google</small>
+    </div>
+  </div>
+  
+
+  <!-- [NEW] Nearby Bars Section -->
+  
+  
+  <div class="nearby-section" style="margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+    <h3 style="margin-bottom: 1.5rem;">📍 Nearby Spots (Walking Distance)</h3>
+    <div class="venue-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
+      
+        <a href="/bars/ugly-duckling/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fugly-duckling%2Flogo-1767144074240-489345792_548442695030372_3042866949239533809_n.jpg?alt=media&amp;token=58769236-9b73-49a7-a124-bdc9b6b0ce15" alt="Ugly Duckling" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Ugly Duckling</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">53m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/dacha-beer-garden/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fdacha-beer-garden%2Flogo-1766361421325-337075319_1056142915775260_7642907913467462917_n.jpg?alt=media&amp;token=8f14f9d9-723f-4702-89e4-8ed52b19ce7b" alt="Dacha Beer Garden" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Dacha Beer Garden</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">86m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/jake-s-tavern/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fjake-s-tavern%2Flogo-1766592935463-505166684_18314521471239750_4895599639100687557_n.jpg?alt=media&amp;token=1ca9f39d-a74a-4398-942c-60e288f7b34b" alt="Jake&#39;s Tavern" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Jake&#39;s Tavern</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">97m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/addis-glo-lounge-dc/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; background: #333; display: flex; align-items: center; justify-content: center;">
+                <span style="font-size: 2rem;">🍸</span>
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Addis Glo Lounge DC</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">105m away</p>
+          </div>
+        </a>
+      
+    </div>
+  </div>
+  
+
   <a href="/" class="btn-back">← Back to Home</a>
 </article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "Ivy and Coney",
+  "image": "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fivy-and-coney%2Flogo-1766592585162-133682427_3659067224186453_5948253432029933043_n.jpg?alt=media&token=2a7deb28-ed65-480a-b72a-1f77f6d684cf",
+  "address": "1537 7th St NW, Washington, DC 20001",
+  
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.6,
+    "reviewCount": 774
+  },
+  
+  
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": 5,
+      "bestRating": 5
+    },
+    "author": {
+      "@type": "Person",
+      "name": "RYAN FROST"
+    },
+    "reviewBody": "Place was packed for the baseball playoffs but we found a place to wait for takeout. The burger was 10/10 awesome! I wish I would have e ordered another one just for myself. The hotdog was good and the curly fries with cheese sauce was on point. Awesome atmosphere and great food. I want to try the pizza next time."
+  },
+  
+  
+  "priceRange": "$", 
+  
+  
+  "telephone": "(202) 670-9489",
+  
+  "url": "https://bardc.com/venues/ivy-and-coney/"
+}
+</script>
     </main>
-    <footer>
-      <p>© 2025 Bar DC. A guide to Washington D.C. Nightlife.</p>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="/" aria-label="Back to Home">
+            <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="footer-logo">
+          </a>
+        </div>
+        
+        <div class="footer-links">
+
+          <div class="social-icons">
+            <a href="https://x.com/bardc_" target="_blank" rel="noopener noreferrer" class="social-icon twitter" aria-label="X (formerly Twitter)"></a>
+            <a href="https://www.facebook.com/bardc" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook"></a>
+          </div>
+          <a href="mailto:info@bardc.com" class="footer-contact">info@bardc.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Bar DC. All rights reserved.</p>
+      </div>
     </footer>
   </div>
+  <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="img01" onclick="event.stopPropagation()">
+  </div>
+  <script>
+    // Global Image Modal Logic
+    window.openImageModal = function(src) {
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("img01");
+        if(modal && modalImg) {
+            modal.style.display = "flex";
+            modalImg.src = src;
+            document.body.style.overflow = "hidden"; 
+        }
+    }
+    
+    window.closeImageModal = function() {
+        var modal = document.getElementById("imageModal");
+        if(modal) {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto"; 
+        }
+    }
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            window.closeImageModal();
+        }
+    });
+  </script>
+  <style>
+    /* Modal Styles (Global) */
+    .image-modal {
+      display: none; 
+      position: fixed; 
+      z-index: 9999; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgba(0,0,0,0.95); 
+      align-items: center;
+      justify-content: center;
+      cursor: zoom-out;
+    }
+    
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 95%;
+      max-height: 95vh;
+      border-radius: 4px;
+      object-fit: contain;
+      cursor: default;
+      animation: zoom 0.3s;
+    }
+    
+    .close-modal {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 50px;
+      font-weight: bold;
+      transition: 0.3s;
+      cursor: pointer;
+      z-index: 10000;
+      line-height: 1;
+    }
+    
+    @keyframes zoom {
+      from {transform:scale(0.8); opacity: 0;}
+      to {transform:scale(1); opacity: 1;}
+    }
+  </style>
+
 </body>
 </html>

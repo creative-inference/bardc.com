@@ -4,6 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nanny O&#39;Brien&#39;s | Bar DC</title>
+
+  
+  
+  
+  
+  
+     
+     
+  
+
+  
+  
+
+  
+  
+
+  <meta name="description" content="Visit Nanny O&#39;Brien&#39;s in Cleveland Park, Washington DC. ✨ Vibe Nanny O’Brien’s is the quintessential neighborhood Irish pub that serves as the warm, unpretentious heartbeat of Cleveland Park,...">
+  <link rel="canonical" href="https://bardc.com/bars/nanny-obriens/">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Bar DC">
+  <meta property="og:title" content="Nanny O&#39;Brien&#39;s">
+  <meta property="og:description" content="Visit Nanny O&#39;Brien&#39;s in Cleveland Park, Washington DC. ✨ Vibe Nanny O’Brien’s is the quintessential neighborhood Irish pub that serves as the warm, unpretentious heartbeat of Cleveland Park,...">
+  <meta property="og:url" content="https://bardc.com/bars/nanny-obriens/">
+  <meta property="og:type" content="business.business">
+  
+  
+  
+  
+      
+  
+  <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fnanny-obriens%2Flogo-1767020863370-480839785_1458253505136585_1412352054942179943_n.jpg?alt=media&amp;token=50c409e4-b70d-4ed3-b65b-87232cdabc8b">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nanny O&#39;Brien&#39;s">
+  <meta name="twitter:description" content="Visit Nanny O&#39;Brien&#39;s in Cleveland Park, Washington DC. ✨ Vibe Nanny O’Brien’s is the quintessential neighborhood Irish pub that serves as the warm, unpretentious heartbeat of Cleveland Park,...">
+  <meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fnanny-obriens%2Flogo-1767020863370-480839785_1458253505136585_1412352054942179943_n.jpg?alt=media&amp;token=50c409e4-b70d-4ed3-b65b-87232cdabc8b">
+
     <!-- [NEW] Favicon Links -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -13,7 +52,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/masonry.css">
+
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9L0NBTF5RQ"></script>
 <script>
@@ -23,104 +64,677 @@
 
   gtag('config', 'G-9L0NBTF5RQ');
 </script>
+
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7540411251843957"
+     crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="container">
     <header>
-      <a href="/" class="logo-link">
-        <img src="/img/logo.jpg" alt="Bar DC Logo" class="logo">
-      </a>
-      <h1>Nanny O&#39;Brien&#39;s</h1>
+      <div class="header-branding">
+        <a href="/" class="branding-link">
+          <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
+          <span class="site-title">Washington D.C. Bars & Clubs</span>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <a href="/bars/">Bars</a>
+        <a href="/map/">Map</a>
+        
+
+        <div class="nav-dropdown">
+          <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
+          <div class="dropdown-menu">
+            
+              <a href="/neighborhoods/u-street/">U Street</a>
+            
+              <a href="/neighborhoods/dupont-circle/">Dupont Circle</a>
+            
+              <a href="/neighborhoods/downtown/">Downtown</a>
+            
+              <a href="/neighborhoods/adams-morgan/">Adams Morgan</a>
+            
+              <a href="/neighborhoods/navy-yard/">Navy Yard</a>
+            
+              <a href="/neighborhoods/georgetown/">Georgetown</a>
+            
+              <a href="/neighborhoods/the-wharf/">The Wharf</a>
+            
+              <a href="/neighborhoods/h-street-ne/">H Street NE</a>
+            
+            <div class="dropdown-divider"></div>
+            <a href="/neighborhoods/" class="view-all">View All →</a>
+          </div>
+        </div>
+
+
+        <a href="/events/">Events</a>
+        <a href="/happy-hour/">Happy Hour</a>
+      </nav>
     </header>
     <main>
+      
+        <h1 class="page-title">Nanny O&#39;Brien&#39;s</h1>
+      
       <!-- This line is critical. It injects the content from other files. -->
-      <article class="venue-profile">
+      <!-- Leaflet Map Resources -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<style>
+   /* Custom Pin Styles for Venue Page */
+   .custom-pin-icon { background: transparent; border: none; }
+   .pin-wrapper {
+     width: 40px; height: 40px; border-radius: 50%; border: 3px solid #fff;
+     box-shadow: 0 4px 10px rgba(0,0,0,0.5); background-color: #fff;
+     overflow: hidden; position: relative; transition: transform 0.2s ease, z-index 0.2s;
+   }
+   .pin-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+   .pin-wrapper.no-logo {
+     background-color: var(--primary-color, #e53935);
+     display: flex; align-items: center; justify-content: center;
+   }
+   .pin-wrapper.no-logo::after { content: ''; width: 12px; height: 12px; background: #fff; border-radius: 50%; }
+   .leaflet-container { font-family: inherit; }
+   .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: #1e1e1e; color: #fff; border: 1px solid rgba(255,255,255,0.1); }
+   .leaflet-popup-content a { color: #fff; background: var(--primary-color, #e53935); padding: 2px 8px; border-radius: 4px; text-decoration: none; }
+</style>
 
+<article class="venue-profile">
 
    <h1>Nanny O'Brien's</h1>
   
   <div class="venue-details">
-    <p><strong>Category:</strong> Irish Pub</p>
-    <p><strong>Price:</strong> $$</p>
-    <p><strong>Address:</strong> 3319 Connecticut Ave NW, Washington, DC 20008</p>
+    <div style="display:flex; align-items:flex-start; gap:1.5rem; margin-bottom:1rem; flex-wrap:wrap;">
+      
+        <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fnanny-obriens%2Flogo-1767020863370-480839785_1458253505136585_1412352054942179943_n.jpg?alt=media&amp;token=50c409e4-b70d-4ed3-b65b-87232cdabc8b" alt="Nanny O&#39;Brien&#39;s logo" style="max-height:250px; max-width:250px; border-radius:8px; border:1px solid #eee; object-fit:contain; flex-shrink:0;">
+      
+      <div style="flex:1; min-width: 250px;">
+        <div style="display:flex; gap:1.5rem; flex-wrap:wrap; justify-content: space-between;">
+            <div style="flex:1; min-width:200px;">
+                <p><strong>Category:</strong> 
+                  
+                  
+                    <a href="/categories/irish-pubs/">Irish Pubs</a>, 
+                  
+                    <a href="/categories/neighborhood-bars/">Neighborhood Bars</a>, 
+                  
+                    <a href="/categories/sports-bars/">Sports Bars</a>
+                  
+                </p>
+                
+                  <p><strong>Neighborhood:</strong> <a href="/neighborhoods/cleveland-park/">Cleveland Park</a></p>
+                
+                <p><strong>Price:</strong> $$</p>
+                
+                
+                
+                
+                
+                
+                <p><strong>Address:</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=Nanny%20O&#39;Brien&#39;s%203319%20Connecticut%20Ave%20NW%2C%20Washington%2C%20DC%2020008" target="_blank" rel="noopener noreferrer" style="text-decoration:underline; color:var(--accent-color);">3319 Connecticut Ave NW, Washington, DC 20008</a></p>
+
+                <div class="venue-actions-bar" style="margin-top:1rem;">
+                  
+                    <a href="https://www.nannyobriens.com/" class="btn-website-action" target="_blank" rel="noopener noreferrer">
+                      <span>Website</span>
+                    </a>
+                  
+                  
+                  
+                  <div class="social-icons-inline">
+                    
+                      <a href="https://www.instagram.com/nannyobriensdc/" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
+                    
+                    
+                      <a href="https://www.facebook.com/nannyobriens" target="_blank" rel="noopener noreferrer" class="social-icon facebook" title="Facebook"></a>
+                    
+                    
+                      <a href="https://twitter.com/NannyOBriens" target="_blank" rel="noopener noreferrer" class="social-icon twitter" title="Twitter/X"></a>
+                    
+                  </div>
+                  
+                </div>
+            </div>
+            
+            <!-- Side Map -->
+            
+            <div style="width:220px; flex-shrink:0; margin-top: 0.5rem;">
+               <div id="venue-mini-map" style="width:100%; height:220px; border-radius:12px; border:1px solid rgba(255,255,255,0.1); box-shadow:0 4px 15px rgba(0,0,0,0.3); z-index:0; cursor: pointer;"></div>
+               <script>
+                 document.addEventListener('DOMContentLoaded', function() {
+                    var lat = 38.93409219999999;
+                    var lng = -77.05729509999999;
+                    var map = L.map('venue-mini-map', {
+                        center: [lat, lng],
+                        zoom: 16,
+                        zoomControl: false, 
+                        attributionControl: false,
+                        dragging: false,
+                        scrollWheelZoom: false,
+                        doubleClickZoom: false,
+                        boxZoom: false,
+                        keyboard: false
+                    });
+                     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                        subdomains: 'abcd',
+                        maxZoom: 20
+                     }).addTo(map);
+
+                    var iconHTML = `<div class="pin-wrapper"><img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fnanny-obriens%2Flogo-1767020863370-480839785_1458253505136585_1412352054942179943_n.jpg?alt=media&amp;token=50c409e4-b70d-4ed3-b65b-87232cdabc8b" onerror="this.style.display='none'; this.parentElement.classList.add('no-logo');"></div>`;
+                    var icon = L.divIcon({
+                        className: 'custom-pin-icon',
+                        html: iconHTML,
+                        iconSize: [40, 40],
+                        iconAnchor: [20, 20]
+                    });
+                    
+                    L.marker([lat, lng], {icon: icon}).addTo(map);
+                    
+                    // Click to open Google Maps
+                    document.getElementById('venue-mini-map').addEventListener('click', function() {
+                        window.open('https://www.google.com/maps/search/?api=1&amp;query=Nanny%20O&#39;Brien&#39;s%203319%20Connecticut%20Ave%20NW%2C%20Washington%2C%20DC%2020008', '_blank');
+                    });
+                 });
+               </script>
+               <div style="text-align:center; margin-top:0.5rem;">
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=Nanny%20O&#39;Brien&#39;s%203319%20Connecticut%20Ave%20NW%2C%20Washington%2C%20DC%2020008" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; color:#aaa; text-decoration:none;">View on Google Maps &rarr;</a>
+               </div>
+            </div>
+            
+        </div>
+      </div>
+    </div>
   </div>
 
-    <!-- [NEW] Google Rating Display -->
+    <!-- [MOVED] Google Rating Display (Moved to Reviews Section) -->
   
-    <div class="google-rating">
-      <span class="rating-stars" style="--rating: 4.5;">★★★★★</span>
-      <span class="rating-value">4.5</span>
-      <span class="rating-count">(511 reviews)</span>
-    </div>
+    <!-- Rating moved below -->
   
   <!-- End Google Rating Display -->
 
   <div class="venue-description">
-    <p>A quintessential, family-owned Irish pub in Cleveland Park, Nanny O&#39;Brien&#39;s offers a cozy and authentic atmosphere. It&#39;s known for its perfect pint of Guinness, traditional Irish music sessions, and a friendly, neighborhood vibe that makes it a local favorite.</p>
+    <h3>✨ Vibe</h3>
+<p>Nanny O’Brien’s is the quintessential neighborhood Irish pub that serves as the warm, unpretentious heartbeat of Cleveland Park, blending cozy "watering hole" energy with authentic cultural heritage.</p>
+
+<h3>🍸 Best For</h3>
+<p>Watching NFL & NY Giants games, Wing Wednesday, competitive trivia nights, live traditional music, and relaxed neighborhood socializing.</p>
+
+<h3>🔥 Highlights</h3>
+<ul>
+    <li><strong>Standout Pub Fare:</strong> Renowned for serving some of the best wings in the city—particularly their meaty BBQ wings—alongside a storied "Wing Wednesday" tradition that has made the venue a local landmark.</li>
+    <li><strong>Top-Tier Entertainment:</strong> Recognized as one of DC’s premier spots for trivia enthusiasts with weekly sessions hosted by Trivia Kings, plus a vibrant schedule of live music every Saturday.</li>
+    <li><strong>Ultimate Sports Hub:</strong> A dedicated destination for sports fans featuring Direct TV for all NFL needs, serving as a primary home for NY Giants supporters and a lively gathering spot for Big Ten alumni.</li>
+</ul>
+
+<h3>ℹ️ Need to Know</h3>
+<ul>
+    <li>Take advantage of the Daily Happy Hour offering $1 off draft beers, wines, and rail liquors in a location just one block south of the Cleveland Park metro.</li>
+    <li>The pub maintains a welcoming, casual atmosphere with late-night hours, staying open until 2 AM or 3 AM every night of the week.</li>
+</ul>
   </div>
   
-  <a href="https://www.nannyobriens.com/" class="btn-website" target="_blank" rel="noopener noreferrer">Visit Website</a>
+
   
-    <!-- [NEW] Social Media Links Section -->
-  
-  <div class="social-links">
-    
-    
-      <a href="https://www.facebook.com/nannyobriens" target="_blank" rel="noopener noreferrer" class="social-icon facebook" title="Facebook"></a>
-    
-    
-      <a href="https://twitter.com/NannyOBriens" target="_blank" rel="noopener noreferrer" class="social-icon twitter" title="Twitter/X"></a>
-    
-  </div>
-  
-  <!-- End Social Media Links Section -->
+
 
   <!-- [NEW] Events Section -->
-
-  <div class="events-section">
-    <h3>📅 Upcoming Events & Specials</h3>
-    
-      <div class="event-item">
-        <h4>🍹 Daily Happy Hour</h4>
-        <p>Enjoy $1 off draft beers, wines, and rail liquors every day.</p>
-      </div>
-    
-      <div class="event-item">
-        <h4>퀴즈 Pub Trivia Night</h4>
-        <p>Test your knowledge every Tuesday starting at 7:30 PM.</p>
-      </div>
-    
-      <div class="event-item">
-        <h4>🏈 Giants Football Watch Party</h4>
-        <p>Watch your favorite Giants NFL team play every Saturday.</p>
-      </div>
-    
-      <div class="event-item">
-        <h4>🎤 Live Music</h4>
-        <p>Enjoy live musical performances at Nanny&#39;s.</p>
-      </div>
-    
-    <small>Last analyzed: Fri Nov 14 2025 13:14:36 GMT-0500 (Eastern Standard Time)</small>
-  </div>
+  <!-- [NEW] Events Section -->
 
 <!-- End Events Section -->
+
+<!-- [NEW] Recurring Events Section -->
+
+  <div class="recurring-events-section">
+    <h3>🔄 Weekly Events</h3>
+    <div class="events-grid">
+      
+        
+        <div class="event-item recurring">
+          <h4>🎸 Live Music</h4>
+          <p class="event-meta">
+            <span class="days-badge">Sat</span>
+          </p>
+          
+            <p>Enjoy live music performances every Saturday night.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>🏈 NFL Game Watch</h4>
+          <p class="event-meta">
+            <span class="days-badge">Mon, Thu, Sun</span>
+          </p>
+          
+            <p>Watch your favorite NFL teams, including the Giants, with Direct TV.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>📝 Pub Trivia</h4>
+          <p class="event-meta">
+            <span class="days-badge">Tue</span>
+          </p>
+          
+            <p>Join us for weekly Pub Trivia at Nanny&#39;s.</p>
+          
+        </div>
+        
+      
+    </div>
+  </div>
+
+<!-- End Recurring Events Section -->
 
     <!-- [NEW] Full Happy Hour Details Section -->
   
     <div class="happy-hour-info">
       <h3>Happy Hour</h3>
-      <p>Daily Happy Hour: $1 off draft beers, wines, and rail liquors.</p>
-      <small>Last analyzed: Sun Jul 27 2025 20:13:14 GMT-0400 (Eastern Daylight Time)</small>
+      <p>$1 off draft beers, wines, and rail liquors.</p>
     </div>
   
   <!-- End Happy Hour Details Section -->
+
+  <!-- [NEW] News Section -->
   
+  <div class="news-section" style="margin-top:2rem; margin-bottom:2rem;">
+    <h3>📰 In the News</h3>
+    <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
+      
+        <a href="https://popville.com/2025/12/missed-connection-nanny-obriens-in-cleveland-park" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=popville.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>PoPville</span>
+              <span style="margin-left:auto; text-transform:none;">Dec 9, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Missed Connection – Nanny O’Briens in Cleveland Park</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Nanny O’Brien’s in Cleveland Park recently served as the setting for a social connection between patrons bonding over a Big Ten championship football game. The neighborhood Irish pub remains a popular local destination for sports fans and Midwest college alumni to gather.</p>
+           
+        </a>
+      
+        <a href="https://defector.com/cherish-every-wing-wednesday" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=defector.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Defector</span>
+              <span style="margin-left:auto; text-transform:none;">Jul 19, 2024</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Cherish Every Wing Wednesday</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Nanny O&#39;Brien&#39;s is a quintessential Washington D.C. Irish pub recognized for its local character, sports-friendly environment, and deep community roots. Historically famous for its &#39;Wing Wednesday&#39; specials and its role as a lucky viewing spot for Washington Nationals fans during their 2019 World Series run, the venue remains a landmark for neighborhood hospitality.</p>
+           
+        </a>
+      
+        <a href="https://fox5dc.com/news/its-a-disaster-dc-businesses-frustrated-over-connecticut-avenue-construction" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=fox5dc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>FOX 5 DC</span>
+              <span style="margin-left:auto; text-transform:none;">Apr 12, 2023</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">&#39;It&#39;s a disaster&#39;: DC businesses frustrated over Connecticut Avenue construction</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Nanny O&#39;Brien&#39;s Pub general manager Patrick Tedrow launched a petition to advocate for a pedestrian-only space in front of the venue during the Connecticut Avenue streetscape redesign. The pub expressed concerns over the impact of construction on local business and prioritized creating a safer, more accessible environment for patrons.</p>
+           
+        </a>
+      
+        <a href="https://dcist.com/story/23/01/23/best-dc-trivia-nights-bars-restaurants-md-va" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=dcist.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>DCist</span>
+              <span style="margin-left:auto; text-transform:none;">Jan 23, 2023</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Best Trivia Bars Around DC, According To Readers</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Nanny O’Brien’s in Cleveland Park features a weekly Tuesday night trivia session hosted by Trivia Kings. This Irish pub is recognized as one of the premier spots in Washington, D.C. for enthusiasts of competitive and academic-style bar trivia.</p>
+           
+        </a>
+      
+        <a href="https://georgetowner.com/articles/2011/07/26/st-patricks-day-washington-then-now" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=georgetowner.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The Georgetowner</span>
+              <span style="margin-left:auto; text-transform:none;">Feb 8, 2018</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">St. Patrick’s Day in Washington, Then &amp; Now</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Nanny O&#39;Brien&#39;s is highlighted as one of Washington D.C.’s most authentic Irish pubs, celebrated for its traditional atmosphere and history of hosting premier musicians like fiddle player Brendan Mulvihill. Located on Connecticut Avenue, the venue is recognized as a staple of the city&#39;s Irish cultural and musical heritage.</p>
+           
+        </a>
+      
+    </div>
+  </div>
+  
+  <!-- End News Section -->
+  
+
+  <!-- [NEW] Reviews Section (Server-Side) -->
+  
+  <div id="google-reviews-section" class="reviews-section">
+    
+    
+      
+    
+
+    <!-- [MOVED] Google Rating Display -->
+    
+      <div class="google-rating" style="margin-bottom: 2rem;">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJ86aPptTJt4kRRjJYP4T_WGw" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: block;">
+          <div class="rating-header">
+            <span class="rating-stars" style="--rating: 4.5;">★★★★★</span>
+            <span class="rating-value">4.5</span>
+            <span class="rating-count">(528 reviews)</span>
+            <span class="btn-read-reviews" style="margin-left: auto; margin-top: 0;">View on Google</span>
+          </div>
+        </a>
+      </div>
+    
+    <!-- End Google Rating Display -->
+
+    <h3>Recent Reviews from Google</h3>
+    <div class="reviews-grid">
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJ86aPptTJt4kRRjJYP4T_WGw" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjW5O-I3TFeFEM2f_x0vqhRYkCzF0m10HAHuCaOsvp5ISmHhVjgtqg=s128-c0x00000000-cc-rp-mo-ba7" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">2 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Great neighborhood bar - serving pub-style food and a large selection of beers on tap. Friendly &amp; fair prices.
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJ86aPptTJt4kRRjJYP4T_WGw" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXN8aYQCfxr9uzNXy5VpbSrkoDYhNW0-6liQvOdzry7QRhFUDh2=s128-c0x00000000-cc-rp-mo-ba3" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a month ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            The Kind of Bar You Accidentally Stay At for Three Rounds
+
+You know that moment after work when you tell yourself you will just grab one drink? That is exactly how I ended up spending an entire Friday...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJ86aPptTJt4kRRjJYP4T_WGw" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjVXog8lWVLHi7mg-rHPhz5TNERAO1VZzCPIg4tHQvDp6NBw-V_Pqw=s128-c0x00000000-cc-rp-mo-ba2" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">11 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            The barbecue wings are incredible! They were meaty  and cooked to perfection; we really enjoyed them. The  quesadillas were awesome too. The service was a little slow, but overall the atmosphere is...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJ86aPptTJt4kRRjJYP4T_WGw" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocKrw0l6YyEsy8CCZUW19j5lvInA75--JUd1mMhwnPQ0tm32kQ=s128-c0x00000000-cc-rp-mo-ba2" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a month ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Friendly staff, cozy atmosphere, and food is a solid notch above usual pub fare.  The wings are especially good!  Also, a great place to watch NY Giants games during football season.
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJ86aPptTJt4kRRjJYP4T_WGw" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocL_TrHZDV_ym_IvJznWdJKDsXjCh8-pWNA6QGep8KHTsoDxWA=s128-c0x00000000-cc-rp-mo" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a week ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            The Friday night bartender that looks like Nic Cage is a beast. Handled a full restaurant by himself with aplomb. A consummate professional. Five hundred stars.
+          </p>
+      </a>
+      
+    </div>
+    <div class="reviews-footer">
+      <small>Reviews provided by Google</small>
+    </div>
+  </div>
+  
+
+  <!-- [NEW] Nearby Bars Section -->
+  
+  
+  <div class="nearby-section" style="margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+    <h3 style="margin-bottom: 1.5rem;">📍 Nearby Spots (Walking Distance)</h3>
+    <div class="venue-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
+      
+        <a href="/bars/little-blackbird/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Flittle-blackbird%2Flogo-1766858670481-374360015_821648662675286_761817777791178585_n.jpg?alt=media&amp;token=9da4b726-72bd-41d7-a30d-77c3870ca6b3" alt="Little Blackbird" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Little Blackbird</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">29m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/atomic-billiards/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fatomic-billiards%2Flogo-1766104575461-330429436_943503850372916_1075154620134839780_n.jpg?alt=media&amp;token=70eeca64-a73b-455c-98b8-35bf702d0b16" alt="Atomic Billiards" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Atomic Billiards</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">140m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/dukes-counter/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fdukes-counter%2Flogo-1766401853750-474798742_1449093866052800_8633645794496820726_n.jpg?alt=media&amp;token=76a79bf5-ff1b-423c-9d43-564cf1fcba8e" alt="Duke&#39;s Counter" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Duke&#39;s Counter</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">471m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/marquee-bar-and-lounge/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; background: #333; display: flex; align-items: center; justify-content: center;">
+                <span style="font-size: 2rem;">🍸</span>
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Marquee Bar and Lounge</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">1272m away</p>
+          </div>
+        </a>
+      
+    </div>
+  </div>
+  
+
   <a href="/" class="btn-back">← Back to Home</a>
 </article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "Nanny O'Brien's",
+  "image": "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fnanny-obriens%2Flogo-1767020863370-480839785_1458253505136585_1412352054942179943_n.jpg?alt=media&token=50c409e4-b70d-4ed3-b65b-87232cdabc8b",
+  "address": "3319 Connecticut Ave NW, Washington, DC 20008",
+  
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.5,
+    "reviewCount": 528
+  },
+  
+  
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": 5,
+      "bestRating": 5
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Stephen G"
+    },
+    "reviewBody": "Great neighborhood bar - serving pub-style food and a large selection of beers on tap. Friendly & fair prices."
+  },
+  
+  
+  "priceRange": "$$", 
+  
+  
+  "telephone": "(202) 686-9189",
+  
+  "url": "https://bardc.com/venues/nanny-obriens/"
+}
+</script>
     </main>
-    <footer>
-      <p>© 2025 Bar DC. A guide to Washington D.C. Nightlife.</p>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="/" aria-label="Back to Home">
+            <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="footer-logo">
+          </a>
+        </div>
+        
+        <div class="footer-links">
+
+          <div class="social-icons">
+            <a href="https://x.com/bardc_" target="_blank" rel="noopener noreferrer" class="social-icon twitter" aria-label="X (formerly Twitter)"></a>
+            <a href="https://www.facebook.com/bardc" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook"></a>
+          </div>
+          <a href="mailto:info@bardc.com" class="footer-contact">info@bardc.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Bar DC. All rights reserved.</p>
+      </div>
     </footer>
   </div>
+  <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="img01" onclick="event.stopPropagation()">
+  </div>
+  <script>
+    // Global Image Modal Logic
+    window.openImageModal = function(src) {
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("img01");
+        if(modal && modalImg) {
+            modal.style.display = "flex";
+            modalImg.src = src;
+            document.body.style.overflow = "hidden"; 
+        }
+    }
+    
+    window.closeImageModal = function() {
+        var modal = document.getElementById("imageModal");
+        if(modal) {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto"; 
+        }
+    }
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            window.closeImageModal();
+        }
+    });
+  </script>
+  <style>
+    /* Modal Styles (Global) */
+    .image-modal {
+      display: none; 
+      position: fixed; 
+      z-index: 9999; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgba(0,0,0,0.95); 
+      align-items: center;
+      justify-content: center;
+      cursor: zoom-out;
+    }
+    
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 95%;
+      max-height: 95vh;
+      border-radius: 4px;
+      object-fit: contain;
+      cursor: default;
+      animation: zoom 0.3s;
+    }
+    
+    .close-modal {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 50px;
+      font-weight: bold;
+      transition: 0.3s;
+      cursor: pointer;
+      z-index: 10000;
+      line-height: 1;
+    }
+    
+    @keyframes zoom {
+      from {transform:scale(0.8); opacity: 0;}
+      to {transform:scale(1); opacity: 1;}
+    }
+  </style>
+
 </body>
 </html>

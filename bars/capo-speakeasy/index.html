@@ -4,6 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Capo Speakeasy | Bar DC</title>
+
+  
+  
+  
+  
+  
+     
+     
+  
+
+  
+  
+
+  
+  
+
+  <meta name="description" content="Visit Capo Speakeasy in U Street, Washington DC. ✨ Vibe Hidden behind a nondescript industrial freezer door in a bustling Italian deli, this U Street gem offers an &quot;in the know&quot; experience...">
+  <link rel="canonical" href="https://bardc.com/bars/capo-speakeasy/">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Bar DC">
+  <meta property="og:title" content="Capo Speakeasy">
+  <meta property="og:description" content="Visit Capo Speakeasy in U Street, Washington DC. ✨ Vibe Hidden behind a nondescript industrial freezer door in a bustling Italian deli, this U Street gem offers an &quot;in the know&quot; experience...">
+  <meta property="og:url" content="https://bardc.com/bars/capo-speakeasy/">
+  <meta property="og:type" content="business.business">
+  
+  
+  
+  
+      
+  
+  <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcapo-speakeasy%2Flogo-1766321686740-36161223_2102818960045209_1310615549616586752_n.jpg?alt=media&amp;token=6fa0d6d5-3b0a-4987-9cbe-eeda09faf786">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Capo Speakeasy">
+  <meta name="twitter:description" content="Visit Capo Speakeasy in U Street, Washington DC. ✨ Vibe Hidden behind a nondescript industrial freezer door in a bustling Italian deli, this U Street gem offers an &quot;in the know&quot; experience...">
+  <meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcapo-speakeasy%2Flogo-1766321686740-36161223_2102818960045209_1310615549616586752_n.jpg?alt=media&amp;token=6fa0d6d5-3b0a-4987-9cbe-eeda09faf786">
+
     <!-- [NEW] Favicon Links -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -13,7 +52,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/masonry.css">
+
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9L0NBTF5RQ"></script>
 <script>
@@ -23,83 +64,623 @@
 
   gtag('config', 'G-9L0NBTF5RQ');
 </script>
+
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7540411251843957"
+     crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="container">
     <header>
-      <a href="/" class="logo-link">
-        <img src="/img/logo.jpg" alt="Bar DC Logo" class="logo">
-      </a>
-      <h1>Capo Speakeasy</h1>
+      <div class="header-branding">
+        <a href="/" class="branding-link">
+          <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
+          <span class="site-title">Washington D.C. Bars & Clubs</span>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <a href="/bars/">Bars</a>
+        <a href="/map/">Map</a>
+        
+
+        <div class="nav-dropdown">
+          <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
+          <div class="dropdown-menu">
+            
+              <a href="/neighborhoods/u-street/">U Street</a>
+            
+              <a href="/neighborhoods/dupont-circle/">Dupont Circle</a>
+            
+              <a href="/neighborhoods/downtown/">Downtown</a>
+            
+              <a href="/neighborhoods/adams-morgan/">Adams Morgan</a>
+            
+              <a href="/neighborhoods/navy-yard/">Navy Yard</a>
+            
+              <a href="/neighborhoods/georgetown/">Georgetown</a>
+            
+              <a href="/neighborhoods/the-wharf/">The Wharf</a>
+            
+              <a href="/neighborhoods/h-street-ne/">H Street NE</a>
+            
+            <div class="dropdown-divider"></div>
+            <a href="/neighborhoods/" class="view-all">View All →</a>
+          </div>
+        </div>
+
+
+        <a href="/events/">Events</a>
+        <a href="/happy-hour/">Happy Hour</a>
+      </nav>
     </header>
     <main>
+      
+        <h1 class="page-title">Capo Speakeasy</h1>
+      
       <!-- This line is critical. It injects the content from other files. -->
-      <article class="venue-profile">
+      <!-- Leaflet Map Resources -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<style>
+   /* Custom Pin Styles for Venue Page */
+   .custom-pin-icon { background: transparent; border: none; }
+   .pin-wrapper {
+     width: 40px; height: 40px; border-radius: 50%; border: 3px solid #fff;
+     box-shadow: 0 4px 10px rgba(0,0,0,0.5); background-color: #fff;
+     overflow: hidden; position: relative; transition: transform 0.2s ease, z-index 0.2s;
+   }
+   .pin-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+   .pin-wrapper.no-logo {
+     background-color: var(--primary-color, #e53935);
+     display: flex; align-items: center; justify-content: center;
+   }
+   .pin-wrapper.no-logo::after { content: ''; width: 12px; height: 12px; background: #fff; border-radius: 50%; }
+   .leaflet-container { font-family: inherit; }
+   .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: #1e1e1e; color: #fff; border: 1px solid rgba(255,255,255,0.1); }
+   .leaflet-popup-content a { color: #fff; background: var(--primary-color, #e53935); padding: 2px 8px; border-radius: 4px; text-decoration: none; }
+</style>
 
+<article class="venue-profile">
 
-    <img src="/logos/capo-speakeasy.png" alt="Capo Speakeasy logo" class="venue-profile-logo">
-  
    <h1>Capo Speakeasy</h1>
   
   <div class="venue-details">
-    <p><strong>Category:</strong> Speakeasy, Cocktail Bar</p>
-    <p><strong>Price:</strong> $$$</p>
-    <p><strong>Address:</strong> 715 Florida Ave NW, Washington, DC 20001</p>
+    <div style="display:flex; align-items:flex-start; gap:1.5rem; margin-bottom:1rem; flex-wrap:wrap;">
+      
+        <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcapo-speakeasy%2Flogo-1766321686740-36161223_2102818960045209_1310615549616586752_n.jpg?alt=media&amp;token=6fa0d6d5-3b0a-4987-9cbe-eeda09faf786" alt="Capo Speakeasy logo" style="max-height:250px; max-width:250px; border-radius:8px; border:1px solid #eee; object-fit:contain; flex-shrink:0;">
+      
+      <div style="flex:1; min-width: 250px;">
+        <div style="display:flex; gap:1.5rem; flex-wrap:wrap; justify-content: space-between;">
+            <div style="flex:1; min-width:200px;">
+                <p><strong>Category:</strong> 
+                  
+                  
+                    <a href="/categories/speakeasies/">Speakeasies</a>, 
+                  
+                    <a href="/categories/cocktail-bars/">Cocktail Bars</a>, 
+                  
+                    <a href="/categories/late-night/">Late Night</a>
+                  
+                </p>
+                
+                  <p><strong>Neighborhood:</strong> <a href="/neighborhoods/u-street/">U Street</a></p>
+                
+                <p><strong>Price:</strong> $$$</p>
+                
+                
+                
+                
+                
+                
+                <p><strong>Address:</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=Capo%20Speakeasy%20715%20Florida%20Ave%20NW%2C%20Washington%2C%20DC%2020001" target="_blank" rel="noopener noreferrer" style="text-decoration:underline; color:var(--accent-color);">715 Florida Ave NW, Washington, DC 20001</a></p>
+
+                <div class="venue-actions-bar" style="margin-top:1rem;">
+                  
+                    <a href="https://www.capodc.com/" class="btn-website-action" target="_blank" rel="noopener noreferrer">
+                      <span>Website</span>
+                    </a>
+                  
+                  
+                  
+                  <div class="social-icons-inline">
+                    
+                      <a href="https://instagram.com/capoitaliandeli" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
+                    
+                    
+                    
+                  </div>
+                  
+                </div>
+            </div>
+            
+            <!-- Side Map -->
+            
+            <div style="width:220px; flex-shrink:0; margin-top: 0.5rem;">
+               <div id="venue-mini-map" style="width:100%; height:220px; border-radius:12px; border:1px solid rgba(255,255,255,0.1); box-shadow:0 4px 15px rgba(0,0,0,0.3); z-index:0; cursor: pointer;"></div>
+               <script>
+                 document.addEventListener('DOMContentLoaded', function() {
+                    var lat = 38.916771;
+                    var lng = -77.02255799999999;
+                    var map = L.map('venue-mini-map', {
+                        center: [lat, lng],
+                        zoom: 16,
+                        zoomControl: false, 
+                        attributionControl: false,
+                        dragging: false,
+                        scrollWheelZoom: false,
+                        doubleClickZoom: false,
+                        boxZoom: false,
+                        keyboard: false
+                    });
+                     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                        subdomains: 'abcd',
+                        maxZoom: 20
+                     }).addTo(map);
+
+                    var iconHTML = `<div class="pin-wrapper"><img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcapo-speakeasy%2Flogo-1766321686740-36161223_2102818960045209_1310615549616586752_n.jpg?alt=media&amp;token=6fa0d6d5-3b0a-4987-9cbe-eeda09faf786" onerror="this.style.display='none'; this.parentElement.classList.add('no-logo');"></div>`;
+                    var icon = L.divIcon({
+                        className: 'custom-pin-icon',
+                        html: iconHTML,
+                        iconSize: [40, 40],
+                        iconAnchor: [20, 20]
+                    });
+                    
+                    L.marker([lat, lng], {icon: icon}).addTo(map);
+                    
+                    // Click to open Google Maps
+                    document.getElementById('venue-mini-map').addEventListener('click', function() {
+                        window.open('https://www.google.com/maps/search/?api=1&amp;query=Capo%20Speakeasy%20715%20Florida%20Ave%20NW%2C%20Washington%2C%20DC%2020001', '_blank');
+                    });
+                 });
+               </script>
+               <div style="text-align:center; margin-top:0.5rem;">
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=Capo%20Speakeasy%20715%20Florida%20Ave%20NW%2C%20Washington%2C%20DC%2020001" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; color:#aaa; text-decoration:none;">View on Google Maps &rarr;</a>
+               </div>
+            </div>
+            
+        </div>
+      </div>
+    </div>
   </div>
 
-    <!-- [NEW] Google Rating Display -->
+    <!-- [MOVED] Google Rating Display (Moved to Reviews Section) -->
   
-    <div class="google-rating">
-      <span class="rating-stars" style="--rating: 4.1;">★★★★★</span>
-      <span class="rating-value">4.1</span>
-      <span class="rating-count">(14 reviews)</span>
-    </div>
+    <!-- Rating moved below -->
   
   <!-- End Google Rating Display -->
 
   <div class="venue-description">
-    <p>Hidden behind the freezer door of an Italian deli in Shaw, Capo Speakeasy is an intimate, dimly lit bar known for its classic cocktails and playful, often politically themed, drink creations. The cozy, old-school atmosphere provides a unique and exclusive experience.</p>
+    <h3>✨ Vibe</h3>
+<p>Hidden behind a nondescript industrial freezer door in a bustling Italian deli, this U Street gem offers an "in the know" experience that blends 1920s Prohibition glamour with a high-energy modern lounge atmosphere.</p>
+
+<h3>🍸 Best For</h3>
+<p>Late-night dancing, clandestine cocktails, group celebrations, "in the know" nightlife seekers, post-bar cravings.</p>
+
+<h3>🔥 Highlights</h3>
+<ul>
+    <li><strong>The Secret Reveal:</strong> The entrance is cleverly disguised as a functioning freezer door, providing a thrilling transition from a classic deli to a sleek, low-lit lounge with a spacious dance floor.</li>
+    <li><strong>Expert Mixology:</strong> Recognized as one of D.C.’s must-try speakeasies, the venue features artisanal cocktails like the strawberry gin-infused Strawberry Fields and acclaimed Espresso Martinis, often served with a theatrical fire show.</li>
+    <li><strong>Premier Late-Night Dining:</strong> Recently honored as one of the city’s top late-night dining destinations for 2025, patrons can enjoy world-class Italian sandwiches from the deli side well into the early morning hours.</li>
+</ul>
+
+<h3>ℹ️ Need to Know</h3>
+<ul>
+    <li>Visit Thursday through Saturday to catch live DJ sets spinning a high-energy mix of hip-hop and Top 40 hits.</li>
+    <li>The venue is a prime destination for bottle service and lively group outings in the heart of the U Street corridor.</li>
+</ul>
   </div>
   
-  <a href="https://www.capodc.com/" class="btn-website" target="_blank" rel="noopener noreferrer">Visit Website</a>
+
   
-    <!-- [NEW] Social Media Links Section -->
-  
-  <div class="social-links">
-    
-      <a href="https://instagram.com/capoitaliandeli" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
-    
-    
-    
-  </div>
-  
-  <!-- End Social Media Links Section -->
+
 
   <!-- [NEW] Events Section -->
-
-  <div class="events-section">
-    <h3>📅 Upcoming Events & Specials</h3>
-    
-      <div class="event-item">
-        <h4>📅 Thanksgiver Special</h4>
-        <p>A seasonal special or promotion related to the Thanksgiving period, referred to as &#39;Thanksgiver&#39;.</p>
-      </div>
-    
-    <small>Last analyzed: Fri Nov 14 2025 13:03:36 GMT-0500 (Eastern Standard Time)</small>
-  </div>
+  <!-- [NEW] Events Section -->
 
 <!-- End Events Section -->
+
+<!-- [NEW] Recurring Events Section -->
+
+<!-- End Recurring Events Section -->
 
     <!-- [NEW] Full Happy Hour Details Section -->
   
   <!-- End Happy Hour Details Section -->
+
+  <!-- [NEW] News Section -->
   
+  <div class="news-section" style="margin-top:2rem; margin-bottom:2rem;">
+    <h3>📰 In the News</h3>
+    <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
+      
+        <a href="https://washingtonpost.com/dc-md-va/2025/04/30/best-late-night-dining-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=washingtonpost.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The Washington Post</span>
+              <span style="margin-left:auto; text-transform:none;">Apr 30, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">15 of the best late-night dining spots in the D.C. area</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Capo Speakeasy is featured as one of the top late-night dining destinations in the Washington D.C. area. The venue offers a prime spot for a post-imbibing meal, serving the city&#39;s night owls long after other kitchens have closed.</p>
+           
+        </a>
+      
+        <a href="https://dc.eater.com/maps/best-speakeasy-bars-dc-1" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Eater DC</span>
+              <span style="margin-left:auto; text-transform:none;">Dec 2, 2024</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">14 Must-Try Speakeasies in D.C.</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The BackRoom at Capo Deli is a sleek speakeasy hidden behind an industrial fridge door that transforms into a high-energy lounge with live DJ sets from Thursday through Saturday. The venue offers an exclusive nightlife experience in the U Street corridor, featuring signature cocktails such as the strawberry gin-infused Strawberry Fields.</p>
+           
+        </a>
+      
+        <a href="https://washingtonpost.com/dc-md-va/2024/03/28/dc-speakeasy-bar-guide" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=washingtonpost.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The Washington Post</span>
+              <span style="margin-left:auto; text-transform:none;">Mar 27, 2024</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Pssssst … How to find 11 of the best speakeasy bars in the D.C. area</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Capo Speakeasy is featured as one of the premier hidden bars in Washington, D.C., offering a Prohibition-era experience with low lights and fancy cocktails. The venue is highlighted for its exclusive, &#39;in the know&#39; atmosphere that captures the historic glamour of the 1920s.</p>
+           
+        </a>
+      
+        <a href="https://thedailymeal.com/1332272/best-speakeasies-united-states" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=thedailymeal.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Daily Meal</span>
+              <span style="margin-left:auto; text-transform:none;">Jul 6, 2023</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The 15 Best Speakeasies In The United States</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Capo Italian Deli’s &#39;The Backroom&#39; is a high-energy speakeasy hidden behind a freezer door in Washington, D.C.’s U Street Corridor. The venue features a large dance floor, two bars, and a soundtrack of hip-hop and Top 40 music, making it a popular destination for late-night dancing and bottle service. While the speakeasy focuses on drinks, patrons can enjoy sandwiches from the attached deli when it is open.</p>
+           
+        </a>
+      
+        <a href="https://thedailymeal.com/1280812/dc-bars-you-must-visit-2023" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=thedailymeal.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Daily Meal</span>
+              <span style="margin-left:auto; text-transform:none;">May 9, 2023</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">10 Bars You Must Visit In D.C., 2023 Edition</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Capo Speakeasy operates as a hidden nightlife destination located behind an unassuming freezer door inside the Capo Italian Deli on U Street. The venue features two large bar areas and a spacious dance floor where DJs spin a mix of hip-hop classics and modern hits.</p>
+           
+        </a>
+      
+    </div>
+  </div>
+  
+  <!-- End News Section -->
+  
+
+  <!-- [NEW] Reviews Section (Server-Side) -->
+  
+  <div id="google-reviews-section" class="reviews-section">
+    
+    
+      
+    
+
+    <!-- [MOVED] Google Rating Display -->
+    
+      <div class="google-rating" style="margin-bottom: 2rem;">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJk-Ad0Ci3t4kRldsnlmMdjlc" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: block;">
+          <div class="rating-header">
+            <span class="rating-stars" style="--rating: 4;">★★★★★</span>
+            <span class="rating-value">4</span>
+            <span class="rating-count">(16 reviews)</span>
+            <span class="btn-read-reviews" style="margin-left: auto; margin-top: 0;">View on Google</span>
+          </div>
+        </a>
+      </div>
+    
+    <!-- End Google Rating Display -->
+
+    <h3>Recent Reviews from Google</h3>
+    <div class="reviews-grid">
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJk-Ad0Ci3t4kRldsnlmMdjlc" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocKMn18QStC0NkmHL_LG067oFGCMZzecJ-i5vEdSvFTX4r1_KElm=s128-c0x00000000-cc-rp-mo-ba4" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">6 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★☆☆☆☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Easily the worst &#39;speakeasy&#39; I&#39;ve ever been to. Drinks list is tiny, and my paloma was almost undrinkable. Dude behind the bar was super rude, and the atmosphere is awful. Avoid at all costs
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJk-Ad0Ci3t4kRldsnlmMdjlc" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjWqa1gMhFRbM-QMe-lgNgh3XpFLfearwi6RF1qtmQSEyhu_Lj5edw=s128-c0x00000000-cc-rp-mo" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a year ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Super cool spot!! Awesome music and crowd. The bar tenders were true mixologists and knew how to make delicious drinks- the French 75 was amazing.. Also loved the fire show!! I&#39;ll definitely be back!
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJk-Ad0Ci3t4kRldsnlmMdjlc" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocJXcdaEVRTgwmnPcr_a1zlUzXwkmqT4_81jCAo3oBuQy32KCg=s128-c0x00000000-cc-rp-mo" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a year ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★☆☆☆☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            One of the worst lounges in DC. The bartenders and management are very rude.  The music is trash, the bartenders suck and the drinks are horrible.  They refill their top shelf alcohol with bottom...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJk-Ad0Ci3t4kRldsnlmMdjlc" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocJlnDtrDpdQokxZsabAmgRlc9momUgT_Py69JSFa6gV4p4uknXu=s128-c0x00000000-cc-rp-mo-ba5" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a year ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Excellent music selection. The espresso martini was one of the best I’ve ever had. Great experience!
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJk-Ad0Ci3t4kRldsnlmMdjlc" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocIl2JF8evCmasL60BAAYUIp4wLeozRlaZVRY-Od0zXIY75327Q=s128-c0x00000000-cc-rp-mo-ba4" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">8 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★☆☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Definitely for the college age folks.  It was a good vibe, but below my age group.
+          </p>
+      </a>
+      
+    </div>
+    <div class="reviews-footer">
+      <small>Reviews provided by Google</small>
+    </div>
+  </div>
+  
+
+  <!-- [NEW] Nearby Bars Section -->
+  
+  
+  <div class="nearby-section" style="margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+    <h3 style="margin-bottom: 1.5rem;">📍 Nearby Spots (Walking Distance)</h3>
+    <div class="venue-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
+      
+        <a href="/bars/takoda/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Ftakoda%2Flogo-1767142151648-342730434_1236577103639020_5755052830569514839_n.jpg?alt=media&amp;token=e8e10a20-f611-4117-b07f-10d6e01f1466" alt="Takoda" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Takoda</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">3m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/801-restaurant-and-bar/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2F801-restaurant-and-bar%2Flogo-1766013120046-429792686_1289230765319659_2047338602591597323_n.jpg?alt=media&amp;token=8acc095d-aca1-4fb4-b6b8-7d95f1137740" alt="801 Restaurant and Bar" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">801 Restaurant and Bar</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">49m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/all-souls-bar/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fall-souls-bar%2Flogo-1766095959123-301003006_567522488493583_6987044619440847649_n.jpg?alt=media&amp;token=9cc74086-6843-4bcf-af9e-debc85f8642d" alt="All Souls Bar" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">All Souls Bar</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">115m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/flash/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fflash%2Flogo-1766406785227-12407200_1026092080784521_1486098089_a.jpg?alt=media&amp;token=bcb6bc47-fb89-47b3-b302-d8072cbb36bf" alt="Flash" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Flash</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">115m away</p>
+          </div>
+        </a>
+      
+    </div>
+  </div>
+  
+
   <a href="/" class="btn-back">← Back to Home</a>
 </article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "Capo Speakeasy",
+  "image": "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcapo-speakeasy%2Flogo-1766321686740-36161223_2102818960045209_1310615549616586752_n.jpg?alt=media&token=6fa0d6d5-3b0a-4987-9cbe-eeda09faf786",
+  "address": "715 Florida Ave NW, Washington, DC 20001",
+  
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4,
+    "reviewCount": 16
+  },
+  
+  
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": 1,
+      "bestRating": 5
+    },
+    "author": {
+      "@type": "Person",
+      "name": "krishan dhanjee"
+    },
+    "reviewBody": "Easily the worst 'speakeasy' I've ever been to. Drinks list is tiny, and my paloma was almost undrinkable. Dude behind the bar was super rude, and the atmosphere is awful. Avoid at all costs"
+  },
+  
+  
+  "priceRange": "$$$", 
+  
+  
+  "telephone": "(202) 910-6884",
+  
+  "url": "https://bardc.com/venues/capo-speakeasy/"
+}
+</script>
     </main>
-    <footer>
-      <p>© 2025 Bar DC. A guide to Washington D.C. Nightlife.</p>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="/" aria-label="Back to Home">
+            <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="footer-logo">
+          </a>
+        </div>
+        
+        <div class="footer-links">
+
+          <div class="social-icons">
+            <a href="https://x.com/bardc_" target="_blank" rel="noopener noreferrer" class="social-icon twitter" aria-label="X (formerly Twitter)"></a>
+            <a href="https://www.facebook.com/bardc" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook"></a>
+          </div>
+          <a href="mailto:info@bardc.com" class="footer-contact">info@bardc.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Bar DC. All rights reserved.</p>
+      </div>
     </footer>
   </div>
+  <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="img01" onclick="event.stopPropagation()">
+  </div>
+  <script>
+    // Global Image Modal Logic
+    window.openImageModal = function(src) {
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("img01");
+        if(modal && modalImg) {
+            modal.style.display = "flex";
+            modalImg.src = src;
+            document.body.style.overflow = "hidden"; 
+        }
+    }
+    
+    window.closeImageModal = function() {
+        var modal = document.getElementById("imageModal");
+        if(modal) {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto"; 
+        }
+    }
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            window.closeImageModal();
+        }
+    });
+  </script>
+  <style>
+    /* Modal Styles (Global) */
+    .image-modal {
+      display: none; 
+      position: fixed; 
+      z-index: 9999; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgba(0,0,0,0.95); 
+      align-items: center;
+      justify-content: center;
+      cursor: zoom-out;
+    }
+    
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 95%;
+      max-height: 95vh;
+      border-radius: 4px;
+      object-fit: contain;
+      cursor: default;
+      animation: zoom 0.3s;
+    }
+    
+    .close-modal {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 50px;
+      font-weight: bold;
+      transition: 0.3s;
+      cursor: pointer;
+      z-index: 10000;
+      line-height: 1;
+    }
+    
+    @keyframes zoom {
+      from {transform:scale(0.8); opacity: 0;}
+      to {transform:scale(1); opacity: 1;}
+    }
+  </style>
+
 </body>
 </html>

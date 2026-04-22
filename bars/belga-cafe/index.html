@@ -4,6 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Belga Cafe | Bar DC</title>
+
+  
+  
+  
+  
+  
+     
+     
+  
+
+  
+  
+
+  
+  
+
+  <meta name="description" content="Visit Belga Cafe in Barracks Row, Washington DC. ✨ Vibe A charming and cozy Belgian brasserie led by Top Chef alum Bart Vandaele, offering an authentic European sidewalk cafe experience in...">
+  <link rel="canonical" href="https://bardc.com/bars/belga-cafe/">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Bar DC">
+  <meta property="og:title" content="Belga Cafe">
+  <meta property="og:description" content="Visit Belga Cafe in Barracks Row, Washington DC. ✨ Vibe A charming and cozy Belgian brasserie led by Top Chef alum Bart Vandaele, offering an authentic European sidewalk cafe experience in...">
+  <meta property="og:url" content="https://bardc.com/bars/belga-cafe/">
+  <meta property="og:type" content="business.business">
+  
+  
+  
+  
+      
+  
+  <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbelga-cafe%2Flogo-1766148472988-512686901_1192015462935744_5564958201219166756_n.webp?alt=media&amp;token=ada04d24-bb31-467a-956a-1815f81fb269">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Belga Cafe">
+  <meta name="twitter:description" content="Visit Belga Cafe in Barracks Row, Washington DC. ✨ Vibe A charming and cozy Belgian brasserie led by Top Chef alum Bart Vandaele, offering an authentic European sidewalk cafe experience in...">
+  <meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbelga-cafe%2Flogo-1766148472988-512686901_1192015462935744_5564958201219166756_n.webp?alt=media&amp;token=ada04d24-bb31-467a-956a-1815f81fb269">
+
     <!-- [NEW] Favicon Links -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -13,7 +52,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/masonry.css">
+
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9L0NBTF5RQ"></script>
 <script>
@@ -23,98 +64,655 @@
 
   gtag('config', 'G-9L0NBTF5RQ');
 </script>
+
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7540411251843957"
+     crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="container">
     <header>
-      <a href="/" class="logo-link">
-        <img src="/img/logo.jpg" alt="Bar DC Logo" class="logo">
-      </a>
-      <h1>Belga Cafe</h1>
+      <div class="header-branding">
+        <a href="/" class="branding-link">
+          <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
+          <span class="site-title">Washington D.C. Bars & Clubs</span>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <a href="/bars/">Bars</a>
+        <a href="/map/">Map</a>
+        
+
+        <div class="nav-dropdown">
+          <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
+          <div class="dropdown-menu">
+            
+              <a href="/neighborhoods/u-street/">U Street</a>
+            
+              <a href="/neighborhoods/dupont-circle/">Dupont Circle</a>
+            
+              <a href="/neighborhoods/downtown/">Downtown</a>
+            
+              <a href="/neighborhoods/adams-morgan/">Adams Morgan</a>
+            
+              <a href="/neighborhoods/navy-yard/">Navy Yard</a>
+            
+              <a href="/neighborhoods/georgetown/">Georgetown</a>
+            
+              <a href="/neighborhoods/the-wharf/">The Wharf</a>
+            
+              <a href="/neighborhoods/h-street-ne/">H Street NE</a>
+            
+            <div class="dropdown-divider"></div>
+            <a href="/neighborhoods/" class="view-all">View All →</a>
+          </div>
+        </div>
+
+
+        <a href="/events/">Events</a>
+        <a href="/happy-hour/">Happy Hour</a>
+      </nav>
     </header>
     <main>
+      
+        <h1 class="page-title">Belga Cafe</h1>
+      
       <!-- This line is critical. It injects the content from other files. -->
-      <article class="venue-profile">
+      <!-- Leaflet Map Resources -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<style>
+   /* Custom Pin Styles for Venue Page */
+   .custom-pin-icon { background: transparent; border: none; }
+   .pin-wrapper {
+     width: 40px; height: 40px; border-radius: 50%; border: 3px solid #fff;
+     box-shadow: 0 4px 10px rgba(0,0,0,0.5); background-color: #fff;
+     overflow: hidden; position: relative; transition: transform 0.2s ease, z-index 0.2s;
+   }
+   .pin-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+   .pin-wrapper.no-logo {
+     background-color: var(--primary-color, #e53935);
+     display: flex; align-items: center; justify-content: center;
+   }
+   .pin-wrapper.no-logo::after { content: ''; width: 12px; height: 12px; background: #fff; border-radius: 50%; }
+   .leaflet-container { font-family: inherit; }
+   .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: #1e1e1e; color: #fff; border: 1px solid rgba(255,255,255,0.1); }
+   .leaflet-popup-content a { color: #fff; background: var(--primary-color, #e53935); padding: 2px 8px; border-radius: 4px; text-decoration: none; }
+</style>
 
+<article class="venue-profile">
 
-    <img src="/logos/belga-cafe.png" alt="Belga Cafe logo" class="venue-profile-logo">
-  
    <h1>Belga Cafe</h1>
   
   <div class="venue-details">
-    <p><strong>Category:</strong> Belgian, Restaurant, Beer Bar</p>
-    <p><strong>Price:</strong> $$$</p>
-    <p><strong>Address:</strong> 514 8th St SE, Washington, DC 20003</p>
+    <div style="display:flex; align-items:flex-start; gap:1.5rem; margin-bottom:1rem; flex-wrap:wrap;">
+      
+        <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbelga-cafe%2Flogo-1766148472988-512686901_1192015462935744_5564958201219166756_n.webp?alt=media&amp;token=ada04d24-bb31-467a-956a-1815f81fb269" alt="Belga Cafe logo" style="max-height:250px; max-width:250px; border-radius:8px; border:1px solid #eee; object-fit:contain; flex-shrink:0;">
+      
+      <div style="flex:1; min-width: 250px;">
+        <div style="display:flex; gap:1.5rem; flex-wrap:wrap; justify-content: space-between;">
+            <div style="flex:1; min-width:200px;">
+                <p><strong>Category:</strong> 
+                  
+                  
+                    <a href="/categories/brunch-spots/">Brunch Spots</a>, 
+                  
+                    <a href="/categories/belgian/">Belgian</a>, 
+                  
+                    <a href="/categories/neighborhood-bars/">Neighborhood Bars</a>
+                  
+                </p>
+                
+                  <p><strong>Neighborhood:</strong> <a href="/neighborhoods/barracks-row/">Barracks Row</a></p>
+                
+                <p><strong>Price:</strong> $$$</p>
+                
+                
+                
+                
+                
+                
+                <p><strong>Address:</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=Belga%20Cafe%20514%208th%20St%20SE%2C%20Washington%2C%20DC%2020003" target="_blank" rel="noopener noreferrer" style="text-decoration:underline; color:var(--accent-color);">514 8th St SE, Washington, DC 20003</a></p>
+
+                <div class="venue-actions-bar" style="margin-top:1rem;">
+                  
+                    <a href="https://www.belgacafe.com/" class="btn-website-action" target="_blank" rel="noopener noreferrer">
+                      <span>Website</span>
+                    </a>
+                  
+                  
+                  
+                  <div class="social-icons-inline">
+                    
+                      <a href="https://www.instagram.com/belgacafe/" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
+                    
+                    
+                      <a href="https://www.facebook.com/36156826821" target="_blank" rel="noopener noreferrer" class="social-icon facebook" title="Facebook"></a>
+                    
+                    
+                      <a href="https://www.twitter.com/BelgaCafe" target="_blank" rel="noopener noreferrer" class="social-icon twitter" title="Twitter/X"></a>
+                    
+                  </div>
+                  
+                </div>
+            </div>
+            
+            <!-- Side Map -->
+            
+            <div style="width:220px; flex-shrink:0; margin-top: 0.5rem;">
+               <div id="venue-mini-map" style="width:100%; height:220px; border-radius:12px; border:1px solid rgba(255,255,255,0.1); box-shadow:0 4px 15px rgba(0,0,0,0.3); z-index:0; cursor: pointer;"></div>
+               <script>
+                 document.addEventListener('DOMContentLoaded', function() {
+                    var lat = 38.882189;
+                    var lng = -76.994607;
+                    var map = L.map('venue-mini-map', {
+                        center: [lat, lng],
+                        zoom: 16,
+                        zoomControl: false, 
+                        attributionControl: false,
+                        dragging: false,
+                        scrollWheelZoom: false,
+                        doubleClickZoom: false,
+                        boxZoom: false,
+                        keyboard: false
+                    });
+                     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                        subdomains: 'abcd',
+                        maxZoom: 20
+                     }).addTo(map);
+
+                    var iconHTML = `<div class="pin-wrapper"><img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbelga-cafe%2Flogo-1766148472988-512686901_1192015462935744_5564958201219166756_n.webp?alt=media&amp;token=ada04d24-bb31-467a-956a-1815f81fb269" onerror="this.style.display='none'; this.parentElement.classList.add('no-logo');"></div>`;
+                    var icon = L.divIcon({
+                        className: 'custom-pin-icon',
+                        html: iconHTML,
+                        iconSize: [40, 40],
+                        iconAnchor: [20, 20]
+                    });
+                    
+                    L.marker([lat, lng], {icon: icon}).addTo(map);
+                    
+                    // Click to open Google Maps
+                    document.getElementById('venue-mini-map').addEventListener('click', function() {
+                        window.open('https://www.google.com/maps/search/?api=1&amp;query=Belga%20Cafe%20514%208th%20St%20SE%2C%20Washington%2C%20DC%2020003', '_blank');
+                    });
+                 });
+               </script>
+               <div style="text-align:center; margin-top:0.5rem;">
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=Belga%20Cafe%20514%208th%20St%20SE%2C%20Washington%2C%20DC%2020003" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; color:#aaa; text-decoration:none;">View on Google Maps &rarr;</a>
+               </div>
+            </div>
+            
+        </div>
+      </div>
+    </div>
   </div>
 
-    <!-- [NEW] Google Rating Display -->
+    <!-- [MOVED] Google Rating Display (Moved to Reviews Section) -->
   
-    <div class="google-rating">
-      <span class="rating-stars" style="--rating: 4.3;">★★★★★</span>
-      <span class="rating-value">4.3</span>
-      <span class="rating-count">(1224 reviews)</span>
-    </div>
+    <!-- Rating moved below -->
   
   <!-- End Google Rating Display -->
 
   <div class="venue-description">
-    <p>The first authentic Belgian restaurant in D.C., Belga Cafe on Capitol Hill is a bustling brasserie known for its mussels, frites, and extensive list of Belgian beers. Chef Bart Vandaele offers a menu of traditional and modern Belgian dishes in a lively, European-style cafe setting.</p>
+    <h3>✨ Vibe</h3>
+<p>A charming and cozy Belgian brasserie led by Top Chef alum Bart Vandaele, offering an authentic European sidewalk cafe experience in the heart of Barracks Row.</p>
+
+<h3>🍸 Best For</h3>
+<p>Weekend brunch, authentic Belgian cuisine, al fresco dining, and neighborhood happy hours.</p>
+
+<h3>🔥 Highlights</h3>
+<ul>
+  <li>Renowned for signature Belgian staples including legendary moules frites, lobster waffles, and Flemish beef stew.</li>
+  <li>An extensive waffle menu featuring both sweet and savory authentic creations, such as the herb-pesto "Beruchte" Groene Eieren and fruit-loaded Belgian waffles.</li>
+  <li>Exceptional outdoor seating options, highlighted by a vibrant sidewalk patio and cozy alfresco greenhouses perfect for year-round dining.</li>
+</ul>
+
+<h3>ℹ️ Need to Know</h3>
+<ul>
+  <li>Reservations are highly recommended for their popular weekend brunch and exclusive wine dinner events.</li>
+  <li>Sign up for their loyalty program to earn rewards and stay updated on seasonal specials and happy hour offerings.</li>
+</ul>
   </div>
   
-  <a href="https://www.belgacafe.com/" class="btn-website" target="_blank" rel="noopener noreferrer">Visit Website</a>
+
   
-    <!-- [NEW] Social Media Links Section -->
-  
-  <div class="social-links">
-    
-      <a href="https://www.instagram.com/belgacafe/" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
-    
-    
-      <a href="https://www.facebook.com/36156826821" target="_blank" rel="noopener noreferrer" class="social-icon facebook" title="Facebook"></a>
-    
-    
-      <a href="https://www.twitter.com/BelgaCafe" target="_blank" rel="noopener noreferrer" class="social-icon twitter" title="Twitter/X"></a>
-    
-  </div>
-  
-  <!-- End Social Media Links Section -->
+
 
   <!-- [NEW] Events Section -->
-
-  <div class="events-section">
-    <h3>📅 Upcoming Events & Specials</h3>
-    
-      <div class="event-item">
-        <h4>📅 Weekend Brunch</h4>
-        <p>Brunch is offered every Saturday from 9:30 am to 3:30 pm and Sunday from 9:00 am to 3:30 pm.</p>
-      </div>
-    
-      <div class="event-item">
-        <h4>🍹 Happy Hour</h4>
-        <p>The bar features a recurring Happy Hour. Specific days and times are not detailed in the provided text.</p>
-      </div>
-    
-    <small>Last analyzed: Fri Nov 14 2025 13:22:41 GMT-0500 (Eastern Standard Time)</small>
-  </div>
+  <!-- [NEW] Events Section -->
 
 <!-- End Events Section -->
+
+<!-- [NEW] Recurring Events Section -->
+
+  <div class="recurring-events-section">
+    <h3>🔄 Weekly Events</h3>
+    <div class="events-grid">
+      
+        
+        <div class="event-item recurring">
+          <h4>🧇 Authentic Belgian Brunch</h4>
+          <p class="event-meta">
+            <span class="days-badge">Sat, Sun</span>
+          </p>
+          
+            <p>A phenomenal weekend brunch featuring authentic Belgian waffles, specialty dishes like Tartiflette, and a wide selection of sparkling wine drinks and innovative cocktails.</p>
+          
+        </div>
+        
+      
+    </div>
+  </div>
+
+<!-- End Recurring Events Section -->
 
     <!-- [NEW] Full Happy Hour Details Section -->
   
     <div class="happy-hour-info">
       <h3>Happy Hour</h3>
-      <p>Sunday nights: Happy Hour specials all night long.  Belgian Restaurant Week (July 15th - July 27th): $7 Belgian drafts all day, every day; 3-course lunch for $35, 3-course dinner for $45.</p>
-      <small>Last analyzed: Sun Jul 27 2025 20:13:57 GMT-0400 (Eastern Daylight Time)</small>
+      <p>Extended happy hour featuring $8 wines, $7 beers, and $9 cocktails, plus $3 off shareable bites through the evening.</p>
     </div>
   
   <!-- End Happy Hour Details Section -->
+
+  <!-- [NEW] News Section -->
   
+  <div class="news-section" style="margin-top:2rem; margin-bottom:2rem;">
+    <h3>📰 In the News</h3>
+    <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
+      
+        <a href="https://nbcwashington.com/news/local/employees-attacked-working-dc-restaurant/4003587" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=nbcwashington.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>NBC4 Washington</span>
+              <span style="margin-left:auto; text-transform:none;">Oct 18, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Employees attacked while working at DC restaurant</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Belga Café in Barracks Row was the site of a physical altercation that led to the arrest of four individuals for assaulting restaurant employees. The incident began behind the venue after a vehicle nearly struck workers, resulting in a confrontation that prompted police intervention and multiple assault charges.</p>
+           
+        </a>
+      
+        <a href="https://wjla.com/news/local/dc-restaurants-low-traffic-national-guard-federal-takeover-gofundme-president-trump-mayor-bowser-as-you-are-belga-cafe-8th-street-dmv-dining-bar-inflation-cost-initiative-82-customers-queer-friendly" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=wjla.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>WJLA</span>
+              <span style="margin-left:auto; text-transform:none;">Sep 19, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">DC restaurants cite low customer traffic, one launches GoFundMe to stay afloat</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Belga Cafe is experiencing a significant decline in foot traffic and customer spending due to a combination of inflation, legislative changes, and a decrease in local tourism. General Manager Rinata Gafarova reports that weekend brunch attendance has plummeted from historical highs of 500 patrons to as few as 100 as the long-standing 8th Street establishment navigates a challenging economic environment.</p>
+           
+        </a>
+      
+        <a href="https://kidfriendlydc.com/2023/07/02/kid-friendly-dc-restaurants" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=kidfriendlydc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>KidFriendly DC</span>
+              <span style="margin-left:auto; text-transform:none;">Aug 14, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">KFDC Picks for Kid Friendly DC Restaurants</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Belga Cafe is highlighted as a long-standing, kid-friendly dining option on Capitol Hill&#39;s Barracks Row, particularly noted for its Belgian waffles, mussels, and fries. While suitable for families at brunch, lunch, and dinner, the venue also features a rooftop back patio called Betsy that serves as a popular spot for cocktails.</p>
+           
+        </a>
+      
+        <a href="https://thrillist.com/eat/washington-dc/best-brunch-in-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=thrillist.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Thrillist</span>
+              <span style="margin-left:auto; text-transform:none;">Apr 11, 2023</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Best Spots for Brunch in DC</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Belga Cafe, a popular Belgian spot in Barracks Row led by chef Bart Vandaele, offers a charming outdoor patio setting for weekend brunch. The menu features authentic sweet and savory Belgian waffles alongside signature dishes like &#39;Beruchte&#39; Groene Eieren made with herb pesto, spinach, and Gruyère.</p>
+           
+        </a>
+      
+        <a href="https://washingtonian.com/2021/02/11/61-neighborhood-restaurants-that-make-the-dc-area-a-better-place-to-eat-and-live" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Washingtonian</span>
+              <span style="margin-left:auto; text-transform:none;">Feb 23, 2021</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">61 Neighborhood Restaurants That Make the DC Area a Better Place to Eat—and Live</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Belga Cafe is a Belgian brasserie on Capitol Hill known for its hearty fare and comfortable style under Top Chef alum Bart Vandaele. Signature offerings include moules frites, lobster waffles, and Flemish beef stew, which can be enjoyed in a cozy setting featuring alfresco greenhouses.</p>
+           
+        </a>
+      
+    </div>
+  </div>
+  
+  <!-- End News Section -->
+  
+
+  <!-- [NEW] Reviews Section (Server-Side) -->
+  
+  <div id="google-reviews-section" class="reviews-section">
+    
+    
+      
+    
+
+    <!-- [MOVED] Google Rating Display -->
+    
+      <div class="google-rating" style="margin-bottom: 2rem;">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJ38d2PjO4t4kR2OcqtMyjNW4" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: block;">
+          <div class="rating-header">
+            <span class="rating-stars" style="--rating: 4.3;">★★★★★</span>
+            <span class="rating-value">4.3</span>
+            <span class="rating-count">(1244 reviews)</span>
+            <span class="btn-read-reviews" style="margin-left: auto; margin-top: 0;">View on Google</span>
+          </div>
+        </a>
+      </div>
+    
+    <!-- End Google Rating Display -->
+
+    <h3>Recent Reviews from Google</h3>
+    <div class="reviews-grid">
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJ38d2PjO4t4kR2OcqtMyjNW4" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjVDT5bH1erFgoHy_LQjh5Ypjs8Qdx-qAJFNNtL4yE9pAeh_rKZF=s128-c0x00000000-cc-rp-mo-ba6" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">4 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Went here for brunch with a few friends on their recommendation and it was very delicious. It is a true Belgian cafe with a full waffle menu!
+
+I got the Fresh and Simple waffle which was LOADED with...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJ38d2PjO4t4kR2OcqtMyjNW4" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXzfFYJzyYcr-Nyd1wSFBpE9U0OyDizpVaSLMP1i8Udx_9fwuzO=s128-c0x00000000-cc-rp-mo-ba4" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">3 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★☆☆☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Had a light brunch? We both only ordered one dish. And the total came out to be $50 quite high, but understandable for area.
+
+The skillet I ordered was quite nice, with the meat, sauce, eggs and...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJ38d2PjO4t4kR2OcqtMyjNW4" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjVj0J5j8ucxmUuILxtQaicHjP74tqzH-XtmCyl2VCgzXy9KLmgy=s128-c0x00000000-cc-rp-mo-ba6" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a month ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Everything is great! The dishes and coffee were super delicious! Great atmosphere and great food here. We definitely will back and try more other dishes.
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJ38d2PjO4t4kR2OcqtMyjNW4" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocJZ9p21NgbnlTL_EmQiNqJaGxNgCrsIGdOGDUtNr2wfAx0dbA=s128-c0x00000000-cc-rp-mo-ba2" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">5 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Great service, very friendly staff. Knew nothing about Belgium cuisine so I kept it safe by just getting mussels, which were delicious. Friend got salmon which she loved. Will be back to try other...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJ38d2PjO4t4kR2OcqtMyjNW4" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocI0vpI5VaW-fyo4mLGBE5VZHpwLbiS2Osa0jUhQAkW6XPfd4A=s128-c0x00000000-cc-rp-mo-ba5" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">4 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Yum!  The chocolate mousse was amazing.  The other food was great too.  The cod was cooked perfect and the sauces were much better than I thought they would be.
+          </p>
+      </a>
+      
+    </div>
+    <div class="reviews-footer">
+      <small>Reviews provided by Google</small>
+    </div>
+  </div>
+  
+
+  <!-- [NEW] Nearby Bars Section -->
+  
+  
+  <div class="nearby-section" style="margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+    <h3 style="margin-bottom: 1.5rem;">📍 Nearby Spots (Walking Distance)</h3>
+    <div class="venue-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
+      
+        <a href="/bars/the-betsy/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-betsy%2Flogo-1766151416233-514745642_1310043184461454_8642611861746431590_n.webp?alt=media&amp;token=0c268392-7884-4807-baab-32bb4d8debe9" alt="The Betsy" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">The Betsy</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">3m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/lucha-lounge-rooftop/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; background: #333; display: flex; align-items: center; justify-content: center;">
+                <span style="font-size: 2rem;">🍸</span>
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Lucha Lounge Rooftop</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">15m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/awakening-bar-grill/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fawakening-bar-grill%2Flogo-1766104681056-561339315_122093764509087196_3499994867068949594_n.jpg?alt=media&amp;token=1c0b357a-1771-492c-9386-2561023a74c7" alt="Awakening Bar &amp; Grill" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Awakening Bar &amp; Grill</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">25m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/as-you-are-dc/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fas-you-are-dc%2Flogo-1766098734347-227874022_165761315648721_8465099167954490044_n.png?alt=media&amp;token=d4dfd2fd-1b65-4aa5-b297-eb98c7acd07e" alt="as you are. DC" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">as you are. DC</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">44m away</p>
+          </div>
+        </a>
+      
+    </div>
+  </div>
+  
+
   <a href="/" class="btn-back">← Back to Home</a>
 </article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "Belga Cafe",
+  "image": "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbelga-cafe%2Flogo-1766148472988-512686901_1192015462935744_5564958201219166756_n.webp?alt=media&token=ada04d24-bb31-467a-956a-1815f81fb269",
+  "address": "514 8th St SE, Washington, DC 20003",
+  
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.3,
+    "reviewCount": 1244
+  },
+  
+  
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": 5,
+      "bestRating": 5
+    },
+    "author": {
+      "@type": "Person",
+      "name": "David Lazar"
+    },
+    "reviewBody": "Went here for brunch with a few friends on their recommendation and it was very delicious. It is a true Belgian cafe with a full waffle menu!\n\nI got the Fresh and Simple waffle which was LOADED with fruit and absolutely delicious. I got a side of eggs as well. My friends got interesting items, including the baguette which came with some wonderful butters.\n\nIf you are in Eastern Market, stop in for breakfast foods! You will not be disappointed."
+  },
+  
+  
+  "priceRange": "$$$", 
+  
+  
+  "telephone": "(202) 544-0100",
+  
+  "url": "https://bardc.com/venues/belga-cafe/"
+}
+</script>
     </main>
-    <footer>
-      <p>© 2025 Bar DC. A guide to Washington D.C. Nightlife.</p>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="/" aria-label="Back to Home">
+            <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="footer-logo">
+          </a>
+        </div>
+        
+        <div class="footer-links">
+
+          <div class="social-icons">
+            <a href="https://x.com/bardc_" target="_blank" rel="noopener noreferrer" class="social-icon twitter" aria-label="X (formerly Twitter)"></a>
+            <a href="https://www.facebook.com/bardc" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook"></a>
+          </div>
+          <a href="mailto:info@bardc.com" class="footer-contact">info@bardc.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Bar DC. All rights reserved.</p>
+      </div>
     </footer>
   </div>
+  <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="img01" onclick="event.stopPropagation()">
+  </div>
+  <script>
+    // Global Image Modal Logic
+    window.openImageModal = function(src) {
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("img01");
+        if(modal && modalImg) {
+            modal.style.display = "flex";
+            modalImg.src = src;
+            document.body.style.overflow = "hidden"; 
+        }
+    }
+    
+    window.closeImageModal = function() {
+        var modal = document.getElementById("imageModal");
+        if(modal) {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto"; 
+        }
+    }
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            window.closeImageModal();
+        }
+    });
+  </script>
+  <style>
+    /* Modal Styles (Global) */
+    .image-modal {
+      display: none; 
+      position: fixed; 
+      z-index: 9999; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgba(0,0,0,0.95); 
+      align-items: center;
+      justify-content: center;
+      cursor: zoom-out;
+    }
+    
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 95%;
+      max-height: 95vh;
+      border-radius: 4px;
+      object-fit: contain;
+      cursor: default;
+      animation: zoom 0.3s;
+    }
+    
+    .close-modal {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 50px;
+      font-weight: bold;
+      transition: 0.3s;
+      cursor: pointer;
+      z-index: 10000;
+      line-height: 1;
+    }
+    
+    @keyframes zoom {
+      from {transform:scale(0.8); opacity: 0;}
+      to {transform:scale(1); opacity: 1;}
+    }
+  </style>
+
 </body>
 </html>

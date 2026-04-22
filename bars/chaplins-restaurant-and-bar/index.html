@@ -4,6 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chaplin&#39;s Restaurant &amp; Bar | Bar DC</title>
+
+  
+  
+  
+  
+  
+     
+     
+  
+
+  
+  
+
+  
+  
+
+  <meta name="description" content="Visit Chaplin&#39;s Restaurant &amp; Bar in Logan Circle, Washington DC. ✨ Vibe Chaplin’s Restaurant &amp; Bar is a high-energy, cinematic escape that blends the charm of a 1920s Prohibition-style speakeasy with the...">
+  <link rel="canonical" href="https://bardc.com/bars/chaplins-restaurant-and-bar/">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Bar DC">
+  <meta property="og:title" content="Chaplin&#39;s Restaurant &amp; Bar">
+  <meta property="og:description" content="Visit Chaplin&#39;s Restaurant &amp; Bar in Logan Circle, Washington DC. ✨ Vibe Chaplin’s Restaurant &amp; Bar is a high-energy, cinematic escape that blends the charm of a 1920s Prohibition-style speakeasy with the...">
+  <meta property="og:url" content="https://bardc.com/bars/chaplins-restaurant-and-bar/">
+  <meta property="og:type" content="business.business">
+  
+  
+  
+  
+      
+  
+  <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fchaplins-restaurant-and-bar%2Flogo-1766322062886-569294636_18536001040015216_2139338535748073062_n.jpg?alt=media&amp;token=209810c1-e593-410e-b856-40f8f9b754f7">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Chaplin&#39;s Restaurant &amp; Bar">
+  <meta name="twitter:description" content="Visit Chaplin&#39;s Restaurant &amp; Bar in Logan Circle, Washington DC. ✨ Vibe Chaplin’s Restaurant &amp; Bar is a high-energy, cinematic escape that blends the charm of a 1920s Prohibition-style speakeasy with the...">
+  <meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fchaplins-restaurant-and-bar%2Flogo-1766322062886-569294636_18536001040015216_2139338535748073062_n.jpg?alt=media&amp;token=209810c1-e593-410e-b856-40f8f9b754f7">
+
     <!-- [NEW] Favicon Links -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -13,7 +52,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/masonry.css">
+
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9L0NBTF5RQ"></script>
 <script>
@@ -23,62 +64,651 @@
 
   gtag('config', 'G-9L0NBTF5RQ');
 </script>
+
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7540411251843957"
+     crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="container">
     <header>
-      <a href="/" class="logo-link">
-        <img src="/img/logo.jpg" alt="Bar DC Logo" class="logo">
-      </a>
-      <h1>Chaplin&#39;s Restaurant &amp; Bar</h1>
+      <div class="header-branding">
+        <a href="/" class="branding-link">
+          <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
+          <span class="site-title">Washington D.C. Bars & Clubs</span>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <a href="/bars/">Bars</a>
+        <a href="/map/">Map</a>
+        
+
+        <div class="nav-dropdown">
+          <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
+          <div class="dropdown-menu">
+            
+              <a href="/neighborhoods/u-street/">U Street</a>
+            
+              <a href="/neighborhoods/dupont-circle/">Dupont Circle</a>
+            
+              <a href="/neighborhoods/downtown/">Downtown</a>
+            
+              <a href="/neighborhoods/adams-morgan/">Adams Morgan</a>
+            
+              <a href="/neighborhoods/navy-yard/">Navy Yard</a>
+            
+              <a href="/neighborhoods/georgetown/">Georgetown</a>
+            
+              <a href="/neighborhoods/the-wharf/">The Wharf</a>
+            
+              <a href="/neighborhoods/h-street-ne/">H Street NE</a>
+            
+            <div class="dropdown-divider"></div>
+            <a href="/neighborhoods/" class="view-all">View All →</a>
+          </div>
+        </div>
+
+
+        <a href="/events/">Events</a>
+        <a href="/happy-hour/">Happy Hour</a>
+      </nav>
     </header>
     <main>
+      
+        <h1 class="page-title">Chaplin&#39;s Restaurant &amp; Bar</h1>
+      
       <!-- This line is critical. It injects the content from other files. -->
-      <article class="venue-profile">
+      <!-- Leaflet Map Resources -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<style>
+   /* Custom Pin Styles for Venue Page */
+   .custom-pin-icon { background: transparent; border: none; }
+   .pin-wrapper {
+     width: 40px; height: 40px; border-radius: 50%; border: 3px solid #fff;
+     box-shadow: 0 4px 10px rgba(0,0,0,0.5); background-color: #fff;
+     overflow: hidden; position: relative; transition: transform 0.2s ease, z-index 0.2s;
+   }
+   .pin-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+   .pin-wrapper.no-logo {
+     background-color: var(--primary-color, #e53935);
+     display: flex; align-items: center; justify-content: center;
+   }
+   .pin-wrapper.no-logo::after { content: ''; width: 12px; height: 12px; background: #fff; border-radius: 50%; }
+   .leaflet-container { font-family: inherit; }
+   .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: #1e1e1e; color: #fff; border: 1px solid rgba(255,255,255,0.1); }
+   .leaflet-popup-content a { color: #fff; background: var(--primary-color, #e53935); padding: 2px 8px; border-radius: 4px; text-decoration: none; }
+</style>
 
+<article class="venue-profile">
 
    <h1>Chaplin's Restaurant & Bar</h1>
   
   <div class="venue-details">
-    <p><strong>Category:</strong> Japanese, Ramen, Cocktail Bar</p>
-    <p><strong>Price:</strong> $$</p>
-    <p><strong>Address:</strong> 1501 9th St NW, Washington, DC 20001</p>
+    <div style="display:flex; align-items:flex-start; gap:1.5rem; margin-bottom:1rem; flex-wrap:wrap;">
+      
+        <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fchaplins-restaurant-and-bar%2Flogo-1766322062886-569294636_18536001040015216_2139338535748073062_n.jpg?alt=media&amp;token=209810c1-e593-410e-b856-40f8f9b754f7" alt="Chaplin&#39;s Restaurant &amp; Bar logo" style="max-height:250px; max-width:250px; border-radius:8px; border:1px solid #eee; object-fit:contain; flex-shrink:0;">
+      
+      <div style="flex:1; min-width: 250px;">
+        <div style="display:flex; gap:1.5rem; flex-wrap:wrap; justify-content: space-between;">
+            <div style="flex:1; min-width:200px;">
+                <p><strong>Category:</strong> 
+                  
+                  
+                    <a href="/categories/cocktail-bars/">Cocktail Bars</a>, 
+                  
+                    <a href="/categories/japanese/">Japanese</a>, 
+                  
+                    <a href="/categories/brunch-spots/">Brunch Spots</a>
+                  
+                </p>
+                
+                  <p><strong>Neighborhood:</strong> <a href="/neighborhoods/logan-circle/">Logan Circle</a></p>
+                
+                <p><strong>Price:</strong> $$</p>
+                
+                
+                
+                
+                
+                
+                <p><strong>Address:</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=Chaplin&#39;s%20Restaurant%20%26%20Bar%201501%209th%20St%20NW%2C%20Washington%2C%20DC%2020001" target="_blank" rel="noopener noreferrer" style="text-decoration:underline; color:var(--accent-color);">1501 9th St NW, Washington, DC 20001</a></p>
+
+                <div class="venue-actions-bar" style="margin-top:1rem;">
+                  
+                    <a href="https://www.chaplinsdc.com/" class="btn-website-action" target="_blank" rel="noopener noreferrer">
+                      <span>Website</span>
+                    </a>
+                  
+                  
+                  
+                  <div class="social-icons-inline">
+                    
+                      <a href="https://www.instagram.com/chaplinsrestaurantdc" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
+                    
+                    
+                    
+                  </div>
+                  
+                </div>
+            </div>
+            
+            <!-- Side Map -->
+            
+            <div style="width:220px; flex-shrink:0; margin-top: 0.5rem;">
+               <div id="venue-mini-map" style="width:100%; height:220px; border-radius:12px; border:1px solid rgba(255,255,255,0.1); box-shadow:0 4px 15px rgba(0,0,0,0.3); z-index:0; cursor: pointer;"></div>
+               <script>
+                 document.addEventListener('DOMContentLoaded', function() {
+                    var lat = 38.909809;
+                    var lng = -77.0237239;
+                    var map = L.map('venue-mini-map', {
+                        center: [lat, lng],
+                        zoom: 16,
+                        zoomControl: false, 
+                        attributionControl: false,
+                        dragging: false,
+                        scrollWheelZoom: false,
+                        doubleClickZoom: false,
+                        boxZoom: false,
+                        keyboard: false
+                    });
+                     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                        subdomains: 'abcd',
+                        maxZoom: 20
+                     }).addTo(map);
+
+                    var iconHTML = `<div class="pin-wrapper"><img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fchaplins-restaurant-and-bar%2Flogo-1766322062886-569294636_18536001040015216_2139338535748073062_n.jpg?alt=media&amp;token=209810c1-e593-410e-b856-40f8f9b754f7" onerror="this.style.display='none'; this.parentElement.classList.add('no-logo');"></div>`;
+                    var icon = L.divIcon({
+                        className: 'custom-pin-icon',
+                        html: iconHTML,
+                        iconSize: [40, 40],
+                        iconAnchor: [20, 20]
+                    });
+                    
+                    L.marker([lat, lng], {icon: icon}).addTo(map);
+                    
+                    // Click to open Google Maps
+                    document.getElementById('venue-mini-map').addEventListener('click', function() {
+                        window.open('https://www.google.com/maps/search/?api=1&amp;query=Chaplin&#39;s%20Restaurant%20%26%20Bar%201501%209th%20St%20NW%2C%20Washington%2C%20DC%2020001', '_blank');
+                    });
+                 });
+               </script>
+               <div style="text-align:center; margin-top:0.5rem;">
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=Chaplin&#39;s%20Restaurant%20%26%20Bar%201501%209th%20St%20NW%2C%20Washington%2C%20DC%2020001" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; color:#aaa; text-decoration:none;">View on Google Maps &rarr;</a>
+               </div>
+            </div>
+            
+        </div>
+      </div>
+    </div>
   </div>
 
-    <!-- [NEW] Google Rating Display -->
+    <!-- [MOVED] Google Rating Display (Moved to Reviews Section) -->
   
-    <div class="google-rating">
-      <span class="rating-stars" style="--rating: 4.4;">★★★★★</span>
-      <span class="rating-value">4.4</span>
-      <span class="rating-count">(1705 reviews)</span>
-    </div>
+    <!-- Rating moved below -->
   
   <!-- End Google Rating Display -->
 
   <div class="venue-description">
-    <p>A lively restaurant and bar in Shaw that pays homage to silent film star Charlie Chaplin, Chaplin&#39;s is known for its delicious ramen and creative cocktails. The 1920s-themed decor and popular happy hour make it a fun and festive dining and drinking destination.</p>
+    <h3>✨ Vibe</h3>
+<p>Chaplin’s Restaurant & Bar is a high-energy, cinematic escape that blends the charm of a 1920s Prohibition-style speakeasy with the artistry of a master-crafted Tokyo ramen house.</p>
+
+<h3>🍸 Best For</h3>
+<p>Ramen enthusiasts, craft cocktail aficionados, dog-friendly patio dates, high-value weekend brunch, and group celebrations.</p>
+
+<h3>🔥 Highlights</h3>
+<ul>
+  <li><strong>Award-Winning Culinary Pedigree:</strong> Recently named one of DC’s best ramen spots, the menu features authentic bowls like the spicy "Chaplin A.S.S." and the "Stamina Spicy Ramen," crafted by chef Myo Htun using techniques learned from Tokyo masters.</li>
+  <li><strong>Inventive "Drafty Spirits":</strong> The bar program stands out with complex on-tap cocktails and silent-film-inspired drinks like the absinthe-based "A Woman of Paris" and the strawberry-infused "Cure."</li>
+  <li><strong>Cinematic Dog-Friendly Patio:</strong> Recognized as one of the best pet-friendly spots in the city, the venue provides a welcoming outdoor space where four-legged friends are greeted with water bowls while owners enjoy a "Drafty Spirit" under the stars.</li>
+</ul>
+
+<h3>ℹ️ Need to Know</h3>
+<ul>
+  <li>Reservations are highly recommended for weekend evenings and can be easily booked online to secure a spot in the cozy, Old Hollywood-themed interior.</li>
+  <li>Look for their popular weekend brunch, which offers incredible value including an appetizer and entrée for a set price.</li>
+</ul>
   </div>
   
-  <a href="https://www.chaplinsdc.com/" class="btn-website" target="_blank" rel="noopener noreferrer">Visit Website</a>
-  
-    <!-- [NEW] Social Media Links Section -->
-  
-  <!-- End Social Media Links Section -->
 
+  
+
+
+  <!-- [NEW] Events Section -->
   <!-- [NEW] Events Section -->
 
 <!-- End Events Section -->
 
+<!-- [NEW] Recurring Events Section -->
+
+  <div class="recurring-events-section">
+    <h3>🔄 Weekly Events</h3>
+    <div class="events-grid">
+      
+        
+        <div class="event-item recurring">
+          <h4>Chaplin&#39;s Weekend Brunch 🥂</h4>
+          <p class="event-meta">
+            <span class="days-badge">Sat, Sun</span>
+          </p>
+          
+            <p>Enjoy brunch specials including $10.50 Frozen Snow Monkeys (Sunnyside Marg 2.0 and Tokyo Tea) and Chaplin&#39;s Bloody Marys with $6.50 refills.</p>
+          
+        </div>
+        
+      
+    </div>
+  </div>
+
+<!-- End Recurring Events Section -->
+
     <!-- [NEW] Full Happy Hour Details Section -->
   
-  <!-- End Happy Hour Details Section -->
+    <div class="happy-hour-info">
+      <h3>Happy Hour</h3>
+      <p>1/2 priced drinks including Drafty Spirits, Draft Beers, and all Wine by the Glass (White, Skin Contact, and Red). Specific cocktail deals include The Kid, The Vagabond, and The Cure for $7.</p>
+    </div>
   
+  <!-- End Happy Hour Details Section -->
+
+  <!-- [NEW] News Section -->
+  
+  <div class="news-section" style="margin-top:2rem; margin-bottom:2rem;">
+    <h3>📰 In the News</h3>
+    <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
+      
+        <a href="https://theinfatuation.com/washington-dc/guides/best-ramen-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=theinfatuation.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The Infatuation</span>
+              <span style="margin-left:auto; text-transform:none;">Dec 12, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Best Ramen Spots In DC</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Chaplin’s Restaurant &amp; Bar in Shaw offers a high-energy dining experience that pairs traditional ramen with an inventive cocktail program inspired by silent film era classics. The menu features standout dishes like the spicy Chaplin A.S.S. ramen, complemented by unique drinks such as the absinthe-based A Woman of Paris or the strawberry-infused Cure.</p>
+           
+        </a>
+      
+        <a href="https://dc.eater.com/maps/best-dog-friendly-bars-restaurants-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Eater DC</span>
+              <span style="margin-left:auto; text-transform:none;">May 16, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Best Dog-Friendly Patios Around D.C.</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Chaplin&#39;s Restaurant &amp; Bar in the Shaw neighborhood offers a dog-friendly patio where pets are welcomed with water bowls while their owners enjoy ramen and craft cocktails. The venue&#39;s sister spot, Zeppelin, also features a 65-seat outdoor area that allows four-legged companions.</p>
+           
+        </a>
+      
+        <a href="https://insidehook.com/food-washington-dc/dc-best-ramen-bars" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=insidehook.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>InsideHook</span>
+              <span style="margin-left:auto; text-transform:none;">Jun 13, 2023</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Splurge on Wagyu Noodles and More at DC’s 7 Best Ramen Bars</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Chaplin&#39;s Restaurant &amp; Bar in Shaw features ramen inspired by chef and partner Myo Htun’s training under a master chef in Tokyo. The menu highlights the Stamina Spicy Ramen, a flavorful blend of spice, sliced pork, and miso, served within a unique Prohibition speakeasy-themed interior.</p>
+           
+        </a>
+      
+        <a href="https://districtfray.com/articles/zeppelin-chaplins-shaw-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=districtfray.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>District Fray</span>
+              <span style="margin-left:auto; text-transform:none;">Jun 6, 2023</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Zeppelin + Chaplin’s Provide the Perfect Two-for-One Night Out</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Chaplin’s Restaurant &amp; Bar in Shaw offers a buzzy atmosphere featuring Japanese-inspired flavors, signature cocktails like the Tokyo Tea, and unique late-night options such as whiskey-injected Pay Day Dumplings. Often paired with its sister restaurant Zeppelin for a complete night out, the venue provides a lively experience defined by its bustling patio and vibrant karaoke scene.</p>
+           
+        </a>
+      
+        <a href="https://washingtonpost.com/news/going-out-guide/wp/2014/08/22/charlie-chaplin-themed-restaurant-threatened-with-lawsuit-from-late-actors-estate" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=washingtonpost.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The Washington Post</span>
+              <span style="margin-left:auto; text-transform:none;">Dec 2, 2021</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Charlie Chaplin-themed restaurant threatened with lawsuit from late actor’s estate</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Chaplin&#39;s Restaurant &amp; Bar rebranded from its original name, &#39;The Chaplin,&#39; shortly after opening to resolve a legal dispute with the Charlie Chaplin estate. The Asian-themed establishment adjusted its branding to avoid litigation while maintaining its tribute to the silent-film legend.</p>
+           
+        </a>
+      
+    </div>
+  </div>
+  
+  <!-- End News Section -->
+  
+
+  <!-- [NEW] Reviews Section (Server-Side) -->
+  
+  <div id="google-reviews-section" class="reviews-section">
+    
+    
+      
+    
+
+    <!-- [MOVED] Google Rating Display -->
+    
+      <div class="google-rating" style="margin-bottom: 2rem;">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJaalA2e23t4kRuuQRbaiF7f4" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: block;">
+          <div class="rating-header">
+            <span class="rating-stars" style="--rating: 4.4;">★★★★★</span>
+            <span class="rating-value">4.4</span>
+            <span class="rating-count">(1754 reviews)</span>
+            <span class="btn-read-reviews" style="margin-left: auto; margin-top: 0;">View on Google</span>
+          </div>
+        </a>
+      </div>
+    
+    <!-- End Google Rating Display -->
+
+    <h3>Recent Reviews from Google</h3>
+    <div class="reviews-grid">
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJaalA2e23t4kRuuQRbaiF7f4" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjVyU3FrvLjGg90VpsEUT6HqChcJ0_wGdK0WzXM79UekKt1jXz3B7Q=s128-c0x00000000-cc-rp-mo-ba5" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">2 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            This was such a great surprise! I was just hungry and walked by with my brother.  I didn&#39;t think this was a Ramen house.  The food was fantastic.  The drinks were fantastic.  We might have been there...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJaalA2e23t4kRuuQRbaiF7f4" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjVOua7awAB1mLxq_LqiGHvOEelYwNjOyz3tuenGlhCPdiGxqgL1=s128-c0x00000000-cc-rp-mo-ba4" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">2 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            My first time at Chaplin’s and I loved it. My home girl kept telling me they have the best Ramen and I was skeptical but she was not lying. The food was really good. We split the Chaplin A.S.S.  and...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJaalA2e23t4kRuuQRbaiF7f4" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXcRbyuzK74VUGzr9-PWOwyNkpCjQTvLsTq5GR9zXtcVSqm3V9u=s128-c0x00000000-cc-rp-mo-ba5" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">3 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            On a whirlwind trip to DC my daughter and I happened upon Chaplin‘s Restaurant. We were seated quickly and enjoyed our dumplings and edamame immensely! There’s plenty of inside and outside seating and...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJaalA2e23t4kRuuQRbaiF7f4" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocLYtHfdSjgJXZ9rrfVHt01YT5_7Ux58tlBID2LrUnaWxqFiSg=s128-c0x00000000-cc-rp-mo-ba3" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">3 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★☆☆☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            I visited DC Friday and made a reservation at this place the day before based on good reviews, it was also my 17th anniversary which was noted on open table and now I will tell you my experience with...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJaalA2e23t4kRuuQRbaiF7f4" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXx8SFZH7Z0zSFcPB7O_78nEdJOpDmfMXv3mymrz-J0pW-kjNom=s128-c0x00000000-cc-rp-mo-ba3" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">2 weeks ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Ive been here three times, once in 2016 once and 2019 and again this year just this last weekend.
+
+And I can definitively remember every single item I got from all three of those meals.
+
+Chaplins is...
+          </p>
+      </a>
+      
+    </div>
+    <div class="reviews-footer">
+      <small>Reviews provided by Google</small>
+    </div>
+  </div>
+  
+
+  <!-- [NEW] Nearby Bars Section -->
+  
+  
+  <div class="nearby-section" style="margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+    <h3 style="margin-bottom: 1.5rem;">📍 Nearby Spots (Walking Distance)</h3>
+    <div class="venue-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
+      
+        <a href="/bars/maxwell-park/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fmaxwell-park%2Flogo-1766935756093-41816740_451139275293099_8952069252098031616_n.jpg?alt=media&amp;token=124e7ea5-824a-4871-aa10-e649f3e3a186" alt="Maxwell Park" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Maxwell Park</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">159m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/ugly-duckling/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fugly-duckling%2Flogo-1767144074240-489345792_548442695030372_3042866949239533809_n.jpg?alt=media&amp;token=58769236-9b73-49a7-a124-bdc9b6b0ce15" alt="Ugly Duckling" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Ugly Duckling</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">194m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/ivy-and-coney/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fivy-and-coney%2Flogo-1766592585162-133682427_3659067224186453_5948253432029933043_n.jpg?alt=media&amp;token=2a7deb28-ed65-480a-b72a-1f77f6d684cf" alt="Ivy and Coney" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Ivy and Coney</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">202m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/dacha-beer-garden/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fdacha-beer-garden%2Flogo-1766361421325-337075319_1056142915775260_7642907913467462917_n.jpg?alt=media&amp;token=8f14f9d9-723f-4702-89e4-8ed52b19ce7b" alt="Dacha Beer Garden" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Dacha Beer Garden</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">218m away</p>
+          </div>
+        </a>
+      
+    </div>
+  </div>
+  
+
   <a href="/" class="btn-back">← Back to Home</a>
 </article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "Chaplin's Restaurant & Bar",
+  "image": "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fchaplins-restaurant-and-bar%2Flogo-1766322062886-569294636_18536001040015216_2139338535748073062_n.jpg?alt=media&token=209810c1-e593-410e-b856-40f8f9b754f7",
+  "address": "1501 9th St NW, Washington, DC 20001",
+  
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.4,
+    "reviewCount": 1754
+  },
+  
+  
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": 5,
+      "bestRating": 5
+    },
+    "author": {
+      "@type": "Person",
+      "name": "David W"
+    },
+    "reviewBody": "This was such a great surprise! I was just hungry and walked by with my brother.  I didn't think this was a Ramen house.  The food was fantastic.  The drinks were fantastic.  We might have been there during happy hour.... but the prices were quite reasonable.  100% would return!"
+  },
+  
+  
+  "priceRange": "$$", 
+  
+  
+  "telephone": "(202) 644-8806",
+  
+  "url": "https://bardc.com/venues/chaplins-restaurant-and-bar/"
+}
+</script>
     </main>
-    <footer>
-      <p>© 2025 Bar DC. A guide to Washington D.C. Nightlife.</p>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="/" aria-label="Back to Home">
+            <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="footer-logo">
+          </a>
+        </div>
+        
+        <div class="footer-links">
+
+          <div class="social-icons">
+            <a href="https://x.com/bardc_" target="_blank" rel="noopener noreferrer" class="social-icon twitter" aria-label="X (formerly Twitter)"></a>
+            <a href="https://www.facebook.com/bardc" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook"></a>
+          </div>
+          <a href="mailto:info@bardc.com" class="footer-contact">info@bardc.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Bar DC. All rights reserved.</p>
+      </div>
     </footer>
   </div>
+  <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="img01" onclick="event.stopPropagation()">
+  </div>
+  <script>
+    // Global Image Modal Logic
+    window.openImageModal = function(src) {
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("img01");
+        if(modal && modalImg) {
+            modal.style.display = "flex";
+            modalImg.src = src;
+            document.body.style.overflow = "hidden"; 
+        }
+    }
+    
+    window.closeImageModal = function() {
+        var modal = document.getElementById("imageModal");
+        if(modal) {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto"; 
+        }
+    }
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            window.closeImageModal();
+        }
+    });
+  </script>
+  <style>
+    /* Modal Styles (Global) */
+    .image-modal {
+      display: none; 
+      position: fixed; 
+      z-index: 9999; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgba(0,0,0,0.95); 
+      align-items: center;
+      justify-content: center;
+      cursor: zoom-out;
+    }
+    
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 95%;
+      max-height: 95vh;
+      border-radius: 4px;
+      object-fit: contain;
+      cursor: default;
+      animation: zoom 0.3s;
+    }
+    
+    .close-modal {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 50px;
+      font-weight: bold;
+      transition: 0.3s;
+      cursor: pointer;
+      z-index: 10000;
+      line-height: 1;
+    }
+    
+    @keyframes zoom {
+      from {transform:scale(0.8); opacity: 0;}
+      to {transform:scale(1); opacity: 1;}
+    }
+  </style>
+
 </body>
 </html>

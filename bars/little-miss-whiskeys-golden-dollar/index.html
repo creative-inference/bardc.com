@@ -4,6 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Little Miss Whiskey&#39;s Golden Dollar | Bar DC</title>
+
+  
+  
+  
+  
+  
+     
+     
+  
+
+  
+  
+
+  
+  
+
+  <meta name="description" content="Visit Little Miss Whiskey&#39;s Golden Dollar in H Street NE, Washington DC. ✨ Vibe A New Orleans-inspired haunt bathed in a violet black-light glow, this H Street landmark combines a welcoming dive-bar soul with a...">
+  <link rel="canonical" href="https://bardc.com/bars/little-miss-whiskeys-golden-dollar/">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Bar DC">
+  <meta property="og:title" content="Little Miss Whiskey&#39;s Golden Dollar">
+  <meta property="og:description" content="Visit Little Miss Whiskey&#39;s Golden Dollar in H Street NE, Washington DC. ✨ Vibe A New Orleans-inspired haunt bathed in a violet black-light glow, this H Street landmark combines a welcoming dive-bar soul with a...">
+  <meta property="og:url" content="https://bardc.com/bars/little-miss-whiskeys-golden-dollar/">
+  <meta property="og:type" content="business.business">
+  
+  
+  
+  
+      
+  
+  <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Flittle-miss-whiskeys-golden-dollar%2Flogo-1766858806282-45765666_577257409383616_2300326398599888896_n.jpg?alt=media&amp;token=654c0b8d-86fd-4530-9f1e-b7ccbf887397">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Little Miss Whiskey&#39;s Golden Dollar">
+  <meta name="twitter:description" content="Visit Little Miss Whiskey&#39;s Golden Dollar in H Street NE, Washington DC. ✨ Vibe A New Orleans-inspired haunt bathed in a violet black-light glow, this H Street landmark combines a welcoming dive-bar soul with a...">
+  <meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Flittle-miss-whiskeys-golden-dollar%2Flogo-1766858806282-45765666_577257409383616_2300326398599888896_n.jpg?alt=media&amp;token=654c0b8d-86fd-4530-9f1e-b7ccbf887397">
+
     <!-- [NEW] Favicon Links -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -13,7 +52,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/masonry.css">
+
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9L0NBTF5RQ"></script>
 <script>
@@ -23,62 +64,626 @@
 
   gtag('config', 'G-9L0NBTF5RQ');
 </script>
+
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7540411251843957"
+     crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="container">
     <header>
-      <a href="/" class="logo-link">
-        <img src="/img/logo.jpg" alt="Bar DC Logo" class="logo">
-      </a>
-      <h1>Little Miss Whiskey&#39;s Golden Dollar</h1>
+      <div class="header-branding">
+        <a href="/" class="branding-link">
+          <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
+          <span class="site-title">Washington D.C. Bars & Clubs</span>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <a href="/bars/">Bars</a>
+        <a href="/map/">Map</a>
+        
+
+        <div class="nav-dropdown">
+          <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
+          <div class="dropdown-menu">
+            
+              <a href="/neighborhoods/u-street/">U Street</a>
+            
+              <a href="/neighborhoods/dupont-circle/">Dupont Circle</a>
+            
+              <a href="/neighborhoods/downtown/">Downtown</a>
+            
+              <a href="/neighborhoods/adams-morgan/">Adams Morgan</a>
+            
+              <a href="/neighborhoods/navy-yard/">Navy Yard</a>
+            
+              <a href="/neighborhoods/georgetown/">Georgetown</a>
+            
+              <a href="/neighborhoods/the-wharf/">The Wharf</a>
+            
+              <a href="/neighborhoods/h-street-ne/">H Street NE</a>
+            
+            <div class="dropdown-divider"></div>
+            <a href="/neighborhoods/" class="view-all">View All →</a>
+          </div>
+        </div>
+
+
+        <a href="/events/">Events</a>
+        <a href="/happy-hour/">Happy Hour</a>
+      </nav>
     </header>
     <main>
+      
+        <h1 class="page-title">Little Miss Whiskey&#39;s Golden Dollar</h1>
+      
       <!-- This line is critical. It injects the content from other files. -->
-      <article class="venue-profile">
+      <!-- Leaflet Map Resources -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<style>
+   /* Custom Pin Styles for Venue Page */
+   .custom-pin-icon { background: transparent; border: none; }
+   .pin-wrapper {
+     width: 40px; height: 40px; border-radius: 50%; border: 3px solid #fff;
+     box-shadow: 0 4px 10px rgba(0,0,0,0.5); background-color: #fff;
+     overflow: hidden; position: relative; transition: transform 0.2s ease, z-index 0.2s;
+   }
+   .pin-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+   .pin-wrapper.no-logo {
+     background-color: var(--primary-color, #e53935);
+     display: flex; align-items: center; justify-content: center;
+   }
+   .pin-wrapper.no-logo::after { content: ''; width: 12px; height: 12px; background: #fff; border-radius: 50%; }
+   .leaflet-container { font-family: inherit; }
+   .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: #1e1e1e; color: #fff; border: 1px solid rgba(255,255,255,0.1); }
+   .leaflet-popup-content a { color: #fff; background: var(--primary-color, #e53935); padding: 2px 8px; border-radius: 4px; text-decoration: none; }
+</style>
 
+<article class="venue-profile">
 
    <h1>Little Miss Whiskey's Golden Dollar</h1>
   
   <div class="venue-details">
-    <p><strong>Category:</strong> Dive Bar, Dance Club</p>
-    <p><strong>Price:</strong> $</p>
-    <p><strong>Address:</strong> 1104 H St NE, Washington, DC 20002</p>
+    <div style="display:flex; align-items:flex-start; gap:1.5rem; margin-bottom:1rem; flex-wrap:wrap;">
+      
+        <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Flittle-miss-whiskeys-golden-dollar%2Flogo-1766858806282-45765666_577257409383616_2300326398599888896_n.jpg?alt=media&amp;token=654c0b8d-86fd-4530-9f1e-b7ccbf887397" alt="Little Miss Whiskey&#39;s Golden Dollar logo" style="max-height:250px; max-width:250px; border-radius:8px; border:1px solid #eee; object-fit:contain; flex-shrink:0;">
+      
+      <div style="flex:1; min-width: 250px;">
+        <div style="display:flex; gap:1.5rem; flex-wrap:wrap; justify-content: space-between;">
+            <div style="flex:1; min-width:200px;">
+                <p><strong>Category:</strong> 
+                  
+                  
+                    <a href="/categories/dive-bars/">Dive Bars</a>, 
+                  
+                    <a href="/categories/dance-clubs/">Dance Clubs</a>, 
+                  
+                    <a href="/categories/whiskey-bars/">Whiskey Bars</a>
+                  
+                </p>
+                
+                  <p><strong>Neighborhood:</strong> <a href="/neighborhoods/h-street-ne/">H Street NE</a></p>
+                
+                <p><strong>Price:</strong> $</p>
+                
+                
+                
+                
+                
+                
+                <p><strong>Address:</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=Little%20Miss%20Whiskey&#39;s%20Golden%20Dollar%201104%20H%20St%20NE%2C%20Washington%2C%20DC%2020002" target="_blank" rel="noopener noreferrer" style="text-decoration:underline; color:var(--accent-color);">1104 H St NE, Washington, DC 20002</a></p>
+
+                <div class="venue-actions-bar" style="margin-top:1rem;">
+                  
+                  
+                  
+                  <div class="social-icons-inline">
+                    
+                      <a href="https://www.instagram.com/littlemisswhiskeys/" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
+                    
+                    
+                    
+                  </div>
+                  
+                </div>
+            </div>
+            
+            <!-- Side Map -->
+            
+            <div style="width:220px; flex-shrink:0; margin-top: 0.5rem;">
+               <div id="venue-mini-map" style="width:100%; height:220px; border-radius:12px; border:1px solid rgba(255,255,255,0.1); box-shadow:0 4px 15px rgba(0,0,0,0.3); z-index:0; cursor: pointer;"></div>
+               <script>
+                 document.addEventListener('DOMContentLoaded', function() {
+                    var lat = 38.900437;
+                    var lng = -76.99121099999999;
+                    var map = L.map('venue-mini-map', {
+                        center: [lat, lng],
+                        zoom: 16,
+                        zoomControl: false, 
+                        attributionControl: false,
+                        dragging: false,
+                        scrollWheelZoom: false,
+                        doubleClickZoom: false,
+                        boxZoom: false,
+                        keyboard: false
+                    });
+                     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                        subdomains: 'abcd',
+                        maxZoom: 20
+                     }).addTo(map);
+
+                    var iconHTML = `<div class="pin-wrapper"><img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Flittle-miss-whiskeys-golden-dollar%2Flogo-1766858806282-45765666_577257409383616_2300326398599888896_n.jpg?alt=media&amp;token=654c0b8d-86fd-4530-9f1e-b7ccbf887397" onerror="this.style.display='none'; this.parentElement.classList.add('no-logo');"></div>`;
+                    var icon = L.divIcon({
+                        className: 'custom-pin-icon',
+                        html: iconHTML,
+                        iconSize: [40, 40],
+                        iconAnchor: [20, 20]
+                    });
+                    
+                    L.marker([lat, lng], {icon: icon}).addTo(map);
+                    
+                    // Click to open Google Maps
+                    document.getElementById('venue-mini-map').addEventListener('click', function() {
+                        window.open('https://www.google.com/maps/search/?api=1&amp;query=Little%20Miss%20Whiskey&#39;s%20Golden%20Dollar%201104%20H%20St%20NE%2C%20Washington%2C%20DC%2020002', '_blank');
+                    });
+                 });
+               </script>
+               <div style="text-align:center; margin-top:0.5rem;">
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=Little%20Miss%20Whiskey&#39;s%20Golden%20Dollar%201104%20H%20St%20NE%2C%20Washington%2C%20DC%2020002" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; color:#aaa; text-decoration:none;">View on Google Maps &rarr;</a>
+               </div>
+            </div>
+            
+        </div>
+      </div>
+    </div>
   </div>
 
-    <!-- [NEW] Google Rating Display -->
+    <!-- [MOVED] Google Rating Display (Moved to Reviews Section) -->
   
-    <div class="google-rating">
-      <span class="rating-stars" style="--rating: 4.5;">★★★★★</span>
-      <span class="rating-value">4.5</span>
-      <span class="rating-count">(537 reviews)</span>
-    </div>
+    <!-- Rating moved below -->
   
   <!-- End Google Rating Display -->
 
   <div class="venue-description">
-    <p>A quirky, New Orleans-themed dive bar on H Street, Little Miss Whiskey&#39;s is known for its eclectic decor, potent drinks (including the frozen &#39;Awesome Slushie&#39;), and a dance floor that gets packed on weekends. It has a divey charm and a lively, party-like atmosphere.</p>
+    <h3>✨ Vibe</h3>
+<p>A New Orleans-inspired haunt bathed in a violet black-light glow, this H Street landmark combines a welcoming dive-bar soul with a magical, high-energy atmosphere.</p>
+
+<h3>🍸 Best For</h3>
+<p>Craft beer connoisseurs, whiskey enthusiasts, high-energy dancing, themed karaoke, and cheering on the New Orleans Saints.</p>
+
+<h3>🔥 Highlights</h3>
+<ul>
+  <li><strong>Award-Winning Sports Culture:</strong> Voted the best sports bar in DC by Washingtonian, this venue is the ultimate destination for community events, crab feasts, and New Orleans Saints game watches.</li>
+  <li><strong>Extensive Beverage Library:</strong> Boasts an impressive selection of over 130 craft beers and 60+ whiskeys, alongside their legendary signature "Awesomeness" sweet-tea slushy.</li>
+  <li><strong>Unique Entertainment:</strong> Features a second-story dance floor with cover-free DJ nights every Friday and Saturday, plus theatrical "Kostume Karaoke" on Wednesdays complete with props and wigs.</li>
+</ul>
+
+<h3>ℹ️ Need to Know</h3>
+<ul>
+  <li>Make sure to explore the "hidden" outdoor patio in the back for a relaxed, open-air experience away from the dance floor.</li>
+  <li>The venue focuses on drinks and vibes rather than a daily food menu, so plan to grab a bite on H Street before heading in for late-night fun.</li>
+</ul>
   </div>
   
-  <a href="" class="btn-website" target="_blank" rel="noopener noreferrer">Visit Website</a>
-  
-    <!-- [NEW] Social Media Links Section -->
-  
-  <!-- End Social Media Links Section -->
 
+  
+
+
+  <!-- [NEW] Events Section -->
   <!-- [NEW] Events Section -->
 
 <!-- End Events Section -->
 
+<!-- [NEW] Recurring Events Section -->
+
+<!-- End Recurring Events Section -->
+
     <!-- [NEW] Full Happy Hour Details Section -->
   
   <!-- End Happy Hour Details Section -->
+
+  <!-- [NEW] News Section -->
   
+  <div class="news-section" style="margin-top:2rem; margin-bottom:2rem;">
+    <h3>📰 In the News</h3>
+    <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
+      
+        <a href="https://dc.eater.com/maps/washington-dc-best-dive-bars" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Eater DC</span>
+              <span style="margin-left:auto; text-transform:none;">Jul 25, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">D.C.‘s Most Lovable Dive Bars</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Little Miss Whiskey&#39;s Golden Dollar is an H Street dive bar known for its purple lighting, Elvis art, and affinity for the New Orleans Saints. The venue offers a curated selection of hard-to-find bottled and canned beers alongside cover-free DJ nights every Friday and Saturday.</p>
+           
+        </a>
+      
+        <a href="https://dcist.com/story/14/01/29/the-best-karaoke-in-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=dcist.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>DCist</span>
+              <span style="margin-left:auto; text-transform:none;">Oct 28, 2018</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Best Places For Karaoke In The D.C. Area</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Little Miss Whiskey&#39;s Golden Dollar hosts Kostume Karaoke on Wednesday nights, where performers can utilize provided props, costumes, and wigs for a theatrical singing experience. Located on H Street NE, the venue offers a lighthearted and ridiculous atmosphere for those looking to add some flair to their karaoke performance.</p>
+           
+        </a>
+      
+        <a href="https://whalebonemag.com/operation-save-bars" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=whalebonemag.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Whalebone Magazine</span>
+              <span style="margin-left:auto; text-transform:none;">Oct 16, 2018</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Operation: Save the Bars</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Little Miss Whiskey’s Golden Dollar is recognized as a historic Washington, D.C. staple featuring an extensive selection of over 60 whiskeys and 130 craft beers. The venue is well-known for its signature “Awesomeness” sweet-tea slushy and regularly hosts community events such as pig roasts, crab feasts, and New Orleans Saints game watches.</p>
+           
+        </a>
+      
+        <a href="https://washingtonian.com/2017/10/30/dc-sports-bar-smackdown-champion-little-miss-whiskeys" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Washingtonian</span>
+              <span style="margin-left:auto; text-transform:none;">Oct 30, 2017</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Little Miss Whiskey’s Wins DC Sports Bar Smackdown</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Little Miss Whiskey&#39;s Golden Dollar was voted the best sports bar in DC after winning a bracket-style competition hosted by Washingtonian. The H Street pub is a well-known New Orleans Saints destination and secured the title following a surge of fan support in the final round of voting.</p>
+           
+        </a>
+      
+        <a href="https://thrillist.com/venue/drink/washington-dc/bar/little-miss-whiskeys-golden-dollar" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=thrillist.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Thrillist</span>
+              <span style="margin-left:auto; text-transform:none;">Oct 5, 2017</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Little Miss Whiskey&#39;s Golden Dollar: A Bar in Washington, D.C.</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Little Miss Whiskey&#39;s Golden Dollar is a New Orleans-themed H Street haunt known for its violet black-light glow, &quot;Awesomeness&quot; slushies, and non-pretentious atmosphere. The venue features a relaxed downstairs bar and a second-story dance floor where DJs spin hip-hop for a high-energy, judgment-free crowd.</p>
+           
+        </a>
+      
+    </div>
+  </div>
+  
+  <!-- End News Section -->
+  
+
+  <!-- [NEW] Reviews Section (Server-Side) -->
+  
+  <div id="google-reviews-section" class="reviews-section">
+    
+    
+      
+    
+
+    <!-- [MOVED] Google Rating Display -->
+    
+      <div class="google-rating" style="margin-bottom: 2rem;">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJuxkLOz64t4kREuXnvz8j4xE" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: block;">
+          <div class="rating-header">
+            <span class="rating-stars" style="--rating: 4.5;">★★★★★</span>
+            <span class="rating-value">4.5</span>
+            <span class="rating-count">(549 reviews)</span>
+            <span class="btn-read-reviews" style="margin-left: auto; margin-top: 0;">View on Google</span>
+          </div>
+        </a>
+      </div>
+    
+    <!-- End Google Rating Display -->
+
+    <h3>Recent Reviews from Google</h3>
+    <div class="reviews-grid">
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJuxkLOz64t4kREuXnvz8j4xE" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXfsTy53Z9G-X2pIv1bzaH6qJMVIrUPnNxOYZLZp6AF0ojT6tJQ=s128-c0x00000000-cc-rp-mo-ba2" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">8 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★☆☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Nice spot but probably won’t be back. I like that they have a menu but don’t
+
+Positives:
+Relatively inexpensive drinks with an expansive drink menu.
+Water dispensers.
+
+Negatives:
+They didn’t have my...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJuxkLOz64t4kREuXnvz8j4xE" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjVJPsDfH8IruO-qT5xvAw5hHFTFEBnQxwZGSRu2D3alfoZzB1J28w=s128-c0x00000000-cc-rp-mo-ba6" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a year ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            This place is so fun! Such a unique and cool vibe… kind of a hole in the wall but then you step in and it feels like a whole different world! Still a bar, but with some magic! There’s a cute little...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJuxkLOz64t4kREuXnvz8j4xE" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocKO1Uq1ko715cvHBWy2lQm5O3pIrbba0Yi_e64gSzqlYEEYPQ=s128-c0x00000000-cc-rp-mo-ba3" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a week ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Go here for good vibes good ipa beer and community! This bar is a landmark…
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJuxkLOz64t4kREuXnvz8j4xE" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjUzzYVuUElE4r-Xd6RSITYIDRmE13qlLPNgPvP8R4894QO6i3q9=s128-c0x00000000-cc-rp-mo-ba3" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">8 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Loved this place very open and welcoming. The decor is on point and the drinks are great. Overall it’s a total vibe and I can’t wait to go back. No food tho so plan accordingly people!
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJuxkLOz64t4kREuXnvz8j4xE" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocLYfuf2WyR4Pld2vFBZnVEtUKw2z1h722JzCGF-w1F2LKQWVQ=s128-c0x00000000-cc-rp-mo" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">3 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            I honestly have not tried the food (didn’t know they sold any) or really bought a drink here but this is my favorite spot at 1 am after a house party.  Music caters to everyone and somehow still hits....
+          </p>
+      </a>
+      
+    </div>
+    <div class="reviews-footer">
+      <small>Reviews provided by Google</small>
+    </div>
+  </div>
+  
+
+  <!-- [NEW] Nearby Bars Section -->
+  
+  
+  <div class="nearby-section" style="margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+    <h3 style="margin-bottom: 1.5rem;">📍 Nearby Spots (Walking Distance)</h3>
+    <div class="venue-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
+      
+        <a href="/bars/copycat-co/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcopycat-co%2Flogo-1766355373827-cclogo1.webp?alt=media&amp;token=1388327e-e17c-4f88-8faa-555b59dc586f" alt="Copycat Co." style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Copycat Co.</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">16m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/the-haymaker-bar/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-haymaker-bar%2Flogo-1766511082561-67332912_1214426235412152_1864474500381278208_n.jpg?alt=media&amp;token=300da1ba-f994-4a8a-b1bf-0d3fee6935e4" alt="The Haymaker Bar" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">The Haymaker Bar</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">87m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/nomad/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fnomad%2Flogo-1767021919970-352830429_1109096129863379_4669141560394923732_n.jpg?alt=media&amp;token=8741da6a-b315-4c7c-89d6-dc8a6dca0edc" alt="Nomad" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Nomad</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">105m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/ben-s-upstairs/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fben-s-upstairs%2Flogo-1766150420235-301691433_410584351209242_3954949647802151774_n.jpg?alt=media&amp;token=1e8df9e3-aeb8-4081-b8c2-609176514ed0" alt="Ben&#39;s Upstairs" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Ben&#39;s Upstairs</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">114m away</p>
+          </div>
+        </a>
+      
+    </div>
+  </div>
+  
+
   <a href="/" class="btn-back">← Back to Home</a>
 </article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "Little Miss Whiskey's Golden Dollar",
+  "image": "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Flittle-miss-whiskeys-golden-dollar%2Flogo-1766858806282-45765666_577257409383616_2300326398599888896_n.jpg?alt=media&token=654c0b8d-86fd-4530-9f1e-b7ccbf887397",
+  "address": "1104 H St NE, Washington, DC 20002",
+  
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.5,
+    "reviewCount": 549
+  },
+  
+  
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": 3,
+      "bestRating": 5
+    },
+    "author": {
+      "@type": "Person",
+      "name": "D G"
+    },
+    "reviewBody": "Nice spot but probably won’t be back. I like that they have a menu but don’t\n\nPositives:\nRelatively inexpensive drinks with an expansive drink menu.\nWater dispensers.\n\nNegatives:\nThey didn’t have my first choice so I chose another option that was priced at $6.50 on the menu. Didn’t realize until after that I was charged $7.50+.\nThere only seem to be two single person bathrooms downstairs so a line formed pretty quickly and if you’re sitting back there it’s difficult to hear and move with a line of people waiting for a toilet.\n\nThings to Think About:\nIt’s not metro accessible.\nThe dance floor is pretty small and well lit, which could be a good or bad thing depending on what you’re looking for."
+  },
+  
+  
+  "priceRange": "$", 
+  
+  
+  "telephone": "(202) 555-1212",
+  
+  "url": "https://bardc.com/venues/little-miss-whiskeys-golden-dollar/"
+}
+</script>
     </main>
-    <footer>
-      <p>© 2025 Bar DC. A guide to Washington D.C. Nightlife.</p>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="/" aria-label="Back to Home">
+            <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="footer-logo">
+          </a>
+        </div>
+        
+        <div class="footer-links">
+
+          <div class="social-icons">
+            <a href="https://x.com/bardc_" target="_blank" rel="noopener noreferrer" class="social-icon twitter" aria-label="X (formerly Twitter)"></a>
+            <a href="https://www.facebook.com/bardc" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook"></a>
+          </div>
+          <a href="mailto:info@bardc.com" class="footer-contact">info@bardc.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Bar DC. All rights reserved.</p>
+      </div>
     </footer>
   </div>
+  <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="img01" onclick="event.stopPropagation()">
+  </div>
+  <script>
+    // Global Image Modal Logic
+    window.openImageModal = function(src) {
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("img01");
+        if(modal && modalImg) {
+            modal.style.display = "flex";
+            modalImg.src = src;
+            document.body.style.overflow = "hidden"; 
+        }
+    }
+    
+    window.closeImageModal = function() {
+        var modal = document.getElementById("imageModal");
+        if(modal) {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto"; 
+        }
+    }
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            window.closeImageModal();
+        }
+    });
+  </script>
+  <style>
+    /* Modal Styles (Global) */
+    .image-modal {
+      display: none; 
+      position: fixed; 
+      z-index: 9999; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgba(0,0,0,0.95); 
+      align-items: center;
+      justify-content: center;
+      cursor: zoom-out;
+    }
+    
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 95%;
+      max-height: 95vh;
+      border-radius: 4px;
+      object-fit: contain;
+      cursor: default;
+      animation: zoom 0.3s;
+    }
+    
+    .close-modal {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 50px;
+      font-weight: bold;
+      transition: 0.3s;
+      cursor: pointer;
+      z-index: 10000;
+      line-height: 1;
+    }
+    
+    @keyframes zoom {
+      from {transform:scale(0.8); opacity: 0;}
+      to {transform:scale(1); opacity: 1;}
+    }
+  </style>
+
 </body>
 </html>

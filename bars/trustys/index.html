@@ -4,6 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trusty&#39;s | Bar DC</title>
+
+  
+  
+  
+  
+  
+     
+     
+  
+
+  
+  
+
+  
+  
+
+  <meta name="description" content="Visit Trusty&#39;s in Navy Yard, Washington DC. ✨ Vibe Trusty’s is a legendary, unpretentious neighborhood gem that perfectly blends a cozy, &quot;everyone knows your name&quot; dive atmosphere with...">
+  <link rel="canonical" href="https://bardc.com/bars/trustys/">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Bar DC">
+  <meta property="og:title" content="Trusty&#39;s">
+  <meta property="og:description" content="Visit Trusty&#39;s in Navy Yard, Washington DC. ✨ Vibe Trusty’s is a legendary, unpretentious neighborhood gem that perfectly blends a cozy, &quot;everyone knows your name&quot; dive atmosphere with...">
+  <meta property="og:url" content="https://bardc.com/bars/trustys/">
+  <meta property="og:type" content="business.business">
+  
+  
+  
+  
+      
+  
+  <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Ftrustys%2Flogo-1767143766943-289686257_516628426865258_6596440876361826501_n.jpg?alt=media&amp;token=87308726-55f3-4a83-a2d2-c58b1881cd75">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Trusty&#39;s">
+  <meta name="twitter:description" content="Visit Trusty&#39;s in Navy Yard, Washington DC. ✨ Vibe Trusty’s is a legendary, unpretentious neighborhood gem that perfectly blends a cozy, &quot;everyone knows your name&quot; dive atmosphere with...">
+  <meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Ftrustys%2Flogo-1767143766943-289686257_516628426865258_6596440876361826501_n.jpg?alt=media&amp;token=87308726-55f3-4a83-a2d2-c58b1881cd75">
+
     <!-- [NEW] Favicon Links -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -13,7 +52,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/masonry.css">
+
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9L0NBTF5RQ"></script>
 <script>
@@ -23,91 +64,645 @@
 
   gtag('config', 'G-9L0NBTF5RQ');
 </script>
+
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7540411251843957"
+     crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="container">
     <header>
-      <a href="/" class="logo-link">
-        <img src="/img/logo.jpg" alt="Bar DC Logo" class="logo">
-      </a>
-      <h1>Trusty&#39;s</h1>
+      <div class="header-branding">
+        <a href="/" class="branding-link">
+          <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
+          <span class="site-title">Washington D.C. Bars & Clubs</span>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <a href="/bars/">Bars</a>
+        <a href="/map/">Map</a>
+        
+
+        <div class="nav-dropdown">
+          <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
+          <div class="dropdown-menu">
+            
+              <a href="/neighborhoods/u-street/">U Street</a>
+            
+              <a href="/neighborhoods/dupont-circle/">Dupont Circle</a>
+            
+              <a href="/neighborhoods/downtown/">Downtown</a>
+            
+              <a href="/neighborhoods/adams-morgan/">Adams Morgan</a>
+            
+              <a href="/neighborhoods/navy-yard/">Navy Yard</a>
+            
+              <a href="/neighborhoods/georgetown/">Georgetown</a>
+            
+              <a href="/neighborhoods/the-wharf/">The Wharf</a>
+            
+              <a href="/neighborhoods/h-street-ne/">H Street NE</a>
+            
+            <div class="dropdown-divider"></div>
+            <a href="/neighborhoods/" class="view-all">View All →</a>
+          </div>
+        </div>
+
+
+        <a href="/events/">Events</a>
+        <a href="/happy-hour/">Happy Hour</a>
+      </nav>
     </header>
     <main>
+      
+        <h1 class="page-title">Trusty&#39;s</h1>
+      
       <!-- This line is critical. It injects the content from other files. -->
-      <article class="venue-profile">
+      <!-- Leaflet Map Resources -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<style>
+   /* Custom Pin Styles for Venue Page */
+   .custom-pin-icon { background: transparent; border: none; }
+   .pin-wrapper {
+     width: 40px; height: 40px; border-radius: 50%; border: 3px solid #fff;
+     box-shadow: 0 4px 10px rgba(0,0,0,0.5); background-color: #fff;
+     overflow: hidden; position: relative; transition: transform 0.2s ease, z-index 0.2s;
+   }
+   .pin-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+   .pin-wrapper.no-logo {
+     background-color: var(--primary-color, #e53935);
+     display: flex; align-items: center; justify-content: center;
+   }
+   .pin-wrapper.no-logo::after { content: ''; width: 12px; height: 12px; background: #fff; border-radius: 50%; }
+   .leaflet-container { font-family: inherit; }
+   .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: #1e1e1e; color: #fff; border: 1px solid rgba(255,255,255,0.1); }
+   .leaflet-popup-content a { color: #fff; background: var(--primary-color, #e53935); padding: 2px 8px; border-radius: 4px; text-decoration: none; }
+</style>
 
+<article class="venue-profile">
 
-    <img src="/logos/trustys.png" alt="Trusty&#39;s logo" class="venue-profile-logo">
-  
    <h1>Trusty's</h1>
   
   <div class="venue-details">
-    <p><strong>Category:</strong> Dive Bar, Neighborhood Bar, Rooftop Bar</p>
-    <p><strong>Price:</strong> $</p>
-    <p><strong>Address:</strong> 1420 Pennsylvania Ave SE, Washington, DC 20003</p>
+    <div style="display:flex; align-items:flex-start; gap:1.5rem; margin-bottom:1rem; flex-wrap:wrap;">
+      
+        <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Ftrustys%2Flogo-1767143766943-289686257_516628426865258_6596440876361826501_n.jpg?alt=media&amp;token=87308726-55f3-4a83-a2d2-c58b1881cd75" alt="Trusty&#39;s logo" style="max-height:250px; max-width:250px; border-radius:8px; border:1px solid #eee; object-fit:contain; flex-shrink:0;">
+      
+      <div style="flex:1; min-width: 250px;">
+        <div style="display:flex; gap:1.5rem; flex-wrap:wrap; justify-content: space-between;">
+            <div style="flex:1; min-width:200px;">
+                <p><strong>Category:</strong> 
+                  
+                  
+                    <a href="/categories/dive-bars/">Dive Bars</a>, 
+                  
+                    <a href="/categories/neighborhood-bars/">Neighborhood Bars</a>, 
+                  
+                    <a href="/categories/rooftop-bars/">Rooftop Bars</a>
+                  
+                </p>
+                
+                  <p><strong>Neighborhood:</strong> <a href="/neighborhoods/navy-yard/">Navy Yard</a></p>
+                
+                <p><strong>Price:</strong> $</p>
+                
+                
+                
+                
+                
+                
+                <p><strong>Address:</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=Trusty&#39;s%201420%20Pennsylvania%20Ave%20SE%2C%20Washington%2C%20DC%2020003" target="_blank" rel="noopener noreferrer" style="text-decoration:underline; color:var(--accent-color);">1420 Pennsylvania Ave SE, Washington, DC 20003</a></p>
+
+                <div class="venue-actions-bar" style="margin-top:1rem;">
+                  
+                    <a href="http://www.trustysdc.com/" class="btn-website-action" target="_blank" rel="noopener noreferrer">
+                      <span>Website</span>
+                    </a>
+                  
+                  
+                  
+                  <div class="social-icons-inline">
+                    
+                      <a href="https://www.instagram.com/trustysdc/" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
+                    
+                    
+                    
+                  </div>
+                  
+                </div>
+            </div>
+            
+            <!-- Side Map -->
+            
+            <div style="width:220px; flex-shrink:0; margin-top: 0.5rem;">
+               <div id="venue-mini-map" style="width:100%; height:220px; border-radius:12px; border:1px solid rgba(255,255,255,0.1); box-shadow:0 4px 15px rgba(0,0,0,0.3); z-index:0; cursor: pointer;"></div>
+               <script>
+                 document.addEventListener('DOMContentLoaded', function() {
+                    var lat = 38.8801827;
+                    var lng = -76.9843805;
+                    var map = L.map('venue-mini-map', {
+                        center: [lat, lng],
+                        zoom: 16,
+                        zoomControl: false, 
+                        attributionControl: false,
+                        dragging: false,
+                        scrollWheelZoom: false,
+                        doubleClickZoom: false,
+                        boxZoom: false,
+                        keyboard: false
+                    });
+                     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                        subdomains: 'abcd',
+                        maxZoom: 20
+                     }).addTo(map);
+
+                    var iconHTML = `<div class="pin-wrapper"><img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Ftrustys%2Flogo-1767143766943-289686257_516628426865258_6596440876361826501_n.jpg?alt=media&amp;token=87308726-55f3-4a83-a2d2-c58b1881cd75" onerror="this.style.display='none'; this.parentElement.classList.add('no-logo');"></div>`;
+                    var icon = L.divIcon({
+                        className: 'custom-pin-icon',
+                        html: iconHTML,
+                        iconSize: [40, 40],
+                        iconAnchor: [20, 20]
+                    });
+                    
+                    L.marker([lat, lng], {icon: icon}).addTo(map);
+                    
+                    // Click to open Google Maps
+                    document.getElementById('venue-mini-map').addEventListener('click', function() {
+                        window.open('https://www.google.com/maps/search/?api=1&amp;query=Trusty&#39;s%201420%20Pennsylvania%20Ave%20SE%2C%20Washington%2C%20DC%2020003', '_blank');
+                    });
+                 });
+               </script>
+               <div style="text-align:center; margin-top:0.5rem;">
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=Trusty&#39;s%201420%20Pennsylvania%20Ave%20SE%2C%20Washington%2C%20DC%2020003" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; color:#aaa; text-decoration:none;">View on Google Maps &rarr;</a>
+               </div>
+            </div>
+            
+        </div>
+      </div>
+    </div>
   </div>
 
-    <!-- [NEW] Google Rating Display -->
+    <!-- [MOVED] Google Rating Display (Moved to Reviews Section) -->
   
-    <div class="google-rating">
-      <span class="rating-stars" style="--rating: 4.5;">★★★★★</span>
-      <span class="rating-value">4.5</span>
-      <span class="rating-count">(361 reviews)</span>
-    </div>
+    <!-- Rating moved below -->
   
   <!-- End Google Rating Display -->
 
   <div class="venue-description">
-    <p>A quirky, beloved neighborhood bar on Capitol Hill, Trusty&#39;s is known for its laid-back vibe and unique decor, including a full-size school bus on its upper level. It&#39;s a casual, friendly spot with a rooftop deck, affordable drinks, and the feel of a true community hub.</p>
+    <h3>✨ Vibe</h3>
+<p>Trusty’s is a legendary, unpretentious neighborhood gem that perfectly blends a cozy, "everyone knows your name" dive atmosphere with a quirky, elevated rooftop energy.</p>
+
+<h3>🍸 Best For</h3>
+<p>Casual group hangouts, budget-friendly craft beers, game day viewing, and unique rooftop photo-ops.</p>
+
+<h3>🔥 Highlights</h3>
+<ul>
+<li><strong>The Iconic Bus Bar:</strong> The second floor features a unique, roofed outdoor space where a repurposed school bus serves as a one-of-a-kind bar specializing in a wide variety of canned craft beers.</li>
+<li><strong>Award-Worthy Bar Grub:</strong> Known for serving up some of the city's favorite comfort food, including their famous buffalo chicken cheese sub and authentic DC half smokes.</li>
+<li><strong>Weekly Entertainment:</strong> Join the locals for high-energy Trivia Tuesdays at 8:00 PM or head to the Bus Bar on Wednesdays for live music and costume karaoke.</li>
+</ul>
+
+<h3>ℹ️ Need to Know</h3>
+<ul>
+<li>Furry friends are always welcome at this dog-friendly spot, and there is never a need to dress up—the atmosphere is strictly casual and welcoming.</li>
+<li>Visit on the weekends for a laid-back brunch featuring spicy Bloody Marys and mimosas, served every Saturday and Sunday from 11:00 AM to 4:00 PM.</li>
+</ul>
   </div>
   
-  <a href="http://www.trustysdc.com/" class="btn-website" target="_blank" rel="noopener noreferrer">Visit Website</a>
+
   
-    <!-- [NEW] Social Media Links Section -->
-  
-  <!-- End Social Media Links Section -->
+
 
   <!-- [NEW] Events Section -->
-
-  <div class="events-section">
-    <h3>📅 Upcoming Events & Specials</h3>
-    
-      <div class="event-item">
-        <h4>퀴즈 Tuesday Trivia</h4>
-        <p>Join us every Tuesday for Trivia starting at 8 pm.</p>
-      </div>
-    
-      <div class="event-item">
-        <h4>🎶 Wednesday Live Music</h4>
-        <p>Catch live music at the Bus Bar every Wednesday. Check Instagram for details and specific dates.</p>
-      </div>
-    
-      <div class="event-item">
-        <h4>🎤 Wednesday Costume Karaoke</h4>
-        <p>Join us for costume Karaoke at the Bus Bar every Wednesday. Check Instagram for details and specific dates.</p>
-      </div>
-    
-    <small>Last analyzed: Fri Nov 14 2025 13:20:44 GMT-0500 (Eastern Standard Time)</small>
-  </div>
+  <!-- [NEW] Events Section -->
 
 <!-- End Events Section -->
+
+<!-- [NEW] Recurring Events Section -->
+
+  <div class="recurring-events-section">
+    <h3>🔄 Weekly Events</h3>
+    <div class="events-grid">
+      
+        
+        <div class="event-item recurring">
+          <h4>🎤 Bus Bar Wednesdays</h4>
+          <p class="event-meta">
+            <span class="days-badge">Wed</span>
+          </p>
+          
+            <p>Join us at the upstairs Bus Bar for a variety of events, including live music and costume Karaoke.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>🧠 Tuesday Trivia</h4>
+          <p class="event-meta">
+            <span class="days-badge">Tue</span>
+          </p>
+          
+            <p>Join us for weekly trivia where everyone feels at home. A neighborhood favorite!</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>🍳 Weekend Brunch</h4>
+          <p class="event-meta">
+            <span class="days-badge">Sat, Sun</span>
+          </p>
+          
+            <p>Enjoy a spicy Bloody Mary or a bubbly mimosa with our brunch menu.</p>
+          
+        </div>
+        
+      
+    </div>
+  </div>
+
+<!-- End Recurring Events Section -->
 
     <!-- [NEW] Full Happy Hour Details Section -->
   
     <div class="happy-hour-info">
       <h3>Happy Hour</h3>
-      <p>The website mentions daily deals but doesn&#39;t specify details.  There is a general statement about great deals throughout the week, but no specific days or times are listed for happy hour or special offers.</p>
-      <small>Last analyzed: Sun Jul 27 2025 20:13:47 GMT-0400 (Eastern Daylight Time)</small>
+      <p>Check the board or ask your bartender about our daily deals and rotating beer specials.</p>
     </div>
   
   <!-- End Happy Hour Details Section -->
+
+  <!-- [NEW] News Section -->
   
+  <div class="news-section" style="margin-top:2rem; margin-bottom:2rem;">
+    <h3>📰 In the News</h3>
+    <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
+      
+        <a href="https://thehillishome.com/2025/07/from-baseball-adjacent-to-beating-heart-of-hill-east-trustys-celebrates-20-years" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=thehillishome.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The Hill is Home</span>
+              <span style="margin-left:auto; text-transform:none;">Jul 16, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">From Baseball-Adjacent to Beating Heart of Hill East, Trusty’s Celebrates 20 Years</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Trusty&#39;s celebrated its 20th anniversary in July 2025, honoring its two-decade legacy as a cornerstone of the Hill East neighborhood in Washington, D.C. Known for its quirky decor like a school bus bar and repurposed oil can lamps, the venue has evolved from a sports-centric hangout near RFK Stadium into a beloved community &#39;third place&#39; and event space.</p>
+           
+        </a>
+      
+        <a href="https://popville.com/2025/07/happy-20th-anniversary-dc-trustys" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=popville.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>PoPville</span>
+              <span style="margin-left:auto; text-transform:none;">Jul 11, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Happy 20th Anniversary to Trusty’s!!</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Trusty’s celebrated its 20th anniversary in July 2025 at its location at 1420 Pennsylvania Ave, SE. The neighborhood bar, established in 2006, marked the milestone with a weekend of live music, food and drink specials, and guest appearances from former bartenders.</p>
+           
+        </a>
+      
+        <a href="https://wjla.com/good-morning-washington/taste-of-the-dmv/trustys-turns-twenty-learn-how-this-dc-staple-is-celebrating-with-their-community" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=wjla.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>WJLA</span>
+              <span style="margin-left:auto; text-transform:none;">Jul 2, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Trusty&#39;s turns twenty! Learn how this D.C. staple is celebrating with their community</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Trusty&#39;s celebrates its 20th anniversary as a neighborhood tavern staple in Washington, D.C., known for its dive-bar atmosphere and a unique spray-painted school bus on the second floor. The venue offers a welcoming environment for families and pets, featuring a menu of classic favorites like cheesesteaks and hot dogs alongside community events like BINGO and costume karaoke.</p>
+           
+        </a>
+      
+    </div>
+  </div>
+  
+  <!-- End News Section -->
+  
+
+  <!-- [NEW] Reviews Section (Server-Side) -->
+  
+  <div id="google-reviews-section" class="reviews-section">
+    
+    
+      
+    
+
+    <!-- [MOVED] Google Rating Display -->
+    
+      <div class="google-rating" style="margin-bottom: 2rem;">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJ169yKku4t4kRVkPaUm8hqi4" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: block;">
+          <div class="rating-header">
+            <span class="rating-stars" style="--rating: 4.6;">★★★★★</span>
+            <span class="rating-value">4.6</span>
+            <span class="rating-count">(366 reviews)</span>
+            <span class="btn-read-reviews" style="margin-left: auto; margin-top: 0;">View on Google</span>
+          </div>
+        </a>
+      </div>
+    
+    <!-- End Google Rating Display -->
+
+    <h3>Recent Reviews from Google</h3>
+    <div class="reviews-grid">
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJ169yKku4t4kRVkPaUm8hqi4" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXuqNmlRmJ_dfcHUc786HwWggg0WHthXNXCOEm4DEb4Jf_fYWoo=s128-c0x00000000-cc-rp-mo-ba5" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a month ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Trusty’s is the kind of neighborhood dive bar everyone wishes they had nearby. It’s relaxed, unpretentious, and always delivers a good time. The staff is friendly, the drinks are affordable, and the...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJ169yKku4t4kRVkPaUm8hqi4" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjUhbF4eT-G0xnLc3YsbpWYE9x6xY4wlyjpAzLFX3_b2jjTxJYk=s128-c0x00000000-cc-rp-mo-ba5" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">3 years ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Wonderful neighborhood bar. At my visit in late March 22 only 3 Beer on tap (Goose Island IPA , Yuengling Lager and Bud light). The School Bus like Bar, upstairs, offers a lot more Beer (in Cans)....
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJ169yKku4t4kRVkPaUm8hqi4" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjU7Dz7FJfi6obPLX5fVpo5-xRfNgwlR0P3hagUXD8MaHiT7gVLH=s128-c0x00000000-cc-rp-mo-ba5" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">3 years ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Cool place! If you&#39;re into unique smaller spots with greasy food and canned craft beers, look no further! Upstairs has a roofed outdoor area and a school bus bar. I have the BEST buffalo chicken...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJ169yKku4t4kRVkPaUm8hqi4" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocIDukzriFp5IOCKqEWkq6rsYfQQLgl38cJyZRdy3mzn91VGpw=s128-c0x00000000-cc-rp-mo-ba2" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">6 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Went for my first time yesterday. Very chill crowd. Not too rowdy. Seems to be a neighborhood bar. Staff was very attentive and down to earth. Food was good. Affordable. All around good atmosphere....
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJ169yKku4t4kRVkPaUm8hqi4" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocIE2lQhLw9LC3BYaTepEi15Gg8EiOQTgZjMjt8-mVY9LLj5xQ=s128-c0x00000000-cc-rp-mo" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">6 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Visiting from out of state for a Metallica concert. Stopped by this gem of an establishment for some “fuel”. Tom was bartending and was great. Wish there were more places likes this back home. Perfect...
+          </p>
+      </a>
+      
+    </div>
+    <div class="reviews-footer">
+      <small>Reviews provided by Google</small>
+    </div>
+  </div>
+  
+
+  <!-- [NEW] Nearby Bars Section -->
+  
+  
+  <div class="nearby-section" style="margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+    <h3 style="margin-bottom: 1.5rem;">📍 Nearby Spots (Walking Distance)</h3>
+    <div class="venue-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
+      
+        <a href="/bars/show-of-hands/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fshow-of-hands%2Flogo-1767110700396-352563165_1453373718806731_3324632242670302312_n.jpg?alt=media&amp;token=7e8f4362-e5d6-49f0-bfa5-74e30508f306" alt="Show of Hands" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Show of Hands</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">85m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/awakening-bar-grill/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fawakening-bar-grill%2Flogo-1766104681056-561339315_122093764509087196_3499994867068949594_n.jpg?alt=media&amp;token=1c0b357a-1771-492c-9386-2561023a74c7" alt="Awakening Bar &amp; Grill" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Awakening Bar &amp; Grill</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">908m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/ginza-karaoke-rooftop-lounge/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fginza-karaoke-rooftop-lounge%2Flogo-1766494762983-315197675_619236293219309_1505218982618995093_n.jpg?alt=media&amp;token=8ba8b313-fb6a-4c73-90ac-69d62114da0f" alt="Ginza Karaoke &amp; Rooftop Lounge" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Ginza Karaoke &amp; Rooftop Lounge</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">909m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/the-betsy/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-betsy%2Flogo-1766151416233-514745642_1310043184461454_8642611861746431590_n.webp?alt=media&amp;token=0c268392-7884-4807-baab-32bb4d8debe9" alt="The Betsy" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">The Betsy</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">913m away</p>
+          </div>
+        </a>
+      
+    </div>
+  </div>
+  
+
   <a href="/" class="btn-back">← Back to Home</a>
 </article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "Trusty's",
+  "image": "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Ftrustys%2Flogo-1767143766943-289686257_516628426865258_6596440876361826501_n.jpg?alt=media&token=87308726-55f3-4a83-a2d2-c58b1881cd75",
+  "address": "1420 Pennsylvania Ave SE, Washington, DC 20003",
+  
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.6,
+    "reviewCount": 366
+  },
+  
+  
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": 5,
+      "bestRating": 5
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Baiba Grazdina"
+    },
+    "reviewBody": "Trusty’s is the kind of neighborhood dive bar everyone wishes they had nearby. It’s relaxed, unpretentious, and always delivers a good time. The staff is friendly, the drinks are affordable, and the crowd is a fun mix of locals and regulars.\n\nThe coolest part is the old-school bus upstairs — a quirky, unexpected space that makes the bar feel uniquely DC. It’s the perfect spot for grabbing drinks with friends, posting up for a casual night out, or just enjoying a no-frills, welcoming atmosphere.\n\nIf you’re looking for a comfortable bar with character (and zero pretense), Trusty’s is the place. A reliable favorite!"
+  },
+  
+  
+  "priceRange": "$", 
+  
+  
+  "telephone": "(202) 547-1010",
+  
+  "url": "https://bardc.com/venues/trustys/"
+}
+</script>
     </main>
-    <footer>
-      <p>© 2025 Bar DC. A guide to Washington D.C. Nightlife.</p>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="/" aria-label="Back to Home">
+            <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="footer-logo">
+          </a>
+        </div>
+        
+        <div class="footer-links">
+
+          <div class="social-icons">
+            <a href="https://x.com/bardc_" target="_blank" rel="noopener noreferrer" class="social-icon twitter" aria-label="X (formerly Twitter)"></a>
+            <a href="https://www.facebook.com/bardc" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook"></a>
+          </div>
+          <a href="mailto:info@bardc.com" class="footer-contact">info@bardc.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Bar DC. All rights reserved.</p>
+      </div>
     </footer>
   </div>
+  <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="img01" onclick="event.stopPropagation()">
+  </div>
+  <script>
+    // Global Image Modal Logic
+    window.openImageModal = function(src) {
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("img01");
+        if(modal && modalImg) {
+            modal.style.display = "flex";
+            modalImg.src = src;
+            document.body.style.overflow = "hidden"; 
+        }
+    }
+    
+    window.closeImageModal = function() {
+        var modal = document.getElementById("imageModal");
+        if(modal) {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto"; 
+        }
+    }
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            window.closeImageModal();
+        }
+    });
+  </script>
+  <style>
+    /* Modal Styles (Global) */
+    .image-modal {
+      display: none; 
+      position: fixed; 
+      z-index: 9999; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgba(0,0,0,0.95); 
+      align-items: center;
+      justify-content: center;
+      cursor: zoom-out;
+    }
+    
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 95%;
+      max-height: 95vh;
+      border-radius: 4px;
+      object-fit: contain;
+      cursor: default;
+      animation: zoom 0.3s;
+    }
+    
+    .close-modal {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 50px;
+      font-weight: bold;
+      transition: 0.3s;
+      cursor: pointer;
+      z-index: 10000;
+      line-height: 1;
+    }
+    
+    @keyframes zoom {
+      from {transform:scale(0.8); opacity: 0;}
+      to {transform:scale(1); opacity: 1;}
+    }
+  </style>
+
 </body>
 </html>

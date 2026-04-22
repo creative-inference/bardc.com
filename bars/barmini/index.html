@@ -4,6 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Barmini | Bar DC</title>
+
+  
+  
+  
+  
+  
+     
+     
+  
+
+  
+  
+
+  
+  
+
+  <meta name="description" content="Visit Barmini in Penn Quarter, Washington DC. ✨ Vibe An avant-garde, dreamlike cocktail lab where science meets high-art, offering a sophisticated and immersive atmosphere defined by its...">
+  <link rel="canonical" href="https://bardc.com/bars/barmini/">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Bar DC">
+  <meta property="og:title" content="Barmini">
+  <meta property="og:description" content="Visit Barmini in Penn Quarter, Washington DC. ✨ Vibe An avant-garde, dreamlike cocktail lab where science meets high-art, offering a sophisticated and immersive atmosphere defined by its...">
+  <meta property="og:url" content="https://bardc.com/bars/barmini/">
+  <meta property="og:type" content="business.business">
+  
+  
+  
+  
+      
+  
+  <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbarmini%2Flogo-1766149753394-273679564_606136680740824_1210897538895892842_n.jpg?alt=media&amp;token=03aa83bd-2ba4-4395-9269-475da351b36e">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Barmini">
+  <meta name="twitter:description" content="Visit Barmini in Penn Quarter, Washington DC. ✨ Vibe An avant-garde, dreamlike cocktail lab where science meets high-art, offering a sophisticated and immersive atmosphere defined by its...">
+  <meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbarmini%2Flogo-1766149753394-273679564_606136680740824_1210897538895892842_n.jpg?alt=media&amp;token=03aa83bd-2ba4-4395-9269-475da351b36e">
+
     <!-- [NEW] Favicon Links -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -13,7 +52,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/masonry.css">
+
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9L0NBTF5RQ"></script>
 <script>
@@ -23,62 +64,626 @@
 
   gtag('config', 'G-9L0NBTF5RQ');
 </script>
+
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7540411251843957"
+     crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="container">
     <header>
-      <a href="/" class="logo-link">
-        <img src="/img/logo.jpg" alt="Bar DC Logo" class="logo">
-      </a>
-      <h1>Barmini</h1>
+      <div class="header-branding">
+        <a href="/" class="branding-link">
+          <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
+          <span class="site-title">Washington D.C. Bars & Clubs</span>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <a href="/bars/">Bars</a>
+        <a href="/map/">Map</a>
+        
+
+        <div class="nav-dropdown">
+          <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
+          <div class="dropdown-menu">
+            
+              <a href="/neighborhoods/u-street/">U Street</a>
+            
+              <a href="/neighborhoods/dupont-circle/">Dupont Circle</a>
+            
+              <a href="/neighborhoods/downtown/">Downtown</a>
+            
+              <a href="/neighborhoods/adams-morgan/">Adams Morgan</a>
+            
+              <a href="/neighborhoods/navy-yard/">Navy Yard</a>
+            
+              <a href="/neighborhoods/georgetown/">Georgetown</a>
+            
+              <a href="/neighborhoods/the-wharf/">The Wharf</a>
+            
+              <a href="/neighborhoods/h-street-ne/">H Street NE</a>
+            
+            <div class="dropdown-divider"></div>
+            <a href="/neighborhoods/" class="view-all">View All →</a>
+          </div>
+        </div>
+
+
+        <a href="/events/">Events</a>
+        <a href="/happy-hour/">Happy Hour</a>
+      </nav>
     </header>
     <main>
+      
+        <h1 class="page-title">Barmini</h1>
+      
       <!-- This line is critical. It injects the content from other files. -->
-      <article class="venue-profile">
+      <!-- Leaflet Map Resources -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<style>
+   /* Custom Pin Styles for Venue Page */
+   .custom-pin-icon { background: transparent; border: none; }
+   .pin-wrapper {
+     width: 40px; height: 40px; border-radius: 50%; border: 3px solid #fff;
+     box-shadow: 0 4px 10px rgba(0,0,0,0.5); background-color: #fff;
+     overflow: hidden; position: relative; transition: transform 0.2s ease, z-index 0.2s;
+   }
+   .pin-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+   .pin-wrapper.no-logo {
+     background-color: var(--primary-color, #e53935);
+     display: flex; align-items: center; justify-content: center;
+   }
+   .pin-wrapper.no-logo::after { content: ''; width: 12px; height: 12px; background: #fff; border-radius: 50%; }
+   .leaflet-container { font-family: inherit; }
+   .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: #1e1e1e; color: #fff; border: 1px solid rgba(255,255,255,0.1); }
+   .leaflet-popup-content a { color: #fff; background: var(--primary-color, #e53935); padding: 2px 8px; border-radius: 4px; text-decoration: none; }
+</style>
 
+<article class="venue-profile">
 
    <h1>Barmini</h1>
   
   <div class="venue-details">
-    <p><strong>Category:</strong> Cocktail Bar, Lounge</p>
-    <p><strong>Price:</strong> $$$$</p>
-    <p><strong>Address:</strong> 501 9th St NW, Washington, DC 20004</p>
+    <div style="display:flex; align-items:flex-start; gap:1.5rem; margin-bottom:1rem; flex-wrap:wrap;">
+      
+        <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbarmini%2Flogo-1766149753394-273679564_606136680740824_1210897538895892842_n.jpg?alt=media&amp;token=03aa83bd-2ba4-4395-9269-475da351b36e" alt="Barmini logo" style="max-height:250px; max-width:250px; border-radius:8px; border:1px solid #eee; object-fit:contain; flex-shrink:0;">
+      
+      <div style="flex:1; min-width: 250px;">
+        <div style="display:flex; gap:1.5rem; flex-wrap:wrap; justify-content: space-between;">
+            <div style="flex:1; min-width:200px;">
+                <p><strong>Category:</strong> 
+                  
+                  
+                    <a href="/categories/cocktail-bars/">Cocktail Bars</a>, 
+                  
+                    <a href="/categories/lounges/">Lounges</a>, 
+                  
+                    <a href="/categories/upscale/">Upscale</a>
+                  
+                </p>
+                
+                  <p><strong>Neighborhood:</strong> <a href="/neighborhoods/penn-quarter/">Penn Quarter</a></p>
+                
+                <p><strong>Price:</strong> $$$$</p>
+                
+                
+                
+                
+                
+                
+                <p><strong>Address:</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=Barmini%20501%209th%20St%20NW%2C%20Washington%2C%20DC%2020004" target="_blank" rel="noopener noreferrer" style="text-decoration:underline; color:var(--accent-color);">501 9th St NW, Washington, DC 20004</a></p>
+
+                <div class="venue-actions-bar" style="margin-top:1rem;">
+                  
+                    <a href="https://www.minibarbyjoseandres.com/barmini" class="btn-website-action" target="_blank" rel="noopener noreferrer">
+                      <span>Website</span>
+                    </a>
+                  
+                  
+                  
+                  <div class="social-icons-inline">
+                    
+                      <a href="https://www.instagram.com/barminibyjose/" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
+                    
+                    
+                      <a href="https://www.facebook.com/barminibyJose" target="_blank" rel="noopener noreferrer" class="social-icon facebook" title="Facebook"></a>
+                    
+                    
+                  </div>
+                  
+                </div>
+            </div>
+            
+            <!-- Side Map -->
+            
+            <div style="width:220px; flex-shrink:0; margin-top: 0.5rem;">
+               <div id="venue-mini-map" style="width:100%; height:220px; border-radius:12px; border:1px solid rgba(255,255,255,0.1); box-shadow:0 4px 15px rgba(0,0,0,0.3); z-index:0; cursor: pointer;"></div>
+               <script>
+                 document.addEventListener('DOMContentLoaded', function() {
+                    var lat = 38.8963741;
+                    var lng = -77.0236001;
+                    var map = L.map('venue-mini-map', {
+                        center: [lat, lng],
+                        zoom: 16,
+                        zoomControl: false, 
+                        attributionControl: false,
+                        dragging: false,
+                        scrollWheelZoom: false,
+                        doubleClickZoom: false,
+                        boxZoom: false,
+                        keyboard: false
+                    });
+                     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                        subdomains: 'abcd',
+                        maxZoom: 20
+                     }).addTo(map);
+
+                    var iconHTML = `<div class="pin-wrapper"><img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbarmini%2Flogo-1766149753394-273679564_606136680740824_1210897538895892842_n.jpg?alt=media&amp;token=03aa83bd-2ba4-4395-9269-475da351b36e" onerror="this.style.display='none'; this.parentElement.classList.add('no-logo');"></div>`;
+                    var icon = L.divIcon({
+                        className: 'custom-pin-icon',
+                        html: iconHTML,
+                        iconSize: [40, 40],
+                        iconAnchor: [20, 20]
+                    });
+                    
+                    L.marker([lat, lng], {icon: icon}).addTo(map);
+                    
+                    // Click to open Google Maps
+                    document.getElementById('venue-mini-map').addEventListener('click', function() {
+                        window.open('https://www.google.com/maps/search/?api=1&amp;query=Barmini%20501%209th%20St%20NW%2C%20Washington%2C%20DC%2020004', '_blank');
+                    });
+                 });
+               </script>
+               <div style="text-align:center; margin-top:0.5rem;">
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=Barmini%20501%209th%20St%20NW%2C%20Washington%2C%20DC%2020004" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; color:#aaa; text-decoration:none;">View on Google Maps &rarr;</a>
+               </div>
+            </div>
+            
+        </div>
+      </div>
+    </div>
   </div>
 
-    <!-- [NEW] Google Rating Display -->
+    <!-- [MOVED] Google Rating Display (Moved to Reviews Section) -->
   
-    <div class="google-rating">
-      <span class="rating-stars" style="--rating: 4.8;">★★★★★</span>
-      <span class="rating-value">4.8</span>
-      <span class="rating-count">(596 reviews)</span>
-    </div>
+    <!-- Rating moved below -->
   
   <!-- End Google Rating Display -->
 
   <div class="venue-description">
-    <p>The cocktail lab of famed chef José Andrés, located next to his avant-garde restaurant Minibar, Barmini is a temple of liquid innovation. It offers a futuristic and whimsical setting where guests can explore a menu of over 100 inventive cocktails or opt for a multi-course cocktail flight.</p>
+    <h3>✨ Vibe</h3>
+<p>An avant-garde, dreamlike cocktail lab where science meets high-art, offering a sophisticated and immersive atmosphere defined by its striking white decor and theatrical mixology.</p>
+
+<h3>🍸 Best For</h3>
+<p>Cocktail connoisseurs, special occasions, milestone celebrations, and anyone looking to experience "art you can taste" through molecular gastronomy.</p>
+
+<h3>🔥 Highlights</h3>
+<ul>
+    <li><strong>The Signature Cocktail Flight:</strong> A legendary tasting journey featuring six meticulously crafted mini-cocktails that showcase innovative techniques, such as liquid nitrogen and color-changing ingredients.</li>
+    <li><strong>A Masterclass in Innovation:</strong> Recently recognized as one of the best and most expensive cocktail bars in the U.S., this José Andrés signature venue offers over 100 inventive drinks, including the famous $250 "treasure chest" for groups.</li>
+    <li><strong>Gourmet Pairings:</strong> Beyond the drinks, guests enjoy a sophisticated menu of gourmet snacks and "little bites" that reflect the world-class culinary standards of the adjacent Michelin-starred Minibar.</li>
+</ul>
+
+<h3>ℹ️ Need to Know</h3>
+<ul>
+    <li>Reservations are essential and should be made well in advance to guarantee a spot at this high-concept destination.</li>
+    <li>To fully appreciate the extensive cocktail flight, consider enjoying a meal beforehand as the experience focuses on drink artistry and light snacks.</li>
+</ul>
   </div>
   
-  <a href="https://www.minibarbyjoseandres.com/barmini" class="btn-website" target="_blank" rel="noopener noreferrer">Visit Website</a>
-  
-    <!-- [NEW] Social Media Links Section -->
-  
-  <!-- End Social Media Links Section -->
 
+  
+
+
+  <!-- [NEW] Events Section -->
   <!-- [NEW] Events Section -->
 
 <!-- End Events Section -->
 
+<!-- [NEW] Recurring Events Section -->
+
+<!-- End Recurring Events Section -->
+
     <!-- [NEW] Full Happy Hour Details Section -->
   
   <!-- End Happy Hour Details Section -->
+
+  <!-- [NEW] News Section -->
   
+  <div class="news-section" style="margin-top:2rem; margin-bottom:2rem;">
+    <h3>📰 In the News</h3>
+    <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
+      
+        <a href="https://nbc.com/nbc-insider/all-jose-andres-restaurants" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=nbc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>NBC</span>
+              <span style="margin-left:auto; text-transform:none;">May 2, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">All of José Andrés&#39; Restaurants and Their Locations</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Barmini is José Andrés&#39; signature cocktail lab and bar located in Washington, D.C., situated adjacent to his renowned restaurant minibar. The venue offers a sophisticated menu of more than 100 creative beverages, including specialized cocktail flights and snacks.</p>
+           
+        </a>
+      
+        <a href="https://tastingtable.com/1815124/most-expensive-bars-us" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=tastingtable.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Tasting Table</span>
+              <span style="margin-left:auto; text-transform:none;">Mar 25, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">12 Of The Most Expensive Bars In The US</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Barmini by José Andrés is featured as one of the most expensive bars in the U.S., known for its inventive and seasonally rotating cocktail menu. The establishment offers unique creations like the al pastor margarita and a $250 &quot;treasure chest&quot; cocktail that serves up to six guests.</p>
+           
+        </a>
+      
+        <a href="https://dc.eater.com/maps/best-cocktail-bars-dc-beer-wine-cocktails" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Eater DC</span>
+              <span style="margin-left:auto; text-transform:none;">Mar 13, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Best Cocktail Bars in D.C.</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Barmini offers a dreamlike, experimental cocktail experience in Washington D.C. where bartenders use cutting-edge technology to craft over 100 classic and futuristic drinks. The striking white venue requires reservations and features unique touches like color-changing ingredients, smoking cocktails, and gourmet snacks from the José Andrés Group.</p>
+           
+        </a>
+      
+        <a href="https://insidehook.com/cocktails/best-cocktail-bars-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=insidehook.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>InsideHook</span>
+              <span style="margin-left:auto; text-transform:none;">Aug 20, 2024</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">These Are the 10 Best Cocktail Bars in DC</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Barmini is an avant-garde cocktail lounge in Downtown D.C. where science and innovation meet classic mixology. Recognized for setting the standard for the city&#39;s high-end cocktail scene, the venue offers a sophisticated experience focused on creative techniques and unique beverage presentations.</p>
+           
+        </a>
+      
+        <a href="https://we-heart.com/2013/03/11/shaking-up-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=we-heart.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>we-heart.com</span>
+              <span style="margin-left:auto; text-transform:none;">Aug 23, 2022</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Food and drink get a shaking and stirring at new Washington cocktail bar...</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Barmini is a cocktail bar and &quot;theatre of mixology&quot; in Washington D.C.’s Penn Quarter, launched by acclaimed chef José Andrés as an extension of his minibar restaurant. The venue features an adventurous menu that blends food and drink techniques, utilizing both historic recipes and modern avant-garde methods within a vibrant, stylish interior.</p>
+           
+        </a>
+      
+    </div>
+  </div>
+  
+  <!-- End News Section -->
+  
+
+  <!-- [NEW] Reviews Section (Server-Side) -->
+  
+  <div id="google-reviews-section" class="reviews-section">
+    
+    
+      
+    
+
+    <!-- [MOVED] Google Rating Display -->
+    
+      <div class="google-rating" style="margin-bottom: 2rem;">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJNaPtQZC3t4kRa50cWZ8PRzQ" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: block;">
+          <div class="rating-header">
+            <span class="rating-stars" style="--rating: 4.8;">★★★★★</span>
+            <span class="rating-value">4.8</span>
+            <span class="rating-count">(611 reviews)</span>
+            <span class="btn-read-reviews" style="margin-left: auto; margin-top: 0;">View on Google</span>
+          </div>
+        </a>
+      </div>
+    
+    <!-- End Google Rating Display -->
+
+    <h3>Recent Reviews from Google</h3>
+    <div class="reviews-grid">
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJNaPtQZC3t4kRa50cWZ8PRzQ" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXaeO078p0GrRF5RdcTIgq5VTgx_lFQOxUdObSbG4VSfZ4P90BZGg=s128-c0x00000000-cc-rp-mo-ba3" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a week ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            everything about our cocktail tasting experience was fantastic from beginning to end. the featured cocktails, without a doubt, were some of the most innovative drinks we’ve ever had. you are served...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJNaPtQZC3t4kRa50cWZ8PRzQ" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjWNRu5TSDSOVfKKUynfO01kmAlO_m6FLmlOGbQGGvGJI5Yo15Ec5g=s128-c0x00000000-cc-rp-mo-ba5" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a month ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Excellent atmosphere, and even better bartenders/hosts. The flight was absolutely worth it as each individual drink was crafted by a separate bartender and is each unique in a myriad of ways. Make a...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJNaPtQZC3t4kRa50cWZ8PRzQ" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjUMNftJ5ufDfl3v6t3-4CTkL9ZxwUmcpDtqWatjF1t550nKYh0d=s128-c0x00000000-cc-rp-mo-ba4" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">4 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Barmini Review: An Exceptional Cocktail Experience
+Barmini isn’t your typical bar—it’s an immersive experience where cocktails meet theater. From the moment you sit down, you’re watching bartenders...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJNaPtQZC3t4kRa50cWZ8PRzQ" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocJ2ghjWzasuO14Ej8xTKPv4or9UvPr65oePNTGGSMwCM051nA=s128-c0x00000000-cc-rp-mo" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">4 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Sometimes you go somewhere and it is so good you know you want to stop by each time you are in town. Barmini was so phenomenal that from the moment we had our first sip we were planning a future trip...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJNaPtQZC3t4kRa50cWZ8PRzQ" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjWyX6sv2xhJ39gIhFS7xHgz6k83vHlOxH_vaN9IZUM2FXR0PXuBUw=s128-c0x00000000-cc-rp-mo-ba4" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">7 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            This place is a gem in all the ways - thoughtful, creative craft. Every drink is delicious and the little bites are so yummy and with an excellent presentation. The drink menu is inventive and...
+          </p>
+      </a>
+      
+    </div>
+    <div class="reviews-footer">
+      <small>Reviews provided by Google</small>
+    </div>
+  </div>
+  
+
+  <!-- [NEW] Nearby Bars Section -->
+  
+  
+  <div class="nearby-section" style="margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+    <h3 style="margin-bottom: 1.5rem;">📍 Nearby Spots (Walking Distance)</h3>
+    <div class="venue-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
+      
+        <a href="/bars/penn-social/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fpenn-social%2Flogo-1767024284355-280293322_133482415943313_1748606337458269375_n.jpg?alt=media&amp;token=9f77a499-e184-4695-b8bc-11eae59a6569" alt="Penn Social" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Penn Social</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">28m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/silver-lyan/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fsilver-lyan%2Flogo-1767111045599-72391571_581863129220254_5712380699240038400_n.jpg?alt=media&amp;token=48723c22-9664-4b12-bf76-90b86d68794c" alt="Silver Lyan" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Silver Lyan</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">107m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/the-riggs-hotel/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-riggs-hotel%2Flogo-1767108199806-87596280_234056390960325_7592894686268751872_n.jpg?alt=media&amp;token=61ae5dba-0cf3-42d0-9c21-64a5ff9c4c24" alt="The Riggs Hotel" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">The Riggs Hotel</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">108m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/dirty-habit/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fdirty-habit%2Flogo-1766400580112-163654967_438161730587570_1851770340307731373_n.jpg?alt=media&amp;token=60676670-67a3-438b-bbf2-d1d669751f91" alt="Dirty Habit" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Dirty Habit</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">120m away</p>
+          </div>
+        </a>
+      
+    </div>
+  </div>
+  
+
   <a href="/" class="btn-back">← Back to Home</a>
 </article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "Barmini",
+  "image": "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbarmini%2Flogo-1766149753394-273679564_606136680740824_1210897538895892842_n.jpg?alt=media&token=03aa83bd-2ba4-4395-9269-475da351b36e",
+  "address": "501 9th St NW, Washington, DC 20004",
+  
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 611
+  },
+  
+  
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": 5,
+      "bestRating": 5
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Marissa P"
+    },
+    "reviewBody": "everything about our cocktail tasting experience was fantastic from beginning to end. the featured cocktails, without a doubt, were some of the most innovative drinks we’ve ever had. you are served six drinks, all smaller portions, totaling about four full size cocktails. the experience, ambiance, and drinks are WELL worth the price. the cocktails are so creative and with each one you are instructed to consume it in a different way. the soup du jour cocktail is still on my mind; it somehow tasted exactly like french onion soup, especially after you eat the biscuit and cheese. this is an experience that i will be talking about for a while. take the chance and splurge - you will NOT regret it. there are truly genius mixologists behind each cocktail."
+  },
+  
+  
+  "priceRange": "$$$$", 
+  
+  
+  "telephone": "(202) 393-4451",
+  
+  "url": "https://bardc.com/venues/barmini/"
+}
+</script>
     </main>
-    <footer>
-      <p>© 2025 Bar DC. A guide to Washington D.C. Nightlife.</p>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="/" aria-label="Back to Home">
+            <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="footer-logo">
+          </a>
+        </div>
+        
+        <div class="footer-links">
+
+          <div class="social-icons">
+            <a href="https://x.com/bardc_" target="_blank" rel="noopener noreferrer" class="social-icon twitter" aria-label="X (formerly Twitter)"></a>
+            <a href="https://www.facebook.com/bardc" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook"></a>
+          </div>
+          <a href="mailto:info@bardc.com" class="footer-contact">info@bardc.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Bar DC. All rights reserved.</p>
+      </div>
     </footer>
   </div>
+  <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="img01" onclick="event.stopPropagation()">
+  </div>
+  <script>
+    // Global Image Modal Logic
+    window.openImageModal = function(src) {
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("img01");
+        if(modal && modalImg) {
+            modal.style.display = "flex";
+            modalImg.src = src;
+            document.body.style.overflow = "hidden"; 
+        }
+    }
+    
+    window.closeImageModal = function() {
+        var modal = document.getElementById("imageModal");
+        if(modal) {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto"; 
+        }
+    }
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            window.closeImageModal();
+        }
+    });
+  </script>
+  <style>
+    /* Modal Styles (Global) */
+    .image-modal {
+      display: none; 
+      position: fixed; 
+      z-index: 9999; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgba(0,0,0,0.95); 
+      align-items: center;
+      justify-content: center;
+      cursor: zoom-out;
+    }
+    
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 95%;
+      max-height: 95vh;
+      border-radius: 4px;
+      object-fit: contain;
+      cursor: default;
+      animation: zoom 0.3s;
+    }
+    
+    .close-modal {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 50px;
+      font-weight: bold;
+      transition: 0.3s;
+      cursor: pointer;
+      z-index: 10000;
+      line-height: 1;
+    }
+    
+    @keyframes zoom {
+      from {transform:scale(0.8); opacity: 0;}
+      to {transform:scale(1); opacity: 1;}
+    }
+  </style>
+
 </body>
 </html>

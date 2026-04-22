@@ -4,6 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Old Ebbitt Grill | Bar DC</title>
+
+  
+  
+  
+  
+  
+     
+     
+  
+
+  
+  
+
+  
+  
+
+  <meta name="description" content="Visit Old Ebbitt Grill in Downtown, Washington DC. ✨ Vibe A historic and charming downtown institution that blends timeless Victorian elegance with the high-energy atmosphere of a classic...">
+  <link rel="canonical" href="https://bardc.com/bars/old-ebbitt-grill/">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Bar DC">
+  <meta property="og:title" content="Old Ebbitt Grill">
+  <meta property="og:description" content="Visit Old Ebbitt Grill in Downtown, Washington DC. ✨ Vibe A historic and charming downtown institution that blends timeless Victorian elegance with the high-energy atmosphere of a classic...">
+  <meta property="og:url" content="https://bardc.com/bars/old-ebbitt-grill/">
+  <meta property="og:type" content="business.business">
+  
+  
+  
+  
+      
+  
+  <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fold-ebbitt-grill%2Flogo-1767022802528-469909231_1767129720715762_835860931843498903_n.jpg?alt=media&amp;token=c46b8561-35a7-463b-ae08-35c1e0e58c6b">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Old Ebbitt Grill">
+  <meta name="twitter:description" content="Visit Old Ebbitt Grill in Downtown, Washington DC. ✨ Vibe A historic and charming downtown institution that blends timeless Victorian elegance with the high-energy atmosphere of a classic...">
+  <meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fold-ebbitt-grill%2Flogo-1767022802528-469909231_1767129720715762_835860931843498903_n.jpg?alt=media&amp;token=c46b8561-35a7-463b-ae08-35c1e0e58c6b">
+
     <!-- [NEW] Favicon Links -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -13,7 +52,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/masonry.css">
+
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9L0NBTF5RQ"></script>
 <script>
@@ -23,103 +64,654 @@
 
   gtag('config', 'G-9L0NBTF5RQ');
 </script>
+
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7540411251843957"
+     crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="container">
     <header>
-      <a href="/" class="logo-link">
-        <img src="/img/logo.jpg" alt="Bar DC Logo" class="logo">
-      </a>
-      <h1>Old Ebbitt Grill</h1>
+      <div class="header-branding">
+        <a href="/" class="branding-link">
+          <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
+          <span class="site-title">Washington D.C. Bars & Clubs</span>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <a href="/bars/">Bars</a>
+        <a href="/map/">Map</a>
+        
+
+        <div class="nav-dropdown">
+          <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
+          <div class="dropdown-menu">
+            
+              <a href="/neighborhoods/u-street/">U Street</a>
+            
+              <a href="/neighborhoods/dupont-circle/">Dupont Circle</a>
+            
+              <a href="/neighborhoods/downtown/">Downtown</a>
+            
+              <a href="/neighborhoods/adams-morgan/">Adams Morgan</a>
+            
+              <a href="/neighborhoods/navy-yard/">Navy Yard</a>
+            
+              <a href="/neighborhoods/georgetown/">Georgetown</a>
+            
+              <a href="/neighborhoods/the-wharf/">The Wharf</a>
+            
+              <a href="/neighborhoods/h-street-ne/">H Street NE</a>
+            
+            <div class="dropdown-divider"></div>
+            <a href="/neighborhoods/" class="view-all">View All →</a>
+          </div>
+        </div>
+
+
+        <a href="/events/">Events</a>
+        <a href="/happy-hour/">Happy Hour</a>
+      </nav>
     </header>
     <main>
+      
+        <h1 class="page-title">Old Ebbitt Grill</h1>
+      
       <!-- This line is critical. It injects the content from other files. -->
-      <article class="venue-profile">
+      <!-- Leaflet Map Resources -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<style>
+   /* Custom Pin Styles for Venue Page */
+   .custom-pin-icon { background: transparent; border: none; }
+   .pin-wrapper {
+     width: 40px; height: 40px; border-radius: 50%; border: 3px solid #fff;
+     box-shadow: 0 4px 10px rgba(0,0,0,0.5); background-color: #fff;
+     overflow: hidden; position: relative; transition: transform 0.2s ease, z-index 0.2s;
+   }
+   .pin-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+   .pin-wrapper.no-logo {
+     background-color: var(--primary-color, #e53935);
+     display: flex; align-items: center; justify-content: center;
+   }
+   .pin-wrapper.no-logo::after { content: ''; width: 12px; height: 12px; background: #fff; border-radius: 50%; }
+   .leaflet-container { font-family: inherit; }
+   .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: #1e1e1e; color: #fff; border: 1px solid rgba(255,255,255,0.1); }
+   .leaflet-popup-content a { color: #fff; background: var(--primary-color, #e53935); padding: 2px 8px; border-radius: 4px; text-decoration: none; }
+</style>
 
+<article class="venue-profile">
 
-    <img src="/logos/old-ebbitt-grill.png" alt="Old Ebbitt Grill logo" class="venue-profile-logo">
-  
    <h1>Old Ebbitt Grill</h1>
   
   <div class="venue-details">
-    <p><strong>Category:</strong> Historic Bar, American Restaurant, Saloon</p>
-    <p><strong>Price:</strong> $$$</p>
-    <p><strong>Address:</strong> 675 15th St NW, Washington, DC 20005</p>
+    <div style="display:flex; align-items:flex-start; gap:1.5rem; margin-bottom:1rem; flex-wrap:wrap;">
+      
+        <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fold-ebbitt-grill%2Flogo-1767022802528-469909231_1767129720715762_835860931843498903_n.jpg?alt=media&amp;token=c46b8561-35a7-463b-ae08-35c1e0e58c6b" alt="Old Ebbitt Grill logo" style="max-height:250px; max-width:250px; border-radius:8px; border:1px solid #eee; object-fit:contain; flex-shrink:0;">
+      
+      <div style="flex:1; min-width: 250px;">
+        <div style="display:flex; gap:1.5rem; flex-wrap:wrap; justify-content: space-between;">
+            <div style="flex:1; min-width:200px;">
+                <p><strong>Category:</strong> 
+                  
+                  
+                    <a href="/categories/oyster-bars/">Oyster Bars</a>, 
+                  
+                    <a href="/categories/american/">American</a>, 
+                  
+                    <a href="/categories/historic/">Historic</a>
+                  
+                </p>
+                
+                  <p><strong>Neighborhood:</strong> <a href="/neighborhoods/downtown/">Downtown</a></p>
+                
+                <p><strong>Price:</strong> $$$</p>
+                
+                
+                
+                
+                
+                
+                <p><strong>Address:</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=Old%20Ebbitt%20Grill%20675%2015th%20St%20NW%2C%20Washington%2C%20DC%2020005" target="_blank" rel="noopener noreferrer" style="text-decoration:underline; color:var(--accent-color);">675 15th St NW, Washington, DC 20005</a></p>
+
+                <div class="venue-actions-bar" style="margin-top:1rem;">
+                  
+                    <a href="https://www.ebbitt.com/" class="btn-website-action" target="_blank" rel="noopener noreferrer">
+                      <span>Website</span>
+                    </a>
+                  
+                  
+                  
+                  <div class="social-icons-inline">
+                    
+                      <a href="https://www.instagram.com/oldebbitt/" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
+                    
+                    
+                      <a href="https://www.facebook.com/OldEbbittGrill" target="_blank" rel="noopener noreferrer" class="social-icon facebook" title="Facebook"></a>
+                    
+                    
+                      <a href="https://twitter.com/oldebbitt" target="_blank" rel="noopener noreferrer" class="social-icon twitter" title="Twitter/X"></a>
+                    
+                  </div>
+                  
+                </div>
+            </div>
+            
+            <!-- Side Map -->
+            
+            <div style="width:220px; flex-shrink:0; margin-top: 0.5rem;">
+               <div id="venue-mini-map" style="width:100%; height:220px; border-radius:12px; border:1px solid rgba(255,255,255,0.1); box-shadow:0 4px 15px rgba(0,0,0,0.3); z-index:0; cursor: pointer;"></div>
+               <script>
+                 document.addEventListener('DOMContentLoaded', function() {
+                    var lat = 38.8979475;
+                    var lng = -77.0332478;
+                    var map = L.map('venue-mini-map', {
+                        center: [lat, lng],
+                        zoom: 16,
+                        zoomControl: false, 
+                        attributionControl: false,
+                        dragging: false,
+                        scrollWheelZoom: false,
+                        doubleClickZoom: false,
+                        boxZoom: false,
+                        keyboard: false
+                    });
+                     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                        subdomains: 'abcd',
+                        maxZoom: 20
+                     }).addTo(map);
+
+                    var iconHTML = `<div class="pin-wrapper"><img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fold-ebbitt-grill%2Flogo-1767022802528-469909231_1767129720715762_835860931843498903_n.jpg?alt=media&amp;token=c46b8561-35a7-463b-ae08-35c1e0e58c6b" onerror="this.style.display='none'; this.parentElement.classList.add('no-logo');"></div>`;
+                    var icon = L.divIcon({
+                        className: 'custom-pin-icon',
+                        html: iconHTML,
+                        iconSize: [40, 40],
+                        iconAnchor: [20, 20]
+                    });
+                    
+                    L.marker([lat, lng], {icon: icon}).addTo(map);
+                    
+                    // Click to open Google Maps
+                    document.getElementById('venue-mini-map').addEventListener('click', function() {
+                        window.open('https://www.google.com/maps/search/?api=1&amp;query=Old%20Ebbitt%20Grill%20675%2015th%20St%20NW%2C%20Washington%2C%20DC%2020005', '_blank');
+                    });
+                 });
+               </script>
+               <div style="text-align:center; margin-top:0.5rem;">
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=Old%20Ebbitt%20Grill%20675%2015th%20St%20NW%2C%20Washington%2C%20DC%2020005" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; color:#aaa; text-decoration:none;">View on Google Maps &rarr;</a>
+               </div>
+            </div>
+            
+        </div>
+      </div>
+    </div>
   </div>
 
-    <!-- [NEW] Google Rating Display -->
+    <!-- [MOVED] Google Rating Display (Moved to Reviews Section) -->
   
-    <div class="google-rating">
-      <span class="rating-stars" style="--rating: 4.6;">★★★★★</span>
-      <span class="rating-value">4.6</span>
-      <span class="rating-count">(18952 reviews)</span>
-    </div>
+    <!-- Rating moved below -->
   
   <!-- End Google Rating Display -->
 
   <div class="venue-description">
-    <p>Washington&#39;s oldest saloon, founded in 1856, Old Ebbitt Grill is a legendary institution just steps from the White House. The Victorian-style restaurant features multiple bars, including the famous wooden Main Bar and the bustling Oyster Bar, serving classic American food and drinks to a mix of politicians, journalists, and tourists.</p>
+    <h3>✨ Vibe</h3>
+<p>A historic and charming downtown institution that blends timeless Victorian elegance with the high-energy atmosphere of a classic D.C. political power-spot.</p>
+
+<h3>🍸 Best For</h3>
+<p>Oyster enthusiasts, late-night cocktails, presidential history buffs, and quintessential D.C. celebratory dinners.</p>
+
+<h3>🔥 Highlights</h3>
+<ul>
+<li><strong>The World-Class Raw Bar:</strong> Renowned for its "Oyster Eater’s Bill of Rights" and exclusive offerings like Great Kiss oysters, the venue is a premier destination for fresh shellfish and home to the legendary annual "Oyster Riot" competition.</li>
+<li><strong>Rich Presidential Heritage:</strong> As Washington’s oldest operational saloon, the antique-filled interior has hosted numerous U.S. presidents since 1856 and remains a central gathering place for major political milestones and inauguration celebrations.</li>
+<li><strong>Elevated American Classics:</strong> Beyond the seafood, the kitchen excels with signature Maryland crab cakes, award-winning crab dip, and fan-favorite desserts like their "divine" white chocolate bread pudding.</li>
+</ul>
+
+<h3>ℹ️ Need to Know</h3>
+<ul>
+<li><strong>Reservations are Essential:</strong> Given its iconic status and proximity to the White House, this venue stays busy; booking ahead is highly recommended to avoid long wait times.</li>
+<li><strong>Daily Oyster Happy Hour:</strong> Visit between 3:00pm–5:00pm or 11:00pm–1:00am for exceptional daily discounts on raw bar platters and half-dozen oysters.</li>
+</ul>
   </div>
   
-  <a href="https://www.ebbitt.com/" class="btn-website" target="_blank" rel="noopener noreferrer">Visit Website</a>
+
   
-    <!-- [NEW] Social Media Links Section -->
-  
-  <div class="social-links">
-    
-      <a href="https://www.instagram.com/oldebbitt/" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
-    
-    
-      <a href="https://www.facebook.com/OldEbbittGrill" target="_blank" rel="noopener noreferrer" class="social-icon facebook" title="Facebook"></a>
-    
-    
-      <a href="https://twitter.com/oldebbitt" target="_blank" rel="noopener noreferrer" class="social-icon twitter" title="Twitter/X"></a>
-    
-  </div>
-  
-  <!-- End Social Media Links Section -->
+
 
   <!-- [NEW] Events Section -->
-
-  <div class="events-section">
-    <h3>📅 Upcoming Events & Specials</h3>
-    
-      <div class="event-item">
-        <h4>📅 Thanksgiving Feast &amp; To-Go</h4>
-        <p>Enjoy a festive feast of holiday favorites when you dine in with Old Ebbitt Grill or order Thanksgiving To-Go.</p>
-      </div>
-    
-      <div class="event-item">
-        <h4>🦪 Ebbitt Oyster Happy Hour</h4>
-        <p>Daily from 3pm-5pm &amp; 11pm-1am, offering discounted oysters, conservas, and caviar.</p>
-      </div>
-    
-      <div class="event-item">
-        <h4>🥂 Daily Champagne Specials</h4>
-        <p>Enjoy daily champagne specials from 3pm-5pm &amp; 11pm-1am, with discounted bottles.</p>
-      </div>
-    
-    <small>Last analyzed: Fri Nov 14 2025 13:15:42 GMT-0500 (Eastern Standard Time)</small>
-  </div>
+  <!-- [NEW] Events Section -->
 
 <!-- End Events Section -->
+
+<!-- [NEW] Recurring Events Section -->
+
+  <div class="recurring-events-section">
+    <h3>🔄 Weekly Events</h3>
+    <div class="events-grid">
+      
+        
+        <div class="event-item recurring">
+          <h4>🥂 Weekend Brunch</h4>
+          <p class="event-meta">
+            <span class="days-badge">Sat, Sun</span>
+          </p>
+          
+            <p>Enjoy a historic brunch experience at Washington&#39;s oldest saloon.</p>
+          
+        </div>
+        
+      
+    </div>
+  </div>
+
+<!-- End Recurring Events Section -->
 
     <!-- [NEW] Full Happy Hour Details Section -->
   
     <div class="happy-hour-info">
       <h3>Happy Hour</h3>
-      <p>Daily happy hour with discounts on the raw bar and oysters.</p>
-      <small>Last analyzed: Sun Jul 27 2025 20:13:19 GMT-0400 (Eastern Daylight Time)</small>
+      <p>Daily discounts on raw bar items. 1/2 Dozen oysters for $15.99, full dozen for $27.99, $10 off Caviar, and $5 off Conservas.</p>
     </div>
   
   <!-- End Happy Hour Details Section -->
+
+  <!-- [NEW] News Section -->
   
+  <div class="news-section" style="margin-top:2rem; margin-bottom:2rem;">
+    <h3>📰 In the News</h3>
+    <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
+      
+        <a href="https://districtfray.com/articles/old-ebbitt-grills-oyster-riot-returns-for-its-28th-year" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=districtfray.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>District Fray</span>
+              <span style="margin-left:auto; text-transform:none;">Oct 29, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Old Ebbitt Grill’s Oyster Riot Returns for Its 28th Year</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Old Ebbitt Grill hosts its annual Oyster Riot, a long-standing Washington D.C. tradition featuring over 20 oyster varieties paired with competition-winning wines and live entertainment. This high-energy event also serves a conservation purpose, partnering with the Oyster Recovery Partnership to recycle shells and restore the Chesapeake Bay.</p>
+           
+        </a>
+      
+        <a href="https://whatnow.com/washington-dc/restaurants/ebbitt-house-eying-early-2026-opening" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=whatnow.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>WhatNow</span>
+              <span style="margin-left:auto; text-transform:none;">Oct 10, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Ebbitt House Eying Early 2026 Opening</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Old Ebbitt Grill is launching its first-ever offshoot, Ebbitt House, in Reston, Virginia, with an opening scheduled for the first quarter of 2026. The modern 12,000-square-foot venue will feature a 300-seat dining room, an expansive outdoor patio bar, and the brand&#39;s signature oyster and raw bar program.</p>
+           
+        </a>
+      
+        <a href="https://thezebra.org/2025/09/19/spirits-of-d-c-haunted-pub-crawl-brings-history-to-life" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=thezebra.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>thezebra.org</span>
+              <span style="margin-left:auto; text-transform:none;">Sep 19, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Spirits of D.C.: Haunted Pub Crawl Brings History to Life</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Old Ebbitt Grill is a featured stop on US Ghost Adventures&#39; haunted pub crawl, highlighting its history as Washington D.C.&#39;s oldest saloon and its association with presidents like Ulysses S. Grant. The establishment is the subject of local ghost lore, including tales of a spectral figure on a winged horse that reportedly appears within the restaurant.</p>
+           
+        </a>
+      
+        <a href="https://tastingtable.com/1840330/washington-dc-historic-restaurant" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=tastingtable.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Tasting Table</span>
+              <span style="margin-left:auto; text-transform:none;">Apr 30, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The 150-Year-Old Watering Hole For Presidents In Washington DC</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Old Ebbitt Grill stands as Washington, D.C.&#39;s oldest operational bar, famously hosting numerous U.S. presidents and historical figures since its founding in 1856. The venue features a classic, antique-filled interior and offers an extensive menu ranging from traditional American steaks to a renowned raw bar famous for its annual Oyster Riot event.</p>
+           
+        </a>
+      
+        <a href="https://washingtonian.com/2025/01/21/inside-dcs-most-storied-restaurant-on-inauguration-day" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Washingtonian</span>
+              <span style="margin-left:auto; text-transform:none;">Jan 21, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Inside DC’s Most Storied Restaurant on Inauguration Day</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Old Ebbitt Grill served as a central gathering place for supporters during the 2025 inauguration, reflecting the immediate shift in clientele that Washington’s oldest saloon experience during political transitions. The White House-adjacent venue hosted a boisterous crowd that filled the historic space with chants and celebrations while watching the swearing-in ceremony from the bars.</p>
+           
+        </a>
+      
+    </div>
+  </div>
+  
+  <!-- End News Section -->
+  
+
+  <!-- [NEW] Reviews Section (Server-Side) -->
+  
+  <div id="google-reviews-section" class="reviews-section">
+    
+    
+      
+    
+
+    <!-- [MOVED] Google Rating Display -->
+    
+      <div class="google-rating" style="margin-bottom: 2rem;">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJgRwXf723t4kRdfqt36VafUU" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: block;">
+          <div class="rating-header">
+            <span class="rating-stars" style="--rating: 4.6;">★★★★★</span>
+            <span class="rating-value">4.6</span>
+            <span class="rating-count">(19297 reviews)</span>
+            <span class="btn-read-reviews" style="margin-left: auto; margin-top: 0;">View on Google</span>
+          </div>
+        </a>
+      </div>
+    
+    <!-- End Google Rating Display -->
+
+    <h3>Recent Reviews from Google</h3>
+    <div class="reviews-grid">
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJgRwXf723t4kRdfqt36VafUU" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXb8apocc5Q4wyCl6U4S9uZq4WeypuSlh96MTmZGNOtGyknCnWk=s128-c0x00000000-cc-rp-mo-ba4" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">3 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            First time here and wow—what a great experience! I was kind of bummed about missing the first UT game while in D.C., but to my surprise, they had it playing on the only TV in the back bar, right where...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJgRwXf723t4kRdfqt36VafUU" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjUi5jVWVTclDprnqoqAKGUnBO4PunbXlphIplY2h4fwReQX3FVH=s128-c0x00000000-cc-rp-mo-ba4" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">4 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Absolutely incredible. This place was recommended to me, and I recommend it to everyone. I had the swordfish, and it was tasty. But that was nothing compared to the oysters that we got, as well as the...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJgRwXf723t4kRdfqt36VafUU" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjX9O-MWwf7q-ULEpLUpW8YxQWeMQDaIpXlwB9cCYmCWZcMipTn0=s128-c0x00000000-cc-rp-mo-ba5" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">2 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Old Ebbitt Grill in Washington, DC, is a classic dining spot that lives up to its reputation. The atmosphere is historic and charming, making it a perfect place to enjoy a memorable meal in the...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJgRwXf723t4kRdfqt36VafUU" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjV-PIVFmBTf2azLVt4CZPGtpt2ovbH03o3Wsjs1DCXiaE_lGbE=s128-c0x00000000-cc-rp-mo-ba3" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">5 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Old Ebbitt Grill is a must-visit if you’re in DC!
+The pasta was amazing and the food looked gorgeous too 😎
+Make a reservation- wait time can be 1-2hours without one.
+Definitely try the signature crab...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJgRwXf723t4kRdfqt36VafUU" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjVHaBC2EC7fD_GE-Gthso2EGpINSqchMI2YbjBaqoNUGUIM8MjGgQ=s128-c0x00000000-cc-rp-mo-ba3" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">3 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Sat at the Main bar to have a bite to eat. Our bartender, Jake was great! Very attentive. Sent us a dessert for my birthday as well as the Fried Green Tomatoes (so delicious!). Oysters were nice and...
+          </p>
+      </a>
+      
+    </div>
+    <div class="reviews-footer">
+      <small>Reviews provided by Google</small>
+    </div>
+  </div>
+  
+
+  <!-- [NEW] Nearby Bars Section -->
+  
+  
+  <div class="nearby-section" style="margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+    <h3 style="margin-bottom: 1.5rem;">📍 Nearby Spots (Walking Distance)</h3>
+    <div class="venue-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
+      
+        <a href="/bars/the-hamilton-live/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-hamilton-live%2Flogo-1766508427924-247048832_2970318449900715_1330698495351360554_n.jpg?alt=media&amp;token=14e71a98-7fe7-4f3f-b1cf-606390fd15e0" alt="The Hamilton Live" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">The Hamilton Live</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">90m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/the-hamilton/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-hamilton%2Flogo-1766508381974-37971702_2052018308380643_6368883303885307904_n.jpg?alt=media&amp;token=590f006a-b4cc-4fe1-a38d-c7394f61c2bb" alt="The Hamilton" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">The Hamilton</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">103m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/hotel-washington/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fhotel-washington%2Flogo-1766580269343-338245977_242314028241777_5817171903004867189_n.jpg?alt=media&amp;token=047fb6d0-18e4-454d-aa2c-6a8f91a8ea74" alt="Hotel Washington" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Hotel Washington</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">110m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/pov-at-w-washington-dc/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fpov-at-w-washington-dc%2Flogo-1767102608386-243837257_1348562962207215_3603161455990064663_n.jpg?alt=media&amp;token=8195af41-df43-4a28-b5df-9645b1d3b764" alt="Vue Rooftop" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Vue Rooftop</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">114m away</p>
+          </div>
+        </a>
+      
+    </div>
+  </div>
+  
+
   <a href="/" class="btn-back">← Back to Home</a>
 </article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "Old Ebbitt Grill",
+  "image": "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fold-ebbitt-grill%2Flogo-1767022802528-469909231_1767129720715762_835860931843498903_n.jpg?alt=media&token=c46b8561-35a7-463b-ae08-35c1e0e58c6b",
+  "address": "675 15th St NW, Washington, DC 20005",
+  
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.6,
+    "reviewCount": 19297
+  },
+  
+  
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": 5,
+      "bestRating": 5
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Lucy Martinez"
+    },
+    "reviewBody": "First time here and wow—what a great experience! I was kind of bummed about missing the first UT game while in D.C., but to my surprise, they had it playing on the only TV in the back bar, right where I was sitting. Pretty sure my UT shirt had something to do with that. 😉\n\nThe longer I stayed, the more impressed I was. Drinks were on point, food was delicious, and the bartender (wish I remembered his name! But he is in the picture) was super friendly and accommodating. He suggested the Great Kiss Oysters and… holy cow, they were amazing. Fun fact: he told me Old Ebbitt is the only place that sells them.\n\nHighly recommend the oysters, and honestly the whole place. It was pretty busy when I walked in, so do yourself a favor and make a reservation!"
+  },
+  
+  
+  "priceRange": "$$$", 
+  
+  
+  "telephone": "(202) 347-4800",
+  
+  "url": "https://bardc.com/venues/old-ebbitt-grill/"
+}
+</script>
     </main>
-    <footer>
-      <p>© 2025 Bar DC. A guide to Washington D.C. Nightlife.</p>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="/" aria-label="Back to Home">
+            <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="footer-logo">
+          </a>
+        </div>
+        
+        <div class="footer-links">
+
+          <div class="social-icons">
+            <a href="https://x.com/bardc_" target="_blank" rel="noopener noreferrer" class="social-icon twitter" aria-label="X (formerly Twitter)"></a>
+            <a href="https://www.facebook.com/bardc" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook"></a>
+          </div>
+          <a href="mailto:info@bardc.com" class="footer-contact">info@bardc.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Bar DC. All rights reserved.</p>
+      </div>
     </footer>
   </div>
+  <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="img01" onclick="event.stopPropagation()">
+  </div>
+  <script>
+    // Global Image Modal Logic
+    window.openImageModal = function(src) {
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("img01");
+        if(modal && modalImg) {
+            modal.style.display = "flex";
+            modalImg.src = src;
+            document.body.style.overflow = "hidden"; 
+        }
+    }
+    
+    window.closeImageModal = function() {
+        var modal = document.getElementById("imageModal");
+        if(modal) {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto"; 
+        }
+    }
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            window.closeImageModal();
+        }
+    });
+  </script>
+  <style>
+    /* Modal Styles (Global) */
+    .image-modal {
+      display: none; 
+      position: fixed; 
+      z-index: 9999; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgba(0,0,0,0.95); 
+      align-items: center;
+      justify-content: center;
+      cursor: zoom-out;
+    }
+    
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 95%;
+      max-height: 95vh;
+      border-radius: 4px;
+      object-fit: contain;
+      cursor: default;
+      animation: zoom 0.3s;
+    }
+    
+    .close-modal {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 50px;
+      font-weight: bold;
+      transition: 0.3s;
+      cursor: pointer;
+      z-index: 10000;
+      line-height: 1;
+    }
+    
+    @keyframes zoom {
+      from {transform:scale(0.8); opacity: 0;}
+      to {transform:scale(1); opacity: 1;}
+    }
+  </style>
+
 </body>
 </html>

@@ -4,6 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lupo Verde | Bar DC</title>
+
+  
+  
+  
+  
+  
+     
+     
+  
+
+  
+  
+
+  
+  
+
+  <meta name="description" content="Visit Lupo Verde in U Street, Washington DC. ✨ Vibe Lupo Verde is a lively and rustic two-story Italian osteria that blends the charm of a neighborhood cheese shop with an intimate,...">
+  <link rel="canonical" href="https://bardc.com/bars/lupo-verde/">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Bar DC">
+  <meta property="og:title" content="Lupo Verde">
+  <meta property="og:description" content="Visit Lupo Verde in U Street, Washington DC. ✨ Vibe Lupo Verde is a lively and rustic two-story Italian osteria that blends the charm of a neighborhood cheese shop with an intimate,...">
+  <meta property="og:url" content="https://bardc.com/bars/lupo-verde/">
+  <meta property="og:type" content="business.business">
+  
+  
+  
+  
+      
+  
+  <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Flupo-verde%2Flogo-1766860241078-50536320_619343631849172_813428533408825344_n.jpg?alt=media&amp;token=67105a2d-6dfa-48a2-a422-8b445d3153ed">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Lupo Verde">
+  <meta name="twitter:description" content="Visit Lupo Verde in U Street, Washington DC. ✨ Vibe Lupo Verde is a lively and rustic two-story Italian osteria that blends the charm of a neighborhood cheese shop with an intimate,...">
+  <meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Flupo-verde%2Flogo-1766860241078-50536320_619343631849172_813428533408825344_n.jpg?alt=media&amp;token=67105a2d-6dfa-48a2-a422-8b445d3153ed">
+
     <!-- [NEW] Favicon Links -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -13,7 +52,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/masonry.css">
+
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9L0NBTF5RQ"></script>
 <script>
@@ -23,90 +64,646 @@
 
   gtag('config', 'G-9L0NBTF5RQ');
 </script>
+
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7540411251843957"
+     crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="container">
     <header>
-      <a href="/" class="logo-link">
-        <img src="/img/logo.jpg" alt="Bar DC Logo" class="logo">
-      </a>
-      <h1>Lupo Verde</h1>
+      <div class="header-branding">
+        <a href="/" class="branding-link">
+          <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
+          <span class="site-title">Washington D.C. Bars & Clubs</span>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <a href="/bars/">Bars</a>
+        <a href="/map/">Map</a>
+        
+
+        <div class="nav-dropdown">
+          <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
+          <div class="dropdown-menu">
+            
+              <a href="/neighborhoods/u-street/">U Street</a>
+            
+              <a href="/neighborhoods/dupont-circle/">Dupont Circle</a>
+            
+              <a href="/neighborhoods/downtown/">Downtown</a>
+            
+              <a href="/neighborhoods/adams-morgan/">Adams Morgan</a>
+            
+              <a href="/neighborhoods/navy-yard/">Navy Yard</a>
+            
+              <a href="/neighborhoods/georgetown/">Georgetown</a>
+            
+              <a href="/neighborhoods/the-wharf/">The Wharf</a>
+            
+              <a href="/neighborhoods/h-street-ne/">H Street NE</a>
+            
+            <div class="dropdown-divider"></div>
+            <a href="/neighborhoods/" class="view-all">View All →</a>
+          </div>
+        </div>
+
+
+        <a href="/events/">Events</a>
+        <a href="/happy-hour/">Happy Hour</a>
+      </nav>
     </header>
     <main>
+      
+        <h1 class="page-title">Lupo Verde</h1>
+      
       <!-- This line is critical. It injects the content from other files. -->
-      <article class="venue-profile">
+      <!-- Leaflet Map Resources -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<style>
+   /* Custom Pin Styles for Venue Page */
+   .custom-pin-icon { background: transparent; border: none; }
+   .pin-wrapper {
+     width: 40px; height: 40px; border-radius: 50%; border: 3px solid #fff;
+     box-shadow: 0 4px 10px rgba(0,0,0,0.5); background-color: #fff;
+     overflow: hidden; position: relative; transition: transform 0.2s ease, z-index 0.2s;
+   }
+   .pin-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+   .pin-wrapper.no-logo {
+     background-color: var(--primary-color, #e53935);
+     display: flex; align-items: center; justify-content: center;
+   }
+   .pin-wrapper.no-logo::after { content: ''; width: 12px; height: 12px; background: #fff; border-radius: 50%; }
+   .leaflet-container { font-family: inherit; }
+   .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: #1e1e1e; color: #fff; border: 1px solid rgba(255,255,255,0.1); }
+   .leaflet-popup-content a { color: #fff; background: var(--primary-color, #e53935); padding: 2px 8px; border-radius: 4px; text-decoration: none; }
+</style>
 
+<article class="venue-profile">
 
-    <img src="/logos/lupo-verde.png" alt="Lupo Verde logo" class="venue-profile-logo">
-  
    <h1>Lupo Verde</h1>
   
   <div class="venue-details">
-    <p><strong>Category:</strong> Italian, Restaurant, Wine Bar</p>
-    <p><strong>Price:</strong> $$$</p>
-    <p><strong>Address:</strong> 1401 T St NW, Washington, DC 20009</p>
+    <div style="display:flex; align-items:flex-start; gap:1.5rem; margin-bottom:1rem; flex-wrap:wrap;">
+      
+        <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Flupo-verde%2Flogo-1766860241078-50536320_619343631849172_813428533408825344_n.jpg?alt=media&amp;token=67105a2d-6dfa-48a2-a422-8b445d3153ed" alt="Lupo Verde logo" style="max-height:250px; max-width:250px; border-radius:8px; border:1px solid #eee; object-fit:contain; flex-shrink:0;">
+      
+      <div style="flex:1; min-width: 250px;">
+        <div style="display:flex; gap:1.5rem; flex-wrap:wrap; justify-content: space-between;">
+            <div style="flex:1; min-width:200px;">
+                <p><strong>Category:</strong> 
+                  
+                  
+                    <a href="/categories/italian/">Italian</a>, 
+                  
+                    <a href="/categories/wine-bars/">Wine Bars</a>, 
+                  
+                    <a href="/categories/romantic/">Romantic</a>
+                  
+                </p>
+                
+                  <p><strong>Neighborhood:</strong> <a href="/neighborhoods/u-street/">U Street</a></p>
+                
+                <p><strong>Price:</strong> $$$</p>
+                
+                
+                
+                
+                
+                
+                <p><strong>Address:</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=Lupo%20Verde%201401%20T%20St%20NW%2C%20Washington%2C%20DC%2020009" target="_blank" rel="noopener noreferrer" style="text-decoration:underline; color:var(--accent-color);">1401 T St NW, Washington, DC 20009</a></p>
+
+                <div class="venue-actions-bar" style="margin-top:1rem;">
+                  
+                    <a href="https://www.lupoverdedc.com/" class="btn-website-action" target="_blank" rel="noopener noreferrer">
+                      <span>Website</span>
+                    </a>
+                  
+                  
+                  
+                  <div class="social-icons-inline">
+                    
+                      <a href="https://www.instagram.com/lupoverde.dc/" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
+                    
+                    
+                      <a href="https://www.facebook.com/lupoverdedc" target="_blank" rel="noopener noreferrer" class="social-icon facebook" title="Facebook"></a>
+                    
+                    
+                      <a href="https://twitter.com/LupoVerdeDC" target="_blank" rel="noopener noreferrer" class="social-icon twitter" title="Twitter/X"></a>
+                    
+                  </div>
+                  
+                </div>
+            </div>
+            
+            <!-- Side Map -->
+            
+            <div style="width:220px; flex-shrink:0; margin-top: 0.5rem;">
+               <div id="venue-mini-map" style="width:100%; height:220px; border-radius:12px; border:1px solid rgba(255,255,255,0.1); box-shadow:0 4px 15px rgba(0,0,0,0.3); z-index:0; cursor: pointer;"></div>
+               <script>
+                 document.addEventListener('DOMContentLoaded', function() {
+                    var lat = 38.9157109;
+                    var lng = -77.0322257;
+                    var map = L.map('venue-mini-map', {
+                        center: [lat, lng],
+                        zoom: 16,
+                        zoomControl: false, 
+                        attributionControl: false,
+                        dragging: false,
+                        scrollWheelZoom: false,
+                        doubleClickZoom: false,
+                        boxZoom: false,
+                        keyboard: false
+                    });
+                     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                        subdomains: 'abcd',
+                        maxZoom: 20
+                     }).addTo(map);
+
+                    var iconHTML = `<div class="pin-wrapper"><img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Flupo-verde%2Flogo-1766860241078-50536320_619343631849172_813428533408825344_n.jpg?alt=media&amp;token=67105a2d-6dfa-48a2-a422-8b445d3153ed" onerror="this.style.display='none'; this.parentElement.classList.add('no-logo');"></div>`;
+                    var icon = L.divIcon({
+                        className: 'custom-pin-icon',
+                        html: iconHTML,
+                        iconSize: [40, 40],
+                        iconAnchor: [20, 20]
+                    });
+                    
+                    L.marker([lat, lng], {icon: icon}).addTo(map);
+                    
+                    // Click to open Google Maps
+                    document.getElementById('venue-mini-map').addEventListener('click', function() {
+                        window.open('https://www.google.com/maps/search/?api=1&amp;query=Lupo%20Verde%201401%20T%20St%20NW%2C%20Washington%2C%20DC%2020009', '_blank');
+                    });
+                 });
+               </script>
+               <div style="text-align:center; margin-top:0.5rem;">
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=Lupo%20Verde%201401%20T%20St%20NW%2C%20Washington%2C%20DC%2020009" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; color:#aaa; text-decoration:none;">View on Google Maps &rarr;</a>
+               </div>
+            </div>
+            
+        </div>
+      </div>
+    </div>
   </div>
 
-    <!-- [NEW] Google Rating Display -->
+    <!-- [MOVED] Google Rating Display (Moved to Reviews Section) -->
   
-    <div class="google-rating">
-      <span class="rating-stars" style="--rating: 4.2;">★★★★★</span>
-      <span class="rating-value">4.2</span>
-      <span class="rating-count">(1070 reviews)</span>
-    </div>
+    <!-- Rating moved below -->
   
   <!-- End Google Rating Display -->
 
   <div class="venue-description">
-    <p>A rustic and charming Italian restaurant near the 14th Street corridor, Lupo Verde specializes in authentic, house-made pastas and wood-fired dishes. Its cozy dining room and extensive list of Italian wines and amari make it a favorite for intimate, flavorful dinners.</p>
+    <h3>✨ Vibe</h3>
+<p>Lupo Verde is a lively and rustic two-story Italian osteria that blends the charm of a neighborhood cheese shop with an intimate, upscale atmosphere featuring Carrara marble bars and floor-to-ceiling windows.</p>
+
+<h3>🍸 Best For</h3>
+<p>Romantic date nights, birthday celebrations, wine enthusiasts, and authentic Southern Italian dining.</p>
+
+<h3>🔥 Highlights</h3>
+<ul>
+  <li><strong>Award-Winning Authentic Fare:</strong> Recently recognized as one of the top Italian restaurants in DC, the kitchen serves mouthwatering, hand-made pastas like their signature gnocchi, cacio e pepe, and savory salt-crusted branzino.</li>
+  <li><strong>In-House Cheese Shop:</strong> The first floor features a premiere market where guests can enjoy or take home over 50 varieties of imported and house-made cheeses, artisanal salumi, and fresh house-made sauces.</li>
+  <li><strong>Boutique Beverage Program:</strong> Enjoy a curated list of 100 Italian-focused wines alongside innovative cocktails crafted with house-made vermouth and liquors aged in oak barrels.</li>
+</ul>
+
+<h3>ℹ️ Need to Know</h3>
+<ul>
+  <li>While walk-ins are welcome, reservations are highly recommended via Open Table, especially for the popular "Sophia Loren" cupola dining table which seats up to eight.</li>
+  <li>Located just three blocks from the U Street Metro, the venue offers a gated outdoor patio perfect for spring and summer dining.</li>
+</ul>
   </div>
   
-  <a href="https://www.lupoverdedc.com/" class="btn-website" target="_blank" rel="noopener noreferrer">Visit Website</a>
+
   
-    <!-- [NEW] Social Media Links Section -->
-  
-  <div class="social-links">
-    
-    
-      <a href="https://www.facebook.com/lupoverdedc" target="_blank" rel="noopener noreferrer" class="social-icon facebook" title="Facebook"></a>
-    
-    
-      <a href="https://twitter.com/LupoVerdeDC" target="_blank" rel="noopener noreferrer" class="social-icon twitter" title="Twitter/X"></a>
-    
-  </div>
-  
-  <!-- End Social Media Links Section -->
+
 
   <!-- [NEW] Events Section -->
-
-  <div class="events-section">
-    <h3>📅 Upcoming Events & Specials</h3>
-    
-      <div class="event-item">
-        <h4>📅 New Year&#39;s Eve Dinner</h4>
-        <p>A special 3-course menu will be offered for New Year&#39;s Eve.</p>
-      </div>
-    
-      <div class="event-item">
-        <h4>🦃 Thanksgiving Feast</h4>
-        <p>Join for a heartwarming feast with classic flavors and cozy ambiance this Thanksgiving.</p>
-      </div>
-    
-    <small>Last analyzed: Fri Nov 14 2025 13:24:29 GMT-0500 (Eastern Standard Time)</small>
-  </div>
+  <!-- [NEW] Events Section -->
 
 <!-- End Events Section -->
+
+<!-- [NEW] Recurring Events Section -->
+
+  <div class="recurring-events-section">
+    <h3>🔄 Weekly Events</h3>
+    <div class="events-grid">
+      
+        
+        <div class="event-item recurring">
+          <h4>Weekend Brunch 🥂</h4>
+          <p class="event-meta">
+            <span class="days-badge">Sat, Sun</span>
+          </p>
+          
+            <p>Authentic, rustic Italian brunch featuring a variety of small plates, house-made breads and pastas, antipasti, and specialty Italian fare.</p>
+          
+        </div>
+        
+      
+    </div>
+  </div>
+
+<!-- End Recurring Events Section -->
 
     <!-- [NEW] Full Happy Hour Details Section -->
   
   <!-- End Happy Hour Details Section -->
+
+  <!-- [NEW] News Section -->
   
+  <div class="news-section" style="margin-top:2rem; margin-bottom:2rem;">
+    <h3>📰 In the News</h3>
+    <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
+      
+        <a href="https://modernluxury.com/best-italian-restaurants-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=modernluxury.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Modern Luxury</span>
+              <span style="margin-left:auto; text-transform:none;">Dec 10, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Top 10 Italian Restaurants in DC for Delicious Dining</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Lupo Verde offers an authentic Southern Italian dining experience within a rustic and intimate 100-seat interior on T Street. The menu features traditional favorites such as decadent cacio e pepe, spaghetti al nero di seppia, and a savory salt-crusted sea bass branzino.</p>
+           
+        </a>
+      
+        <a href="https://guide.michelin.com/us/en/article/dining-out/washington-dc-14th-street-nw-restaurants" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=guide.michelin.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>MICHELIN Guide</span>
+              <span style="margin-left:auto; text-transform:none;">Dec 10, 2024</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Weekend Inspiration: Washington, D.C.’s 14th Street, NW</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Lupo Verde is a lively two-story Italian osteria in Washington, D.C., featuring a Carrara marble bar and a rustic dining atmosphere. The menu highlights homemade pastas like the thick and chewy spaghettata, along with highly-regarded cheese and charcuterie boards featuring imported salumi and giardiniera.</p>
+           
+        </a>
+      
+        <a href="https://washingtonpost.com/lifestyle/food/lupo-verde-adds-to-the-italian-on-14th-street/2014/04/05/f42f3668-bb56-11e3-9a05-c739f29ccb08_story.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=washingtonpost.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The Washington Post</span>
+              <span style="margin-left:auto; text-transform:none;">May 17, 2023</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Lupo Verde adds to the Italian on 14th Street</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Lupo Verde is an Italian restaurant and cheese shop located at 14th and T streets NW in Washington, D.C. Founded by veteran operator Med Lahlou, the venue features a rustic atmosphere with a first-floor market offering a curated selection of meats and cheeses.</p>
+           
+        </a>
+      
+        <a href="https://districtfray.com/articles/chef-marco-de-rossi-joins-lupo-verde" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=districtfray.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>District Fray</span>
+              <span style="margin-left:auto; text-transform:none;">Dec 15, 2021</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">From Rome with Love (of Pasta): Chef Marco De Rossi Joins Lupo Verde</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Lupo Verde on 14th Street in Washington D.C. welcomed Chef Marco De Rossi to lead its kitchen, bringing 25 years of experience from Rome and the U.S. to the restaurant&#39;s authentic Italian menu. The culinary program emphasizes house-made pastas prepared fresh daily alongside seasonal dishes like herb-infused risotto and traditional Italian meat and seafood selections.</p>
+           
+        </a>
+      
+        <a href="https://dcist.com/story/21/08/03/dc-lupo-verde-pizzeria-pizza-juan-olivera" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=dcist.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>DCist</span>
+              <span style="margin-left:auto; text-transform:none;">Aug 3, 2021</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">First Look: Lupo Pizzeria Opens On 14th Street</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Lupo Pizzeria, a sister concept to Lupo Verde on 14th Street, offers an inventive menu of Neapolitan-style pizzas with unique toppings like squid ink and carbonara ingredients. The 60-seat restaurant also serves South American-influenced sandwiches and Italian-inspired cocktails in an interior designed to resemble a traditional Italian alleyway.</p>
+           
+        </a>
+      
+    </div>
+  </div>
+  
+  <!-- End News Section -->
+  
+
+  <!-- [NEW] Reviews Section (Server-Side) -->
+  
+  <div id="google-reviews-section" class="reviews-section">
+    
+    
+      
+    
+
+    <!-- [MOVED] Google Rating Display -->
+    
+      <div class="google-rating" style="margin-bottom: 2rem;">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJU61BDOi3t4kRPlCfO3jKnTE" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: block;">
+          <div class="rating-header">
+            <span class="rating-stars" style="--rating: 4.2;">★★★★★</span>
+            <span class="rating-value">4.2</span>
+            <span class="rating-count">(1103 reviews)</span>
+            <span class="btn-read-reviews" style="margin-left: auto; margin-top: 0;">View on Google</span>
+          </div>
+        </a>
+      </div>
+    
+    <!-- End Google Rating Display -->
+
+    <h3>Recent Reviews from Google</h3>
+    <div class="reviews-grid">
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJU61BDOi3t4kRPlCfO3jKnTE" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocIbr7dlMcZ2iSwi3vNT3o24fwNONIM2aaLOvNYyrFcNfiu-kg=s128-c0x00000000-cc-rp-mo" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">2 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Lupo verde is a very comfortable place to be at. The music sets the vibe, the service matches the esthetic the quality of food and restaurant. Our server was Nepel I believe, they treated us nice,...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJU61BDOi3t4kRPlCfO3jKnTE" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocJAOY_zPIdj1ho0Rjcq-Q1QvaSv93xoi8gI9vFawQWRfGiJWQ=s128-c0x00000000-cc-rp-mo" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">2 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Everything was incredible! Food, service, and ambiance were all a 10/10. My husband and I greatly enjoyed ourselves and will definitely be back.
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJU61BDOi3t4kRPlCfO3jKnTE" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocLtddL9oPEVoVNFjpDGv9My_3_pHFUxWjxPKXY5lM7Z7Jq4=s128-c0x00000000-cc-rp-mo-ba3" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">6 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Went for dinner date on Tuesday and was seated right away without reservation, great service by authentic Italian accented servers, esthetic design of the inner dining area, and delicious pasta! Also,...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJU61BDOi3t4kRPlCfO3jKnTE" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjW5xHnP651SinCoLKvBxrBaS3D6bTPIpGSMF2JJQZbHwD_OQz5w9Q=s128-c0x00000000-cc-rp-mo-ba3" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a month ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Had a craving for Italian food and stumbled upon this restaurant on a night out. Absolutely mouthwatering and full of flavor. You can tell a lot of love went into it and it’s made by hand. The one...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJU61BDOi3t4kRPlCfO3jKnTE" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjUlQboELp8kBgEww5K-PIpdpnZDw08celIobJNwW5OuOdu-Fz0=s128-c0x00000000-cc-rp-mo" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">4 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Not just great food, but spectacular service as well!! I felt welcome and taken care of the moment I stepped through the door. This place is awesome and I cannot recommend more. Ivino is the best...
+          </p>
+      </a>
+      
+    </div>
+    <div class="reviews-footer">
+      <small>Reviews provided by Google</small>
+    </div>
+  </div>
+  
+
+  <!-- [NEW] Nearby Bars Section -->
+  
+  
+  <div class="nearby-section" style="margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+    <h3 style="margin-bottom: 1.5rem;">📍 Nearby Spots (Walking Distance)</h3>
+    <div class="venue-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
+      
+        <a href="/bars/cafe-saint-ex/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcafe-saint-ex%2Flogo-1766320942126-10723947_810527112301496_1885290486_a.jpg?alt=media&amp;token=9e590009-2f8a-48b9-a487-9ee145439a2c" alt="Cafe Saint-Ex" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Cafe Saint-Ex</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">56m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/sook-dc/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fsook-dc%2Flogo-1767137486386-573810368_18536959336019805_8147668250383775921_n.jpg?alt=media&amp;token=0778ba83-db44-4fa8-816f-f94869b3213e" alt="Sook DC" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Sook DC</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">72m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/pilar-bar/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fpilar-bar%2Flogo-1767024867080-556586550_18530323282028754_2804824224052550232_n.jpg?alt=media&amp;token=b190a65c-6374-444a-9c28-781f33d74b69" alt="Pilar" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Pilar</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">81m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/gypsy-kitchen-dc/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fgypsy-kitchen-dc%2Flogo-1766508043875-117204790_1428209530706561_18441146209208680_n.jpg?alt=media&amp;token=1c327b1b-2868-46d7-9752-da3a22c08b95" alt="Gypsy Kitchen DC" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Gypsy Kitchen DC</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">109m away</p>
+          </div>
+        </a>
+      
+    </div>
+  </div>
+  
+
   <a href="/" class="btn-back">← Back to Home</a>
 </article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "Lupo Verde",
+  "image": "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Flupo-verde%2Flogo-1766860241078-50536320_619343631849172_813428533408825344_n.jpg?alt=media&token=67105a2d-6dfa-48a2-a422-8b445d3153ed",
+  "address": "1401 T St NW, Washington, DC 20009",
+  
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.2,
+    "reviewCount": 1103
+  },
+  
+  
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": 5,
+      "bestRating": 5
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Elijah Lopez"
+    },
+    "reviewBody": "Lupo verde is a very comfortable place to be at. The music sets the vibe, the service matches the esthetic the quality of food and restaurant. Our server was Nepel I believe, they treated us nice, plus it was my birthday. He came to our table with a warm presence every time. The best part were the drinks😩 and when the manager comes to sing happy birthday, when I tell you he can sing, he can sing! Again thankyou so much for having us, I will be booking with you all in the future-for any big parties I have. Please try lupo verde out, enjoy."
+  },
+  
+  
+  "priceRange": "$$$", 
+  
+  
+  "telephone": "(202) 827-4752",
+  
+  "url": "https://bardc.com/venues/lupo-verde/"
+}
+</script>
     </main>
-    <footer>
-      <p>© 2025 Bar DC. A guide to Washington D.C. Nightlife.</p>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="/" aria-label="Back to Home">
+            <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="footer-logo">
+          </a>
+        </div>
+        
+        <div class="footer-links">
+
+          <div class="social-icons">
+            <a href="https://x.com/bardc_" target="_blank" rel="noopener noreferrer" class="social-icon twitter" aria-label="X (formerly Twitter)"></a>
+            <a href="https://www.facebook.com/bardc" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook"></a>
+          </div>
+          <a href="mailto:info@bardc.com" class="footer-contact">info@bardc.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Bar DC. All rights reserved.</p>
+      </div>
     </footer>
   </div>
+  <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="img01" onclick="event.stopPropagation()">
+  </div>
+  <script>
+    // Global Image Modal Logic
+    window.openImageModal = function(src) {
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("img01");
+        if(modal && modalImg) {
+            modal.style.display = "flex";
+            modalImg.src = src;
+            document.body.style.overflow = "hidden"; 
+        }
+    }
+    
+    window.closeImageModal = function() {
+        var modal = document.getElementById("imageModal");
+        if(modal) {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto"; 
+        }
+    }
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            window.closeImageModal();
+        }
+    });
+  </script>
+  <style>
+    /* Modal Styles (Global) */
+    .image-modal {
+      display: none; 
+      position: fixed; 
+      z-index: 9999; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgba(0,0,0,0.95); 
+      align-items: center;
+      justify-content: center;
+      cursor: zoom-out;
+    }
+    
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 95%;
+      max-height: 95vh;
+      border-radius: 4px;
+      object-fit: contain;
+      cursor: default;
+      animation: zoom 0.3s;
+    }
+    
+    .close-modal {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 50px;
+      font-weight: bold;
+      transition: 0.3s;
+      cursor: pointer;
+      z-index: 10000;
+      line-height: 1;
+    }
+    
+    @keyframes zoom {
+      from {transform:scale(0.8); opacity: 0;}
+      to {transform:scale(1); opacity: 1;}
+    }
+  </style>
+
 </body>
 </html>

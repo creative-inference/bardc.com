@@ -4,6 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cafe Citron | Bar DC</title>
+
+  
+  
+  
+  
+  
+     
+     
+  
+
+  
+  
+
+  
+  
+
+  <meta name="description" content="Visit Cafe Citron in Dupont Circle, Washington DC. ✨ Vibe A vibrant, multi-level Latin oasis in the heart of Dupont Circle that seamlessly transforms from a colorful South American restaurant...">
+  <link rel="canonical" href="https://bardc.com/bars/cafe-citron/">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Bar DC">
+  <meta property="og:title" content="Cafe Citron">
+  <meta property="og:description" content="Visit Cafe Citron in Dupont Circle, Washington DC. ✨ Vibe A vibrant, multi-level Latin oasis in the heart of Dupont Circle that seamlessly transforms from a colorful South American restaurant...">
+  <meta property="og:url" content="https://bardc.com/bars/cafe-citron/">
+  <meta property="og:type" content="business.business">
+  
+  
+  
+  
+      
+  
+  <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcafe-citron%2Flogo-1766320730754-cafe%2Bcitron%2Blogo_no_bkg.webp?alt=media&amp;token=0cb9a92b-e732-4147-a93d-cfb821311075">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cafe Citron">
+  <meta name="twitter:description" content="Visit Cafe Citron in Dupont Circle, Washington DC. ✨ Vibe A vibrant, multi-level Latin oasis in the heart of Dupont Circle that seamlessly transforms from a colorful South American restaurant...">
+  <meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcafe-citron%2Flogo-1766320730754-cafe%2Bcitron%2Blogo_no_bkg.webp?alt=media&amp;token=0cb9a92b-e732-4147-a93d-cfb821311075">
+
     <!-- [NEW] Favicon Links -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -13,7 +52,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/masonry.css">
+
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9L0NBTF5RQ"></script>
 <script>
@@ -23,113 +64,735 @@
 
   gtag('config', 'G-9L0NBTF5RQ');
 </script>
+
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7540411251843957"
+     crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="container">
     <header>
-      <a href="/" class="logo-link">
-        <img src="/img/logo.jpg" alt="Bar DC Logo" class="logo">
-      </a>
-      <h1>Cafe Citron</h1>
+      <div class="header-branding">
+        <a href="/" class="branding-link">
+          <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
+          <span class="site-title">Washington D.C. Bars & Clubs</span>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <a href="/bars/">Bars</a>
+        <a href="/map/">Map</a>
+        
+
+        <div class="nav-dropdown">
+          <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
+          <div class="dropdown-menu">
+            
+              <a href="/neighborhoods/u-street/">U Street</a>
+            
+              <a href="/neighborhoods/dupont-circle/">Dupont Circle</a>
+            
+              <a href="/neighborhoods/downtown/">Downtown</a>
+            
+              <a href="/neighborhoods/adams-morgan/">Adams Morgan</a>
+            
+              <a href="/neighborhoods/navy-yard/">Navy Yard</a>
+            
+              <a href="/neighborhoods/georgetown/">Georgetown</a>
+            
+              <a href="/neighborhoods/the-wharf/">The Wharf</a>
+            
+              <a href="/neighborhoods/h-street-ne/">H Street NE</a>
+            
+            <div class="dropdown-divider"></div>
+            <a href="/neighborhoods/" class="view-all">View All →</a>
+          </div>
+        </div>
+
+
+        <a href="/events/">Events</a>
+        <a href="/happy-hour/">Happy Hour</a>
+      </nav>
     </header>
     <main>
+      
+        <h1 class="page-title">Cafe Citron</h1>
+      
       <!-- This line is critical. It injects the content from other files. -->
-      <article class="venue-profile">
+      <!-- Leaflet Map Resources -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<style>
+   /* Custom Pin Styles for Venue Page */
+   .custom-pin-icon { background: transparent; border: none; }
+   .pin-wrapper {
+     width: 40px; height: 40px; border-radius: 50%; border: 3px solid #fff;
+     box-shadow: 0 4px 10px rgba(0,0,0,0.5); background-color: #fff;
+     overflow: hidden; position: relative; transition: transform 0.2s ease, z-index 0.2s;
+   }
+   .pin-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+   .pin-wrapper.no-logo {
+     background-color: var(--primary-color, #e53935);
+     display: flex; align-items: center; justify-content: center;
+   }
+   .pin-wrapper.no-logo::after { content: ''; width: 12px; height: 12px; background: #fff; border-radius: 50%; }
+   .leaflet-container { font-family: inherit; }
+   .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: #1e1e1e; color: #fff; border: 1px solid rgba(255,255,255,0.1); }
+   .leaflet-popup-content a { color: #fff; background: var(--primary-color, #e53935); padding: 2px 8px; border-radius: 4px; text-decoration: none; }
+</style>
 
+<article class="venue-profile">
 
-    <img src="/logos/cafe-citron.png" alt="Cafe Citron logo" class="venue-profile-logo">
-  
    <h1>Cafe Citron</h1>
   
   <div class="venue-details">
-    <p><strong>Category:</strong> Latin Club, Dance Club, Restaurant</p>
-    <p><strong>Price:</strong> $$</p>
-    <p><strong>Address:</strong> 1343 Connecticut Ave NW, Washington, DC 20036</p>
+    <div style="display:flex; align-items:flex-start; gap:1.5rem; margin-bottom:1rem; flex-wrap:wrap;">
+      
+        <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcafe-citron%2Flogo-1766320730754-cafe%2Bcitron%2Blogo_no_bkg.webp?alt=media&amp;token=0cb9a92b-e732-4147-a93d-cfb821311075" alt="Cafe Citron logo" style="max-height:250px; max-width:250px; border-radius:8px; border:1px solid #eee; object-fit:contain; flex-shrink:0;">
+      
+      <div style="flex:1; min-width: 250px;">
+        <div style="display:flex; gap:1.5rem; flex-wrap:wrap; justify-content: space-between;">
+            <div style="flex:1; min-width:200px;">
+                <p><strong>Category:</strong> 
+                  
+                  
+                    <a href="/categories/dance-clubs/">Dance Clubs</a>, 
+                  
+                    <a href="/categories/latin/">Latin</a>, 
+                  
+                    <a href="/categories/nightclub/">Nightclub</a>
+                  
+                </p>
+                
+                  <p><strong>Neighborhood:</strong> <a href="/neighborhoods/dupont-circle/">Dupont Circle</a></p>
+                
+                <p><strong>Price:</strong> $$</p>
+                
+                
+                
+                
+                
+                
+                <p><strong>Address:</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=Cafe%20Citron%201343%20Connecticut%20Ave%20NW%2C%20Washington%2C%20DC%2020036" target="_blank" rel="noopener noreferrer" style="text-decoration:underline; color:var(--accent-color);">1343 Connecticut Ave NW, Washington, DC 20036</a></p>
+
+                <div class="venue-actions-bar" style="margin-top:1rem;">
+                  
+                    <a href="http://www.cafecitrondc.com/" class="btn-website-action" target="_blank" rel="noopener noreferrer">
+                      <span>Website</span>
+                    </a>
+                  
+                  
+                  
+                  <div class="social-icons-inline">
+                    
+                      <a href="https://www.instagram.com/cafecitron/" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
+                    
+                    
+                      <a href="http://www.facebook.com/1267457013307154" target="_blank" rel="noopener noreferrer" class="social-icon facebook" title="Facebook"></a>
+                    
+                    
+                      <a href="https://twitter.com/CAFECITRON" target="_blank" rel="noopener noreferrer" class="social-icon twitter" title="Twitter/X"></a>
+                    
+                  </div>
+                  
+                </div>
+            </div>
+            
+            <!-- Side Map -->
+            
+            <div style="width:220px; flex-shrink:0; margin-top: 0.5rem;">
+               <div id="venue-mini-map" style="width:100%; height:220px; border-radius:12px; border:1px solid rgba(255,255,255,0.1); box-shadow:0 4px 15px rgba(0,0,0,0.3); z-index:0; cursor: pointer;"></div>
+               <script>
+                 document.addEventListener('DOMContentLoaded', function() {
+                    var lat = 38.9084154;
+                    var lng = -77.04243679999999;
+                    var map = L.map('venue-mini-map', {
+                        center: [lat, lng],
+                        zoom: 16,
+                        zoomControl: false, 
+                        attributionControl: false,
+                        dragging: false,
+                        scrollWheelZoom: false,
+                        doubleClickZoom: false,
+                        boxZoom: false,
+                        keyboard: false
+                    });
+                     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                        subdomains: 'abcd',
+                        maxZoom: 20
+                     }).addTo(map);
+
+                    var iconHTML = `<div class="pin-wrapper"><img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcafe-citron%2Flogo-1766320730754-cafe%2Bcitron%2Blogo_no_bkg.webp?alt=media&amp;token=0cb9a92b-e732-4147-a93d-cfb821311075" onerror="this.style.display='none'; this.parentElement.classList.add('no-logo');"></div>`;
+                    var icon = L.divIcon({
+                        className: 'custom-pin-icon',
+                        html: iconHTML,
+                        iconSize: [40, 40],
+                        iconAnchor: [20, 20]
+                    });
+                    
+                    L.marker([lat, lng], {icon: icon}).addTo(map);
+                    
+                    // Click to open Google Maps
+                    document.getElementById('venue-mini-map').addEventListener('click', function() {
+                        window.open('https://www.google.com/maps/search/?api=1&amp;query=Cafe%20Citron%201343%20Connecticut%20Ave%20NW%2C%20Washington%2C%20DC%2020036', '_blank');
+                    });
+                 });
+               </script>
+               <div style="text-align:center; margin-top:0.5rem;">
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=Cafe%20Citron%201343%20Connecticut%20Ave%20NW%2C%20Washington%2C%20DC%2020036" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; color:#aaa; text-decoration:none;">View on Google Maps &rarr;</a>
+               </div>
+            </div>
+            
+        </div>
+      </div>
+    </div>
   </div>
 
-    <!-- [NEW] Google Rating Display -->
+    <!-- [MOVED] Google Rating Display (Moved to Reviews Section) -->
   
-    <div class="google-rating">
-      <span class="rating-stars" style="--rating: 4.1;">★★★★★</span>
-      <span class="rating-value">4.1</span>
-      <span class="rating-count">(1432 reviews)</span>
-    </div>
+    <!-- Rating moved below -->
   
   <!-- End Google Rating Display -->
 
   <div class="venue-description">
-    <p>A colorful and lively Latin bar in the heart of Dupont Circle, Cafe Citron transforms from a restaurant serving authentic Latin American dishes into a high-energy nightclub. It&#39;s known for its daily happy hour, salsa and samba lessons, and DJs spinning Latin music across its multiple floors.</p>
+    <h3>✨ Vibe</h3>
+<p>A vibrant, multi-level Latin oasis in the heart of Dupont Circle that seamlessly transforms from a colorful South American restaurant into a high-energy dance club with infectious rhythms and tropical flair.</p>
+
+<h3>🍸 Best For</h3>
+<p>Salsa and Bachata enthusiasts, lively birthday celebrations, group night outs, Spanish language practice, and late-night dancing to Latin hits.</p>
+
+<h3>🔥 Highlights</h3>
+<ul>
+  <li><strong>Complimentary Dance Lessons:</strong> Master the Latin two-step with free, high-energy introductory salsa and bachata classes offered every Wednesday, Friday, and Saturday night.</li>
+  <li><strong>Multi-Level Sonic Experience:</strong> Explore three to four floors of music where dedicated DJs spin a diverse mix of reggaeton, Latin house, salsa, bachata, and EDM across different rooms.</li>
+  <li><strong>Themed Latin Fiestas:</strong> Enjoy signature weekly events like the "Drums of DC" on Saturdays and the "Macarena Fiesta Latina" on Wednesdays, paired with authentic South American bites like empanadas and ceviche.</li>
+</ul>
+
+<h3>ℹ️ Need to Know</h3>
+<ul>
+  <li>The venue transitions from dinner service to a full nightclub atmosphere around 10:00 PM; arrive early to take advantage of the late-night happy hour specials.</li>
+  <li>Located directly across from the Dupont Circle Metro (South Exit), it is a premier destination for private events and large groups with no room fees for buyouts.</li>
+</ul>
   </div>
   
-  <a href="http://www.cafecitrondc.com/" class="btn-website" target="_blank" rel="noopener noreferrer">Visit Website</a>
+
   
-    <!-- [NEW] Social Media Links Section -->
-  
-  <div class="social-links">
-    
-      <a href="http://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
-    
-    
-      <a href="http://www.facebook.com/1267457013307154" target="_blank" rel="noopener noreferrer" class="social-icon facebook" title="Facebook"></a>
-    
-    
-      <a href="https://twitter.com/CAFECITRON" target="_blank" rel="noopener noreferrer" class="social-icon twitter" title="Twitter/X"></a>
-    
-  </div>
-  
-  <!-- End Social Media Links Section -->
+
 
   <!-- [NEW] Events Section -->
-
-  <div class="events-section">
-    <h3>📅 Upcoming Events & Specials</h3>
-    
-      <div class="event-item">
-        <h4>🎃 Halloween Friday Party</h4>
-        <p>Halloween party on Friday from 6 PM featuring 3 floors, 3 DJs, tropical happy hour (6-9 PM), Salsa Social (7-10 PM), Salsa Class (8 PM), and a costume contest (9 PM) with a $500 prize.</p>
-      </div>
-    
-      <div class="event-item">
-        <h4>🍸 Weekly Latin Happy Hour</h4>
-        <p>Latin Happy Hour available every Wednesday, Thursday, Friday, and Saturday from 7 PM to 9 PM. Features tropical drinks and music.</p>
-      </div>
-    
-      <div class="event-item">
-        <h4>🎶 Wednesday Latin Night (Fiesta Latina)</h4>
-        <p>Every Wednesday is &#39;Fiesta Latina&#39; Latin Nightclub with cheap drinks, college life specials, $35 beer buckets, $9 mix rail drinks, and $8 Truly.</p>
-      </div>
-    
-      <div class="event-item">
-        <h4>💃 Salsa Classes</h4>
-        <p>Salsa classes every Friday (9-10 PM, social dance till 11 PM) and Saturday (9-10 PM). $15 minimum food/drink purchase is required to participate.</p>
-      </div>
-    
-      <div class="event-item">
-        <h4>🎉 Saturday Party</h4>
-        <p>Saturday party with authentic Latin food served from 7 PM to 11 PM, including a Happy Hour from 7 PM to 9 PM with food &amp; drinks under $10.</p>
-      </div>
-    
-    <small>Last analyzed: Fri Nov 14 2025 13:03:26 GMT-0500 (Eastern Standard Time)</small>
-  </div>
+  <!-- [NEW] Events Section -->
 
 <!-- End Events Section -->
+
+<!-- [NEW] Recurring Events Section -->
+
+  <div class="recurring-events-section">
+    <h3>🔄 Weekly Events</h3>
+    <div class="events-grid">
+      
+        
+        <div class="event-item recurring">
+          <h4>🥘 Authentic Latin Saturday Dinner</h4>
+          <p class="event-meta">
+            <span class="days-badge">Sat</span>
+          </p>
+          
+            <p>Authentic Latin food served from 7 PM to 11 PM with music and dancing.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>🎂 Birthday Celebrations</h4>
+          <p class="event-meta">
+            <span class="days-badge">Daily</span>
+          </p>
+          
+            <p>Free house tequila shots on your birthday and free bottle of house champagne with bottle purchase.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>🎧 Latin Fridays</h4>
+          <p class="event-meta">
+            <span class="days-badge">Fri</span>
+          </p>
+          
+            <p>3 Floors and 3 DJs playing Latin and Caribbean music. Serving dinner 7 PM to 11 PM.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>💃 Salsa Class &amp; Dinner</h4>
+          <p class="event-meta">
+            <span class="days-badge">Wed</span>
+          </p>
+          
+            <p>Dinner and salsa experience from 8-11 PM with a formal salsa class starting at 9 PM.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>💃 Salsa Class &amp; Latin Dinner</h4>
+          <p class="event-meta">
+            <span class="days-badge">Fri</span>
+          </p>
+          
+            <p>Enjoy dinner and a salsa class. The salsa class starts at 9 PM. Featuring 3 floors and 3 DJs.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>🍾 Wednesday Bottle Specials</h4>
+          <p class="event-meta">
+            <span class="days-badge">Wed</span>
+          </p>
+          
+            <p>$100 birthday bottle special and house champagne specials.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>Birthday Celebrations @ Cafe Citron - Free House Tequila Shots</h4>
+          <p class="event-meta">
+            <span class="days-badge">Sat</span>
+          </p>
+          
+            <p>Free House Tequila Shots on your birthday</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>Dinner &amp; Salsa Class</h4>
+          <p class="event-meta">
+            <span class="days-badge">Wed</span>
+          </p>
+          
+            <p>Dinner &amp; Salsa Class</p>
+          
+        </div>
+        
+      
+    </div>
+  </div>
+
+<!-- End Recurring Events Section -->
 
     <!-- [NEW] Full Happy Hour Details Section -->
   
     <div class="happy-hour-info">
       <h3>Happy Hour</h3>
-      <p>Happy Hour: Wed-Sat 7-9pm (food &amp; drinks), Late Night Happy Hour: 9-11pm.  Thursday Happy Hour: $5 Modelo Especial, $8 House Margaritas, $8 Milagro Tequila shots.  Saturday Happy Hour: Food &amp; drinks under $10.  Colombia Independence Day Specials: $8 Aguardiente shots, $11 Aguardiente Mojitos. Free house tequila shots on your birthday.</p>
-      <small>Last analyzed: Sun Jul 27 2025 20:12:31 GMT-0400 (Eastern Daylight Time)</small>
+      <p>$7 House Margaritas, $5 House Shots, $6 Domestic Beer, $9 Brazil Caipirinhas, and $10 Cuban Mojitos.</p>
     </div>
   
   <!-- End Happy Hour Details Section -->
+
+  <!-- [NEW] News Section -->
   
+  <div class="news-section" style="margin-top:2rem; margin-bottom:2rem;">
+    <h3>📰 In the News</h3>
+    <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
+      
+        <a href="https://spottedbylocals.com/washington-dc/cafe-citron" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=spottedbylocals.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Spotted by Locals</span>
+              <span style="margin-left:auto; text-transform:none;">Nov 12, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Cafe Citron Washington DC - Spanish conversation and dancing</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Cafe Citron is a vibrant Washington D.C. staple featuring a South American-inspired menu alongside free salsa lessons every Wednesday, Friday, and Saturday. The venue also hosts a monthly happy hour in its mezzanine for those looking to practice Spanish conversation with locals and native speakers.</p>
+           
+        </a>
+      
+        <a href="https://timeout.com/washington-dc/music-nightlife/best-dance-clubs-in-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=timeout.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Time Out Worldwide</span>
+              <span style="margin-left:auto; text-transform:none;">Jun 17, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The best clubs in D.C. for dancing all night long</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Cafe Citron is a lively Latin club and restaurant near Dupont Circle featuring four floors of music ranging from salsa and bachata to reggaeton and EDM. The venue offers an extensive menu of Latin-inspired dishes and hosts both early and late-night happy hours with specials on cocktails and food.</p>
+           
+        </a>
+      
+        <a href="https://washingtonian.com/2024/04/18/places-to-go-social-dancing-around-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Washingtonian</span>
+              <span style="margin-left:auto; text-transform:none;">May 1, 2024</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">9 Places to Go Social Dancing Around DC</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Cafe Citron in Dupont Circle offers introductory salsa classes to help beginners master the Latin two-step. Lessons are held on Wednesday nights, followed by social dancing opportunities from Thursday through Saturday.</p>
+           
+        </a>
+      
+        <a href="https://dc.eater.com/maps/bars-adults-should-avoid-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Eater DC</span>
+              <span style="margin-left:auto; text-transform:none;">Nov 24, 2015</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Eleven Bars That Actual Adults Should Probably Avoid</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Cafe Citron offers popular salsa lessons and a signature happy hour known as &quot;Hora Feliz.&quot; While the venue provides a high-energy atmosphere, it is frequently crowded with a younger demographic, making it a destination that more mature patrons may find overwhelming during peak hours.</p>
+           
+        </a>
+      
+        <a href="https://washington.org/visit-dc/dance-in-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=washington.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>visit Washington DC</span>
+              
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Dance in DC: Gatherings, Classes &amp; Performances</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Cafe Citron in Dupont Circle offers free salsa classes every Wednesday and Saturday at 8 p.m., followed by vibrant social dancing. This venue is a staple for Latin dance enthusiasts in Washington, D.C., providing a welcoming space for both beginners and experienced dancers.</p>
+           
+        </a>
+      
+    </div>
+  </div>
+  
+  <!-- End News Section -->
+  
+
+  <!-- [NEW] Reviews Section (Server-Side) -->
+  
+  <div id="google-reviews-section" class="reviews-section">
+    
+    
+      
+    
+
+    <!-- [MOVED] Google Rating Display -->
+    
+      <div class="google-rating" style="margin-bottom: 2rem;">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJRykPoce3t4kRosCq3xHxPyE" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: block;">
+          <div class="rating-header">
+            <span class="rating-stars" style="--rating: 4.1;">★★★★★</span>
+            <span class="rating-value">4.1</span>
+            <span class="rating-count">(1452 reviews)</span>
+            <span class="btn-read-reviews" style="margin-left: auto; margin-top: 0;">View on Google</span>
+          </div>
+        </a>
+      </div>
+    
+    <!-- End Google Rating Display -->
+
+    <h3>Recent Reviews from Google</h3>
+    <div class="reviews-grid">
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJRykPoce3t4kRosCq3xHxPyE" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjUrDDFQfz0zUSCepKunT8jnXD2sTmSq7jPePsnuOmWTgbBz5EVm=s128-c0x00000000-cc-rp-mo-ba3" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">3 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Our group was looking for a fun night with some good music and great vibes and we found it at Cafe Citron. Music was on point, vibe was lively and friendly. Drinks were a bit overpriced, but overall...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJRykPoce3t4kRosCq3xHxPyE" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjUnEEP1JrstDQaW6078SHq_u03K6YZRpRVJzvkK8MiHLXdqQ2ld=s128-c0x00000000-cc-rp-mo-ba3" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">6 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★☆☆☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            I used to LOVE this place. I recently took a friend to cheer her up because she was going thru a hard time. We got there and asked about the specials for the evening, we thought we missed the special...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJRykPoce3t4kRosCq3xHxPyE" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocLv8TEx2wRaYawNNFqfychmkxMQ_EcSc6v7_hvGeGgnwvEfNw=s128-c0x00000000-cc-rp-mo" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">3 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Came here beginning of the year January for work, and I was reminded of the Afro Latina lady giving me and my friends and other customers dancing lessons, I believe she was the owner. Still remember...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJRykPoce3t4kRosCq3xHxPyE" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjUtKFIO0EcNyEXE0YxWBw36LK2JC6zDBR2F-JKPeS9zkFt6BVmv_Q=s128-c0x00000000-cc-rp-mo-ba5" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a month ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Had a very nice time here dancing and celebrating with colleagues. Good atmosphere and nice staff. The drinks were well made, but nothing to write home about. It was about the atmosphere and music. If...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJRykPoce3t4kRosCq3xHxPyE" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXnAeFRap1hVpp85NE-ta-nY45rmhZ5_z0sp7P45s7Jt3b8aPcROw=s128-c0x00000000-cc-rp-mo-ba2" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">3 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★☆☆☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            I’m honestly sad to write this. I don’t know if it’s due to new management, but the vibe just isn’t the same anymore. The music used to be a fun mix of Latin club hits, but now it feels like it’s only...
+          </p>
+      </a>
+      
+    </div>
+    <div class="reviews-footer">
+      <small>Reviews provided by Google</small>
+    </div>
+  </div>
+  
+
+  <!-- [NEW] Nearby Bars Section -->
+  
+  
+  <div class="nearby-section" style="margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+    <h3 style="margin-bottom: 1.5rem;">📍 Nearby Spots (Walking Distance)</h3>
+    <div class="venue-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
+      
+        <a href="/bars/kabin-lounge/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fkabin-lounge%2Flogo-1766707750921-10299725_505852322907101_239747141_a.jpg?alt=media&amp;token=18179357-d282-4865-9af3-30cf7d94e417" alt="Kabin Lounge" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Kabin Lounge</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">29m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/reynold-s-bar/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Freynold-s-bar%2Flogo-1767108086288-471604396_2929343290558907_2950256546108805459_n.jpg?alt=media&amp;token=f182d2c0-c721-42c4-90ac-83986d74a3f4" alt="Reynold’s Bar" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Reynold’s Bar</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">45m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/phantom-lounge/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fphantom-lounge%2Flogo-1767024709466-472131758_1797212431028402_4419028768395324561_n%20(1).jpg?alt=media&amp;token=3dada606-be26-45ed-92c3-8864269376f2" alt="Phantom Lounge" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Phantom Lounge</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">48m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/madhatter/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fmadhatter%2Flogo-1766860613792-160615176_1617524908430962_8620835021565413532_n.jpg?alt=media&amp;token=6a96d9ea-90e3-4c40-a5ac-e01b346ca8a4" alt="Madhatter" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Madhatter</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">76m away</p>
+          </div>
+        </a>
+      
+    </div>
+  </div>
+  
+
   <a href="/" class="btn-back">← Back to Home</a>
 </article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "Cafe Citron",
+  "image": "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcafe-citron%2Flogo-1766320730754-cafe%2Bcitron%2Blogo_no_bkg.webp?alt=media&token=0cb9a92b-e732-4147-a93d-cfb821311075",
+  "address": "1343 Connecticut Ave NW, Washington, DC 20036",
+  
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.1,
+    "reviewCount": 1452
+  },
+  
+  
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": 5,
+      "bestRating": 5
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Andres Marmol"
+    },
+    "reviewBody": "Our group was looking for a fun night with some good music and great vibes and we found it at Cafe Citron. Music was on point, vibe was lively and friendly. Drinks were a bit overpriced, but overall the experience was well worth it. I would definitely come back and highly recommend."
+  },
+  
+  
+  "priceRange": "$$", 
+  
+  
+  "telephone": "(202) 422-3005",
+  
+  "url": "https://bardc.com/venues/cafe-citron/"
+}
+</script>
     </main>
-    <footer>
-      <p>© 2025 Bar DC. A guide to Washington D.C. Nightlife.</p>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="/" aria-label="Back to Home">
+            <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="footer-logo">
+          </a>
+        </div>
+        
+        <div class="footer-links">
+
+          <div class="social-icons">
+            <a href="https://x.com/bardc_" target="_blank" rel="noopener noreferrer" class="social-icon twitter" aria-label="X (formerly Twitter)"></a>
+            <a href="https://www.facebook.com/bardc" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook"></a>
+          </div>
+          <a href="mailto:info@bardc.com" class="footer-contact">info@bardc.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Bar DC. All rights reserved.</p>
+      </div>
     </footer>
   </div>
+  <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="img01" onclick="event.stopPropagation()">
+  </div>
+  <script>
+    // Global Image Modal Logic
+    window.openImageModal = function(src) {
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("img01");
+        if(modal && modalImg) {
+            modal.style.display = "flex";
+            modalImg.src = src;
+            document.body.style.overflow = "hidden"; 
+        }
+    }
+    
+    window.closeImageModal = function() {
+        var modal = document.getElementById("imageModal");
+        if(modal) {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto"; 
+        }
+    }
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            window.closeImageModal();
+        }
+    });
+  </script>
+  <style>
+    /* Modal Styles (Global) */
+    .image-modal {
+      display: none; 
+      position: fixed; 
+      z-index: 9999; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgba(0,0,0,0.95); 
+      align-items: center;
+      justify-content: center;
+      cursor: zoom-out;
+    }
+    
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 95%;
+      max-height: 95vh;
+      border-radius: 4px;
+      object-fit: contain;
+      cursor: default;
+      animation: zoom 0.3s;
+    }
+    
+    .close-modal {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 50px;
+      font-weight: bold;
+      transition: 0.3s;
+      cursor: pointer;
+      z-index: 10000;
+      line-height: 1;
+    }
+    
+    @keyframes zoom {
+      from {transform:scale(0.8); opacity: 0;}
+      to {transform:scale(1); opacity: 1;}
+    }
+  </style>
+
 </body>
 </html>

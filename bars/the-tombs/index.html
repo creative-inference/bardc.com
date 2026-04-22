@@ -4,6 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Tombs | Bar DC</title>
+
+  
+  
+  
+  
+  
+     
+     
+  
+
+  
+  
+
+  
+  
+
+  <meta name="description" content="Visit The Tombs in Georgetown, Washington DC. ✨ Vibe A quintessential Georgetown institution, this historic underground tavern blends classic American charm with a high-energy collegiate...">
+  <link rel="canonical" href="https://bardc.com/bars/the-tombs/">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Bar DC">
+  <meta property="og:title" content="The Tombs">
+  <meta property="og:description" content="Visit The Tombs in Georgetown, Washington DC. ✨ Vibe A quintessential Georgetown institution, this historic underground tavern blends classic American charm with a high-energy collegiate...">
+  <meta property="og:url" content="https://bardc.com/bars/the-tombs/">
+  <meta property="og:type" content="business.business">
+  
+  
+  
+  
+      
+  
+  <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-tombs%2Flogo-1767143364592-12356429_1649132308694314_1738040449_a.jpg?alt=media&amp;token=e21475f8-5019-435b-84b7-8c8016ed9a7a">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Tombs">
+  <meta name="twitter:description" content="Visit The Tombs in Georgetown, Washington DC. ✨ Vibe A quintessential Georgetown institution, this historic underground tavern blends classic American charm with a high-energy collegiate...">
+  <meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-tombs%2Flogo-1767143364592-12356429_1649132308694314_1738040449_a.jpg?alt=media&amp;token=e21475f8-5019-435b-84b7-8c8016ed9a7a">
+
     <!-- [NEW] Favicon Links -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -13,7 +52,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/masonry.css">
+
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9L0NBTF5RQ"></script>
 <script>
@@ -23,85 +64,817 @@
 
   gtag('config', 'G-9L0NBTF5RQ');
 </script>
+
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7540411251843957"
+     crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="container">
     <header>
-      <a href="/" class="logo-link">
-        <img src="/img/logo.jpg" alt="Bar DC Logo" class="logo">
-      </a>
-      <h1>The Tombs</h1>
+      <div class="header-branding">
+        <a href="/" class="branding-link">
+          <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
+          <span class="site-title">Washington D.C. Bars & Clubs</span>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <a href="/bars/">Bars</a>
+        <a href="/map/">Map</a>
+        
+
+        <div class="nav-dropdown">
+          <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
+          <div class="dropdown-menu">
+            
+              <a href="/neighborhoods/u-street/">U Street</a>
+            
+              <a href="/neighborhoods/dupont-circle/">Dupont Circle</a>
+            
+              <a href="/neighborhoods/downtown/">Downtown</a>
+            
+              <a href="/neighborhoods/adams-morgan/">Adams Morgan</a>
+            
+              <a href="/neighborhoods/navy-yard/">Navy Yard</a>
+            
+              <a href="/neighborhoods/georgetown/">Georgetown</a>
+            
+              <a href="/neighborhoods/the-wharf/">The Wharf</a>
+            
+              <a href="/neighborhoods/h-street-ne/">H Street NE</a>
+            
+            <div class="dropdown-divider"></div>
+            <a href="/neighborhoods/" class="view-all">View All →</a>
+          </div>
+        </div>
+
+
+        <a href="/events/">Events</a>
+        <a href="/happy-hour/">Happy Hour</a>
+      </nav>
     </header>
     <main>
+      
+        <h1 class="page-title">The Tombs</h1>
+      
       <!-- This line is critical. It injects the content from other files. -->
-      <article class="venue-profile">
+      <!-- Leaflet Map Resources -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<style>
+   /* Custom Pin Styles for Venue Page */
+   .custom-pin-icon { background: transparent; border: none; }
+   .pin-wrapper {
+     width: 40px; height: 40px; border-radius: 50%; border: 3px solid #fff;
+     box-shadow: 0 4px 10px rgba(0,0,0,0.5); background-color: #fff;
+     overflow: hidden; position: relative; transition: transform 0.2s ease, z-index 0.2s;
+   }
+   .pin-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+   .pin-wrapper.no-logo {
+     background-color: var(--primary-color, #e53935);
+     display: flex; align-items: center; justify-content: center;
+   }
+   .pin-wrapper.no-logo::after { content: ''; width: 12px; height: 12px; background: #fff; border-radius: 50%; }
+   .leaflet-container { font-family: inherit; }
+   .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: #1e1e1e; color: #fff; border: 1px solid rgba(255,255,255,0.1); }
+   .leaflet-popup-content a { color: #fff; background: var(--primary-color, #e53935); padding: 2px 8px; border-radius: 4px; text-decoration: none; }
+</style>
 
+<article class="venue-profile">
 
-    <img src="/logos/the-tombs.png" alt="The Tombs logo" class="venue-profile-logo">
-  
    <h1>The Tombs</h1>
   
   <div class="venue-details">
-    <p><strong>Category:</strong> Restaurant, Pub, Historic Bar</p>
-    <p><strong>Price:</strong> $$</p>
-    <p><strong>Address:</strong> 1226 36th St NW, Washington, DC 20007</p>
+    <div style="display:flex; align-items:flex-start; gap:1.5rem; margin-bottom:1rem; flex-wrap:wrap;">
+      
+        <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-tombs%2Flogo-1767143364592-12356429_1649132308694314_1738040449_a.jpg?alt=media&amp;token=e21475f8-5019-435b-84b7-8c8016ed9a7a" alt="The Tombs logo" style="max-height:250px; max-width:250px; border-radius:8px; border:1px solid #eee; object-fit:contain; flex-shrink:0;">
+      
+      <div style="flex:1; min-width: 250px;">
+        <div style="display:flex; gap:1.5rem; flex-wrap:wrap; justify-content: space-between;">
+            <div style="flex:1; min-width:200px;">
+                <p><strong>Category:</strong> 
+                  
+                  
+                    <a href="/categories/taverns/">Taverns</a>, 
+                  
+                    <a href="/categories/american/">American</a>, 
+                  
+                    <a href="/categories/college/">College</a>
+                  
+                </p>
+                
+                  <p><strong>Neighborhood:</strong> <a href="/neighborhoods/georgetown/">Georgetown</a></p>
+                
+                <p><strong>Price:</strong> $$</p>
+                
+                
+                
+                
+                
+                
+                <p><strong>Address:</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=The%20Tombs%201226%2036th%20St%20NW%2C%20Washington%2C%20DC%2020007" target="_blank" rel="noopener noreferrer" style="text-decoration:underline; color:var(--accent-color);">1226 36th St NW, Washington, DC 20007</a></p>
+
+                <div class="venue-actions-bar" style="margin-top:1rem;">
+                  
+                    <a href="https://www.tombs.com/" class="btn-website-action" target="_blank" rel="noopener noreferrer">
+                      <span>Website</span>
+                    </a>
+                  
+                  
+                  
+                  <div class="social-icons-inline">
+                    
+                      <a href="https://www.instagram.com/thetombs/" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
+                    
+                    
+                      <a href="https://www.facebook.com/TheTombs" target="_blank" rel="noopener noreferrer" class="social-icon facebook" title="Facebook"></a>
+                    
+                    
+                  </div>
+                  
+                </div>
+            </div>
+            
+            <!-- Side Map -->
+            
+            <div style="width:220px; flex-shrink:0; margin-top: 0.5rem;">
+               <div id="venue-mini-map" style="width:100%; height:220px; border-radius:12px; border:1px solid rgba(255,255,255,0.1); box-shadow:0 4px 15px rgba(0,0,0,0.3); z-index:0; cursor: pointer;"></div>
+               <script>
+                 document.addEventListener('DOMContentLoaded', function() {
+                    var lat = 38.9060241;
+                    var lng = -77.0704425;
+                    var map = L.map('venue-mini-map', {
+                        center: [lat, lng],
+                        zoom: 16,
+                        zoomControl: false, 
+                        attributionControl: false,
+                        dragging: false,
+                        scrollWheelZoom: false,
+                        doubleClickZoom: false,
+                        boxZoom: false,
+                        keyboard: false
+                    });
+                     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                        subdomains: 'abcd',
+                        maxZoom: 20
+                     }).addTo(map);
+
+                    var iconHTML = `<div class="pin-wrapper"><img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-tombs%2Flogo-1767143364592-12356429_1649132308694314_1738040449_a.jpg?alt=media&amp;token=e21475f8-5019-435b-84b7-8c8016ed9a7a" onerror="this.style.display='none'; this.parentElement.classList.add('no-logo');"></div>`;
+                    var icon = L.divIcon({
+                        className: 'custom-pin-icon',
+                        html: iconHTML,
+                        iconSize: [40, 40],
+                        iconAnchor: [20, 20]
+                    });
+                    
+                    L.marker([lat, lng], {icon: icon}).addTo(map);
+                    
+                    // Click to open Google Maps
+                    document.getElementById('venue-mini-map').addEventListener('click', function() {
+                        window.open('https://www.google.com/maps/search/?api=1&amp;query=The%20Tombs%201226%2036th%20St%20NW%2C%20Washington%2C%20DC%2020007', '_blank');
+                    });
+                 });
+               </script>
+               <div style="text-align:center; margin-top:0.5rem;">
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=The%20Tombs%201226%2036th%20St%20NW%2C%20Washington%2C%20DC%2020007" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; color:#aaa; text-decoration:none;">View on Google Maps &rarr;</a>
+               </div>
+            </div>
+            
+        </div>
+      </div>
+    </div>
   </div>
 
-    <!-- [NEW] Google Rating Display -->
+    <!-- [MOVED] Google Rating Display (Moved to Reviews Section) -->
   
-    <div class="google-rating">
-      <span class="rating-stars" style="--rating: 4.3;">★★★★★</span>
-      <span class="rating-value">4.3</span>
-      <span class="rating-count">(1070 reviews)</span>
-    </div>
+    <!-- Rating moved below -->
   
   <!-- End Google Rating Display -->
 
   <div class="venue-description">
-    <p>A classic collegiate pub located adjacent to Georgetown University, The Tombs has been a student and neighborhood favorite since 1962. With its dark wood, rowing-themed decor, and classic American menu, it offers a quintessential campus tavern experience.</p>
+    <h3>✨ Vibe</h3>
+<p>A quintessential Georgetown institution, this historic underground tavern blends classic American charm with a high-energy collegiate spirit that has welcomed locals and students for over 35 years.</p>
+
+<h3>🍸 Best For</h3>
+<p>Georgetown game days, historic university traditions, lively late-night dancing, and casual American comfort food with friends.</p>
+
+<h3>🔥 Highlights</h3>
+<ul>
+  <li><strong>Iconic Tavern Classics:</strong> The menu features beloved favorites like the famous breaded zucchini chips, Philly cheesesteak egg rolls, and signature "Hoya Blue" shooters.</li>
+  <li><strong>Lively Weekly Events:</strong> Experience a packed calendar of entertainment, including Tuesday night Trivia, Wednesday Karaoke, and high-energy DJ sets with dancing every Thursday night.</li>
+  <li><strong>Georgetown Tradition:</strong> As a local landmark, it offers a legendary atmosphere for alumni and fans to gather, especially after football games or for celebratory weekend brunches.</li>
+</ul>
+
+<h3>ℹ️ Need to Know</h3>
+<ul>
+  <li>Take advantage of Happy Hour specials Monday through Friday from 3 PM to 6 PM, featuring discounted pitchers and appetizers.</li>
+  <li>While the tavern is a popular walk-in spot, making a reservation is highly recommended for groups to ensure a table during busy evening and weekend hours.</li>
+</ul>
   </div>
   
-  <a href="https://www.tombs.com/" class="btn-website" target="_blank" rel="noopener noreferrer">Visit Website</a>
+
   
-    <!-- [NEW] Social Media Links Section -->
-  
-  <div class="social-links">
-    
-      <a href="https://www.instagram.com/thetombs/" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
-    
-    
-      <a href="https://www.facebook.com/TheTombs" target="_blank" rel="noopener noreferrer" class="social-icon facebook" title="Facebook"></a>
-    
-    
-  </div>
-  
-  <!-- End Social Media Links Section -->
+
 
   <!-- [NEW] Events Section -->
-
-  <div class="events-section">
-    <h3>📅 Upcoming Events & Specials</h3>
-    
-      <div class="event-item">
-        <h4>📅 Happy Hour Specials</h4>
-        <p>Available Monday through Friday from 3 PM to 6 PM. Features discounted pitchers, cocktails, wine, and food items like chicken tenders, hummus, and nachos.</p>
-      </div>
-    
-    <small>Last analyzed: Fri Nov 14 2025 13:20:24 GMT-0500 (Eastern Standard Time)</small>
-  </div>
+  <!-- [NEW] Events Section -->
 
 <!-- End Events Section -->
 
+<!-- [NEW] Recurring Events Section -->
+
+  <div class="recurring-events-section">
+    <h3>🔄 Weekly Events</h3>
+    <div class="events-grid">
+      
+        
+        <div class="event-item recurring">
+          <h4>💃 DJ &amp; Dancing Thursday</h4>
+          <p class="event-meta">
+            <span class="days-badge">Thu</span>
+          </p>
+          
+            <p>Live DJ and dancing starting at 10 PM, plus $15 Miller High Life pitchers after 10 PM.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>🍷 Half-Price Wine Night</h4>
+          <p class="event-meta">
+            <span class="days-badge">Mon, Sun</span>
+          </p>
+          
+            <p>Enjoy half-price bottles of wine from 5 PM to 10 PM.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>🎤 Karaoke &amp; Chicken Parmesan Wednesday</h4>
+          <p class="event-meta">
+            <span class="days-badge">Wed</span>
+          </p>
+          
+            <p>Karaoke at 10 PM with Chicken Parmesan for $19 and $15 Tombs Ale pitchers after 10 PM.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>🍺 Late Night Pitcher Specials</h4>
+          <p class="event-meta">
+            <span class="days-badge">Mon, Fri, Sun</span>
+          </p>
+          
+            <p>Discounted pitchers after 10 PM: Sunday (Busch Light $12), Monday (Coors Light $13), and Friday (Miller High Life $16).</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>🥪 Monday Special: Chicken Cheesesteak</h4>
+          <p class="event-meta">
+            <span class="days-badge">Mon</span>
+          </p>
+          
+            <p>Featured food special: Chicken Cheesesteak for $19.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>🧠 Trivia &amp; Birria Tacos Tuesday</h4>
+          <p class="event-meta">
+            <span class="days-badge">Tue</span>
+          </p>
+          
+            <p>Weekly trivia at 10 PM featuring Birria Tacos for $18 and $13 Coors Light pitchers after 10 PM.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>Friday Late Night Pitchers 🍺</h4>
+          <p class="event-meta">
+            <span class="days-badge">Fri</span>
+          </p>
+          
+            <p>$16 Miller High Life pitchers available after 10pm.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>Karaoke Wednesday 🎤</h4>
+          <p class="event-meta">
+            <span class="days-badge">Wed</span>
+          </p>
+          
+            <p>Karaoke starts at 10pm. Featured specials include $19 Chicken Parmesan and $15 Tombs Ale pitchers after 10pm.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>Monday Chicken Cheesesteak Special 🥖</h4>
+          <p class="event-meta">
+            <span class="days-badge">Mon</span>
+          </p>
+          
+            <p>Weekly food special: Chicken Cheesesteak for $19.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>Monday Food &amp; Wine Specials 🥪</h4>
+          <p class="event-meta">
+            <span class="days-badge">Mon</span>
+          </p>
+          
+            <p>Featuring $19 Chicken Cheesesteaks, 1/2 price bottles of wine from 5–10pm, and $13 Coors Light pitchers after 10pm.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>Sunday Wine &amp; Late Night 🍷</h4>
+          <p class="event-meta">
+            <span class="days-badge">Sun</span>
+          </p>
+          
+            <p>Enjoy 1/2 price bottles of wine from 5–10pm and $12 Busch Light pitchers after 10pm.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>Thursday DJ &amp; Dancing 💃🕺</h4>
+          <p class="event-meta">
+            <span class="days-badge">Thu</span>
+          </p>
+          
+            <p>Late night dancing with a live DJ starting at 10pm.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>Trivia Tuesday &amp; Tacos 🧠🌮</h4>
+          <p class="event-meta">
+            <span class="days-badge">Tue</span>
+          </p>
+          
+            <p>Trivia starts at 10pm. Food specials include $18 Birria Tacos and $13 Coors Light pitchers after 10pm.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>Tuesday Trivia &amp; Birria Tacos 🧠🌮</h4>
+          <p class="event-meta">
+            <span class="days-badge">Tue</span>
+          </p>
+          
+            <p>Test your knowledge with weekly trivia starting at 10pm and enjoy Birria Tacos for $18.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>Wednesday Karaoke &amp; Chicken Parmesan 🎤🍝</h4>
+          <p class="event-meta">
+            <span class="days-badge">Wed</span>
+          </p>
+          
+            <p>Sing your heart out starting at 10pm and enjoy a Chicken Parmesan special for $19.</p>
+          
+        </div>
+        
+      
+    </div>
+  </div>
+
+<!-- End Recurring Events Section -->
+
     <!-- [NEW] Full Happy Hour Details Section -->
   
-  <!-- End Happy Hour Details Section -->
+    <div class="happy-hour-info">
+      <h3>Happy Hour</h3>
+      <p>Drink specials including $12 Busch Light Pitchers, $15 Tombs Ale Pitchers, $8 Frozen Drinks, $6 Rail Drinks, $6 Green Tea Shooters, and $9 Wines. Food specials include Chicken Tenders, Hummus &amp; Crudité, and Small Nachos for $8 each.</p>
+    </div>
   
+  <!-- End Happy Hour Details Section -->
+
+  <!-- [NEW] News Section -->
+  
+  <div class="news-section" style="margin-top:2rem; margin-bottom:2rem;">
+    <h3>📰 In the News</h3>
+    <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
+      
+        <a href="https://georgetownvoice.com/2025/09/15/iconic-georgetown-bar-the-tombs-introduces-5-cover-sparking-backlash" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=georgetownvoice.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The Georgetown Voice</span>
+              <span style="margin-left:auto; text-transform:none;">Sep 16, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Iconic Georgetown bar The Tombs introduces $5 cover, sparking backlash</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Tombs has introduced a $5 cover charge for late-night entry on weekends, sparking significant backlash and a student-led boycott among the Georgetown community. While management cites rising entertainment and security costs as the reason for the fee, students and alumni argue the change creates a financial barrier and undermines the venue&#39;s historic tradition as a campus staple.</p>
+           
+        </a>
+      
+        <a href="https://washingtonian.com/2025/09/16/the-tombs-suspends-5-cover-charge-after-georgetown-student-outcry" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Washingtonian</span>
+              <span style="margin-left:auto; text-transform:none;">Sep 16, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Tombs Suspends $5 Cover Charge After Georgetown Student Outcry</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Tombs suspended a recently instituted $5 weekend cover charge following significant backlash and boycott threats from the Georgetown University student community. Clyde’s Restaurant Group, which manages the historic bar, decided to pause the fee to evaluate the venue&#39;s financial sustainability while maintaining its traditional student-friendly atmosphere.</p>
+           
+        </a>
+      
+        <a href="https://dc.eater.com/daily-restaurant-news/163573/the-tombs-georgetown-cover-charge-buffalo-billiards-dc-intel" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Eater DC</span>
+              <span style="margin-left:auto; text-transform:none;">Sep 15, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Decades-Old Georgetown Bar Suspends Controversial Cover Charge</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Tombs has suspended its recently implemented $5 weekend cover charge following significant pushback and a petition from Georgetown University students and alumni. Management is currently evaluating whether to reinstate the fee or transition the late-night experience back to a traditional restaurant model without a DJ.</p>
+           
+        </a>
+      
+        <a href="https://thehoya.com/opinion/opinion-top/viewpoint-dont-betray-the-tombs-boycott" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=thehoya.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The Hoya</span>
+              <span style="margin-left:auto; text-transform:none;">Sep 11, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">VIEWPOINT: Don’t Betray the Tombs Boycott</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Tombs, a historic Georgetown restaurant and bar, is facing a boycott from students and alumni following the implementation of a $5 nighttime cover charge. Critics argue the fee contradicts the venue&#39;s long-standing tradition of accessibility, while management cites rising operational costs and safety concerns as the necessity behind the new entry fee.</p>
+           
+        </a>
+      
+        <a href="https://georgetowner.com/articles/2022/10/24/the-tombs" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=georgetowner.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The Georgetowner</span>
+              <span style="margin-left:auto; text-transform:none;">Oct 25, 2022</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Mapping Georgetown: Stories From The Tombs</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Tombs is a historic Georgetown University haunt and neighborhood restaurant known for its pub grub, craft brews, and deep-rooted collegiate traditions. Founded in 1962 by alumnus Richard McCooey, the underground establishment features a rich history tied to T.S. Eliot’s poetry and hosts famous events such as &#39;Chimes Night&#39; and the &#39;99 Days&#39; senior challenge.</p>
+           
+        </a>
+      
+    </div>
+  </div>
+  
+  <!-- End News Section -->
+  
+
+  <!-- [NEW] Reviews Section (Server-Side) -->
+  
+  <div id="google-reviews-section" class="reviews-section">
+    
+    
+      
+    
+
+    <!-- [MOVED] Google Rating Display -->
+    
+      <div class="google-rating" style="margin-bottom: 2rem;">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJK8ktZ0a2t4kRJOlWs7iTQow" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: block;">
+          <div class="rating-header">
+            <span class="rating-stars" style="--rating: 4.4;">★★★★★</span>
+            <span class="rating-value">4.4</span>
+            <span class="rating-count">(1120 reviews)</span>
+            <span class="btn-read-reviews" style="margin-left: auto; margin-top: 0;">View on Google</span>
+          </div>
+        </a>
+      </div>
+    
+    <!-- End Google Rating Display -->
+
+    <h3>Recent Reviews from Google</h3>
+    <div class="reviews-grid">
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJK8ktZ0a2t4kRJOlWs7iTQow" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjW2JpcA7qtTyp6q_jeFWHLBTa-xRlDng4Vtv5KIdVk_v_Oxu0p5=s128-c0x00000000-cc-rp-mo-ba3" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a month ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            The hot honey chicken was good same with the milkshake. Not much to say they accepted cash, we&#39;re nice and quick and didn&#39;t beg for tips like some deadbeats. Price was a bit high but so am I right now...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJK8ktZ0a2t4kRJOlWs7iTQow" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjU39LWGGp6iuKVA7HtuN1O02XU6mnalbT6DJm7hDDO1rHTOOZQK=s128-c0x00000000-cc-rp-mo-ba5" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">7 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            I love the atmosphere of this American restaurant in the heart of Georgetown. The food tastes amazing, and the prices are reasonable! We never made a reservation when we went, but I’d recommend making...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJK8ktZ0a2t4kRJOlWs7iTQow" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXkPPN8prFVHYqpiZMtu0pLu3Xgxy8VngFC7KYxK0IOkTn6gjI=s128-c0x00000000-cc-rp-mo-ba3" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">3 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            I have been going there long time ago and I loved the food now after 35 years went back and it’s still the best . Delicious food good price and friendly staff. I highly recommend this place to those...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJK8ktZ0a2t4kRJOlWs7iTQow" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjX6o6VoSKYZ0q5a_-ggxtWe2-TsIg7OehlhNpWOo5zNRWrRmtl9CQ=s128-c0x00000000-cc-rp-mo-ba5" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">2 weeks ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            My friend and I stopped in after a Georgetown football game on a Saturday late afternoon.  There was a 20min wait upon arrival, which wasn’t a big deal. We were seated around that time.  We both...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJK8ktZ0a2t4kRJOlWs7iTQow" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXz43yVeJtgXG-Hulg8738JQDcPmMwGmDTSgCI1-CJvEL6uPTrKtA=s128-c0x00000000-cc-rp-mo-ba4" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a week ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            The food was exceptionally well-prepared, offering a delightful culinary experience. I particularly enjoyed the wide array of beverage options available, perfectly complementing the meal. The burgers...
+          </p>
+      </a>
+      
+    </div>
+    <div class="reviews-footer">
+      <small>Reviews provided by Google</small>
+    </div>
+  </div>
+  
+
+  <!-- [NEW] Nearby Bars Section -->
+  
+  
+  <div class="nearby-section" style="margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+    <h3 style="margin-bottom: 1.5rem;">📍 Nearby Spots (Walking Distance)</h3>
+    <div class="venue-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
+      
+        <a href="/bars/fitzgeralds/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Ffitzgeralds%2Flogo-1766406669220-542289023_18062321384594590_2060650738610289258_n.jpg?alt=media&amp;token=d2a37be8-d6a2-409b-bdec-d29927f2c49c" alt="Fitzgerald&#39;s" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Fitzgerald&#39;s</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">21m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/bulldog-tavern/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbulldog-tavern%2Flogo-1766320074087-20686779_292620487879044_8743557914251231232_a.jpg?alt=media&amp;token=204f39fc-ed89-4996-b956-83fffbb9822f" alt="Bulldog Tavern" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Bulldog Tavern</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">315m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/georgetown-piano-bar/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fgeorgetown-piano-bar%2Flogo-1766494687933-127666310_129172499002037_5290491092710892256_n.jpg?alt=media&amp;token=3f39a88f-aac7-4cb0-af9f-a6e83b3aadb6" alt="Georgetown Piano Bar" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Georgetown Piano Bar</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">421m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/birreria-paradiso/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbirreria-paradiso%2Flogo-1766151914661-341119694_1671450489980772_2111036865721623884_n.png?alt=media&amp;token=c7fcf675-2349-4876-80d7-71e60220e7d2" alt="Birreria Paradiso" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Birreria Paradiso</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">431m away</p>
+          </div>
+        </a>
+      
+    </div>
+  </div>
+  
+
   <a href="/" class="btn-back">← Back to Home</a>
 </article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "The Tombs",
+  "image": "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-tombs%2Flogo-1767143364592-12356429_1649132308694314_1738040449_a.jpg?alt=media&token=e21475f8-5019-435b-84b7-8c8016ed9a7a",
+  "address": "1226 36th St NW, Washington, DC 20007",
+  
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.4,
+    "reviewCount": 1120
+  },
+  
+  
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": 4,
+      "bestRating": 5
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Bill Hoosier"
+    },
+    "reviewBody": "The hot honey chicken was good same with the milkshake. Not much to say they accepted cash, we're nice and quick and didn't beg for tips like some deadbeats. Price was a bit high but so am I right now so I dont mind."
+  },
+  
+  
+  "priceRange": "$$", 
+  
+  
+  "telephone": "(202) 337-6668",
+  
+  "url": "https://bardc.com/venues/the-tombs/"
+}
+</script>
     </main>
-    <footer>
-      <p>© 2025 Bar DC. A guide to Washington D.C. Nightlife.</p>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="/" aria-label="Back to Home">
+            <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="footer-logo">
+          </a>
+        </div>
+        
+        <div class="footer-links">
+
+          <div class="social-icons">
+            <a href="https://x.com/bardc_" target="_blank" rel="noopener noreferrer" class="social-icon twitter" aria-label="X (formerly Twitter)"></a>
+            <a href="https://www.facebook.com/bardc" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook"></a>
+          </div>
+          <a href="mailto:info@bardc.com" class="footer-contact">info@bardc.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Bar DC. All rights reserved.</p>
+      </div>
     </footer>
   </div>
+  <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="img01" onclick="event.stopPropagation()">
+  </div>
+  <script>
+    // Global Image Modal Logic
+    window.openImageModal = function(src) {
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("img01");
+        if(modal && modalImg) {
+            modal.style.display = "flex";
+            modalImg.src = src;
+            document.body.style.overflow = "hidden"; 
+        }
+    }
+    
+    window.closeImageModal = function() {
+        var modal = document.getElementById("imageModal");
+        if(modal) {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto"; 
+        }
+    }
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            window.closeImageModal();
+        }
+    });
+  </script>
+  <style>
+    /* Modal Styles (Global) */
+    .image-modal {
+      display: none; 
+      position: fixed; 
+      z-index: 9999; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgba(0,0,0,0.95); 
+      align-items: center;
+      justify-content: center;
+      cursor: zoom-out;
+    }
+    
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 95%;
+      max-height: 95vh;
+      border-radius: 4px;
+      object-fit: contain;
+      cursor: default;
+      animation: zoom 0.3s;
+    }
+    
+    .close-modal {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 50px;
+      font-weight: bold;
+      transition: 0.3s;
+      cursor: pointer;
+      z-index: 10000;
+      line-height: 1;
+    }
+    
+    @keyframes zoom {
+      from {transform:scale(0.8); opacity: 0;}
+      to {transform:scale(1); opacity: 1;}
+    }
+  </style>
+
 </body>
 </html>

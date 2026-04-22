@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>District Bites | Bar DC</title>
+
+  
+  
+  
+  
+  
+     
+     
+  
+
+  
+  
+
+  
+  
+
+  <meta name="description" content="Visit District Bites in Gallery Place / Chinatown, Washington DC. Located in the heart of Gallery Place-Chinatown within the District E complex, District Bites is a high-energy dining and entertainment hub...">
+  <link rel="canonical" href="https://bardc.com/bars/district-bites/">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Bar DC">
+  <meta property="og:title" content="District Bites">
+  <meta property="og:description" content="Visit District Bites in Gallery Place / Chinatown, Washington DC. Located in the heart of Gallery Place-Chinatown within the District E complex, District Bites is a high-energy dining and entertainment hub...">
+  <meta property="og:url" content="https://bardc.com/bars/district-bites/">
+  <meta property="og:type" content="business.business">
+  
+  
+  
+  
+      
+  
+  <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fdistrict-bites%2Flogo-1766401232763-336957299_235476862202056_8078685405885050610_n.jpg?alt=media&amp;token=56b6df44-d540-4be5-a004-83943942b9c3">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="District Bites">
+  <meta name="twitter:description" content="Visit District Bites in Gallery Place / Chinatown, Washington DC. Located in the heart of Gallery Place-Chinatown within the District E complex, District Bites is a high-energy dining and entertainment hub...">
+  <meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fdistrict-bites%2Flogo-1766401232763-336957299_235476862202056_8078685405885050610_n.jpg?alt=media&amp;token=56b6df44-d540-4be5-a004-83943942b9c3">
+
+    <!-- [NEW] Favicon Links -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <!-- End Favicon Links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/masonry.css">
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9L0NBTF5RQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9L0NBTF5RQ');
+</script>
+
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7540411251843957"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-branding">
+        <a href="/" class="branding-link">
+          <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
+          <span class="site-title">Washington D.C. Bars & Clubs</span>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <a href="/bars/">Bars</a>
+        <a href="/map/">Map</a>
+        
+
+        <div class="nav-dropdown">
+          <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
+          <div class="dropdown-menu">
+            
+              <a href="/neighborhoods/u-street/">U Street</a>
+            
+              <a href="/neighborhoods/dupont-circle/">Dupont Circle</a>
+            
+              <a href="/neighborhoods/downtown/">Downtown</a>
+            
+              <a href="/neighborhoods/adams-morgan/">Adams Morgan</a>
+            
+              <a href="/neighborhoods/navy-yard/">Navy Yard</a>
+            
+              <a href="/neighborhoods/georgetown/">Georgetown</a>
+            
+              <a href="/neighborhoods/the-wharf/">The Wharf</a>
+            
+              <a href="/neighborhoods/h-street-ne/">H Street NE</a>
+            
+            <div class="dropdown-divider"></div>
+            <a href="/neighborhoods/" class="view-all">View All →</a>
+          </div>
+        </div>
+
+
+        <a href="/events/">Events</a>
+        <a href="/happy-hour/">Happy Hour</a>
+      </nav>
+    </header>
+    <main>
+      
+        <h1 class="page-title">District Bites</h1>
+      
+      <!-- This line is critical. It injects the content from other files. -->
+      <!-- Leaflet Map Resources -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<style>
+   /* Custom Pin Styles for Venue Page */
+   .custom-pin-icon { background: transparent; border: none; }
+   .pin-wrapper {
+     width: 40px; height: 40px; border-radius: 50%; border: 3px solid #fff;
+     box-shadow: 0 4px 10px rgba(0,0,0,0.5); background-color: #fff;
+     overflow: hidden; position: relative; transition: transform 0.2s ease, z-index 0.2s;
+   }
+   .pin-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+   .pin-wrapper.no-logo {
+     background-color: var(--primary-color, #e53935);
+     display: flex; align-items: center; justify-content: center;
+   }
+   .pin-wrapper.no-logo::after { content: ''; width: 12px; height: 12px; background: #fff; border-radius: 50%; }
+   .leaflet-container { font-family: inherit; }
+   .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: #1e1e1e; color: #fff; border: 1px solid rgba(255,255,255,0.1); }
+   .leaflet-popup-content a { color: #fff; background: var(--primary-color, #e53935); padding: 2px 8px; border-radius: 4px; text-decoration: none; }
+</style>
+
+<article class="venue-profile">
+
+   <h1>District Bites</h1>
+  
+  <div class="venue-details">
+    <div style="display:flex; align-items:flex-start; gap:1.5rem; margin-bottom:1rem; flex-wrap:wrap;">
+      
+        <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fdistrict-bites%2Flogo-1766401232763-336957299_235476862202056_8078685405885050610_n.jpg?alt=media&amp;token=56b6df44-d540-4be5-a004-83943942b9c3" alt="District Bites logo" style="max-height:250px; max-width:250px; border-radius:8px; border:1px solid #eee; object-fit:contain; flex-shrink:0;">
+      
+      <div style="flex:1; min-width: 250px;">
+        <div style="display:flex; gap:1.5rem; flex-wrap:wrap; justify-content: space-between;">
+            <div style="flex:1; min-width:200px;">
+                <p><strong>Category:</strong> 
+                  
+                  
+                    <a href="/categories/happy-hour-spots/">Happy Hour Spots</a>, 
+                  
+                    <a href="/categories/cocktail-bars/">Cocktail Bars</a>, 
+                  
+                    <a href="/categories/american/">American</a>
+                  
+                </p>
+                
+                  <p><strong>Neighborhood:</strong> <a href="/neighborhoods/gallery-place-chinatown/">Gallery Place / Chinatown</a></p>
+                
+                <p><strong>Price:</strong> </p>
+                
+                
+                
+                
+                
+                
+                <p><strong>Address:</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=District%20Bites%20701%207th%20St%20NW%2C%20Washington%2C%20DC%2020001%2C%20United%20States" target="_blank" rel="noopener noreferrer" style="text-decoration:underline; color:var(--accent-color);">701 7th St NW, Washington, DC 20001, United States</a></p>
+
+                <div class="venue-actions-bar" style="margin-top:1rem;">
+                  
+                    <a href="https://districtbites.com" class="btn-website-action" target="_blank" rel="noopener noreferrer">
+                      <span>Website</span>
+                    </a>
+                  
+                  
+                  
+                  <div class="social-icons-inline">
+                    
+                      <a href="https://www.instagram.com/districtbitesdc/" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
+                    
+                    
+                    
+                  </div>
+                  
+                </div>
+            </div>
+            
+            <!-- Side Map -->
+            
+            <div style="width:220px; flex-shrink:0; margin-top: 0.5rem;">
+               <div id="venue-mini-map" style="width:100%; height:220px; border-radius:12px; border:1px solid rgba(255,255,255,0.1); box-shadow:0 4px 15px rgba(0,0,0,0.3); z-index:0; cursor: pointer;"></div>
+               <script>
+                 document.addEventListener('DOMContentLoaded', function() {
+                    var lat = 38.8987988;
+                    var lng = -77.0205855;
+                    var map = L.map('venue-mini-map', {
+                        center: [lat, lng],
+                        zoom: 16,
+                        zoomControl: false, 
+                        attributionControl: false,
+                        dragging: false,
+                        scrollWheelZoom: false,
+                        doubleClickZoom: false,
+                        boxZoom: false,
+                        keyboard: false
+                    });
+                     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                        subdomains: 'abcd',
+                        maxZoom: 20
+                     }).addTo(map);
+
+                    var iconHTML = `<div class="pin-wrapper"><img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fdistrict-bites%2Flogo-1766401232763-336957299_235476862202056_8078685405885050610_n.jpg?alt=media&amp;token=56b6df44-d540-4be5-a004-83943942b9c3" onerror="this.style.display='none'; this.parentElement.classList.add('no-logo');"></div>`;
+                    var icon = L.divIcon({
+                        className: 'custom-pin-icon',
+                        html: iconHTML,
+                        iconSize: [40, 40],
+                        iconAnchor: [20, 20]
+                    });
+                    
+                    L.marker([lat, lng], {icon: icon}).addTo(map);
+                    
+                    // Click to open Google Maps
+                    document.getElementById('venue-mini-map').addEventListener('click', function() {
+                        window.open('https://www.google.com/maps/search/?api=1&amp;query=District%20Bites%20701%207th%20St%20NW%2C%20Washington%2C%20DC%2020001%2C%20United%20States', '_blank');
+                    });
+                 });
+               </script>
+               <div style="text-align:center; margin-top:0.5rem;">
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=District%20Bites%20701%207th%20St%20NW%2C%20Washington%2C%20DC%2020001%2C%20United%20States" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; color:#aaa; text-decoration:none;">View on Google Maps &rarr;</a>
+               </div>
+            </div>
+            
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- [MOVED] Google Rating Display (Moved to Reviews Section) -->
+  
+    <!-- Rating moved below -->
+  
+  <!-- End Google Rating Display -->
+
+  <div class="venue-description">
+    <p>Located in the heart of Gallery Place-Chinatown within the District E complex, District Bites is a high-energy dining and entertainment hub that serves as the ultimate gameday and esports destination. Recently refreshed for the 2025-26 season, the venue features an upgraded culinary program and exclusive fan activations designed to elevate the pre-game experience for Wizards and Capitals fans alike.</p>
+
+<h3>✨ Vibe</h3>
+<p>An electric, high-octane atmosphere where industrial-chic design meets the cutting edge of esports and live entertainment.</p>
+
+<h3>🍸 Best For</h3>
+<p>Pre-game gameday drinks, esports enthusiasts, lively happy hours, Detroit-style pizza fans, high-energy group outings.</p>
+
+<h3>🔥 Highlights</h3>
+<ul>
+  <li><strong>Refreshed Culinary Lineup:</strong> Indulge in a newly debuted menu featuring signature Detroit-style pizzas, hand-made desserts, and the fan-favorite "Chix N Stix" wings.</li>
+  <li><strong>Immersive Entertainment:</strong> As the dining heart of District E, guests can enjoy live DJ sets, professional esports tournaments, and massive screens broadcasting the biggest games in the DMV.</li>
+  <li><strong>Expert Mixology:</strong> The bar is known for its high-impact specialty cocktails and "get-drunk-intentions" drinks, paired with a popular happy hour that offers incredible value on burgers and wings.</li>
+</ul>
+
+<h3>ℹ️ Need to Know</h3>
+<ul>
+  <li>Check the schedule for special "Fan Activations" during Washington Wizards home games for exclusive gameday perks and experiences.</li>
+  <li>Take advantage of early happy hour pricing to snag high-top seating before the arena crowds arrive.</li>
+</ul>
+  </div>
+  
+
+  
+
+
+  <!-- [NEW] Events Section -->
+  <!-- [NEW] Events Section -->
+
+<!-- End Events Section -->
+
+<!-- [NEW] Recurring Events Section -->
+
+  <div class="recurring-events-section">
+    <h3>🔄 Weekly Events</h3>
+    <div class="events-grid">
+      
+        
+        <div class="event-item recurring">
+          <h4>🚚 Food Truck Park: Mid-Week &amp; Friday Service</h4>
+          <p class="event-meta">
+            <span class="days-badge">Wed, Thu, Fri</span>
+          </p>
+          
+            <p>Visit the park for a variety of cuisines from trucks like DC SteakHolders, Liz&#39;s Cocina, and Chai Nashta.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>🚚 Food Truck Park: Saturday Service</h4>
+          <p class="event-meta">
+            <span class="days-badge">Sat</span>
+          </p>
+          
+            <p>Full day of food truck options including Salvadoran, Honduran, Pakistani, and Indian street food.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>🚚 Food Truck Park: Sunday Service</h4>
+          <p class="event-meta">
+            <span class="days-badge">Sun</span>
+          </p>
+          
+            <p>Weekend food truck gathering featuring signature cheesesteaks, pupusas, and more.</p>
+          
+        </div>
+        
+      
+    </div>
+  </div>
+
+<!-- End Recurring Events Section -->
+
+    <!-- [NEW] Full Happy Hour Details Section -->
+  
+  <!-- End Happy Hour Details Section -->
+
+  <!-- [NEW] News Section -->
+  
+  <div class="news-section" style="margin-top:2rem; margin-bottom:2rem;">
+    <h3>📰 In the News</h3>
+    <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
+      
+        <a href="https://washingtonwizards.com/news/wizards-announce-2025-26-home-opener-activations" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=washingtonwizards.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>NBA</span>
+              <span style="margin-left:auto; text-transform:none;">Oct 23, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Wizards Announce 2025-26 Home Opener Activations</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">District Bites highlights new culinary offerings and fan activations at Capital One Arena for the Washington Wizards&#39; 2025-26 season. The venue features a refreshed menu and specialized gameday experiences introduced to enhance the fan experience during home games.</p>
+           
+        </a>
+      
+        <a href="https://stacker.com/stories/washington-dc/highest-rated-brunch-restaurants-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=stacker.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>stacker.com</span>
+              <span style="margin-left:auto; text-transform:none;">Oct 1, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Highest-rated Brunch Restaurants in Washington, D.C.</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">District Bites ranks as the #10 brunch restaurant in Washington, D.C., according to a data-driven analysis of Tripadvisor reviews. The venue maintains an impressive 4.9/5 rating, distinguishing itself as one of the city&#39;s premier destinations for morning dining.</p>
+           
+        </a>
+      
+        <a href="https://monumentalsports.com/2025/04/district-e-powered-by-ticketmaster-announces-summer-event-programming" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=monumentalsports.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Monumental Sports</span>
+              <span style="margin-left:auto; text-transform:none;">Apr 30, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">District E Powered by Ticketmaster Announces Summer Event Programming</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">District Bites is the full-service bar and restaurant located within District E in Washington, D.C., featuring a menu of Detroit-style pizza, hand-made desserts, and specialty drinks. Situated in Gallery Place, the eatery serves as a dining hub for the venue&#39;s diverse programming, which includes esports tournaments, live music, and community events.</p>
+           
+        </a>
+      
+    </div>
+  </div>
+  
+  <!-- End News Section -->
+  
+
+  <!-- [NEW] Reviews Section (Server-Side) -->
+  
+  <div id="google-reviews-section" class="reviews-section">
+    
+    
+      
+    
+
+    <!-- [MOVED] Google Rating Display -->
+    
+      <div class="google-rating" style="margin-bottom: 2rem;">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJDf-schK3t4kRV-iPJIWQtMY" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: block;">
+          <div class="rating-header">
+            <span class="rating-stars" style="--rating: 3.3;">★★★★★</span>
+            <span class="rating-value">3.3</span>
+            <span class="rating-count">(51 reviews)</span>
+            <span class="btn-read-reviews" style="margin-left: auto; margin-top: 0;">View on Google</span>
+          </div>
+        </a>
+      </div>
+    
+    <!-- End Google Rating Display -->
+
+    <h3>Recent Reviews from Google</h3>
+    <div class="reviews-grid">
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJDf-schK3t4kRV-iPJIWQtMY" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjUK3o4TY72-ZhoXY2KDy83UQmiIZvMlTCgwxkOy-u1NUUcBDtuX=s128-c0x00000000-cc-rp-mo-ba6" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a month ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★☆☆☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            &quot;So you forgot to make a reservation at Clyde&#39;s, and this is what you were left with.&quot;
+
+Located just across the hall from the entry to Capital One Arena, this is your last chance to before you are a...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJDf-schK3t4kRV-iPJIWQtMY" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocIOJk0vjIiPgec_YKFyiBxGASkVDFft9hAC8ExHzowl1uL4hg=s128-c0x00000000-cc-rp-mo" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a week ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★☆☆☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            This spot has potential to be good but the service was awful. Our server took forever to take our order and kept saying she&#39;d be over to take our order but then forgot us. Our reservation was at 530pm...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJDf-schK3t4kRV-iPJIWQtMY" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocL-oVCmzGfYZNS1lMS04veY6q_anxRDU3oBIew9daOJzvd96Q=s128-c0x00000000-cc-rp-mo-ba2" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a month ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Cool spot, good food, and great drinks. Very nice experience, and the bartender/server Katrina aka Trina was amazing! Good service, great convo, and even better drinks. She made her drinks with get...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJDf-schK3t4kRV-iPJIWQtMY" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjV7oRvEPEAgZVIv6Q6jLf698enadWRTJMuf0fzunImj8CLVokxfEA=s128-c0x00000000-cc-rp-mo-ba5" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a year ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★☆☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            It was a by chance that I took a trip to this spot because the original plan was for the movies, but My wait time led Me here.
+
+At first glance and listen it seemed like somewhere I needed to be....
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJDf-schK3t4kRV-iPJIWQtMY" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocIRZUJvkKf6enN7Ferbpyo-TpQCFsOp-US8hmthXM3AbudH=s128-c0x00000000-cc-rp-mo-ba4" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">3 weeks ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Great place right next to the caps center. Food was tasty. Great happy hour menu. Will go again
+          </p>
+      </a>
+      
+    </div>
+    <div class="reviews-footer">
+      <small>Reviews provided by Google</small>
+    </div>
+  </div>
+  
+
+  <!-- [NEW] Nearby Bars Section -->
+  
+  
+  <div class="nearby-section" style="margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+    <h3 style="margin-bottom: 1.5rem;">📍 Nearby Spots (Walking Distance)</h3>
+    <div class="venue-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
+      
+        <a href="/bars/daikaya/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fdaikaya%2Flogo-1766361738720-243645801_720768608794518_2501778988059730064_n.jpg?alt=media&amp;token=3aac131f-59b2-42c2-be61-a4ac24af54d6" alt="DAIKAYA" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">DAIKAYA</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">77m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/clyde-s-of-gallery-place/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fclyde-s-of-gallery-place%2Flogo-1766354553504-438758860_1824058078062169_801648434512169882_n.jpg?alt=media&amp;token=7487decf-10c9-4b3b-8190-612315cdbdb6" alt="Clyde&#39;s of Gallery Place" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Clyde&#39;s of Gallery Place</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">99m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/wok-and-roll-karaoke/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fwok-and-roll-karaoke%2Flogo-1767145833023-329031049_1628998374195499_7711479555600900996_n.jpg?alt=media&amp;token=2e78236d-7998-4648-9835-680ea9497319" alt="Wok and Roll Karaoke" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Wok and Roll Karaoke</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">101m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/the-garden-bar/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-garden-bar%2Flogo-1766494246676-587611746_17844071820619530_4463060000783216178_n.jpg?alt=media&amp;token=3082fb86-0be0-438c-93dd-8769b0008bf7" alt="The Garden Bar" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">The Garden Bar</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">108m away</p>
+          </div>
+        </a>
+      
+    </div>
+  </div>
+  
+
+  <a href="/" class="btn-back">← Back to Home</a>
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "District Bites",
+  "image": "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fdistrict-bites%2Flogo-1766401232763-336957299_235476862202056_8078685405885050610_n.jpg?alt=media&token=56b6df44-d540-4be5-a004-83943942b9c3",
+  "address": "701 7th St NW, Washington, DC 20001, United States",
+  
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 3.3,
+    "reviewCount": 51
+  },
+  
+  
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": 2,
+      "bestRating": 5
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Chris Nicholson"
+    },
+    "reviewBody": "\"So you forgot to make a reservation at Clyde's, and this is what you were left with.\"\n\nLocated just across the hall from the entry to Capital One Arena, this is your last chance to before you are a captive audience. And paying captive audience prices.\n\nSat quickly at a high top. We had budgeted 90 minutes for dinner and drinks before heading into the show. Our server was a long quickly and was very friendly. Aside from the fact he didn't seem to know the menu that well. He handed us the order tablet to look through beers and cocktails. A drink menu and draft list would really help sales.\n\nSince we were early happy hour prices were in effect. So $10 will get you 5 buffalo wings. But 10 could get you a cheese burger.\n\nWe order a smaller version of the nachos at happy hour pricing. A few orders of wings. 2 salads and few drinks. We specifically told the server that the Cremea de Lima had to be on the side for an allergy.\n\nFood showed up quick enough. However the nachos were covered in the sauce. Our server came came along a few minutes later and we reminded him about the allergy point. He briefly apologized and took the nachos away.\n\nThe buffalo wings had something \"special\" rather than typical Buffalo sauce. It didn't taste \"bad\", just not good. I stopped eating at the second wing.\n\nWe did end up ordering desert and but I had already given into the fact that I was gonna have to go into the arena to get something I could eat.\n\nThe bill came and the Nachos were shown on red which means they were removed from the bill. No one ever came by and offered to replace the nachos or any other option.\n\nThe ambience of this place is somewhere between a warehouse and your high school cafeteria. It's clear their business is only over flow from other restaurants. I don't see people coming here on purpose.\n\nWould recommend walking past."
+  },
+  
+  
+  
+  "url": "https://bardc.com/venues/district-bites/"
+}
+</script>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="/" aria-label="Back to Home">
+            <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="footer-logo">
+          </a>
+        </div>
+        
+        <div class="footer-links">
+
+          <div class="social-icons">
+            <a href="https://x.com/bardc_" target="_blank" rel="noopener noreferrer" class="social-icon twitter" aria-label="X (formerly Twitter)"></a>
+            <a href="https://www.facebook.com/bardc" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook"></a>
+          </div>
+          <a href="mailto:info@bardc.com" class="footer-contact">info@bardc.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Bar DC. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+  <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="img01" onclick="event.stopPropagation()">
+  </div>
+  <script>
+    // Global Image Modal Logic
+    window.openImageModal = function(src) {
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("img01");
+        if(modal && modalImg) {
+            modal.style.display = "flex";
+            modalImg.src = src;
+            document.body.style.overflow = "hidden"; 
+        }
+    }
+    
+    window.closeImageModal = function() {
+        var modal = document.getElementById("imageModal");
+        if(modal) {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto"; 
+        }
+    }
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            window.closeImageModal();
+        }
+    });
+  </script>
+  <style>
+    /* Modal Styles (Global) */
+    .image-modal {
+      display: none; 
+      position: fixed; 
+      z-index: 9999; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgba(0,0,0,0.95); 
+      align-items: center;
+      justify-content: center;
+      cursor: zoom-out;
+    }
+    
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 95%;
+      max-height: 95vh;
+      border-radius: 4px;
+      object-fit: contain;
+      cursor: default;
+      animation: zoom 0.3s;
+    }
+    
+    .close-modal {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 50px;
+      font-weight: bold;
+      transition: 0.3s;
+      cursor: pointer;
+      z-index: 10000;
+      line-height: 1;
+    }
+    
+    @keyframes zoom {
+      from {transform:scale(0.8); opacity: 0;}
+      to {transform:scale(1); opacity: 1;}
+    }
+  </style>
+
+</body>
+</html>

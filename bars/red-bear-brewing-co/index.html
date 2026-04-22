@@ -4,6 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Red Bear Brewing Co. | Bar DC</title>
+
+  
+  
+  
+  
+  
+     
+     
+  
+
+  
+  
+
+  
+  
+
+  <meta name="description" content="Visit Red Bear Brewing Co. in NoMa, Washington DC. ✨ Vibe A spacious and inclusive 7,000-square-foot, adventure-themed taproom that serves as a vibrant community hub for the NoMa...">
+  <link rel="canonical" href="https://bardc.com/bars/red-bear-brewing-co/">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Bar DC">
+  <meta property="og:title" content="Red Bear Brewing Co.">
+  <meta property="og:description" content="Visit Red Bear Brewing Co. in NoMa, Washington DC. ✨ Vibe A spacious and inclusive 7,000-square-foot, adventure-themed taproom that serves as a vibrant community hub for the NoMa...">
+  <meta property="og:url" content="https://bardc.com/bars/red-bear-brewing-co/">
+  <meta property="og:type" content="business.business">
+  
+  
+  
+  
+      
+  
+  <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fred-bear-brewing-co%2Flogo-1767106147830-219417639_820551101929918_4122735879950422899_n.jpg?alt=media&amp;token=3b770011-0520-45c9-9b7e-1df96b38422b">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Red Bear Brewing Co.">
+  <meta name="twitter:description" content="Visit Red Bear Brewing Co. in NoMa, Washington DC. ✨ Vibe A spacious and inclusive 7,000-square-foot, adventure-themed taproom that serves as a vibrant community hub for the NoMa...">
+  <meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fred-bear-brewing-co%2Flogo-1767106147830-219417639_820551101929918_4122735879950422899_n.jpg?alt=media&amp;token=3b770011-0520-45c9-9b7e-1df96b38422b">
+
     <!-- [NEW] Favicon Links -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -13,7 +52,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/masonry.css">
+
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9L0NBTF5RQ"></script>
 <script>
@@ -23,107 +64,698 @@
 
   gtag('config', 'G-9L0NBTF5RQ');
 </script>
+
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7540411251843957"
+     crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="container">
     <header>
-      <a href="/" class="logo-link">
-        <img src="/img/logo.jpg" alt="Bar DC Logo" class="logo">
-      </a>
-      <h1>Red Bear Brewing Co.</h1>
+      <div class="header-branding">
+        <a href="/" class="branding-link">
+          <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
+          <span class="site-title">Washington D.C. Bars & Clubs</span>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <a href="/bars/">Bars</a>
+        <a href="/map/">Map</a>
+        
+
+        <div class="nav-dropdown">
+          <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
+          <div class="dropdown-menu">
+            
+              <a href="/neighborhoods/u-street/">U Street</a>
+            
+              <a href="/neighborhoods/dupont-circle/">Dupont Circle</a>
+            
+              <a href="/neighborhoods/downtown/">Downtown</a>
+            
+              <a href="/neighborhoods/adams-morgan/">Adams Morgan</a>
+            
+              <a href="/neighborhoods/navy-yard/">Navy Yard</a>
+            
+              <a href="/neighborhoods/georgetown/">Georgetown</a>
+            
+              <a href="/neighborhoods/the-wharf/">The Wharf</a>
+            
+              <a href="/neighborhoods/h-street-ne/">H Street NE</a>
+            
+            <div class="dropdown-divider"></div>
+            <a href="/neighborhoods/" class="view-all">View All →</a>
+          </div>
+        </div>
+
+
+        <a href="/events/">Events</a>
+        <a href="/happy-hour/">Happy Hour</a>
+      </nav>
     </header>
     <main>
+      
+        <h1 class="page-title">Red Bear Brewing Co.</h1>
+      
       <!-- This line is critical. It injects the content from other files. -->
-      <article class="venue-profile">
+      <!-- Leaflet Map Resources -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<style>
+   /* Custom Pin Styles for Venue Page */
+   .custom-pin-icon { background: transparent; border: none; }
+   .pin-wrapper {
+     width: 40px; height: 40px; border-radius: 50%; border: 3px solid #fff;
+     box-shadow: 0 4px 10px rgba(0,0,0,0.5); background-color: #fff;
+     overflow: hidden; position: relative; transition: transform 0.2s ease, z-index 0.2s;
+   }
+   .pin-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+   .pin-wrapper.no-logo {
+     background-color: var(--primary-color, #e53935);
+     display: flex; align-items: center; justify-content: center;
+   }
+   .pin-wrapper.no-logo::after { content: ''; width: 12px; height: 12px; background: #fff; border-radius: 50%; }
+   .leaflet-container { font-family: inherit; }
+   .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: #1e1e1e; color: #fff; border: 1px solid rgba(255,255,255,0.1); }
+   .leaflet-popup-content a { color: #fff; background: var(--primary-color, #e53935); padding: 2px 8px; border-radius: 4px; text-decoration: none; }
+</style>
 
+<article class="venue-profile">
 
-    <img src="/logos/red-bear-brewing-co.png" alt="Red Bear Brewing Co. logo" class="venue-profile-logo">
-  
    <h1>Red Bear Brewing Co.</h1>
   
   <div class="venue-details">
-    <p><strong>Category:</strong> Brewery, LGBTQ+ Bar, Game Bar</p>
-    <p><strong>Price:</strong> $$</p>
-    <p><strong>Address:</strong> 209 M St NE, Washington, DC 20002</p>
+    <div style="display:flex; align-items:flex-start; gap:1.5rem; margin-bottom:1rem; flex-wrap:wrap;">
+      
+        <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fred-bear-brewing-co%2Flogo-1767106147830-219417639_820551101929918_4122735879950422899_n.jpg?alt=media&amp;token=3b770011-0520-45c9-9b7e-1df96b38422b" alt="Red Bear Brewing Co. logo" style="max-height:250px; max-width:250px; border-radius:8px; border:1px solid #eee; object-fit:contain; flex-shrink:0;">
+      
+      <div style="flex:1; min-width: 250px;">
+        <div style="display:flex; gap:1.5rem; flex-wrap:wrap; justify-content: space-between;">
+            <div style="flex:1; min-width:200px;">
+                <p><strong>Category:</strong> 
+                  
+                  
+                    <a href="/categories/breweries/">Breweries</a>, 
+                  
+                    <a href="/categories/lgbtq+-bars/">LGBTQ+ Bars</a>, 
+                  
+                    <a href="/categories/game-bars/">Game Bars</a>
+                  
+                </p>
+                
+                  <p><strong>Neighborhood:</strong> <a href="/neighborhoods/noma/">NoMa</a></p>
+                
+                <p><strong>Price:</strong> $$</p>
+                
+                
+                
+                
+                
+                
+                <p><strong>Address:</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=Red%20Bear%20Brewing%20Co.%20209%20M%20St%20NE%2C%20Washington%2C%20DC%2020002" target="_blank" rel="noopener noreferrer" style="text-decoration:underline; color:var(--accent-color);">209 M St NE, Washington, DC 20002</a></p>
+
+                <div class="venue-actions-bar" style="margin-top:1rem;">
+                  
+                    <a href="https://www.redbear.beer/" class="btn-website-action" target="_blank" rel="noopener noreferrer">
+                      <span>Website</span>
+                    </a>
+                  
+                  
+                  
+                  <div class="social-icons-inline">
+                    
+                      <a href="http://instagram.com/RedBearBrewing" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
+                    
+                    
+                      <a href="https://www.facebook.com/RedBearBrewing/" target="_blank" rel="noopener noreferrer" class="social-icon facebook" title="Facebook"></a>
+                    
+                    
+                      <a href="https://twitter.com/RedBearBrewing" target="_blank" rel="noopener noreferrer" class="social-icon twitter" title="Twitter/X"></a>
+                    
+                  </div>
+                  
+                </div>
+            </div>
+            
+            <!-- Side Map -->
+            
+            <div style="width:220px; flex-shrink:0; margin-top: 0.5rem;">
+               <div id="venue-mini-map" style="width:100%; height:220px; border-radius:12px; border:1px solid rgba(255,255,255,0.1); box-shadow:0 4px 15px rgba(0,0,0,0.3); z-index:0; cursor: pointer;"></div>
+               <script>
+                 document.addEventListener('DOMContentLoaded', function() {
+                    var lat = 38.9054429;
+                    var lng = -77.0024881;
+                    var map = L.map('venue-mini-map', {
+                        center: [lat, lng],
+                        zoom: 16,
+                        zoomControl: false, 
+                        attributionControl: false,
+                        dragging: false,
+                        scrollWheelZoom: false,
+                        doubleClickZoom: false,
+                        boxZoom: false,
+                        keyboard: false
+                    });
+                     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                        subdomains: 'abcd',
+                        maxZoom: 20
+                     }).addTo(map);
+
+                    var iconHTML = `<div class="pin-wrapper"><img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fred-bear-brewing-co%2Flogo-1767106147830-219417639_820551101929918_4122735879950422899_n.jpg?alt=media&amp;token=3b770011-0520-45c9-9b7e-1df96b38422b" onerror="this.style.display='none'; this.parentElement.classList.add('no-logo');"></div>`;
+                    var icon = L.divIcon({
+                        className: 'custom-pin-icon',
+                        html: iconHTML,
+                        iconSize: [40, 40],
+                        iconAnchor: [20, 20]
+                    });
+                    
+                    L.marker([lat, lng], {icon: icon}).addTo(map);
+                    
+                    // Click to open Google Maps
+                    document.getElementById('venue-mini-map').addEventListener('click', function() {
+                        window.open('https://www.google.com/maps/search/?api=1&amp;query=Red%20Bear%20Brewing%20Co.%20209%20M%20St%20NE%2C%20Washington%2C%20DC%2020002', '_blank');
+                    });
+                 });
+               </script>
+               <div style="text-align:center; margin-top:0.5rem;">
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=Red%20Bear%20Brewing%20Co.%20209%20M%20St%20NE%2C%20Washington%2C%20DC%2020002" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; color:#aaa; text-decoration:none;">View on Google Maps &rarr;</a>
+               </div>
+            </div>
+            
+        </div>
+      </div>
+    </div>
   </div>
 
-    <!-- [NEW] Google Rating Display -->
+    <!-- [MOVED] Google Rating Display (Moved to Reviews Section) -->
   
-    <div class="google-rating">
-      <span class="rating-stars" style="--rating: 4.1;">★★★★★</span>
-      <span class="rating-value">4.1</span>
-      <span class="rating-count">(410 reviews)</span>
-    </div>
+    <!-- Rating moved below -->
   
   <!-- End Google Rating Display -->
 
   <div class="venue-description">
-    <p>Located in NoMa, Red Bear Brewing Co. is D.C.&#39;s first 100% gay-owned brewery. The massive, industrial-style taproom features a wide variety of house-brewed beers, a dedicated area for board games, and hosts numerous community events, creating a welcoming and inclusive space for all.</p>
+    <h3>✨ Vibe</h3>
+A spacious and inclusive 7,000-square-foot, adventure-themed taproom that serves as a vibrant community hub for the NoMa neighborhood.
+
+<h3>🍸 Best For</h3>
+Craft beer enthusiasts, LGBTQ+ nightlife, competitive trivia fans, board game nights, and group hangouts.
+
+<h3>🔥 Highlights</h3>
+<ul>
+  <li><strong>Extensive House Taps:</strong> Enjoy 24 house-brewed lines featuring highly-regarded West Coast IPAs, seasonal releases, and a fantastic house-made root beer.</li>
+  <li><strong>Dynamic Community Events:</strong> Experience a high-energy lineup of weekly entertainment, including their legendary Wednesday night trivia, drag bingo, and a dedicated library of board games.</li>
+  <li><strong>Flavorful Pub Kitchen:</strong> Dig into a menu of elevated favorites like their top-rated smash burgers, loaded tots, and spicy chicken chipotle sandwiches, all easily ordered via a convenient QR-code system.</li>
+</ul>
+
+<h3>ℹ️ Need to Know</h3>
+<ul>
+  <li>This proud gay- and veteran-owned establishment focuses on inclusivity, offering a welcoming "safe space" environment for all guests.</li>
+  <li>Reservations are recommended for their popular event nights, though the large interior offers plenty of seating for walk-in groups and casual gatherings.</li>
+</ul>
   </div>
   
-  <a href="https://www.redbear.beer/" class="btn-website" target="_blank" rel="noopener noreferrer">Visit Website</a>
+
   
-    <!-- [NEW] Social Media Links Section -->
-  
-  <div class="social-links">
-    
-      <a href="http://instagram.com/RedBearBrewing" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
-    
-    
-      <a href="https://www.facebook.com/RedBearBrewing/" target="_blank" rel="noopener noreferrer" class="social-icon facebook" title="Facebook"></a>
-    
-    
-      <a href="https://twitter.com/RedBearBrewing" target="_blank" rel="noopener noreferrer" class="social-icon twitter" title="Twitter/X"></a>
-    
-  </div>
-  
-  <!-- End Social Media Links Section -->
+
 
   <!-- [NEW] Events Section -->
-
-  <div class="events-section">
-    <h3>📅 Upcoming Events & Specials</h3>
-    
-      <div class="event-item">
-        <h4>📅 UW vs Purdue</h4>
-        <p>College Football Watch Party on November 15, 2025.</p>
-      </div>
-    
-      <div class="event-item">
-        <h4>🏈 Seahawks vs Rams</h4>
-        <p>NFL Football Watch Party on November 16, 2025.</p>
-      </div>
-    
-      <div class="event-item">
-        <h4>퀴즈 District Trivia</h4>
-        <p>General Trivia Night on November 17, 2025.</p>
-      </div>
-    
-      <div class="event-item">
-        <h4>🎤 ASL Open Stage Night</h4>
-        <p>An American Sign Language (ASL) open stage night on November 20, 2025.</p>
-      </div>
-    
-      <div class="event-item">
-        <h4>💃 Trashterpiece Theater Drag Show</h4>
-        <p>A specific drag show event on November 21, 2025.</p>
-      </div>
-    
-    <small>Last analyzed: Fri Nov 14 2025 13:17:37 GMT-0500 (Eastern Standard Time)</small>
-  </div>
+  <!-- [NEW] Events Section -->
 
 <!-- End Events Section -->
+
+<!-- [NEW] Recurring Events Section -->
+
+  <div class="recurring-events-section">
+    <h3>🔄 Weekly Events</h3>
+    <div class="events-grid">
+      
+        
+        <div class="event-item recurring">
+          <h4>🤟 ASL Trivia</h4>
+          <p class="event-meta">
+            <span class="days-badge"></span>
+          </p>
+          
+            <p>The only trivia night in the District performed in American Sign Language (ASL), with English interpretation included.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>🧠 District Trivia</h4>
+          <p class="event-meta">
+            <span class="days-badge">Mon</span>
+          </p>
+          
+            <p>Assemble your team and compete for prizes and bragging rights with the DMV&#39;s largest pub trivia business.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>👠 Drag Bingo</h4>
+          <p class="event-meta">
+            <span class="days-badge">Tue</span>
+          </p>
+          
+            <p>Drag Bingo with Tiffany D Carter and Guest host Frieda Poussay. Fun, prizes, and drag!</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>🍺 Pub Trivia Night</h4>
+          <p class="event-meta">
+            <span class="days-badge">Wed</span>
+          </p>
+          
+            <p>Team Trivia with Quiz Masters William, Neil, &amp; DJ. Compete as a team of up to 6 players or go solo.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>👑 RuPaul’s Drag Race Watch Parties</h4>
+          <p class="event-meta">
+            <span class="days-badge">Fri</span>
+          </p>
+          
+            <p>Watch new episodes on the big screen with special events hosted by local drag queens.</p>
+          
+        </div>
+        
+      
+    </div>
+  </div>
+
+<!-- End Recurring Events Section -->
 
     <!-- [NEW] Full Happy Hour Details Section -->
   
   <!-- End Happy Hour Details Section -->
+
+  <!-- [NEW] News Section -->
   
+  <div class="news-section" style="margin-top:2rem; margin-bottom:2rem;">
+    <h3>📰 In the News</h3>
+    <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
+      
+        <a href="https://blog.resy.com/2025/05/lgbtq-restaurants-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=blog.resy.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Resy | Right This Way</span>
+              <span style="margin-left:auto; text-transform:none;">Jun 4, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Ten Wonderful LGBTQ+-Owned Restaurants in Washington, D.C.</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Red Bear Brewing Co. is a gay- and veteran-owned craft brewery in NoMa that features 24 house-brewed beers on tap, including highly-regarded West Coast IPAs. The spacious venue offers a laid-back atmosphere with a menu of burgers and shareables, complemented by community events like board games, competitive trivia, and drag bingo.</p>
+           
+        </a>
+      
+        <a href="https://washingtoncitypaper.com/article/689879/nobody-will-name-the-dirty-stinking-cheaters-who-tarnished-red-bears-wednesday-trivia-night" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=washingtoncitypaper.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Washington City Paper</span>
+              <span style="margin-left:auto; text-transform:none;">Apr 13, 2024</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Nobody Will Name the Dirty Stinking Cheaters Who Tarnished Red Bear’s Wednesday Trivia Night</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Red Bear Brewing Co. in NoMa addressed a cheating scandal during its popular Wednesday night trivia where a winning team was caught using technology to gain an unfair advantage. The brewery banned the offending duo and implemented stricter rules to maintain the integrity and fun of its highly popular weekly community events.</p>
+           
+        </a>
+      
+        <a href="https://craftbrewingbusiness.com/business-marketing/case-study-d-c-s-red-bear-brewing-generates-bigger-tabs-and-tips-with-opentab-a-qr-code-pos-solution-from-arryved" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=craftbrewingbusiness.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Craft Brewing Business</span>
+              <span style="margin-left:auto; text-transform:none;">Sep 20, 2021</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Case Study: D.C.&#39;s Red Bear Brewing generates bigger tabs and tips with OpenTab, a QR code POS solution from Arryved</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Red Bear Brewing Co. utilizes Arryved&#39;s OpenTab QR code system to allow guests to seamlessly order and pay from their mobile devices in their NoMa taproom. This technology integrates with staff-owned POS devices, leading to a reported 16% increase in average tab sizes and a 12% boost in tips by freeing up staff to focus on high-quality customer service.</p>
+           
+        </a>
+      
+        <a href="https://districtfray.com/articles/red-bear-brewing-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=districtfray.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>District Fray</span>
+              <span style="margin-left:auto; text-transform:none;">Dec 4, 2020</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Red Bear Brewing Co. Open To All</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Red Bear Brewing Co. is a West Coast-style brewery in DC&#39;s NoMa neighborhood that emphasizes inclusivity and provides a welcoming &quot;safe space&quot; for all guests. The 7,000-square-foot venue features a rustic, adventure-themed interior with 24 tap lines offering a variety of craft beers, cocktails, and cider.</p>
+           
+        </a>
+      
+        <a href="https://washingtonian.com/2020/09/03/you-can-now-have-dc-drag-queens-deliver-dinner-and-a-show" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Washingtonian</span>
+              <span style="margin-left:auto; text-transform:none;">Sep 3, 2020</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">You Can Now Have DC Drag Queens Deliver Dinner and a Show</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Red Bear Brewing Co. launched a unique &quot;drag-livery&quot; service in Washington D.C., where local drag performers deliver food and craft beer followed by a short doorstep performance. The initiative, led by owner Bryan Van Den Oever and resident queen Desiree Dik, was designed to support local artists and provide a safe &quot;dinner and a show&quot; experience for customers at home.</p>
+           
+        </a>
+      
+    </div>
+  </div>
+  
+  <!-- End News Section -->
+  
+
+  <!-- [NEW] Reviews Section (Server-Side) -->
+  
+  <div id="google-reviews-section" class="reviews-section">
+    
+    
+      
+    
+
+    <!-- [MOVED] Google Rating Display -->
+    
+      <div class="google-rating" style="margin-bottom: 2rem;">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJE0DJY8O5t4kR4U4YKSQo8bY" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: block;">
+          <div class="rating-header">
+            <span class="rating-stars" style="--rating: 4.1;">★★★★★</span>
+            <span class="rating-value">4.1</span>
+            <span class="rating-count">(470 reviews)</span>
+            <span class="btn-read-reviews" style="margin-left: auto; margin-top: 0;">View on Google</span>
+          </div>
+        </a>
+      </div>
+    
+    <!-- End Google Rating Display -->
+
+    <h3>Recent Reviews from Google</h3>
+    <div class="reviews-grid">
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJE0DJY8O5t4kR4U4YKSQo8bY" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjWg5fyDf2lVtzGS6Eve-sKpwFPlYlO80oYfHqyaHzyAodCCakorqw=s128-c0x00000000-cc-rp-mo-ba5" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">3 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            The hubs says the &quot;beer was great&quot; and that says a lot! I tried a couple cocktails and they were both good.  We went for the loaded tots, as they showed Gluten Free (can&#39;t guarantee no cross...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJE0DJY8O5t4kR4U4YKSQo8bY" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjVeLhHsxsHftPHmRmL4lRj3zhuonNvYhzFxqLV1TyGwAyxccLI=s128-c0x00000000-cc-rp-mo-ba3" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">6 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Best smash burger I&#39;ve had in a long time, full of flavor and juicy. French fries are very good. loved the seasoning on the FF. . The in house Root Beer was fantastic.  The dipping sauce that comes...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJE0DJY8O5t4kR4U4YKSQo8bY" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocJMOb5GU8tHBWKWYZM70qKai7N-Wws_UxtGmcVWI-K-LCABuQ=s128-c0x00000000-cc-rp-mo-ba5" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">5 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★☆☆☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            This place is not for me. Some beer was good, some was ok. My nachos were cold and the pulled pork sandwich was thin and overpowered by the coleslaw.  The $80 bill for 2 ok meals, 1 beer, and 1...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJE0DJY8O5t4kR4U4YKSQo8bY" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjVn8HVQJIsq3lVdxwjnBPKFVHuVqHy8rCReCbVHZemOssGDPcV9=s128-c0x00000000-cc-rp-mo" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">2 weeks ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★☆☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            To start with the reason they got three stars, this place had genuinely really good beer. I did two flights, and I liked everything I tried.
+
+However, I had two pretty big problems.
+
+First, this is on...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJE0DJY8O5t4kR4U4YKSQo8bY" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjUxgvRpgJtxCiqGvphnipQ8nq8eC1mlXjEc1lx_3zwOYzOYxXtaIQ=s128-c0x00000000-cc-rp-mo-ba4" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">3 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Plenty of seating and a great atmosphere. Tacos on taco Tuesday were really. Fries were also Fresh and hot. The chicken Chipotle sandwhich was spicy of that is what you like.
+          </p>
+      </a>
+      
+    </div>
+    <div class="reviews-footer">
+      <small>Reviews provided by Google</small>
+    </div>
+  </div>
+  
+
+  <!-- [NEW] Nearby Bars Section -->
+  
+  
+  <div class="nearby-section" style="margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+    <h3 style="margin-bottom: 1.5rem;">📍 Nearby Spots (Walking Distance)</h3>
+    <div class="venue-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
+      
+        <a href="/bars/sly-rooftop-bar/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fsly-rooftop-bar%2Flogo-1767111348417-491442400_933915052029083_2501996812702161676_n.jpg?alt=media&amp;token=c8331e44-1e47-41ac-9d3c-da73ce745342" alt="Sly Rooftop Bar" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Sly Rooftop Bar</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">37m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/nice-easy/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fnice-easy%2Flogo-1767021544103-465026613_827878879280154_3100334419157052727_n.jpg?alt=media&amp;token=8f7ea7f8-5ffe-466b-afc5-44590387333a" alt="Nice &amp; Easy" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Nice &amp; Easy</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">121m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/crooked-run-fermentation/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcrooked-run-fermentation%2Flogo-1766359857271-213246549_551484902544493_7949580169527960084_n.jpg?alt=media&amp;token=6f840f5e-9f01-49e2-99cb-9699580c69ec" alt="Crooked Run Fermentation" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Crooked Run Fermentation</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">425m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/grand-cata/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fgrand-cata%2Flogo-1766495091274-517245085_18516989278062419_3181961714893821019_n.jpg?alt=media&amp;token=2aa9dbeb-cb7c-438a-ab28-6c4936e0f443" alt="Grand Cata" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Grand Cata</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">464m away</p>
+          </div>
+        </a>
+      
+    </div>
+  </div>
+  
+
   <a href="/" class="btn-back">← Back to Home</a>
 </article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "Red Bear Brewing Co.",
+  "image": "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fred-bear-brewing-co%2Flogo-1767106147830-219417639_820551101929918_4122735879950422899_n.jpg?alt=media&token=3b770011-0520-45c9-9b7e-1df96b38422b",
+  "address": "209 M St NE, Washington, DC 20002",
+  
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.1,
+    "reviewCount": 470
+  },
+  
+  
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": 4,
+      "bestRating": 5
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Holly Fettinger"
+    },
+    "reviewBody": "The hubs says the \"beer was great\" and that says a lot! I tried a couple cocktails and they were both good.  We went for the loaded tots, as they showed Gluten Free (can't guarantee no cross contamination - eat at own risk) and they were really good BUT if you are sensitive at all, I recommend you do not order these.  Unfortunately, I was sick all night long, no fun, especially since we were on vacation :("
+  },
+  
+  
+  "priceRange": "$$", 
+  
+  
+  "telephone": "(202) 849-6130",
+  
+  "url": "https://bardc.com/venues/red-bear-brewing-co/"
+}
+</script>
     </main>
-    <footer>
-      <p>© 2025 Bar DC. A guide to Washington D.C. Nightlife.</p>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="/" aria-label="Back to Home">
+            <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="footer-logo">
+          </a>
+        </div>
+        
+        <div class="footer-links">
+
+          <div class="social-icons">
+            <a href="https://x.com/bardc_" target="_blank" rel="noopener noreferrer" class="social-icon twitter" aria-label="X (formerly Twitter)"></a>
+            <a href="https://www.facebook.com/bardc" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook"></a>
+          </div>
+          <a href="mailto:info@bardc.com" class="footer-contact">info@bardc.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Bar DC. All rights reserved.</p>
+      </div>
     </footer>
   </div>
+  <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="img01" onclick="event.stopPropagation()">
+  </div>
+  <script>
+    // Global Image Modal Logic
+    window.openImageModal = function(src) {
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("img01");
+        if(modal && modalImg) {
+            modal.style.display = "flex";
+            modalImg.src = src;
+            document.body.style.overflow = "hidden"; 
+        }
+    }
+    
+    window.closeImageModal = function() {
+        var modal = document.getElementById("imageModal");
+        if(modal) {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto"; 
+        }
+    }
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            window.closeImageModal();
+        }
+    });
+  </script>
+  <style>
+    /* Modal Styles (Global) */
+    .image-modal {
+      display: none; 
+      position: fixed; 
+      z-index: 9999; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgba(0,0,0,0.95); 
+      align-items: center;
+      justify-content: center;
+      cursor: zoom-out;
+    }
+    
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 95%;
+      max-height: 95vh;
+      border-radius: 4px;
+      object-fit: contain;
+      cursor: default;
+      animation: zoom 0.3s;
+    }
+    
+    .close-modal {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 50px;
+      font-weight: bold;
+      transition: 0.3s;
+      cursor: pointer;
+      z-index: 10000;
+      line-height: 1;
+    }
+    
+    @keyframes zoom {
+      from {transform:scale(0.8); opacity: 0;}
+      to {transform:scale(1); opacity: 1;}
+    }
+  </style>
+
 </body>
 </html>

@@ -1,0 +1,154 @@
+/* --- Mixed Masonry Grid --- */
+.masonry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /* slightly smaller min-width too */
+    grid-auto-rows: 10px;
+    /* Small row unit for packing */
+    gap: 1rem;
+    /* Reduced from 1.5rem */
+    padding-bottom: 2rem;
+}
+
+.masonry-item {
+    background: rgba(var(--surface-color-rgb), 0.85);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(5px);
+    /* Default span (fallback), adjusted by JS */
+    grid-row-end: span 20;
+    height: max-content;
+}
+
+.masonry-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    border-color: var(--accent-color);
+    z-index: 2;
+}
+
+.masonry-content {
+    padding: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    /* Ensure padding is included in height */
+}
+
+/* Specific Block Styles */
+
+/* VENUE */
+.masonry-item.is-venue .venue-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+.masonry-item.is-venue h3 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.3rem;
+    color: var(--text-primary);
+}
+
+.masonry-item.is-venue .card-category {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+/* NEIGHBORHOOD */
+.masonry-item.is-neighborhood {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #4a0000 100%);
+    text-align: center;
+    /* Removed min-height from here */
+}
+
+.masonry-item.is-neighborhood .masonry-content {
+    min-height: 100px;
+    /* Apply min-height to content wrapper */
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    /* Force horizontal center for children */
+}
+
+.masonry-item.is-neighborhood a {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 800;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    /* Ensure multiline text centers */
+}
+
+/* CATEGORY */
+.masonry-item.is-category {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--accent-color);
+}
+
+.masonry-item.is-category .masonry-content {
+    min-height: 80px;
+    /* Apply min-height to content wrapper */
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    /* Force horizontal center for children */
+}
+
+.masonry-item.is-category a {
+    color: var(--accent-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* Ensure multiline text centers */
+}
+
+.masonry-item.is-category:hover {
+    background: var(--accent-color);
+}
+
+.masonry-item.is-category:hover a {
+    color: #fff;
+}
+
+/* EVENT */
+.masonry-item.is-event {
+    background: linear-gradient(to bottom, rgba(3, 169, 244, 0.1), rgba(var(--surface-color-rgb), 0.9));
+    border-top: 3px solid var(--accent-color);
+}
+
+.masonry-item.is-event h4 {
+    margin: 0.5rem 0;
+    color: var(--text-primary);
+    font-size: 1.1rem;
+}
+
+.masonry-item.is-event .event-time {
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+    .masonry-grid {
+        gap: 0.5rem;
+    }
+}

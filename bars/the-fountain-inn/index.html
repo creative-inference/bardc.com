@@ -4,6 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Fountain Inn | Bar DC</title>
+
+  
+  
+  
+  
+  
+     
+     
+  
+
+  
+  
+
+  
+  
+
+  <meta name="description" content="Visit The Fountain Inn in Georgetown, Washington DC. ✨ Vibe This elegant candlelit haven masterfully blends 18th-century tavern history with modern sophistication, offering an intimate and...">
+  <link rel="canonical" href="https://bardc.com/bars/the-fountain-inn/">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Bar DC">
+  <meta property="og:title" content="The Fountain Inn">
+  <meta property="og:description" content="Visit The Fountain Inn in Georgetown, Washington DC. ✨ Vibe This elegant candlelit haven masterfully blends 18th-century tavern history with modern sophistication, offering an intimate and...">
+  <meta property="og:url" content="https://bardc.com/bars/the-fountain-inn/">
+  <meta property="og:type" content="business.business">
+  
+  
+  
+  
+      
+  
+  <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-fountain-inn%2Flogo-1766407405787-242002006_996502777588554_2606574551596446872_n.jpg?alt=media&amp;token=90da70a1-69d4-4169-88cb-5870e04a29e2">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Fountain Inn">
+  <meta name="twitter:description" content="Visit The Fountain Inn in Georgetown, Washington DC. ✨ Vibe This elegant candlelit haven masterfully blends 18th-century tavern history with modern sophistication, offering an intimate and...">
+  <meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-fountain-inn%2Flogo-1766407405787-242002006_996502777588554_2606574551596446872_n.jpg?alt=media&amp;token=90da70a1-69d4-4169-88cb-5870e04a29e2">
+
     <!-- [NEW] Favicon Links -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -13,7 +52,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/masonry.css">
+
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9L0NBTF5RQ"></script>
 <script>
@@ -23,95 +64,668 @@
 
   gtag('config', 'G-9L0NBTF5RQ');
 </script>
+
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7540411251843957"
+     crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="container">
     <header>
-      <a href="/" class="logo-link">
-        <img src="/img/logo.jpg" alt="Bar DC Logo" class="logo">
-      </a>
-      <h1>The Fountain Inn</h1>
+      <div class="header-branding">
+        <a href="/" class="branding-link">
+          <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
+          <span class="site-title">Washington D.C. Bars & Clubs</span>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <a href="/bars/">Bars</a>
+        <a href="/map/">Map</a>
+        
+
+        <div class="nav-dropdown">
+          <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
+          <div class="dropdown-menu">
+            
+              <a href="/neighborhoods/u-street/">U Street</a>
+            
+              <a href="/neighborhoods/dupont-circle/">Dupont Circle</a>
+            
+              <a href="/neighborhoods/downtown/">Downtown</a>
+            
+              <a href="/neighborhoods/adams-morgan/">Adams Morgan</a>
+            
+              <a href="/neighborhoods/navy-yard/">Navy Yard</a>
+            
+              <a href="/neighborhoods/georgetown/">Georgetown</a>
+            
+              <a href="/neighborhoods/the-wharf/">The Wharf</a>
+            
+              <a href="/neighborhoods/h-street-ne/">H Street NE</a>
+            
+            <div class="dropdown-divider"></div>
+            <a href="/neighborhoods/" class="view-all">View All →</a>
+          </div>
+        </div>
+
+
+        <a href="/events/">Events</a>
+        <a href="/happy-hour/">Happy Hour</a>
+      </nav>
     </header>
     <main>
+      
+        <h1 class="page-title">The Fountain Inn</h1>
+      
       <!-- This line is critical. It injects the content from other files. -->
-      <article class="venue-profile">
+      <!-- Leaflet Map Resources -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<style>
+   /* Custom Pin Styles for Venue Page */
+   .custom-pin-icon { background: transparent; border: none; }
+   .pin-wrapper {
+     width: 40px; height: 40px; border-radius: 50%; border: 3px solid #fff;
+     box-shadow: 0 4px 10px rgba(0,0,0,0.5); background-color: #fff;
+     overflow: hidden; position: relative; transition: transform 0.2s ease, z-index 0.2s;
+   }
+   .pin-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+   .pin-wrapper.no-logo {
+     background-color: var(--primary-color, #e53935);
+     display: flex; align-items: center; justify-content: center;
+   }
+   .pin-wrapper.no-logo::after { content: ''; width: 12px; height: 12px; background: #fff; border-radius: 50%; }
+   .leaflet-container { font-family: inherit; }
+   .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: #1e1e1e; color: #fff; border: 1px solid rgba(255,255,255,0.1); }
+   .leaflet-popup-content a { color: #fff; background: var(--primary-color, #e53935); padding: 2px 8px; border-radius: 4px; text-decoration: none; }
+</style>
 
+<article class="venue-profile">
 
-    <img src="/logos/the-fountain-inn.png" alt="The Fountain Inn logo" class="venue-profile-logo">
-  
    <h1>The Fountain Inn</h1>
   
   <div class="venue-details">
-    <p><strong>Category:</strong> Whiskey Bar, Cocktail Bar</p>
-    <p><strong>Price:</strong> $$$</p>
-    <p><strong>Address:</strong> 1000 C St SW, Washington, DC 20024</p>
+    <div style="display:flex; align-items:flex-start; gap:1.5rem; margin-bottom:1rem; flex-wrap:wrap;">
+      
+        <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-fountain-inn%2Flogo-1766407405787-242002006_996502777588554_2606574551596446872_n.jpg?alt=media&amp;token=90da70a1-69d4-4169-88cb-5870e04a29e2" alt="The Fountain Inn logo" style="max-height:250px; max-width:250px; border-radius:8px; border:1px solid #eee; object-fit:contain; flex-shrink:0;">
+      
+      <div style="flex:1; min-width: 250px;">
+        <div style="display:flex; gap:1.5rem; flex-wrap:wrap; justify-content: space-between;">
+            <div style="flex:1; min-width:200px;">
+                <p><strong>Category:</strong> 
+                  
+                  
+                    <a href="/categories/cocktail-bars/">Cocktail Bars</a>, 
+                  
+                    <a href="/categories/supper-clubs/">Supper Clubs</a>, 
+                  
+                    <a href="/categories/romantic/">Romantic</a>
+                  
+                </p>
+                
+                  <p><strong>Neighborhood:</strong> <a href="/neighborhoods/georgetown/">Georgetown</a></p>
+                
+                <p><strong>Price:</strong> $$$</p>
+                
+                
+                
+                
+                
+                
+                <p><strong>Address:</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=The%20Fountain%20Inn%201000%20C%20St%20SW%2C%20Washington%2C%20DC%2020024" target="_blank" rel="noopener noreferrer" style="text-decoration:underline; color:var(--accent-color);">1000 C St SW, Washington, DC 20024</a></p>
+
+                <div class="venue-actions-bar" style="margin-top:1rem;">
+                  
+                    <a href="https://www.fountaininndc.com/" class="btn-website-action" target="_blank" rel="noopener noreferrer">
+                      <span>Website</span>
+                    </a>
+                  
+                  
+                  
+                  <div class="social-icons-inline">
+                    
+                      <a href="http://instagram.com/fountaininndc" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
+                    
+                    
+                      <a href="https://www.facebook.com/TheFountainInnDC/" target="_blank" rel="noopener noreferrer" class="social-icon facebook" title="Facebook"></a>
+                    
+                    
+                  </div>
+                  
+                </div>
+            </div>
+            
+            <!-- Side Map -->
+            
+            <div style="width:220px; flex-shrink:0; margin-top: 0.5rem;">
+               <div id="venue-mini-map" style="width:100%; height:220px; border-radius:12px; border:1px solid rgba(255,255,255,0.1); box-shadow:0 4px 15px rgba(0,0,0,0.3); z-index:0; cursor: pointer;"></div>
+               <script>
+                 document.addEventListener('DOMContentLoaded', function() {
+                    var lat = 38.9119673;
+                    var lng = -77.06548190000001;
+                    var map = L.map('venue-mini-map', {
+                        center: [lat, lng],
+                        zoom: 16,
+                        zoomControl: false, 
+                        attributionControl: false,
+                        dragging: false,
+                        scrollWheelZoom: false,
+                        doubleClickZoom: false,
+                        boxZoom: false,
+                        keyboard: false
+                    });
+                     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                        subdomains: 'abcd',
+                        maxZoom: 20
+                     }).addTo(map);
+
+                    var iconHTML = `<div class="pin-wrapper"><img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-fountain-inn%2Flogo-1766407405787-242002006_996502777588554_2606574551596446872_n.jpg?alt=media&amp;token=90da70a1-69d4-4169-88cb-5870e04a29e2" onerror="this.style.display='none'; this.parentElement.classList.add('no-logo');"></div>`;
+                    var icon = L.divIcon({
+                        className: 'custom-pin-icon',
+                        html: iconHTML,
+                        iconSize: [40, 40],
+                        iconAnchor: [20, 20]
+                    });
+                    
+                    L.marker([lat, lng], {icon: icon}).addTo(map);
+                    
+                    // Click to open Google Maps
+                    document.getElementById('venue-mini-map').addEventListener('click', function() {
+                        window.open('https://www.google.com/maps/search/?api=1&amp;query=The%20Fountain%20Inn%201000%20C%20St%20SW%2C%20Washington%2C%20DC%2020024', '_blank');
+                    });
+                 });
+               </script>
+               <div style="text-align:center; margin-top:0.5rem;">
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=The%20Fountain%20Inn%201000%20C%20St%20SW%2C%20Washington%2C%20DC%2020024" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; color:#aaa; text-decoration:none;">View on Google Maps &rarr;</a>
+               </div>
+            </div>
+            
+        </div>
+      </div>
+    </div>
   </div>
 
-    <!-- [NEW] Google Rating Display -->
+    <!-- [MOVED] Google Rating Display (Moved to Reviews Section) -->
   
-    <div class="google-rating">
-      <span class="rating-stars" style="--rating: 4.4;">★★★★★</span>
-      <span class="rating-value">4.4</span>
-      <span class="rating-count">(121 reviews)</span>
-    </div>
+    <!-- Rating moved below -->
   
   <!-- End Google Rating Display -->
 
   <div class="venue-description">
-    <p>Named after a historic Georgetown tavern, The Fountain Inn is a sophisticated whiskey and cocktail bar located at The Wharf. It boasts an extensive collection of rare and vintage spirits, with a focus on American whiskey, served in an elegant and intimate setting.</p>
+    <h3>✨ Vibe</h3>
+<p>This elegant candlelit haven masterfully blends 18th-century tavern history with modern sophistication, offering an intimate and welcoming atmosphere perfect for refined storytelling.</p>
+
+<h3>🍸 Best For</h3>
+<p>Romantic date nights, rare spirit tastings, elevated seasonal dining, historical cocktail tours, and sophisticated low-key evenings.</p>
+
+<h3>🔥 Highlights</h3>
+<ul>
+  <li>Award-winning culinary excellence led by 2025's "Best Chef" winner Greg Heitzig, featuring a celebrated seasonal menu and an exceptional umami-driven tasting experience.</li>
+  <li>A premier spirits library housing over 700 rare bottles, recently earning a prestigious one-pin distinction from The Pinnacle Guide for global excellence in hospitality and drinks programming.</li>
+  <li>Unique "Historical Cocktail Tours" and expert-led spirits flights—including both rare bourbon line-ups and curated zero-proof experiences—that celebrate the venue’s rich 1783 heritage.</li>
+</ul>
+
+<h3>ℹ️ Need to Know</h3>
+<ul>
+  <li>Advanced reservations are highly recommended for their signature spirits flights and tasting experiences, as the venue offers a cozy and intimate setting.</li>
+  <li>The kitchen concludes service between 9:00 PM and 10:00 PM nightly, though the cocktail bar remains open later on Thursday through Saturday.</li>
+</ul>
   </div>
   
-  <a href="https://www.fountaininndc.com/" class="btn-website" target="_blank" rel="noopener noreferrer">Visit Website</a>
+
   
-    <!-- [NEW] Social Media Links Section -->
-  
-  <div class="social-links">
-    
-      <a href="http://instagram.com/fountaininndc" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
-    
-    
-      <a href="https://www.facebook.com/TheFountainInnDC/" target="_blank" rel="noopener noreferrer" class="social-icon facebook" title="Facebook"></a>
-    
-    
-  </div>
-  
-  <!-- End Social Media Links Section -->
+
 
   <!-- [NEW] Events Section -->
-
-  <div class="events-section">
-    <h3>📅 Upcoming Events & Specials</h3>
-    
-      <div class="event-item">
-        <h4>🥃 Blantons Bourbon Flight Tasting</h4>
-        <p>Explore the Blantons lineup by tasting the standard single barrel release alongside two rare expressions, including a one-ounce pour of each.</p>
-      </div>
-    
-      <div class="event-item">
-        <h4>🍸 Historical Cocktail Tour</h4>
-        <p>Join an exploration through three cocktails that helped shape history, featuring Fish House Punch, Syllabub, and a rotating Seasonal Historical Cocktail.</p>
-      </div>
-    
-      <div class="event-item">
-        <h4>🍹 Zero-Proof Cocktail Tour</h4>
-        <p>Experience American history told through three curated zero-proof cocktails, guided by one of their historical spirits advisors.</p>
-      </div>
-    
-    <small>Last analyzed: Fri Nov 14 2025 13:07:47 GMT-0500 (Eastern Standard Time)</small>
-  </div>
+  <!-- [NEW] Events Section -->
 
 <!-- End Events Section -->
+
+<!-- [NEW] Recurring Events Section -->
+
+  <div class="recurring-events-section">
+    <h3>🔄 Weekly Events</h3>
+    <div class="events-grid">
+      
+        
+        <div class="event-item recurring">
+          <h4>🥃 Blanton&#39;s Bourbon Flight Tasting Experience</h4>
+          <p class="event-meta">
+            <span class="days-badge">Daily</span>
+          </p>
+          
+            <p>A guided tasting of the Blanton&#39;s lineup, including the standard single barrel release plus two rare expressions: Blanton&#39;s Gold and Blanton&#39;s Straight From The Barrel. Includes three 1oz pours.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>📜 Historical Cocktail Tour Experience</h4>
+          <p class="event-meta">
+            <span class="days-badge">Daily</span>
+          </p>
+          
+            <p>An exploration of three cocktails that shaped history: Fish House Punch, Syllabub, and a rotating Seasonal Historical Cocktail.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>🚫 Zero-Proof Cocktail Tour Experience</h4>
+          <p class="event-meta">
+            <span class="days-badge">Daily</span>
+          </p>
+          
+            <p>A journey through American history told via three curated zero-proof cocktails designed by historical spirits advisors.</p>
+          
+        </div>
+        
+      
+    </div>
+  </div>
+
+<!-- End Recurring Events Section -->
 
     <!-- [NEW] Full Happy Hour Details Section -->
   
   <!-- End Happy Hour Details Section -->
+
+  <!-- [NEW] News Section -->
   
+  <div class="news-section" style="margin-top:2rem; margin-bottom:2rem;">
+    <h3>📰 In the News</h3>
+    <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
+      
+        <a href="https://georgetowner.com/articles/2025/11/12/bourbon-brilliance-and-bold-moves-how-viyas-sundaram-seizes-the-day" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=georgetowner.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The Georgetowner</span>
+              <span style="margin-left:auto; text-transform:none;">Nov 12, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Bourbon, Brilliance and Bold Moves: How Viyas Sundaram Seizes the Day</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Fountain Inn is a high-end tasting room and cocktail bar in Georgetown focused on rare global spirits and historical storytelling. Established by entrepreneur Viyas Sundaram on the site of a 1783 tavern, the venue offers a multisensory journey through distilled delicacies and was recently recognized for its culinary excellence.</p>
+           
+        </a>
+      
+        <a href="https://dc.eater.com/dining-report/164718/fountain-inn-georgetown-review" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Eater DC</span>
+              <span style="margin-left:auto; text-transform:none;">Nov 7, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">For Top-Notch Drinking Snacks, Swing by Georgetown’s Reborn Fountain Inn</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Fountain Inn is a historic Georgetown whiskey tavern that recently launched an elevated food program under executive chef Greg Heitzig. The menu features sophisticated snacks and entrees like a &quot;spaghetti-style&quot; umami butter, Roseda Farms strip loin, and a Humboldt Fog-and-Swiss burger. With a selection of over 700 spirits and a cozy, candlelit atmosphere, the venue caters to both whiskey aficionados and fine-dining enthusiasts.</p>
+           
+        </a>
+      
+        <a href="https://wjla.com/good-morning-washington/taste-of-the-dmv/discover-the-new-fall-flavors-at-fountain-inn-bacon-cornbread-steals-the-spotlight" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=wjla.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>WJLA</span>
+              <span style="margin-left:auto; text-transform:none;">Nov 6, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Discover the new fall flavors at Fountain Inn: bacon cornbread steals the spotlight</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Fountain Inn in Washington D.C. has introduced a new seasonal menu featuring fall-inspired dishes like bacon-infused cornbread. The Executive Chef recently showcased these culinary innovations, highlighting the inspiration behind the restaurant&#39;s latest seasonal flavors.</p>
+           
+        </a>
+      
+        <a href="https://thedrinksbusiness.com/2025/09/the-pinnacle-guide-is-it-enough-to-be-just-a-cocktail-bar" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=thedrinksbusiness.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The Drinks Business</span>
+              <span style="margin-left:auto; text-transform:none;">Sep 26, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Pinnacle Guide: is it enough to be just a cocktail bar?</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Fountain Inn has been recognized as one of the world&#39;s premier cocktail bars by earning a one-pin distinction from The Pinnacle Guide. This Washington, D.C. venue was selected for its excellence in hospitality, drinks programming, and community impact as part of a rigorous global evaluation process.</p>
+           
+        </a>
+      
+        <a href="https://georgetowndc.com/news/georgetown-bid-a-finalist-for-best-bid" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=georgetowndc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Georgetown DC</span>
+              <span style="margin-left:auto; text-transform:none;">Jul 22, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Georgetown BID a Finalist for ‘Best BID’!</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Fountain Inn earned significant recognition in the Washington City Paper’s Best of DC 2025 awards, with Chef Greg Heitzig winning first place for Best Chef. The Georgetown establishment was also honored as a finalist in the Best Restaurant category.</p>
+           
+        </a>
+      
+    </div>
+  </div>
+  
+  <!-- End News Section -->
+  
+
+  <!-- [NEW] Reviews Section (Server-Side) -->
+  
+  <div id="google-reviews-section" class="reviews-section">
+    
+    
+      
+    
+
+    <!-- [MOVED] Google Rating Display -->
+    
+      <div class="google-rating" style="margin-bottom: 2rem;">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJ7zwBfum3t4kR8SLSRCyxc-Y" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: block;">
+          <div class="rating-header">
+            <span class="rating-stars" style="--rating: 4.4;">★★★★★</span>
+            <span class="rating-value">4.4</span>
+            <span class="rating-count">(136 reviews)</span>
+            <span class="btn-read-reviews" style="margin-left: auto; margin-top: 0;">View on Google</span>
+          </div>
+        </a>
+      </div>
+    
+    <!-- End Google Rating Display -->
+
+    <h3>Recent Reviews from Google</h3>
+    <div class="reviews-grid">
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJ7zwBfum3t4kR8SLSRCyxc-Y" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocLV_YylcdMxenTnekdBtDilyCMF9i428H3EzKBcD165J6S6OQ=s128-c0x00000000-cc-rp-mo" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a month ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            I feel like the Fountain Inn might be known more for its cocktails, but the food menu makes it one of the best (and currently underrated) spots to eat in D.C. I’ve visited a few times in the past...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJ7zwBfum3t4kR8SLSRCyxc-Y" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXuNCGQZxQ7JguwVZ-D_6YcEY7Y8Trpi0H8PKZg9uGxL9U70ytYpg=s128-c0x00000000-cc-rp-mo-ba2" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a month ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            The Fountain Inn Restaurant was absolutely incredible! From start to finish, everything felt high-end and thoughtfully done. The menu was impressive — every dish was delicious and beautifully...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJ7zwBfum3t4kR8SLSRCyxc-Y" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjVL5YsLMP6c_d_1obbsMIHbXrfpWX0xoSWYCUuWuht0XoJFqQ=s128-c0x00000000-cc-rp-mo-ba2" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a month ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Did the zero proof flight and was not disappointed. Zach and team made the whole experience. I met almost everyone on the staff as the presented and rotated through. My total purchase was higher than...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJ7zwBfum3t4kR8SLSRCyxc-Y" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocK1mYhHmrjBioGuCmgjRzhWGfz2SyBooFzfNViAxUxE1ZhGzkQ=s128-c0x00000000-cc-rp-mo-ba2" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a month ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            The Fountain Inn delivers an exceptional tasting menu experience: refined, seasonal, and beautifully balanced. Each course feels intentional and pairs perfectly with their incredible spirits program....
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJ7zwBfum3t4kR8SLSRCyxc-Y" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocJccktfM8Su-tTknZ_8rhx01t2gylVMl_Pzvu_iIv16jxQmF-Ao=s128-c0x00000000-cc-rp-mo-ba5" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">6 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Had a great experience at the Fountain for a date night. We did the mocktail tasting and every single drink had a neat history that we learned. We also got back ground in the history of the bar and...
+          </p>
+      </a>
+      
+    </div>
+    <div class="reviews-footer">
+      <small>Reviews provided by Google</small>
+    </div>
+  </div>
+  
+
+  <!-- [NEW] Nearby Bars Section -->
+  
+  
+  <div class="nearby-section" style="margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+    <h3 style="margin-bottom: 1.5rem;">📍 Nearby Spots (Walking Distance)</h3>
+    <div class="venue-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
+      
+        <a href="/bars/the-lobby-lounge-cocktail-wine-bar/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-lobby-lounge-cocktail-wine-bar%2Flogo-1766859290325-581846889_18541695640006340_4568941459576941683_n.jpg?alt=media&amp;token=1a1eedc5-6ae8-43e6-9b13-93f5c967b1b0" alt="The Lobby Lounge | Cocktail &amp; Wine Bar" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">The Lobby Lounge | Cocktail &amp; Wine Bar</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">83m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/bistrot-lepic-wine-bar/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbistrot-lepic-wine-bar%2Flogo-1766236407824-305842516_497220879077595_5751915471981672545_n.jpg?alt=media&amp;token=9627c0ea-3f41-4971-9320-44124605c2a6" alt="Bistrot Lepic &amp; Wine Bar" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Bistrot Lepic &amp; Wine Bar</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">333m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/tai-chi-bar/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Ftai-chi-bar%2Flogo-1767142073223-367180786_1235891867096031_8293823488945831148_n.jpg?alt=media&amp;token=a3b11d47-a0d7-42d2-835c-397972482bcd" alt="Tai Chi Bar" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Tai Chi Bar</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">463m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/1310-kitchen-and-bar/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2F1310-kitchen-and-bar%2Flogo-1766012535427-499479001_1225830532302215_5326360171048532175_n.jpg?alt=media&amp;token=bc1afd71-7ee1-4c2f-8d8e-9ec62853338e" alt="1310 Kitchen and Bar" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">1310 Kitchen and Bar</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">555m away</p>
+          </div>
+        </a>
+      
+    </div>
+  </div>
+  
+
   <a href="/" class="btn-back">← Back to Home</a>
 </article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "The Fountain Inn",
+  "image": "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-fountain-inn%2Flogo-1766407405787-242002006_996502777588554_2606574551596446872_n.jpg?alt=media&token=90da70a1-69d4-4169-88cb-5870e04a29e2",
+  "address": "1000 C St SW, Washington, DC 20024",
+  
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.4,
+    "reviewCount": 136
+  },
+  
+  
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": 5,
+      "bestRating": 5
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Christina Nichole (cnichole)"
+    },
+    "reviewBody": "I feel like the Fountain Inn might be known more for its cocktails, but the food menu makes it one of the best (and currently underrated) spots to eat in D.C. I’ve visited a few times in the past several months and every time the menu has been new and exciting. Every dish is creative, elevated, perfectly balanced, beautifully presented, and full of flavor. It has easily become one of my favorite spots in D.C. The drinks are also exceptional, and the cozy, intimate vibe makes it perfect for a special night or a low key evening. The service is top-notch — everyone was so knowledgeable and clearly passionate about what they do. Truly a standout place that keeps getting better."
+  },
+  
+  
+  "priceRange": "$$$", 
+  
+  
+  "telephone": "(202) 290-1112",
+  
+  "url": "https://bardc.com/venues/the-fountain-inn/"
+}
+</script>
     </main>
-    <footer>
-      <p>© 2025 Bar DC. A guide to Washington D.C. Nightlife.</p>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="/" aria-label="Back to Home">
+            <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="footer-logo">
+          </a>
+        </div>
+        
+        <div class="footer-links">
+
+          <div class="social-icons">
+            <a href="https://x.com/bardc_" target="_blank" rel="noopener noreferrer" class="social-icon twitter" aria-label="X (formerly Twitter)"></a>
+            <a href="https://www.facebook.com/bardc" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook"></a>
+          </div>
+          <a href="mailto:info@bardc.com" class="footer-contact">info@bardc.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Bar DC. All rights reserved.</p>
+      </div>
     </footer>
   </div>
+  <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="img01" onclick="event.stopPropagation()">
+  </div>
+  <script>
+    // Global Image Modal Logic
+    window.openImageModal = function(src) {
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("img01");
+        if(modal && modalImg) {
+            modal.style.display = "flex";
+            modalImg.src = src;
+            document.body.style.overflow = "hidden"; 
+        }
+    }
+    
+    window.closeImageModal = function() {
+        var modal = document.getElementById("imageModal");
+        if(modal) {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto"; 
+        }
+    }
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            window.closeImageModal();
+        }
+    });
+  </script>
+  <style>
+    /* Modal Styles (Global) */
+    .image-modal {
+      display: none; 
+      position: fixed; 
+      z-index: 9999; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgba(0,0,0,0.95); 
+      align-items: center;
+      justify-content: center;
+      cursor: zoom-out;
+    }
+    
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 95%;
+      max-height: 95vh;
+      border-radius: 4px;
+      object-fit: contain;
+      cursor: default;
+      animation: zoom 0.3s;
+    }
+    
+    .close-modal {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 50px;
+      font-weight: bold;
+      transition: 0.3s;
+      cursor: pointer;
+      z-index: 10000;
+      line-height: 1;
+    }
+    
+    @keyframes zoom {
+      from {transform:scale(0.8); opacity: 0;}
+      to {transform:scale(1); opacity: 1;}
+    }
+  </style>
+
 </body>
 </html>

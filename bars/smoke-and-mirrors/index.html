@@ -4,6 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Smoke &amp; Mirrors | Bar DC</title>
+
+  
+  
+  
+  
+  
+     
+     
+  
+
+  
+  
+
+  
+  
+
+  <meta name="description" content="Visit Smoke &amp; Mirrors in Navy Yard, Washington DC. ✨ Vibe A sophisticated and vibrant 11th-floor sanctuary that blends sleek, Navy-inspired design with breathtaking, unobstructed panoramic...">
+  <link rel="canonical" href="https://bardc.com/bars/smoke-and-mirrors/">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Bar DC">
+  <meta property="og:title" content="Smoke &amp; Mirrors">
+  <meta property="og:description" content="Visit Smoke &amp; Mirrors in Navy Yard, Washington DC. ✨ Vibe A sophisticated and vibrant 11th-floor sanctuary that blends sleek, Navy-inspired design with breathtaking, unobstructed panoramic...">
+  <meta property="og:url" content="https://bardc.com/bars/smoke-and-mirrors/">
+  <meta property="og:type" content="business.business">
+  
+  
+  
+  
+      
+  
+  <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fsmoke-and-mirrors%2Flogo-1767111463812-264478704_601871547684393_685785464520706061_n.jpg?alt=media&amp;token=55c05886-be78-4f97-bcaa-4a3b6b676f55">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Smoke &amp; Mirrors">
+  <meta name="twitter:description" content="Visit Smoke &amp; Mirrors in Navy Yard, Washington DC. ✨ Vibe A sophisticated and vibrant 11th-floor sanctuary that blends sleek, Navy-inspired design with breathtaking, unobstructed panoramic...">
+  <meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fsmoke-and-mirrors%2Flogo-1767111463812-264478704_601871547684393_685785464520706061_n.jpg?alt=media&amp;token=55c05886-be78-4f97-bcaa-4a3b6b676f55">
+
     <!-- [NEW] Favicon Links -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -13,7 +52,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/masonry.css">
+
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9L0NBTF5RQ"></script>
 <script>
@@ -23,91 +64,674 @@
 
   gtag('config', 'G-9L0NBTF5RQ');
 </script>
+
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7540411251843957"
+     crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="container">
     <header>
-      <a href="/" class="logo-link">
-        <img src="/img/logo.jpg" alt="Bar DC Logo" class="logo">
-      </a>
-      <h1>Smoke &amp; Mirrors</h1>
+      <div class="header-branding">
+        <a href="/" class="branding-link">
+          <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
+          <span class="site-title">Washington D.C. Bars & Clubs</span>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <a href="/bars/">Bars</a>
+        <a href="/map/">Map</a>
+        
+
+        <div class="nav-dropdown">
+          <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
+          <div class="dropdown-menu">
+            
+              <a href="/neighborhoods/u-street/">U Street</a>
+            
+              <a href="/neighborhoods/dupont-circle/">Dupont Circle</a>
+            
+              <a href="/neighborhoods/downtown/">Downtown</a>
+            
+              <a href="/neighborhoods/adams-morgan/">Adams Morgan</a>
+            
+              <a href="/neighborhoods/navy-yard/">Navy Yard</a>
+            
+              <a href="/neighborhoods/georgetown/">Georgetown</a>
+            
+              <a href="/neighborhoods/the-wharf/">The Wharf</a>
+            
+              <a href="/neighborhoods/h-street-ne/">H Street NE</a>
+            
+            <div class="dropdown-divider"></div>
+            <a href="/neighborhoods/" class="view-all">View All →</a>
+          </div>
+        </div>
+
+
+        <a href="/events/">Events</a>
+        <a href="/happy-hour/">Happy Hour</a>
+      </nav>
     </header>
     <main>
+      
+        <h1 class="page-title">Smoke &amp; Mirrors</h1>
+      
       <!-- This line is critical. It injects the content from other files. -->
-      <article class="venue-profile">
+      <!-- Leaflet Map Resources -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<style>
+   /* Custom Pin Styles for Venue Page */
+   .custom-pin-icon { background: transparent; border: none; }
+   .pin-wrapper {
+     width: 40px; height: 40px; border-radius: 50%; border: 3px solid #fff;
+     box-shadow: 0 4px 10px rgba(0,0,0,0.5); background-color: #fff;
+     overflow: hidden; position: relative; transition: transform 0.2s ease, z-index 0.2s;
+   }
+   .pin-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+   .pin-wrapper.no-logo {
+     background-color: var(--primary-color, #e53935);
+     display: flex; align-items: center; justify-content: center;
+   }
+   .pin-wrapper.no-logo::after { content: ''; width: 12px; height: 12px; background: #fff; border-radius: 50%; }
+   .leaflet-container { font-family: inherit; }
+   .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: #1e1e1e; color: #fff; border: 1px solid rgba(255,255,255,0.1); }
+   .leaflet-popup-content a { color: #fff; background: var(--primary-color, #e53935); padding: 2px 8px; border-radius: 4px; text-decoration: none; }
+</style>
 
+<article class="venue-profile">
 
-    <img src="/logos/smoke-and-mirrors.png" alt="Smoke &amp; Mirrors logo" class="venue-profile-logo">
-  
    <h1>Smoke & Mirrors</h1>
   
   <div class="venue-details">
-    <p><strong>Category:</strong> Rooftop Bar, Lounge, American</p>
-    <p><strong>Price:</strong> $$$</p>
-    <p><strong>Address:</strong> 800 E St SE, Washington, DC 20003</p>
+    <div style="display:flex; align-items:flex-start; gap:1.5rem; margin-bottom:1rem; flex-wrap:wrap;">
+      
+        <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fsmoke-and-mirrors%2Flogo-1767111463812-264478704_601871547684393_685785464520706061_n.jpg?alt=media&amp;token=55c05886-be78-4f97-bcaa-4a3b6b676f55" alt="Smoke &amp; Mirrors logo" style="max-height:250px; max-width:250px; border-radius:8px; border:1px solid #eee; object-fit:contain; flex-shrink:0;">
+      
+      <div style="flex:1; min-width: 250px;">
+        <div style="display:flex; gap:1.5rem; flex-wrap:wrap; justify-content: space-between;">
+            <div style="flex:1; min-width:200px;">
+                <p><strong>Category:</strong> 
+                  
+                  
+                    <a href="/categories/rooftop-bars/">Rooftop Bars</a>, 
+                  
+                    <a href="/categories/cocktail-bars/">Cocktail Bars</a>, 
+                  
+                    <a href="/categories/lounges/">Lounges</a>
+                  
+                </p>
+                
+                  <p><strong>Neighborhood:</strong> <a href="/neighborhoods/navy-yard/">Navy Yard</a></p>
+                
+                <p><strong>Price:</strong> $$$</p>
+                
+                
+                
+                
+                
+                
+                <p><strong>Address:</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=Smoke%20%26%20Mirrors%20800%20E%20St%20SE%2C%20Washington%2C%20DC%2020003" target="_blank" rel="noopener noreferrer" style="text-decoration:underline; color:var(--accent-color);">800 E St SE, Washington, DC 20003</a></p>
+
+                <div class="venue-actions-bar" style="margin-top:1rem;">
+                  
+                    <a href="https://www.smokeandmirrorsrooftop.com/" class="btn-website-action" target="_blank" rel="noopener noreferrer">
+                      <span>Website</span>
+                    </a>
+                  
+                  
+                  
+                  <div class="social-icons-inline">
+                    
+                      <a href="https://www.instagram.com/smokeandmirrorsrooftop/" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
+                    
+                    
+                      <a href="https://www.facebook.com/Smoke-Mirrors-Rooftop-Bar-109856618198792" target="_blank" rel="noopener noreferrer" class="social-icon facebook" title="Facebook"></a>
+                    
+                    
+                  </div>
+                  
+                </div>
+            </div>
+            
+            <!-- Side Map -->
+            
+            <div style="width:220px; flex-shrink:0; margin-top: 0.5rem;">
+               <div id="venue-mini-map" style="width:100%; height:220px; border-radius:12px; border:1px solid rgba(255,255,255,0.1); box-shadow:0 4px 15px rgba(0,0,0,0.3); z-index:0; cursor: pointer;"></div>
+               <script>
+                 document.addEventListener('DOMContentLoaded', function() {
+                    var lat = 38.8802579;
+                    var lng = -77.00567749999999;
+                    var map = L.map('venue-mini-map', {
+                        center: [lat, lng],
+                        zoom: 16,
+                        zoomControl: false, 
+                        attributionControl: false,
+                        dragging: false,
+                        scrollWheelZoom: false,
+                        doubleClickZoom: false,
+                        boxZoom: false,
+                        keyboard: false
+                    });
+                     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                        subdomains: 'abcd',
+                        maxZoom: 20
+                     }).addTo(map);
+
+                    var iconHTML = `<div class="pin-wrapper"><img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fsmoke-and-mirrors%2Flogo-1767111463812-264478704_601871547684393_685785464520706061_n.jpg?alt=media&amp;token=55c05886-be78-4f97-bcaa-4a3b6b676f55" onerror="this.style.display='none'; this.parentElement.classList.add('no-logo');"></div>`;
+                    var icon = L.divIcon({
+                        className: 'custom-pin-icon',
+                        html: iconHTML,
+                        iconSize: [40, 40],
+                        iconAnchor: [20, 20]
+                    });
+                    
+                    L.marker([lat, lng], {icon: icon}).addTo(map);
+                    
+                    // Click to open Google Maps
+                    document.getElementById('venue-mini-map').addEventListener('click', function() {
+                        window.open('https://www.google.com/maps/search/?api=1&amp;query=Smoke%20%26%20Mirrors%20800%20E%20St%20SE%2C%20Washington%2C%20DC%2020003', '_blank');
+                    });
+                 });
+               </script>
+               <div style="text-align:center; margin-top:0.5rem;">
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=Smoke%20%26%20Mirrors%20800%20E%20St%20SE%2C%20Washington%2C%20DC%2020003" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; color:#aaa; text-decoration:none;">View on Google Maps &rarr;</a>
+               </div>
+            </div>
+            
+        </div>
+      </div>
+    </div>
   </div>
 
-    <!-- [NEW] Google Rating Display -->
+    <!-- [MOVED] Google Rating Display (Moved to Reviews Section) -->
   
-    <div class="google-rating">
-      <span class="rating-stars" style="--rating: 4;">★★★★★</span>
-      <span class="rating-value">4</span>
-      <span class="rating-count">(770 reviews)</span>
-    </div>
+    <!-- Rating moved below -->
   
   <!-- End Google Rating Display -->
 
   <div class="venue-description">
-    <p>Perched atop the AC Hotel in Capitol Hill, Smoke &amp; Mirrors offers breathtaking, panoramic views of the U.S. Capitol and the surrounding cityscape. This stylish rooftop bar and restaurant provides a sophisticated setting for enjoying craft cocktails and modern American cuisine.</p>
+    <h3>✨ Vibe</h3>
+A sophisticated and vibrant 11th-floor sanctuary that blends sleek, Navy-inspired design with breathtaking, unobstructed panoramic views of the U.S. Capitol and the D.C. skyline.
+
+<h3>🍸 Best For</h3>
+Sunset cocktails, upscale date nights, celebratory group outings, and impressive private events.
+
+<h3>🔥 Highlights</h3>
+<ul>
+  <li><strong>Unmatched National Vistas:</strong> Perched atop the AC Hotel, this venue offers a one-of-a-kind birds-eye view of the U.S. Capitol and the Library of Congress, providing the ultimate backdrop for photos.</li>
+  <li><strong>All-Weather Rooftop Luxury:</strong> The expansive outdoor terrace is a year-round destination featuring a retractable canopy, cozy fire pits, and heaters that ensure a comfortable experience in any season.</li>
+  <li><strong>Elevated Craft Program:</strong> The menu features high-end American fare by Executive Chef Raymond Melendez—like gold-leaf-topped spicy tuna—paired with a creative cocktail list including smoky Old Fashioneds and the signature Dragon’s Kiss.</li>
+</ul>
+
+<h3>ℹ️ Need to Know</h3>
+<ul>
+  <li>Reservations are highly recommended to secure a table with full waiter service and prime views of the city.</li>
+  <li>The venue features a live DJ and a high-energy indoor bar area, making it a top choice for those seeking a lively, upscale nightlife atmosphere.</li>
+</ul>
   </div>
   
-  <a href="https://www.smokeandmirrorsrooftop.com/" class="btn-website" target="_blank" rel="noopener noreferrer">Visit Website</a>
+
   
-    <!-- [NEW] Social Media Links Section -->
-  
-  <div class="social-links">
-    
-      <a href="https://www.instagram.com/smokeandmirrorsrooftop/" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
-    
-    
-      <a href="https://www.facebook.com/Smoke-Mirrors-Rooftop-Bar-109856618198792" target="_blank" rel="noopener noreferrer" class="social-icon facebook" title="Facebook"></a>
-    
-    
-  </div>
-  
-  <!-- End Social Media Links Section -->
+
 
   <!-- [NEW] Events Section -->
-
-  <div class="events-section">
-    <h3>📅 Upcoming Events & Specials</h3>
-    
-      <div class="event-item">
-        <h4>📅 Weekend Bottomless Brunch</h4>
-        <p>Enjoy a bottomless brunch package on Saturdays and Sundays from 11:30 AM - 2 PM, featuring mimosas, spritzes, and bloody marys for $40 per person with a 2-hour dining limit.</p>
-      </div>
-    
-    <small>Last analyzed: Fri Nov 14 2025 13:19:30 GMT-0500 (Eastern Standard Time)</small>
-  </div>
+  <!-- [NEW] Events Section -->
 
 <!-- End Events Section -->
+
+<!-- [NEW] Recurring Events Section -->
+
+  <div class="recurring-events-section">
+    <h3>🔄 Weekly Events</h3>
+    <div class="events-grid">
+      
+        
+        <div class="event-item recurring">
+          <h4>🥃 Kindness on the Rocks</h4>
+          <p class="event-meta">
+            <span class="days-badge">Tue, Wed, Thu, Fri, Sat, Sun</span>
+          </p>
+          
+            <p>A donation cocktail featuring tequila, Giffard Abricot, passion fruit, and lime. Proceeds benefit Feed the Children.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>🌙 Late Night Bites</h4>
+          <p class="event-meta">
+            <span class="days-badge">Tue, Wed, Thu, Fri, Sat</span>
+          </p>
+          
+            <p>Enjoy a curated selection of savory late-night dishes from a limited menu.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>🥂 Sunday Brunch</h4>
+          <p class="event-meta">
+            <span class="days-badge">Sun</span>
+          </p>
+          
+            <p>A rooftop brunch experience overlooking the U.S. Capitol Building, featuring seasonal snacks and a wide variety of intoxicating beverages.</p>
+          
+        </div>
+        
+      
+    </div>
+  </div>
+
+<!-- End Recurring Events Section -->
 
     <!-- [NEW] Full Happy Hour Details Section -->
   
     <div class="happy-hour-info">
       <h3>Happy Hour</h3>
-      <p>Tuesday-Saturday 4 PM-12 AM (limited menu 10 PM-11 PM), Sunday 11:30 AM-3 PM and 5 PM-10 PM.  Specific happy hour deals are not listed.</p>
-      <small>Last analyzed: Sun Jul 27 2025 20:13:39 GMT-0400 (Eastern Daylight Time)</small>
+      <p>Recognized by The Washington Post as one of the best rooftop happy hours in D.C. Features specialty .75 oz spirit flights (Bourbon, Rye, Tequila) and wine flights (Sparkling Rose, Chardonnay, Shiraz, Cabernet Sauvignon).</p>
     </div>
   
   <!-- End Happy Hour Details Section -->
+
+  <!-- [NEW] News Section -->
   
+  <div class="news-section" style="margin-top:2rem; margin-bottom:2rem;">
+    <h3>📰 In the News</h3>
+    <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
+      
+        <a href="https://modernluxury.com/navy-yard-dc-guide" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=modernluxury.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Modern Luxury</span>
+              <span style="margin-left:auto; text-transform:none;">Sep 5, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Navy Yard DC: Top Eats, Stays, &amp; Activities</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Smoke &amp; Mirrors is a rooftop bar in the Navy Yard neighborhood that offers panoramic views of the U.S. Capitol and the D.C. cityscape. The venue serves creative cocktails such as the Dragon’s Kiss and the spicy Chica Del Diablo, providing both an outdoor terrace for sunset viewing and a cozy indoor bar area.</p>
+           
+        </a>
+      
+        <a href="https://fb101.com/ac-hotel-washington-dc-capitol-hill-navy-yard-debuts-new-rooftop-bar-restaurant-smoke-mirrors" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=fb101.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Food &amp; Beverage Magazine</span>
+              <span style="margin-left:auto; text-transform:none;">Jul 24, 2024</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">AC Hotel Washington DC Capitol Hill Navy Yard Debuts New Rooftop Bar &amp; Restaurant, Smoke &amp; Mirrors</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Smoke &amp; Mirrors is a sophisticated rooftop bar and restaurant located atop the AC Hotel Washington DC Capitol Hill Navy Yard, offering panoramic views of the U.S. Capitol and the city skyline. The venue features an elevated American menu by Executive Chef Raymond Melendez, creative craft cocktails, and an expansive all-weather patio equipped with fire pits and a retractable canopy. Designed with a sleek aesthetic inspired by the U.S. Navy, the space accommodates both intimate dining and large-scale events for up to 350 guests.</p>
+           
+        </a>
+      
+        <a href="https://districtfray.com/articles/beyond-smoke-mirrors" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=districtfray.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>District Fray</span>
+              <span style="margin-left:auto; text-transform:none;">Feb 23, 2022</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">​​Beyond Smoke &amp; Mirror​s at D.C.’s New Rooftop Bar​</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Smoke &amp; Mirrors is an expansive 11th-floor rooftop bar and restaurant at the Navy Yard AC Hotel, offering panoramic views of the U.S. Capitol and the Library of Congress. The venue features a sophisticated cocktail program using premium spirits and a refined food menu led by executive chef Raymond Melendez.</p>
+           
+        </a>
+      
+        <a href="https://dc.eater.com/2022/2/10/22926175/washingtont-dc-rooftop-smoke-and-mirrors-ac-hotel" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Eater DC</span>
+              <span style="margin-left:auto; text-transform:none;">Feb 10, 2022</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">An All-Weather Rooftop Bar With Birds-Eye Views Is Opening at D.C.’s New AC Hotel</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Smoke &amp; Mirrors is an all-weather rooftop bar located on the eleventh floor of the AC Hotel Washington DC Capitol Hill Navy Yard. The venue features unobstructed views of the U.S. Capitol, a retractable roof with fire pits, and a menu highlighting craft cocktails alongside elevated dishes like prime rib and spicy tuna with gold leaf.</p>
+           
+        </a>
+      
+        <a href="https://popville.com/2022/02/dc-rooftop-bar-restaurant-smoke-mirrors" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=popville.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>PoPville</span>
+              <span style="margin-left:auto; text-transform:none;">Feb 4, 2022</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">“New Rooftop Bar and Restaurant, Smoke &amp; Mirrors, officially opening its doors on Thursday, February 17th”</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Smoke &amp; Mirrors is a rooftop bar and restaurant located atop the AC Hotel Washington DC Capitol Hill Navy Yard, offering panoramic views of the U.S. Capitol and the city skyline. The venue features an elevated menu of American fare by Executive Chef Raymond Melendez alongside a curated craft cocktail program and an all-weather outdoor patio.</p>
+           
+        </a>
+      
+    </div>
+  </div>
+  
+  <!-- End News Section -->
+  
+
+  <!-- [NEW] Reviews Section (Server-Side) -->
+  
+  <div id="google-reviews-section" class="reviews-section">
+    
+    
+      
+    
+
+    <!-- [MOVED] Google Rating Display -->
+    
+      <div class="google-rating" style="margin-bottom: 2rem;">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJA10PPX-5t4kR61v-2kqB7jM" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: block;">
+          <div class="rating-header">
+            <span class="rating-stars" style="--rating: 4;">★★★★★</span>
+            <span class="rating-value">4</span>
+            <span class="rating-count">(814 reviews)</span>
+            <span class="btn-read-reviews" style="margin-left: auto; margin-top: 0;">View on Google</span>
+          </div>
+        </a>
+      </div>
+    
+    <!-- End Google Rating Display -->
+
+    <h3>Recent Reviews from Google</h3>
+    <div class="reviews-grid">
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJA10PPX-5t4kR61v-2kqB7jM" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjUHdIiINSTCi8lLVdUuGZY1Nhu5eiyLsL4hFy7m6BpFn6TALVOz5g=s128-c0x00000000-cc-rp-mo-ba4" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">3 weeks ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Smoke &amp; Mirrors in DC is an absolute gem! From the moment we walked in, the vibrant rooftop vibe and stunning views set the perfect tone for a memorable night. The service was outstanding—attentive,...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJA10PPX-5t4kR61v-2kqB7jM" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjUwP8Xe9gkoie6IIB3yyBvJvA7Jm4OaDZzG7GvzvIT53kqNRG1Muw=s128-c0x00000000-cc-rp-mo-ba7" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a month ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Alan and James are great! These true professionals definitely know how to treat their guests, from hospitality to the impeccable drinks that they take a ton of pride in making. On top of excellent bar...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJA10PPX-5t4kR61v-2kqB7jM" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjVjlJywcGjZqCIJUJ4eJ8noknVqOs1Da5qQEI7r52e3CMap0c11IA=s128-c0x00000000-cc-rp-mo-ba4" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a week ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Smoke &amp; Mirrors is the rooftop where the lighting is so flattering it should come with a liability waiver. I arrived fashionably late — because punctuality is for people who don’t understand the power...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJA10PPX-5t4kR61v-2kqB7jM" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjUkg0HHWOvjax8m4xl3vRcpKWUoupOnCgzhUSGnlmV9oyknK49c=s128-c0x00000000-cc-rp-mo-ba4" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">3 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★☆☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            The views at Smoke &amp; Mirrors are definitely five stars, but unfortunately, the customer service leaves much to be desired. This is the main reason I cannot rate this place five stars solely based on...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJA10PPX-5t4kR61v-2kqB7jM" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocLxOAMeHgX1gdwgTc_KUDUAYVW8BvTM-XavByQZ5LlApbX2MImu=s128-c0x00000000-cc-rp-mo-ba4" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">4 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★☆☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            ✨ Smoke &amp; Mirrors: A Rooftop Gem with One Quirk
+This spot nails the ambiance—elevated views, sleek vibes, and flavors that impress. But here’s the catch: if you arrive for happy hour without a...
+          </p>
+      </a>
+      
+    </div>
+    <div class="reviews-footer">
+      <small>Reviews provided by Google</small>
+    </div>
+  </div>
+  
+
+  <!-- [NEW] Nearby Bars Section -->
+  
+  
+  <div class="nearby-section" style="margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+    <h3 style="margin-bottom: 1.5rem;">📍 Nearby Spots (Walking Distance)</h3>
+    <div class="venue-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
+      
+        <a href="/bars/ama/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fama%2Flogo-1766096444429-434667736_10223054718059701_8400950666035835179_n.jpg?alt=media&amp;token=b356f013-3aea-4304-b5e9-200e7901a9b0" alt="Ama" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Ama</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">39m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/scarlet-oak-restaurant-bar/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fscarlet-oak-restaurant-bar%2Flogo-1767109933174-464022696_1758681064883787_9156973473087496561_n.jpg?alt=media&amp;token=509e8b6f-8944-4994-9e5a-6ad743269455" alt="Scarlet Oak Restaurant &amp; Bar" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Scarlet Oak Restaurant &amp; Bar</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">191m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/circa-at-navy-yard/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcirca-at-navy-yard%2Flogo-1766353872768-18299556_1475373299193415_1864262410601234432_a.jpg?alt=media&amp;token=30f9bcdc-8dee-4f0e-8b24-a630ad13bb98" alt="CIRCA at Navy Yard" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">CIRCA at Navy Yard</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">451m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/bullfeathers-on-the-hill/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbullfeathers-on-the-hill%2Flogo-1766320108990-429746092_389872540447555_668767375626127108_n.jpg?alt=media&amp;token=d3e348ea-f877-45ce-929e-c0ba92d5c8ad" alt="Bullfeathers On The Hill" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Bullfeathers On The Hill</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">490m away</p>
+          </div>
+        </a>
+      
+    </div>
+  </div>
+  
+
   <a href="/" class="btn-back">← Back to Home</a>
 </article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "Smoke & Mirrors",
+  "image": "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fsmoke-and-mirrors%2Flogo-1767111463812-264478704_601871547684393_685785464520706061_n.jpg?alt=media&token=55c05886-be78-4f97-bcaa-4a3b6b676f55",
+  "address": "800 E St SE, Washington, DC 20003",
+  
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4,
+    "reviewCount": 814
+  },
+  
+  
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": 5,
+      "bestRating": 5
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Neil Vora"
+    },
+    "reviewBody": "Smoke & Mirrors in DC is an absolute gem! From the moment we walked in, the vibrant rooftop vibe and stunning views set the perfect tone for a memorable night. The service was outstanding—attentive, friendly, and genuinely enthusiastic without being overbearing. Our server made spot-on recommendations and kept everything flowing smoothly.\nThe old fashions were perfection: perfectly balanced, strong but smooth, with just the right smoky depth and a beautiful orange peel garnish. Hands down one of the best I’ve had in the city. And don’t sleep on the flatbread pizza—the crust was crisp yet chewy, topped with fresh ingredients and bold flavors that hit all the right notes.\nWhether you’re grabbing drinks with friends or enjoying a date night, Smoke & Mirrors delivers on atmosphere, quality, and hospitality. Already planning my next visit!"
+  },
+  
+  
+  "priceRange": "$$$", 
+  
+  
+  "telephone": "(202) 984-2474",
+  
+  "url": "https://bardc.com/venues/smoke-and-mirrors/"
+}
+</script>
     </main>
-    <footer>
-      <p>© 2025 Bar DC. A guide to Washington D.C. Nightlife.</p>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="/" aria-label="Back to Home">
+            <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="footer-logo">
+          </a>
+        </div>
+        
+        <div class="footer-links">
+
+          <div class="social-icons">
+            <a href="https://x.com/bardc_" target="_blank" rel="noopener noreferrer" class="social-icon twitter" aria-label="X (formerly Twitter)"></a>
+            <a href="https://www.facebook.com/bardc" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook"></a>
+          </div>
+          <a href="mailto:info@bardc.com" class="footer-contact">info@bardc.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Bar DC. All rights reserved.</p>
+      </div>
     </footer>
   </div>
+  <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="img01" onclick="event.stopPropagation()">
+  </div>
+  <script>
+    // Global Image Modal Logic
+    window.openImageModal = function(src) {
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("img01");
+        if(modal && modalImg) {
+            modal.style.display = "flex";
+            modalImg.src = src;
+            document.body.style.overflow = "hidden"; 
+        }
+    }
+    
+    window.closeImageModal = function() {
+        var modal = document.getElementById("imageModal");
+        if(modal) {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto"; 
+        }
+    }
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            window.closeImageModal();
+        }
+    });
+  </script>
+  <style>
+    /* Modal Styles (Global) */
+    .image-modal {
+      display: none; 
+      position: fixed; 
+      z-index: 9999; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgba(0,0,0,0.95); 
+      align-items: center;
+      justify-content: center;
+      cursor: zoom-out;
+    }
+    
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 95%;
+      max-height: 95vh;
+      border-radius: 4px;
+      object-fit: contain;
+      cursor: default;
+      animation: zoom 0.3s;
+    }
+    
+    .close-modal {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 50px;
+      font-weight: bold;
+      transition: 0.3s;
+      cursor: pointer;
+      z-index: 10000;
+      line-height: 1;
+    }
+    
+    @keyframes zoom {
+      from {transform:scale(0.8); opacity: 0;}
+      to {transform:scale(1); opacity: 1;}
+    }
+  </style>
+
 </body>
 </html>
