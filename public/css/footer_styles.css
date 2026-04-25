@@ -1,0 +1,121 @@
+/* ========================================= */
+/*              FOOTER STYLES                */
+/* ========================================= */
+.site-footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 3rem 1.5rem 1rem;
+    margin-top: 4rem;
+    border-top: 4px solid var(--accent-color);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.footer-logo {
+    height: 60px;
+    width: auto;
+    border-radius: 8px;
+    /* Slightly rounded */
+}
+
+.footer-tagline {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin: 0;
+    font-style: italic;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+}
+
+.footer-links h3 {
+    font-size: 1.1rem;
+    color: var(--accent-color);
+    margin: 0 0 0.5rem 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    opacity: 0.8;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.social-icon.twitter {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPjxwYXRoIGQ9Ik0xOC4yNDQgMi4yNWgzLjM4bC03LjQwOSA4LjQyNiAxMi4wMzYgMTMuMTJINjEuODY4bDI0LjAyIDQ5LjIzIDE4LjE4NiA2OC44MWgtMy4zODdsLTcuMTY5OCA0LjQ3IDcuMTY5LTcuNDkgOC41MjVINC4xMThsMjIuOTgzIDQ3LjE4IDE4LjE4NCA0MS44MjV6bS0xLjE5MSAxOC43MjdoMS44NzJMMTAuNTYzIDUuMTE2SDguNjc0bDEwLjM3OSAxNS44NjN6Ii8+PC9zdmc+');
+    /* X logo */
+}
+
+.social-icon.facebook {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPjxwYXRoIGQ9Ik05LjEwMSAyMC4yMDV2LTkuMzhoLTMuMDh2LTMuNjQ4aDMuMDh2LTIuNjY3YzAtMy4wNTUgMS44MDktNC43MzIgNC41MTItNC43MzIgMS4yOTYgMCAyLjY0My4yMyAzLjkwNy40djMuMjU1aC0yLjE0OGMtMS40MTYgMC0xLjgzNy44ODgtMS44MzcgMS44MDZ2Mi4wNDFoMy42NDdsLS41NzYgMy42NDhoLTMuMDcxdjkuMzhoLTUuNDUzeiIvPjwvc3ZnPg==');
+    /* FB logo */
+}
+
+.footer-contact {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.footer-contact:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #333;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+/* Mobile Tweaks */
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-brand,
+    .footer-links {
+        align-items: center;
+    }
+}

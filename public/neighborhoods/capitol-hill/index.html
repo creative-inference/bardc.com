@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capitol Hill Bars and Clubs | Bar DC</title>
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+  
+     
+  
+
+  <meta name="description" content="Discover the best bars, clubs, lounges, and happy hours in Washington D.C. Explore by neighborhood, find today&#39;s events, and see real-time updates.">
+  <link rel="canonical" href="https://bardc.com/neighborhoods/capitol-hill/">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Bar DC">
+  <meta property="og:title" content="Capitol Hill Bars and Clubs">
+  <meta property="og:description" content="Discover the best bars, clubs, lounges, and happy hours in Washington D.C. Explore by neighborhood, find today&#39;s events, and see real-time updates.">
+  <meta property="og:url" content="https://bardc.com/neighborhoods/capitol-hill/">
+  <meta property="og:type" content="website">
+  
+  
+  
+  
+  <meta property="og:image" content="https://bardc.com/img/bardc_logo.jpeg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Capitol Hill Bars and Clubs">
+  <meta name="twitter:description" content="Discover the best bars, clubs, lounges, and happy hours in Washington D.C. Explore by neighborhood, find today&#39;s events, and see real-time updates.">
+  <meta name="twitter:image" content="https://bardc.com/img/bardc_logo.jpeg">
+
+    <!-- [NEW] Favicon Links -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <!-- End Favicon Links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css?v=1777149876163">
+  <link rel="stylesheet" href="/css/masonry.css">
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9L0NBTF5RQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9L0NBTF5RQ');
+</script>
+
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7540411251843957"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-branding">
+        <a href="/" class="branding-link">
+          <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
+          <span class="site-title">Washington D.C. Bars & Clubs</span>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <a href="/bars/">Bars</a>
+        <a href="/map/">Map</a>
+        
+
+        <div class="nav-dropdown">
+          <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
+          <div class="dropdown-menu">
+            
+              <a href="/neighborhoods/u-street/">U Street</a>
+            
+              <a href="/neighborhoods/dupont-circle/">Dupont Circle</a>
+            
+              <a href="/neighborhoods/downtown/">Downtown</a>
+            
+              <a href="/neighborhoods/adams-morgan/">Adams Morgan</a>
+            
+              <a href="/neighborhoods/navy-yard/">Navy Yard</a>
+            
+              <a href="/neighborhoods/georgetown/">Georgetown</a>
+            
+              <a href="/neighborhoods/the-wharf/">The Wharf</a>
+            
+              <a href="/neighborhoods/h-street-ne/">H Street NE</a>
+            
+            <div class="dropdown-divider"></div>
+            <a href="/neighborhoods/" class="view-all">View All →</a>
+          </div>
+        </div>
+
+
+        <a href="/events/">Events</a>
+        <a href="/happy-hour/">Happy Hour</a>
+      </nav>
+    </header>
+    <main>
+      
+        <h1 class="page-title">Capitol Hill Bars and Clubs</h1>
+      
+      <!-- This line is critical. It injects the content from other files. -->
+      
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+<style>
+  #neighborhood-map {
+    height: 600px;
+    width: 100%;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    z-index: 1;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  }
+  .leaflet-popup-content-wrapper, .leaflet-popup-tip {
+    background: #1e1e1e;
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+  .leaflet-popup-content h3 {
+    margin: 0 0 5px;
+    color: var(--primary-color, #e53935);
+  }
+  .leaflet-popup-content p {
+    margin: 0 0 10px;
+    color: #aaa;
+  }
+  .leaflet-popup-content a {
+    color: #fff;
+    background: var(--primary-color, #e53935);
+    padding: 4px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.8em;
+    display: inline-block;
+  }
+   .leaflet-popup-content a:hover {
+    background: #c62828;
+   }
+   
+   /* Custom Pin Styles */
+   .custom-pin-icon {
+     background: transparent;
+     border: none;
+   }
+   .pin-wrapper {
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     border: 3px solid #fff;
+     box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+     background-color: #fff;
+     overflow: hidden;
+     position: relative;
+     transition: transform 0.2s ease, z-index 0.2s;
+   }
+   .pin-wrapper img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+   }
+   .pin-wrapper.no-logo {
+     background-color: var(--primary-color, #e53935);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   }
+   .pin-wrapper.no-logo::after {
+     content: '';
+     width: 12px;
+     height: 12px;
+     background: #fff;
+     border-radius: 50%;
+   }
+   .pin-wrapper:hover {
+     transform: scale(1.2);
+     z-index: 1000 !important;
+     border-color: var(--accent-color, #03a9f4);
+   }
+</style>
+
+<div style="max-width: 800px; margin: 0 auto 2rem auto; text-align: center;">
+  <p style="font-size: 1.1rem; color: #ccc; line-height: 1.6;">The political heart of the city, Capitol Hill offers a refined selection of historic pubs, wine bars, and classic watering holes frequented by locals and staffers alike.</p>
+</div>
+
+<div id="neighborhood-map"></div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const venues = [
+      
+        
+          {
+            name: "Barrel",
+            slug: "barrel",
+            lat: 38.8850554,
+            lng: -76.99788819999999,
+            address: "613 Pennsylvania Ave. SE 2nd floor, Washington, DC 20003, United States",
+            category: "Bourbon Bars, Whiskey Bars, Brunch Spots",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbarrel%2Flogo-1766149813735-218270624_3767915443432949_4702460572066723633_n.jpg?alt=media&amp;token=b02a094e-6509-4f5f-a704-dd357fc679f1"
+          },
+        
+      
+        
+          {
+            name: "Hamilton&#39;s Bar &amp; Grill",
+            slug: "hamilton-s-bar-grill",
+            lat: 38.893316,
+            lng: -77.0134364,
+            address: "233 2nd St NW, Washington, DC 20001, United States",
+            category: "Sports Bars, American, Neighborhood Bars",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fhamilton-s-bar-grill%2Flogo-1766510437188-305501536_505435031583193_8834501317169446283_n.jpg?alt=media&amp;token=1a6c6343-84c8-414e-b59e-20f905ed1027"
+          },
+        
+      
+        
+          {
+            name: "Hawk &#39;n&#39; Dove",
+            slug: "hawk-n-dove",
+            lat: 38.8863627,
+            lng: -77.0012272,
+            address: "329 Pennsylvania Ave. SE, Washington, DC 20003, USA",
+            category: "Irish Pubs, Sports Bars, Karaoke Bars",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fhawk-n-dove%2Flogo-1766510674726-573158646_18380742007180679_587510891165929272_n.jpg?alt=media&amp;token=9edbfcb0-5004-4c31-a067-d212bc9bd650"
+          },
+        
+      
+        
+          {
+            name: "Kelly&#39;s Irish Times",
+            slug: "kellys-irish-times",
+            lat: 38.8971595,
+            lng: -77.00963589999999,
+            address: "14 F St NW, Washington, DC 20001, USA",
+            category: "Irish Pubs, Neighborhood Bars, Late Night",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fkellys-irish-times%2Flogo-1766707953723-23416431_128205924511209_2264525471070814208_n.jpg?alt=media&amp;token=8a6d218d-b8fd-445e-bad6-0169d0eea4ad"
+          },
+        
+      
+        
+          {
+            name: "Lobby Bar",
+            slug: "lobby-bar",
+            lat: 38.88655910000001,
+            lng: -76.9958297,
+            address: "224 7th St SE Suite#300, Washington, DC 20003, United States",
+            category: "Cocktail Bars, Hotel Bars, Happy Hour Spots",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Flobby-bar%2Flogo-1766859187261-472346627_2378787479128854_2230061462587783058_n.jpg?alt=media&amp;token=7c543888-a1a4-4420-b65c-b2c1512df3d3"
+          },
+        
+      
+        
+          {
+            name: "Mr. Henry&#39;s",
+            slug: "mr-henrys",
+            lat: 38.88523929999999,
+            lng: -76.9982643,
+            address: "601 Pennsylvania Ave. SE, Washington, DC 20003, USA",
+            category: "Live Music Venues, Jazz Clubs, American",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fmr-henrys%2Flogo-1767020680216-194393389_261679319076033_9210470924944592427_n.jpg?alt=media&amp;token=4d552943-37e3-425b-ab84-301692bd8bdf"
+          },
+        
+      
+        
+          {
+            name: "Olive &amp; Arrow",
+            slug: "olive-arrow",
+            lat: 38.8970244,
+            lng: -77.00980009999999,
+            address: "14 F St NW, Washington, DC 20001, United States",
+            category: "Speakeasies, Cocktail Bars, Basements",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Folive-arrow%2Flogo-1767022860159-464670594_529821163278884_4632832257960107047_n.jpg?alt=media&amp;token=f83447bb-17a1-44b0-9f18-94a864e351e5"
+          },
+        
+      
+        
+          {
+            name: "Sonoma Restaurant and Wine Bar",
+            slug: "sonoma-restaurant-and-wine-bar",
+            lat: 38.8869787,
+            lng: -77.0026662,
+            address: "223 Pennsylvania Ave. SE, Washington, DC 20003, United States",
+            category: "Wine Bars, American, Happy Hour Spots",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fsonoma-restaurant-and-wine-bar%2Flogo-1767137402340-129738734_418906879467326_5681311103441896920_n.jpg?alt=media&amp;token=c4d3766a-2ddd-4474-b562-ffb292662f4f"
+          },
+        
+      
+        
+          {
+            name: "The Dubliner",
+            slug: "the-dubliner",
+            lat: 38.89715260000001,
+            lng: -77.0094901,
+            address: "4 F St NW, Washington, DC 20001, USA",
+            category: "Irish Pubs, Live Music Venues, Gastropubs",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-dubliner%2Flogo-1766401751623-14262822_169836130089132_853351044_a.jpg?alt=media&amp;token=69dedd06-71ea-4050-9b2f-21131266e347"
+          },
+        
+      
+        
+          {
+            name: "Tune Inn",
+            slug: "tune-inn",
+            lat: 38.8863597,
+            lng: -77.0010435,
+            address: "331 1/2 Pennsylvania Ave. SE, Washington, DC 20003, USA",
+            category: "Dive Bars, Neighborhood Bars, American",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Ftune-inn%2Flogo-1767143861844-107893875_618197602441148_1518023968363723390_n.jpg?alt=media&amp;token=78edb1d1-be2c-4e1b-b0f7-f5f0e2f823a0"
+          },
+        
+      
+        
+          {
+            name: "Union Pub",
+            slug: "union-pub",
+            lat: 38.894588,
+            lng: -77.00304,
+            address: "201 Massachusetts Ave NE, Washington, DC 20002, United States",
+            category: "Sports Bars, Neighborhood Bars, Gastropubs",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Funion-pub%2Flogo-1767144265960-491441198_18498728680054848_5047745087849074778_n.jpg?alt=media&amp;token=646a1df4-7fe8-4c00-a7a8-a1c7464e191b"
+          },
+        
+      
+        
+          {
+            name: "Bullfeathers On The Hill",
+            slug: "bullfeathers-on-the-hill",
+            lat: 38.8846576,
+            lng: -77.00548090000001,
+            address: "410 1st St SE, Washington, DC 20003, United States",
+            category: "Neighborhood Bars, American, Gastropubs",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbullfeathers-on-the-hill%2Flogo-1766320108990-429746092_389872540447555_668767375626127108_n.jpg?alt=media&amp;token=d3e348ea-f877-45ce-929e-c0ba92d5c8ad"
+          },
+        
+      
+    ];
+
+    if (venues.length === 0) {
+      document.getElementById('neighborhood-map').style.display = 'none';
+      return;
+    }
+
+
+
+    // --- 1. Group overlapping venues & Calculate Final Positions ---
+    const grouped = {};
+    const threshold = 0.0003; // ~30m proximity
+
+    venues.forEach(v => {
+      let added = false;
+      for (const key in grouped) {
+        const [gLat, gLng] = key.split(',').map(Number);
+        if (Math.abs(v.lat - gLat) < threshold && Math.abs(v.lng - gLng) < threshold) {
+          grouped[key].push(v);
+          added = true;
+          break;
+        }
+      }
+      if (!added) {
+        grouped[`${v.lat},${v.lng}`] = [v];
+      }
+    });
+
+    // Store final render objects
+    const renderMarkers = [];
+    let minLat = 90, maxLat = -90, minLng = 180, maxLng = -180;
+
+    for (const key in grouped) {
+      const group = grouped[key];
+      const count = group.length;
+      
+      group.forEach((v, index) => {
+        let finalLat = v.lat;
+        let finalLng = v.lng;
+
+        // Spread out if overlapping
+        if (count > 1) {
+          const angle = (index / count) * Math.PI * 2; 
+          const radius = 0.00035; 
+          finalLat = v.lat + (radius * Math.cos(angle));
+          finalLng = v.lng + (radius * Math.sin(angle));
+        }
+
+        // Update bounds based on FINAL positions
+        if (finalLat < minLat) minLat = finalLat;
+        if (finalLat > maxLat) maxLat = finalLat;
+        if (finalLng < minLng) minLng = finalLng;
+        if (finalLng > maxLng) maxLng = finalLng;
+
+        renderMarkers.push({
+            lat: finalLat,
+            lng: finalLng,
+            ...v // copy name, logoUrl, etc
+        });
+      });
+    }
+
+
+
+    // --- 2. Smart Height Calculation ---
+    // Calculate physical dimensions in meters
+    const latDiffDegrees = maxLat - minLat;
+    const lngDiffDegrees = maxLng - minLng;
+    const metersPerLat = 111132;
+    const metersPerLng = 111132 * 0.78; // Approx for DC latitude
+    
+    const heightMeters = latDiffDegrees * metersPerLat;
+    const widthMeters = lngDiffDegrees * metersPerLng;
+
+    // Get available width
+    const containerWidth = document.getElementById('neighborhood-map').clientWidth || window.innerWidth;
+
+    // Determine the "Pixels per Meter" resolution we will get
+    // 1. Resolution dictated by fitting the width (Width / WidthMeters)
+    // 2. Resolution dictated by Max Zoom 17 (~1.4 px/m)
+    // We take the SMALLER of these two, because that's what fitBounds will effectively use
+    // to ensure the width fits.
+    
+    // Safety check for single-pin or zero-width
+    let effectiveRes = 1.4; 
+    if (widthMeters > 0) {
+        const widthRes = containerWidth / widthMeters;
+        effectiveRes = Math.min(widthRes, 1.4);
+    }
+
+    // Now calculate target height based on that effective resolution
+    // + Fixed UI buffer (reduced to 100px)
+    let targetHeight = (heightMeters * effectiveRes) + 100;
+
+    // Clamp values
+    if (targetHeight < 350) targetHeight = 350; 
+    if (targetHeight > 1200) targetHeight = 1200; // Reasonable cap
+
+    document.getElementById('neighborhood-map').style.height = Math.round(targetHeight) + 'px';
+
+    // --- 3. Initialize Map ---
+    const centerLat = (minLat + maxLat) / 2;
+    const centerLng = (minLng + maxLng) / 2;
+
+    var map = L.map('neighborhood-map').setView([centerLat, centerLng], 15);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+      subdomains: 'abcd',
+      maxZoom: 20
+    }).addTo(map);
+
+    const markersLayer = L.featureGroup();
+
+    renderMarkers.forEach(m => {
+        let icon;
+        if (m.logoUrl && m.logoUrl.trim() !== "") {
+          icon = L.divIcon({
+            className: 'custom-pin-icon',
+            html: `<div class="pin-wrapper"><img src="${m.logoUrl}" alt="${m.name}" onerror="this.parentElement.classList.add('no-logo'); this.style.display='none';"></div>`,
+            iconSize: [40, 40],
+            iconAnchor: [20, 20],
+            popupAnchor: [0, -20]
+          });
+        } else {
+          icon = L.divIcon({
+            className: 'custom-pin-icon',
+            html: `<div class="pin-wrapper no-logo"></div>`,
+            iconSize: [30, 30],
+            iconAnchor: [15, 15],
+            popupAnchor: [0, -15]
+          });
+        }
+
+        const marker = L.marker([m.lat, m.lng], { icon: icon });
+        const popupContent = `
+          <div style="min-width: 150px; text-align: center;">
+            <h3 style="font-size: 16px; font-weight: bold;">${m.name}</h3>
+            <p style="font-size: 12px;">${m.category}</p>
+            <a href="/bars/${m.slug}/">View Profile</a>
+          </div>
+        `;
+        marker.bindPopup(popupContent);
+        marker.on('mouseover', function (e) { this.openPopup(); });
+        markersLayer.addLayer(marker);
+    });
+
+    markersLayer.addTo(map);
+
+    // Fit bounds 
+    if (venues.length > 0) {
+       // Slightly relaxed padding [20, 20] so pins don't touch edges
+       map.fitBounds(markersLayer.getBounds(), { padding: [20, 20], maxZoom: 17 });
+    }
+  });
+</script>
+
+<div class="venue-grid">
+  
+      <a href="/bars/barrel/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbarrel%2Flogo-1766149813735-218270624_3767915443432949_4702460572066723633_n.jpg?alt=media&amp;token=b02a094e-6509-4f5f-a704-dd357fc679f1');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbarrel%2Flogo-1766149813735-218270624_3767915443432949_4702460572066723633_n.jpg?alt=media&amp;token=b02a094e-6509-4f5f-a704-dd357fc679f1" alt="Barrel logo" class="card-logo">
+              
+              <h3>Barrel</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Bourbon Bars, Whiskey Bars, Brunch Spots</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/hamilton-s-bar-grill/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fhamilton-s-bar-grill%2Flogo-1766510437188-305501536_505435031583193_8834501317169446283_n.jpg?alt=media&amp;token=1a6c6343-84c8-414e-b59e-20f905ed1027');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fhamilton-s-bar-grill%2Flogo-1766510437188-305501536_505435031583193_8834501317169446283_n.jpg?alt=media&amp;token=1a6c6343-84c8-414e-b59e-20f905ed1027" alt="Hamilton&#39;s Bar &amp; Grill logo" class="card-logo">
+              
+              <h3>Hamilton's Bar & Grill</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Sports Bars, American, Neighborhood Bars</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+            <div class="card-happy-hour-tag">
+              🎉 Happy Hour
+            </div>
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/hawk-n-dove/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fhawk-n-dove%2Flogo-1766510674726-573158646_18380742007180679_587510891165929272_n.jpg?alt=media&amp;token=9edbfcb0-5004-4c31-a067-d212bc9bd650');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fhawk-n-dove%2Flogo-1766510674726-573158646_18380742007180679_587510891165929272_n.jpg?alt=media&amp;token=9edbfcb0-5004-4c31-a067-d212bc9bd650" alt="Hawk &#39;n&#39; Dove logo" class="card-logo">
+              
+              <h3>Hawk 'n' Dove</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Irish Pubs, Sports Bars, Karaoke Bars</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/kellys-irish-times/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fkellys-irish-times%2Flogo-1766707953723-23416431_128205924511209_2264525471070814208_n.jpg?alt=media&amp;token=8a6d218d-b8fd-445e-bad6-0169d0eea4ad');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fkellys-irish-times%2Flogo-1766707953723-23416431_128205924511209_2264525471070814208_n.jpg?alt=media&amp;token=8a6d218d-b8fd-445e-bad6-0169d0eea4ad" alt="Kelly&#39;s Irish Times logo" class="card-logo">
+              
+              <h3>Kelly's Irish Times</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Irish Pubs, Neighborhood Bars, Late Night</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/lobby-bar/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Flobby-bar%2Flogo-1766859187261-472346627_2378787479128854_2230061462587783058_n.jpg?alt=media&amp;token=7c543888-a1a4-4420-b65c-b2c1512df3d3');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Flobby-bar%2Flogo-1766859187261-472346627_2378787479128854_2230061462587783058_n.jpg?alt=media&amp;token=7c543888-a1a4-4420-b65c-b2c1512df3d3" alt="Lobby Bar logo" class="card-logo">
+              
+              <h3>Lobby Bar</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Cocktail Bars, Hotel Bars, Happy Hour Spots</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/mr-henrys/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fmr-henrys%2Flogo-1767020680216-194393389_261679319076033_9210470924944592427_n.jpg?alt=media&amp;token=4d552943-37e3-425b-ab84-301692bd8bdf');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fmr-henrys%2Flogo-1767020680216-194393389_261679319076033_9210470924944592427_n.jpg?alt=media&amp;token=4d552943-37e3-425b-ab84-301692bd8bdf" alt="Mr. Henry&#39;s logo" class="card-logo">
+              
+              <h3>Mr. Henry's</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Live Music Venues, Jazz Clubs, American</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/olive-arrow/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Folive-arrow%2Flogo-1767022860159-464670594_529821163278884_4632832257960107047_n.jpg?alt=media&amp;token=f83447bb-17a1-44b0-9f18-94a864e351e5');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Folive-arrow%2Flogo-1767022860159-464670594_529821163278884_4632832257960107047_n.jpg?alt=media&amp;token=f83447bb-17a1-44b0-9f18-94a864e351e5" alt="Olive &amp; Arrow logo" class="card-logo">
+              
+              <h3>Olive & Arrow</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Speakeasies, Cocktail Bars, Basements</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/sonoma-restaurant-and-wine-bar/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fsonoma-restaurant-and-wine-bar%2Flogo-1767137402340-129738734_418906879467326_5681311103441896920_n.jpg?alt=media&amp;token=c4d3766a-2ddd-4474-b562-ffb292662f4f');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fsonoma-restaurant-and-wine-bar%2Flogo-1767137402340-129738734_418906879467326_5681311103441896920_n.jpg?alt=media&amp;token=c4d3766a-2ddd-4474-b562-ffb292662f4f" alt="Sonoma Restaurant and Wine Bar logo" class="card-logo">
+              
+              <h3>Sonoma Restaurant and Wine Bar</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Wine Bars, American, Happy Hour Spots</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+            <div class="card-happy-hour-tag">
+              🎉 Happy Hour
+            </div>
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/the-dubliner/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-dubliner%2Flogo-1766401751623-14262822_169836130089132_853351044_a.jpg?alt=media&amp;token=69dedd06-71ea-4050-9b2f-21131266e347');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-dubliner%2Flogo-1766401751623-14262822_169836130089132_853351044_a.jpg?alt=media&amp;token=69dedd06-71ea-4050-9b2f-21131266e347" alt="The Dubliner logo" class="card-logo">
+              
+              <h3>The Dubliner</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Irish Pubs, Live Music Venues, Gastropubs</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/tune-inn/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Ftune-inn%2Flogo-1767143861844-107893875_618197602441148_1518023968363723390_n.jpg?alt=media&amp;token=78edb1d1-be2c-4e1b-b0f7-f5f0e2f823a0');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Ftune-inn%2Flogo-1767143861844-107893875_618197602441148_1518023968363723390_n.jpg?alt=media&amp;token=78edb1d1-be2c-4e1b-b0f7-f5f0e2f823a0" alt="Tune Inn logo" class="card-logo">
+              
+              <h3>Tune Inn</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Dive Bars, Neighborhood Bars, American</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/union-pub/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Funion-pub%2Flogo-1767144265960-491441198_18498728680054848_5047745087849074778_n.jpg?alt=media&amp;token=646a1df4-7fe8-4c00-a7a8-a1c7464e191b');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Funion-pub%2Flogo-1767144265960-491441198_18498728680054848_5047745087849074778_n.jpg?alt=media&amp;token=646a1df4-7fe8-4c00-a7a8-a1c7464e191b" alt="Union Pub logo" class="card-logo">
+              
+              <h3>Union Pub</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Sports Bars, Neighborhood Bars, Gastropubs</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/bullfeathers-on-the-hill/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbullfeathers-on-the-hill%2Flogo-1766320108990-429746092_389872540447555_668767375626127108_n.jpg?alt=media&amp;token=d3e348ea-f877-45ce-929e-c0ba92d5c8ad');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbullfeathers-on-the-hill%2Flogo-1766320108990-429746092_389872540447555_668767375626127108_n.jpg?alt=media&amp;token=d3e348ea-f877-45ce-929e-c0ba92d5c8ad" alt="Bullfeathers On The Hill logo" class="card-logo">
+              
+              <h3>Bullfeathers On The Hill</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Neighborhood Bars, American, Gastropubs</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+</div>
+
+<div style="margin-top: 3rem; text-align: center;">
+    <a href="/neighborhoods/" class="btn" style="display: inline-block; background: #333; color: white; padding: 0.75rem 1.5rem; border-radius: 4px; text-decoration: none; font-weight: bold;">View All Neighborhoods</a>
+</div>
+
+    </main>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="/" aria-label="Back to Home">
+            <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="footer-logo">
+          </a>
+        </div>
+        
+        <div class="footer-links">
+
+          <div class="social-icons">
+            <a href="https://x.com/bardc_" target="_blank" rel="noopener noreferrer" class="social-icon twitter" aria-label="X (formerly Twitter)"></a>
+            <a href="https://www.facebook.com/bardc" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook"></a>
+          </div>
+          <a href="mailto:info@bardc.com" class="footer-contact">info@bardc.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Bar DC. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+  <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="img01" onclick="event.stopPropagation()">
+  </div>
+  <script>
+    // Global Image Modal Logic
+    window.openImageModal = function(src) {
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("img01");
+        if(modal && modalImg) {
+            modal.style.display = "flex";
+            modalImg.src = src;
+            document.body.style.overflow = "hidden"; 
+        }
+    }
+    
+    window.closeImageModal = function() {
+        var modal = document.getElementById("imageModal");
+        if(modal) {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto"; 
+        }
+    }
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            window.closeImageModal();
+        }
+    });
+  </script>
+  <style>
+    /* Modal Styles (Global) */
+    .image-modal {
+      display: none; 
+      position: fixed; 
+      z-index: 9999; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgba(0,0,0,0.95); 
+      align-items: center;
+      justify-content: center;
+      cursor: zoom-out;
+    }
+    
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 95%;
+      max-height: 95vh;
+      border-radius: 4px;
+      object-fit: contain;
+      cursor: default;
+      animation: zoom 0.3s;
+    }
+    
+    .close-modal {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 50px;
+      font-weight: bold;
+      transition: 0.3s;
+      cursor: pointer;
+      z-index: 10000;
+      line-height: 1;
+    }
+    
+    @keyframes zoom {
+      from {transform:scale(0.8); opacity: 0;}
+      to {transform:scale(1); opacity: 1;}
+    }
+  </style>
+
+</body>
+</html>

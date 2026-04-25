@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rose&#39;s Luxury | Bar DC</title>
+
+  
+  
+  
+  
+  
+     
+     
+  
+
+  
+  
+
+  
+  
+
+  <meta name="description" content="Visit Rose&#39;s Luxury in Barracks Row, Washington DC. ✨ Vibe Rose’s Luxury offers a whimsical and high-energy atmosphere that seamlessly blends cozy rowhouse charm with sophisticated,...">
+  <link rel="canonical" href="https://bardc.com/bars/roses-luxury/">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Bar DC">
+  <meta property="og:title" content="Rose&#39;s Luxury">
+  <meta property="og:description" content="Visit Rose&#39;s Luxury in Barracks Row, Washington DC. ✨ Vibe Rose’s Luxury offers a whimsical and high-energy atmosphere that seamlessly blends cozy rowhouse charm with sophisticated,...">
+  <meta property="og:url" content="https://bardc.com/bars/roses-luxury/">
+  <meta property="og:type" content="business.business">
+  
+  
+  
+  
+      
+  
+  <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Froses-luxury%2Flogo-1767109010061-19623051_431636473887727_4472311748396843008_a.jpg?alt=media&amp;token=bc02706d-937b-406f-a583-63d90ce339cc">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Rose&#39;s Luxury">
+  <meta name="twitter:description" content="Visit Rose&#39;s Luxury in Barracks Row, Washington DC. ✨ Vibe Rose’s Luxury offers a whimsical and high-energy atmosphere that seamlessly blends cozy rowhouse charm with sophisticated,...">
+  <meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Froses-luxury%2Flogo-1767109010061-19623051_431636473887727_4472311748396843008_a.jpg?alt=media&amp;token=bc02706d-937b-406f-a583-63d90ce339cc">
+
+    <!-- [NEW] Favicon Links -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <!-- End Favicon Links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css?v=1777149876163">
+  <link rel="stylesheet" href="/css/masonry.css">
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9L0NBTF5RQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9L0NBTF5RQ');
+</script>
+
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7540411251843957"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-branding">
+        <a href="/" class="branding-link">
+          <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
+          <span class="site-title">Washington D.C. Bars & Clubs</span>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <a href="/bars/">Bars</a>
+        <a href="/map/">Map</a>
+        
+
+        <div class="nav-dropdown">
+          <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
+          <div class="dropdown-menu">
+            
+              <a href="/neighborhoods/u-street/">U Street</a>
+            
+              <a href="/neighborhoods/dupont-circle/">Dupont Circle</a>
+            
+              <a href="/neighborhoods/downtown/">Downtown</a>
+            
+              <a href="/neighborhoods/adams-morgan/">Adams Morgan</a>
+            
+              <a href="/neighborhoods/navy-yard/">Navy Yard</a>
+            
+              <a href="/neighborhoods/georgetown/">Georgetown</a>
+            
+              <a href="/neighborhoods/the-wharf/">The Wharf</a>
+            
+              <a href="/neighborhoods/h-street-ne/">H Street NE</a>
+            
+            <div class="dropdown-divider"></div>
+            <a href="/neighborhoods/" class="view-all">View All →</a>
+          </div>
+        </div>
+
+
+        <a href="/events/">Events</a>
+        <a href="/happy-hour/">Happy Hour</a>
+      </nav>
+    </header>
+    <main>
+      
+        <h1 class="page-title">Rose&#39;s Luxury</h1>
+      
+      <!-- This line is critical. It injects the content from other files. -->
+      <!-- Leaflet Map Resources -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<style>
+   /* Custom Pin Styles for Venue Page */
+   .custom-pin-icon { background: transparent; border: none; }
+   .pin-wrapper {
+     width: 40px; height: 40px; border-radius: 50%; border: 3px solid #fff;
+     box-shadow: 0 4px 10px rgba(0,0,0,0.5); background-color: #fff;
+     overflow: hidden; position: relative; transition: transform 0.2s ease, z-index 0.2s;
+   }
+   .pin-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+   .pin-wrapper.no-logo {
+     background-color: var(--primary-color, #e53935);
+     display: flex; align-items: center; justify-content: center;
+   }
+   .pin-wrapper.no-logo::after { content: ''; width: 12px; height: 12px; background: #fff; border-radius: 50%; }
+   .leaflet-container { font-family: inherit; }
+   .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: #1e1e1e; color: #fff; border: 1px solid rgba(255,255,255,0.1); }
+   .leaflet-popup-content a { color: #fff; background: var(--primary-color, #e53935); padding: 2px 8px; border-radius: 4px; text-decoration: none; }
+</style>
+
+<article class="venue-profile">
+
+   <h1>Rose's Luxury</h1>
+  
+  <div class="venue-details">
+    <div style="display:flex; align-items:flex-start; gap:1.5rem; margin-bottom:1rem; flex-wrap:wrap;">
+      
+        <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Froses-luxury%2Flogo-1767109010061-19623051_431636473887727_4472311748396843008_a.jpg?alt=media&amp;token=bc02706d-937b-406f-a583-63d90ce339cc" alt="Rose&#39;s Luxury logo" style="max-height:250px; max-width:250px; border-radius:8px; border:1px solid #eee; object-fit:contain; flex-shrink:0;">
+      
+      <div style="flex:1; min-width: 250px;">
+        <div style="display:flex; gap:1.5rem; flex-wrap:wrap; justify-content: space-between;">
+            <div style="flex:1; min-width:200px;">
+                <p><strong>Category:</strong> 
+                  
+                  
+                    <a href="/categories/supper-clubs/">Supper Clubs</a>, 
+                  
+                    <a href="/categories/american/">American</a>, 
+                  
+                    <a href="/categories/romantic/">Romantic</a>
+                  
+                </p>
+                
+                  <p><strong>Neighborhood:</strong> <a href="/neighborhoods/barracks-row/">Barracks Row</a></p>
+                
+                <p><strong>Price:</strong> $$$</p>
+                
+                
+                
+                
+                
+                
+                <p><strong>Address:</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=Rose&#39;s%20Luxury%20717%208th%20St%20SE%2C%20Washington%2C%20DC%2020003" target="_blank" rel="noopener noreferrer" style="text-decoration:underline; color:var(--accent-color);">717 8th St SE, Washington, DC 20003</a></p>
+
+                <div class="venue-actions-bar" style="margin-top:1rem;">
+                  
+                    <a href="https://www.rosesluxury.com/" class="btn-website-action" target="_blank" rel="noopener noreferrer">
+                      <span>Website</span>
+                    </a>
+                  
+                  
+                  
+                  <div class="social-icons-inline">
+                    
+                      <a href="https://www.instagram.com/rosesluxury/" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
+                    
+                    
+                    
+                  </div>
+                  
+                </div>
+            </div>
+            
+            <!-- Side Map -->
+            
+            <div style="width:220px; flex-shrink:0; margin-top: 0.5rem;">
+               <div id="venue-mini-map" style="width:100%; height:220px; border-radius:12px; border:1px solid rgba(255,255,255,0.1); box-shadow:0 4px 15px rgba(0,0,0,0.3); z-index:0; cursor: pointer;"></div>
+               <script>
+                 document.addEventListener('DOMContentLoaded', function() {
+                    var lat = 38.8806472;
+                    var lng = -76.995211;
+                    var map = L.map('venue-mini-map', {
+                        center: [lat, lng],
+                        zoom: 16,
+                        zoomControl: false, 
+                        attributionControl: false,
+                        dragging: false,
+                        scrollWheelZoom: false,
+                        doubleClickZoom: false,
+                        boxZoom: false,
+                        keyboard: false
+                    });
+                     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                        subdomains: 'abcd',
+                        maxZoom: 20
+                     }).addTo(map);
+
+                    var iconHTML = `<div class="pin-wrapper"><img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Froses-luxury%2Flogo-1767109010061-19623051_431636473887727_4472311748396843008_a.jpg?alt=media&amp;token=bc02706d-937b-406f-a583-63d90ce339cc" onerror="this.style.display='none'; this.parentElement.classList.add('no-logo');"></div>`;
+                    var icon = L.divIcon({
+                        className: 'custom-pin-icon',
+                        html: iconHTML,
+                        iconSize: [40, 40],
+                        iconAnchor: [20, 20]
+                    });
+                    
+                    L.marker([lat, lng], {icon: icon}).addTo(map);
+                    
+                    // Click to open Google Maps
+                    document.getElementById('venue-mini-map').addEventListener('click', function() {
+                        window.open('https://www.google.com/maps/search/?api=1&amp;query=Rose&#39;s%20Luxury%20717%208th%20St%20SE%2C%20Washington%2C%20DC%2020003', '_blank');
+                    });
+                 });
+               </script>
+               <div style="text-align:center; margin-top:0.5rem;">
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=Rose&#39;s%20Luxury%20717%208th%20St%20SE%2C%20Washington%2C%20DC%2020003" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; color:#aaa; text-decoration:none;">View on Google Maps &rarr;</a>
+               </div>
+            </div>
+            
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- [MOVED] Google Rating Display (Moved to Reviews Section) -->
+  
+    <!-- Rating moved below -->
+  
+  <!-- End Google Rating Display -->
+
+  <div class="venue-description">
+    <h3>✨ Vibe</h3>
+<p>Rose’s Luxury offers a whimsical and high-energy atmosphere that seamlessly blends cozy rowhouse charm with sophisticated, Michelin-starred hospitality and a lush indoor garden setting.</p>
+
+<h3>🍸 Best For</h3>
+<p>Romantic dates, milestone birthday celebrations, foodies seeking creative American cuisine, and intimate group dinners.</p>
+
+<h3>🔥 Highlights</h3>
+<ul>
+  <li>The legendary Pork and Lychee Salad, a "must-order" signature dish that has maintained its status as a D.C. culinary icon for over a decade.</li>
+  <li>A customizable "choose-your-own-adventure" five-course tasting menu featuring inventive delights like truffle madeleines, tableside-carved Korean short ribs, and corn bread fried ice cream.</li>
+  <li>Exceptional, warm service that prioritizes a relaxed and human connection, making even solo diners at the bar feel like the guest of honor.</li>
+</ul>
+
+<h3>ℹ️ Need to Know</h3>
+<ul>
+  <li>Reservations are highly recommended through Resy and typically release at noon on the first of every month; however, walk-ins are often welcomed at the bar for a more spontaneous evening.</li>
+  <li>While the venue offers a world-class Michelin-starred experience, the dress code remains approachable and casual, emphasizing comfort and celebration over traditional formality.</li>
+</ul>
+  </div>
+  
+
+  
+
+
+  <!-- [NEW] Events Section -->
+  <!-- [NEW] Events Section -->
+
+<!-- End Events Section -->
+
+<!-- [NEW] Recurring Events Section -->
+
+<!-- End Recurring Events Section -->
+
+    <!-- [NEW] Full Happy Hour Details Section -->
+  
+  <!-- End Happy Hour Details Section -->
+
+  <!-- [NEW] News Section -->
+  
+  <div class="news-section" style="margin-top:2rem; margin-bottom:2rem;">
+    <h3>📰 In the News</h3>
+    <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
+      
+        <a href="https://washingtonian.com/100-very-best-restaurants-2025/roses-luxury" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Washingtonian</span>
+              <span style="margin-left:auto; text-transform:none;">Jan 22, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Rose’s Luxury</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Rose&#39;s Luxury in Capitol Hill features a &quot;choose-your-own-adventure&quot; five-course tasting menu characterized by creative details like tuna tartare in an avocado shell and tableside-carved Korean short ribs. The high-end dining experience is complemented by hospitable service and oversized desserts, such as giant goblets of fruit-based ice cream and shaved ice.</p>
+           
+        </a>
+      
+        <a href="https://theinfatuation.com/washington-dc/reviews/roses-luxury" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=theinfatuation.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The Infatuation</span>
+              <span style="margin-left:auto; text-transform:none;">Sep 13, 2024</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Rose’s Luxury - Review - Capitol Hill - Washington DC</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Rose’s Luxury in Capitol Hill features a playful five-course American tasting menu designed for sharing, anchored by its iconic pork and lychee salad. The restaurant offers several distinct dining atmospheres, ranging from a cozy rowhouse-style main floor to an intimate upstairs room and a plant-filled indoor garden space. High-quality dishes like the tableside-fileted dover sole and deconstructed baklava sundae make it a premier choice for dates and special occasions.</p>
+           
+        </a>
+      
+        <a href="https://blog.resy.com/2023/05/roses-luxury" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=blog.resy.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Resy | Right This Way</span>
+              <span style="margin-left:auto; text-transform:none;">May 9, 2023</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">How to Get a Seat at Rose’s Luxury, and What to Eat</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Rose&#39;s Luxury offers a $95 multi-course menu of remixed comfort food in a vibrant Capitol Hill setting, including a private rooftop garden for larger groups. Reservations are released on Resy at noon on the first of every month, though walk-ins are occasionally accepted at the bar.</p>
+           
+        </a>
+      
+        <a href="https://dcist.com/story/20/08/05/roses-luxury-pineapple-pearls-aaron-silverman-restaurant-staff" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=dcist.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>DCist</span>
+              <span style="margin-left:auto; text-transform:none;">Aug 9, 2020</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Restaurant Group Behind Rose’s Luxury Set Out To Take Care Of Its Staff. Employees Say They Failed</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Rose’s Luxury faces allegations from current and former staff members who claim the restaurant group failed to maintain its promise of a supportive work environment. Employees cited instances of verbal abuse, sexual harassment, and cultural insensitivity, suggesting that management often prioritized restaurant operations over staff well-being and accountability.</p>
+           
+        </a>
+      
+        <a href="https://washingtonpost.com/lifestyle/magazine/tom-sietsemas-top-10-roses-luxury-is-no-1/2015/09/28/5573af4e-6619-11e5-9ef3-fde182507eac_story.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=washingtonpost.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The Washington Post</span>
+              <span style="margin-left:auto; text-transform:none;">Oct 10, 2019</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Review | There’s a way to taste luxury without waiting in line</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Rose&#39;s Luxury offers an acclaimed dining experience in Washington D.C., recognized for its inventive menu and signature hospitality. This review highlights the restaurant&#39;s &#39;Excellent&#39; rating and offers strategies for diners to enjoy its high-end cuisine without enduring the venue&#39;s famously long wait times.</p>
+           
+        </a>
+      
+    </div>
+  </div>
+  
+  <!-- End News Section -->
+  
+
+  <!-- [NEW] Reviews Section (Server-Side) -->
+  
+  <div id="google-reviews-section" class="reviews-section">
+    
+    
+      
+    
+
+    <!-- [MOVED] Google Rating Display -->
+    
+      <div class="google-rating" style="margin-bottom: 2rem;">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJUZM20My5t4kRnhgopk_e4YA" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: block;">
+          <div class="rating-header">
+            <span class="rating-stars" style="--rating: 4.7;">★★★★★</span>
+            <span class="rating-value">4.7</span>
+            <span class="rating-count">(1835 reviews)</span>
+            <span class="btn-read-reviews" style="margin-left: auto; margin-top: 0;">View on Google</span>
+          </div>
+        </a>
+      </div>
+    
+    <!-- End Google Rating Display -->
+
+    <h3>Recent Reviews from Google</h3>
+    <div class="reviews-grid">
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJUZM20My5t4kRnhgopk_e4YA" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXXDzP53ryox7AfQfF283IOnI-xEAT_S5G-3xqkSGGCT52fgf4T=s128-c0x00000000-cc-rp-mo-ba5" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">3 weeks ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            I’m surprised I’ve been here and not left a review before because my experiences have always been DIVINE. This place is worth the drive every time from Virginia.
+
+I highly recommend a reservation and...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJUZM20My5t4kRnhgopk_e4YA" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXgCPEfPgGEZbwCmXeai67ILnKJWlrwM0Cqfa-wpuSCOI84i7WG=s128-c0x00000000-cc-rp-mo" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">2 weeks ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            I’ve never left a review before, but after the kindness and hospitality I experienced, paired with a menu full of flavor and personality, I knew I had to!
+
+I was in town on a solo trip to celebrate my...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJUZM20My5t4kRnhgopk_e4YA" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjWxoLCZL4qt-Tt0t0EZaRx0eW11rsagbp7iosqKhAH0rW8xDQ=s128-c0x00000000-cc-rp-mo" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a month ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Absolutely loved our experience at Rose’s Luxury! The food was outstanding — creative, flavorful, and beautifully presented. The staff were genuinely warm and made us feel so welcome from start to...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJUZM20My5t4kRnhgopk_e4YA" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocK_1IGZRr8kfEUxUOa8ZN0Ynr-FiyNvwLwtUO-oWlYOQIubqer-=s128-c0x00000000-cc-rp-mo-ba3" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">3 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Incredible experience here twice! Most recently went to celebrate my anniversary, did the &quot;choose your own adventure&quot; menu at the chef&#39;s counter. Delicious options (famous pork &amp; lychee salad is a...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJUZM20My5t4kRnhgopk_e4YA" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXGNqfVjvgvUf3yu4mFEFTeI0YSVWer7c5n-0ON_u6QkniCGOU=s128-c0x00000000-cc-rp-mo-ba3" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">4 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            I was gifted a dinner here and two of my adult children and I arrived for a Thursday evening service.
+
+The setting is beautiful, like an outdoor courtyard, but inside! The staff was welcoming,...
+          </p>
+      </a>
+      
+    </div>
+    <div class="reviews-footer">
+      <small>Reviews provided by Google</small>
+    </div>
+  </div>
+  
+
+  <!-- [NEW] Nearby Bars Section -->
+  
+  
+  <div class="nearby-section" style="margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+    <h3 style="margin-bottom: 1.5rem;">📍 Nearby Spots (Walking Distance)</h3>
+    <div class="venue-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
+      
+        <a href="/bars/lola-s-a-neighborhood-bar/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Flola-s-a-neighborhood-bar%2Flogo-1766859452393-536250538_18361186990157912_7162182396933324248_n.jpg?alt=media&amp;token=3028a438-dfaf-4d41-946c-945fb7614a33" alt="Lola&#39;s A Neighborhood Bar" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Lola&#39;s A Neighborhood Bar</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">21m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/ginza-karaoke-rooftop-lounge/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fginza-karaoke-rooftop-lounge%2Flogo-1766494762983-315197675_619236293219309_1505218982618995093_n.jpg?alt=media&amp;token=8ba8b313-fb6a-4c73-90ac-69d62114da0f" alt="Ginza Karaoke &amp; Rooftop Lounge" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Ginza Karaoke &amp; Rooftop Lounge</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">131m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/awakening-bar-grill/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fawakening-bar-grill%2Flogo-1766104681056-561339315_122093764509087196_3499994867068949594_n.jpg?alt=media&amp;token=1c0b357a-1771-492c-9386-2561023a74c7" alt="Awakening Bar &amp; Grill" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Awakening Bar &amp; Grill</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">156m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/belga-cafe/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbelga-cafe%2Flogo-1766148472988-512686901_1192015462935744_5564958201219166756_n.webp?alt=media&amp;token=ada04d24-bb31-467a-956a-1815f81fb269" alt="Belga Cafe" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Belga Cafe</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">179m away</p>
+          </div>
+        </a>
+      
+    </div>
+  </div>
+  
+
+  <a href="/" class="btn-back">← Back to Home</a>
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "Rose's Luxury",
+  "image": "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Froses-luxury%2Flogo-1767109010061-19623051_431636473887727_4472311748396843008_a.jpg?alt=media&token=bc02706d-937b-406f-a583-63d90ce339cc",
+  "address": "717 8th St SE, Washington, DC 20003",
+  
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.7,
+    "reviewCount": 1835
+  },
+  
+  
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": 5,
+      "bestRating": 5
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Andrea Kuoni"
+    },
+    "reviewBody": "I’m surprised I’ve been here and not left a review before because my experiences have always been DIVINE. This place is worth the drive every time from Virginia.\n\nI highly recommend a reservation and keeping an eye on their system for the time you’d like. It’s easy to book through Resy!\n\nNow the experience. We had Daniel this time and he was as lovely as our other team members we’ve had in the past. He was whimsical and made great recommendations. We’ve had the fixed menu before and came on a Tuesday they offered à la carte because we specifically wanted the options we loved in the past. We started with a Lychee Lemon Fizz which is non alcoholic but refreshing and went well with dinner! There was also a margarita which was spicy just how I enjoy.\n\nWe had their truffled Madeline bread service that was delicious. Then we went in on the Pork & Lychee Salad and the Super Charred Cabbage. The flavors of each of these were fantastic, just as we remember.\n\nThen we enjoyed the spicy tteokbokki which was PERFECTION. Simply fabulous. Whoever has the receipt, hit me up.\n\nThen for the finale, we decided to enjoy one more pork & lychee salad along with a tres leches cake. Little sweet and savory action to finish the evening.\n\nAgain the hospitality among the entire staff is lovely, inviting, and incredible. The food is simply delicious and I’ll always be back for more.\n\nParking is paid on the street & plenty of it. They take into account any sensitivities when possible for dining. You’ll feel special and valued as a patron every time. Enjoy!"
+  },
+  
+  
+  "priceRange": "$$$", 
+  
+  
+  "telephone": "(202) 742-3570",
+  
+  "url": "https://bardc.com/venues/roses-luxury/"
+}
+</script>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="/" aria-label="Back to Home">
+            <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="footer-logo">
+          </a>
+        </div>
+        
+        <div class="footer-links">
+
+          <div class="social-icons">
+            <a href="https://x.com/bardc_" target="_blank" rel="noopener noreferrer" class="social-icon twitter" aria-label="X (formerly Twitter)"></a>
+            <a href="https://www.facebook.com/bardc" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook"></a>
+          </div>
+          <a href="mailto:info@bardc.com" class="footer-contact">info@bardc.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Bar DC. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+  <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="img01" onclick="event.stopPropagation()">
+  </div>
+  <script>
+    // Global Image Modal Logic
+    window.openImageModal = function(src) {
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("img01");
+        if(modal && modalImg) {
+            modal.style.display = "flex";
+            modalImg.src = src;
+            document.body.style.overflow = "hidden"; 
+        }
+    }
+    
+    window.closeImageModal = function() {
+        var modal = document.getElementById("imageModal");
+        if(modal) {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto"; 
+        }
+    }
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            window.closeImageModal();
+        }
+    });
+  </script>
+  <style>
+    /* Modal Styles (Global) */
+    .image-modal {
+      display: none; 
+      position: fixed; 
+      z-index: 9999; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgba(0,0,0,0.95); 
+      align-items: center;
+      justify-content: center;
+      cursor: zoom-out;
+    }
+    
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 95%;
+      max-height: 95vh;
+      border-radius: 4px;
+      object-fit: contain;
+      cursor: default;
+      animation: zoom 0.3s;
+    }
+    
+    .close-modal {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 50px;
+      font-weight: bold;
+      transition: 0.3s;
+      cursor: pointer;
+      z-index: 10000;
+      line-height: 1;
+    }
+    
+    @keyframes zoom {
+      from {transform:scale(0.8); opacity: 0;}
+      to {transform:scale(1); opacity: 1;}
+    }
+  </style>
+
+</body>
+</html>

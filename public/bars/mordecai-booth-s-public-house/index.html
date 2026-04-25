@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mordecai Booth&#39;s Public House | Bar DC</title>
+
+  
+  
+  
+  
+  
+     
+     
+  
+
+  
+  
+
+  
+  
+
+  <meta name="description" content="Visit Mordecai Booth&#39;s Public House in Navy Yard, Washington DC. ✨ Vibe A welcoming, traditional public house atmosphere that serves as a relaxed neighborhood retreat for unwinding and socializing after a...">
+  <link rel="canonical" href="https://bardc.com/bars/mordecai-booth-s-public-house/">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Bar DC">
+  <meta property="og:title" content="Mordecai Booth&#39;s Public House">
+  <meta property="og:description" content="Visit Mordecai Booth&#39;s Public House in Navy Yard, Washington DC. ✨ Vibe A welcoming, traditional public house atmosphere that serves as a relaxed neighborhood retreat for unwinding and socializing after a...">
+  <meta property="og:url" content="https://bardc.com/bars/mordecai-booth-s-public-house/">
+  <meta property="og:type" content="business.business">
+  
+  
+  
+  
+  <meta property="og:image" content="https://bardc.com/img/bardc_logo.jpeg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mordecai Booth&#39;s Public House">
+  <meta name="twitter:description" content="Visit Mordecai Booth&#39;s Public House in Navy Yard, Washington DC. ✨ Vibe A welcoming, traditional public house atmosphere that serves as a relaxed neighborhood retreat for unwinding and socializing after a...">
+  <meta name="twitter:image" content="https://bardc.com/img/bardc_logo.jpeg">
+
+    <!-- [NEW] Favicon Links -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <!-- End Favicon Links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css?v=1777149876163">
+  <link rel="stylesheet" href="/css/masonry.css">
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9L0NBTF5RQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9L0NBTF5RQ');
+</script>
+
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7540411251843957"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-branding">
+        <a href="/" class="branding-link">
+          <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
+          <span class="site-title">Washington D.C. Bars & Clubs</span>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <a href="/bars/">Bars</a>
+        <a href="/map/">Map</a>
+        
+
+        <div class="nav-dropdown">
+          <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
+          <div class="dropdown-menu">
+            
+              <a href="/neighborhoods/u-street/">U Street</a>
+            
+              <a href="/neighborhoods/dupont-circle/">Dupont Circle</a>
+            
+              <a href="/neighborhoods/downtown/">Downtown</a>
+            
+              <a href="/neighborhoods/adams-morgan/">Adams Morgan</a>
+            
+              <a href="/neighborhoods/navy-yard/">Navy Yard</a>
+            
+              <a href="/neighborhoods/georgetown/">Georgetown</a>
+            
+              <a href="/neighborhoods/the-wharf/">The Wharf</a>
+            
+              <a href="/neighborhoods/h-street-ne/">H Street NE</a>
+            
+            <div class="dropdown-divider"></div>
+            <a href="/neighborhoods/" class="view-all">View All →</a>
+          </div>
+        </div>
+
+
+        <a href="/events/">Events</a>
+        <a href="/happy-hour/">Happy Hour</a>
+      </nav>
+    </header>
+    <main>
+      
+        <h1 class="page-title">Mordecai Booth&#39;s Public House</h1>
+      
+      <!-- This line is critical. It injects the content from other files. -->
+      <!-- Leaflet Map Resources -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<style>
+   /* Custom Pin Styles for Venue Page */
+   .custom-pin-icon { background: transparent; border: none; }
+   .pin-wrapper {
+     width: 40px; height: 40px; border-radius: 50%; border: 3px solid #fff;
+     box-shadow: 0 4px 10px rgba(0,0,0,0.5); background-color: #fff;
+     overflow: hidden; position: relative; transition: transform 0.2s ease, z-index 0.2s;
+   }
+   .pin-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+   .pin-wrapper.no-logo {
+     background-color: var(--primary-color, #e53935);
+     display: flex; align-items: center; justify-content: center;
+   }
+   .pin-wrapper.no-logo::after { content: ''; width: 12px; height: 12px; background: #fff; border-radius: 50%; }
+   .leaflet-container { font-family: inherit; }
+   .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: #1e1e1e; color: #fff; border: 1px solid rgba(255,255,255,0.1); }
+   .leaflet-popup-content a { color: #fff; background: var(--primary-color, #e53935); padding: 2px 8px; border-radius: 4px; text-decoration: none; }
+</style>
+
+<article class="venue-profile">
+
+   <h1>Mordecai Booth's Public House</h1>
+  
+  <div class="venue-details">
+    <div style="display:flex; align-items:flex-start; gap:1.5rem; margin-bottom:1rem; flex-wrap:wrap;">
+      
+      <div style="flex:1; min-width: 250px;">
+        <div style="display:flex; gap:1.5rem; flex-wrap:wrap; justify-content: space-between;">
+            <div style="flex:1; min-width:200px;">
+                <p><strong>Category:</strong> 
+                  
+                  
+                    <a href="/categories/neighborhood-bars/">Neighborhood Bars</a>, 
+                  
+                    <a href="/categories/karaoke-bars/">Karaoke Bars</a>, 
+                  
+                    <a href="/categories/game-bars/">Game Bars</a>
+                  
+                </p>
+                
+                  <p><strong>Neighborhood:</strong> <a href="/neighborhoods/navy-yard/">Navy Yard</a></p>
+                
+                <p><strong>Price:</strong> </p>
+                
+                
+                
+                
+                
+                
+                <p><strong>Address:</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=Mordecai%20Booth&#39;s%20Public%20House%201411%20Bldg%20101%2C%2020374%2C%20Parsons%20Ave%2C%20Washington%2C%20DC%2020374%2C%20United%20States" target="_blank" rel="noopener noreferrer" style="text-decoration:underline; color:var(--accent-color);">1411 Bldg 101, 20374, Parsons Ave, Washington, DC 20374, United States</a></p>
+
+                <div class="venue-actions-bar" style="margin-top:1rem;">
+                  
+                    <a href="https://www.navymwrwashington.com/food-bev" class="btn-website-action" target="_blank" rel="noopener noreferrer">
+                      <span>Website</span>
+                    </a>
+                  
+                  
+                  
+                  <div class="social-icons-inline">
+                    
+                    
+                    
+                  </div>
+                  
+                </div>
+            </div>
+            
+            <!-- Side Map -->
+            
+            <div style="width:220px; flex-shrink:0; margin-top: 0.5rem;">
+               <div id="venue-mini-map" style="width:100%; height:220px; border-radius:12px; border:1px solid rgba(255,255,255,0.1); box-shadow:0 4px 15px rgba(0,0,0,0.3); z-index:0; cursor: pointer;"></div>
+               <script>
+                 document.addEventListener('DOMContentLoaded', function() {
+                    var lat = 38.8736168;
+                    var lng = -76.9939259;
+                    var map = L.map('venue-mini-map', {
+                        center: [lat, lng],
+                        zoom: 16,
+                        zoomControl: false, 
+                        attributionControl: false,
+                        dragging: false,
+                        scrollWheelZoom: false,
+                        doubleClickZoom: false,
+                        boxZoom: false,
+                        keyboard: false
+                    });
+                     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                        subdomains: 'abcd',
+                        maxZoom: 20
+                     }).addTo(map);
+
+                    var iconHTML = `<div class="pin-wrapper no-logo"><img src="" onerror="this.style.display='none'; this.parentElement.classList.add('no-logo');"></div>`;
+                    var icon = L.divIcon({
+                        className: 'custom-pin-icon',
+                        html: iconHTML,
+                        iconSize: [40, 40],
+                        iconAnchor: [20, 20]
+                    });
+                    
+                    L.marker([lat, lng], {icon: icon}).addTo(map);
+                    
+                    // Click to open Google Maps
+                    document.getElementById('venue-mini-map').addEventListener('click', function() {
+                        window.open('https://www.google.com/maps/search/?api=1&amp;query=Mordecai%20Booth&#39;s%20Public%20House%201411%20Bldg%20101%2C%2020374%2C%20Parsons%20Ave%2C%20Washington%2C%20DC%2020374%2C%20United%20States', '_blank');
+                    });
+                 });
+               </script>
+               <div style="text-align:center; margin-top:0.5rem;">
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=Mordecai%20Booth&#39;s%20Public%20House%201411%20Bldg%20101%2C%2020374%2C%20Parsons%20Ave%2C%20Washington%2C%20DC%2020374%2C%20United%20States" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; color:#aaa; text-decoration:none;">View on Google Maps &rarr;</a>
+               </div>
+            </div>
+            
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- [MOVED] Google Rating Display (Moved to Reviews Section) -->
+  
+    <!-- Rating moved below -->
+  
+  <!-- End Google Rating Display -->
+
+  <div class="venue-description">
+    <h3>✨ Vibe</h3>
+<p>A welcoming, traditional public house atmosphere that serves as a relaxed neighborhood retreat for unwinding and socializing after a long day.</p>
+
+<h3>🍸 Best For</h3>
+<p>After-work drinks, karaoke nights, military gatherings, and casual gaming with coworkers.</p>
+
+<h3>🔥 Highlights</h3>
+<ul>
+  <li>An entertaining selection of classic bar games, including hits like Battleship, that offer a fun and nostalgic way to engage with friends.</li>
+  <li>A lively karaoke scene that creates a high-energy, "fun after work" environment perfect for team building and celebrations.</li>
+  <li>A well-rounded menu of beers and mixed drinks delivered by a friendly staff dedicated to a traditional good time.</li>
+</ul>
+
+<h3>ℹ️ Need to Know</h3>
+<ul>
+  <li>Located within the historic Washington Navy Yard; valid base access is required for entry to this exclusive establishment.</li>
+  <li>The venue is a premier choice for hosting command functions and personal rental needs for the military community.</li>
+</ul>
+  </div>
+  
+
+  
+
+
+  <!-- [NEW] Events Section -->
+  <!-- [NEW] Events Section -->
+
+<!-- End Events Section -->
+
+<!-- [NEW] Recurring Events Section -->
+
+  <div class="recurring-events-section">
+    <h3>🔄 Weekly Events</h3>
+    <div class="events-grid">
+      
+        
+        <div class="event-item recurring">
+          <h4>Pub Trivia Night 🍻</h4>
+          <p class="event-meta">
+            <span class="days-badge">Thu</span>
+          </p>
+          
+            <p>Join us on every 2nd Thursday for Pub Trivia!</p>
+          
+        </div>
+        
+      
+    </div>
+  </div>
+
+<!-- End Recurring Events Section -->
+
+    <!-- [NEW] Full Happy Hour Details Section -->
+  
+    <div class="happy-hour-info">
+      <h3>Happy Hour</h3>
+      <p>A traditional good time to unwind after work and meet with friends and co-workers.</p>
+    </div>
+  
+  <!-- End Happy Hour Details Section -->
+
+  <!-- [NEW] News Section -->
+  
+  <!-- End News Section -->
+  
+
+  <!-- [NEW] Reviews Section (Server-Side) -->
+  
+  <div id="google-reviews-section" class="reviews-section">
+    
+    
+      
+    
+
+    <!-- [MOVED] Google Rating Display -->
+    
+      <div class="google-rating" style="margin-bottom: 2rem;">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJh5oh2s65t4kRNw9Wd-rOvr4" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: block;">
+          <div class="rating-header">
+            <span class="rating-stars" style="--rating: 4.1;">★★★★★</span>
+            <span class="rating-value">4.1</span>
+            <span class="rating-count">(23 reviews)</span>
+            <span class="btn-read-reviews" style="margin-left: auto; margin-top: 0;">View on Google</span>
+          </div>
+        </a>
+      </div>
+    
+    <!-- End Google Rating Display -->
+
+    <h3>Recent Reviews from Google</h3>
+    <div class="reviews-grid">
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJh5oh2s65t4kRNw9Wd-rOvr4" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocIRGklz0LE5AYYpTjRkF0oTTPiQwQyLDNLzR0x1tVVuvbzY9Tfo=s128-c0x00000000-cc-rp-mo-ba4" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">3 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Friendly staff and a fun environment.  Great beer and mix drink selection.  Come by for karaoke and fun after work.
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJh5oh2s65t4kRNw9Wd-rOvr4" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXc7wkX103x_t8SbxUmAkJkDKgcSd0jvFhSmq8AbIpWc19ynTLc=s128-c0x00000000-cc-rp-mo-ba5" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a year ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★☆☆☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            When I visited this establishment on a Wednesday evening after work, the place had five total customers for the one bartender.
+
+The place was by no means busy whatsoever, but the bartender, who was...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJh5oh2s65t4kRNw9Wd-rOvr4" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjVLE-I9rBQFtE2S6uYjluPzl6grseEuIUej42H4uc942Vi04iDpMg=s128-c0x00000000-cc-rp-mo-ba4" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">2 years ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★☆☆☆☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            The oven was broken,  the taps were broken... this place could be such a cool hangout for my family and the games were a HIT but I was banking on ANY food being available and it wasn&#39;t :( the...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJh5oh2s65t4kRNw9Wd-rOvr4" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocKtVmGexsesn1fOjBn4cy8JaCEQq8Kkd69c42JNZRHrxreoUQ=s128-c0x00000000-cc-rp-mo-ba3" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a year ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            If you have access to base, it&#39;s a neat place to visit, but it&#39;s barely open and doesn&#39;t feel like much effort has been put into it in decades.
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJh5oh2s65t4kRNw9Wd-rOvr4" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocIU9v8c9o604e1w5h1M5jqyOjmtQ2WV6mC3TMI9CwxIo7zRTsC2=s128-c0x00000000-cc-rp-mo-ba5" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">6 years ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            This a pretty neat little place to grab a drink and unwind after a long day at the office.
+          </p>
+      </a>
+      
+    </div>
+    <div class="reviews-footer">
+      <small>Reviews provided by Google</small>
+    </div>
+  </div>
+  
+
+  <!-- [NEW] Nearby Bars Section -->
+  
+  
+  <div class="nearby-section" style="margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+    <h3 style="margin-bottom: 1.5rem;">📍 Nearby Spots (Walking Distance)</h3>
+    <div class="venue-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
+      
+        <a href="/bars/the-brig/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-brig%2Flogo-1766319308520-340201487_1358008021658682_7780815162028825224_n.jpg?alt=media&amp;token=6c8511fd-c020-494a-859f-42c033991be2" alt="the brig" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">the brig</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">483m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/la-famosa/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fla-famosa%2Flogo-1766857713090-70889947_392772608075935_7107671125370339328_n.jpg?alt=media&amp;token=b6efbeb0-4a52-456e-ba71-8de09f19c9bf" alt="La Famosa" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">La Famosa</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">525m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/trouble-bird/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Ftrouble-bird%2Flogo-1767143702695-330667404_204404708913277_297625666186504283_n.jpg?alt=media&amp;token=1cabf81e-4a9a-4482-856a-2da10270fbce" alt="Trouble Bird" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Trouble Bird</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">555m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/district-winery/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fdistrict-winery%2Flogo-1766401503165-310171833_813098423226268_3527469593125952641_n.jpg?alt=media&amp;token=a5683bbf-2c23-46e8-99b8-a64fb67fbbe7" alt="District Winery" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">District Winery</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">593m away</p>
+          </div>
+        </a>
+      
+    </div>
+  </div>
+  
+
+  <a href="/" class="btn-back">← Back to Home</a>
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "Mordecai Booth's Public House",
+  "image": "https://bardc.com/images/default-venue.jpg",
+  "address": "1411 Bldg 101, 20374, Parsons Ave, Washington, DC 20374, United States",
+  
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.1,
+    "reviewCount": 23
+  },
+  
+  
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": 5,
+      "bestRating": 5
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Andrew Colcock"
+    },
+    "reviewBody": "Friendly staff and a fun environment.  Great beer and mix drink selection.  Come by for karaoke and fun after work."
+  },
+  
+  
+  
+  "url": "https://bardc.com/venues/mordecai-booth-s-public-house/"
+}
+</script>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="/" aria-label="Back to Home">
+            <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="footer-logo">
+          </a>
+        </div>
+        
+        <div class="footer-links">
+
+          <div class="social-icons">
+            <a href="https://x.com/bardc_" target="_blank" rel="noopener noreferrer" class="social-icon twitter" aria-label="X (formerly Twitter)"></a>
+            <a href="https://www.facebook.com/bardc" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook"></a>
+          </div>
+          <a href="mailto:info@bardc.com" class="footer-contact">info@bardc.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Bar DC. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+  <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="img01" onclick="event.stopPropagation()">
+  </div>
+  <script>
+    // Global Image Modal Logic
+    window.openImageModal = function(src) {
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("img01");
+        if(modal && modalImg) {
+            modal.style.display = "flex";
+            modalImg.src = src;
+            document.body.style.overflow = "hidden"; 
+        }
+    }
+    
+    window.closeImageModal = function() {
+        var modal = document.getElementById("imageModal");
+        if(modal) {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto"; 
+        }
+    }
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            window.closeImageModal();
+        }
+    });
+  </script>
+  <style>
+    /* Modal Styles (Global) */
+    .image-modal {
+      display: none; 
+      position: fixed; 
+      z-index: 9999; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgba(0,0,0,0.95); 
+      align-items: center;
+      justify-content: center;
+      cursor: zoom-out;
+    }
+    
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 95%;
+      max-height: 95vh;
+      border-radius: 4px;
+      object-fit: contain;
+      cursor: default;
+      animation: zoom 0.3s;
+    }
+    
+    .close-modal {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 50px;
+      font-weight: bold;
+      transition: 0.3s;
+      cursor: pointer;
+      z-index: 10000;
+      line-height: 1;
+    }
+    
+    @keyframes zoom {
+      from {transform:scale(0.8); opacity: 0;}
+      to {transform:scale(1); opacity: 1;}
+    }
+  </style>
+
+</body>
+</html>

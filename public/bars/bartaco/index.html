@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bartaco | Bar DC</title>
+
+  
+  
+  
+  
+  
+     
+     
+  
+
+  
+  
+
+  
+  
+
+  <meta name="description" content="Visit bartaco in The Wharf, Washington DC. ✨ Vibe A beachy-meets-urban sanctuary with rustic wood accents, soft lighting, and floor-to-ceiling windows that capture the breezy,...">
+  <link rel="canonical" href="https://bardc.com/bars/bartaco/">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Bar DC">
+  <meta property="og:title" content="bartaco">
+  <meta property="og:description" content="Visit bartaco in The Wharf, Washington DC. ✨ Vibe A beachy-meets-urban sanctuary with rustic wood accents, soft lighting, and floor-to-ceiling windows that capture the breezy,...">
+  <meta property="og:url" content="https://bardc.com/bars/bartaco/">
+  <meta property="og:type" content="business.business">
+  
+  
+  
+  
+      
+  
+  <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbartaco%2Flogo-1766150154156-347567101_246905251341998_2943334269521401459_n.jpg?alt=media&amp;token=cc307a98-8bb9-4807-8afc-f5552b11df5b">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="bartaco">
+  <meta name="twitter:description" content="Visit bartaco in The Wharf, Washington DC. ✨ Vibe A beachy-meets-urban sanctuary with rustic wood accents, soft lighting, and floor-to-ceiling windows that capture the breezy,...">
+  <meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbartaco%2Flogo-1766150154156-347567101_246905251341998_2943334269521401459_n.jpg?alt=media&amp;token=cc307a98-8bb9-4807-8afc-f5552b11df5b">
+
+    <!-- [NEW] Favicon Links -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <!-- End Favicon Links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css?v=1777149876163">
+  <link rel="stylesheet" href="/css/masonry.css">
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9L0NBTF5RQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9L0NBTF5RQ');
+</script>
+
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7540411251843957"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-branding">
+        <a href="/" class="branding-link">
+          <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
+          <span class="site-title">Washington D.C. Bars & Clubs</span>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <a href="/bars/">Bars</a>
+        <a href="/map/">Map</a>
+        
+
+        <div class="nav-dropdown">
+          <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
+          <div class="dropdown-menu">
+            
+              <a href="/neighborhoods/u-street/">U Street</a>
+            
+              <a href="/neighborhoods/dupont-circle/">Dupont Circle</a>
+            
+              <a href="/neighborhoods/downtown/">Downtown</a>
+            
+              <a href="/neighborhoods/adams-morgan/">Adams Morgan</a>
+            
+              <a href="/neighborhoods/navy-yard/">Navy Yard</a>
+            
+              <a href="/neighborhoods/georgetown/">Georgetown</a>
+            
+              <a href="/neighborhoods/the-wharf/">The Wharf</a>
+            
+              <a href="/neighborhoods/h-street-ne/">H Street NE</a>
+            
+            <div class="dropdown-divider"></div>
+            <a href="/neighborhoods/" class="view-all">View All →</a>
+          </div>
+        </div>
+
+
+        <a href="/events/">Events</a>
+        <a href="/happy-hour/">Happy Hour</a>
+      </nav>
+    </header>
+    <main>
+      
+        <h1 class="page-title">bartaco</h1>
+      
+      <!-- This line is critical. It injects the content from other files. -->
+      <!-- Leaflet Map Resources -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<style>
+   /* Custom Pin Styles for Venue Page */
+   .custom-pin-icon { background: transparent; border: none; }
+   .pin-wrapper {
+     width: 40px; height: 40px; border-radius: 50%; border: 3px solid #fff;
+     box-shadow: 0 4px 10px rgba(0,0,0,0.5); background-color: #fff;
+     overflow: hidden; position: relative; transition: transform 0.2s ease, z-index 0.2s;
+   }
+   .pin-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+   .pin-wrapper.no-logo {
+     background-color: var(--primary-color, #e53935);
+     display: flex; align-items: center; justify-content: center;
+   }
+   .pin-wrapper.no-logo::after { content: ''; width: 12px; height: 12px; background: #fff; border-radius: 50%; }
+   .leaflet-container { font-family: inherit; }
+   .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: #1e1e1e; color: #fff; border: 1px solid rgba(255,255,255,0.1); }
+   .leaflet-popup-content a { color: #fff; background: var(--primary-color, #e53935); padding: 2px 8px; border-radius: 4px; text-decoration: none; }
+</style>
+
+<article class="venue-profile">
+
+   <h1>bartaco</h1>
+  
+  <div class="venue-details">
+    <div style="display:flex; align-items:flex-start; gap:1.5rem; margin-bottom:1rem; flex-wrap:wrap;">
+      
+        <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbartaco%2Flogo-1766150154156-347567101_246905251341998_2943334269521401459_n.jpg?alt=media&amp;token=cc307a98-8bb9-4807-8afc-f5552b11df5b" alt="bartaco logo" style="max-height:250px; max-width:250px; border-radius:8px; border:1px solid #eee; object-fit:contain; flex-shrink:0;">
+      
+      <div style="flex:1; min-width: 250px;">
+        <div style="display:flex; gap:1.5rem; flex-wrap:wrap; justify-content: space-between;">
+            <div style="flex:1; min-width:200px;">
+                <p><strong>Category:</strong> 
+                  
+                  
+                    <a href="/categories/taco-bars/">Taco Bars</a>, 
+                  
+                    <a href="/categories/cocktail-bars/">Cocktail Bars</a>, 
+                  
+                    <a href="/categories/waterfront/">Waterfront</a>
+                  
+                </p>
+                
+                  <p><strong>Neighborhood:</strong> <a href="/neighborhoods/the-wharf/">The Wharf</a></p>
+                
+                <p><strong>Price:</strong> </p>
+                
+                
+                
+                
+                
+                
+                <p><strong>Address:</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=bartaco%20645%20Wharf%20St%20SW%20Suite%20835%2C%20Washington%2C%20DC%2020024%2C%20United%20States" target="_blank" rel="noopener noreferrer" style="text-decoration:underline; color:var(--accent-color);">645 Wharf St SW Suite 835, Washington, DC 20024, United States</a></p>
+
+                <div class="venue-actions-bar" style="margin-top:1rem;">
+                  
+                    <a href="https://bartaco.com" class="btn-website-action" target="_blank" rel="noopener noreferrer">
+                      <span>Website</span>
+                    </a>
+                  
+                  
+                  
+                  <div class="social-icons-inline">
+                    
+                      <a href="https://www.instagram.com/bartacolife/" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
+                    
+                    
+                    
+                  </div>
+                  
+                </div>
+            </div>
+            
+            <!-- Side Map -->
+            
+            <div style="width:220px; flex-shrink:0; margin-top: 0.5rem;">
+               <div id="venue-mini-map" style="width:100%; height:220px; border-radius:12px; border:1px solid rgba(255,255,255,0.1); box-shadow:0 4px 15px rgba(0,0,0,0.3); z-index:0; cursor: pointer;"></div>
+               <script>
+                 document.addEventListener('DOMContentLoaded', function() {
+                    var lat = 38.8769464;
+                    var lng = -77.0221615;
+                    var map = L.map('venue-mini-map', {
+                        center: [lat, lng],
+                        zoom: 16,
+                        zoomControl: false, 
+                        attributionControl: false,
+                        dragging: false,
+                        scrollWheelZoom: false,
+                        doubleClickZoom: false,
+                        boxZoom: false,
+                        keyboard: false
+                    });
+                     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                        subdomains: 'abcd',
+                        maxZoom: 20
+                     }).addTo(map);
+
+                    var iconHTML = `<div class="pin-wrapper"><img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbartaco%2Flogo-1766150154156-347567101_246905251341998_2943334269521401459_n.jpg?alt=media&amp;token=cc307a98-8bb9-4807-8afc-f5552b11df5b" onerror="this.style.display='none'; this.parentElement.classList.add('no-logo');"></div>`;
+                    var icon = L.divIcon({
+                        className: 'custom-pin-icon',
+                        html: iconHTML,
+                        iconSize: [40, 40],
+                        iconAnchor: [20, 20]
+                    });
+                    
+                    L.marker([lat, lng], {icon: icon}).addTo(map);
+                    
+                    // Click to open Google Maps
+                    document.getElementById('venue-mini-map').addEventListener('click', function() {
+                        window.open('https://www.google.com/maps/search/?api=1&amp;query=bartaco%20645%20Wharf%20St%20SW%20Suite%20835%2C%20Washington%2C%20DC%2020024%2C%20United%20States', '_blank');
+                    });
+                 });
+               </script>
+               <div style="text-align:center; margin-top:0.5rem;">
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=bartaco%20645%20Wharf%20St%20SW%20Suite%20835%2C%20Washington%2C%20DC%2020024%2C%20United%20States" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; color:#aaa; text-decoration:none;">View on Google Maps &rarr;</a>
+               </div>
+            </div>
+            
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- [MOVED] Google Rating Display (Moved to Reviews Section) -->
+  
+    <!-- Rating moved below -->
+  
+  <!-- End Google Rating Display -->
+
+  <div class="venue-description">
+    <h3>✨ Vibe</h3>
+A beachy-meets-urban sanctuary with rustic wood accents, soft lighting, and floor-to-ceiling windows that capture the breezy, vacation-style energy of the Potomac River.
+
+<h3>🍸 Best For</h3>
+Waterfront dates, girls' nights, lively weekend brunches, and happy hours with a coastal escape feel.
+
+<h3>🔥 Highlights</h3>
+<ul>
+  <li><strong>Stunning Waterfront Setup:</strong> Recently opened as part of The Wharf’s phase two, this location features a 40-seat bar overlooking the water and a year-round patio equipped with private cabanas for the ultimate riverfront experience.</li>
+  <li><strong>Fresh, Beach-Inspired Fare:</strong> The menu shines with flavorful Latin street food, ranging from signature duck birria and Baja fish tacos to indulgent desserts like tres leches and key lime pie jars.</li>
+  <li><strong>Handcrafted Cocktails:</strong> Every drink is elevated by fresh-pressed juices, with standouts like the Maui Express and the refreshing watermelon margarita providing a bright, boozy accompaniment to the meal.</li>
+</ul>
+
+<h3>ℹ️ Need to Know</h3>
+<ul>
+  <li>Located at 645 Wharf Street SW, the venue is conveniently situated near a parking deck for easy access to the waterfront's vibrant dining and walking paths.</li>
+  <li>The staff is highly regarded for their attentive service, so don't hesitate to ask your bartender for seasonal recommendations or "secret" menu favorites.</li>
+</ul>
+  </div>
+  
+
+  
+
+
+  <!-- [NEW] Events Section -->
+  <!-- [NEW] Events Section -->
+
+<!-- End Events Section -->
+
+<!-- [NEW] Recurring Events Section -->
+
+<!-- End Recurring Events Section -->
+
+    <!-- [NEW] Full Happy Hour Details Section -->
+  
+  <!-- End Happy Hour Details Section -->
+
+  <!-- [NEW] News Section -->
+  
+  <div class="news-section" style="margin-top:2rem; margin-bottom:2rem;">
+    <h3>📰 In the News</h3>
+    <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
+      
+        <a href="https://whatnow.com/washington-dc/restaurants/bartaco-preparing-to-greet-bethesda" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=whatnow.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>WhatNow</span>
+              <span style="margin-left:auto; text-transform:none;">Nov 24, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Bartaco Preparing to Greet Bethesda</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">bartaco is preparing to open a new location in North Bethesda’s Pike &amp; Rose development, taking over the space formerly occupied by Nada at 11886 Grand Park Avenue. The restaurant will offer its signature &#39;upscale street tacos&#39; alongside a coastal-inspired menu featuring rice bowls, poke, and roasted duck tacos.</p>
+           
+        </a>
+      
+        <a href="https://whatnow.com/washington-dc/restaurants/bartaco-readying-for-bethesda-debut" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=whatnow.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>WhatNow</span>
+              <span style="margin-left:auto; text-transform:none;">Mar 27, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Bartaco Readying for Bethesda Debut</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bartaco is opening a new location at the Pike &amp; Rose development in North Bethesda, taking over the space previously occupied by Nada. This expansion marks the fifth DMV-area outpost for the chain, joining existing locations at The Wharf and Mount Vernon in Washington, D.C.</p>
+           
+        </a>
+      
+        <a href="https://arlnow.com/2025/03/25/bartaco-closes-after-four-years-at-the-ballston-quarter" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=arlnow.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>ARLnow</span>
+              <span style="margin-left:auto; text-transform:none;">Mar 25, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Bartaco closes after four years at Ballston Quarter</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">bartaco has permanently closed its location at Ballston Quarter in Arlington after four years of operation. While this specific outpost is shuttered, the restaurant&#39;s other nearby locations in Washington D.C., Reston, and the Mosaic District remain open.</p>
+           
+        </a>
+      
+        <a href="https://dc.eater.com/2023/1/25/23571612/new-dc-restaurant-openings-2023" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Eater DC</span>
+              <span style="margin-left:auto; text-transform:none;">Jan 26, 2023</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Bartaco Adds a Waterfront Location at the Wharf — And More Openings</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">bartaco has opened a waterfront location at The Wharf in Southwest D.C., featuring a 40-seat bar overlooking the Potomac River and a year-round patio with private cabanas. The menu highlights beach-inspired Latin street food such as duck birria and Baja fish tacos, complemented by fresh-squeezed cocktails and local craft beers.</p>
+           
+        </a>
+      
+        <a href="https://popville.com/2022/10/about-last-night-wharf-fireworks" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=popville.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>PoPville</span>
+              <span style="margin-left:auto; text-transform:none;">Oct 13, 2022</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">About Last Night – Five Year Wharf Anniversary (Check out all the restaurants coming soon)</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">bartaco at The Wharf offers a curated menu featuring unique tacos, rice bowls, and margaritas. Located at 645 Wharf Street, this venue represents the brand&#39;s fourth location in the DMV region.</p>
+           
+        </a>
+      
+    </div>
+  </div>
+  
+  <!-- End News Section -->
+  
+
+  <!-- [NEW] Reviews Section (Server-Side) -->
+  
+  <div id="google-reviews-section" class="reviews-section">
+    
+    
+      
+    
+
+    <!-- [MOVED] Google Rating Display -->
+    
+      <div class="google-rating" style="margin-bottom: 2rem;">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJQzCT7V-3t4kRQh5bWOFwxdM" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: block;">
+          <div class="rating-header">
+            <span class="rating-stars" style="--rating: 4.1;">★★★★★</span>
+            <span class="rating-value">4.1</span>
+            <span class="rating-count">(587 reviews)</span>
+            <span class="btn-read-reviews" style="margin-left: auto; margin-top: 0;">View on Google</span>
+          </div>
+        </a>
+      </div>
+    
+    <!-- End Google Rating Display -->
+
+    <h3>Recent Reviews from Google</h3>
+    <div class="reviews-grid">
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJQzCT7V-3t4kRQh5bWOFwxdM" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocI8-cGnk-ACcE8Ph6qQVnupBt5K4Nbcl2QK-4lUdhrxj2u1Xg=s128-c0x00000000-cc-rp-mo-ba2" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a week ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            I visited bartaco at The Wharf during DC Cocktail Week and let me tell you, it felt like an invite-only secret hideaway by the water..
+
+From the moment I stepped in, I was swept up in their...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJQzCT7V-3t4kRQh5bWOFwxdM" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjUFExWTp4d2s9pZuwnOxQkbZFtBEEwzwIQR5wMwOrrSnhvSMf_I=s128-c0x00000000-cc-rp-mo-ba6" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">3 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Went with a colleague during a business trip and found this delightful little spot for a quick lunch. We enjoyed very fresh tacos and refreshing drinks—perfect for a scorching 38-degree day. The...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJQzCT7V-3t4kRQh5bWOFwxdM" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjVkaiv-54-OHqh26NDWjLKpMkb0lCsjBeP1WAZj2PN6j0xUfVYMlg=s128-c0x00000000-cc-rp-mo-ba3" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">3 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            This would be my third time coming and definitely not my last. It has become one of my favorite brunch spots. The vibe is always welcoming, the food always great, and the service spot on. I was...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJQzCT7V-3t4kRQh5bWOFwxdM" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjWdVl5Ou5ni1DZBW5j3ijuDMwYAyagt37HQLcS2zBtvNCk20bQU=s128-c0x00000000-cc-rp-mo-ba2" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">5 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            This is my second time visiting Bartaco. Each visit, I sat at the bar and the bartenders are extremely nice and attentive. We had a wonderful time and the food was delicious. Drinks are name fresh...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJQzCT7V-3t4kRQh5bWOFwxdM" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXTBD1kCTgmd5Mc90KKbAljKiRyRYtbVbR5AQh8jpOEH5pGObp9=s128-c0x00000000-cc-rp-mo-ba4" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">5 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            People usually get 3 or 4 tacos, they’re smaller. For instance, the fish taco has one piece of fish. The flavors are good. My sons loved the pork belly. The tres leches and churros desserts were...
+          </p>
+      </a>
+      
+    </div>
+    <div class="reviews-footer">
+      <small>Reviews provided by Google</small>
+    </div>
+  </div>
+  
+
+  <!-- [NEW] Nearby Bars Section -->
+  
+  
+  <div class="nearby-section" style="margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+    <h3 style="margin-bottom: 1.5rem;">📍 Nearby Spots (Walking Distance)</h3>
+    <div class="venue-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
+      
+        <a href="/bars/gordon-ramsay-fish-chips-the-wharf-d-c/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fgordon-ramsay-fish-chips-the-wharf-d-c%2Flogo-1766494963519-173896024_857240215133462_6572115662230124819_n.jpg?alt=media&amp;token=00f68422-f7d6-41bf-be17-9321a2c3621e" alt="Gordon Ramsay Fish &amp; Chips - The Wharf D.C." style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Gordon Ramsay Fish &amp; Chips - The Wharf D.C.</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">20m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/bar-pendry/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbar-pendry%2Flogo-1766149228744-297475766_1691272501271465_819921552137302293_n.jpg?alt=media&amp;token=482fe80a-d0cb-4e46-bce1-a1f73946d976" alt="Bar Pendry" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Bar Pendry</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">36m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/philippe-chow-dc/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fphilippe-chow-dc%2Flogo-1767024759175-271760074_902548937295294_8842943750024369240_n.jpg?alt=media&amp;token=0accbb5b-7b75-4b58-a02f-6a93d56a883e" alt="Philippe Chow DC" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Philippe Chow DC</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">42m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/moonraker/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fmoonraker%2Flogo-1767020154755-66778129_727991614306804_1467799528605220864_n.jpg?alt=media&amp;token=d2a41839-af99-429a-a4d3-29e2e9b23c9a" alt="Moonraker" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Moonraker</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">44m away</p>
+          </div>
+        </a>
+      
+    </div>
+  </div>
+  
+
+  <a href="/" class="btn-back">← Back to Home</a>
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "bartaco",
+  "image": "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbartaco%2Flogo-1766150154156-347567101_246905251341998_2943334269521401459_n.jpg?alt=media&token=cc307a98-8bb9-4807-8afc-f5552b11df5b",
+  "address": "645 Wharf St SW Suite 835, Washington, DC 20024, United States",
+  
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.1,
+    "reviewCount": 587
+  },
+  
+  
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": 5,
+      "bestRating": 5
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Jasmin J"
+    },
+    "reviewBody": "I visited bartaco at The Wharf during DC Cocktail Week and let me tell you, it felt like an invite-only secret hideaway by the water..\n\nFrom the moment I stepped in, I was swept up in their beachy-meets-urban energy: rustic wood, breezy windows, soft lighting, and the hum of people chatting and laughing\nThe food... WOW.\n\nEvery bite delivered: the crispy chicken flautas were light, fresh, with a sliver of spice that teased but didn’t overpower. Everything felt freshly made, thoughtfully seasoned, and designed for devouring. The drinks didn't disappoint either. I got the maui express and it was AMAZING! Bright, balanced, and the right amount of boozy... The fresh pressed juices made this an extraordinary happy hour experience.\n\nBut what really elevated the night was the staff. Big shout-out to Brooke behind the bar; she made me a cocktail that felt like summer even in December. Soran and Javonte (the managers), who checked me in with a warmth that made the whole place feel like a real bartaco team member. They were kind, attentive, and genuinely into making sure everyone had a great time.\n\nThe kind of service that makes you want to come back, even if you live across town.\nLong story short: if you want a waterfront-chic escape with cocktails that hit just right, bartaco at The Wharf is the place..\n\nHighly recommended for girls’ nights, date nights, or just chill a night out."
+  },
+  
+  
+  
+  "url": "https://bardc.com/venues/bartaco/"
+}
+</script>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="/" aria-label="Back to Home">
+            <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="footer-logo">
+          </a>
+        </div>
+        
+        <div class="footer-links">
+
+          <div class="social-icons">
+            <a href="https://x.com/bardc_" target="_blank" rel="noopener noreferrer" class="social-icon twitter" aria-label="X (formerly Twitter)"></a>
+            <a href="https://www.facebook.com/bardc" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook"></a>
+          </div>
+          <a href="mailto:info@bardc.com" class="footer-contact">info@bardc.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Bar DC. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+  <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="img01" onclick="event.stopPropagation()">
+  </div>
+  <script>
+    // Global Image Modal Logic
+    window.openImageModal = function(src) {
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("img01");
+        if(modal && modalImg) {
+            modal.style.display = "flex";
+            modalImg.src = src;
+            document.body.style.overflow = "hidden"; 
+        }
+    }
+    
+    window.closeImageModal = function() {
+        var modal = document.getElementById("imageModal");
+        if(modal) {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto"; 
+        }
+    }
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            window.closeImageModal();
+        }
+    });
+  </script>
+  <style>
+    /* Modal Styles (Global) */
+    .image-modal {
+      display: none; 
+      position: fixed; 
+      z-index: 9999; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgba(0,0,0,0.95); 
+      align-items: center;
+      justify-content: center;
+      cursor: zoom-out;
+    }
+    
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 95%;
+      max-height: 95vh;
+      border-radius: 4px;
+      object-fit: contain;
+      cursor: default;
+      animation: zoom 0.3s;
+    }
+    
+    .close-modal {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 50px;
+      font-weight: bold;
+      transition: 0.3s;
+      cursor: pointer;
+      z-index: 10000;
+      line-height: 1;
+    }
+    
+    @keyframes zoom {
+      from {transform:scale(0.8); opacity: 0;}
+      to {transform:scale(1); opacity: 1;}
+    }
+  </style>
+
+</body>
+</html>

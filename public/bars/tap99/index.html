@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tap99 | Bar DC</title>
+
+  
+  
+  
+  
+  
+     
+     
+  
+
+  
+  
+
+  
+  
+
+  <meta name="description" content="Visit Tap99 in Navy Yard, Washington DC. ✨ Vibe High-energy and interactive, this tech-forward taphouse offers a vibrant, social atmosphere directly across from the stadium, perfect...">
+  <link rel="canonical" href="https://bardc.com/bars/tap99/">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Bar DC">
+  <meta property="og:title" content="Tap99">
+  <meta property="og:description" content="Visit Tap99 in Navy Yard, Washington DC. ✨ Vibe High-energy and interactive, this tech-forward taphouse offers a vibrant, social atmosphere directly across from the stadium, perfect...">
+  <meta property="og:url" content="https://bardc.com/bars/tap99/">
+  <meta property="og:type" content="business.business">
+  
+  
+  
+  
+      
+  
+  <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Ftap99%2Flogo-1767142327816-461435318_807557301584944_1497169824181842200_n.jpg?alt=media&amp;token=d85eab53-df33-4e48-9b50-05600b6b186e">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tap99">
+  <meta name="twitter:description" content="Visit Tap99 in Navy Yard, Washington DC. ✨ Vibe High-energy and interactive, this tech-forward taphouse offers a vibrant, social atmosphere directly across from the stadium, perfect...">
+  <meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Ftap99%2Flogo-1767142327816-461435318_807557301584944_1497169824181842200_n.jpg?alt=media&amp;token=d85eab53-df33-4e48-9b50-05600b6b186e">
+
+    <!-- [NEW] Favicon Links -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <!-- End Favicon Links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css?v=1777149876163">
+  <link rel="stylesheet" href="/css/masonry.css">
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9L0NBTF5RQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9L0NBTF5RQ');
+</script>
+
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7540411251843957"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-branding">
+        <a href="/" class="branding-link">
+          <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
+          <span class="site-title">Washington D.C. Bars & Clubs</span>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <a href="/bars/">Bars</a>
+        <a href="/map/">Map</a>
+        
+
+        <div class="nav-dropdown">
+          <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
+          <div class="dropdown-menu">
+            
+              <a href="/neighborhoods/u-street/">U Street</a>
+            
+              <a href="/neighborhoods/dupont-circle/">Dupont Circle</a>
+            
+              <a href="/neighborhoods/downtown/">Downtown</a>
+            
+              <a href="/neighborhoods/adams-morgan/">Adams Morgan</a>
+            
+              <a href="/neighborhoods/navy-yard/">Navy Yard</a>
+            
+              <a href="/neighborhoods/georgetown/">Georgetown</a>
+            
+              <a href="/neighborhoods/the-wharf/">The Wharf</a>
+            
+              <a href="/neighborhoods/h-street-ne/">H Street NE</a>
+            
+            <div class="dropdown-divider"></div>
+            <a href="/neighborhoods/" class="view-all">View All →</a>
+          </div>
+        </div>
+
+
+        <a href="/events/">Events</a>
+        <a href="/happy-hour/">Happy Hour</a>
+      </nav>
+    </header>
+    <main>
+      
+        <h1 class="page-title">Tap99</h1>
+      
+      <!-- This line is critical. It injects the content from other files. -->
+      <!-- Leaflet Map Resources -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<style>
+   /* Custom Pin Styles for Venue Page */
+   .custom-pin-icon { background: transparent; border: none; }
+   .pin-wrapper {
+     width: 40px; height: 40px; border-radius: 50%; border: 3px solid #fff;
+     box-shadow: 0 4px 10px rgba(0,0,0,0.5); background-color: #fff;
+     overflow: hidden; position: relative; transition: transform 0.2s ease, z-index 0.2s;
+   }
+   .pin-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+   .pin-wrapper.no-logo {
+     background-color: var(--primary-color, #e53935);
+     display: flex; align-items: center; justify-content: center;
+   }
+   .pin-wrapper.no-logo::after { content: ''; width: 12px; height: 12px; background: #fff; border-radius: 50%; }
+   .leaflet-container { font-family: inherit; }
+   .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: #1e1e1e; color: #fff; border: 1px solid rgba(255,255,255,0.1); }
+   .leaflet-popup-content a { color: #fff; background: var(--primary-color, #e53935); padding: 2px 8px; border-radius: 4px; text-decoration: none; }
+</style>
+
+<article class="venue-profile">
+
+   <h1>Tap99</h1>
+  
+  <div class="venue-details">
+    <div style="display:flex; align-items:flex-start; gap:1.5rem; margin-bottom:1rem; flex-wrap:wrap;">
+      
+        <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Ftap99%2Flogo-1767142327816-461435318_807557301584944_1497169824181842200_n.jpg?alt=media&amp;token=d85eab53-df33-4e48-9b50-05600b6b186e" alt="Tap99 logo" style="max-height:250px; max-width:250px; border-radius:8px; border:1px solid #eee; object-fit:contain; flex-shrink:0;">
+      
+      <div style="flex:1; min-width: 250px;">
+        <div style="display:flex; gap:1.5rem; flex-wrap:wrap; justify-content: space-between;">
+            <div style="flex:1; min-width:200px;">
+                <p><strong>Category:</strong> 
+                  
+                  
+                    <a href="/categories/sports-bars/">Sports Bars</a>, 
+                  
+                    <a href="/categories/taproom/">Taproom</a>, 
+                  
+                    <a href="/categories/beer-gardens/">Beer Gardens</a>
+                  
+                </p>
+                
+                  <p><strong>Neighborhood:</strong> <a href="/neighborhoods/navy-yard/">Navy Yard</a></p>
+                
+                <p><strong>Price:</strong> </p>
+                
+                
+                
+                
+                
+                
+                <p><strong>Address:</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=Tap99%201250%20Half%20St%20SE%2C%20Washington%2C%20DC%2020003%2C%20United%20States" target="_blank" rel="noopener noreferrer" style="text-decoration:underline; color:var(--accent-color);">1250 Half St SE, Washington, DC 20003, United States</a></p>
+
+                <div class="venue-actions-bar" style="margin-top:1rem;">
+                  
+                    <a href="https://tap99dc.com" class="btn-website-action" target="_blank" rel="noopener noreferrer">
+                      <span>Website</span>
+                    </a>
+                  
+                  
+                  
+                  <div class="social-icons-inline">
+                    
+                      <a href="https://www.instagram.com/tap99dc" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
+                    
+                    
+                    
+                  </div>
+                  
+                </div>
+            </div>
+            
+            <!-- Side Map -->
+            
+            <div style="width:220px; flex-shrink:0; margin-top: 0.5rem;">
+               <div id="venue-mini-map" style="width:100%; height:220px; border-radius:12px; border:1px solid rgba(255,255,255,0.1); box-shadow:0 4px 15px rgba(0,0,0,0.3); z-index:0; cursor: pointer;"></div>
+               <script>
+                 document.addEventListener('DOMContentLoaded', function() {
+                    var lat = 38.874818;
+                    var lng = -77.00704329999999;
+                    var map = L.map('venue-mini-map', {
+                        center: [lat, lng],
+                        zoom: 16,
+                        zoomControl: false, 
+                        attributionControl: false,
+                        dragging: false,
+                        scrollWheelZoom: false,
+                        doubleClickZoom: false,
+                        boxZoom: false,
+                        keyboard: false
+                    });
+                     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                        subdomains: 'abcd',
+                        maxZoom: 20
+                     }).addTo(map);
+
+                    var iconHTML = `<div class="pin-wrapper"><img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Ftap99%2Flogo-1767142327816-461435318_807557301584944_1497169824181842200_n.jpg?alt=media&amp;token=d85eab53-df33-4e48-9b50-05600b6b186e" onerror="this.style.display='none'; this.parentElement.classList.add('no-logo');"></div>`;
+                    var icon = L.divIcon({
+                        className: 'custom-pin-icon',
+                        html: iconHTML,
+                        iconSize: [40, 40],
+                        iconAnchor: [20, 20]
+                    });
+                    
+                    L.marker([lat, lng], {icon: icon}).addTo(map);
+                    
+                    // Click to open Google Maps
+                    document.getElementById('venue-mini-map').addEventListener('click', function() {
+                        window.open('https://www.google.com/maps/search/?api=1&amp;query=Tap99%201250%20Half%20St%20SE%2C%20Washington%2C%20DC%2020003%2C%20United%20States', '_blank');
+                    });
+                 });
+               </script>
+               <div style="text-align:center; margin-top:0.5rem;">
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=Tap99%201250%20Half%20St%20SE%2C%20Washington%2C%20DC%2020003%2C%20United%20States" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; color:#aaa; text-decoration:none;">View on Google Maps &rarr;</a>
+               </div>
+            </div>
+            
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- [MOVED] Google Rating Display (Moved to Reviews Section) -->
+  
+    <!-- Rating moved below -->
+  
+  <!-- End Google Rating Display -->
+
+  <div class="venue-description">
+    <h3>✨ Vibe</h3>
+<p>High-energy and interactive, this tech-forward taphouse offers a vibrant, social atmosphere directly across from the stadium, perfect for sports fans and craft beverage enthusiasts alike.</p>
+
+<h3>🍸 Best For</h3>
+<p>Pre-game drinks, sampling rare craft beers, social group outings, casual date nights, holiday pop-up experiences</p>
+
+<h3>🔥 Highlights</h3>
+<ul>
+  <li><strong>The Self-Pour "Drink Wall":</strong> Featuring 99 rotating taps and a unique RFID card system, you can explore a massive selection of local craft beers, wines, and pre-mixed cocktails while paying only by the ounce.</li>
+  <li><strong>Prime Stadium Proximity:</strong> Located directly across from the Nationals Park main gates, it’s the ultimate destination for game-day crowds looking for a lively indoor-outdoor environment with plenty of TVs.</li>
+  <li><strong>Artisan Brick-Oven Eats:</strong> Complement your custom pours with a menu of neo-Neapolitan pizzas, crispy chicken sandwiches, and fan-favorite shareables like their signature fried pickles.</li>
+</ul>
+
+<h3>ℹ️ Need to Know</h3>
+<ul>
+  <li>Keep an eye out for immersive seasonal transformations, such as the festive "Whoville Hideaway" holiday pop-up featuring immersive décor and themed cocktails.</li>
+  <li>The digital card system allows you to track your running tab in real-time, making it easy to sample a wide variety of drinks at your own pace.</li>
+</ul>
+  </div>
+  
+
+  
+
+
+  <!-- [NEW] Events Section -->
+  <!-- [NEW] Events Section -->
+
+<!-- End Events Section -->
+
+<!-- [NEW] Recurring Events Section -->
+
+<!-- End Recurring Events Section -->
+
+    <!-- [NEW] Full Happy Hour Details Section -->
+  
+  <!-- End Happy Hour Details Section -->
+
+  <!-- [NEW] News Section -->
+  
+  <div class="news-section" style="margin-top:2rem; margin-bottom:2rem;">
+    <h3>📰 In the News</h3>
+    <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
+      
+        <a href="https://brewbound.com/news/introducing-the-whoville-hideaway-at-tap99-pop-up-bar" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=brewbound.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Brewbound</span>
+              <span style="margin-left:auto; text-transform:none;">Nov 27, 2023</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Introducing the Whoville Hideaway at Tap99 Pop-Up Bar</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Tap99, a 100% self-pour taphouse in D.C.’s Navy Yard district, offers an interactive experience with 99 taps and an RFID card system that allows guests to pay by the ounce. Located directly across from Nationals Park, the venue features seasonal transformations like the Whoville Hideaway, complete with immersive holiday décor, themed cocktails, and craft beers.</p>
+           
+        </a>
+      
+        <a href="https://washingtonian.com/2021/08/19/self-pour-beer-bar-tap99-in-navy-yard-was-conceptualized-in-only-48-hours" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Washingtonian</span>
+              <span style="margin-left:auto; text-transform:none;">Aug 19, 2021</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Self-Pour Beer Bar Tap99 in Navy Yard Was Conceptualized in Only 48 Hours</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Tap99 is a 100-percent self-pour taphouse in DC&#39;s Navy Yard featuring 99 rotating taps for beer, wine, and pre-batched cocktails. Guests use a digital card system to pay by the ounce and can pair their drinks with brick oven pizzas and shareable plates in a space located directly across from Nationals Park.</p>
+           
+        </a>
+      
+        <a href="https://popville.com/2021/08/tap99-dc-navy-yard" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=popville.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>PoPville</span>
+              <span style="margin-left:auto; text-transform:none;">Aug 9, 2021</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Tap99 Opens in Navy Yard</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Tap99 is a self-pour taphouse and restaurant located in Washington D.C.&#39;s Navy Yard neighborhood, situated directly across from the Nationals Park main gates. The venue features 99 self-pour taps offering a rotating selection of beer, wine, ciders, and cocktails, complemented by a food menu centered on artisan brick-oven pizzas and shareable plates.</p>
+           
+        </a>
+      
+        <a href="https://dc.eater.com/2021/8/9/22595719/tap99-self-pour-beer-bar-opening-navy-yard-nationals-park-pregame" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Eater DC</span>
+              <span style="margin-left:auto; text-transform:none;">Aug 9, 2021</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">A New Self-Pour Tap House With 99 Draft Lines Opens Right By Nationals Park</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Tap99 is a self-pour taphouse located in Washington D.C.&#39;s Navy Yard featuring 99 draft lines of local craft beer, wine, and cocktails. The venue serves neo-Neapolitan pizzas fired in a brick oven alongside shareable plates like wings and beer-battered cauliflower. Its communal seating and numerous televisions create a social environment directly across from Nationals Park.</p>
+           
+        </a>
+      
+        <a href="https://craftbrewingbusiness.com/featured/from-texas-to-dc-self-pour-beer-destinations-are-popping-up-during-the-pandemic-promoting-safety-are-they-safer" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=craftbrewingbusiness.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Craft Brewing Business</span>
+              <span style="margin-left:auto; text-transform:none;">Feb 8, 2021</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">From Texas to DC, self-pour beer destinations continue to pop up during the pandemic</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Tap99 is Washington, D.C.’s first fully self-pour taphouse, located directly across from the main gates of Nationals Park. The 2,800-square-foot venue features 99 taps offering beer, wine, ciders, and pre-mixed cocktails via an RFID card system that allows patrons to pour and pay by the ounce.</p>
+           
+        </a>
+      
+    </div>
+  </div>
+  
+  <!-- End News Section -->
+  
+
+  <!-- [NEW] Reviews Section (Server-Side) -->
+  
+  <div id="google-reviews-section" class="reviews-section">
+    
+    
+      
+    
+
+    <!-- [MOVED] Google Rating Display -->
+    
+      <div class="google-rating" style="margin-bottom: 2rem;">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJL_VHgHC5t4kRJvTGzuuKlz0" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: block;">
+          <div class="rating-header">
+            <span class="rating-stars" style="--rating: 4.6;">★★★★★</span>
+            <span class="rating-value">4.6</span>
+            <span class="rating-count">(481 reviews)</span>
+            <span class="btn-read-reviews" style="margin-left: auto; margin-top: 0;">View on Google</span>
+          </div>
+        </a>
+      </div>
+    
+    <!-- End Google Rating Display -->
+
+    <h3>Recent Reviews from Google</h3>
+    <div class="reviews-grid">
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJL_VHgHC5t4kRJvTGzuuKlz0" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjWTSRr5Ao3CmzNVcIEDoSA0EYiBtaWynLAWWoZopQLhX9Dmz8Xy=s128-c0x00000000-cc-rp-mo-ba4" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">4 weeks ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★☆☆☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            If you want a place with a good beer selection and fun vibes, then this is the spot.  If you’re hungry, then maybe try another place first then come here for drinks….
+
+We ordered the Mac and cheese...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJL_VHgHC5t4kRJvTGzuuKlz0" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXB7Uc-ywat5tcYT89qP0hh9x6zRDG83cuK331kW3NcXxH1gYzRuA=s128-c0x00000000-cc-rp-mo-ba5" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">6 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            My boyfriend and I stopped here for a bite before a Nats game while we were in DC for Warped Tour 2025. The game got rained out, but the food was delicious and lots of options on tap!
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJL_VHgHC5t4kRJvTGzuuKlz0" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjWWIzlPGesOD2aFtUI57K1df_D9RZcKJcq0PSWUIlgC8wA1TbYBNw=s128-c0x00000000-cc-rp-mo-ba5" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">11 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            First and foremost, be prepared to spend money if you come here. My bill was nearly $90 for just me. But, I had the best fried pickles I&#39;ve ever had, a delicious chicken cordon blue grilled cheese...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJL_VHgHC5t4kRJvTGzuuKlz0" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocIn1vSO71XOqeUVDmodIKOUAfi7Cw4Of1Q4mVPIBShMJ7z3kg=s128-c0x00000000-cc-rp-mo" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a month ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            My best friend and I stumbled upon Tap 99 and loved what we saw regarding the drink wall. The staff was great in explaining how it worked, gave excellent recommendations, and the food was off the...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJL_VHgHC5t4kRJvTGzuuKlz0" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjVdLoK_X4K7Q9_WZDRyXQhXubIoKsCmTyMBvSegR-STVn3C-A6L=s128-c0x00000000-cc-rp-mo" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">4 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            A very unique sports bar to have a few steps away from the stadium. There is a decent amount of indoor and outdoor seating. We got there a couple hours before the game and it was pretty empty but all...
+          </p>
+      </a>
+      
+    </div>
+    <div class="reviews-footer">
+      <small>Reviews provided by Google</small>
+    </div>
+  </div>
+  
+
+  <!-- [NEW] Nearby Bars Section -->
+  
+  
+  <div class="nearby-section" style="margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+    <h3 style="margin-bottom: 1.5rem;">📍 Nearby Spots (Walking Distance)</h3>
+    <div class="venue-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
+      
+        <a href="/bars/silver-social/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fsilver-social%2Flogo-1767111091391-311961968_1245557729339090_5967818528073945055_n.jpg?alt=media&amp;token=7ac854bf-1d3a-45cd-84a7-01f224a52b6a" alt="Silver Social" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Silver Social</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">17m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/chicken-whiskey/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fchicken-whiskey%2Flogo-1766322958512-357259092_591969086396106_2730524850294336429_n.jpg?alt=media&amp;token=d42622fe-cf0a-4194-a030-e5f7adbbe3d6" alt="Chicken + Whiskey" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Chicken + Whiskey</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">39m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/gatsby/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fgatsby%2Flogo-1766494540661-405508599_735900185060485_916387103423152692_n.jpg?alt=media&amp;token=acaaee8e-6257-45bf-9741-e73669c09489" alt="GATSBY" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">GATSBY</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">57m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/royal-sands-social-club/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Froyal-sands-social-club%2Flogo-1767109216230-275915054_678960683448819_2125448430975971597_n.jpg?alt=media&amp;token=748270ad-c52c-4060-8a00-ce678ce59a90" alt="Royal Sands Social Club" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Royal Sands Social Club</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">75m away</p>
+          </div>
+        </a>
+      
+    </div>
+  </div>
+  
+
+  <a href="/" class="btn-back">← Back to Home</a>
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "Tap99",
+  "image": "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Ftap99%2Flogo-1767142327816-461435318_807557301584944_1497169824181842200_n.jpg?alt=media&token=d85eab53-df33-4e48-9b50-05600b6b186e",
+  "address": "1250 Half St SE, Washington, DC 20003, United States",
+  
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.6,
+    "reviewCount": 481
+  },
+  
+  
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": 2,
+      "bestRating": 5
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Becky Krese"
+    },
+    "reviewBody": "If you want a place with a good beer selection and fun vibes, then this is the spot.  If you’re hungry, then maybe try another place first then come here for drinks….\n\nWe ordered the Mac and cheese bites but they did not have any Mac.. it was just fried cut up mozzarella sticks.  Which is great.. if that’s what it was called on the menu.\n\nWe also ordered a fried chicken sandwich and a pub burger.   The chicken sandwich was fine.  The pub burger was … meh.  The pretzel bun they brought out was over toasted and looked like it was pretty dry before that.  Like it was HARD.\n\nNo one came to check on us after the food arrived so I had to take my plate to the check out desk to address the issue.  Cait took care of it right away; I asked for just a new bun - I don’t mind swapping it out myself.\n\nBut in the end the burger was still just meh.   Almost forgot to mention the fries ..  not great. They were salted well but the fries themselves were almost chewy.\n\nWhen we checked out, Cait said apologized and mentioned some staffing issues.   She offered to get in touch with some sort of compensation but didn’t offer to waive our one beer.  We left paying full price for everything.\n\nAgain, fine spot if you just wanted to hang out and drink beer."
+  },
+  
+  
+  
+  "url": "https://bardc.com/venues/tap99/"
+}
+</script>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="/" aria-label="Back to Home">
+            <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="footer-logo">
+          </a>
+        </div>
+        
+        <div class="footer-links">
+
+          <div class="social-icons">
+            <a href="https://x.com/bardc_" target="_blank" rel="noopener noreferrer" class="social-icon twitter" aria-label="X (formerly Twitter)"></a>
+            <a href="https://www.facebook.com/bardc" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook"></a>
+          </div>
+          <a href="mailto:info@bardc.com" class="footer-contact">info@bardc.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Bar DC. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+  <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="img01" onclick="event.stopPropagation()">
+  </div>
+  <script>
+    // Global Image Modal Logic
+    window.openImageModal = function(src) {
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("img01");
+        if(modal && modalImg) {
+            modal.style.display = "flex";
+            modalImg.src = src;
+            document.body.style.overflow = "hidden"; 
+        }
+    }
+    
+    window.closeImageModal = function() {
+        var modal = document.getElementById("imageModal");
+        if(modal) {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto"; 
+        }
+    }
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            window.closeImageModal();
+        }
+    });
+  </script>
+  <style>
+    /* Modal Styles (Global) */
+    .image-modal {
+      display: none; 
+      position: fixed; 
+      z-index: 9999; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgba(0,0,0,0.95); 
+      align-items: center;
+      justify-content: center;
+      cursor: zoom-out;
+    }
+    
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 95%;
+      max-height: 95vh;
+      border-radius: 4px;
+      object-fit: contain;
+      cursor: default;
+      animation: zoom 0.3s;
+    }
+    
+    .close-modal {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 50px;
+      font-weight: bold;
+      transition: 0.3s;
+      cursor: pointer;
+      z-index: 10000;
+      line-height: 1;
+    }
+    
+    @keyframes zoom {
+      from {transform:scale(0.8); opacity: 0;}
+      to {transform:scale(1); opacity: 1;}
+    }
+  </style>
+
+</body>
+</html>

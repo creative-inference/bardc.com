@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Vie | Bar DC</title>
+
+  
+  
+  
+  
+  
+     
+     
+  
+
+  
+  
+
+  
+  
+
+  <meta name="description" content="Visit La Vie in The Wharf, Washington DC. ✨ Vibe A sprawling 10,000-square-foot luxury oasis where Mediterranean elegance meets a high-energy waterfront lounge atmosphere. 🍸 Best...">
+  <link rel="canonical" href="https://bardc.com/bars/la-vie/">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Bar DC">
+  <meta property="og:title" content="La Vie">
+  <meta property="og:description" content="Visit La Vie in The Wharf, Washington DC. ✨ Vibe A sprawling 10,000-square-foot luxury oasis where Mediterranean elegance meets a high-energy waterfront lounge atmosphere. 🍸 Best...">
+  <meta property="og:url" content="https://bardc.com/bars/la-vie/">
+  <meta property="og:type" content="business.business">
+  
+  
+  
+  
+      
+  
+  <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fla-vie%2Flogo-1766857758239-20184924_464073877292040_702404745498722304_a.jpg?alt=media&amp;token=a62efecc-f448-4b7e-b706-51fa9054acd7">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="La Vie">
+  <meta name="twitter:description" content="Visit La Vie in The Wharf, Washington DC. ✨ Vibe A sprawling 10,000-square-foot luxury oasis where Mediterranean elegance meets a high-energy waterfront lounge atmosphere. 🍸 Best...">
+  <meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fla-vie%2Flogo-1766857758239-20184924_464073877292040_702404745498722304_a.jpg?alt=media&amp;token=a62efecc-f448-4b7e-b706-51fa9054acd7">
+
+    <!-- [NEW] Favicon Links -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <!-- End Favicon Links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css?v=1777149876163">
+  <link rel="stylesheet" href="/css/masonry.css">
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9L0NBTF5RQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9L0NBTF5RQ');
+</script>
+
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7540411251843957"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-branding">
+        <a href="/" class="branding-link">
+          <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
+          <span class="site-title">Washington D.C. Bars & Clubs</span>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <a href="/bars/">Bars</a>
+        <a href="/map/">Map</a>
+        
+
+        <div class="nav-dropdown">
+          <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
+          <div class="dropdown-menu">
+            
+              <a href="/neighborhoods/u-street/">U Street</a>
+            
+              <a href="/neighborhoods/dupont-circle/">Dupont Circle</a>
+            
+              <a href="/neighborhoods/downtown/">Downtown</a>
+            
+              <a href="/neighborhoods/adams-morgan/">Adams Morgan</a>
+            
+              <a href="/neighborhoods/navy-yard/">Navy Yard</a>
+            
+              <a href="/neighborhoods/georgetown/">Georgetown</a>
+            
+              <a href="/neighborhoods/the-wharf/">The Wharf</a>
+            
+              <a href="/neighborhoods/h-street-ne/">H Street NE</a>
+            
+            <div class="dropdown-divider"></div>
+            <a href="/neighborhoods/" class="view-all">View All →</a>
+          </div>
+        </div>
+
+
+        <a href="/events/">Events</a>
+        <a href="/happy-hour/">Happy Hour</a>
+      </nav>
+    </header>
+    <main>
+      
+        <h1 class="page-title">La Vie</h1>
+      
+      <!-- This line is critical. It injects the content from other files. -->
+      <!-- Leaflet Map Resources -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<style>
+   /* Custom Pin Styles for Venue Page */
+   .custom-pin-icon { background: transparent; border: none; }
+   .pin-wrapper {
+     width: 40px; height: 40px; border-radius: 50%; border: 3px solid #fff;
+     box-shadow: 0 4px 10px rgba(0,0,0,0.5); background-color: #fff;
+     overflow: hidden; position: relative; transition: transform 0.2s ease, z-index 0.2s;
+   }
+   .pin-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+   .pin-wrapper.no-logo {
+     background-color: var(--primary-color, #e53935);
+     display: flex; align-items: center; justify-content: center;
+   }
+   .pin-wrapper.no-logo::after { content: ''; width: 12px; height: 12px; background: #fff; border-radius: 50%; }
+   .leaflet-container { font-family: inherit; }
+   .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: #1e1e1e; color: #fff; border: 1px solid rgba(255,255,255,0.1); }
+   .leaflet-popup-content a { color: #fff; background: var(--primary-color, #e53935); padding: 2px 8px; border-radius: 4px; text-decoration: none; }
+</style>
+
+<article class="venue-profile">
+
+   <h1>La Vie</h1>
+  
+  <div class="venue-details">
+    <div style="display:flex; align-items:flex-start; gap:1.5rem; margin-bottom:1rem; flex-wrap:wrap;">
+      
+        <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fla-vie%2Flogo-1766857758239-20184924_464073877292040_702404745498722304_a.jpg?alt=media&amp;token=a62efecc-f448-4b7e-b706-51fa9054acd7" alt="La Vie logo" style="max-height:250px; max-width:250px; border-radius:8px; border:1px solid #eee; object-fit:contain; flex-shrink:0;">
+      
+      <div style="flex:1; min-width: 250px;">
+        <div style="display:flex; gap:1.5rem; flex-wrap:wrap; justify-content: space-between;">
+            <div style="flex:1; min-width:200px;">
+                <p><strong>Category:</strong> 
+                  
+                  
+                    <a href="/categories/brunch-spots/">Brunch Spots</a>, 
+                  
+                    <a href="/categories/cocktail-bars/">Cocktail Bars</a>, 
+                  
+                    <a href="/categories/waterfront/">Waterfront</a>
+                  
+                </p>
+                
+                  <p><strong>Neighborhood:</strong> <a href="/neighborhoods/the-wharf/">The Wharf</a></p>
+                
+                <p><strong>Price:</strong> </p>
+                
+                
+                
+                
+                
+                
+                <p><strong>Address:</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=La%20Vie%2088%20District%20Square%20SW%20Floor%204.6%2C%20Washington%2C%20DC%2020024%2C%20United%20States" target="_blank" rel="noopener noreferrer" style="text-decoration:underline; color:var(--accent-color);">88 District Square SW Floor 4.6, Washington, DC 20024, United States</a></p>
+
+                <div class="venue-actions-bar" style="margin-top:1rem;">
+                  
+                    <a href="https://www.lavie-dc.com" class="btn-website-action" target="_blank" rel="noopener noreferrer">
+                      <span>Website</span>
+                    </a>
+                  
+                  
+                  
+                  <div class="social-icons-inline">
+                    
+                      <a href="https://www.instagram.com/lavie_dc/" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
+                    
+                    
+                    
+                  </div>
+                  
+                </div>
+            </div>
+            
+            <!-- Side Map -->
+            
+            <div style="width:220px; flex-shrink:0; margin-top: 0.5rem;">
+               <div id="venue-mini-map" style="width:100%; height:220px; border-radius:12px; border:1px solid rgba(255,255,255,0.1); box-shadow:0 4px 15px rgba(0,0,0,0.3); z-index:0; cursor: pointer;"></div>
+               <script>
+                 document.addEventListener('DOMContentLoaded', function() {
+                    var lat = 38.87988490000001;
+                    var lng = -77.02584809999999;
+                    var map = L.map('venue-mini-map', {
+                        center: [lat, lng],
+                        zoom: 16,
+                        zoomControl: false, 
+                        attributionControl: false,
+                        dragging: false,
+                        scrollWheelZoom: false,
+                        doubleClickZoom: false,
+                        boxZoom: false,
+                        keyboard: false
+                    });
+                     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                        subdomains: 'abcd',
+                        maxZoom: 20
+                     }).addTo(map);
+
+                    var iconHTML = `<div class="pin-wrapper"><img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fla-vie%2Flogo-1766857758239-20184924_464073877292040_702404745498722304_a.jpg?alt=media&amp;token=a62efecc-f448-4b7e-b706-51fa9054acd7" onerror="this.style.display='none'; this.parentElement.classList.add('no-logo');"></div>`;
+                    var icon = L.divIcon({
+                        className: 'custom-pin-icon',
+                        html: iconHTML,
+                        iconSize: [40, 40],
+                        iconAnchor: [20, 20]
+                    });
+                    
+                    L.marker([lat, lng], {icon: icon}).addTo(map);
+                    
+                    // Click to open Google Maps
+                    document.getElementById('venue-mini-map').addEventListener('click', function() {
+                        window.open('https://www.google.com/maps/search/?api=1&amp;query=La%20Vie%2088%20District%20Square%20SW%20Floor%204.6%2C%20Washington%2C%20DC%2020024%2C%20United%20States', '_blank');
+                    });
+                 });
+               </script>
+               <div style="text-align:center; margin-top:0.5rem;">
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=La%20Vie%2088%20District%20Square%20SW%20Floor%204.6%2C%20Washington%2C%20DC%2020024%2C%20United%20States" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; color:#aaa; text-decoration:none;">View on Google Maps &rarr;</a>
+               </div>
+            </div>
+            
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- [MOVED] Google Rating Display (Moved to Reviews Section) -->
+  
+    <!-- Rating moved below -->
+  
+  <!-- End Google Rating Display -->
+
+  <div class="venue-description">
+    <h3>✨ Vibe</h3>
+A sprawling 10,000-square-foot luxury oasis where Mediterranean elegance meets a high-energy waterfront lounge atmosphere.
+
+<h3>🍸 Best For</h3>
+Bottomless group brunches, milestone celebrations, scenic date nights, and sophisticated late-night cocktails.
+
+<h3>🔥 Highlights</h3>
+<ul>
+  <li><b>Michelin-Starred Culinary Direction:</b> Under the guidance of a culinary director with Michelin-starred credentials, the menu features elevated Mediterranean signatures like generous lobster risotto, a premium raw bar, and a curated carving station.</li>
+  <li><b>Breathtaking Waterfront Vistas:</b> Located on the 4th floor, the venue offers panoramic views of the Potomac from uniquely themed spaces, including the chic Conservatory, the Chandelier Room, and the stunning outdoor Terrace Garden.</li>
+  <li><b>The Ultimate Brunch Experience:</b> A local favorite for its "bottomless everything" Sunday brunch, featuring family-style plates, free-flowing mimosas, and a high-energy vibe perfect for large parties.</li>
+</ul>
+
+<h3>ℹ️ Need to Know</h3>
+<ul>
+  <li>Reservations are highly sought after and should be booked weeks in advance, especially for weekend brunch and the seasonal winter igloos.</li>
+  <li>The venue maintains an upscale dress code; guests are encouraged to dress to impress and avoid casual sneakers.</li>
+</ul>
+  </div>
+  
+
+  
+
+
+  <!-- [NEW] Events Section -->
+  <!-- [NEW] Events Section -->
+
+<!-- End Events Section -->
+
+<!-- [NEW] Recurring Events Section -->
+
+  <div class="recurring-events-section">
+    <h3>🔄 Weekly Events</h3>
+    <div class="events-grid">
+      
+        
+        <div class="event-item recurring">
+          <h4>🥂 Penthouse Brunch</h4>
+          <p class="event-meta">
+            <span class="days-badge">Sat, Sun</span>
+          </p>
+          
+            <p>Experience Mediterranean-coastal brunch at the Southwest Waterfront with stunning views.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>🍽️ Penthouse Dinner</h4>
+          <p class="event-meta">
+            <span class="days-badge">Daily</span>
+          </p>
+          
+            <p>Upscale Mediterranean-coastal dinner experience in the Penthouse lounge.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>❄️ Penthouse Igloo Reservations</h4>
+          <p class="event-meta">
+            <span class="days-badge">Daily</span>
+          </p>
+          
+            <p>Enjoy waterfront views in a unique, luxurious Igloo setting at the Penthouse.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>Igloo Dining Experience ❄️</h4>
+          <p class="event-meta">
+            <span class="days-badge"></span>
+          </p>
+          
+            <p>Seasonal penthouse igloo reservations offering a unique luxurious experience at The Wharf.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>Penthouse Brunch 🥂</h4>
+          <p class="event-meta">
+            <span class="days-badge"></span>
+          </p>
+          
+            <p>Experience Mediterranean flavors and waterfront views during brunch at our upscale penthouse lounge.</p>
+          
+        </div>
+        
+      
+        
+        <div class="event-item recurring">
+          <h4>Penthouse Dinner 🍽️</h4>
+          <p class="event-meta">
+            <span class="days-badge"></span>
+          </p>
+          
+            <p>Enjoy an upscale Mediterranean-coastal dinner experience at the Southwest Waterfront.</p>
+          
+        </div>
+        
+      
+    </div>
+  </div>
+
+<!-- End Recurring Events Section -->
+
+    <!-- [NEW] Full Happy Hour Details Section -->
+  
+    <div class="happy-hour-info">
+      <h3>Happy Hour</h3>
+      <p>Enjoy specially priced cocktails and Mediterranean bites at the Southwest Waterfront lounge.</p>
+    </div>
+  
+  <!-- End Happy Hour Details Section -->
+
+  <!-- [NEW] News Section -->
+  
+  <div class="news-section" style="margin-top:2rem; margin-bottom:2rem;">
+    <h3>📰 In the News</h3>
+    <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
+      
+        <a href="https://wjla.com/good-morning-washington/around-town/celebrate-bastille-day-the-french-way-at-la-vie-bastille-day-2025-dc-where-to-celebrate-restaurants-la-vie-bastille-day-events-dc-rooftop-experience" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=wjla.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>WJLA</span>
+              <span style="margin-left:auto; text-transform:none;">Jul 14, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Celebrate Bastille Day the French Way at La Vie</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">La Vie is an upscale Mediterranean-inspired restaurant and event space located on the Washington, D.C. waterfront. Led by Chef de Cuisine Aseem Charan, the venue offers curated menus and cocktails inspired by the bounty of the Mediterranean, featuring signature items like seafood towers and platters.</p>
+           
+        </a>
+      
+        <a href="https://dc.eater.com/2025/4/25/24416829/chef-michelin-starred-credentials-carlos-delgado-la-vie-wharf" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Eater DC</span>
+              <span style="margin-left:auto; text-transform:none;">Apr 25, 2025</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">A Chef With Michelin-Starred Credentials Joins La Vie at the Wharf</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">La Vie at the Wharf has appointed Michelin-starred chef Carlos Delgado as culinary director to lead a comprehensive Mediterranean menu overhaul and elevate the restaurant&#39;s culinary reputation. Supported by chef de cuisine Aseem Charan, the kitchen is introducing house-made specialties and a focus on high-quality small plates.</p>
+           
+        </a>
+      
+        <a href="https://washingtoncitypaper.com/article/185495/luxe-restaurant-and-lounge-la-vie-opens-july-12-at-the-wharf" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=washingtoncitypaper.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Washington City Paper</span>
+              <span style="margin-left:auto; text-transform:none;">Aug 28, 2020</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Luxe Restaurant and Lounge La Vie Opens July 12 at The Wharf</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">La Vie is a sprawling 10,000-square-foot luxury restaurant and lounge at The Wharf featuring multiple themed dining rooms, a DJ booth, and an outdoor terrace overlooking the Potomac. The Mediterranean-inspired menu specializes in coastal seafood dishes like whole branzino and lobster ravioli alongside a selection of light, refreshing cocktails. Designed for an all-evening experience, the venue transitions from a bright dining space into a high-energy lounge atmosphere with rotating DJs on weekends.</p>
+           
+        </a>
+      
+        <a href="https://dc.eater.com/2019/3/7/18255165/la-vie-tries-redo-after-zero-star-review" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Eater DC</span>
+              <span style="margin-left:auto; text-transform:none;">Mar 7, 2019</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">La Vie Tries a Total Re-Do Six Months After Sietsema’s Zero-Star Review</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">La Vie underwent a major operational overhaul and menu redesign following a zero-star review from the Washington Post. The restaurant hired Executive Chef Juan Rivera and Pastry Chef Deth Khaiaphone to revamp its Mediterranean-inspired offerings with a focus on fresh seafood and elevated desserts.</p>
+           
+        </a>
+      
+        <a href="https://washingtonpost.com/lifestyle/food/la-vie-on-the-wharf-is-so-bad-im-only-writing-about-it-as-a-warning/2018/08/20/6ac7e7ee-98dd-11e8-843b-36e177f3081c_story.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=washingtonpost.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The Washington Post</span>
+              <span style="margin-left:auto; text-transform:none;">Aug 30, 2018</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Review | La Vie on the Wharf is so bad I’m only writing about it as a warning</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">La Vie at the District Wharf received a scathing review from food critic Tom Sietsema, who cautioned diners against the establishment due to poor culinary execution and a disorienting design. The review serves as a warning for those seeking high-priced dining experiences, citing a lack of respect for diners&#39; senses and significant kitchen failures.</p>
+           
+        </a>
+      
+    </div>
+  </div>
+  
+  <!-- End News Section -->
+  
+
+  <!-- [NEW] Reviews Section (Server-Side) -->
+  
+  <div id="google-reviews-section" class="reviews-section">
+    
+    
+      
+    
+
+    <!-- [MOVED] Google Rating Display -->
+    
+      <div class="google-rating" style="margin-bottom: 2rem;">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJH9AcnBm3t4kRQJsAaoQAr9Y" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: block;">
+          <div class="rating-header">
+            <span class="rating-stars" style="--rating: 4.2;">★★★★★</span>
+            <span class="rating-value">4.2</span>
+            <span class="rating-count">(2562 reviews)</span>
+            <span class="btn-read-reviews" style="margin-left: auto; margin-top: 0;">View on Google</span>
+          </div>
+        </a>
+      </div>
+    
+    <!-- End Google Rating Display -->
+
+    <h3>Recent Reviews from Google</h3>
+    <div class="reviews-grid">
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJH9AcnBm3t4kRQJsAaoQAr9Y" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjVZAKk1Bqi3Gsn10R5KcXRpRy0HY4SF9Dtt2uywJGu4L2ra4YAS=s128-c0x00000000-cc-rp-mo-ba3" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a month ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            This place was great from the first moment you walk through the door with breath taking art. A short trip up the elevator got you to a floor with amazing views of the water front wharf. We had a group...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJH9AcnBm3t4kRQJsAaoQAr9Y" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXPwJgO2XznTG4I5tDR_8ZXfKd8X3Ub0exQZZi-UmfqvCj_vKRn=s128-c0x00000000-cc-rp-mo" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a month ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            My partner and I went here for our anniversary. They treated us like royalty, even though we weren&#39;t expecting the special treatment! It was amazing. The food was great and the service was even...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJH9AcnBm3t4kRQJsAaoQAr9Y" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjUg5TzKM-noJaSsN4fuAY7eXmHrlGJ6aC-JUcI-Aj8PI_ErOIiJ=s128-c0x00000000-cc-rp-mo-ba3" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">3 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            My family were here to celebrate my Birthday and they made it feel really special. Our server and all staff were  amazing so friendly and extremely attentive. Restaurant environment is very nice, we...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJH9AcnBm3t4kRQJsAaoQAr9Y" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjW7hPjbzo73fceY2_WWV-j0Cby-YJf2-MbuWItUwFgeZSby9ki_=s128-c0x00000000-cc-rp-mo-ba4" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a month ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            One of go-to spots for Sunday brunch (10+ visits 😩)! Our group usually ranges from 8–12 people, and they always accommodate us (we book a few weeks in advance).
+
+Brunch is served in 3–4 courses, with...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJH9AcnBm3t4kRQJsAaoQAr9Y" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocK1ILD3y-7S6Y7UGkZz3noIUteT_-rwWOTJjIdalnqgFmiBtg=s128-c0x00000000-cc-rp-mo-ba5" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">2 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Anyone who knows me knows that La Vie is one of my favorite brunch spots in DC. It’s located at the Wharf overlooking the water.
+
+This place is always busy and reservations go so fast. Don’t wait...
+          </p>
+      </a>
+      
+    </div>
+    <div class="reviews-footer">
+      <small>Reviews provided by Google</small>
+    </div>
+  </div>
+  
+
+  <!-- [NEW] Nearby Bars Section -->
+  
+  
+  <div class="nearby-section" style="margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+    <h3 style="margin-bottom: 1.5rem;">📍 Nearby Spots (Walking Distance)</h3>
+    <div class="venue-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
+      
+        <a href="/bars/mi-vida/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fmi-vida%2Flogo-1767018229034-17881969_776787029157084_2602666820355751936_a.jpg?alt=media&amp;token=9dc41e15-7576-44bf-8294-e4ff9356d973" alt="Mi Vida" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Mi Vida</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">6m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/ilili-dc/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Filili-dc%2Flogo-1766580568274-351077167_640223841333751_7682718310691764775_n.jpg?alt=media&amp;token=5e2b57f5-0e32-458b-b87d-786ebb27541e" alt="ilili DC" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">ilili DC</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">23m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/camp-wharf-at-the-firepit/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; background: #333; display: flex; align-items: center; justify-content: center;">
+                <span style="font-size: 2rem;">🍸</span>
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Camp Wharf at the Firepit</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">24m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/whitlow-s-at-the-wharf/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fwhitlow-s-at-the-wharf%2Flogo-1767145552970-476599374_1134779234782536_1456958584058480609_n.jpg?alt=media&amp;token=754c3e55-a25a-448f-9a4e-1882d4fd3746" alt="Whitlow’s at the Wharf" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Whitlow’s at the Wharf</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">25m away</p>
+          </div>
+        </a>
+      
+    </div>
+  </div>
+  
+
+  <a href="/" class="btn-back">← Back to Home</a>
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "La Vie",
+  "image": "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fla-vie%2Flogo-1766857758239-20184924_464073877292040_702404745498722304_a.jpg?alt=media&token=a62efecc-f448-4b7e-b706-51fa9054acd7",
+  "address": "88 District Square SW Floor 4.6, Washington, DC 20024, United States",
+  
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.2,
+    "reviewCount": 2562
+  },
+  
+  
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": 5,
+      "bestRating": 5
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Sara VanGrunsven-Eanni"
+    },
+    "reviewBody": "This place was great from the first moment you walk through the door with breath taking art. A short trip up the elevator got you to a floor with amazing views of the water front wharf. We had a group of 6 people and our server was so gracious and patient giving us lots of information on fan favorites both drinks and food! The coolest experience was the whiskey drink we ordered and the presentation that came along with it.  Looking for a nice place to dine with some thrills,  check out this place!"
+  },
+  
+  
+  
+  "url": "https://bardc.com/venues/la-vie/"
+}
+</script>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="/" aria-label="Back to Home">
+            <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="footer-logo">
+          </a>
+        </div>
+        
+        <div class="footer-links">
+
+          <div class="social-icons">
+            <a href="https://x.com/bardc_" target="_blank" rel="noopener noreferrer" class="social-icon twitter" aria-label="X (formerly Twitter)"></a>
+            <a href="https://www.facebook.com/bardc" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook"></a>
+          </div>
+          <a href="mailto:info@bardc.com" class="footer-contact">info@bardc.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Bar DC. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+  <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="img01" onclick="event.stopPropagation()">
+  </div>
+  <script>
+    // Global Image Modal Logic
+    window.openImageModal = function(src) {
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("img01");
+        if(modal && modalImg) {
+            modal.style.display = "flex";
+            modalImg.src = src;
+            document.body.style.overflow = "hidden"; 
+        }
+    }
+    
+    window.closeImageModal = function() {
+        var modal = document.getElementById("imageModal");
+        if(modal) {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto"; 
+        }
+    }
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            window.closeImageModal();
+        }
+    });
+  </script>
+  <style>
+    /* Modal Styles (Global) */
+    .image-modal {
+      display: none; 
+      position: fixed; 
+      z-index: 9999; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgba(0,0,0,0.95); 
+      align-items: center;
+      justify-content: center;
+      cursor: zoom-out;
+    }
+    
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 95%;
+      max-height: 95vh;
+      border-radius: 4px;
+      object-fit: contain;
+      cursor: default;
+      animation: zoom 0.3s;
+    }
+    
+    .close-modal {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 50px;
+      font-weight: bold;
+      transition: 0.3s;
+      cursor: pointer;
+      z-index: 10000;
+      line-height: 1;
+    }
+    
+    @keyframes zoom {
+      from {transform:scale(0.8); opacity: 0;}
+      to {transform:scale(1); opacity: 1;}
+    }
+  </style>
+
+</body>
+</html>

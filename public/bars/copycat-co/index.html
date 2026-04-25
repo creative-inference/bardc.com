@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copycat Co. | Bar DC</title>
+
+  
+  
+  
+  
+  
+     
+     
+  
+
+  
+  
+
+  
+  
+
+  <meta name="description" content="Visit Copycat Co. in H Street NE, Washington DC. ✨ Vibe An intimate and high-energy H Street staple where master-craft mixology meets the bold, spicy flavors of authentic Chinese street...">
+  <link rel="canonical" href="https://bardc.com/bars/copycat-co/">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Bar DC">
+  <meta property="og:title" content="Copycat Co.">
+  <meta property="og:description" content="Visit Copycat Co. in H Street NE, Washington DC. ✨ Vibe An intimate and high-energy H Street staple where master-craft mixology meets the bold, spicy flavors of authentic Chinese street...">
+  <meta property="og:url" content="https://bardc.com/bars/copycat-co/">
+  <meta property="og:type" content="business.business">
+  
+  
+  
+  
+      
+  
+  <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcopycat-co%2Flogo-1766355373827-cclogo1.webp?alt=media&amp;token=1388327e-e17c-4f88-8faa-555b59dc586f">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Copycat Co.">
+  <meta name="twitter:description" content="Visit Copycat Co. in H Street NE, Washington DC. ✨ Vibe An intimate and high-energy H Street staple where master-craft mixology meets the bold, spicy flavors of authentic Chinese street...">
+  <meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcopycat-co%2Flogo-1766355373827-cclogo1.webp?alt=media&amp;token=1388327e-e17c-4f88-8faa-555b59dc586f">
+
+    <!-- [NEW] Favicon Links -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <!-- End Favicon Links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css?v=1777149876163">
+  <link rel="stylesheet" href="/css/masonry.css">
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9L0NBTF5RQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9L0NBTF5RQ');
+</script>
+
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7540411251843957"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-branding">
+        <a href="/" class="branding-link">
+          <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
+          <span class="site-title">Washington D.C. Bars & Clubs</span>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <a href="/bars/">Bars</a>
+        <a href="/map/">Map</a>
+        
+
+        <div class="nav-dropdown">
+          <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
+          <div class="dropdown-menu">
+            
+              <a href="/neighborhoods/u-street/">U Street</a>
+            
+              <a href="/neighborhoods/dupont-circle/">Dupont Circle</a>
+            
+              <a href="/neighborhoods/downtown/">Downtown</a>
+            
+              <a href="/neighborhoods/adams-morgan/">Adams Morgan</a>
+            
+              <a href="/neighborhoods/navy-yard/">Navy Yard</a>
+            
+              <a href="/neighborhoods/georgetown/">Georgetown</a>
+            
+              <a href="/neighborhoods/the-wharf/">The Wharf</a>
+            
+              <a href="/neighborhoods/h-street-ne/">H Street NE</a>
+            
+            <div class="dropdown-divider"></div>
+            <a href="/neighborhoods/" class="view-all">View All →</a>
+          </div>
+        </div>
+
+
+        <a href="/events/">Events</a>
+        <a href="/happy-hour/">Happy Hour</a>
+      </nav>
+    </header>
+    <main>
+      
+        <h1 class="page-title">Copycat Co.</h1>
+      
+      <!-- This line is critical. It injects the content from other files. -->
+      <!-- Leaflet Map Resources -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<style>
+   /* Custom Pin Styles for Venue Page */
+   .custom-pin-icon { background: transparent; border: none; }
+   .pin-wrapper {
+     width: 40px; height: 40px; border-radius: 50%; border: 3px solid #fff;
+     box-shadow: 0 4px 10px rgba(0,0,0,0.5); background-color: #fff;
+     overflow: hidden; position: relative; transition: transform 0.2s ease, z-index 0.2s;
+   }
+   .pin-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+   .pin-wrapper.no-logo {
+     background-color: var(--primary-color, #e53935);
+     display: flex; align-items: center; justify-content: center;
+   }
+   .pin-wrapper.no-logo::after { content: ''; width: 12px; height: 12px; background: #fff; border-radius: 50%; }
+   .leaflet-container { font-family: inherit; }
+   .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: #1e1e1e; color: #fff; border: 1px solid rgba(255,255,255,0.1); }
+   .leaflet-popup-content a { color: #fff; background: var(--primary-color, #e53935); padding: 2px 8px; border-radius: 4px; text-decoration: none; }
+</style>
+
+<article class="venue-profile">
+
+   <h1>Copycat Co.</h1>
+  
+  <div class="venue-details">
+    <div style="display:flex; align-items:flex-start; gap:1.5rem; margin-bottom:1rem; flex-wrap:wrap;">
+      
+        <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcopycat-co%2Flogo-1766355373827-cclogo1.webp?alt=media&amp;token=1388327e-e17c-4f88-8faa-555b59dc586f" alt="Copycat Co. logo" style="max-height:250px; max-width:250px; border-radius:8px; border:1px solid #eee; object-fit:contain; flex-shrink:0;">
+      
+      <div style="flex:1; min-width: 250px;">
+        <div style="display:flex; gap:1.5rem; flex-wrap:wrap; justify-content: space-between;">
+            <div style="flex:1; min-width:200px;">
+                <p><strong>Category:</strong> 
+                  
+                  
+                    <a href="/categories/cocktail-bars/">Cocktail Bars</a>, 
+                  
+                    <a href="/categories/tiki-bars/">Tiki Bars</a>, 
+                  
+                    <a href="/categories/late-night/">Late Night</a>
+                  
+                </p>
+                
+                  <p><strong>Neighborhood:</strong> <a href="/neighborhoods/h-street-ne/">H Street NE</a></p>
+                
+                <p><strong>Price:</strong> $$</p>
+                
+                
+                
+                
+                
+                
+                <p><strong>Address:</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=Copycat%20Co.%201110%20H%20St%20NE%2C%20Washington%2C%20DC%2020002" target="_blank" rel="noopener noreferrer" style="text-decoration:underline; color:var(--accent-color);">1110 H St NE, Washington, DC 20002</a></p>
+
+                <div class="venue-actions-bar" style="margin-top:1rem;">
+                  
+                    <a href="http://www.copycatcompany.com/" class="btn-website-action" target="_blank" rel="noopener noreferrer">
+                      <span>Website</span>
+                    </a>
+                  
+                  
+                  
+                  <div class="social-icons-inline">
+                    
+                      <a href="https://www.instagram.com/copycatco/" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
+                    
+                    
+                    
+                  </div>
+                  
+                </div>
+            </div>
+            
+            <!-- Side Map -->
+            
+            <div style="width:220px; flex-shrink:0; margin-top: 0.5rem;">
+               <div id="venue-mini-map" style="width:100%; height:220px; border-radius:12px; border:1px solid rgba(255,255,255,0.1); box-shadow:0 4px 15px rgba(0,0,0,0.3); z-index:0; cursor: pointer;"></div>
+               <script>
+                 document.addEventListener('DOMContentLoaded', function() {
+                    var lat = 38.900414;
+                    var lng = -76.9910263;
+                    var map = L.map('venue-mini-map', {
+                        center: [lat, lng],
+                        zoom: 16,
+                        zoomControl: false, 
+                        attributionControl: false,
+                        dragging: false,
+                        scrollWheelZoom: false,
+                        doubleClickZoom: false,
+                        boxZoom: false,
+                        keyboard: false
+                    });
+                     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                        subdomains: 'abcd',
+                        maxZoom: 20
+                     }).addTo(map);
+
+                    var iconHTML = `<div class="pin-wrapper"><img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcopycat-co%2Flogo-1766355373827-cclogo1.webp?alt=media&amp;token=1388327e-e17c-4f88-8faa-555b59dc586f" onerror="this.style.display='none'; this.parentElement.classList.add('no-logo');"></div>`;
+                    var icon = L.divIcon({
+                        className: 'custom-pin-icon',
+                        html: iconHTML,
+                        iconSize: [40, 40],
+                        iconAnchor: [20, 20]
+                    });
+                    
+                    L.marker([lat, lng], {icon: icon}).addTo(map);
+                    
+                    // Click to open Google Maps
+                    document.getElementById('venue-mini-map').addEventListener('click', function() {
+                        window.open('https://www.google.com/maps/search/?api=1&amp;query=Copycat%20Co.%201110%20H%20St%20NE%2C%20Washington%2C%20DC%2020002', '_blank');
+                    });
+                 });
+               </script>
+               <div style="text-align:center; margin-top:0.5rem;">
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=Copycat%20Co.%201110%20H%20St%20NE%2C%20Washington%2C%20DC%2020002" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; color:#aaa; text-decoration:none;">View on Google Maps &rarr;</a>
+               </div>
+            </div>
+            
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- [MOVED] Google Rating Display (Moved to Reviews Section) -->
+  
+    <!-- Rating moved below -->
+  
+  <!-- End Google Rating Display -->
+
+  <div class="venue-description">
+    <h3>✨ Vibe</h3>
+<p>An intimate and high-energy H Street staple where master-craft mixology meets the bold, spicy flavors of authentic Chinese street food in a stylish, music-forward setting.</p>
+
+<h3>🍸 Best For</h3>
+<p>Late-night cocktails, Szechuan street food cravings, tiki drink enthusiasts, intimate date nights, craft beverage education</p>
+
+<h3>🔥 Highlights</h3>
+<ul>
+    <li><strong>World-Class Mixology:</strong> Renowned for an inventive, rotating beverage program that features a unique pie-chart menu and expertly crafted tiki classics like the Shark’s Tooth and Tahitian Rum Punch.</li>
+    <li><strong>Authentic Szechuan Snacks:</strong> The kitchen specializes in flavor-packed Chinese street food, including signature chili wontons, triple delight potstickers, and savory lamb noodles that perfectly complement the drink menu.</li>
+    <li><strong>Expert Curation:</strong> The highly skilled bartenders are known for their craft, offering personalized recommendations and a curated experience that has made this venue a cornerstone of the H Street corridor.</li>
+</ul>
+
+<h3>ℹ️ Need to Know</h3>
+<ul>
+    <li>To guarantee a seat at this popular and cozy hotspot, reservations are now conveniently available through Resy.</li>
+    <li>Expect a lively, late-night atmosphere that is perfect for those seeking high-quality craft cocktails and substantial small plates well into the evening.</li>
+</ul>
+  </div>
+  
+
+  
+
+
+  <!-- [NEW] Events Section -->
+  <!-- [NEW] Events Section -->
+
+<!-- End Events Section -->
+
+<!-- [NEW] Recurring Events Section -->
+
+<!-- End Recurring Events Section -->
+
+    <!-- [NEW] Full Happy Hour Details Section -->
+  
+  <!-- End Happy Hour Details Section -->
+
+  <!-- [NEW] News Section -->
+  
+  <div class="news-section" style="margin-top:2rem; margin-bottom:2rem;">
+    <h3>📰 In the News</h3>
+    <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
+      
+        <a href="https://blog.resy.com/2021/04/new-on-resy-oyster-oyster-ala-copycat-co-and-more" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=blog.resy.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Resy | Right This Way</span>
+              <span style="margin-left:auto; text-transform:none;">Apr 21, 2021</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Now Open on Resy: Oyster Oyster, ALA, Copycat Co., and More — Resy | Right This Way</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Copycat Co. is a highly-regarded cocktail bar and Chinese eatery located in Washington D.C.&#39;s H Street Corridor. The venue specializes in Chinese street food, including skewers, pan-fried bao, and potstickers, alongside Sichuan classics like mapo tofu. Known for its inventive beverage program, it offers creatively named cocktails and a unique pie-chart drinks menu.</p>
+           
+        </a>
+      
+        <a href="https://dc.eater.com/2020/11/9/21556787/copycat-co-suspends-bar-manager-alleged-sexual-abuse-charge-trial" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Eater DC</span>
+              <span style="margin-left:auto; text-transform:none;">Nov 9, 2020</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Copycat Co. Suspends Bar Manager After Learning of Arrest for Alleged Sexual Abuse</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Copycat Co. suspended a manager in 2020 after learning of his arrest for a misdemeanor sexual abuse charge related to an incident at a different D.C. establishment. Managing owner Devin Gong placed the employee on paid leave pending a trial, stating that the bar would wait for a legal verdict before determining further disciplinary action.</p>
+           
+        </a>
+      
+        <a href="https://dc.eater.com/2019/9/19/20874584/copycat-co-fires-a-bartender-over-racist-sexist-language" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Eater DC</span>
+              <span style="margin-left:auto; text-transform:none;">Sep 25, 2019</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Former Copycat Co. Bartender Responds to Allegations of Colorist, Sexist Language [Updated]</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Copycat Co. on H Street fired a long-time bartender following allegations of colorist and sexist verbal abuse toward a customer during a late-night altercation. Owner Devin Gong issued an apology for the incident, stating that the behavior was unacceptable and does not reflect the values of the establishment.</p>
+           
+        </a>
+      
+        <a href="https://washingtonian.com/2019/09/19/h-streets-copycat-co-has-fired-a-bartender-accused-of-colorist-and-sexist-behavior" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Washingtonian</span>
+              <span style="margin-left:auto; text-transform:none;">Sep 24, 2019</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">H Street’s CopyCat Co. Has Fired a Bartender Accused of “Colorist and Sexist” Behavior</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Copycat Co. terminated a long-term bartender following allegations of colorist and sexist verbal abuse toward a customer. Owner Devin Gong expressed remorse for the mishandled incident and emphasized that such behavior does not align with the company&#39;s values.</p>
+           
+        </a>
+      
+        <a href="https://dcist.com/story/19/05/23/first-look-at-astoria-the-dupont-bar-with-a-luxury-train-car-vibe-the-cocktails-are-always-changing" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=dcist.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>DCist</span>
+              <span style="margin-left:auto; text-transform:none;">May 23, 2019</span>
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">First Look: At Astoria, The Dupont Bar With A Luxury Train Car Vibe, The Cocktails Are Always Changing</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Copycat Co.’s ownership team expanded their D.C. footprint with Astoria, a Dupont Circle bar that carries over the H Street flagship&#39;s tradition of frequently rotating cocktail menus and Sichuan small plates. The venue features a unique design inspired by luxury train travel and the Waldorf Astoria hotel.</p>
+           
+        </a>
+      
+    </div>
+  </div>
+  
+  <!-- End News Section -->
+  
+
+  <!-- [NEW] Reviews Section (Server-Side) -->
+  
+  <div id="google-reviews-section" class="reviews-section">
+    
+    
+      
+    
+
+    <!-- [MOVED] Google Rating Display -->
+    
+      <div class="google-rating" style="margin-bottom: 2rem;">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJLQ1hOj64t4kRdZoiAw3UUi4" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: block;">
+          <div class="rating-header">
+            <span class="rating-stars" style="--rating: 4.6;">★★★★★</span>
+            <span class="rating-value">4.6</span>
+            <span class="rating-count">(1154 reviews)</span>
+            <span class="btn-read-reviews" style="margin-left: auto; margin-top: 0;">View on Google</span>
+          </div>
+        </a>
+      </div>
+    
+    <!-- End Google Rating Display -->
+
+    <h3>Recent Reviews from Google</h3>
+    <div class="reviews-grid">
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJLQ1hOj64t4kRdZoiAw3UUi4" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjWtiRMw4sTFAFdYnVkmLZAM4IcGLVCnL_MtD1VQ-n_kEasp2uePvw=s128-c0x00000000-cc-rp-mo-ba5" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a month ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Great vibes, good drinks, and a good music playlist. Loved the variety of tables and bar seating.
+
+Started with some beef noodles and dan dan noodles. Beef noodles were good. The dan dan were not as...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJLQ1hOj64t4kRdZoiAw3UUi4" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjWx-WHt7tMuI44Yb5z9OfzRcoxONllLqa_FRaAudaTgOAhNf1s=s128-c0x00000000-cc-rp-mo-ba4" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">5 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Damn I love this place. The drinks are amazing and the food is just as good. It’s billed as a cocktail bar but don’t sleep on the snacks. The pan fried dumplings, spicy beef noodles, and the lamb...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJLQ1hOj64t4kRdZoiAw3UUi4" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocJ-xVvpVAGM8g-jLWoyyAb8DnCB7naN1ulGZOSt9dbVfL7Snw=s128-c0x00000000-cc-rp-mo-ba2" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">4 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            The chili wontons were packed with flavor, and the chicken skewers were juicy and well-seasoned. The highlight of the meal was definitely the green chili chicken — the combination of peppers and...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJLQ1hOj64t4kRdZoiAw3UUi4" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjX8PgXrk_CNheecfQxhq8lBPSt3SrIcp5ows97ww00Z8irbDg4FTA=s128-c0x00000000-cc-rp-mo-ba4" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">4 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Its been awhile since i have been out to a bar late at night because i have kids and a dadbod.  That being said, this bar is amazing!  Bartenders know their drinks and are a master of their craft. ...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJLQ1hOj64t4kRdZoiAw3UUi4" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjVIx2h7LxaDP8ewfZ0bQBHQZuX5xWzXf9uFdGJPC5yLUkTuQpg5kA=s128-c0x00000000-cc-rp-mo-ba4" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">7 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            An incredible bar.  A rotating selection of menus all well curated and full of tasty options.  The food is delicious, well-spiced, with good portions - a welcome change from the normal bar fair of...
+          </p>
+      </a>
+      
+    </div>
+    <div class="reviews-footer">
+      <small>Reviews provided by Google</small>
+    </div>
+  </div>
+  
+
+  <!-- [NEW] Nearby Bars Section -->
+  
+  
+  <div class="nearby-section" style="margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+    <h3 style="margin-bottom: 1.5rem;">📍 Nearby Spots (Walking Distance)</h3>
+    <div class="venue-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
+      
+        <a href="/bars/little-miss-whiskeys-golden-dollar/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Flittle-miss-whiskeys-golden-dollar%2Flogo-1766858806282-45765666_577257409383616_2300326398599888896_n.jpg?alt=media&amp;token=654c0b8d-86fd-4530-9f1e-b7ccbf887397" alt="Little Miss Whiskey&#39;s Golden Dollar" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Little Miss Whiskey&#39;s Golden Dollar</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">16m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/nomad/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fnomad%2Flogo-1767021919970-352830429_1109096129863379_4669141560394923732_n.jpg?alt=media&amp;token=8741da6a-b315-4c7c-89d6-dc8a6dca0edc" alt="Nomad" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Nomad</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">89m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/the-haymaker-bar/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-haymaker-bar%2Flogo-1766511082561-67332912_1214426235412152_1864474500381278208_n.jpg?alt=media&amp;token=300da1ba-f994-4a8a-b1bf-0d3fee6935e4" alt="The Haymaker Bar" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">The Haymaker Bar</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">100m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/the-queen-vic/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-queen-vic%2Flogo-1767105694046-104312258_264415394622802_4685333556591804553_n.jpg?alt=media&amp;token=955cfe3a-d083-4b2e-9930-14f94a561c08" alt="The Queen Vic" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">The Queen Vic</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">101m away</p>
+          </div>
+        </a>
+      
+    </div>
+  </div>
+  
+
+  <a href="/" class="btn-back">← Back to Home</a>
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "Copycat Co.",
+  "image": "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcopycat-co%2Flogo-1766355373827-cclogo1.webp?alt=media&token=1388327e-e17c-4f88-8faa-555b59dc586f",
+  "address": "1110 H St NE, Washington, DC 20002",
+  
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.6,
+    "reviewCount": 1154
+  },
+  
+  
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": 5,
+      "bestRating": 5
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Robbie Morris"
+    },
+    "reviewBody": "Great vibes, good drinks, and a good music playlist. Loved the variety of tables and bar seating.\n\nStarted with some beef noodles and dan dan noodles. Beef noodles were good. The dan dan were not as good as others I’ve had in the past.\nAlso tried the chili wontons and triple delight potstickers. Both were great in their own way.\n\nAlso tried a few drinks including Shark’s Tooth, Tropical Itch, Sunakora, and the Tahitian Rum Punch. All solid tiki drinks!"
+  },
+  
+  
+  "priceRange": "$$", 
+  
+  
+  "url": "https://bardc.com/venues/copycat-co/"
+}
+</script>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="/" aria-label="Back to Home">
+            <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="footer-logo">
+          </a>
+        </div>
+        
+        <div class="footer-links">
+
+          <div class="social-icons">
+            <a href="https://x.com/bardc_" target="_blank" rel="noopener noreferrer" class="social-icon twitter" aria-label="X (formerly Twitter)"></a>
+            <a href="https://www.facebook.com/bardc" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook"></a>
+          </div>
+          <a href="mailto:info@bardc.com" class="footer-contact">info@bardc.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Bar DC. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+  <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="img01" onclick="event.stopPropagation()">
+  </div>
+  <script>
+    // Global Image Modal Logic
+    window.openImageModal = function(src) {
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("img01");
+        if(modal && modalImg) {
+            modal.style.display = "flex";
+            modalImg.src = src;
+            document.body.style.overflow = "hidden"; 
+        }
+    }
+    
+    window.closeImageModal = function() {
+        var modal = document.getElementById("imageModal");
+        if(modal) {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto"; 
+        }
+    }
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            window.closeImageModal();
+        }
+    });
+  </script>
+  <style>
+    /* Modal Styles (Global) */
+    .image-modal {
+      display: none; 
+      position: fixed; 
+      z-index: 9999; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgba(0,0,0,0.95); 
+      align-items: center;
+      justify-content: center;
+      cursor: zoom-out;
+    }
+    
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 95%;
+      max-height: 95vh;
+      border-radius: 4px;
+      object-fit: contain;
+      cursor: default;
+      animation: zoom 0.3s;
+    }
+    
+    .close-modal {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 50px;
+      font-weight: bold;
+      transition: 0.3s;
+      cursor: pointer;
+      z-index: 10000;
+      line-height: 1;
+    }
+    
+    @keyframes zoom {
+      from {transform:scale(0.8); opacity: 0;}
+      to {transform:scale(1); opacity: 1;}
+    }
+  </style>
+
+</body>
+</html>

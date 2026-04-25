@@ -1,0 +1,2147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adams Morgan Bars and Clubs | Bar DC</title>
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+  
+     
+  
+
+  <meta name="description" content="Discover the best bars, clubs, lounges, and happy hours in Washington D.C. Explore by neighborhood, find today&#39;s events, and see real-time updates.">
+  <link rel="canonical" href="https://bardc.com/neighborhoods/adams-morgan/">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Bar DC">
+  <meta property="og:title" content="Adams Morgan Bars and Clubs">
+  <meta property="og:description" content="Discover the best bars, clubs, lounges, and happy hours in Washington D.C. Explore by neighborhood, find today&#39;s events, and see real-time updates.">
+  <meta property="og:url" content="https://bardc.com/neighborhoods/adams-morgan/">
+  <meta property="og:type" content="website">
+  
+  
+  
+  
+  <meta property="og:image" content="https://bardc.com/img/bardc_logo.jpeg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Adams Morgan Bars and Clubs">
+  <meta name="twitter:description" content="Discover the best bars, clubs, lounges, and happy hours in Washington D.C. Explore by neighborhood, find today&#39;s events, and see real-time updates.">
+  <meta name="twitter:image" content="https://bardc.com/img/bardc_logo.jpeg">
+
+    <!-- [NEW] Favicon Links -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <!-- End Favicon Links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css?v=1777149876163">
+  <link rel="stylesheet" href="/css/masonry.css">
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9L0NBTF5RQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9L0NBTF5RQ');
+</script>
+
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7540411251843957"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-branding">
+        <a href="/" class="branding-link">
+          <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
+          <span class="site-title">Washington D.C. Bars & Clubs</span>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <a href="/bars/">Bars</a>
+        <a href="/map/">Map</a>
+        
+
+        <div class="nav-dropdown">
+          <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
+          <div class="dropdown-menu">
+            
+              <a href="/neighborhoods/u-street/">U Street</a>
+            
+              <a href="/neighborhoods/dupont-circle/">Dupont Circle</a>
+            
+              <a href="/neighborhoods/downtown/">Downtown</a>
+            
+              <a href="/neighborhoods/adams-morgan/">Adams Morgan</a>
+            
+              <a href="/neighborhoods/navy-yard/">Navy Yard</a>
+            
+              <a href="/neighborhoods/georgetown/">Georgetown</a>
+            
+              <a href="/neighborhoods/the-wharf/">The Wharf</a>
+            
+              <a href="/neighborhoods/h-street-ne/">H Street NE</a>
+            
+            <div class="dropdown-divider"></div>
+            <a href="/neighborhoods/" class="view-all">View All →</a>
+          </div>
+        </div>
+
+
+        <a href="/events/">Events</a>
+        <a href="/happy-hour/">Happy Hour</a>
+      </nav>
+    </header>
+    <main>
+      
+        <h1 class="page-title">Adams Morgan Bars and Clubs</h1>
+      
+      <!-- This line is critical. It injects the content from other files. -->
+      
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+<style>
+  #neighborhood-map {
+    height: 600px;
+    width: 100%;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    z-index: 1;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  }
+  .leaflet-popup-content-wrapper, .leaflet-popup-tip {
+    background: #1e1e1e;
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+  .leaflet-popup-content h3 {
+    margin: 0 0 5px;
+    color: var(--primary-color, #e53935);
+  }
+  .leaflet-popup-content p {
+    margin: 0 0 10px;
+    color: #aaa;
+  }
+  .leaflet-popup-content a {
+    color: #fff;
+    background: var(--primary-color, #e53935);
+    padding: 4px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.8em;
+    display: inline-block;
+  }
+   .leaflet-popup-content a:hover {
+    background: #c62828;
+   }
+   
+   /* Custom Pin Styles */
+   .custom-pin-icon {
+     background: transparent;
+     border: none;
+   }
+   .pin-wrapper {
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     border: 3px solid #fff;
+     box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+     background-color: #fff;
+     overflow: hidden;
+     position: relative;
+     transition: transform 0.2s ease, z-index 0.2s;
+   }
+   .pin-wrapper img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+   }
+   .pin-wrapper.no-logo {
+     background-color: var(--primary-color, #e53935);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   }
+   .pin-wrapper.no-logo::after {
+     content: '';
+     width: 12px;
+     height: 12px;
+     background: #fff;
+     border-radius: 50%;
+   }
+   .pin-wrapper:hover {
+     transform: scale(1.2);
+     z-index: 1000 !important;
+     border-color: var(--accent-color, #03a9f4);
+   }
+</style>
+
+<div style="max-width: 800px; margin: 0 auto 2rem auto; text-align: center;">
+  <p style="font-size: 1.1rem; color: #ccc; line-height: 1.6;">Known for its vibrant nightlife and historic charm, Adams Morgan features a lively mix of dive bars, live music venues, and international cuisine along 18th Street.</p>
+</div>
+
+<div id="neighborhood-map"></div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const venues = [
+      
+        
+          {
+            name: "A League of Her Own",
+            slug: "a-league-of-her-own",
+            lat: 38.9202301,
+            lng: -77.0415366,
+            address: "2319 18th St NW, Washington, DC 20009, USA",
+            category: "Lesbian Bars, Sports Bars, Dance Clubs",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fa-league-of-her-own%2Flogo-1766013233987-309345581_509234564546172_135073121794137212_n.jpg?alt=media&amp;token=7ff49a2e-1950-4236-a13f-cfaeb03ff2ba"
+          },
+        
+      
+        
+          {
+            name: "Bar Charley",
+            slug: "bar-charley",
+            lat: 38.9150551,
+            lng: -77.0414473,
+            address: "1825 18th St NW, Washington, DC 20009, USA",
+            category: "Cocktail Bars, Neighborhood Bars, Brunch Spots",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbar-charley%2Flogo-1766148784052-244137826_251565800311977_5568711480917769411_n.jpg?alt=media&amp;token=e594b1f1-2f43-4f3c-b471-547de66a7a49"
+          },
+        
+      
+        
+          {
+            name: "Bedrock Billiards",
+            slug: "bedrock-billiards",
+            lat: 38.9215331,
+            lng: -77.04394309999999,
+            address: "1841 Columbia Rd NW, Washington, DC 20009, USA",
+            category: "Pool Halls, Dive Bars, Late Night",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbedrock-billiards%2Flogo-1766150203974-293200596_555180479726900_6820353420101778171_n.jpg?alt=media&amp;token=302119b2-6756-4930-905b-e84ba7c8ee0a"
+          },
+        
+      
+        
+          {
+            name: "Bukom Restaurant &amp; Lounge",
+            slug: "bukom-cafe",
+            lat: 38.921777,
+            lng: -77.0426086,
+            address: "2442 18th St NW, Washington, DC 20009, United States",
+            category: "Live Music Venues, Soul Food",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbukom-cafe%2Flogo-1766319578512-470312165_1107240920511083_2896386572970859226_n.jpg?alt=media&amp;token=0401fd7d-31b0-4d48-8323-ccc5849408f0"
+          },
+        
+      
+        
+          {
+            name: "Club Timehri",
+            slug: "club-timehri",
+            lat: 38.9215319,
+            lng: -77.04193579999999,
+            address: "2439 18th St NW, Washington, DC 20009, United States",
+            category: "Nightclub, Rum Bars, Latin",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fclub-timehri%2Flogo-1766354480813-323797300_534262678637664_2429145153674713715_n.jpg?alt=media&amp;token=84de5d52-7e09-4ba0-a49d-1c72b796c3a2"
+          },
+        
+      
+        
+          {
+            name: "Code Red",
+            slug: "code-red",
+            lat: 38.92169490000001,
+            lng: -77.0427062,
+            address: "2440 18th St NW, Washington, DC 20009, United States",
+            category: "Speakeasies, Cocktail Bars, Happy Hour Spots",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcode-red%2Flogo-1766354655660-317151845_6592871024062042_4615679690882150095_n.jpg?alt=media&amp;token=d6b96a70-4e9e-4ee3-8254-38c242d33b24"
+          },
+        
+      
+        
+          {
+            name: "Dan&#39;s Cafe",
+            slug: "dans-cafe",
+            lat: 38.9202752,
+            lng: -77.04158149999999,
+            address: "2321 18th St NW, Washington, DC 20009, USA",
+            category: "Dive Bars",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fdans-cafe%2Flogo-1766361957330-280042700_1306104489883708_5821779353376664786_n.jpg?alt=media&amp;token=b0a9d970-3b34-4804-8e00-c0d5fc4e8b96"
+          },
+        
+      
+        
+      
+        
+          {
+            name: "Easy Tiger Tavern",
+            slug: "easy-tiger-tavern",
+            lat: 38.9219729,
+            lng: -77.043662,
+            address: "1817 Columbia Rd NW, Washington, DC 20009, United States",
+            category: "Taverns, Sports Bars, Neighborhood Bars",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Feasy-tiger-tavern%2Flogo-1766402415190-420145838_1083476186030794_1086705617928953778_n.jpg?alt=media&amp;token=b34bfc6b-1520-4b78-a1d9-69b9195e2ac1"
+          },
+        
+      
+        
+          {
+            name: "Entice Bar &amp; Lounge",
+            slug: "entice-bar-lounge",
+            lat: 38.9246142,
+            lng: -77.0400416,
+            address: "1725 Columbia Rd NW, Washington, DC 20009, United States",
+            category: "Lounges, Cocktail Bars, Happy Hour Spots",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fentice-bar-lounge%2Flogo-1766403896168-430068612_374746978653887_7177112799290922672_n.jpg?alt=media&amp;token=c81e87c7-615c-43ed-92e7-762585afd474"
+          },
+        
+      
+        
+          {
+            name: "Le Mont Royal",
+            slug: "le-mont-royal",
+            lat: 38.9232093,
+            lng: -77.04261629999999,
+            address: "1815 Adams Mill Rd NW, Washington, DC 20009, United States",
+            category: "Discos, French, Nightclub",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fle-mont-royal%2Flogo-1766858388108-344780432_631865158789787_7713719697995472524_n.jpg?alt=media&amp;token=22e23bd5-21a8-4fad-8d42-241e28b926fb"
+          },
+        
+      
+        
+          {
+            name: "Green Island Cafe",
+            slug: "green-island-cafe",
+            lat: 38.9204258,
+            lng: -77.04167149999999,
+            address: "2327 18th St NW, Washington, DC 20009, USA",
+            category: "Live Music Venues, Jazz Clubs, Neighborhood Bars",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fgreen-island-cafe%2Flogo-1766495391040-256881497_581744406432713_2181915326425259046_n.jpg?alt=media&amp;token=142e368d-7234-4de3-b231-168f1cd99d5a"
+          },
+        
+      
+        
+          {
+            name: "Grand Central",
+            slug: "grand-central",
+            lat: 38.9217482,
+            lng: -77.04202029999999,
+            address: "2447 18th St NW, Washington, DC 20009, USA",
+            category: "Sports Bars, Event Spaces, Neighborhood Bars",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fgrand-central%2Flogo-1766495162482-503443229_18517585060011195_1575050987119356307_n.jpg?alt=media&amp;token=d5fc26cb-afe9-4416-aa6a-fb47f7d89f1d"
+          },
+        
+      
+        
+          {
+            name: "Grand Duchess",
+            slug: "grand-duchess",
+            lat: 38.9206049,
+            lng: -77.04167389999999,
+            address: "2337 18th St NW, Washington, DC 20009, United States",
+            category: "Cocktail Bars, Dive Bars, Late Night",
+            logoUrl: ""
+          },
+        
+      
+        
+          {
+            name: "Her Diner",
+            slug: "her-diner",
+            lat: 38.9172194,
+            lng: -77.0418854,
+            address: "2004 18th St NW, Washington, DC 20009, United States",
+            category: "LGBTQ+ Bars, Cocktail Bars",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fher-diner%2Flogo-1766511900727-520689669_17919845058100702_7570826630050601848_n.jpg?alt=media&amp;token=746f264d-30ca-4b34-b4b3-c5c7b3892cfe"
+          },
+        
+      
+        
+          {
+            name: "Jack Rose Dining Saloon",
+            slug: "jack-rose-dining-saloon",
+            lat: 38.9173987,
+            lng: -77.0413058,
+            address: "2007 18th St NW, Washington, DC 20009, USA",
+            category: "Whiskey Bars, Cocktail Bars, Gastropubs",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fjack-rose-dining-saloon%2Flogo-1766592683410-10963941_1380350735614342_1996342999_a.jpg?alt=media&amp;token=4ce6ac12-233c-4611-8497-01f993a2dbc6"
+          },
+        
+      
+        
+          {
+            name: "Johnny Pistolas",
+            slug: "johnny-pistolas",
+            lat: 38.92048,
+            lng: -77.0416927,
+            address: "2333 18th St NW, Washington, DC 20009, USA",
+            category: "Taco Bars, Mexican, Brunch Spots",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fjohnny-pistolas%2Flogo-1766593398598-590525267_18436041574108902_8833887615406916636_n.jpg?alt=media&amp;token=5c92aee0-4ff4-4e7d-948c-5359904b066b"
+          },
+        
+      
+        
+          {
+            name: "Lapop",
+            slug: "lapop",
+            lat: 38.9213797,
+            lng: -77.0439425,
+            address: "1847 Columbia Rd NW, Washington, DC 20009, United States",
+            category: "Cocktail Bars, Basements, Neighborhood Bars",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Flapop%2Flogo-1766858122306-53641620_432878950814550_2628768736772882432_n.jpg?alt=media&amp;token=9532033f-638a-4cab-821b-5a57d827206e"
+          },
+        
+      
+        
+          {
+            name: "Larry&#39;s Lounge",
+            slug: "larrys-lounge",
+            lat: 38.91543240000001,
+            lng: -77.0418315,
+            address: "1840 18th St NW, Washington, DC 20009, USA",
+            category: "LGBTQ+ Bars, Neighborhood Bars, Lounges",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Flarrys-lounge%2Flogo-1766858224959-300571513_492853822844122_3062975930764984915_n.png?alt=media&amp;token=7930ea82-f161-43ff-b669-a3f04c66c201"
+          },
+        
+      
+        
+          {
+            name: "Level 1 Cocktail Lab",
+            slug: "level-1-cocktail-lab",
+            lat: 38.9217704,
+            lng: -77.042704,
+            address: "2446 18th St NW First Floor, Washington, DC 20009, United States",
+            category: "Cocktail Bars, Happy Hour Spots, Late Night",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Flevel-1-cocktail-lab%2Flogo-1766858506389-455751838_26332349183076952_8737272518417697350_n.jpg?alt=media&amp;token=7f5bd03b-c5cb-4cd0-8d3c-cb1e0998e873"
+          },
+        
+      
+        
+          {
+            name: "Madam&#39;s Organ",
+            slug: "madams-organ",
+            lat: 38.9220179,
+            lng: -77.042189,
+            address: "2461 18th St NW, Washington, DC 20009, USA",
+            category: "Live Music Venues, Blues Bars, Soul Food",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fmadams-organ%2Flogo-1766860544239-30079500_212988052628567_4676448889685934080_n.jpg?alt=media&amp;token=641d0fd5-1df2-47d5-854b-2d6d5c6fc5de"
+          },
+        
+      
+        
+          {
+            name: "Maison Bar À Vins",
+            slug: "maison-bar-vins",
+            lat: 38.9217101,
+            lng: -77.0431487,
+            address: "1834 Columbia Rd NW, Washington, DC 20009, United States",
+            category: "Wine Bars, French, Romantic",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fmaison-bar-vins%2Flogo-1766860689515-521902589_17915527770120499_3346372339734192152_n.jpg?alt=media&amp;token=d9fa1291-4cd3-4c84-9a26-305eaf771fa8"
+          },
+        
+      
+        
+          {
+            name: "manifest 001",
+            slug: "manifest-001-adams-morgan",
+            lat: 38.9167825,
+            lng: -77.0422267,
+            address: "1807 Florida Ave NW, Washington, DC 20009, United States",
+            category: "Speakeasies, Cocktail Bars, Lounges",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fmanifest-001-adams-morgan%2Flogo-1766860904165-202357162_856105121992699_4251476708592222596_n.jpg?alt=media&amp;token=bfde0bba-1571-4c11-ac5e-450108a0d552"
+          },
+        
+      
+        
+          {
+            name: "Mixxed Food &amp; Drinks",
+            slug: "mixxed-food-drinks",
+            lat: 38.9212315,
+            lng: -77.0418854,
+            address: "2427 18th St NW, Washington, DC 20009, United States",
+            category: "Karaoke Bars, Brunch Spots, Soul Food",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fmixxed-food-drinks%2Flogo-1767019545439-397601648_1054082849079670_8195039635551855080_n.jpg?alt=media&amp;token=f4dfdf17-9986-4e03-858e-6fa902de8d48"
+          },
+        
+      
+        
+          {
+            name: "No Goodbyes",
+            slug: "no-goodbyes",
+            lat: 38.9227526,
+            lng: -77.0416712,
+            address: "1770 Euclid St NW, Washington, DC 20009, USA",
+            category: "Hotel Bars, Cocktail Bars, Brunch Spots",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fno-goodbyes%2Flogo-1767021805129-202268446_806283186947666_3873099856751768668_n.jpg?alt=media&amp;token=c1a49384-af97-439e-bfdc-2d5eeddb03db"
+          },
+        
+      
+        
+          {
+            name: "Perry&#39;s",
+            slug: "perrys",
+            lat: 38.9220894,
+            lng: -77.0435383,
+            address: "1811 Columbia Rd NW, Washington, DC 20009, USA",
+            category: "Rooftop Bars, Sushi Bars, Japanese",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fperrys%2Flogo-1767024495995-305187264_620737139680579_3191970658725262400_n.jpg?alt=media&amp;token=8ec9be21-7319-4bf6-a6aa-7baac6a4efe7"
+          },
+        
+      
+        
+          {
+            name: "Pitchers DC",
+            slug: "pitchers-dc",
+            lat: 38.9201839,
+            lng: -77.0415797,
+            address: "2317 18th St NW, Washington, DC 20009, USA",
+            category: "LGBTQ+ Bars, Sports Bars, Game Bars",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fpitchers-dc%2Flogo-1767025288603-190307393_508604223626853_2069364525923041445_n.jpg?alt=media&amp;token=f937fcbf-4bb8-4d54-a8bb-c9d591cad78d"
+          },
+        
+      
+        
+          {
+            name: "Reveler&#39;s Hour",
+            slug: "reveler-s-hour",
+            lat: 38.9235032,
+            lng: -77.0420895,
+            address: "1775 Columbia Rd NW, Washington, DC 20009, United States",
+            category: "Cocktail Bars, Italian, Happy Hour Spots",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Freveler-s-hour%2Flogo-1767107890490-69866614_540166343222215_6932668250488569856_n.jpg?alt=media&amp;token=4a1e408c-71f6-4fc9-a72a-2e0c60a1fbdf"
+          },
+        
+      
+        
+      
+        
+          {
+            name: "Riff Raff DC",
+            slug: "riff-raff-dc",
+            lat: 38.920481,
+            lng: -77.0416995,
+            address: "2333 18th St NW, Washington, DC 20009, United States",
+            category: "Cocktail Bars, Speakeasies, Neighborhood Bars",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Friff-raff-dc%2Flogo-1767108132075-551498742_17983519091892234_3329806668154676670_n.jpg?alt=media&amp;token=a30e841f-e2ae-4d72-9cd4-ed4ac72fd3d0"
+          },
+        
+      
+        
+          {
+            name: "Roofers Union",
+            slug: "roofers-union",
+            lat: 38.9217704,
+            lng: -77.042704,
+            address: "2446 18th St NW, Washington, DC 20009, United States",
+            category: "Rooftop Bars, Gastropubs, Happy Hour Spots",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Froofers-union%2Flogo-1767108742215-242122399_2885190981698711_5670626180788965631_n.jpg?alt=media&amp;token=355a07fb-bedd-4fb4-b72f-8b4f51f1f9ab"
+          },
+        
+      
+        
+          {
+            name: "Shenanigan’s Irish Pub",
+            slug: "shenanigan-s-irish-pub",
+            lat: 38.9219252,
+            lng: -77.0427158,
+            address: "2450 18th St NW, Washington, DC 20009, United States",
+            category: "Irish Pubs, Comedy Clubs, Dive Bars",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fshenanigan-s-irish-pub%2Flogo-1767110646845-178919886_1118927145250970_8061874892008286479_n.jpg?alt=media&amp;token=6501717d-a1c5-4638-a002-b1563536a4ae"
+          },
+        
+      
+        
+          {
+            name: "Sinners and Saints",
+            slug: "sinners-and-saints",
+            lat: 38.9200056,
+            lng: -77.0414661,
+            address: "2309 18th St NW, Washington, DC 20009, United States",
+            category: "LGBTQ+ Bars, Dive Bars, Cocktail Bars",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fsinners-and-saints%2Flogo-1767111178779-454857715_2571089923091752_2459612234500872197_n.jpg?alt=media&amp;token=6d9500ef-c8ff-4f18-bcb0-3d69c52b7554"
+          },
+        
+      
+        
+          {
+            name: "The Blaguard",
+            slug: "the-blaguard",
+            lat: 38.917293,
+            lng: -77.041383,
+            address: "2003 18th St NW, Washington, DC 20009, USA",
+            category: "Irish Pubs, Dive Bars, Sports Bars",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-blaguard%2Flogo-1766317554053-295084088_481770997281866_654993836962169505_n.jpg?alt=media&amp;token=f6c2cdd8-f782-4051-aa7b-0d3535ac1c17"
+          },
+        
+      
+        
+          {
+            name: "the DINER",
+            slug: "the-diner",
+            lat: 38.921851,
+            lng: -77.04204279999999,
+            address: "2453 18th St NW, Washington, DC 20009, United States",
+            category: "American, Brunch Spots, Late Night",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-diner%2Flogo-1766400468669-10549759_976282255767942_2043221890_a.jpg?alt=media&amp;token=0f40c6b2-b138-4bb6-88cd-f161fb69585e"
+          },
+        
+      
+        
+          {
+            name: "The Green Zone",
+            slug: "the-green-zone",
+            lat: 38.9194812,
+            lng: -77.0418777,
+            address: "2226 18th St NW, Washington, DC 20009, USA",
+            category: "Cocktail Bars, Mediterranean, Hookah Lounges",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-green-zone%2Flogo-1766495631791-37175382_204994150182122_3359284867857645568_n.jpg?alt=media&amp;token=5e6fd310-89c1-4d77-82ce-c065122d4f71"
+          },
+        
+      
+        
+          {
+            name: "The Grill From Ipanema",
+            slug: "the-grill-from-ipanema",
+            lat: 38.9209492,
+            lng: -77.0435244,
+            address: "1858 Columbia Rd NW, Washington, DC 20009, United States",
+            category: "Happy Hour Spots, Latin, Casual",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-grill-from-ipanema%2Flogo-1766507998550-91292747_877008522721005_91002888054112256_n.jpg?alt=media&amp;token=cb733f13-e87d-46b0-9437-099417acca10"
+          },
+        
+      
+        
+          {
+            name: "The LINE Hotel",
+            slug: "the-line-hotel",
+            lat: 38.9227591,
+            lng: -77.0416516,
+            address: "1770 Euclid St NW, Washington, DC 20009, USA",
+            category: "Hotel Bars, Rooftop Bars, Event Spaces",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-line-hotel%2Flogo-1766858615920-472387391_1675041463047372_897712138028895919_n.jpg?alt=media&amp;token=ad5f1f83-a906-4367-8748-f591363d4936"
+          },
+        
+      
+        
+          {
+            name: "Tiki On 18th",
+            slug: "tiki-on-18th",
+            lat: 38.9208884,
+            lng: -77.0417215,
+            address: "2411 18th St NW, Washington, DC 20009, United States",
+            category: "Tiki Bars, Cocktail Bars",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Ftiki-on-18th%2Flogo-1767142813703-62515094_407373119861228_2708226529397047296_n.jpg?alt=media&amp;token=dfd87737-418e-4656-ada9-a7165eebf802"
+          },
+        
+      
+        
+          {
+            name: "Town Tavern DC",
+            slug: "town-tavern-dc",
+            lat: 38.9203406,
+            lng: -77.04156019999999,
+            address: "2323 18th St NW, Washington, DC 20009, United States",
+            category: "Neighborhood Bars, Sports Bars, Karaoke Bars",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Ftown-tavern-dc%2Flogo-1766239070190-10349819_1511618622393199_940625756_a.jpg?alt=media&amp;token=462f6d1c-0e51-4690-b09e-334d9809aef5"
+          },
+        
+      
+        
+          {
+            name: "Tryst",
+            slug: "tryst",
+            lat: 38.92197700000001,
+            lng: -77.042091,
+            address: "2459 18th St NW, Washington, DC 20009, United States",
+            category: "Brunch Spots, Cocktail Bars, Happy Hour Spots",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Ftryst%2Flogo-1767143815078-109438775_1677999619017727_9201703034106070302_n.jpg?alt=media&amp;token=d348528a-5b60-4524-8ee7-ac30c310b0be"
+          },
+        
+      
+        
+          {
+            name: "Vagabond Bar and Kitchen",
+            slug: "vagabond-bar-and-kitchen",
+            lat: 38.9153486,
+            lng: -77.04182279999999,
+            address: "1836 18th St NW, Washington, DC 20009, United States",
+            category: "Rooftop Bars, Gastropubs, Happy Hour Spots",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fvagabond-bar-and-kitchen%2Flogo-1767144742207-371932955_314523754403184_5056187505954432464_n.jpg?alt=media&amp;token=371af3cc-b580-45d1-9190-f1252ab5d475"
+          },
+        
+      
+        
+          {
+            name: "Bossa Bistro + Lounge",
+            slug: "bossa-bistro-lounge",
+            lat: 38.9220855,
+            lng: -77.0422006,
+            address: "2463 18th St NW, Washington, DC 20009, USA",
+            category: "Lounges, Live Music Venues, Latin",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbossa-bistro-lounge%2Flogo-1766318621756-15625421_1823923897866406_9046235422220353536_a.jpg?alt=media&amp;token=6f1fd35a-358e-4ad2-8d30-860011ef9769"
+          },
+        
+      
+    ];
+
+    if (venues.length === 0) {
+      document.getElementById('neighborhood-map').style.display = 'none';
+      return;
+    }
+
+
+
+    // --- 1. Group overlapping venues & Calculate Final Positions ---
+    const grouped = {};
+    const threshold = 0.0003; // ~30m proximity
+
+    venues.forEach(v => {
+      let added = false;
+      for (const key in grouped) {
+        const [gLat, gLng] = key.split(',').map(Number);
+        if (Math.abs(v.lat - gLat) < threshold && Math.abs(v.lng - gLng) < threshold) {
+          grouped[key].push(v);
+          added = true;
+          break;
+        }
+      }
+      if (!added) {
+        grouped[`${v.lat},${v.lng}`] = [v];
+      }
+    });
+
+    // Store final render objects
+    const renderMarkers = [];
+    let minLat = 90, maxLat = -90, minLng = 180, maxLng = -180;
+
+    for (const key in grouped) {
+      const group = grouped[key];
+      const count = group.length;
+      
+      group.forEach((v, index) => {
+        let finalLat = v.lat;
+        let finalLng = v.lng;
+
+        // Spread out if overlapping
+        if (count > 1) {
+          const angle = (index / count) * Math.PI * 2; 
+          const radius = 0.00035; 
+          finalLat = v.lat + (radius * Math.cos(angle));
+          finalLng = v.lng + (radius * Math.sin(angle));
+        }
+
+        // Update bounds based on FINAL positions
+        if (finalLat < minLat) minLat = finalLat;
+        if (finalLat > maxLat) maxLat = finalLat;
+        if (finalLng < minLng) minLng = finalLng;
+        if (finalLng > maxLng) maxLng = finalLng;
+
+        renderMarkers.push({
+            lat: finalLat,
+            lng: finalLng,
+            ...v // copy name, logoUrl, etc
+        });
+      });
+    }
+
+
+
+    // --- 2. Smart Height Calculation ---
+    // Calculate physical dimensions in meters
+    const latDiffDegrees = maxLat - minLat;
+    const lngDiffDegrees = maxLng - minLng;
+    const metersPerLat = 111132;
+    const metersPerLng = 111132 * 0.78; // Approx for DC latitude
+    
+    const heightMeters = latDiffDegrees * metersPerLat;
+    const widthMeters = lngDiffDegrees * metersPerLng;
+
+    // Get available width
+    const containerWidth = document.getElementById('neighborhood-map').clientWidth || window.innerWidth;
+
+    // Determine the "Pixels per Meter" resolution we will get
+    // 1. Resolution dictated by fitting the width (Width / WidthMeters)
+    // 2. Resolution dictated by Max Zoom 17 (~1.4 px/m)
+    // We take the SMALLER of these two, because that's what fitBounds will effectively use
+    // to ensure the width fits.
+    
+    // Safety check for single-pin or zero-width
+    let effectiveRes = 1.4; 
+    if (widthMeters > 0) {
+        const widthRes = containerWidth / widthMeters;
+        effectiveRes = Math.min(widthRes, 1.4);
+    }
+
+    // Now calculate target height based on that effective resolution
+    // + Fixed UI buffer (reduced to 100px)
+    let targetHeight = (heightMeters * effectiveRes) + 100;
+
+    // Clamp values
+    if (targetHeight < 350) targetHeight = 350; 
+    if (targetHeight > 1200) targetHeight = 1200; // Reasonable cap
+
+    document.getElementById('neighborhood-map').style.height = Math.round(targetHeight) + 'px';
+
+    // --- 3. Initialize Map ---
+    const centerLat = (minLat + maxLat) / 2;
+    const centerLng = (minLng + maxLng) / 2;
+
+    var map = L.map('neighborhood-map').setView([centerLat, centerLng], 15);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+      subdomains: 'abcd',
+      maxZoom: 20
+    }).addTo(map);
+
+    const markersLayer = L.featureGroup();
+
+    renderMarkers.forEach(m => {
+        let icon;
+        if (m.logoUrl && m.logoUrl.trim() !== "") {
+          icon = L.divIcon({
+            className: 'custom-pin-icon',
+            html: `<div class="pin-wrapper"><img src="${m.logoUrl}" alt="${m.name}" onerror="this.parentElement.classList.add('no-logo'); this.style.display='none';"></div>`,
+            iconSize: [40, 40],
+            iconAnchor: [20, 20],
+            popupAnchor: [0, -20]
+          });
+        } else {
+          icon = L.divIcon({
+            className: 'custom-pin-icon',
+            html: `<div class="pin-wrapper no-logo"></div>`,
+            iconSize: [30, 30],
+            iconAnchor: [15, 15],
+            popupAnchor: [0, -15]
+          });
+        }
+
+        const marker = L.marker([m.lat, m.lng], { icon: icon });
+        const popupContent = `
+          <div style="min-width: 150px; text-align: center;">
+            <h3 style="font-size: 16px; font-weight: bold;">${m.name}</h3>
+            <p style="font-size: 12px;">${m.category}</p>
+            <a href="/bars/${m.slug}/">View Profile</a>
+          </div>
+        `;
+        marker.bindPopup(popupContent);
+        marker.on('mouseover', function (e) { this.openPopup(); });
+        markersLayer.addLayer(marker);
+    });
+
+    markersLayer.addTo(map);
+
+    // Fit bounds 
+    if (venues.length > 0) {
+       // Slightly relaxed padding [20, 20] so pins don't touch edges
+       map.fitBounds(markersLayer.getBounds(), { padding: [20, 20], maxZoom: 17 });
+    }
+  });
+</script>
+
+<div class="venue-grid">
+  
+      <a href="/bars/a-league-of-her-own/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fa-league-of-her-own%2Flogo-1766013233987-309345581_509234564546172_135073121794137212_n.jpg?alt=media&amp;token=7ff49a2e-1950-4236-a13f-cfaeb03ff2ba');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fa-league-of-her-own%2Flogo-1766013233987-309345581_509234564546172_135073121794137212_n.jpg?alt=media&amp;token=7ff49a2e-1950-4236-a13f-cfaeb03ff2ba" alt="A League of Her Own logo" class="card-logo">
+              
+              <h3>A League of Her Own</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Lesbian Bars, Sports Bars, Dance Clubs</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/bar-charley/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbar-charley%2Flogo-1766148784052-244137826_251565800311977_5568711480917769411_n.jpg?alt=media&amp;token=e594b1f1-2f43-4f3c-b471-547de66a7a49');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbar-charley%2Flogo-1766148784052-244137826_251565800311977_5568711480917769411_n.jpg?alt=media&amp;token=e594b1f1-2f43-4f3c-b471-547de66a7a49" alt="Bar Charley logo" class="card-logo">
+              
+              <h3>Bar Charley</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Cocktail Bars, Neighborhood Bars, Brunch Spots</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+            <div class="card-happy-hour-tag">
+              🎉 Happy Hour
+            </div>
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/bedrock-billiards/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbedrock-billiards%2Flogo-1766150203974-293200596_555180479726900_6820353420101778171_n.jpg?alt=media&amp;token=302119b2-6756-4930-905b-e84ba7c8ee0a');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbedrock-billiards%2Flogo-1766150203974-293200596_555180479726900_6820353420101778171_n.jpg?alt=media&amp;token=302119b2-6756-4930-905b-e84ba7c8ee0a" alt="Bedrock Billiards logo" class="card-logo">
+              
+              <h3>Bedrock Billiards</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Pool Halls, Dive Bars, Late Night</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/bukom-cafe/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbukom-cafe%2Flogo-1766319578512-470312165_1107240920511083_2896386572970859226_n.jpg?alt=media&amp;token=0401fd7d-31b0-4d48-8323-ccc5849408f0');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbukom-cafe%2Flogo-1766319578512-470312165_1107240920511083_2896386572970859226_n.jpg?alt=media&amp;token=0401fd7d-31b0-4d48-8323-ccc5849408f0" alt="Bukom Restaurant &amp; Lounge logo" class="card-logo">
+              
+              <h3>Bukom Restaurant & Lounge</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Live Music Venues, Soul Food</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/club-timehri/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fclub-timehri%2Flogo-1766354480813-323797300_534262678637664_2429145153674713715_n.jpg?alt=media&amp;token=84de5d52-7e09-4ba0-a49d-1c72b796c3a2');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fclub-timehri%2Flogo-1766354480813-323797300_534262678637664_2429145153674713715_n.jpg?alt=media&amp;token=84de5d52-7e09-4ba0-a49d-1c72b796c3a2" alt="Club Timehri logo" class="card-logo">
+              
+              <h3>Club Timehri</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Nightclub, Rum Bars, Latin</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/code-red/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcode-red%2Flogo-1766354655660-317151845_6592871024062042_4615679690882150095_n.jpg?alt=media&amp;token=d6b96a70-4e9e-4ee3-8254-38c242d33b24');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcode-red%2Flogo-1766354655660-317151845_6592871024062042_4615679690882150095_n.jpg?alt=media&amp;token=d6b96a70-4e9e-4ee3-8254-38c242d33b24" alt="Code Red logo" class="card-logo">
+              
+              <h3>Code Red</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Speakeasies, Cocktail Bars, Happy Hour Spots</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+            <div class="card-happy-hour-tag">
+              🎉 Happy Hour
+            </div>
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/dans-cafe/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fdans-cafe%2Flogo-1766361957330-280042700_1306104489883708_5821779353376664786_n.jpg?alt=media&amp;token=b0a9d970-3b34-4804-8e00-c0d5fc4e8b96');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fdans-cafe%2Flogo-1766361957330-280042700_1306104489883708_5821779353376664786_n.jpg?alt=media&amp;token=b0a9d970-3b34-4804-8e00-c0d5fc4e8b96" alt="Dan&#39;s Cafe logo" class="card-logo">
+              
+              <h3>Dan's Cafe</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Dive Bars</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/death-punch/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fdeath-punch%2Flogo-1766363506623-72196962_741021453034336_4072645211640037376_n.jpg?alt=media&amp;token=d0df6a2c-d27f-4794-8cd3-376fa913fb0c');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fdeath-punch%2Flogo-1766363506623-72196962_741021453034336_4072645211640037376_n.jpg?alt=media&amp;token=d0df6a2c-d27f-4794-8cd3-376fa913fb0c" alt="Death Punch logo" class="card-logo">
+              
+              <h3>Death Punch</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category"></p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/easy-tiger-tavern/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Feasy-tiger-tavern%2Flogo-1766402415190-420145838_1083476186030794_1086705617928953778_n.jpg?alt=media&amp;token=b34bfc6b-1520-4b78-a1d9-69b9195e2ac1');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Feasy-tiger-tavern%2Flogo-1766402415190-420145838_1083476186030794_1086705617928953778_n.jpg?alt=media&amp;token=b34bfc6b-1520-4b78-a1d9-69b9195e2ac1" alt="Easy Tiger Tavern logo" class="card-logo">
+              
+              <h3>Easy Tiger Tavern</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Taverns, Sports Bars, Neighborhood Bars</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+            <div class="card-happy-hour-tag">
+              🎉 Happy Hour
+            </div>
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/entice-bar-lounge/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fentice-bar-lounge%2Flogo-1766403896168-430068612_374746978653887_7177112799290922672_n.jpg?alt=media&amp;token=c81e87c7-615c-43ed-92e7-762585afd474');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fentice-bar-lounge%2Flogo-1766403896168-430068612_374746978653887_7177112799290922672_n.jpg?alt=media&amp;token=c81e87c7-615c-43ed-92e7-762585afd474" alt="Entice Bar &amp; Lounge logo" class="card-logo">
+              
+              <h3>Entice Bar & Lounge</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Lounges, Cocktail Bars, Happy Hour Spots</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/le-mont-royal/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fle-mont-royal%2Flogo-1766858388108-344780432_631865158789787_7713719697995472524_n.jpg?alt=media&amp;token=22e23bd5-21a8-4fad-8d42-241e28b926fb');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fle-mont-royal%2Flogo-1766858388108-344780432_631865158789787_7713719697995472524_n.jpg?alt=media&amp;token=22e23bd5-21a8-4fad-8d42-241e28b926fb" alt="Le Mont Royal logo" class="card-logo">
+              
+              <h3>Le Mont Royal</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Discos, French, Nightclub</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/green-island-cafe/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fgreen-island-cafe%2Flogo-1766495391040-256881497_581744406432713_2181915326425259046_n.jpg?alt=media&amp;token=142e368d-7234-4de3-b231-168f1cd99d5a');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fgreen-island-cafe%2Flogo-1766495391040-256881497_581744406432713_2181915326425259046_n.jpg?alt=media&amp;token=142e368d-7234-4de3-b231-168f1cd99d5a" alt="Green Island Cafe logo" class="card-logo">
+              
+              <h3>Green Island Cafe</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Live Music Venues, Jazz Clubs, Neighborhood Bars</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/grand-central/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fgrand-central%2Flogo-1766495162482-503443229_18517585060011195_1575050987119356307_n.jpg?alt=media&amp;token=d5fc26cb-afe9-4416-aa6a-fb47f7d89f1d');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fgrand-central%2Flogo-1766495162482-503443229_18517585060011195_1575050987119356307_n.jpg?alt=media&amp;token=d5fc26cb-afe9-4416-aa6a-fb47f7d89f1d" alt="Grand Central logo" class="card-logo">
+              
+              <h3>Grand Central</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Sports Bars, Event Spaces, Neighborhood Bars</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/grand-duchess/" class="venue-card "
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+              <h3>Grand Duchess</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Cocktail Bars, Dive Bars, Late Night</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/her-diner/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fher-diner%2Flogo-1766511900727-520689669_17919845058100702_7570826630050601848_n.jpg?alt=media&amp;token=746f264d-30ca-4b34-b4b3-c5c7b3892cfe');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fher-diner%2Flogo-1766511900727-520689669_17919845058100702_7570826630050601848_n.jpg?alt=media&amp;token=746f264d-30ca-4b34-b4b3-c5c7b3892cfe" alt="Her Diner logo" class="card-logo">
+              
+              <h3>Her Diner</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">LGBTQ+ Bars, Cocktail Bars</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/jack-rose-dining-saloon/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fjack-rose-dining-saloon%2Flogo-1766592683410-10963941_1380350735614342_1996342999_a.jpg?alt=media&amp;token=4ce6ac12-233c-4611-8497-01f993a2dbc6');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fjack-rose-dining-saloon%2Flogo-1766592683410-10963941_1380350735614342_1996342999_a.jpg?alt=media&amp;token=4ce6ac12-233c-4611-8497-01f993a2dbc6" alt="Jack Rose Dining Saloon logo" class="card-logo">
+              
+              <h3>Jack Rose Dining Saloon</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Whiskey Bars, Cocktail Bars, Gastropubs</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+            <div class="card-happy-hour-tag">
+              🎉 Happy Hour
+            </div>
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/johnny-pistolas/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fjohnny-pistolas%2Flogo-1766593398598-590525267_18436041574108902_8833887615406916636_n.jpg?alt=media&amp;token=5c92aee0-4ff4-4e7d-948c-5359904b066b');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fjohnny-pistolas%2Flogo-1766593398598-590525267_18436041574108902_8833887615406916636_n.jpg?alt=media&amp;token=5c92aee0-4ff4-4e7d-948c-5359904b066b" alt="Johnny Pistolas logo" class="card-logo">
+              
+              <h3>Johnny Pistolas</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Taco Bars, Mexican, Brunch Spots</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+            <div class="card-happy-hour-tag">
+              🎉 Happy Hour
+            </div>
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/lapop/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Flapop%2Flogo-1766858122306-53641620_432878950814550_2628768736772882432_n.jpg?alt=media&amp;token=9532033f-638a-4cab-821b-5a57d827206e');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Flapop%2Flogo-1766858122306-53641620_432878950814550_2628768736772882432_n.jpg?alt=media&amp;token=9532033f-638a-4cab-821b-5a57d827206e" alt="Lapop logo" class="card-logo">
+              
+              <h3>Lapop</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Cocktail Bars, Basements, Neighborhood Bars</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/larrys-lounge/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Flarrys-lounge%2Flogo-1766858224959-300571513_492853822844122_3062975930764984915_n.png?alt=media&amp;token=7930ea82-f161-43ff-b669-a3f04c66c201');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Flarrys-lounge%2Flogo-1766858224959-300571513_492853822844122_3062975930764984915_n.png?alt=media&amp;token=7930ea82-f161-43ff-b669-a3f04c66c201" alt="Larry&#39;s Lounge logo" class="card-logo">
+              
+              <h3>Larry's Lounge</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">LGBTQ+ Bars, Neighborhood Bars, Lounges</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/level-1-cocktail-lab/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Flevel-1-cocktail-lab%2Flogo-1766858506389-455751838_26332349183076952_8737272518417697350_n.jpg?alt=media&amp;token=7f5bd03b-c5cb-4cd0-8d3c-cb1e0998e873');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Flevel-1-cocktail-lab%2Flogo-1766858506389-455751838_26332349183076952_8737272518417697350_n.jpg?alt=media&amp;token=7f5bd03b-c5cb-4cd0-8d3c-cb1e0998e873" alt="Level 1 Cocktail Lab logo" class="card-logo">
+              
+              <h3>Level 1 Cocktail Lab</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Cocktail Bars, Happy Hour Spots, Late Night</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/madams-organ/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fmadams-organ%2Flogo-1766860544239-30079500_212988052628567_4676448889685934080_n.jpg?alt=media&amp;token=641d0fd5-1df2-47d5-854b-2d6d5c6fc5de');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fmadams-organ%2Flogo-1766860544239-30079500_212988052628567_4676448889685934080_n.jpg?alt=media&amp;token=641d0fd5-1df2-47d5-854b-2d6d5c6fc5de" alt="Madam&#39;s Organ logo" class="card-logo">
+              
+              <h3>Madam's Organ</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Live Music Venues, Blues Bars, Soul Food</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+            <div class="card-happy-hour-tag">
+              🎉 Happy Hour
+            </div>
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/maison-bar-vins/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fmaison-bar-vins%2Flogo-1766860689515-521902589_17915527770120499_3346372339734192152_n.jpg?alt=media&amp;token=d9fa1291-4cd3-4c84-9a26-305eaf771fa8');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fmaison-bar-vins%2Flogo-1766860689515-521902589_17915527770120499_3346372339734192152_n.jpg?alt=media&amp;token=d9fa1291-4cd3-4c84-9a26-305eaf771fa8" alt="Maison Bar À Vins logo" class="card-logo">
+              
+              <h3>Maison Bar À Vins</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Wine Bars, French, Romantic</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/manifest-001-adams-morgan/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fmanifest-001-adams-morgan%2Flogo-1766860904165-202357162_856105121992699_4251476708592222596_n.jpg?alt=media&amp;token=bfde0bba-1571-4c11-ac5e-450108a0d552');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fmanifest-001-adams-morgan%2Flogo-1766860904165-202357162_856105121992699_4251476708592222596_n.jpg?alt=media&amp;token=bfde0bba-1571-4c11-ac5e-450108a0d552" alt="manifest 001 logo" class="card-logo">
+              
+              <h3>manifest 001</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Speakeasies, Cocktail Bars, Lounges</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/mixxed-food-drinks/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fmixxed-food-drinks%2Flogo-1767019545439-397601648_1054082849079670_8195039635551855080_n.jpg?alt=media&amp;token=f4dfdf17-9986-4e03-858e-6fa902de8d48');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fmixxed-food-drinks%2Flogo-1767019545439-397601648_1054082849079670_8195039635551855080_n.jpg?alt=media&amp;token=f4dfdf17-9986-4e03-858e-6fa902de8d48" alt="Mixxed Food &amp; Drinks logo" class="card-logo">
+              
+              <h3>Mixxed Food & Drinks</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Karaoke Bars, Brunch Spots, Soul Food</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/no-goodbyes/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fno-goodbyes%2Flogo-1767021805129-202268446_806283186947666_3873099856751768668_n.jpg?alt=media&amp;token=c1a49384-af97-439e-bfdc-2d5eeddb03db');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fno-goodbyes%2Flogo-1767021805129-202268446_806283186947666_3873099856751768668_n.jpg?alt=media&amp;token=c1a49384-af97-439e-bfdc-2d5eeddb03db" alt="No Goodbyes logo" class="card-logo">
+              
+              <h3>No Goodbyes</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Hotel Bars, Cocktail Bars, Brunch Spots</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+            <div class="card-happy-hour-tag">
+              🎉 Happy Hour
+            </div>
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/perrys/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fperrys%2Flogo-1767024495995-305187264_620737139680579_3191970658725262400_n.jpg?alt=media&amp;token=8ec9be21-7319-4bf6-a6aa-7baac6a4efe7');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fperrys%2Flogo-1767024495995-305187264_620737139680579_3191970658725262400_n.jpg?alt=media&amp;token=8ec9be21-7319-4bf6-a6aa-7baac6a4efe7" alt="Perry&#39;s logo" class="card-logo">
+              
+              <h3>Perry's</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Rooftop Bars, Sushi Bars, Japanese</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/pitchers-dc/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fpitchers-dc%2Flogo-1767025288603-190307393_508604223626853_2069364525923041445_n.jpg?alt=media&amp;token=f937fcbf-4bb8-4d54-a8bb-c9d591cad78d');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fpitchers-dc%2Flogo-1767025288603-190307393_508604223626853_2069364525923041445_n.jpg?alt=media&amp;token=f937fcbf-4bb8-4d54-a8bb-c9d591cad78d" alt="Pitchers DC logo" class="card-logo">
+              
+              <h3>Pitchers DC</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">LGBTQ+ Bars, Sports Bars, Game Bars</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/reveler-s-hour/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Freveler-s-hour%2Flogo-1767107890490-69866614_540166343222215_6932668250488569856_n.jpg?alt=media&amp;token=4a1e408c-71f6-4fc9-a72a-2e0c60a1fbdf');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Freveler-s-hour%2Flogo-1767107890490-69866614_540166343222215_6932668250488569856_n.jpg?alt=media&amp;token=4a1e408c-71f6-4fc9-a72a-2e0c60a1fbdf" alt="Reveler&#39;s Hour logo" class="card-logo">
+              
+              <h3>Reveler's Hour</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Cocktail Bars, Italian, Happy Hour Spots</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/shanklin-hall/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fshanklin-hall%2Flogo-1767110306722-209624746_345208187279835_966581784541499236_n.jpg?alt=media&amp;token=68e415ce-2911-4166-b19f-c1a1fc752128');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fshanklin-hall%2Flogo-1767110306722-209624746_345208187279835_966581784541499236_n.jpg?alt=media&amp;token=68e415ce-2911-4166-b19f-c1a1fc752128" alt="Shanklin Hall logo" class="card-logo">
+              
+              <h3>Shanklin Hall</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category"></p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+            <div class="card-happy-hour-tag">
+              🎉 Happy Hour
+            </div>
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/riff-raff-dc/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Friff-raff-dc%2Flogo-1767108132075-551498742_17983519091892234_3329806668154676670_n.jpg?alt=media&amp;token=a30e841f-e2ae-4d72-9cd4-ed4ac72fd3d0');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Friff-raff-dc%2Flogo-1767108132075-551498742_17983519091892234_3329806668154676670_n.jpg?alt=media&amp;token=a30e841f-e2ae-4d72-9cd4-ed4ac72fd3d0" alt="Riff Raff DC logo" class="card-logo">
+              
+              <h3>Riff Raff DC</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Cocktail Bars, Speakeasies, Neighborhood Bars</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/roofers-union/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Froofers-union%2Flogo-1767108742215-242122399_2885190981698711_5670626180788965631_n.jpg?alt=media&amp;token=355a07fb-bedd-4fb4-b72f-8b4f51f1f9ab');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Froofers-union%2Flogo-1767108742215-242122399_2885190981698711_5670626180788965631_n.jpg?alt=media&amp;token=355a07fb-bedd-4fb4-b72f-8b4f51f1f9ab" alt="Roofers Union logo" class="card-logo">
+              
+              <h3>Roofers Union</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Rooftop Bars, Gastropubs, Happy Hour Spots</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+            <div class="card-happy-hour-tag">
+              🎉 Happy Hour
+            </div>
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/shenanigan-s-irish-pub/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fshenanigan-s-irish-pub%2Flogo-1767110646845-178919886_1118927145250970_8061874892008286479_n.jpg?alt=media&amp;token=6501717d-a1c5-4638-a002-b1563536a4ae');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fshenanigan-s-irish-pub%2Flogo-1767110646845-178919886_1118927145250970_8061874892008286479_n.jpg?alt=media&amp;token=6501717d-a1c5-4638-a002-b1563536a4ae" alt="Shenanigan’s Irish Pub logo" class="card-logo">
+              
+              <h3>Shenanigan’s Irish Pub</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Irish Pubs, Comedy Clubs, Dive Bars</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/sinners-and-saints/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fsinners-and-saints%2Flogo-1767111178779-454857715_2571089923091752_2459612234500872197_n.jpg?alt=media&amp;token=6d9500ef-c8ff-4f18-bcb0-3d69c52b7554');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fsinners-and-saints%2Flogo-1767111178779-454857715_2571089923091752_2459612234500872197_n.jpg?alt=media&amp;token=6d9500ef-c8ff-4f18-bcb0-3d69c52b7554" alt="Sinners and Saints logo" class="card-logo">
+              
+              <h3>Sinners and Saints</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">LGBTQ+ Bars, Dive Bars, Cocktail Bars</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/the-blaguard/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-blaguard%2Flogo-1766317554053-295084088_481770997281866_654993836962169505_n.jpg?alt=media&amp;token=f6c2cdd8-f782-4051-aa7b-0d3535ac1c17');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-blaguard%2Flogo-1766317554053-295084088_481770997281866_654993836962169505_n.jpg?alt=media&amp;token=f6c2cdd8-f782-4051-aa7b-0d3535ac1c17" alt="The Blaguard logo" class="card-logo">
+              
+              <h3>The Blaguard</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Irish Pubs, Dive Bars, Sports Bars</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+            <div class="card-happy-hour-tag">
+              🎉 Happy Hour
+            </div>
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/the-diner/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-diner%2Flogo-1766400468669-10549759_976282255767942_2043221890_a.jpg?alt=media&amp;token=0f40c6b2-b138-4bb6-88cd-f161fb69585e');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-diner%2Flogo-1766400468669-10549759_976282255767942_2043221890_a.jpg?alt=media&amp;token=0f40c6b2-b138-4bb6-88cd-f161fb69585e" alt="the DINER logo" class="card-logo">
+              
+              <h3>the DINER</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">American, Brunch Spots, Late Night</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/the-green-zone/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-green-zone%2Flogo-1766495631791-37175382_204994150182122_3359284867857645568_n.jpg?alt=media&amp;token=5e6fd310-89c1-4d77-82ce-c065122d4f71');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-green-zone%2Flogo-1766495631791-37175382_204994150182122_3359284867857645568_n.jpg?alt=media&amp;token=5e6fd310-89c1-4d77-82ce-c065122d4f71" alt="The Green Zone logo" class="card-logo">
+              
+              <h3>The Green Zone</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Cocktail Bars, Mediterranean, Hookah Lounges</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+            <div class="card-happy-hour-tag">
+              🎉 Happy Hour
+            </div>
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/the-grill-from-ipanema/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-grill-from-ipanema%2Flogo-1766507998550-91292747_877008522721005_91002888054112256_n.jpg?alt=media&amp;token=cb733f13-e87d-46b0-9437-099417acca10');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-grill-from-ipanema%2Flogo-1766507998550-91292747_877008522721005_91002888054112256_n.jpg?alt=media&amp;token=cb733f13-e87d-46b0-9437-099417acca10" alt="The Grill From Ipanema logo" class="card-logo">
+              
+              <h3>The Grill From Ipanema</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Happy Hour Spots, Latin, Casual</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/the-line-hotel/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-line-hotel%2Flogo-1766858615920-472387391_1675041463047372_897712138028895919_n.jpg?alt=media&amp;token=ad5f1f83-a906-4367-8748-f591363d4936');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-line-hotel%2Flogo-1766858615920-472387391_1675041463047372_897712138028895919_n.jpg?alt=media&amp;token=ad5f1f83-a906-4367-8748-f591363d4936" alt="The LINE Hotel logo" class="card-logo">
+              
+              <h3>The LINE Hotel</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Hotel Bars, Rooftop Bars, Event Spaces</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/tiki-on-18th/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Ftiki-on-18th%2Flogo-1767142813703-62515094_407373119861228_2708226529397047296_n.jpg?alt=media&amp;token=dfd87737-418e-4656-ada9-a7165eebf802');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Ftiki-on-18th%2Flogo-1767142813703-62515094_407373119861228_2708226529397047296_n.jpg?alt=media&amp;token=dfd87737-418e-4656-ada9-a7165eebf802" alt="Tiki On 18th logo" class="card-logo">
+              
+              <h3>Tiki On 18th</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Tiki Bars, Cocktail Bars</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+            <div class="card-happy-hour-tag">
+              🎉 Happy Hour
+            </div>
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/town-tavern-dc/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Ftown-tavern-dc%2Flogo-1766239070190-10349819_1511618622393199_940625756_a.jpg?alt=media&amp;token=462f6d1c-0e51-4690-b09e-334d9809aef5');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Ftown-tavern-dc%2Flogo-1766239070190-10349819_1511618622393199_940625756_a.jpg?alt=media&amp;token=462f6d1c-0e51-4690-b09e-334d9809aef5" alt="Town Tavern DC logo" class="card-logo">
+              
+              <h3>Town Tavern DC</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Neighborhood Bars, Sports Bars, Karaoke Bars</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+            <div class="card-happy-hour-tag">
+              🎉 Happy Hour
+            </div>
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/tryst/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Ftryst%2Flogo-1767143815078-109438775_1677999619017727_9201703034106070302_n.jpg?alt=media&amp;token=d348528a-5b60-4524-8ee7-ac30c310b0be');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Ftryst%2Flogo-1767143815078-109438775_1677999619017727_9201703034106070302_n.jpg?alt=media&amp;token=d348528a-5b60-4524-8ee7-ac30c310b0be" alt="Tryst logo" class="card-logo">
+              
+              <h3>Tryst</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Brunch Spots, Cocktail Bars, Happy Hour Spots</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/vagabond-bar-and-kitchen/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fvagabond-bar-and-kitchen%2Flogo-1767144742207-371932955_314523754403184_5056187505954432464_n.jpg?alt=media&amp;token=371af3cc-b580-45d1-9190-f1252ab5d475');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fvagabond-bar-and-kitchen%2Flogo-1767144742207-371932955_314523754403184_5056187505954432464_n.jpg?alt=media&amp;token=371af3cc-b580-45d1-9190-f1252ab5d475" alt="Vagabond Bar and Kitchen logo" class="card-logo">
+              
+              <h3>Vagabond Bar and Kitchen</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Rooftop Bars, Gastropubs, Happy Hour Spots</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+            <div class="card-happy-hour-tag">
+              🎉 Happy Hour
+            </div>
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/bossa-bistro-lounge/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbossa-bistro-lounge%2Flogo-1766318621756-15625421_1823923897866406_9046235422220353536_a.jpg?alt=media&amp;token=6f1fd35a-358e-4ad2-8d30-860011ef9769');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbossa-bistro-lounge%2Flogo-1766318621756-15625421_1823923897866406_9046235422220353536_a.jpg?alt=media&amp;token=6f1fd35a-358e-4ad2-8d30-860011ef9769" alt="Bossa Bistro + Lounge logo" class="card-logo">
+              
+              <h3>Bossa Bistro + Lounge</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Lounges, Live Music Venues, Latin</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+</div>
+
+<div style="margin-top: 3rem; text-align: center;">
+    <a href="/neighborhoods/" class="btn" style="display: inline-block; background: #333; color: white; padding: 0.75rem 1.5rem; border-radius: 4px; text-decoration: none; font-weight: bold;">View All Neighborhoods</a>
+</div>
+
+    </main>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="/" aria-label="Back to Home">
+            <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="footer-logo">
+          </a>
+        </div>
+        
+        <div class="footer-links">
+
+          <div class="social-icons">
+            <a href="https://x.com/bardc_" target="_blank" rel="noopener noreferrer" class="social-icon twitter" aria-label="X (formerly Twitter)"></a>
+            <a href="https://www.facebook.com/bardc" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook"></a>
+          </div>
+          <a href="mailto:info@bardc.com" class="footer-contact">info@bardc.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Bar DC. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+  <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="img01" onclick="event.stopPropagation()">
+  </div>
+  <script>
+    // Global Image Modal Logic
+    window.openImageModal = function(src) {
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("img01");
+        if(modal && modalImg) {
+            modal.style.display = "flex";
+            modalImg.src = src;
+            document.body.style.overflow = "hidden"; 
+        }
+    }
+    
+    window.closeImageModal = function() {
+        var modal = document.getElementById("imageModal");
+        if(modal) {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto"; 
+        }
+    }
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            window.closeImageModal();
+        }
+    });
+  </script>
+  <style>
+    /* Modal Styles (Global) */
+    .image-modal {
+      display: none; 
+      position: fixed; 
+      z-index: 9999; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgba(0,0,0,0.95); 
+      align-items: center;
+      justify-content: center;
+      cursor: zoom-out;
+    }
+    
+    .modal-content {
+      margin: auto;
+      display: block;
+      max-width: 95%;
+      max-height: 95vh;
+      border-radius: 4px;
+      object-fit: contain;
+      cursor: default;
+      animation: zoom 0.3s;
+    }
+    
+    .close-modal {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 50px;
+      font-weight: bold;
+      transition: 0.3s;
+      cursor: pointer;
+      z-index: 10000;
+      line-height: 1;
+    }
+    
+    @keyframes zoom {
+      from {transform:scale(0.8); opacity: 0;}
+      to {transform:scale(1); opacity: 1;}
+    }
+  </style>
+
+</body>
+</html>
