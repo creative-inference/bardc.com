@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -321,68 +322,16 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://prnewswire.com/news-releases/mill-creek-announces-construction-underway-at-modera-lady-bird-302441915.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://nps.gov/articles/lady-bird-johnson-beautification-cultural-landscapes.htm" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=prnewswire.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>PR Newswire</span>
-              <span style="margin-left:auto; text-transform:none;">Apr 30, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Mill Creek Announces Construction Underway at Modera Lady Bird</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Modera Lady Bird is a contemporary mixed-use residential community currently under construction in Washington, D.C.&#39;s Northwest quadrant near the Spring Valley and American University Park neighborhoods. The development will offer 234 luxury rental homes, an 18,000-square-foot organic grocery store, and upscale amenities including a rooftop lounge, resort-style pool, and club-quality fitness center with move-ins expected in summer 2027.</p>
-           
-        </a>
-      
-        <a href="https://restaurant-hospitality.com/hotel-dining/lady-bird-rooftop-bar-opens-in-washington-d-c-with-views-of-the-white-house" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=nps.gov" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>National Park Service (.gov)</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=restaurant-hospitality.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Restaurant Hospitality</span>
-              <span style="margin-left:auto; text-transform:none;">Jun 28, 2024</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Lady Bird Rooftop Bar opens in Washington D.C. with views of the White House</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Beautification: A Legacy of Lady Bird Johnson</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Lady Bird is a rooftop bar and lounge atop the Kimpton Banneker hotel in Washington D.C., offering panoramic views of the White House and Washington Monument. The venue features a seasonal menu of small plates by executive chef Laurent Hollaender alongside signature cocktails inspired by the legacy of former first lady Lady Bird Johnson.</p>
-           
-        </a>
-      
-        <a href="https://washingtonian.com/2021/10/08/rooftop-bar-lounge-lady-bird-opens-dupont-circle-white-house-views" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 13, 2021</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">An Airy Rooftop Lounge Opens in Dupont Circle With Fire Pits and Monument Views</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Lady Bird is a rooftop lounge perched atop the Kimpton Banneker hotel in Dupont Circle, offering views of the White House and Washington Monument. The 1,200-square-foot space features an indoor-outdoor layout with fire pits, seasonal cocktails, and a menu of French-inspired hors d’oeuvres like goat-cheese beignets and heirloom tomato tartines.</p>
-           
-        </a>
-      
-        <a href="https://dc.eater.com/2021/10/13/22722663/rooftop-bar-lady-bird-kimpton-highballs-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 13, 2021</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">A Cheery New Rooftop Bar Opens With Cognac Highballs and a Monumental View</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Lady Bird is a stylish indoor-outdoor rooftop bar atop the Kimpton Banneker hotel in Scott Circle, offering panoramic views of the White House and Washington Monument. The venue features French-influenced small plates like goat cheese beignets and tomato tartines paired with a diverse cocktail menu and a selection of international wines.</p>
-           
-        </a>
-      
-        <a href="https://forbes.com/sites/katiechang/2021/09/30/lady-bird-washington-dcs-most-stylish-rooftop-bar-opens-at-the-kimpton-banneker-hotel-tomorrow" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=forbes.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Forbes</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 1, 2021</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Washington, D.C.’s Most Stylish Rooftop Bar Is Opening At The Kimpton Banneker Hotel On October 8</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Lady Bird is a sophisticated rooftop lounge located atop The Kimpton Banneker Hotel in Washington D.C., offering craft cocktails and light bites. Inspired by former First Lady Lady Bird Johnson, the space features cozy decor, local murals, and unobstructed views of the White House and historic 16th Street.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Lady Bird Johnson’s Beautification Project transformed Washington, D.C. through the installation of massive floral displays, the planting of urban tree canopies, and the rehabilitation of public parks. This legacy includes the creation of the Floral Library and the greening of major gateways to improve the city&#39;s environmental and aesthetic quality.</p>
            
         </a>
       
@@ -658,6 +607,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

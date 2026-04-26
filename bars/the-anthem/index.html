@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -297,68 +298,16 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://parklifedc.com/2025/12/09/live-review-portugal-the-man-w-la-luz-the-anthem-12-5-25" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://undertheradarmag.com/reviews/pulp_the_anthem_in_washington_d.c._us_september_6_2025" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=parklifedc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Parklife DC</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 9, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Live Review: Portugal. The Man w/ La Luz @ The Anthem -- 12/5/25 | Parklife DC</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Anthem hosted an energized performance by Portugal. The Man and La Luz, showcasing the venue&#39;s high-quality sound and light production. Attendees experienced a night of upbeat dance music and hypnotic visuals as part of the band&#39;s Denali 2025 world tour.</p>
-           
-        </a>
-      
-        <a href="https://parklifedc.com/2025/12/03/live-review-katseye-the-anthem-11-24-25" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=undertheradarmag.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Under the Radar Magazine</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=parklifedc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Parklife DC</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 3, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Live Review: KATSEYE @ The Anthem -- 11/24/25 | Parklife DC</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Pulp @ the Anthem, Washington, D.C., US, September 6, 2025</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Anthem hosted a sold-out performance by global girl group KATSEYE during their &quot;Beautiful Chaos Tour&quot; in November 2025. The venue provided a vibrant community atmosphere for fans, featuring high-quality sound and visual production across a multi-act show that highlighted the group&#39;s transition from reality show contestants to international stars.</p>
-           
-        </a>
-      
-        <a href="https://parklifedc.com/2025/11/02/live-review-giveon-the-anthem-10-30-25" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=parklifedc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Parklife DC</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 2, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Live Review: GIVĒON @ The Anthem -- 10/30/25 | Parklife DC</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Anthem hosted R&amp;B artist GIVĒON for a soulful and emotionally-charged performance that featured intimate amber lighting and a high-energy, stylish crowd. The concert showcased the venue&#39;s capacity for rich sound with a full live band and included theatrical highlights like a James Brown-inspired stage exit.</p>
-           
-        </a>
-      
-        <a href="https://parklifedc.com/2025/10/12/live-review-my-morning-jacket-the-anthem-10-8-25" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=parklifedc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Parklife DC</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 12, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Live Review: My Morning Jacket @ The Anthem -- 10/8/25 | Parklife DC</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Anthem hosted a performance by My Morning Jacket on October 8, 2025, featuring a career-spanning set that transitioned from early alt-country to expansive psychedelic rock. The venue provided a packed yet laidback atmosphere for the show, which utilized moody strobe lighting to enhance the band&#39;s experimental sound.</p>
-           
-        </a>
-      
-        <a href="https://parklifedc.com/2025/09/29/live-review-sam-fender-w-young-jesus-the-anthem-9-23-25" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=parklifedc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Parklife DC</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 29, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Live Review: Sam Fender w/ Young Jesus @ The Anthem -- 9/23/25 | Parklife DC</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Anthem hosted a high-energy, sold-out performance by British singer-songwriter Sam Fender and opening act Young Jesus on September 23, 2025. The concert featured an anthemic setlist including a guest appearance by a fan on guitar and a preview of material from the deluxe version of Fender&#39;s album, People Watching.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Anthem hosted the legendary Britpop band Pulp on September 6, 2025, during their &#39;Here Comes More: Live 2025&#39; tour. The 6,000-capacity venue in D.C.&#39;s Wharf district is highlighted for its excellent sound quality and its unique ability to feel both spacious and intimate for concertgoers.</p>
            
         </a>
       
@@ -640,6 +589,49 @@ The last time I attended a concert at The Anthem was for The Killers, performed 
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -341,68 +342,16 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://whatnow.com/washington-dc/restaurants/dacha-beer-garden-working-on-third-location" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://washington.org/visit-dc/beer-gardens-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=whatnow.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WhatNow</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 26, 2026</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Dacha Beer Garden Working on Third Location</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Dacha Beer Garden is expanding its DC-based footprint with a third location slated to open in Silver Spring in the summer of 2026. Taking over the former Denizens Brewing Co. space at 1115 East West Highway, the new venue will join the brand&#39;s existing locations in Navy Yard and Shaw, offering a signature selection of beers, cocktails, and food.</p>
-           
-        </a>
-      
-        <a href="https://restaurantdive.com/news/dacha-beer-garden-national-franchise-expansion-plan/688353" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=washington.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Washington.org</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=restaurantdive.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Restaurant Dive</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 19, 2023</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Is America ready for franchised beer gardens? Dacha thinks so.</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">10+ Best Beer Gardens In &amp; Around DC</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Dacha Beer Garden, a staple of the Washington, D.C. dining scene with locations in Shaw and Navy Yard, is expanding its reach through a franchising initiative targeting the East Coast. The brand aims to replicate its successful European-inspired model by utilizing its proprietary weather-protection canopy system and a long-standing partnership with Germany’s Weihenstephan brewery.</p>
-           
-        </a>
-      
-        <a href="https://prnewswire.com/news-releases/dacha-beer-garden-hires-strategic-franchise-development-llc-to-spearhead-franchising-for-iconic-beer-garden-on-the-east-coast-301811210.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=prnewswire.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>PR Newswire</span>
-              <span style="margin-left:auto; text-transform:none;">May 1, 2023</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Dacha Beer Garden™ Hires Strategic Franchise Development, LLC to Spearhead Franchising for Iconic Beer Garden on the East Coast</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Dacha Beer Garden has partnered with Strategic Franchise Development, LLC to launch a franchising initiative aimed at expanding the brand across the East Coast and Southeast. Building on the success of its Shaw and Navy Yard locations in D.C., the company is targeting high-traffic markets to bring its popular Bavarian-inspired beer garden concept to new territories.</p>
-           
-        </a>
-      
-        <a href="https://wtop.com/dc/2022/02/dcs-dacha-beer-garden-raises-money-for-ukraine" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=wtop.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WTOP</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 27, 2022</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">DC’s Dacha beer garden raises money for Ukraine</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Dacha Beer Garden in Washington, D.C. organized a series of fundraising events and happy hours to provide humanitarian aid to Ukraine. The venue&#39;s Russian owners and Ukrainian staff worked together to raise thousands of dollars for organizations like UNICEF and Razom for Ukraine through dedicated beer sales and silent auctions.</p>
-           
-        </a>
-      
-        <a href="https://dc.eater.com/2019/5/2/18526019/dacha-navy-yard-opening-menu-photos-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">May 2, 2019</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Dacha’s New Navy Yard Location Is Way More Than a Beer Garden</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Dacha Beer Garden&#39;s Navy Yard location is a massive three-part complex featuring a high-end American restaurant, a craft cocktail bar, and an expansive outdoor beer garden overlooking the Anacostia River. Led by Executive Chef Taylor Burlingame, the venue offers a menu of modern American comfort food alongside space-age design elements and a signature mural of Jacqueline Kennedy Onassis.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Dacha Beer Garden features two dog-friendly locations in D.C., including the original Shaw site known for its Elizabeth Taylor mural and a full-service restaurant at the Capitol Riverfront. The venue serves German, Belgian, and American brews in signature boot mugs alongside modern beer garden fare like monster pretzels and bratwurst.</p>
            
         </a>
       
@@ -684,6 +633,49 @@ For food ordered brisket Benny and avocado toast and it was than we hoped for...
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

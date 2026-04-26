@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -295,68 +296,42 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://dcist.com/story/23/11/08/michelin-dc-restaurants-earn-michelin-stars" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://dc.urbanturf.com/articles/blog/an_inside_look_at_jeff_blacks_pearl_oyster_dive_palace/3640" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=dcist.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>DCist</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 8, 2023</span>
+              <img src="https://www.google.com/s2/favicons?domain=dc.urbanturf.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>UrbanTurf</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Michelin Awards Two More D.C. Restaurants With Its Coveted Stars</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">An Inside Look At Jeff Black&#39;s Pearl Oyster Dive Palace</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Pearl Dive Oyster Palace was removed from the Michelin Guide&#39;s Bib Gourmand list in November 2023. This change occurred as the total number of D.C. restaurants holding the designation decreased from 35 to 29.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Pearl Dive Oyster Palace is a ground-floor oyster bar and restaurant located at 1612 14th Street NW in Washington DC. Accompanied by an upstairs bourbon bar called Blackjack, the establishment features design elements by CORE Architecture + Design and includes a second-level bocce court.</p>
            
         </a>
       
-        <a href="https://washingtonian.com/2018/05/15/washingtonian-recommends-the-best-oyster-bars-around-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://bisnow.com/washington-dc/news/washington-dc-dining/Oysters-with-a-Side-of-Chicken-37593" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">May 15, 2018</span>
+              <img src="https://www.google.com/s2/favicons?domain=bisnow.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Bisnow</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Washingtonian Recommends: the Best Oyster Bars Around DC</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Oysters with a Side of... Chicken?</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Pearl Dive Oyster Palace features nearly a dozen East and West Coast oyster varieties, including their signature salty Old Black Salt oysters. Visitors can pair a mixed dozen with a &quot;dive juice&quot; cocktail spiked with lime, cilantro, and jalapeño.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Pearl Dive Oyster Palace features a popular fried chicken specialty alongside its seafood menu, an addition inspired by a staff meal accident at sister restaurant Addie&#39;s. The southern-inspired seafood outpost on 14th Street offers buckets of chicken served with corn muffins and sides.</p>
            
         </a>
       
-        <a href="https://dc.eater.com/2012/8/23/6552233/jeff-black-on-pearl-dive-oyster-palaces-first-year" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://timeout.com/washington-dc/restaurants/pearl-dive" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Aug 23, 2012</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Jeff Black on Pearl Dive Oyster Palace’s First Year</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Pearl Dive Oyster Palace is a Cajun-leaning restaurant in D.C.&#39;s Logan Circle neighborhood known for its gumbo, shrimp and grits, and varied oyster preparations. The venue features authentic reclaimed wood decor and shares its 14th Street location with sister bars Black Jack and Tilt, offering a mix of refined seafood and casual drinking options.</p>
-           
-        </a>
-      
-        <a href="https://dc.eater.com/2011/12/15/6629577/tom-sietsema-awards-pearl-dive-oyster-palace-2-5-stars" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=timeout.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Time Out Worldwide</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 15, 2011</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Tom Sietsema Awards Pearl Dive Oyster Palace 2.5 Stars</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Pearl Dive | Restaurants in Logan Circle, Washington DC</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Pearl Dive Oyster Palace received a 2.5-star review from critic Tom Sietsema, who praised standout dishes like the catfish po’ boy, fresh oysters, and Baltimore-style crab cakes. While the review highlighted the high quality of the fried chicken and cocktails, it noted that the restaurant&#39;s noise level can be intensely loud.</p>
-           
-        </a>
-      
-        <a href="https://thrillist.com/food/washington-dc/logan-circle/pearl-dive-oyster-palace-and-black-jack_bar-food_drinking-games_great-beer-selection_great-cockt" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=thrillist.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Thrillist</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 30, 2011</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Pearl Dive Oyster Palace and Black Jack</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Pearl Dive Oyster Palace is a seafood destination on 14th Street featuring nautically weathered woods, a zinc bar, and unique anchor chain sculptures. The space is paired with Black Jack, an upstairs cocktail parlor with a vintage aesthetic and a dedicated bocce court.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Pearl Dive Oyster Palace is a Gulf Coast-inspired seafood restaurant in Logan Circle known for its expertly shucked East and West coast oysters and Southern-influenced decor. The menu features standout dishes like seafood gumbo and the messy C.E.B.L.T. po-boy, alongside a bar with a garage door that opens for curbside drinks and fried chicken buckets.</p>
            
         </a>
       
@@ -645,6 +620,49 @@ This was my first time having oysters. My favorite was the “Angels on Horsebac
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

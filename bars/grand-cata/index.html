@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -324,68 +325,16 @@ Latin American wine discovery, casual happy hours, celebratory wine flights, pos
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://dc.eater.com/maps/dc-best-wine-bars-maps" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://as-coa.org/events/ypa-dc-wine-tasting-experience-grand-cata" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 14, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">18 Best Wine Bars in D.C.</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Grand Cata serves as a premier destination for Latin American wine enthusiasts in Shaw, offering hundreds of bottles to browse alongside regional snacks and groceries. The shop highlights hand-picked selections from the Caribbean, Central America, and South America, with additional outposts at La Cosecha and the Mosaic District.</p>
-           
-        </a>
-      
-        <a href="https://washingtonpost.com/food/2025/04/29/masculine-feminine-wines-gender-binary-classifications" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=as-coa.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>AS/COA</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtonpost.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Washington Post</span>
-              <span style="margin-left:auto; text-transform:none;">Aug 13, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">‘Masculine’ wine? How gendered descriptors can impact drinkers’ choices.</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">YPA DC Wine Tasting Experience at Grand Cata</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Grand Cata co-founder Pedro J. Rodríguez advocates for inclusive wine education by discouraging the use of gendered descriptors during tastings at the Shaw neighborhood shop. The venue focuses on creating a welcoming atmosphere for customers by utilizing more precise and modern terminology.</p>
-           
-        </a>
-      
-        <a href="https://vinetur.com/en/2025042987075/wine-industry-rethinks-gendered-language-as-inclusivity-becomes-a-priority-amid-declining-global-sales.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=vinetur.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Vinetur</span>
-              <span style="margin-left:auto; text-transform:none;">Apr 30, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Wine industry rethinks gendered language as inclusivity becomes a priority amid declining global sales</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Grand Cata co-founder Pedro J. Rodríguez is championing a shift away from gendered language in the wine industry to foster a more inclusive environment for diverse consumers. The Washington, D.C. shop advocates for using clear, descriptive terms like flavor profiles and food pairings instead of traditional binary descriptors to make wine more accessible and welcoming.</p>
-           
-        </a>
-      
-        <a href="https://ffxnow.com/2023/08/01/latin-american-wine-bar-grand-cata-is-now-open-at-the-mosaic-district" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=ffxnow.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>FFXnow</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 31, 2023</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Latin American wine bar Grand Cata is now open at the Mosaic District</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Grand Cata is a Latin American wine bar and retail shop that offers a curated selection of regional wines, pantry items, and small plates. Originally established in Washington, D.C., the business features a bar at Union Market’s La Cosecha and a boutique location in the Mosaic District, providing a unique market experience focused on Latin American flavors.</p>
-           
-        </a>
-      
-        <a href="https://ffxnow.com/2023/04/06/latin-wine-bar-grand-cata-coming-to-mosaic-district-for-first-virginia-shop" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=ffxnow.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>FFXnow</span>
-              <span style="margin-left:auto; text-transform:none;">Apr 5, 2023</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Latin wine bar Grand Cata coming to Mosaic District for first Virginia shop</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Grand Cata, a D.C.-born Latin American wine bar and market, expanded its presence from the Shaw and Union Market neighborhoods to its first Virginia location in the Mosaic District. The venue offers a curated selection of wines from regions like South America and the Iberian Peninsula, complemented by a retail market and a food menu featuring charcuterie and sandwiches.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Grand Cata is a Washington, D.C. wine shop and market that specializes in the diverse wines, foods, and culture of Latin America. Founded by owners Julio and Pedro, the venue offers curated tasting experiences and educational sessions that highlight the unique viticulture and history of the Andean and Caribbean regions.</p>
            
         </a>
       
@@ -661,6 +610,49 @@ Latin American wine discovery, casual happy hours, celebratory wine flights, pos
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

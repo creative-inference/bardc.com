@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -291,58 +292,6 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://modernluxury.com/pendry-washington-dc-the-wharf-staycation" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=modernluxury.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Modern Luxury</span>
-              <span style="margin-left:auto; text-transform:none;">May 7, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Pendry Washington DC: Urban Retreat with Scenic Views</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Moonraker is a rooftop bar at the Pendry Washington DC – The Wharf that offers panoramic views of the DC waterfront, the National Mall, and the city skyline. The venue features a sophisticated Japanese-themed menu with dishes like yellowtail sashimi and Tokyo fried chicken, complemented by a curated library of Japanese whisky and bespoke cocktails.</p>
-           
-        </a>
-      
-        <a href="https://northernvirginiamag.com/food/food-features/2024/08/02/at-the-wharf-try-these-must-visit-dc-dining-spots" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=northernvirginiamag.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Northern Virginia Magazine</span>
-              <span style="margin-left:auto; text-transform:none;">Aug 2, 2024</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">At The Wharf, Try These Must-Visit DC Dining Spots</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Moonraker is a Japanese-inspired rooftop cocktail bar and restaurant located atop the Pendry Hotel at The Wharf. The venue offers expansive views of the Potomac River and national monuments alongside a menu of creative cocktails and light fare, including chilled soba, Hamachi crudo, and Maryland crab rolls.</p>
-           
-        </a>
-      
-        <a href="https://nytimes.com/interactive/2023/11/09/travel/things-to-do-washington-dc.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=nytimes.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The New York Times</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 12, 2023</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">36 Hours in Washington, D.C. (Published 2023)</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Moonraker is a sophisticated rooftop bar at the Pendry Washington D.C. hotel, offering panoramic views of the Potomac River and Virginia. Guests can enjoy Japanese-inspired cocktails and bites like spicy tuna rolls by outdoor fire pits, beginning with a unique elevator experience featuring complimentary sake samples.</p>
-           
-        </a>
-      
-        <a href="https://dc.eater.com/2022/8/10/23299191/wharf-luxe-new-pendry-hotel-dc-chef-coming-attractions" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Aug 10, 2022</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Wharf’s Luxe New Pendry Hotel Reveals Its Head Chef, Incoming Restaurants</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Moonraker is a glamorous rooftop lounge situated on the 14th floor of the Pendry Washington DC — The Wharf. The venue features a Japanese-inspired menu including sushi, yellowtail sashimi, and Tokyo fried chicken, complemented by a curated library of Japanese whiskies and specialty cocktails. The space offers panoramic views and a chic circular bar with a late-night atmosphere supported by live music and DJs.</p>
-           
-        </a>
-      
         <a href="https://timeout.com/washington-dc/hotels/pendry-washington-dc-the-wharf" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
@@ -353,6 +302,19 @@
            <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Pendry Washington DC - The Wharf Review: You Won’t Find Better Waterfront Views Than This</h4>
            
              <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Moonraker is a sophisticated rooftop destination at the Pendry Washington DC - The Wharf, featuring panoramic Potomac River views and a Japanese-influenced menu with items like Maryland crab fried rice and Tokyo fried chicken. The venue offers both indoor and outdoor seating with cozy fire pits and a refined late-night vibe centered around a stylish bar.</p>
+           
+        </a>
+      
+        <a href="https://usatoday.com/story/travel/2025/05/27/washington-dc-rooftop-bars/82273711007" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=usatoday.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>USA Today</span>
+              
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Raise a glass at D.C.&#39;s hottest rooftop bars</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Moonraker, located atop the Pendry Washington DC in The Wharf, is a refined rooftop lounge offering Japanese-inspired cuisine and an extensive selection of sake and Japanese whisky. The venue features a cozy indoor circular bar and an open terrace with panoramic views of the Washington Channel, the Washington Monument, and the Jefferson Memorial.</p>
            
         </a>
       
@@ -632,6 +594,49 @@ Otherwise, the food/drinks were great - you can&#39;t go wrong with spicy tuna s
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

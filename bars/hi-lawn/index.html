@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -340,58 +341,6 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://nbcwashington.com/entertainment/the-scene/the-weekend-scene-what-to-do-in-the-dc-area-through-nov-16/4015192" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=nbcwashington.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>NBC4 Washington</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 14, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Weekend Scene: What to do in the DC area through Nov. 16</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Hi-Lawn at Union Market is hosting the &#39;SNOWGLOW at The Dome&#39; pop-up, featuring immersive 360-degree holiday projections and a festive menu including spiced eggnog and cheese fondue. The venue offers both a ticketed 90-minute experience inside the 50-foot dome and a free, heated outdoor lounge for the public through January 4.</p>
-           
-        </a>
-      
-        <a href="https://northernvirginiamag.com/things-to-do/2025/11/03/this-dc-bar-is-transforming-into-an-immersive-snow-globe-experience-for-the-holidays" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=northernvirginiamag.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Northern Virginia Magazine</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 3, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">This DC Bar Is Transforming into an Immersive Snow Globe Experience for the Holidays</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Hi-Lawn is hosting &quot;Snowglow,&quot; an immersive holiday pop-up featuring 360-degree winter projections and festive decorations inside a 50-foot heated dome above Union Market. Running through January 4, the experience offers a seasonal menu of punch bowls, fondue, and themed snacks alongside a public lounge for guests without reservations.</p>
-           
-        </a>
-      
-        <a href="https://whur.com/whur-in-the-community/free-dmv-events-budget" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=whur.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WHUR 96.3 FM</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 9, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Outside… But on a Budget: 6 Free DMV Events</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Hi-Lawn, located on the Union Market rooftop in Washington, D.C., hosts a weekly free Bingo Night every Wednesday at 7 PM. This recurring event offers guests a budget-friendly way to enjoy the venue&#39;s scenic outdoor atmosphere and rooftop views.</p>
-           
-        </a>
-      
-        <a href="https://nhl.com/capitals/news/capitals-and-union-market-district-announce-capitals-skyrink-at-hi-lawn" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=nhl.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>NHL.com</span>
-              <span style="margin-left:auto; text-transform:none;">Apr 2, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Capitals and Union Market District Announce Capitals SkyRink at Hi-Lawn | Washington Capitals</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Hi-Lawn partnered with the Washington Capitals to host the Capitals SkyRink, the largest outdoor rooftop synthetic ice rink in the nation, at its Union Market location in April 2025. The 2,300-square-foot rink offered skating and hockey activities, with ticket proceeds benefiting pediatric cancer research through THE GR8 CHASE initiative.</p>
-           
-        </a>
-      
         <a href="https://foodandwine.com/cozy-winter-pop-ups-11860525" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
@@ -402,6 +351,32 @@
            <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Urban Pop-Ups Channel Cozy Mountain Chalets With All the Wintry Treats You Crave</h4>
            
              <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Hi-Lawn at DC’s Union Market is hosting &quot;Snowglow,&quot; an immersive winter pop-up that allows guests to step inside a life-sized snow globe featuring 360-degree holiday scenes and frosty decor. The experience offers seasonal treats such as Alpine cheese fondue and rum balls alongside festive drinks like spiced eggnog, Snowgronis, and cherry hot chocolate.</p>
+           
+        </a>
+      
+        <a href="https://secretdc.com/spring-night-market-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=secretdc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Secret DC</span>
+              
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">This Spring Night Market Brings A Taste Of Hong Kong To Washington, D.C.</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Hi-Lawn hosts a vibrant Hong Kong-inspired night market on its expansive rooftop at Union Market, featuring street food stalls from Tiger Fork and themed cocktails. The event transforms the outdoor space into a bustling festival atmosphere with traditional decorations, live entertainment, and unique culinary offerings.</p>
+           
+        </a>
+      
+        <a href="https://secretdc.com/snowglow-dome-union-market" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=secretdc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Secret DC</span>
+              
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">A Magical, Super-Sized ‘Snow Globe’ Is Returning To The Union Market Rooftop</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Hi-Lawn at Union Market features a massive, heated &quot;snow globe&quot; dome for the winter season, offering a cozy environment for rooftop drinks and snacks. The venue provides panoramic views of the city alongside a rotating menu of seasonal cocktails and comfort food.</p>
            
         </a>
       
@@ -683,6 +658,49 @@ There...
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

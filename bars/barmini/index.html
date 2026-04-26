@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -295,68 +296,29 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://nbc.com/nbc-insider/all-jose-andres-restaurants" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://capecodtimes.com/story/business/2015/03/10/drinks-with-technological-twist/34985368007" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=nbc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>NBC</span>
-              <span style="margin-left:auto; text-transform:none;">May 2, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=capecodtimes.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Cape Cod Times</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">All of José Andrés&#39; Restaurants and Their Locations</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Drinks with a technological twist</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Barmini is José Andrés&#39; signature cocktail lab and bar located in Washington, D.C., situated adjacent to his renowned restaurant minibar. The venue offers a sophisticated menu of more than 100 creative beverages, including specialized cocktail flights and snacks.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Barmini utilizes advanced laboratory tools and molecular gastronomy techniques to create avant-garde cocktails in Washington, D.C. The venue features innovative drinks like the &#39;Highlander,&#39; which incorporates a floating aromatic cloud, and employs 3-D printers to produce unique, functional garnishes. These technological methods allow bartenders to achieve precise flavor extractions and unique textures that redefine the traditional cocktail experience.</p>
            
         </a>
       
-        <a href="https://tastingtable.com/1815124/most-expensive-bars-us" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://drinkspirits.com/bar-life/drink-spirits-walks-bar-barmini-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=tastingtable.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Tasting Table</span>
-              <span style="margin-left:auto; text-transform:none;">Mar 25, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">12 Of The Most Expensive Bars In The US</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Barmini by José Andrés is featured as one of the most expensive bars in the U.S., known for its inventive and seasonally rotating cocktail menu. The establishment offers unique creations like the al pastor margarita and a $250 &quot;treasure chest&quot; cocktail that serves up to six guests.</p>
-           
-        </a>
-      
-        <a href="https://dc.eater.com/maps/best-cocktail-bars-dc-beer-wine-cocktails" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=drinkspirits.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Drink Spirits</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Mar 13, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Best Cocktail Bars in D.C.</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Drink Spirits Walks into a Bar: Barmini by Jose Andres in DC</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Barmini offers a dreamlike, experimental cocktail experience in Washington D.C. where bartenders use cutting-edge technology to craft over 100 classic and futuristic drinks. The striking white venue requires reservations and features unique touches like color-changing ingredients, smoking cocktails, and gourmet snacks from the José Andrés Group.</p>
-           
-        </a>
-      
-        <a href="https://insidehook.com/cocktails/best-cocktail-bars-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=insidehook.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>InsideHook</span>
-              <span style="margin-left:auto; text-transform:none;">Aug 20, 2024</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">These Are the 10 Best Cocktail Bars in DC</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Barmini is an avant-garde cocktail lounge in Downtown D.C. where science and innovation meet classic mixology. Recognized for setting the standard for the city&#39;s high-end cocktail scene, the venue offers a sophisticated experience focused on creative techniques and unique beverage presentations.</p>
-           
-        </a>
-      
-        <a href="https://we-heart.com/2013/03/11/shaking-up-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=we-heart.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>we-heart.com</span>
-              <span style="margin-left:auto; text-transform:none;">Aug 23, 2022</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Food and drink get a shaking and stirring at new Washington cocktail bar...</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Barmini is a cocktail bar and &quot;theatre of mixology&quot; in Washington D.C.’s Penn Quarter, launched by acclaimed chef José Andrés as an extension of his minibar restaurant. The venue features an adventurous menu that blends food and drink techniques, utilizing both historic recipes and modern avant-garde methods within a vibrant, stylish interior.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Barmini by José Andrés is an avant-garde cocktail lab in Washington D.C. that specializes in molecular mixology and creative experimental techniques. The menu features over 100 innovative drinks, such as an Old Fashioned prepared with mezcal-flavored cotton candy and savory cocktails inspired by global flavors. Managed by Juan Coronado, the space offers an interactive and open-concept experience where guests can witness the artistic creation of unique spirits firsthand.</p>
            
         </a>
       
@@ -637,6 +599,49 @@ Barmini isn’t your typical bar—it’s an immersive experience where cocktail
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

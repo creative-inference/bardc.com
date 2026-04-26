@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -184,11 +185,13 @@
                   
                   <div class="social-icons-inline">
                     
-                      <a href="https://www.instagram.com/aslin.dc/" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
+                      <a href="https://www.instagram.com/aslinbeerco" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
                     
                     
                       <a href="https://www.facebook.com/aslinbeerco" target="_blank" rel="noopener noreferrer" class="social-icon facebook" title="Facebook"></a>
                     
+                    
+                      <a href="http://www.drink-wax.com" target="_blank" rel="noopener noreferrer" class="social-icon twitter" title="Twitter/X"></a>
                     
                   </div>
                   
@@ -319,68 +322,16 @@ Large group gatherings, craft beer connoisseurs, all-day remote work sessions, a
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://americancraftbeer.com/aslin-beer-and-nycs-torch-crown-brewing-merge" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://10best.usatoday.com/awards/aslin-beer-company-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=americancraftbeer.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>American Craft Beer</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 10, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Aslin Beer and NYC’s Torch &amp; Crown Brewing Merge</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Aslin Beer Company has merged with Manhattan-based Torch &amp; Crown Brewing to form a new parent company, Driven Collective. The partnership aims to scale production and distribution across the East Coast, utilizing Aslin’s Alexandria facility as a central brewing hub while maintaining the unique identities of both brands.</p>
-           
-        </a>
-      
-        <a href="https://alxnow.com/2025/09/24/aslin-beer-co-merges-with-nyc-brewery-creates-driven-collective" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=10best.usatoday.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>USA TODAY 10BEST</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=alxnow.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>ALXnow</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 24, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Aslin Beer Co. merges with NYC brewery, creates ‘Driven Collective’</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Aslin Beer Company</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Aslin Beer Company has merged with New York City’s Torch &amp; Crown Brewing Company to form &quot;Driven Collective,&quot; a move that establishes the brewery as a production hub for an expanded East Coast operation. The merger integrates production and distribution across its five locations, including the Washington D.C. taproom, to support continued growth and innovation.</p>
-           
-        </a>
-      
-        <a href="https://thebrewermagazine.com/aslin-torch-crown-merge-to-launch-driven-collective" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=thebrewermagazine.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Brewer Magazine</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 23, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Aslin, Torch &amp; Crown Merge to Launch Driven Collective</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Aslin Beer Company has merged with New York’s Torch &amp; Crown Brewing Company to form Driven Collective, a new platform designed to scale production, distribution, and hospitality across the East Coast. The Washington, D.C. taproom remains a central part of this expansion, continuing to offer a wide selection of beers alongside a menu from its IZZI kitchen and a forthcoming food truck.</p>
-           
-        </a>
-      
-        <a href="https://bizjournals.com/washington/news/2025/05/21/concession-expansion-dulles-reagan-airports.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=bizjournals.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Business Journals</span>
-              <span style="margin-left:auto; text-transform:none;">May 21, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Aslin Beer, Clyde&#39;s and Maker&#39;s Union coming to Reagan, Dulles airports</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Aslin Beer Company is expanding its presence in the Washington D.C. area with a new location at Reagan National Airport. The expansion is part of a broader initiative to bring local favorites to travelers at both Reagan and Dulles airports.</p>
-           
-        </a>
-      
-        <a href="https://theburn.com/2025/05/21/popular-local-restaurants-moving-into-dulles-international" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=theburn.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Burn</span>
-              <span style="margin-left:auto; text-transform:none;">May 21, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Popular local restaurants moving into Dulles International</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Aslin Beer Company is set to open a new location at Dulles International Airport, bringing its iconic local craft beer and diverse menu to the terminal. The expansion adds to the brewery&#39;s existing footprint in the region, which includes established locations in Washington, D.C., and Northern Virginia.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Aslin Beer Company’s Washington, D.C. location features a 211-seat indoor and outdoor beer garden serving 21 house draft beers alongside local and national guest selections. The venue is consistently recognized for its atmosphere and quality, having earned multiple Readers&#39; Choice Awards for being one of the best beer gardens and new breweries in the country.</p>
            
         </a>
       
@@ -660,6 +611,49 @@ Large group gatherings, craft beer connoisseurs, all-day remote work sessions, a
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

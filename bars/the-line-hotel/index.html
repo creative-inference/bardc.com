@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -293,68 +294,29 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://timeout.com/washington-dc/hotels/best-washington-dc-hotels" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://costar.com/article/422453696/lender-wins-auction-for-dc-hotel-said-to-have-drawn-interest-from-elon-musk" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=timeout.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Time Out Worldwide</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 9, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=costar.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>CoStar</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The 15 best hotels in Washington, D.C. for 2025</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">News | Lender wins auction for DC hotel said to have drawn interest from Elon Musk</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The LINE Hotel DC is recognized as the best budget-friendly accommodation in Washington, D.C., within a curated selection of the city&#39;s top hotels. Located in the Adams Morgan neighborhood, it offers travelers a stylish and eclectic stay without the high price tag of its luxury competitors.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The LINE DC has been acquired by its lender, Acore Capital, following an auction for the boutique property in Washington&#39;s Adams Morgan neighborhood. The 220-room hotel, housed in a historic 1913 church building, recently drew significant attention due to reported acquisition interest from billionaire Elon Musk.</p>
            
         </a>
       
-        <a href="https://bizjournals.com/washington/news/2025/11/14/adams-morgan-line-hotel-taxes.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://secretdc.com/elon-musk-line-dc-hotel" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=bizjournals.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Business Journals</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 17, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Line hotel owners allegedly owe D.C. more than $500,000 in property taxes</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The LINE Hotel in Washington D.C. allegedly owes more than $500,000 in property taxes, resulting in a tax lien filed by the District. The financial issue follows a change in ownership after the Adams Morgan property was sold at an auction in New York earlier in 2025.</p>
-           
-        </a>
-      
-        <a href="https://hotel-online.com/news/the-line-dc-hotel-appoints-director-of-sales-heidi-calhoun" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=secretdc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Secret DC</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=hotel-online.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Hotel Online</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 23, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Line DC Hotel Appoints Director of Sales, Heidi Calhoun</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Elon Musk Reportedly Plans To Purchase The Line in AdMo To Convert It Into A Private Social Club</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The LINE DC has appointed Heidi Calhoun as its new Director of Sales, leveraging her 20 years of hospitality experience and deep familiarity with the brand’s unique market position. Calhoun is tasked with leading business development and fostering community relationships for the landmark hotel, which is famously housed in a 110-year-old historic church in the Adams Morgan neighborhood.</p>
-           
-        </a>
-      
-        <a href="https://hospitalitynet.org/appointment/79030441.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=hospitalitynet.org" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Hospitality Net</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 17, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Heidi Calhoun has been appointed Director of Sales &amp; Marketing at The LINE DC in D.C.</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The LINE DC has appointed Heidi Calhoun as Director of Sales &amp; Marketing to lead business development and strategic community partnerships. With over 20 years of hospitality experience in the Washington, D.C. market, Calhoun will oversee forward-thinking sales strategies to enhance the landmark hotel’s brand presence in the Adams Morgan neighborhood.</p>
-           
-        </a>
-      
-        <a href="https://washingtonian.com/2025/01/23/elon-musk-did-not-bid-on-the-line-hotel-in-adams-morgan" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 23, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Elon Musk Did Not Bid on the Line Hotel in Adams Morgan</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The LINE Hotel in Adams Morgan remains under the ownership of its lender, Acore Capital, following a 2025 auction where Elon Musk ultimately did not place a bid. Despite rumors that the billionaire intended to convert the property into a private social club, the lender was the sole bidder for the trendy D.C. venue.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The LINE Hotel in Washington D.C.’s Adams Morgan neighborhood is reportedly being targeted for acquisition by Elon Musk. The tech billionaire allegedly plans to purchase the boutique hotel property and convert it into an exclusive private social club.</p>
            
         </a>
       
@@ -634,6 +596,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

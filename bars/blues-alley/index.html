@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -340,68 +341,68 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://thatericalper.com/2026/02/05/the-bad-plus-adds-dates-to-2026-farewell-tour" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://insidenova.com/calendar/?_evDiscoveryPath=%2Fevent%2F107422700n-sharon-rae-north-diva-wednesdays-series-at-blues-alley" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=thatericalper.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>That Eric Alper</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 5, 2026</span>
+              <img src="https://www.google.com/s2/favicons?domain=insidenova.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>InsideNoVa.com</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Bad Plus Adds Dates To 2026 Farewell Tour</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Sharon Rae North: Diva Wednesdays Series at Blues Alley</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Blues Alley will host the celebrated jazz band The Bad Plus for a two-night stand on June 20 and 21, 2026. These performances are part of the group&#39;s North American farewell tour, marking the conclusion of their 27-year career.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Blues Alley features vocalist Sharon Rae North as part of its ongoing &#39;Diva Wednesdays&#39; series in Washington, D.C. The event highlights the venue&#39;s long-standing tradition of hosting premier jazz and blues performances in an intimate Georgetown setting.</p>
            
         </a>
       
-        <a href="https://georgetowner.com/articles/2026/01/29/women-in-jazz-yoko-miwa-at-blues-alley" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://thecourierexpress.com/local-events/?_evDiscoveryPath=%2Fevent%2F107553153n-kofi-b-blues-alley-washington-d-c-show-1-" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=georgetowner.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Georgetowner</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 29, 2026</span>
+              <img src="https://www.google.com/s2/favicons?domain=thecourierexpress.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The Courier Express</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Women in Jazz: Yoko Miwa at Blues Alley</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Kofi B.: BLUES ALLEY - WASHINGTON, D.C. (SHOW #1)</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Blues Alley recently hosted jazz pianist Yoko Miwa for a landmark two-night, four-show engagement that featured original compositions and jazz interpretations of classic rock artists like John Lennon and Jimi Hendrix. The performance reaffirmed the historic Georgetown supper club&#39;s reputation as an intimate, premier destination for world-class jazz artists and their fans.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Blues Alley in Washington, D.C., hosts a live performance by musician Kofi B. for the first show of his engagement at the historic jazz supper club. The event highlights the venue&#39;s ongoing schedule of intimate, world-class musical performances.</p>
            
         </a>
       
-        <a href="https://news.theurbanmusicscene.com/2026/01/kevin-peter-jones-all-star-band-releases-live-album-blues-alley" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://mdtheatreguide.com/2025/07/concert-review-the-eric-felten-jazz-orchestra-plays-duke-ellington-at-blues-alley" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=news.theurbanmusicscene.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>TheUrbanMusicScene.com</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 27, 2026</span>
+              <img src="https://www.google.com/s2/favicons?domain=mdtheatreguide.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Maryland Theatre Guide</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Kevin Peter Jones All-Star Band Releases New Live Album “Blues Alley” | LISTEN!</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Concert Review: The Eric Felten Jazz Orchestra Plays Duke Ellington at Blues Alley</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Blues Alley serves as the recording site for the Kevin Peter Jones All-Star Band&#39;s new live album, released in January 2026 to coincide with the venue&#39;s 60th anniversary. The recording captures a series of sold-out performances at the historic Washington, D.C. jazz club and features legendary guest musicians including Randy Brecker and Jeff Lorber.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Blues Alley hosted the Eric Felten Jazz Orchestra for a tribute performance dedicated to the music of Duke Ellington. The venue provided an intimate setting for the big band&#39;s classic arrangements, highlighting its status as a premier destination for traditional jazz in Washington, D.C.</p>
            
         </a>
       
-        <a href="https://capitolskyline.com/top-hotels-near-dc-jazz-clubs-stay-close" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://insidenova.com/calendar/?_evDiscoveryPath=%2Fevent%2F107553155n-kofi-b-blues-alley-washington-d-c-show-2-" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=capitolskyline.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>https://capitolskyline.com/</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 25, 2026</span>
+              <img src="https://www.google.com/s2/favicons?domain=insidenova.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>InsideNoVa.com</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Top Hotels Near DC Jazz Clubs – Stay Close to the Music Scene</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Kofi B.: BLUES ALLEY - WASHINGTON, D.C. (SHOW #2)</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Blues Alley is featured as a legendary jazz hotspot in Georgetown, offering a classy and intimate atmosphere for live performances. Travelers looking to stay close to the venue can choose from nearby accommodations like The Graham Georgetown or the classic Georgetown Inn.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Blues Alley in Washington, D.C. hosts a live performance by artist Kofi B. as part of its ongoing concert schedule. The legendary jazz supper club remains a prominent destination for intimate musical experiences and high-profile performances in the District.</p>
            
         </a>
       
-        <a href="https://georgetowner.com/articles/2026/01/08/jazz-icon-monty-alexander-ushers-in-the-new-year-at-blues-alley" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://dcmilitary.com/local-events/?_evDiscoveryPath=%2Fevent%2F107639526n-yoko-miwa-trio-blues-alley-dc-1-15-2026-7pm" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=georgetowner.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Georgetowner</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 8, 2026</span>
+              <img src="https://www.google.com/s2/favicons?domain=dcmilitary.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>DC Military</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Jazz Icon Monty Alexander Ushers in the New Year at Blues Alley</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Yoko Miwa Trio @Blues Alley (DC) 1/15/2026 7pm</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Blues Alley celebrated its 60th anniversary with a sold-out New Year&#39;s residency by jazz legend Monty Alexander, who performed a soulful fusion of hard-swinging jazz and Caribbean rhythms. The historic Georgetown venue continues to serve as an intimate sanctuary for world-class music, reinforcing its legacy as a premier destination for jazz and culture in Washington D.C.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Blues Alley in Washington, D.C., will host a performance by the Yoko Miwa Trio on January 15, 2026, at 7:00 PM. This upcoming jazz event offers local audiences the opportunity to experience the trio&#39;s musical style at the historic supper club venue.</p>
            
         </a>
       
@@ -685,6 +686,49 @@ I went last year...
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

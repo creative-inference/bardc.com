@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -289,58 +290,6 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://wusa9.com/article/money/former-employees-havent-been-paid-after-opening-of-bar-owner-disputes-law/65-129aa585-ba38-43c5-b851-b68ebd712b47" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=wusa9.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WUSA9</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 27, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Former employees haven’t been paid after opening of D.C. bar; owner disputes timing under law</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">RUSH Bar and Restaurant is currently facing allegations regarding unpaid wages following its mid-December opening in Washington, D.C. The owner attributes the delays to payroll complications and a misunderstanding of local labor laws, while city officials clarify that terminated employees must receive all earned wages by the next business day.</p>
-           
-        </a>
-      
-        <a href="https://aol.com/news/employees-dc-newest-gay-bar-030911741.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=aol.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>AOL.com</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 27, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Employees At DC’s Newest Gay Bar Get Fussy Over Unpaid Wages</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">RUSH Bar and Restaurant, a recently opened gay bar in Washington, D.C., is facing allegations from former employees regarding unpaid wages and labor law violations. Owner Jackson Mosley cited issues with the bar&#39;s federal employer identification number for the delay, while workers claim they were terminated after questioning missing paychecks from mid-December 2025.</p>
-           
-        </a>
-      
-        <a href="https://washingtonblade.com/2025/12/22/rush-reopens-renewing-suspended-liquor-license" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=washingtonblade.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washington Blade</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 22, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Rush reopens after renewing suspended liquor license</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">RUSH Bar and Restaurant in Washington, D.C., reopened in late December 2025 after a brief liquor license suspension caused by a payment processing error. Owner Jackson Mosley is also addressing staff payroll delays attributed to a tax-related administrative mismatch between federal and District records. Located at 2001 14th Street N.W., the new LGBTQ venue held its grand opening in early December near the U Street entertainment corridor.</p>
-           
-        </a>
-      
-        <a href="https://washingtonian.com/2025/05/13/a-hip-chinese-american-restaurant-and-mahjong-bar-is-opening-penn-quarter" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">May 13, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">A Hip Chinese-American Restaurant and Mahjong Bar Is Opening in Penn Quarter</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">RUSH Bar and Restaurant (Lucky Danger) in Penn Quarter features a hidden mahjong and whiskey parlor inspired by the &#39;Rush Hour&#39; film series. The venue offers a refined Chinese-American menu, automatically shuffling mahjong tables, and a specialized cocktail program incorporating ingredients from traditional Chinese medicine.</p>
-           
-        </a>
-      
         <a href="https://wusa9.com/video/news/local/dc/former-rush-bar-employees-say-they-still-havent-been-paid/65-9736fd1b-e174-4535-b9af-4380c29febf6" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
@@ -351,6 +300,19 @@
            <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Former Rush Bar employees say they still haven&#39;t been paid</h4>
            
              <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">RUSH Bar and Restaurant is facing allegations from former employees who claim they have not received paychecks for work completed in mid-December 2025. The staff members are reportedly still waiting on their compensation from the Washington D.C. establishment.</p>
+           
+        </a>
+      
+        <a href="https://wusa9.com/video/money/former-employees-havent-been-paid-after-opening-of-dc-bar-owner-disputes-timing-under-law/65-9c64dc5d-3377-4e43-8e44-61fdbb78877f" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=wusa9.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>WUSA9</span>
+              
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Former employees haven’t been paid after opening of D.C. bar; owner disputes timing under law</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">RUSH Bar and Restaurant in Washington D.C. is facing allegations from former employees who claim they have not received their final wages following their termination. The owner has acknowledged the dismissals but disputes the timing of the payments, stating he has 30 days under the law to settle the accounts.</p>
            
         </a>
       
@@ -575,6 +537,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

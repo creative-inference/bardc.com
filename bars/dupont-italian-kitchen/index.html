@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -285,45 +286,6 @@ Happy Hour, Authentic Italian Dining, LGBTQ+ Community Hub, Karaoke & Drag Perfo
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://spottedbylocals.com/washington-dc/dupont-italian-kitchen" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=spottedbylocals.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Spotted by Locals</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 24, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Dupont Italian Kitchen Washington DC</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">DuPont Italian Kitchen is a long-standing community staple in Washington D.C.’s Dupont Circle that offers a welcoming atmosphere, wood-fired pizzas, and homestyle pasta dishes. The venue features a popular outdoor seating area on 17th Street and an upstairs bar known for karaoke, drag events, and prime views of local celebrations.</p>
-           
-        </a>
-      
-        <a href="https://wtop.com/dc/2025/12/new-rules-go-into-effect-for-dc-streateries" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=wtop.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WTOP</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 3, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">DC Council votes unanimously to secure ‘streateries’ one day after new rules left businesses scrambling</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">DuPont Italian Kitchen owner Michael Askarinam advocated for the preservation of D.C. “streateries,” arguing that removing outdoor dining spaces would not solve neighborhood parking issues caused by delivery trucks. The restaurant’s perspective was highlighted as the D.C. Council passed emergency legislation to reduce permit fees and offer more flexibility for outdoor dining structures.</p>
-           
-        </a>
-      
-        <a href="https://washingtonblade.com/2024/08/15/dik-bar-lgbtq-institution-expands" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=washingtonblade.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washington Blade</span>
-              <span style="margin-left:auto; text-transform:none;">Aug 15, 2024</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">DIK Bar cements its status as LGBTQ institution, prepares to expand</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">DuPont Italian Kitchen, a long-standing LGBTQ institution in Washington, D.C., is expanding its presence on 17th Street by opening Dupont Cantina in the adjacent former Malbec space. The new venture offers a casual Mexican menu featuring tacos and margaritas to complement the original restaurant&#39;s classic Italian fare and its storied 40-year history as a community hub.</p>
-           
-        </a>
-      
         <a href="https://wfmz.com/entertainment/coffee-break/highest-rated-italian-restaurants-in-washington-d-c-according-to-tripadvisor/collection_716bbd40-0463-5efd-9b9e-475d8e5f5113.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
@@ -347,6 +309,19 @@ Happy Hour, Authentic Italian Dining, LGBTQ+ Community Hub, Karaoke & Drag Perfo
            <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Highest-rated Italian restaurants in Washington, D.C., according to Tripadvisor</h4>
            
              <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">DuPont Italian Kitchen is recognized as one of the highest-rated Italian restaurants in Washington, D.C., according to Tripadvisor data. The venue maintains a four-star rating and is noted for offering a mid-range dining experience in the city&#39;s competitive culinary scene.</p>
+           
+        </a>
+      
+        <a href="https://dcnewsnow.com/news/local-news/washington-dc/crews-battle-fire-at-dupont-circle-restaurant" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=dcnewsnow.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>DC News Now</span>
+              
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Crews battle fire at Dupont Circle restaurant</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">DuPont Italian Kitchen was the site of a fire that required emergency crews to respond to the Dupont Circle area. The incident caused significant damage to the building, impacting the operations of the long-standing neighborhood restaurant.</p>
            
         </a>
       
@@ -622,6 +597,49 @@ Happy Hour, Authentic Italian Dining, LGBTQ+ Community Hub, Karaoke & Drag Perfo
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

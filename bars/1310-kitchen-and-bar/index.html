@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -293,68 +294,29 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://georgetowndc.com/news/frozen-meals-to-ride-out-the-snowstorm" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://fox5dc.com/video/1538254" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=georgetowndc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Georgetown DC</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 22, 2026</span>
+              <img src="https://www.google.com/s2/favicons?domain=fox5dc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>FOX 5 DC</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Frozen Meals to Ride Out the Snowstorm</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">1310 Kitchen &amp; Bar to Host a Murder Mystery Halloween Dinner</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">1310 Kitchen and Bar is offering a variety of freezer-to-oven meals, including chicken pot pie, beef chili with cornbread, and tomato bisque, to help neighbors prepare for winter weather. The venue also hosts live entertainment and is taking reservations for an interactive murder mystery dinner experience on January 31.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">1310 Kitchen and Bar hosted a special murder mystery dinner event featuring Chef Jenn Crovato for the Halloween season. The restaurant showcased themed interactive experiences alongside seasonal menu items like specialty pumpkin cocktails.</p>
            
         </a>
       
-        <a href="https://patch.com/virginia/mclean/weta-food-show-launches-4th-season-brunch-mclean" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://fox5dc.com/video/1442051" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=patch.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Patch</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 31, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">DMV Food Show Launches 4th Season With Jazz Brunch</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">1310 Kitchen and Bar is featured in the season four premiere of the WETA PBS series &quot;Signature Dish.&quot; The &quot;Let’s Brunch&quot; episode, airing January 5, 2026, showcases the Georgetown restaurant as a highlight of the D.C. area&#39;s vibrant brunch scene.</p>
-           
-        </a>
-      
-        <a href="https://wjla.com/good-morning-washington/step-into-the-1920s-glam-at-1310-kitchens-murder-mystery-dinner-this-halloween" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=fox5dc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>FOX 5 DC</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=wjla.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WJLA</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 27, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Step into the 1920s glam at 1310 Kitchen’s murder mystery dinner this Halloween</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Taylor Swift inspired creations at 1310 Kitchen &amp; Bar</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">1310 Kitchen and Bar hosted a 1920s-themed &#39;Death of a Gangster&#39; murder mystery dinner featuring an immersive theatrical experience with live actors and costume contests. Head Chef Jenn Crovato curated an Italian family-style menu for the event, featuring dishes such as pasta alla vodka, meatballs with ricotta, and cannoli.</p>
-           
-        </a>
-      
-        <a href="https://georgetowndc.com/news/chicken-pot-pie-athon-to-support-gms" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=georgetowndc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Georgetown DC</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 23, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Chicken Pot Pie-athon to Support GMS</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">1310 Kitchen and Bar hosted a &quot;Chicken Pot Pie-athon&quot; to benefit Georgetown Main Street, donating 30% of proceeds from Chef Jenn Crovato’s frozen meal sales. The selection featured a variety of gourmet offerings for pickup, including signature chicken pot pies, short ribs, and penne with lamb ragu.</p>
-           
-        </a>
-      
-        <a href="https://dc.eater.com/restaurant-news/163007/1310-kitchen-and-bar-provisions-gourmet-market-georgetown-intel" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Aug 14, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">1310 Kitchen &amp; Bar Adds Gourmet Market to Georgetown Cafe</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">1310 Kitchen &amp; Bar has expanded its Georgetown location with 1310 Provisions, a new gourmet grab-and-go market featuring fresh salads, sandwiches, and vegan pastries. The pantry also offers Chef Jenn Crovato’s signature frozen meals, such as chicken pot pie and ratatouille lasagna, designed for quick and healthy home dining.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">1310 Kitchen and Bar features creative, Taylor Swift-inspired culinary creations developed by Chef Jenn Crovato. These themed dishes were showcased during a special segment on FOX 5 DC, highlighting the restaurant&#39;s innovative and trend-focused approach to its menu.</p>
            
         </a>
       
@@ -634,6 +596,49 @@ There is a good variety on the brunch menu. I went with the croque madame &amp; 
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

@@ -50,7 +50,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -69,17 +69,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -105,7 +107,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -306,68 +307,42 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://washingtonian.com/2025/11/30/meet-for-the-holidays-at-the-wharf" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://washington.org/visit-dc/places-get-cozy-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 25, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=washington.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>visit Washington DC</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Meet for the Holidays at The Wharf</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">20+ Restaurants with Fires to Cozy Up to in DC</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Camp Wharf at the Firepit features a seasonal &quot;Caps Campfire&quot; experience with a vintage Airstream trailer serving hot apple cider and s&#39;mores. Located near the ice rink, the venue offers guests a cozy wood-burning fire to enjoy while celebrating the winter season at The Wharf.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Camp Wharf at the Firepit serves as a premier cold-weather destination at The Wharf, featuring a festive fire pit where visitors can roast s’mores. Open Thursday through Sunday during the fall and winter months, the venue offers a cozy outdoor atmosphere complemented by warm apple cider.</p>
            
         </a>
       
-        <a href="https://nhl.com/capitals/news/capitals-wharf-announce-capitals-winter-at-the-wharf-featuring-capitals-themed-rink-and-jack-daniel-s-barrel-tree" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://nytimes.com/2022/08/08/dining/best-smores-recipe.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=nhl.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>NHL.com</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 11, 2024</span>
+              <img src="https://www.google.com/s2/favicons?domain=nytimes.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The New York Times</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Capitals, Wharf announce Capitals Winter at the Wharf Featuring Capitals-Themed Rink and Jack Daniel’s Barrel Tree</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Perfect S’more Is Practically Burned and a Little Salty (Published 2022)</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Camp Wharf at the Firepit transforms into the &#39;Caps Campfire&#39; during the winter season, offering s&#39;mores and hot cider to visitors from Thursday through Sunday. Located at Transit Pier in Washington, D.C., the venue features Washington Capitals-themed decor and serves as a key gathering spot for the team&#39;s seasonal &#39;Winter at the Wharf&#39; festivities.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Camp Wharf at the Firepit offers a signature outdoor s&#39;mores experience at The Wharf in Washington, D.C., centered around a massive stone fire pit. Visitors can purchase gourmet kits to roast marshmallows and assemble high-quality treats while enjoying waterfront views in a cozy, social setting.</p>
            
         </a>
       
-        <a href="https://washingtonian.com/2024/12/02/the-wharf-brings-holiday-cheer-to-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://washington.org/press/journalist-newsletter/hotel-happenings" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 26, 2024</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Wharf Brings Holiday Cheer to DC</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Camp Wharf at the Firepit features a cozy wood-burning fire and a vintage Airstream trailer located near District Pier in Washington, DC. The seasonal destination offers hot apple cider and s&#39;mores kits complete with marshmallows, chocolate, graham crackers, and roasting sticks.</p>
-           
-        </a>
-      
-        <a href="https://miamiherald.com/detour/article280902913.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=washington.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Washington.org</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=miamiherald.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Miami Herald</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 31, 2024</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Wharf breathes new life into Washington, D.C.’s waterfront</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Hotel Happenings</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Camp Wharf at the Firepit offers a unique outdoor experience at Washington, D.C.&#39;s waterfront where visitors can enjoy a DIY s’more cart around a community fire pit. This attraction is a standout feature of The Wharf’s revitalized dining scene, providing a cozy and interactive dessert option with views of the Potomac River.</p>
-           
-        </a>
-      
-        <a href="https://travelawaits.com/2822848/things-to-do-at-the-wharf-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=travelawaits.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>TravelAwaits</span>
-              <span style="margin-left:auto; text-transform:none;">Jun 29, 2023</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">7 Fantastic Experiences At Washington, D.C.’s Newest Must-Visit Spot</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Camp Wharf at the Firepit features a vintage Airstream trailer that seasonally dispenses s&#39;mores kits for roasting over an adjacent firepit along the Potomac waterfront. Located on the promenade at The Wharf, this cozy outdoor spot allows visitors to enjoy graham crackers, marshmallows, and chocolate while taking in views of the river.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Camp Wharf at the Firepit offers an inviting outdoor setting for roasting marshmallows along the Washington, DC waterfront. The venue is conveniently located within walking distance of several major hotels at The Wharf, including the Pendry, InterContinental, and Canopy by Hilton.</p>
            
         </a>
       
@@ -645,6 +620,49 @@ Wife and I stopped by on a Thursday night in June of 2023. Service...
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

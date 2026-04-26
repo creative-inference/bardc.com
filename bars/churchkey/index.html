@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -295,68 +296,42 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://americancraftbeer.com/5-stupid-questions-with-dc-beer-legend-greg-engert" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://cntraveler.com/bars/washington-d-c/churchkey" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=americancraftbeer.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>American Craft Beer</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 21, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=cntraveler.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Condé Nast Traveler</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">5 Stupid Questions With DC Beer Legend Greg Engert</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">ChurchKey - Bar Review</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">ChurchKey is featured as a cornerstone of the Washington, D.C. craft beer scene, managed by Neighborhood Restaurant Group partner and beer director Greg Engert. The venue serves as a primary example of Engert&#39;s award-winning approach to beer curation and his influential role in the region&#39;s hospitality industry.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">ChurchKey is a premier beer destination in Washington D.C., featuring an extensive selection of 555 labels and 50 temperature-controlled taps. The atmosphere features exposed brick and comfy couches, complemented by a food menu famous for creative tater tot variations and elevated bar snacks.</p>
            
         </a>
       
-        <a href="https://americancraftbeer.com/craft-beer-destinations-churchkey-reopens-in-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://10best.usatoday.com/awards/churchkey-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=americancraftbeer.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>American Craft Beer</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 10, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=10best.usatoday.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>USA TODAY 10BEST</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Craft Beer Destinations: ChurchKey Reopens in DC</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">ChurchKey</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">ChurchKey in Washington D.C.&#39;s Logan Circle neighborhood features an extensive selection of 50 draft lines and nearly 500 bottled and canned beers organized by flavor profile. Led by beverage director Greg Engert and Chef Bill Williamson, the venue offers rare artisanal labels and cask ales served at precise temperatures in specific glassware.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">ChurchKey is a plush Washington, D.C. beer bar that features an extensive selection of approximately 500 beers, including 50 taps and five casks. The draft list is uniquely organized by flavor profiles such as &quot;tart and funky&quot; or &quot;smoke&quot; to help patrons navigate global offerings served at precise temperatures. This venue is a perennial favorite in the 10Best Readers&#39; Choice Awards, consistently ranking as one of the top beer bars in the country.</p>
            
         </a>
       
-        <a href="https://dc.eater.com/2024/10/25/24277894/am-intel-vegetarian-boston-chain-nina-may-churchkey-anniversary-wiseguy-pizza-controversy" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://sourceofthespring.com/event/january-beer-share-churchkey-members-only" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 25, 2024</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Boston Chain Obsessed With Made-From-Scratch Food Touching Down in D.C.</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">ChurchKey celebrated its 15-year milestone in Washington, D.C., with the release of five exclusive anniversary beer collaborations from breweries such as Monkish and Sierra Nevada. The Logan Circle destination is renowned for its meticulously curated selection of 55 drafts and casks managed by Beer Director Greg Engert.</p>
-           
-        </a>
-      
-        <a href="https://washingtonpost.com/lifestyle/food/with-600-bottles-of-beer-on-the-wall-how-can-a-staff-keep-up-taste-talk-and-learn/2015/01/12/4d465a44-9827-11e4-8005-1924ede3e54a_story.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=sourceofthespring.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Source of the Spring</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtonpost.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Washington Post</span>
-              <span style="margin-left:auto; text-transform:none;">Apr 9, 2023</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">With 600 bottles of beer on the wall, how can a staff keep up? Taste, talk and learn.</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">January Beer Share @ Churchkey Members Only</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">ChurchKey focuses on intensive staff education to help bartenders and servers navigate its massive inventory of 600 bottled beers and numerous draft lines. Led by beer director Greg Engert, the program ensures that employees provide expert guidance to guests within Washington D.C.’s sophisticated craft beer scene.</p>
-           
-        </a>
-      
-        <a href="https://washingtonian.com/2022/04/13/popular-dc-beer-bar-churchkey-reopening-14th-street-after-two-years" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">Apr 13, 2022</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Popular DC Beer Haven Churchkey Is Reopening After Two-Plus Years</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">ChurchKey has reopened its 14th Street location following a two-year hiatus, featuring a refreshed interior and an expanded beverage program led by Greg Engert. The menu now includes a retail beer shop for to-go orders and tavern-style pizzas from Chef Bill Williamson alongside its renowned selection of 50 temperature-controlled draft lines.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">ChurchKey hosts an exclusive mystery bottle beer share for members on January 25, 2026, featuring a communal tasting and a dedicated beer swap table. Attendees are invited to share their favorite brews and discover new ones while supporting the venue through additional food and drink purchases.</p>
            
         </a>
       
@@ -636,6 +611,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

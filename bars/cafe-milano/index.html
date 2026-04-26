@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -281,6 +282,23 @@
   <!-- [NEW] Events Section -->
   <!-- [NEW] Events Section -->
 
+  <div class="events-section">
+    <h3>📅 Upcoming Events & Specials</h3>
+    
+      
+      <div class="event-item">
+        
+        <div class="event-header" style="display:flex; justify-content:space-between; align-items:baseline;">
+           <h4>🥂 Mother’s Day Sparkling Brunch</h4>
+           <span class="event-date" style="font-size:0.9rem; color:#666; font-weight:bold;">Sunday, May 10th</span>
+        </div>
+        <p>Celebrate Mother’s Day with a traditional sparkling brunch featuring a festive culinary experience with seasonal brunch favorites and Italian specialties.</p>
+      </div>
+      
+    
+
+  </div>
+
 <!-- End Events Section -->
 
 <!-- [NEW] Recurring Events Section -->
@@ -316,68 +334,55 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://caymancompass.com/2026/01/15/cafe-milano-returns-to-four-seasons-resort-and-residences-anguilla" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://press.fourseasons.com/anguilla/hotel-news/2025/cafe-milano-pop-up-at-salt" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=caymancompass.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Cayman Compass</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 16, 2026</span>
+              <img src="https://www.google.com/s2/favicons?domain=press.fourseasons.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Four Seasons Press Room</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Cafe Milano returns to Four Seasons Resort and Residences Anguilla</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Cafe Milano Brings Italian Excellence to Salt at Four Seasons Resort and Residences Anguilla</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Cafe Milano is bringing its signature Italian dining and Georgetown elegance to the Four Seasons Resort and Residences Anguilla for a pop-up event from January 16–19, 2026. The experience features the prestigious D.C. restaurant’s renowned hospitality and classic dishes at the resort&#39;s Bamboo Bar &amp; Grill.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Cafe Milano brought its signature Washington, D.C. Italian cuisine to the Four Seasons Resort and Residences Anguilla for an exclusive culinary pop-up in February 2025. The collaboration featured iconic dishes and refined hospitality from the D.C. celebrity hotspot, reimagined for the resort’s oceanfront SALT restaurant.</p>
            
         </a>
       
-        <a href="https://georgetowndc.com/news/winter-restaurant-week-featuring-17-georgetown-locations" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://politico.com/newsletters/playbook/2025/10/23/last-night-at-cafe-milano-00619521" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=georgetowndc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Georgetown DC</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 15, 2026</span>
+              <img src="https://www.google.com/s2/favicons?domain=politico.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Politico</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Winter Restaurant Week Featuring 17 Georgetown Locations</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Last night at Cafe Milano</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Cafe Milano is participating in the 2026 Winter Restaurant Week in Georgetown from January 19 through January 25. The restaurant is offering special three-course menus for brunch, lunch, and dinner as part of the neighborhood-wide culinary event.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Cafe Milano hosted a high-profile dinner service that brought together former Presidents Joe Biden and Barack Obama alongside several senior Cabinet members and U.S. senators. The Georgetown restaurant continues to serve as a central hub for Washington D.C.&#39;s political elite and power players.</p>
            
         </a>
       
-        <a href="https://ft.com/content/0702a2be-c22f-4890-85cb-f769b8f0e090" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://msn.com/en-xl/news/other/obama-biden-dine-separately-in-d-c/ar-AA1P3XlH?cvid=68fbe3a24e3a42d49a8659243b1749d7&amp;ocid=hpmsn&amp;apiversion=v2&amp;domshim=1&amp;noservercache=1&amp;noservertelemetry=1&amp;batchservertelemetry=1&amp;renderwebcomponents=1&amp;wcseo=1" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=ft.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Financial Times</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 2, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Maga has taken DC power dining to a whole new level</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Cafe Milano remains a central fixture in Washington D.C.&#39;s power dining scene, particularly favored by senior Trump administration officials and figures like Robert Kennedy Jr. and Scott Bessent. Located in the historic Georgetown district, the restaurant is highlighted for its enduring status as a high-society hub where the political elite gather for Italian cuisine in a refined setting.</p>
-           
-        </a>
-      
-        <a href="https://chosun.com/english/world-en/2025/10/24/4HCUI3NNXJDWDFVP2BM4FRCVXI" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=msn.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>MSN</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=chosun.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>조선일보</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 23, 2025</span>
            </div>
            <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Obama, Biden Dine Separately in D.C.</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Cafe Milano serves as a premier social hub for Washington D.C.&#39;s political elite, recently hosting former Presidents Barack Obama and Joe Biden for simultaneous but separate dinners. This Georgetown institution is renowned as a &#39;power table&#39; where diplomats, journalists, and high-ranking officials gather, maintaining its reputation for high-profile sightings and political networking.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Cafe Milano hosted notable figures Barack Obama and Joe Biden for separate dinner engagements in Washington, D.C. These visits highlight the restaurant&#39;s long-standing reputation as a preferred meeting place for high-ranking political leaders and the nation&#39;s elite.</p>
            
         </a>
       
-        <a href="https://wusa9.com/article/life/food/inside-cafe-milano-georgetown-politics-pasta/65-1562a261-de2f-430b-9399-adfd1adeb2a1" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://wsj.com/business/hospitality/cafe-milano-washington-restaurant-partisan-politics-15f05b6a" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=wusa9.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WUSA9</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 1, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=wsj.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>WSJ</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Café Milano continues to be Georgetown&#39;s star-studded dining hotspot</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Food Is Meh, Décor Is Bland, Parking Nonexistent: Must Be D.C.’s Most-Exclusive Restaurant</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Cafe Milano remains a legendary Georgetown institution known for its high-profile clientele, including presidents, diplomats, and celebrities. The menu features elevated Italian classics such as veal ravioli and Wagyu short ribs, alongside specialty pizzas and an extensive international wine list.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Cafe Milano remains Washington D.C.&#39;s premier power-dining destination, valued more for its high-profile clientele and exclusivity than its culinary offerings or decor. This Georgetown institution continues to attract diplomats, politicians, and celebrities who prioritize the venue&#39;s social status and privacy.</p>
            
         </a>
       
@@ -657,6 +662,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

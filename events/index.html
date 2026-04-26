@@ -49,7 +49,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -68,17 +68,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -105,7 +107,6 @@
           </div>
         </div>
 
-
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
       </nav>
@@ -124,26 +125,6 @@
 <!-- Special Daily Pages Links -->
 <div style="margin-bottom: 2rem; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
     
-      <a href="/events/2026-04-22/" class="daily-link-chip">
-         <span style="display:block; font-size: 0.8em; opacity: 0.8; text-transform: uppercase;">Wed</span> 
-         <strong style="display:block;">Apr 22nd</strong>
-      </a>
-    
-      <a href="/events/2026-04-23/" class="daily-link-chip">
-         <span style="display:block; font-size: 0.8em; opacity: 0.8; text-transform: uppercase;">Thu</span> 
-         <strong style="display:block;">Apr 23rd</strong>
-      </a>
-    
-      <a href="/events/2026-04-24/" class="daily-link-chip">
-         <span style="display:block; font-size: 0.8em; opacity: 0.8; text-transform: uppercase;">Fri</span> 
-         <strong style="display:block;">Apr 24th</strong>
-      </a>
-    
-      <a href="/events/2026-04-25/" class="daily-link-chip">
-         <span style="display:block; font-size: 0.8em; opacity: 0.8; text-transform: uppercase;">Sat</span> 
-         <strong style="display:block;">Apr 25th</strong>
-      </a>
-    
       <a href="/events/2026-04-26/" class="daily-link-chip">
          <span style="display:block; font-size: 0.8em; opacity: 0.8; text-transform: uppercase;">Sun</span> 
          <strong style="display:block;">Apr 26th</strong>
@@ -157,6 +138,26 @@
       <a href="/events/2026-04-28/" class="daily-link-chip">
          <span style="display:block; font-size: 0.8em; opacity: 0.8; text-transform: uppercase;">Tue</span> 
          <strong style="display:block;">Apr 28th</strong>
+      </a>
+    
+      <a href="/events/2026-04-29/" class="daily-link-chip">
+         <span style="display:block; font-size: 0.8em; opacity: 0.8; text-transform: uppercase;">Wed</span> 
+         <strong style="display:block;">Apr 29th</strong>
+      </a>
+    
+      <a href="/events/2026-04-30/" class="daily-link-chip">
+         <span style="display:block; font-size: 0.8em; opacity: 0.8; text-transform: uppercase;">Thu</span> 
+         <strong style="display:block;">Apr 30th</strong>
+      </a>
+    
+      <a href="/events/2026-05-01/" class="daily-link-chip">
+         <span style="display:block; font-size: 0.8em; opacity: 0.8; text-transform: uppercase;">Fri</span> 
+         <strong style="display:block;">May 1st</strong>
+      </a>
+    
+      <a href="/events/2026-05-02/" class="daily-link-chip">
+         <span style="display:block; font-size: 0.8em; opacity: 0.8; text-transform: uppercase;">Sat</span> 
+         <strong style="display:block;">May 2nd</strong>
       </a>
     
 </div>
@@ -185,6 +186,346 @@
 </style>
 
 <div class="event-list-container">
+  
+    
+    <a href="/bars/9-30-club/" class="event-list-item">
+      
+        
+        <div class="event-list-thumbnail" style="background:#333; display:flex; align-items:center; justify-content:center;">📅</div>
+      
+      
+      <div class="event-list-details">
+        <h4>🎙️ Robby Hoffman</h4>
+        <p class="event-date">
+          Saturday, April 25th
+        </p>
+        <p class="event-list-venue">@ 9:30 Club</p>
+        
+          <p class="event-desc-short">Early show at 6 PM; Late show at 9:15 PM. (Both Sold Out)</p>
+        
+      </div>
+    </a>
+    
+  
+    
+    <a href="/bars/9-30-club/" class="event-list-item">
+      
+        
+        <div class="event-list-thumbnail" style="background:#333; display:flex; align-items:center; justify-content:center;">📅</div>
+      
+      
+      <div class="event-list-details">
+        <h4>🎹 Oklou US Tour 2026</h4>
+        <p class="event-date">
+          Monday, April 27th
+        </p>
+        <p class="event-list-venue">@ 9:30 Club</p>
+        
+          <p class="event-desc-short">Doors open at 7 PM. (Sold Out)</p>
+        
+      </div>
+    </a>
+    
+  
+    
+    <a href="/bars/9-30-club/" class="event-list-item">
+      
+        
+        <div class="event-list-thumbnail" style="background:#333; display:flex; align-items:center; justify-content:center;">📅</div>
+      
+      
+      <div class="event-list-details">
+        <h4>🎸 The Afghan Whigs 40th Anniversary Tour</h4>
+        <p class="event-date">
+          Tuesday, April 28th
+        </p>
+        <p class="event-list-venue">@ 9:30 Club</p>
+        
+          <p class="event-desc-short">With Mercury Rev. Doors open at 6:30 PM.</p>
+        
+      </div>
+    </a>
+    
+  
+    
+    <a href="/bars/9-30-club/" class="event-list-item">
+      
+        
+        <div class="event-list-thumbnail" style="background:#333; display:flex; align-items:center; justify-content:center;">📅</div>
+      
+      
+      <div class="event-list-details">
+        <h4>🎸 NewDad</h4>
+        <p class="event-date">
+          Wednesday, April 29th
+        </p>
+        <p class="event-list-venue">@ 9:30 Club</p>
+        
+          <p class="event-desc-short">With Freak Slug. Doors open at 7 PM.</p>
+        
+      </div>
+    </a>
+    
+  
+    
+    <a href="/bars/9-30-club/" class="event-list-item">
+      
+        
+        <div class="event-list-thumbnail" style="background:#333; display:flex; align-items:center; justify-content:center;">📅</div>
+      
+      
+      <div class="event-list-details">
+        <h4>🎧 ŁASZEWO</h4>
+        <p class="event-date">
+          Friday, May 1st
+        </p>
+        <p class="event-list-venue">@ 9:30 Club</p>
+        
+          <p class="event-desc-short">Doors open at 8 PM. (Sold Out)</p>
+        
+      </div>
+    </a>
+    
+  
+    
+    <a href="/bars/9-30-club/" class="event-list-item">
+      
+        
+        <div class="event-list-thumbnail" style="background:#333; display:flex; align-items:center; justify-content:center;">📅</div>
+      
+      
+      <div class="event-list-details">
+        <h4>🎧 ŁASZEWO (Late Show)</h4>
+        <p class="event-date">
+          Saturday, May 2nd
+        </p>
+        <p class="event-list-venue">@ 9:30 Club</p>
+        
+          <p class="event-desc-short">Second show added! Doors open at 10 PM. (Sold Out)</p>
+        
+      </div>
+    </a>
+    
+  
+    
+    <a href="/bars/9-30-club/" class="event-list-item">
+      
+        
+        <div class="event-list-thumbnail" style="background:#333; display:flex; align-items:center; justify-content:center;">📅</div>
+      
+      
+      <div class="event-list-details">
+        <h4>🎉 The 30+ Party - Back to Da Clurb Night!</h4>
+        <p class="event-date">
+          Saturday, May 2nd
+        </p>
+        <p class="event-list-venue">@ 9:30 Club</p>
+        
+          <p class="event-desc-short">Rescheduled date. All tickets valid. Doors open at 6 PM.</p>
+        
+      </div>
+    </a>
+    
+  
+    
+    <a href="/bars/9-30-club/" class="event-list-item">
+      
+        
+        <div class="event-list-thumbnail" style="background:#333; display:flex; align-items:center; justify-content:center;">📅</div>
+      
+      
+      <div class="event-list-details">
+        <h4>🎤 Searows</h4>
+        <p class="event-date">
+          Tuesday, May 5th
+        </p>
+        <p class="event-list-venue">@ 9:30 Club</p>
+        
+          <p class="event-desc-short">With Jordan Patterson. Doors open at 7 PM.</p>
+        
+      </div>
+    </a>
+    
+  
+    
+    <a href="/bars/9-30-club/" class="event-list-item">
+      
+        
+        <div class="event-list-thumbnail" style="background:#333; display:flex; align-items:center; justify-content:center;">📅</div>
+      
+      
+      <div class="event-list-details">
+        <h4>🎸 The Paper Kites</h4>
+        <p class="event-date">
+          Wednesday, May 6th
+        </p>
+        <p class="event-list-venue">@ 9:30 Club</p>
+        
+          <p class="event-desc-short">With Donovan Woods. Doors open at 7 PM.</p>
+        
+      </div>
+    </a>
+    
+  
+    
+    <a href="/bars/9-30-club/" class="event-list-item">
+      
+        
+        <div class="event-list-thumbnail" style="background:#333; display:flex; align-items:center; justify-content:center;">📅</div>
+      
+      
+      <div class="event-list-details">
+        <h4>🐍 COBRAH - TORN TOUR</h4>
+        <p class="event-date">
+          Thursday, May 7th
+        </p>
+        <p class="event-list-venue">@ 9:30 Club</p>
+        
+          <p class="event-desc-short">Doors open at 7 PM.</p>
+        
+      </div>
+    </a>
+    
+  
+    
+    <a href="/bars/9-30-club/" class="event-list-item">
+      
+        
+        <div class="event-list-thumbnail" style="background:#333; display:flex; align-items:center; justify-content:center;">📅</div>
+      
+      
+      <div class="event-list-details">
+        <h4>🎹 Chuwi - Primavera Tour 2026</h4>
+        <p class="event-date">
+          Friday, May 8th
+        </p>
+        <p class="event-list-venue">@ 9:30 Club</p>
+        
+          <p class="event-desc-short">Doors open at 8 PM.</p>
+        
+      </div>
+    </a>
+    
+  
+    
+    <a href="/bars/9-30-club/" class="event-list-item">
+      
+        
+        <div class="event-list-thumbnail" style="background:#333; display:flex; align-items:center; justify-content:center;">📅</div>
+      
+      
+      <div class="event-list-details">
+        <h4>🎸 The Lemon Twigs</h4>
+        <p class="event-date">
+          Saturday, May 9th
+        </p>
+        <p class="event-list-venue">@ 9:30 Club</p>
+        
+          <p class="event-desc-short">Early show. Doors open at 8 PM.</p>
+        
+      </div>
+    </a>
+    
+  
+    
+    <a href="/bars/9-30-club/" class="event-list-item">
+      
+        
+        <div class="event-list-thumbnail" style="background:#333; display:flex; align-items:center; justify-content:center;">📅</div>
+      
+      
+      <div class="event-list-details">
+        <h4>🎸 CMAT</h4>
+        <p class="event-date">
+          Sunday, May 10th
+        </p>
+        <p class="event-list-venue">@ 9:30 Club</p>
+        
+          <p class="event-desc-short">With Blond in Car. Doors open at 7 PM. (Sold Out)</p>
+        
+      </div>
+    </a>
+    
+  
+    
+    <a href="/bars/cafe-milano/" class="event-list-item">
+      
+        
+        <div class="event-list-thumbnail" style="background:#333; display:flex; align-items:center; justify-content:center;">📅</div>
+      
+      
+      <div class="event-list-details">
+        <h4>🥂 Mother’s Day Sparkling Brunch</h4>
+        <p class="event-date">
+          Sunday, May 10th
+        </p>
+        <p class="event-list-venue">@ Cafe Milano</p>
+        
+          <p class="event-desc-short">Celebrate Mother’s Day with a traditional sparkling brunch...</p>
+        
+      </div>
+    </a>
+    
+  
+    
+    <a href="/bars/9-30-club/" class="event-list-item">
+      
+        
+        <div class="event-list-thumbnail" style="background:#333; display:flex; align-items:center; justify-content:center;">📅</div>
+      
+      
+      <div class="event-list-details">
+        <h4>🎤 Clara La San - Chosen Silences Tour 2026</h4>
+        <p class="event-date">
+          Wednesday, May 13th
+        </p>
+        <p class="event-list-venue">@ 9:30 Club</p>
+        
+          <p class="event-desc-short">Doors open at 7 PM. (Sold Out)</p>
+        
+      </div>
+    </a>
+    
+  
+    
+    <a href="/bars/9-30-club/" class="event-list-item">
+      
+        
+        <div class="event-list-thumbnail" style="background:#333; display:flex; align-items:center; justify-content:center;">📅</div>
+      
+      
+      <div class="event-list-details">
+        <h4>🎸 Iron & Wine</h4>
+        <p class="event-date">
+          Thursday, May 14th
+        </p>
+        <p class="event-list-venue">@ 9:30 Club</p>
+        
+          <p class="event-desc-short">With Improvement Movement. Doors open at 7 PM.</p>
+        
+      </div>
+    </a>
+    
+  
+    
+    <a href="/bars/9-30-club/" class="event-list-item">
+      
+        
+        <div class="event-list-thumbnail" style="background:#333; display:flex; align-items:center; justify-content:center;">📅</div>
+      
+      
+      <div class="event-list-details">
+        <h4>📟 No Scrubs: 90s Dance Party</h4>
+        <p class="event-date">
+          Friday, May 15th
+        </p>
+        <p class="event-list-venue">@ 9:30 Club</p>
+        
+          <p class="event-desc-short">Early edition. 90s hits and visuals. Doors open at 6 PM.</p>
+        
+      </div>
+    </a>
+    
   
 </div>
 
@@ -258,6 +599,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

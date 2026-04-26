@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -345,68 +346,42 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://theinfatuation.com/washington-dc/guides/best-bars-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://theworlds50best.com/discovery/Establishments/US/Washington-DC/The-Green-Zone.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=theinfatuation.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Infatuation</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 12, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=theworlds50best.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The World&#39;s 50 Best Restaurants</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Best Bars In DC - Washington DC</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Green Zone - Washington DC - Bar - 50Best Discovery</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Green Zone is an Adams Morgan bar specializing in Middle Eastern-inspired craft cocktails, featuring unique ingredients like cardamom and rose. The venue is known for its vibrant atmosphere, late-night music, and distinct political character, offering signature drinks like the &#39;Women. Life. Freedom&#39; and the &#39;F*ck Trump&#39; punch.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Green Zone is a vibrant Middle Eastern cocktail bar in Washington DC’s Adams Morgan neighborhood featuring flavors from Palestine, Lebanon, and Iraq. Founded by Chris Hassaan Francke, the two-story venue offers signature drinks like the pistachio-infused Janissary Corps alongside a selection of small plates and non-alcoholic options.</p>
            
         </a>
       
-        <a href="https://ft.com/content/c43a4a9e-76d7-4fc6-9750-9aef6c4e9fd7" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://kennedy-center.org/artists/t/ta-tn/the-green-zone" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=ft.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Financial Times</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 8, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=kennedy-center.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The Kennedy Center</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">A bartenders’ guide to the best cocktails in Washington</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Green Zone</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Green Zone in Adams Morgan serves inventive Middle Eastern-inspired cocktails like the Janissary Corps, which features Lebanese gin, pistachio, and brown butter. The venue is highlighted for its unique regional flavors and signature drinks such as the cognac-based Lebanese No 1.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Green Zone is Washington D.C.’s first standalone Middle Eastern cocktail bar, featuring a menu of innovative drinks and dishes inspired by the region&#39;s diverse flavors and cultures. The venue serves as a cultural hub with authentic decor, weekly DJ sets, and community events that celebrate Middle Eastern heritage.</p>
            
         </a>
       
-        <a href="https://theguardian.com/us-news/2025/aug/04/bartenders-politics-trump-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://cntraveler.com/bars/washington-dc/the-green-zone" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=theguardian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Guardian</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 5, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Talking politics has bartenders on edge in Trump’s Washington DC</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Green Zone, a Middle Eastern cocktail bar in Adams Morgan, continues to navigate the intersection of hospitality and activism in a politically divided Washington DC. Owner Chris Hassaan Francke has adapted the venue’s operations by toning down provocative rhetoric and renaming controversial cocktails to ensure the safety and well-being of his staff.</p>
-           
-        </a>
-      
-        <a href="https://modernluxury.com/green-zone-cocktail-bar-dc-interview" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=cntraveler.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Condé Nast Traveler</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=modernluxury.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Modern Luxury</span>
-              <span style="margin-left:auto; text-transform:none;">May 7, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Green Zone: A Middle Eastern Cocktail Escape in DC</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Green Zone – Bar Review</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Green Zone is a Middle Eastern-inspired cocktail bar in D.C.’s Adams Morgan neighborhood that serves authentic regional drinks, casual street food, and late-night snacks. The two-story venue features a diverse menu of classics and seasonal creations alongside a lively upstairs space dedicated to music and dancing.</p>
-           
-        </a>
-      
-        <a href="https://washingtoncitypaper.com/article/547085/new-middle-eastern-brunch-at-the-green-zone-belongs-on-your-radar" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=washingtoncitypaper.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washington City Paper</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 8, 2022</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">New Middle Eastern Brunch at The Green Zone Belongs on Your Radar</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Green Zone in Adams Morgan offers a weekend brunch menu featuring authentic Middle Eastern dishes like chickpea fatteh, foul mdammis, and sujuq-and-egg scrambles. The bar also serves unique specialties such as Iraqi clotted cream (geimar) paired with puff pastry, alongside pomegranate mimosas and traditional long-brewed Iraqi tea.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Green Zone is a vibrant Middle Eastern cocktail bar in Adams Morgan that features a two-level space including the upstairs Club de la Résistance for cultural events and DJs. The menu highlights regional flavors with signature drinks like the frozen Mint Lemonade &amp; More alongside authentic Iraqi, Lebanese, and Syrian-inspired snacks and wraps. The venue offers a sophisticated yet relaxed atmosphere decorated with vintage posters and traditional Middle Eastern decor.</p>
            
         </a>
       
@@ -689,6 +664,49 @@ Green Zone gets pretty crowded on the weekend, but...
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

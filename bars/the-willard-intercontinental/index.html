@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -297,68 +298,42 @@ Pre-dinner cocktails, holiday traditions, history enthusiasts, sophisticated dat
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://cntraveler.com/gallery/the-best-hotels-in-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://washingtonpost.com/video/wp-creator/district-unwrapped-willard-hotels-nightly-caroling/2025/12/08/6ccfa9d6-7a1e-40d8-b069-ee9488731e73_video.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=cntraveler.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Condé Nast Traveler</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 19, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=washingtonpost.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The Washington Post</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Best Hotels in Washington, DC, the Nation&#39;s Vibrant Capital</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">District Unwrapped: Willard Hotel&#39;s Nightly Caroling</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Willard InterContinental is a historic landmark located two blocks from the White House that recently underwent an $18 million restoration of its rooms and common areas. The hotel features grand Federal and Empire architectural styles, an ornate lobby with marble columns, and a storied history of hosting legendary figures like Abraham Lincoln and Martin Luther King, Jr.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Willard InterContinental hosts a traditional nightly caroling series in its lobby as a signature part of its annual holiday celebrations. This festive event is a highlight of the Washington, D.C. holiday season, showcasing the hotel’s historic atmosphere and seasonal charm.</p>
            
         </a>
       
-        <a href="https://thepointsguy.com/hotel/reviews/willard-intercontinental-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://costar.com/article/1015376694/from-farm-to-five-star-turkeys-rest-at-restored-historic-hotel-before-pardon" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=thepointsguy.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Points Guy</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 16, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=costar.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>CoStar</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">A review of the Willard InterContinental Washington, D.C. and its renovated rooms</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">News | From farm to five-star stay: Turkeys rest at restored historic hotel before pardon</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Willard InterContinental Washington, D.C. offers a historic and stately stay near the White House, featuring recently refreshed guest rooms that maintain their traditional charm. Guests can enjoy French-inspired dining at Cafe du Parc, cocktails at the legendary Round Robin Bar, and high-end amenities including a full-service spa and fitness center.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Willard InterContinental in Washington, D.C., recently debuted a comprehensive restoration of its guest rooms and suites, featuring custom murals and curated design elements by Parker-Torres Design. The historic property continues its long-standing tradition of hosting the National Thanksgiving Turkeys, providing luxury accommodations for the birds prior to their official presidential pardon.</p>
            
         </a>
       
-        <a href="https://alexandrialivingmagazine.com/travel/historic-d-c-hotel-completes-renovations" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://travelmarketreport.com/hotels-resorts/articles/willard-intercontinental-washington-d-c-unveils-room-and-suite-makeover" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=alexandrialivingmagazine.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Alexandria Living Magazine</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 29, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Historic D.C. Hotel Completes Renovations</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Willard InterContinental Washington, D.C. recently completed a comprehensive restoration of its 335 guest rooms and suites, featuring designs that honor the hotel’s 200-year history. The renovation includes 14 signature suites dedicated to historic figures like Dr. Martin Luther King Jr. and Eleanor Roosevelt, alongside new personalized programming for special events and masterclasses.</p>
-           
-        </a>
-      
-        <a href="https://hotelmanagement.net/renovations/willard-intercontinental-washington-dc-completes-guestroom-restoration" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=travelmarketreport.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Travel Market Report</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=hotelmanagement.net" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Hotel Management</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 28, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Willard InterContinental completes guestroom restoration</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Willard InterContinental Washington D.C. Unveils Room and Suite Makeover</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Willard InterContinental Washington, D.C., has completed a comprehensive restoration of its 335 guestrooms and suites, including 14 signature suites that pay tribute to pioneering historic figures. The redesign by Parker-Torres Design blends the hotel&#39;s 200-year legacy with modern luxury, featuring a pied-à-terre aesthetic, updated technology, and refined finishes throughout the accommodations.</p>
-           
-        </a>
-      
-        <a href="https://hotelsmag.com/news/willard-intercontinental-suite-restoration" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=hotelsmag.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>HOTELSMag.com</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 17, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">D.C.’s Willard InterContinental unveils room renovations</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Willard InterContinental Washington, D.C. has completed a comprehensive restoration of its 335 guest rooms and suites, blending modern luxury with designs inspired by the property&#39;s 200-year history. The project features specialty suites dedicated to notable figures like Eleanor Roosevelt and Martin Luther King Jr., alongside the launch of a new customizable events program called &#39;Incredible Occasions.&#39;</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Willard InterContinental Washington D.C. has completed an extensive restoration of its 335 guest rooms and suites, featuring designs inspired by its storied history and prominent American figures. The reimagined spaces blend timeless elegance with modern luxury, incorporating custom furnishings, historical murals, and updated technology throughout the signature and presidential suites.</p>
            
         </a>
       
@@ -640,6 +615,49 @@ From the moment we arrived, everything was just lovely. Our room was spacious,..
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

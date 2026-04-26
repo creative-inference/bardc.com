@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -293,68 +294,68 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://cuatower.com/2025/04/where-do-cua-students-watch-sports-events-in-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://barrons.com/advisor/articles/doj-sec-water-vending-machine-ponzi-scheme-7c630c3d?gaa_at=eafs&amp;gaa_n=AWEtsqf37lwJnA4Y6fXY9dt8XJz46FgD_BTN65moVi2hhyJ1FmlH2OHT9YLz&amp;gaa_ts=69830fe5&amp;gaa_sig=anSB_VejKtpDoECL1NMctuQRuzHZEMZ-umpvd7-9MJYUtSw_FwICwGTqagVt-CvG3kQm_iZVQXH85fvGC6gtbQ%3D%3D" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=cuatower.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Catholic University of America The Tower</span>
-              <span style="margin-left:auto; text-transform:none;">Apr 4, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=barrons.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Barron&#39;s</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Where Do CUA Students Watch Sports Events in DC? -</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Dirty Water: Inside the ‘Largest Franchise Fraud in the History of the United States’</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Dirty Water is a popular H Street sports bar in Washington D.C. that caters to fans of Boston sports teams and regional cuisine. The venue frequently hosts watch parties for national sporting events and political gatherings, serving as a primary social destination for local university students.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Dirty Water is the central subject of an investigative report detailing its involvement in what has been described as the largest franchise fraud case in United States history. The article explores the legal and financial controversies surrounding the operations of the popular Washington D.C. sports bar.</p>
            
         </a>
       
-        <a href="https://trtworld.com/article/18228983" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://barrons.com/advisor/articles/doj-sec-water-vending-machine-ponzi-scheme-7c630c3d?gaa_at=eafs&amp;gaa_n=AWEtsqe4mt1r1KuZlx-yoj1aj5Wegojj539IkQFwyCV8T8sgXBHrPaMEl3Nf&amp;gaa_ts=6992e205&amp;gaa_sig=5HGjJbfTlZEbuWoVegpQcWCIpV0n1-Nth2J0x5DWnpXU4vK3jKsOfaENbHTG0egtbhZtJHJ4zTivSqLU6uDunw%3D%3D" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=trtworld.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>TRT World</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 6, 2024</span>
+              <img src="https://www.google.com/s2/favicons?domain=barrons.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Barron&#39;s</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Dirty Water, the bar in DC that roots for Trump</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Dirty Water: Inside the ‘Largest Franchise Fraud in the History of the United States’</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Dirty Water is a Washington, D.C. sports bar that gained attention for its open support of Donald Trump during the 2024 election. The venue positions itself as a rare pro-Republican space in the capital, hosting high-energy watch parties for supporters to gather and celebrate election results.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Dirty Water, a sports bar located on H Street in Washington, D.C., is the central focus of an investigation into allegations involving massive franchise fraud and systemic financial misconduct. The venue has become a focal point for legal disputes concerning what has been described as one of the largest franchise-related schemes in U.S. history.</p>
            
         </a>
       
-        <a href="https://washingtonian.com/2024/11/04/this-may-be-the-only-bar-in-dc-publicly-supporting-trump" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://barrons.com/advisor/articles/doj-sec-water-vending-machine-ponzi-scheme-7c630c3d?gaa_at=eafs&amp;gaa_n=AWEtsqfxLaWg7M1P7Wf1hxrD_hdLzjHc9ir8HA33_2f1a8WIsF5U51lMy-Bk&amp;gaa_ts=695a58d6&amp;gaa_sig=E9nMF2644RH4lQ-BdGKiHAa0XYqH00oBHZYQHYDtuOEapI0TNaOtUHqBTaFxgjnpez-7UtQUbwswWuQdxlLAtg%3D%3D" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 4, 2024</span>
+              <img src="https://www.google.com/s2/favicons?domain=barrons.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Barron&#39;s</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">This May Be the Only Bar in DC Publicly Supporting Trump</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Dirty Water: Inside the ‘Largest Franchise Fraud in the History of the United States’</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Dirty Water is a sports bar on H Street that has distinguished itself as a rare establishment in Washington, D.C. publicly supporting Republican politics. Owner Luke Casey caters to right-leaning patrons by hosting debate watch parties and election night events, positioning the venue as a unique alternative in the city&#39;s predominantly Democratic social scene. Despite its political branding for major events, the bar maintains a primary focus on being a neighborhood destination for sports fans.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Dirty Water, a popular sports bar on H Street in Washington D.C., is the subject of a deep-dive investigation into allegations of massive franchise fraud. The report explores the legal and financial controversies surrounding the venue&#39;s ownership and its impact on the local business landscape.</p>
            
         </a>
       
-        <a href="https://timeout.com/washington-dc/news/this-d-c-bar-promised-free-drinks-if-the-patriots-beat-the-bengals-091024" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://barrons.com/advisor/articles/doj-sec-water-vending-machine-ponzi-scheme-7c630c3d?gaa_at=eafs&amp;gaa_n=AWEtsqevy7eAgi4062cXH5QDuUR_-XZw4Oyyv-cLzOFZuOSAeuH8o7O6A2UQ&amp;gaa_ts=698856f5&amp;gaa_sig=Xy79mGAqW4BVtqaan9Y9LFoutX8_n7bABkLBb9wi2VhUNF4ZPhF-Scj00kJg3QhgI4tAt3DPII0usC-Co0C4nA%3D%3D" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=timeout.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Time Out Worldwide</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 11, 2024</span>
+              <img src="https://www.google.com/s2/favicons?domain=barrons.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Barron&#39;s</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">This D.C. Bar Promised Free Drinks if the Patriots Beat the Bengals</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Dirty Water: Inside the ‘Largest Franchise Fraud in the History of the United States’</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Dirty Water, a Boston-loyal sports bar on H Street in D.C., recently covered approximately $6,000 in patron bar tabs following a surprise New England Patriots victory. The venue is known for its dedicated fan base and high-stakes game-day promotions, including open bar deals during specific NFL matchups.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Dirty Water is the central focus of an investigation into what is described as a massive franchise fraud scheme. The report explores the legal and financial controversies surrounding the H Street NE sports bar and its ownership.</p>
            
         </a>
       
-        <a href="https://masslive.com/patriots/2024/09/one-bar-offered-to-pay-everyones-tabs-if-patriots-won-it-paid-up.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://barrons.com/advisor/articles/doj-sec-water-vending-machine-ponzi-scheme-7c630c3d?gaa_at=eafs&amp;gaa_n=AWEtsqfVIjCdWeagqeHGnkmZ9bnGRwJQ_QtI_bWIG2aSi-C6a4Wl7lmdHPsg&amp;gaa_ts=6968b2e9&amp;gaa_sig=h9IeM0BFly2iIOuvWK25jZk_FsxFjdg3RSBu7_Ahow444-B__Iu9nkw-XvW2GHGjuy7lUX9wAXOnL50pI0R00A%3D%3D" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=masslive.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>MassLive.com</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 10, 2024</span>
+              <img src="https://www.google.com/s2/favicons?domain=barrons.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Barron&#39;s</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">One bar offered to pay everyone’s tabs if Patriots won. It paid up.</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Dirty Water: Inside the ‘Largest Franchise Fraud in the History of the United States’</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Dirty Water, a Washington D.C. sports bar catering to Boston fans, gained national attention for comping approximately $6,000 in customer tabs following a New England Patriots upset victory. The venue honored its social media pledge to provide free drinks through the end of the game, cementing its reputation as a dedicated hub for the local New England sports community.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Dirty Water, located on H Street in Washington D.C., is the subject of an investigative report detailing allegations of the largest franchise fraud in United States history. The piece examines the complex legal and financial controversies involving the venue&#39;s ownership and management.</p>
            
         </a>
       
@@ -641,6 +642,49 @@ The bar is sort of hidden which is cool. And the bar area is nice with lots of..
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

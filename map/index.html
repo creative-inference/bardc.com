@@ -49,7 +49,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -68,17 +68,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -104,7 +106,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -206,6 +207,16 @@
   document.addEventListener('DOMContentLoaded', function() {
     const venues = [
       
+        
+          {
+            name: "Bar Sirenis",
+            slug: "bar-sirenis",
+            lat: 38.9133631,
+            lng: -76.9884082,
+            address: "1907 Fairview Ave NE, Washington, DC 20002, USA",
+            category: "",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbar-sirenis%2Flogo-1766149280662-254088171_3067048776905061_4149497667275098381_n.png?alt=media&amp;token=4101a450-b18c-4b52-9f55-e199de657ebf"
+          },
         
       
         
@@ -443,7 +454,7 @@
             lat: 38.9168094,
             lng: -77.03556569999999,
             address: "1524 U St NW, Washington, DC 20009, United States",
-            category: "Ethiopian, Cocktail Bars",
+            category: "Ethiopian, Cocktail Bars, Romantic",
             logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fabuare-bar-and-restaurant%2Flogo-1766014231880-385870896_122105357582065079_1431779160270995317_n.jpg?alt=media&amp;token=68b3a462-5901-4c68-b833-88b1b28171b5"
           },
         
@@ -925,7 +936,7 @@
             lat: 38.9078016,
             lng: -77.0315792,
             address: "1315 14th St NW, Washington, DC 20005, United States",
-            category: "Wine Bars, French, Happy Hour Spots",
+            category: "Wine Bars, French, Romantic",
             logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fam-lie-dc-bistro-wine-bar%2Flogo-1766096555784-581859698_122175258302597131_5156590467390985755_n.jpg?alt=media&amp;token=7d02b8e1-3232-4921-b11d-4b691f872178"
           },
         
@@ -999,6 +1010,18 @@
             address: "675 Wharf St SW, Washington, DC 20024, United States",
             category: "Mocktails, Casual",
             logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fjinya-ramen-bar-wharf%2Flogo-1766593351801-449752173_465018902894554_3406118586221696106_n.jpg?alt=media&amp;token=3c715cda-6621-4108-85d0-88355e6ad8cd"
+          },
+        
+      
+        
+          {
+            name: "La Bohème",
+            slug: "ap-ro-la-boh-me",
+            lat: 38.909219,
+            lng: -77.0554907,
+            address: "2622 P St NW Upstairs, Washington, DC 20007, USA",
+            category: "Supper Clubs, Cocktail Bars, Happy Hour Spots",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fap-ro-la-boh-me%2Flogo-1766264227954-387771190_1020730905916037_7382117736113628320_n.jpg?alt=media&amp;token=81553bba-f1dd-4947-befb-8d17eed985d0"
           },
         
       
@@ -1297,7 +1320,7 @@
             lat: 38.917948,
             lng: -77.0237227,
             address: "815 V St NW, Washington, DC 20001, USA",
-            category: "Live Music Venues, Concert Halls, Rock",
+            category: "Live Music Venues, Nightclubs, Historic",
             logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2F9-30-club%2Flogo-1766013174011-327435022_857429208884549_6604525457621227370_n.jpg?alt=media&amp;token=c0e2d533-bf9d-4759-ba00-4523a02fef39"
           },
         
@@ -1660,8 +1683,6 @@
             category: "Sports Bars, Neighborhood Bars, American",
             logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fjohnny-s-all-american%2Flogo-1766593444838-516511418_17986992293821878_6301154695782864201_n.jpg?alt=media&amp;token=f52cec71-cbfa-49aa-bcdb-e1d1b7e65a0a"
           },
-        
-      
         
       
         
@@ -2043,7 +2064,7 @@
             lat: 38.9154148,
             lng: -77.0203866,
             address: "600 T St NW, Washington, DC 20001, USA",
-            category: "Speakeasies, Cocktail Bars, Comedy Clubs",
+            category: "Speakeasies, Cocktail Bars, Jazz Clubs",
             logoUrl: ""
           },
         
@@ -2079,7 +2100,7 @@
             lat: 38.879918,
             lng: -77.00557359999999,
             address: "885 New Jersey Ave SE, Washington, DC 20003, United States",
-            category: "Italian, Brunch Spots, Romantic",
+            category: "Italian, Romantic, Upscale",
             logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fama%2Flogo-1766096444429-434667736_10223054718059701_8400950666035835179_n.jpg?alt=media&amp;token=b356f013-3aea-4304-b5e9-200e7901a9b0"
           },
         
@@ -3029,7 +3050,7 @@
             lat: 38.9136745,
             lng: -77.04606319999999,
             address: "1734 Connecticut Ave NW, Washington, DC 20009, United States",
-            category: "Sports Bars, Irish Pubs, Neighborhood Bars",
+            category: "Irish Pubs, Sports Bars, Neighborhood Bars",
             logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Facross-the-pond%2Flogo-1766095577663-360110221_689585089852254_8218815622290425613_n.png?alt=media&amp;token=998bf944-4214-401b-b7c3-665da2447f97"
           },
         
@@ -3053,7 +3074,7 @@
             lat: 38.8709699,
             lng: -77.00664909999999,
             address: "79 Potomac Ave SE, Washington, DC 20003, United States",
-            category: "Rooftop Bars, Pizza Bars, American",
+            category: "Pizza Bars, Rooftop Bars, Waterfront",
             logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fall-purpose-capitol-riverfront%2Flogo-1766096200240-348224915_625696179480586_3790083144127770218_n.jpg?alt=media&amp;token=4f87e4f6-88cf-4f2e-8458-4c00f5935c4a"
           },
         
@@ -5831,7 +5852,7 @@
             lat: 38.9220379,
             lng: -76.9977208,
             address: "630 Rhode Island Ave NE, Washington, DC 20002, USA",
-            category: "Live Music Venues, American, Event Spaces",
+            category: "Themed, Burger Bars, Kid Friendly",
             logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Falamo-drafthouse-cinema%2Flogo-1766095759692-357366978_650008813830376_4720162402599763041_n.jpg?alt=media&amp;token=45bfb79d-b01c-45c2-9a04-0a3916605733"
           },
         
@@ -6143,7 +6164,7 @@
             lat: 38.9202301,
             lng: -77.0415366,
             address: "2319 18th St NW, Washington, DC 20009, USA",
-            category: "Lesbian Bars, LGBTQ+ Bars, Game Bars",
+            category: "Lesbian Bars, Sports Bars, Dance Clubs",
             logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fa-league-of-her-own%2Flogo-1766013233987-309345581_509234564546172_135073121794137212_n.jpg?alt=media&amp;token=7ff49a2e-1950-4236-a13f-cfaeb03ff2ba"
           },
         
@@ -6155,7 +6176,7 @@
             lat: 38.9167755,
             lng: -77.0284523,
             address: "1208 U St NW, Washington, DC 20009, United States",
-            category: "Lounges, Hip Hop, Nightclub",
+            category: "Lounges, Nightclubs, Hip Hop",
             logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Famsterdam-lounge%2Flogo-1766096783199-300784858_390999339863473_3634020091973687147_n.jpg?alt=media&amp;token=4f502d9c-6bff-4bd4-a2d4-b2c36f6ee100"
           },
         
@@ -6467,7 +6488,7 @@
             lat: 38.87966309999999,
             lng: -77.0252806,
             address: "75 District Square SW 12th floor, Washington, DC 20024, USA",
-            category: "Rooftop Bars, Lounges, Cocktail Bars",
+            category: "Rooftop Bars, Cocktail Bars, Hotel Bars",
             logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2F12-stories%2Flogo-1765906413924-298736497_492959716167081_3326992570673240988_n.jpg?alt=media&amp;token=4b9c67f6-b425-4ec2-91d6-d00bfd537d37"
           },
         
@@ -6970,6 +6991,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

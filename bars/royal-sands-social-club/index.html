@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -355,68 +356,29 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://wjla.com/good-morning-washington/escape-to-the-beach-vibes-at-royal-sands-social-club-oyal-sands-social-club-navy-yard-dc-beach-bar-tropical-cocktails-coastal-dining-best-day-brewing-nonalcoholic-beer-mission-group-nightlife-washington-dc-events" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://fox5dc.com/video/1229992" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=wjla.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WJLA</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 12, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=fox5dc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>FOX 5 DC</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Escape to the Beach Vibes at Royal Sands Social Club</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Summer treats with Royal Sands Social Club</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Royal Sands Social Club is a vibrant, beach-inspired venue in D.C.&#39;s Navy Yard featuring two floors, three bars, and tropical decor like a lifeguard-station DJ booth. The menu offers coastal favorites like sushi and ahi wonton nachos alongside tropical cocktails and premium nonalcoholic craft beers from Best Day Brewing.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Royal Sands Social Club in the Navy Yard district features a variety of summer-inspired eats and drinks. Chef Nima Khazaeli highlights the venue&#39;s seasonal menu, showcasing the coastal-themed food and beverage offerings available at this Washington, D.C. destination.</p>
            
         </a>
       
-        <a href="https://aol.com/love-island-usa-watch-parties-195647927.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://usatoday.com/story/entertainment/tv/2025/07/11/love-island-usa-season-7-watch-parties/84520114007" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=aol.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>AOL.com</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 11, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=usatoday.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>USA Today</span>
+              
            </div>
            <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">&#39;Love Island USA&#39; watch parties have reached &#39;Super Bowl&#39; levels of &#39;excitement&#39;</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Royal Sands Social Club in Washington, D.C., hosted high-energy, sold-out &#39;Love Island USA&#39; watch parties that fans compared to the atmosphere of a major sporting event. The tropical-themed venue was praised for its villa-like aesthetic, providing a unique community-focused setting for viewers to engage with the reality series.</p>
-           
-        </a>
-      
-        <a href="https://washingtonpost.com/dc-md-va/2025/06/26/pitch-a-friend-dating-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=washingtonpost.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Washington Post</span>
-              <span style="margin-left:auto; text-transform:none;">Jun 26, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Dating in D.C. is hard. Her friends hoped ‘pitching’ her would help.</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Royal Sands Social Club serves as a primary venue for &#39;Pitch-A-Friend&#39; events, where participants use slideshow presentations to find romantic matches for their single friends. This Washington D.C. bar offers a high-energy social atmosphere for these unique gatherings designed to help locals navigate the city&#39;s dating scene.</p>
-           
-        </a>
-      
-        <a href="https://hospitalitydesign.com/news/f-b/royal-sands-social-club" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=hospitalitydesign.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Hospitality Design</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 3, 2023</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Royal Sands Social Club Makes a Splash in Washington, DC</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Royal Sands Social Club is a Florida-inspired nightlife destination in Washington, D.C.’s Navy Yard district, featuring 14,000 square feet of beach-themed experiential zones. The venue includes a sunken tiled bar designed to look like a swimming pool, a 30-foot-tall lifeguard stand DJ booth, and a rooftop Cabana Bar with views of Nationals Park.</p>
-           
-        </a>
-      
-        <a href="https://dcist.com/story/23/01/10/first-look-royal-sands-social-club-pool-bar-navy-yard" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=dcist.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>DCist</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 10, 2023</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">First Look: Royal Sands Channels Florida In Navy Yard</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Royal Sands Social Club is a 14,000-square-foot bar and restaurant in D.C.&#39;s Navy Yard that transports guests to Florida with its beach-resort decor and sunken pool-style bars. The venue offers a menu of island-inspired dishes like gator bao buns and frozen cocktails, transitioning into a high-energy club with bottle service and live DJs on weekend nights.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Royal Sands Social Club in Washington, D.C. hosts tropical-themed watch parties for &#39;Love Island USA&#39; that draw large crowds with an atmosphere reminiscent of the show&#39;s villa. The venue’s collaboration with local event groups highlights its role as a community-focused alternative to the city&#39;s traditional nightlife scene.</p>
            
         </a>
       
@@ -697,6 +659,49 @@ Royal Sands is, quite simply, an amazing venue. From the moment you step insid
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -293,68 +294,42 @@ Game days, political networking, team happy hours, late-night karaoke, and comfo
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://washingtonpost.com/local/obituaries/stuart-j-long-saloon-keeper-who-ran-hawk-n-dove-tavern-on-capitol-hill-dies-at-75/2017/08/24/6fe65c84-8749-11e7-a94f-3139abce39f5_story.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://hillrag.com/2017/09/01/stuart-james-long-1942-2017-the-hills-restaurateur" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtonpost.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Washington Post</span>
-              <span style="margin-left:auto; text-transform:none;">Apr 8, 2023</span>
+              <img src="https://www.google.com/s2/favicons?domain=hillrag.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>HillRag</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Stuart J. Long, saloonkeeper who ran Hawk ‘n’ Dove tavern on Capitol Hill, dies at 75</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Stuart James Long (1942-2017): The Hill’s Restaurateur</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Hawk &#39;n&#39; Dove was co-founded on Capitol Hill in 1967 by Stuart J. Long, who chose the name to reflect the intense national debate surrounding the Vietnam War. The tavern has long served as a prominent social and political landmark in Washington D.C.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Hawk &#39;n&#39; Dove was founded in 1967 by Stuart James Long as a sanctuary on Capitol Hill where political rivals could gather over burgers and beer. This historic Washington D.C. tavern became a neighborhood staple and political watering hole, serving as a community hub for over four decades.</p>
            
         </a>
       
-        <a href="https://washingtonpost.com/news/reliable-source/wp/2017/03/13/do-chinese-spies-really-hang-out-at-a-capitol-hill-bar" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://rollcall.com/2020/03/16/hawk-n-dove-shuts-down-operations-amid-backlash" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtonpost.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Washington Post</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 2, 2021</span>
+              <img src="https://www.google.com/s2/favicons?domain=rollcall.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Roll Call</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Do Chinese spies really hang out at a Capitol Hill bar?</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Hawk ’n’ Dove shuts down operations amid backlash</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Hawk &#39;n&#39; Dove is a legendary Capitol Hill bar known for its proximity to power, having been spotlighted for its reputation as a potential gathering spot for political insiders and foreign agents. The venue serves as a classic neighborhood staple where the atmosphere often blends casual dining with the intrigue of Washington&#39;s political scene.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Hawk ’n’ Dove has shut down its operations in Washington D.C. following a period of significant public backlash. The closure marks the end of an era for the historic Capitol Hill establishment, which has long served as a prominent gathering spot for the local political community.</p>
            
         </a>
       
-        <a href="https://blog.resy.com/2021/02/new-on-resy-st-vincent-chicken-whiskey-hawk-n-dove-and-more" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://politico.com/interactives/2025/congress-washington-dc-restaurants-guide" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=blog.resy.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Resy | Right This Way</span>
-              <span style="margin-left:auto; text-transform:none;">Mar 19, 2021</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">New on Resy: St. Vincent, Chicken + Whiskey, Hawk ‘n’ Dove, and More — Resy | Right This Way</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Hawk &#39;n&#39; Dove is a Capitol Hill mainstay recognized for its comforting pub grub and its reputation as a gathering spot for political gossip. Located just blocks from the U.S. Capitol, the venue features signature items like loaded nachos and the rum-based Hawk ‘N’ Stormy cocktail.</p>
-           
-        </a>
-      
-        <a href="https://washingtoncitypaper.com/article/355649/so-fresh-and-so-clean-the-hawk-n-dove-has-gone-upscale" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=politico.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Politico</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtoncitypaper.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washington City Paper</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 1, 2020</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Live and Let Dive: Does Renovating a Beloved Bar Mean Quashing Its Charm?</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">How To Dine Like a Washington Insider</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Hawk &#39;n&#39; Dove is a historic Capitol Hill institution that underwent a major $2 million renovation to transform from a gritty dive bar into a polished, modern tavern. The updated space features patriotic decor, salvaged memorabilia from the original bar, and an American menu filled with playful legislative metaphors.</p>
-           
-        </a>
-      
-        <a href="https://dcist.com/story/11/08/30/hawk-n-dove-to-close-in-october-re" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=dcist.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>DCist</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 28, 2018</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Hawk ‘n’ Dove To Close in October, Reopen Under New Ownership</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Hawk &#39;n&#39; Dove transitioned to new ownership in late 2011, marking the end of a 44-year era under original owner Stuart Long. The Capitol Hill landmark underwent a total renovation that introduced a mezzanine and a 50-foot exhibition bar while maintaining its historic character through preserved memorabilia and restored architectural details.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Hawk &#39;n&#39; Dove is a historic Washington D.C. tavern on Pennsylvania Avenue that remains a favored destination for Republican lawmakers and Hill staffers. Once famous as the dive bar featured in The West Wing, the establishment now offers a renovated atmosphere while continuing its legacy as a prominent site for political networking and campaign-funded dining.</p>
            
         </a>
       
@@ -637,6 +612,49 @@ After a LONG day advocating on the Hill this place was a great place to sit down
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

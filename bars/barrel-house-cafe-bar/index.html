@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -184,10 +185,10 @@
                   
                   <div class="social-icons-inline">
                     
-                      <a href="https://www.instagram.com/barrelhousecafeandbar/" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
+                      <a href="https://www.instagram.com/barrelhousecafeandbar" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
                     
                     
-                      <a href="https://www.facebook.com/profile.php?id=61564138384808" target="_blank" rel="noopener noreferrer" class="social-icon facebook" title="Facebook"></a>
+                      <a href="https://www.facebook.com/p/Barrel-House-Cafe-and-Bar-61564138384808/" target="_blank" rel="noopener noreferrer" class="social-icon facebook" title="Facebook"></a>
                     
                     
                   </div>
@@ -295,68 +296,68 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://wjla.com/news/local/story/washington-dc-weather-snow-ice-mayor-muriel-bowser-bar-customers-local-businesses-slump-roads-streets-sidewalks-safety-barrel-house-logan-circle" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://washington.org/event/put-little-hoot-your-heart-valentines-special" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=wjla.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WJLA</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 2, 2026</span>
+              <img src="https://www.google.com/s2/favicons?domain=washington.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Washington.org</span>
+              
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Put a Little Hoot in your Heart: Valentines Special</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Barrel House Cafe &amp; Bar hosts &quot;Put a Little Hoot in your Heart,&quot; a Valentine’s Day special featuring award-winning drag queen Tara Hoot on February 14, 2026. The performance offers a unique mix of storytelling, songs, and puppetry alongside signature cocktails and tasty bites.</p>
+           
+        </a>
+      
+        <a href="https://washington.org/nl/event/shrewd-awakening-worldwide-premiere" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=washington.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Washington.org</span>
+              
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">De wereldpremière van The Shrewd Awakening</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Barrel House Cafe &amp; Bar hosts the world premiere of &quot;The Shrewd Awakening&quot; from January 29 to 31, 2026. This immersive theater experience blends a live rock concert with a modern retelling of Shakespeare, featuring performances by Joey Arias and The Bedrocks.</p>
+           
+        </a>
+      
+        <a href="https://washington.org/event/shrewd-awakening-worldwide-premiere" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=washington.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Washington.org</span>
+              
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Shrewd Awakening Worldwide Premiere</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Barrel House Cafe &amp; Bar hosts the worldwide premiere of &quot;The Shrewd Awakening,&quot; an immersive bar-theater rock concert reimagining Shakespeare&#39;s The Taming of the Shrew. Running from January 29–31, 2026, the performance features legendary performer Joey Arias and live music by the DC band The Bedrocks.</p>
+           
+        </a>
+      
+        <a href="https://secretdc.com/dc-jfk-jr-lookalike-competition" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=secretdc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Secret DC</span>
+              
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">A ‘JFK Jr.’ Look Alike Contest Is Coming To D.C. This Weekend — The Winner Gets $50 Cash &amp; Bragging Rights</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Barrel House Cafe &amp; Bar is hosting a JFK Jr. look-alike contest this weekend in Washington, D.C. The winner of the competition will receive a $50 cash prize and bragging rights.</p>
+           
+        </a>
+      
+        <a href="https://msn.com/en-us/news/us/foot-traffic-down-at-dc-bar-during-snow-slump-icy-street-entrance-doesnt-help/ar-AA1VsHnY?apiversion=v2&amp;domshim=1&amp;noservercache=1&amp;noservertelemetry=1&amp;batchservertelemetry=1&amp;renderwebcomponents=1&amp;wcseo=1" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=msn.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>MSN</span>
+              
            </div>
            <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Foot traffic down at DC bar during snow slump, icy street entrance doesn&#39;t help</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Barrel House Cafe &amp; Bar in Logan Circle has experienced a significant decline in foot traffic following a major snowstorm that left local sidewalks and entrances covered in ice. The establishment operates as a cafe by day and a neighborhood bar by night, offering late-night happy hours on the weekends.</p>
-           
-        </a>
-      
-        <a href="https://wjla.com/news/local/washington-dc-weather-snow-ice-mayor-muriel-bowser-bar-customers-local-businesses-slump-roads-streets-sidewalks-safety-barrel-house-logan-circle" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=wjla.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WJLA</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 2, 2026</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Foot traffic down at DC bar during snow slump, icy street entrance doesn&#39;t help</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Barrel House Cafe &amp; Bar in Logan Circle is facing a significant slump in foot traffic due to lingering ice and snow from a recent D.C. winter storm. Manager Robert Thorburg highlighted the challenges of maintaining business as dangerous sidewalk conditions deter customers from visiting the neighborhood cafe and bar.</p>
-           
-        </a>
-      
-        <a href="https://dctheaterarts.org/2026/01/26/calendar-play-readings-and-workshops-in-the-dmv-2" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=dctheaterarts.org" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>DC Theater Arts</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 29, 2026</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Calendar: Play Readings, Workshops, and Short-Run Theater Events in the DMV</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Barrel House Cafe &amp; Bar hosts Shrewd Awakening, an immersive bar-theater experience that reimagines Shakespeare’s The Taming of the Shrew as a classic rock concert. Featuring NYC performer Joey Arias and local band The Bedrocks, the production runs through January 31, 2026.</p>
-           
-        </a>
-      
-        <a href="https://washingtoninformer.com/alexandria-restaurant-week-january" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=washingtoninformer.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Washington Informer</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 28, 2026</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Things to Do, DMV: Weekend Rundown, Jan. 29 – Feb. 1</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Barrel House Cafe &amp; Bar is hosting &#39;The Shrewd Awakening,&#39; an immersive bar-theater experience that reimagines Shakespeare’s &#39;The Taming of the Shrew&#39; as a modern rock concert. The production features a live band and fuses concert energy with theatrical storytelling, inviting the audience to participate in the narrative as it unfolds in a working bar setting.</p>
-           
-        </a>
-      
-        <a href="https://popville.com/events/shrewd-awakening-21825" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=popville.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>PoPville</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 19, 2026</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Shrewd Awakening</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Barrel House Cafe &amp; Bar hosts &quot;Shrewd Awakening,&quot; an immersive bar-theater experience that reimagines Shakespeare’s The Taming of the Shrew as a live classic rock concert on January 29, 2026. Guests can participate in the performance and interact with the story and music as the event unfolds inside the working bar.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Barrel House Cafe &amp; Bar experienced a decline in foot traffic during a winter snowstorm in Washington D.C. The venue faced additional challenges as an icy street entrance hindered accessibility for patrons during the seasonal slump.</p>
            
         </a>
       
@@ -632,6 +633,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

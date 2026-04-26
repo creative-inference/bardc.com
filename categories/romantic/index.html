@@ -49,7 +49,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -68,17 +68,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -104,7 +106,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -188,6 +189,31 @@
   
     
   
+    
+      <a href="/bars/abuare-bar-and-restaurant/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fabuare-bar-and-restaurant%2Flogo-1766014231880-385870896_122105357582065079_1431779160270995317_n.jpg?alt=media&amp;token=68b3a462-5901-4c68-b833-88b1b28171b5');"
+         
+      >
+        <div class="card-content">
+            <!-- [NEW] Card Header to group title and logo -->
+    <div class="card-header">
+      
+        <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fabuare-bar-and-restaurant%2Flogo-1766014231880-385870896_122105357582065079_1431779160270995317_n.jpg?alt=media&amp;token=68b3a462-5901-4c68-b833-88b1b28171b5" alt="Abuare Bar and Restaurant logo" class="card-logo">
+      
+      <h3>Abuare Bar and Restaurant</h3>
+    </div>
+    <!-- End Card Header -->
+          <p class="card-category">Ethiopian, Cocktail Bars, Romantic</p>
+          <span class="card-cta">View Details →</span>
+        </div>
+
+        <div class="card-tags-container">
+    
+
+    
+  </div>
+      </a>
     
   
     
@@ -322,6 +348,37 @@
   
     
   
+    
+  
+    
+      <a href="/bars/am-lie-dc-bistro-wine-bar/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fam-lie-dc-bistro-wine-bar%2Flogo-1766096555784-581859698_122175258302597131_5156590467390985755_n.jpg?alt=media&amp;token=7d02b8e1-3232-4921-b11d-4b691f872178');"
+         
+      >
+        <div class="card-content">
+            <!-- [NEW] Card Header to group title and logo -->
+    <div class="card-header">
+      
+        <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fam-lie-dc-bistro-wine-bar%2Flogo-1766096555784-581859698_122175258302597131_5156590467390985755_n.jpg?alt=media&amp;token=7d02b8e1-3232-4921-b11d-4b691f872178" alt="Amélie DC Bistro &amp; Wine Bar logo" class="card-logo">
+      
+      <h3>Amélie DC Bistro & Wine Bar</h3>
+    </div>
+    <!-- End Card Header -->
+          <p class="card-category">Wine Bars, French, Romantic</p>
+          <span class="card-cta">View Details →</span>
+        </div>
+
+        <div class="card-tags-container">
+    
+      <div class="card-happy-hour-tag">
+        🎉 Happy Hour
+      </div>
+    
+
+    
+  </div>
+      </a>
     
   
     
@@ -628,8 +685,6 @@
     
   
     
-  
-    
       <a href="/bars/le-diplomate/" class="venue-card light-bg"
          
          style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fle-diplomate%2Flogo-1766858330106-11380004_1682252528655465_1242948614_a.jpg?alt=media&amp;token=9b5ab61e-7dd5-47a3-ba44-269f5390cb62');"
@@ -787,7 +842,7 @@
       <h3>Ama</h3>
     </div>
     <!-- End Card Header -->
-          <p class="card-category">Italian, Brunch Spots, Romantic</p>
+          <p class="card-category">Italian, Romantic, Upscale</p>
           <span class="card-cta">View Details →</span>
         </div>
 
@@ -1155,6 +1210,10 @@
         <div class="card-tags-container">
     
 
+    
+      <div class="card-events-tag">
+        📅 Events
+      </div>
     
   </div>
       </a>
@@ -1979,6 +2038,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

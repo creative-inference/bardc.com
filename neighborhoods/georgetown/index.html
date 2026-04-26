@@ -49,7 +49,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -68,17 +68,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -104,7 +106,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -214,20 +215,6 @@
       
         
           {
-            name: "1310 Kitchen and Bar",
-            slug: "1310-kitchen-and-bar",
-            lat: 38.9072295,
-            lng: -77.0634553,
-            address: "1310 Wisconsin Ave NW #380, Washington, DC 20007, United States",
-            category: "Brunch Spots, American, Cocktail Bars",
-            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2F1310-kitchen-and-bar%2Flogo-1766012535427-499479001_1225830532302215_5326360171048532175_n.jpg?alt=media&amp;token=bc1afd71-7ee1-4c2f-8d8e-9ec62853338e"
-          },
-        
-      
-        
-      
-        
-          {
             name: "Bar a Vin",
             slug: "bar-a-vin",
             lat: 38.90357729999999,
@@ -252,18 +239,6 @@
       
         
           {
-            name: "Birreria Paradiso",
-            slug: "birreria-paradiso",
-            lat: 38.9049998,
-            lng: -77.0656395,
-            address: "3282 M St NW, Washington, DC 20007, USA",
-            category: "Pizza Bars, Game Bars, Taproom",
-            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbirreria-paradiso%2Flogo-1766151914661-341119694_1671450489980772_2111036865721623884_n.png?alt=media&amp;token=c7fcf675-2349-4876-80d7-71e60220e7d2"
-          },
-        
-      
-        
-          {
             name: "Bistrot Lepic &amp; Wine Bar",
             slug: "bistrot-lepic-wine-bar",
             lat: 38.9145851,
@@ -276,25 +251,13 @@
       
         
           {
-            name: "Blues Alley",
-            slug: "blues-alley",
-            lat: 38.9046983,
-            lng: -77.0625642,
-            address: "1073 Wisconsin Ave NW 1st Floor, Washington, DC 20007, USA",
-            category: "Jazz Clubs, Live Music Venues, Historic",
-            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fblues-alley%2Flogo-1766317643191-21910894_529118927422001_6875795281397415936_n.jpg?alt=media&amp;token=ba717022-a0a6-4656-8cc5-e93cdf73b4eb"
-          },
-        
-      
-        
-          {
-            name: "Bodega Spanish Tapas &amp; Lounge",
-            slug: "bodega-spanish-tapas-lounge",
-            lat: 38.9050725,
-            lng: -77.0617676,
-            address: "3116 M St NW, Washington, DC 20007, United States",
-            category: "Lounges, Spanish",
-            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbodega-spanish-tapas-lounge%2Flogo-1766318218105-26871909_731202630415312_7559991620418928640_n.jpg?alt=media&amp;token=055eb1aa-ce85-4338-9bdc-ad8b2640d9fd"
+            name: "Birreria Paradiso",
+            slug: "birreria-paradiso",
+            lat: 38.9049998,
+            lng: -77.0656395,
+            address: "3282 M St NW, Washington, DC 20007, USA",
+            category: "Pizza Bars, Game Bars, Taproom",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbirreria-paradiso%2Flogo-1766151914661-341119694_1671450489980772_2111036865721623884_n.png?alt=media&amp;token=c7fcf675-2349-4876-80d7-71e60220e7d2"
           },
         
       
@@ -312,13 +275,13 @@
       
         
           {
-            name: "Bulldog Tavern",
-            slug: "bulldog-tavern",
-            lat: 38.906165,
-            lng: -77.0740826,
-            address: "Georgetown University, 205 Prospect Street Healey Family Student Center, Washington, DC 20057, United States",
-            category: "Neighborhood Bars, Taverns, College",
-            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbulldog-tavern%2Flogo-1766320074087-20686779_292620487879044_8743557914251231232_a.jpg?alt=media&amp;token=204f39fc-ed89-4996-b956-83fffbb9822f"
+            name: "Bodega Spanish Tapas &amp; Lounge",
+            slug: "bodega-spanish-tapas-lounge",
+            lat: 38.9050725,
+            lng: -77.0617676,
+            address: "3116 M St NW, Washington, DC 20007, United States",
+            category: "Lounges, Spanish",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbodega-spanish-tapas-lounge%2Flogo-1766318218105-26871909_731202630415312_7559991620418928640_n.jpg?alt=media&amp;token=055eb1aa-ce85-4338-9bdc-ad8b2640d9fd"
           },
         
       
@@ -336,13 +299,13 @@
       
         
           {
-            name: "Cafe Milano",
-            slug: "cafe-milano",
-            lat: 38.9062024,
-            lng: -77.0634561,
-            address: "3251 Prospect St NW, Washington, DC 20007, USA",
-            category: "Italian, Romantic, Upscale",
-            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcafe-milano%2Flogo-1766320819577-400395112_1880703428990686_870316195084604714_n.jpg?alt=media&amp;token=eeccf48e-b1be-4ed5-8f4c-f8f924dea906"
+            name: "Bulldog Tavern",
+            slug: "bulldog-tavern",
+            lat: 38.906165,
+            lng: -77.0740826,
+            address: "Georgetown University, 205 Prospect Street Healey Family Student Center, Washington, DC 20057, United States",
+            category: "Neighborhood Bars, Taverns, College",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbulldog-tavern%2Flogo-1766320074087-20686779_292620487879044_8743557914251231232_a.jpg?alt=media&amp;token=204f39fc-ed89-4996-b956-83fffbb9822f"
           },
         
       
@@ -576,6 +539,18 @@
       
         
           {
+            name: "1310 Kitchen and Bar",
+            slug: "1310-kitchen-and-bar",
+            lat: 38.9072295,
+            lng: -77.0634553,
+            address: "1310 Wisconsin Ave NW #380, Washington, DC 20007, United States",
+            category: "Brunch Spots, American, Cocktail Bars",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2F1310-kitchen-and-bar%2Flogo-1766012535427-499479001_1225830532302215_5326360171048532175_n.jpg?alt=media&amp;token=bc1afd71-7ee1-4c2f-8d8e-9ec62853338e"
+          },
+        
+      
+        
+          {
             name: "The Lobby Lounge",
             slug: "the-lobby-lounge",
             lat: 38.9030164,
@@ -667,6 +642,42 @@
             address: "3056 M St NW, Washington, DC 20007, United States",
             category: "Burger Bars, Gastropubs, Patios",
             logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthunder-burger-bar%2Flogo-1767142656067-26871541_773757996153809_8526754858571661312_n.jpg?alt=media&amp;token=941609d2-6180-47d5-8d1d-7709860bfe76"
+          },
+        
+      
+        
+          {
+            name: "Blues Alley",
+            slug: "blues-alley",
+            lat: 38.9046983,
+            lng: -77.0625642,
+            address: "1073 Wisconsin Ave NW 1st Floor, Washington, DC 20007, USA",
+            category: "Jazz Clubs, Live Music Venues, Historic",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fblues-alley%2Flogo-1766317643191-21910894_529118927422001_6875795281397415936_n.jpg?alt=media&amp;token=ba717022-a0a6-4656-8cc5-e93cdf73b4eb"
+          },
+        
+      
+        
+          {
+            name: "Cafe Milano",
+            slug: "cafe-milano",
+            lat: 38.9062024,
+            lng: -77.0634561,
+            address: "3251 Prospect St NW, Washington, DC 20007, USA",
+            category: "Italian, Romantic, Upscale",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcafe-milano%2Flogo-1766320819577-400395112_1880703428990686_870316195084604714_n.jpg?alt=media&amp;token=eeccf48e-b1be-4ed5-8f4c-f8f924dea906"
+          },
+        
+      
+        
+          {
+            name: "La Bohème",
+            slug: "ap-ro-la-boh-me",
+            lat: 38.909219,
+            lng: -77.0554907,
+            address: "2622 P St NW Upstairs, Washington, DC 20007, USA",
+            category: "Supper Clubs, Cocktail Bars, Happy Hour Spots",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fap-ro-la-boh-me%2Flogo-1766264227954-387771190_1020730905916037_7382117736113628320_n.jpg?alt=media&amp;token=81553bba-f1dd-4947-befb-8d17eed985d0"
           },
         
       
@@ -829,62 +840,6 @@
 
 <div class="venue-grid">
   
-      <a href="/bars/1310-kitchen-and-bar/" class="venue-card light-bg"
-         
-         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2F1310-kitchen-and-bar%2Flogo-1766012535427-499479001_1225830532302215_5326360171048532175_n.jpg?alt=media&amp;token=bc1afd71-7ee1-4c2f-8d8e-9ec62853338e');"
-         
-      >
-        <div class="card-content">
-            <!-- Card Header to group title and logo -->
-            <div class="card-header">
-              
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2F1310-kitchen-and-bar%2Flogo-1766012535427-499479001_1225830532302215_5326360171048532175_n.jpg?alt=media&amp;token=bc1afd71-7ee1-4c2f-8d8e-9ec62853338e" alt="1310 Kitchen and Bar logo" class="card-logo">
-              
-              <h3>1310 Kitchen and Bar</h3>
-            </div>
-            <!-- End Card Header -->
-          
-          <p class="card-category">Brunch Spots, American, Cocktail Bars</p>
-          <span class="card-cta">View Details &rarr;</span>
-        </div>
-
-        <div class="card-tags-container">
-          
-
-          
-        </div>
-      </a>
-  
-      <a href="/bars/ap-ro-la-boh-me/" class="venue-card light-bg"
-         
-         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fap-ro-la-boh-me%2Flogo-1766264227954-387771190_1020730905916037_7382117736113628320_n.jpg?alt=media&amp;token=81553bba-f1dd-4947-befb-8d17eed985d0');"
-         
-      >
-        <div class="card-content">
-            <!-- Card Header to group title and logo -->
-            <div class="card-header">
-              
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fap-ro-la-boh-me%2Flogo-1766264227954-387771190_1020730905916037_7382117736113628320_n.jpg?alt=media&amp;token=81553bba-f1dd-4947-befb-8d17eed985d0" alt="La Bohème logo" class="card-logo">
-              
-              <h3>La Bohème</h3>
-            </div>
-            <!-- End Card Header -->
-          
-          <p class="card-category">Supper Clubs, Cocktail Bars, Happy Hour Spots</p>
-          <span class="card-cta">View Details &rarr;</span>
-        </div>
-
-        <div class="card-tags-container">
-          
-            <div class="card-happy-hour-tag">
-              🎉 Happy Hour
-            </div>
-          
-
-          
-        </div>
-      </a>
-  
       <a href="/bars/bar-a-vin/" class="venue-card light-bg"
          
          style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbar-a-vin%2Flogo-1766148392614-301750213_193062096445295_2938535218596212167_n.jpg?alt=media&amp;token=0eeb862e-6c87-4c89-b26c-e820cffbcdcc');"
@@ -941,32 +896,6 @@
         </div>
       </a>
   
-      <a href="/bars/birreria-paradiso/" class="venue-card light-bg"
-         
-         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbirreria-paradiso%2Flogo-1766151914661-341119694_1671450489980772_2111036865721623884_n.png?alt=media&amp;token=c7fcf675-2349-4876-80d7-71e60220e7d2');"
-         
-      >
-        <div class="card-content">
-            <!-- Card Header to group title and logo -->
-            <div class="card-header">
-              
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbirreria-paradiso%2Flogo-1766151914661-341119694_1671450489980772_2111036865721623884_n.png?alt=media&amp;token=c7fcf675-2349-4876-80d7-71e60220e7d2" alt="Birreria Paradiso logo" class="card-logo">
-              
-              <h3>Birreria Paradiso</h3>
-            </div>
-            <!-- End Card Header -->
-          
-          <p class="card-category">Pizza Bars, Game Bars, Taproom</p>
-          <span class="card-cta">View Details &rarr;</span>
-        </div>
-
-        <div class="card-tags-container">
-          
-
-          
-        </div>
-      </a>
-  
       <a href="/bars/bistrot-lepic-wine-bar/" class="venue-card light-bg"
          
          style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbistrot-lepic-wine-bar%2Flogo-1766236407824-305842516_497220879077595_5751915471981672545_n.jpg?alt=media&amp;token=9627c0ea-3f41-4971-9320-44124605c2a6');"
@@ -997,22 +926,48 @@
         </div>
       </a>
   
-      <a href="/bars/blues-alley/" class="venue-card light-bg"
+      <a href="/bars/birreria-paradiso/" class="venue-card light-bg"
          
-         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fblues-alley%2Flogo-1766317643191-21910894_529118927422001_6875795281397415936_n.jpg?alt=media&amp;token=ba717022-a0a6-4656-8cc5-e93cdf73b4eb');"
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbirreria-paradiso%2Flogo-1766151914661-341119694_1671450489980772_2111036865721623884_n.png?alt=media&amp;token=c7fcf675-2349-4876-80d7-71e60220e7d2');"
          
       >
         <div class="card-content">
             <!-- Card Header to group title and logo -->
             <div class="card-header">
               
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fblues-alley%2Flogo-1766317643191-21910894_529118927422001_6875795281397415936_n.jpg?alt=media&amp;token=ba717022-a0a6-4656-8cc5-e93cdf73b4eb" alt="Blues Alley logo" class="card-logo">
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbirreria-paradiso%2Flogo-1766151914661-341119694_1671450489980772_2111036865721623884_n.png?alt=media&amp;token=c7fcf675-2349-4876-80d7-71e60220e7d2" alt="Birreria Paradiso logo" class="card-logo">
               
-              <h3>Blues Alley</h3>
+              <h3>Birreria Paradiso</h3>
             </div>
             <!-- End Card Header -->
           
-          <p class="card-category">Jazz Clubs, Live Music Venues, Historic</p>
+          <p class="card-category">Pizza Bars, Game Bars, Taproom</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/bourbon-steak/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbourbon-steak%2Flogo-1766318864865-482059600_2017583565334928_8831116379472138369_n.jpg?alt=media&amp;token=1deb0498-d022-4b5f-a6d3-3be5061942ab');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbourbon-steak%2Flogo-1766318864865-482059600_2017583565334928_8831116379472138369_n.jpg?alt=media&amp;token=1deb0498-d022-4b5f-a6d3-3be5061942ab" alt="Bourbon Steak logo" class="card-logo">
+              
+              <h3>Bourbon Steak</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Steakhouse Bars, Luxury, Hotel Bars</p>
           <span class="card-cta">View Details &rarr;</span>
         </div>
 
@@ -1053,58 +1008,6 @@
         </div>
       </a>
   
-      <a href="/bars/bourbon-steak/" class="venue-card light-bg"
-         
-         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbourbon-steak%2Flogo-1766318864865-482059600_2017583565334928_8831116379472138369_n.jpg?alt=media&amp;token=1deb0498-d022-4b5f-a6d3-3be5061942ab');"
-         
-      >
-        <div class="card-content">
-            <!-- Card Header to group title and logo -->
-            <div class="card-header">
-              
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbourbon-steak%2Flogo-1766318864865-482059600_2017583565334928_8831116379472138369_n.jpg?alt=media&amp;token=1deb0498-d022-4b5f-a6d3-3be5061942ab" alt="Bourbon Steak logo" class="card-logo">
-              
-              <h3>Bourbon Steak</h3>
-            </div>
-            <!-- End Card Header -->
-          
-          <p class="card-category">Steakhouse Bars, Luxury, Hotel Bars</p>
-          <span class="card-cta">View Details &rarr;</span>
-        </div>
-
-        <div class="card-tags-container">
-          
-
-          
-        </div>
-      </a>
-  
-      <a href="/bars/bulldog-tavern/" class="venue-card light-bg"
-         
-         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbulldog-tavern%2Flogo-1766320074087-20686779_292620487879044_8743557914251231232_a.jpg?alt=media&amp;token=204f39fc-ed89-4996-b956-83fffbb9822f');"
-         
-      >
-        <div class="card-content">
-            <!-- Card Header to group title and logo -->
-            <div class="card-header">
-              
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbulldog-tavern%2Flogo-1766320074087-20686779_292620487879044_8743557914251231232_a.jpg?alt=media&amp;token=204f39fc-ed89-4996-b956-83fffbb9822f" alt="Bulldog Tavern logo" class="card-logo">
-              
-              <h3>Bulldog Tavern</h3>
-            </div>
-            <!-- End Card Header -->
-          
-          <p class="card-category">Neighborhood Bars, Taverns, College</p>
-          <span class="card-cta">View Details &rarr;</span>
-        </div>
-
-        <div class="card-tags-container">
-          
-
-          
-        </div>
-      </a>
-  
       <a href="/bars/caf-georgetown/" class="venue-card light-bg"
          
          style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcaf-georgetown%2Flogo-1766320790124-331292865_525226949601115_3954300643362145886_n.jpg?alt=media&amp;token=afa28471-5bcf-4861-b337-66d27d9907c7');"
@@ -1131,22 +1034,22 @@
         </div>
       </a>
   
-      <a href="/bars/cafe-milano/" class="venue-card light-bg"
+      <a href="/bars/bulldog-tavern/" class="venue-card light-bg"
          
-         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcafe-milano%2Flogo-1766320819577-400395112_1880703428990686_870316195084604714_n.jpg?alt=media&amp;token=eeccf48e-b1be-4ed5-8f4c-f8f924dea906');"
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbulldog-tavern%2Flogo-1766320074087-20686779_292620487879044_8743557914251231232_a.jpg?alt=media&amp;token=204f39fc-ed89-4996-b956-83fffbb9822f');"
          
       >
         <div class="card-content">
             <!-- Card Header to group title and logo -->
             <div class="card-header">
               
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcafe-milano%2Flogo-1766320819577-400395112_1880703428990686_870316195084604714_n.jpg?alt=media&amp;token=eeccf48e-b1be-4ed5-8f4c-f8f924dea906" alt="Cafe Milano logo" class="card-logo">
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbulldog-tavern%2Flogo-1766320074087-20686779_292620487879044_8743557914251231232_a.jpg?alt=media&amp;token=204f39fc-ed89-4996-b956-83fffbb9822f" alt="Bulldog Tavern logo" class="card-logo">
               
-              <h3>Cafe Milano</h3>
+              <h3>Bulldog Tavern</h3>
             </div>
             <!-- End Card Header -->
           
-          <p class="card-category">Italian, Romantic, Upscale</p>
+          <p class="card-category">Neighborhood Bars, Taverns, College</p>
           <span class="card-cta">View Details &rarr;</span>
         </div>
 
@@ -1679,6 +1582,32 @@
         </div>
       </a>
   
+      <a href="/bars/1310-kitchen-and-bar/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2F1310-kitchen-and-bar%2Flogo-1766012535427-499479001_1225830532302215_5326360171048532175_n.jpg?alt=media&amp;token=bc1afd71-7ee1-4c2f-8d8e-9ec62853338e');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2F1310-kitchen-and-bar%2Flogo-1766012535427-499479001_1225830532302215_5326360171048532175_n.jpg?alt=media&amp;token=bc1afd71-7ee1-4c2f-8d8e-9ec62853338e" alt="1310 Kitchen and Bar logo" class="card-logo">
+              
+              <h3>1310 Kitchen and Bar</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Brunch Spots, American, Cocktail Bars</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
       <a href="/bars/the-lobby-lounge/" class="venue-card "
          
       >
@@ -1891,6 +1820,92 @@
         </div>
       </a>
   
+      <a href="/bars/blues-alley/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fblues-alley%2Flogo-1766317643191-21910894_529118927422001_6875795281397415936_n.jpg?alt=media&amp;token=ba717022-a0a6-4656-8cc5-e93cdf73b4eb');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fblues-alley%2Flogo-1766317643191-21910894_529118927422001_6875795281397415936_n.jpg?alt=media&amp;token=ba717022-a0a6-4656-8cc5-e93cdf73b4eb" alt="Blues Alley logo" class="card-logo">
+              
+              <h3>Blues Alley</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Jazz Clubs, Live Music Venues, Historic</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/cafe-milano/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcafe-milano%2Flogo-1766320819577-400395112_1880703428990686_870316195084604714_n.jpg?alt=media&amp;token=eeccf48e-b1be-4ed5-8f4c-f8f924dea906');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcafe-milano%2Flogo-1766320819577-400395112_1880703428990686_870316195084604714_n.jpg?alt=media&amp;token=eeccf48e-b1be-4ed5-8f4c-f8f924dea906" alt="Cafe Milano logo" class="card-logo">
+              
+              <h3>Cafe Milano</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Italian, Romantic, Upscale</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+            <div class="card-events-tag">
+              📅 Events
+            </div>
+          
+        </div>
+      </a>
+  
+      <a href="/bars/ap-ro-la-boh-me/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fap-ro-la-boh-me%2Flogo-1766264227954-387771190_1020730905916037_7382117736113628320_n.jpg?alt=media&amp;token=81553bba-f1dd-4947-befb-8d17eed985d0');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fap-ro-la-boh-me%2Flogo-1766264227954-387771190_1020730905916037_7382117736113628320_n.jpg?alt=media&amp;token=81553bba-f1dd-4947-befb-8d17eed985d0" alt="La Bohème logo" class="card-logo">
+              
+              <h3>La Bohème</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Supper Clubs, Cocktail Bars, Happy Hour Spots</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+            <div class="card-happy-hour-tag">
+              🎉 Happy Hour
+            </div>
+          
+
+          
+        </div>
+      </a>
+  
 </div>
 
 <div style="margin-top: 3rem; text-align: center;">
@@ -1949,6 +1964,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

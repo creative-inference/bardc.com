@@ -49,7 +49,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -68,17 +68,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -104,7 +106,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -219,7 +220,7 @@
             lat: 38.8709699,
             lng: -77.00664909999999,
             address: "79 Potomac Ave SE, Washington, DC 20003, United States",
-            category: "Rooftop Bars, Pizza Bars, American",
+            category: "Pizza Bars, Rooftop Bars, Waterfront",
             logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fall-purpose-capitol-riverfront%2Flogo-1766096200240-348224915_625696179480586_3790083144127770218_n.jpg?alt=media&amp;token=4f87e4f6-88cf-4f2e-8458-4c00f5935c4a"
           },
         
@@ -231,7 +232,7 @@
             lat: 38.879918,
             lng: -77.00557359999999,
             address: "885 New Jersey Ave SE, Washington, DC 20003, United States",
-            category: "Italian, Brunch Spots, Romantic",
+            category: "Italian, Romantic, Upscale",
             logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fama%2Flogo-1766096444429-434667736_10223054718059701_8400950666035835179_n.jpg?alt=media&amp;token=b356f013-3aea-4304-b5e9-200e7901a9b0"
           },
         
@@ -245,18 +246,6 @@
             address: "1201 Half St SE suite 120, Washington, DC 20003, United States",
             category: "Breweries, Sports Bars, Taproom",
             logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fatlas-brew-works-navy-yard-brewery-tap-room%2Flogo-1766104454263-327316587_697486185410937_5680750644901333815_n.jpg?alt=media&amp;token=c618bb28-cbf5-476b-91c8-11eca3685e57"
-          },
-        
-      
-        
-          {
-            name: "Bammy&#39;s Modern Caribbean",
-            slug: "bammy-s-modern-caribbean",
-            lat: 38.8733356,
-            lng: -77.0015413,
-            address: "301 Water St SE Suite 115, Washington, DC 20003, United States",
-            category: "Rum Bars, Happy Hour Spots",
-            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbammy-s-modern-caribbean%2Flogo-1766104871618-462537717_1142763963983153_354272853490610291_n.jpg?alt=media&amp;token=530f839c-8ab2-4d3f-8941-10f390a53f70"
           },
         
       
@@ -704,6 +693,18 @@
           },
         
       
+        
+          {
+            name: "Bammy&#39;s Modern Caribbean",
+            slug: "bammy-s-modern-caribbean",
+            lat: 38.8733356,
+            lng: -77.0015413,
+            address: "301 Water St SE Suite 115, Washington, DC 20003, United States",
+            category: "Rum Bars, Happy Hour Spots",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbammy-s-modern-caribbean%2Flogo-1766104871618-462537717_1142763963983153_354272853490610291_n.jpg?alt=media&amp;token=530f839c-8ab2-4d3f-8941-10f390a53f70"
+          },
+        
+      
     ];
 
     if (venues.length === 0) {
@@ -878,7 +879,7 @@
             </div>
             <!-- End Card Header -->
           
-          <p class="card-category">Rooftop Bars, Pizza Bars, American</p>
+          <p class="card-category">Pizza Bars, Rooftop Bars, Waterfront</p>
           <span class="card-cta">View Details &rarr;</span>
         </div>
 
@@ -908,7 +909,7 @@
             </div>
             <!-- End Card Header -->
           
-          <p class="card-category">Italian, Brunch Spots, Romantic</p>
+          <p class="card-category">Italian, Romantic, Upscale</p>
           <span class="card-cta">View Details &rarr;</span>
         </div>
 
@@ -935,32 +936,6 @@
             <!-- End Card Header -->
           
           <p class="card-category">Breweries, Sports Bars, Taproom</p>
-          <span class="card-cta">View Details &rarr;</span>
-        </div>
-
-        <div class="card-tags-container">
-          
-
-          
-        </div>
-      </a>
-  
-      <a href="/bars/bammy-s-modern-caribbean/" class="venue-card light-bg"
-         
-         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbammy-s-modern-caribbean%2Flogo-1766104871618-462537717_1142763963983153_354272853490610291_n.jpg?alt=media&amp;token=530f839c-8ab2-4d3f-8941-10f390a53f70');"
-         
-      >
-        <div class="card-content">
-            <!-- Card Header to group title and logo -->
-            <div class="card-header">
-              
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbammy-s-modern-caribbean%2Flogo-1766104871618-462537717_1142763963983153_354272853490610291_n.jpg?alt=media&amp;token=530f839c-8ab2-4d3f-8941-10f390a53f70" alt="Bammy&#39;s Modern Caribbean logo" class="card-logo">
-              
-              <h3>Bammy's Modern Caribbean</h3>
-            </div>
-            <!-- End Card Header -->
-          
-          <p class="card-category">Rum Bars, Happy Hour Spots</p>
           <span class="card-cta">View Details &rarr;</span>
         </div>
 
@@ -2001,6 +1976,32 @@
         </div>
       </a>
   
+      <a href="/bars/bammy-s-modern-caribbean/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbammy-s-modern-caribbean%2Flogo-1766104871618-462537717_1142763963983153_354272853490610291_n.jpg?alt=media&amp;token=530f839c-8ab2-4d3f-8941-10f390a53f70');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbammy-s-modern-caribbean%2Flogo-1766104871618-462537717_1142763963983153_354272853490610291_n.jpg?alt=media&amp;token=530f839c-8ab2-4d3f-8941-10f390a53f70" alt="Bammy&#39;s Modern Caribbean logo" class="card-logo">
+              
+              <h3>Bammy's Modern Caribbean</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Rum Bars, Happy Hour Spots</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
 </div>
 
 <div style="margin-top: 3rem; text-align: center;">
@@ -2059,6 +2060,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

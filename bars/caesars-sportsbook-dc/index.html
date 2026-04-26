@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -285,68 +286,42 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://legalsportsreport.com/betting-sites/caesars-sportsbook-promo-code" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://next.io/news/regulation/major-us-sportsbooks-hit-with-lawsuit-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=legalsportsreport.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>LegalSportsReport</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 12, 2026</span>
+              <img src="https://www.google.com/s2/favicons?domain=next.io" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>NEXT.io</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Caesars Sportsbook Promo Code &quot;LSR250BM&quot;: First Bet Match up to $250 in Bonus Bets</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Major US sportsbooks hit with lawsuit in Washington DC</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Caesars Sportsbook DC offers new users a first bet match of up to $250 in bonus bets when using the promo code LSR250BM. The platform features a variety of betting markets for professional and collegiate sports, live in-app streaming, and integration with the Caesars Rewards loyalty program.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Caesars Sportsbook DC is among several prominent betting operators named in a lawsuit filed in Washington, D.C. The legal action addresses industry-wide practices and the competitive landscape for sports wagering within the District.</p>
            
         </a>
       
-        <a href="https://deadspin.com/caesars-sportsbook-washington-dc-promo-code" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://actionnetwork.com/online-sports-betting/district-of-columbia" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=deadspin.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Deadspin</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 6, 2026</span>
+              <img src="https://www.google.com/s2/favicons?domain=actionnetwork.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Action Network</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Caesars Sportsbook Washington DC Promo Code – Claim it in January 2026</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">District of Columbia Sports Betting 2025 | D.C. Legal Sportsbook Apps</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Caesars Sportsbook DC is offering a new customer promotion for January 2026 that provides users with 20 Profit Boost tokens to double their winnings up to $2,500 per boost. To claim the offer, bettors must sign up and place an initial wager of at least $1 to receive the tokens for use on major sports teams like the Commanders, Capitals, and Wizards.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Caesars Sportsbook DC offers comprehensive sports wagering services through its mobile app and a flagship retail location at Capital One Arena. As a primary operator in the District, it provides local fans with a wide array of betting markets on professional and collegiate sports.</p>
            
         </a>
       
-        <a href="https://gamingamerica.com/news/13606/caesars-introduces-universal-digital-wallet-for-mobile-betting-platform" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://drf.com/sports-betting/caesars" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=gamingamerica.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Gaming America</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 6, 2026</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Caesars introduces universal digital wallet for mobile betting platform</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Caesars Sportsbook DC has introduced a universal digital wallet that allows bettors to manage funds and Caesars rewards through a single account across multiple jurisdictions. This enhancement provides a seamless experience for users, enabling them to access their balance and rewards using one set of login credentials when traveling between Washington D.C. and other legal markets.</p>
-           
-        </a>
-      
-        <a href="https://goal.com/en-us/betting/caesars-sportsbook-review/bltad5bcfacc534ea5e" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=drf.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Daily Racing Form</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=goal.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Goal.com</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 2, 2026</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Caesars Sportsbook Review January 2026: Expert&#39;s US Sportsbooks Guide</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Caesars Sportsbook Review</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Caesars Sportsbook DC provides a mobile betting platform featuring live streaming, same-game parlays, and an integrated rewards program for users in the District. The service includes competitive odds for major leagues like the NFL and NBA, and offers new players a sign-up bonus of up to $250 in matched bets using the promo code GOALMAX250BM.</p>
-           
-        </a>
-      
-        <a href="https://sportsbettingdime.com/us/dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=sportsbettingdime.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Sports Betting Dime</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 1, 2026</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">DC Sports Betting Apps: Best Online Sportsbooks &amp; Promos 2026</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Caesars Sportsbook DC operates a prominent retail location at Capital One Arena and offers a comprehensive mobile app for sports bettors throughout the District. The platform features a wide variety of wagering options and a robust rewards program integrated with the global Caesars casino and hotel network.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Caesars Sportsbook DC operates a retail betting location at Capital One Arena and offers a mobile app featuring live in-game wagering and daily odds boosts. Users can participate in the Caesars Rewards program to earn credits for dining, hotel stays, and event tickets based on their betting activity.</p>
            
         </a>
       
@@ -622,6 +597,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

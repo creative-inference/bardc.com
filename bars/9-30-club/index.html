@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -157,9 +158,9 @@
                   
                     <a href="/categories/live-music-venues/">Live Music Venues</a>, 
                   
-                    <a href="/categories/concert-halls/">Concert Halls</a>, 
+                    <a href="/categories/nightclubs/">Nightclubs</a>, 
                   
-                    <a href="/categories/rock/">Rock</a>
+                    <a href="/categories/historic/">Historic</a>
                   
                 </p>
                 
@@ -281,6 +282,67 @@
   <!-- [NEW] Events Section -->
   <!-- [NEW] Events Section -->
 
+  <div class="events-section">
+    <h3>📅 Upcoming Events & Specials</h3>
+    
+      
+      <div class="event-item">
+        
+        <div class="event-header" style="display:flex; justify-content:space-between; align-items:baseline;">
+           <h4>🎙️ Robby Hoffman</h4>
+           <span class="event-date" style="font-size:0.9rem; color:#666; font-weight:bold;">Saturday, April 25th</span>
+        </div>
+        <p>Early show at 6 PM; Late show at 9:15 PM. (Both Sold Out)</p>
+      </div>
+      
+    
+      
+      <div class="event-item">
+        
+        <div class="event-header" style="display:flex; justify-content:space-between; align-items:baseline;">
+           <h4>🎹 Oklou US Tour 2026</h4>
+           <span class="event-date" style="font-size:0.9rem; color:#666; font-weight:bold;">Monday, April 27th</span>
+        </div>
+        <p>Doors open at 7 PM. (Sold Out)</p>
+      </div>
+      
+    
+      
+      <div class="event-item">
+        
+        <div class="event-header" style="display:flex; justify-content:space-between; align-items:baseline;">
+           <h4>🎸 The Afghan Whigs 40th Anniversary Tour</h4>
+           <span class="event-date" style="font-size:0.9rem; color:#666; font-weight:bold;">Tuesday, April 28th</span>
+        </div>
+        <p>With Mercury Rev. Doors open at 6:30 PM.</p>
+      </div>
+      
+    
+      
+      <div class="event-item">
+        
+        <div class="event-header" style="display:flex; justify-content:space-between; align-items:baseline;">
+           <h4>🎸 NewDad</h4>
+           <span class="event-date" style="font-size:0.9rem; color:#666; font-weight:bold;">Wednesday, April 29th</span>
+        </div>
+        <p>With Freak Slug. Doors open at 7 PM.</p>
+      </div>
+      
+    
+      
+      <div class="event-item">
+        
+        <div class="event-header" style="display:flex; justify-content:space-between; align-items:baseline;">
+           <h4>🎧 ŁASZEWO</h4>
+           <span class="event-date" style="font-size:0.9rem; color:#666; font-weight:bold;">Friday, May 1st</span>
+        </div>
+        <p>Doors open at 8 PM. (Sold Out)</p>
+      </div>
+      
+    
+
+  </div>
+
 <!-- End Events Section -->
 
 <!-- [NEW] Recurring Events Section -->
@@ -297,68 +359,68 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://parklifedc.com/page/716" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://rappnews.com/local-events/?_evDiscoveryPath=%2Fevent%2F39474800t-9-30-club-coffee-table-book-a-time-and-a-place-2nd-edition-expanded" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=parklifedc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Parklife DC</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 16, 2026</span>
+              <img src="https://www.google.com/s2/favicons?domain=rappnews.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Rappahannock News</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Parklife DC</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">9:30 Club Coffee Table Book: A TIME AND A PLACE - 2nd edition EXPANDED</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">9:30 Club hosted indie pop quartet Smallpools for a high-energy Halloween concert featuring themed props and audience interaction. The performance included the band tossing inflatable killer whales into the crowd, one of which was equipped with a saddle for fans to ride across the room.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">9:30 Club is the subject of an expanded second edition of the coffee table book &#39;A TIME AND A PLACE,&#39; which chronicles the venue&#39;s history in Washington, D.C. The publication offers a comprehensive visual and narrative record of the legendary music venue&#39;s legacy.</p>
            
         </a>
       
-        <a href="https://hollywoodreporter.com/business/business-news/production-workers-at-big-dc-concert-venues-vote-unionize-1236488606" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://insidenova.com/calendar?_evDiscoveryPath=%2Fevent%2F107395777n-tropidelic-9-30-club" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=hollywoodreporter.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Hollywood Reporter</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 29, 2026</span>
+              <img src="https://www.google.com/s2/favicons?domain=insidenova.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>InsideNoVa.com</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Production Workers at Big D.C. Concert Venues Vote to Unionize (Exclusive)</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Tropidelic @ 9:30 Club</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">9:30 Club production workers, including stagehands and engineers, have voted to unionize and will be represented by IATSE Local 22 following a National Labor Relations Board election. This labor milestone also includes box office staff joining IATSE Local 868 to gain a voice at the bargaining table for the iconic Washington, D.C. venue.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">9:30 Club hosts the band Tropidelic for a live concert performance at its Washington, D.C. venue. The event is part of the club&#39;s ongoing schedule of diverse musical acts and live entertainment in the D.C. metropolitan area.</p>
            
         </a>
       
-        <a href="https://parklifedc.com/2026/01/29/ticket-giveaway-margo-price-930-club-2-17-26" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://washington.org/event/no-scrubs-90s-dance-party-early-edition" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=parklifedc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Parklife DC</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 29, 2026</span>
+              <img src="https://www.google.com/s2/favicons?domain=washington.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>visit Washington DC</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Ticket Giveaway: Margo Price @ 9:30 Club, 2/17/26</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">No Scrubs: 90s Dance Party Early Edition</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">9:30 Club hosts country artist Margo Price on Tuesday, February 17, 2026, in support of her latest album, Hard Headed Woman. The performance features opening act Sean Thompson’s Weird Ears and includes a ticket giveaway through Parklife DC.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">9:30 Club will host the &#39;No Scrubs: 90s Dance Party Early Edition&#39; on January 24, 2026, presented by U Street Music Hall. The event starts at 6 p.m. and features a nostalgic night of 1990s music with specific ticketing and non-transferability policies.</p>
            
         </a>
       
-        <a href="https://thehoya.com/guide/del-water-gap-mesmerizes-at-the-930-club" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://undertheradarmag.com/reviews/wolf_alice_the_930_club_in_washington_dc_us_september_15_2025" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=thehoya.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Hoya</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 28, 2026</span>
+              <img src="https://www.google.com/s2/favicons?domain=undertheradarmag.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Under the Radar Magazine</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Del Water Gap Mesmerizes at the 9:30 Club</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Wolf Alice @ the 9:30 Club, Washington, D.C., US, September 15, 2025,</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">9:30 Club hosted indie rock artist Del Water Gap for a sold-out performance during his &#39;Chasing the Chimera&#39; tour in January 2026. The concert featured a dynamic stage setup with a vaulted white tent and shifting light displays, highlighting the venue&#39;s intimate atmosphere and acoustics.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">9:30 Club hosted British rock band Wolf Alice for two sold-out performances in September 2025, where the group showcased material from their fourth album, *The Clearing*. The venue is highlighted for its legendary reputation in Washington, D.C. and its intimate atmosphere that accommodates both high-energy performances and stripped-down acoustic sets.</p>
            
         </a>
       
-        <a href="https://parklifedc.com/2026/01/01/live-review-the-pietasters-w-the-loving-paupers-the-players-band-the-upstarters-and-dj-selah-930-club-12-27-25" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://theeagleonline.com/article/2023/02/roundup-the-best-concert-venues-in-d-c" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=parklifedc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Parklife DC</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 1, 2026</span>
+              <img src="https://www.google.com/s2/favicons?domain=theeagleonline.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The Eagle Online</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Live Review: The Pietasters w/ The Loving Paupers, The Players Band, The Upstarters, and DJ Selah @ 9:30 Club -- 12/27/25 | Parklife DC</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Roundup: The best concert venues in D.C.</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">9:30 Club hosted a high-energy ska showcase featuring The Pietasters and several local openers for their annual holiday concert on December 27, 2025. The review highlights the venue&#39;s vibrant atmosphere, the engaging stage presence of the bands, and the quality of the club&#39;s food offerings.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">9:30 Club is recognized as one of the premier live music venues in Washington, D.C., hosting a diverse array of indie rock artists and popular themed dance parties. Ranked by Rolling Stone as one of the best live music venues in America, it maintains a legendary reputation for its history of hosting iconic acts like Nirvana and the Red Hot Chili Peppers.</p>
            
         </a>
       
@@ -383,7 +445,7 @@
           <div class="rating-header">
             <span class="rating-stars" style="--rating: 4.6;">★★★★★</span>
             <span class="rating-value">4.6</span>
-            <span class="rating-count">(4713 reviews)</span>
+            <span class="rating-count">(4821 reviews)</span>
             <span class="btn-read-reviews" style="margin-left: auto; margin-top: 0;">View on Google</span>
           </div>
         </a>
@@ -396,7 +458,7 @@
       
       <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJxeko4uS3t4kRuCl8NRL9YTE" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
           <div class="review-header">
-            <img src="https://lh3.googleusercontent.com/a-/ALV-UjWD45iwbkIjRfm8Ed9xKOlgJbHtaUQq48abb2c1TblhrRKlpxc=s128-c0x00000000-cc-rp-mo-ba5" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjWf_yn44IWwrS1Az8kDDpn5l1g6W8eD9UDhPkX2KrVzoox8mVwX=s128-c0x00000000-cc-rp-mo-ba4" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
             <div class="review-meta">
               <!-- Author name removed for privacy -->
               <span class="review-time">a month ago</span>
@@ -407,16 +469,16 @@
             ★★★★★
           </div>
           <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
-            Have only been here once for one show. Staff was quick, friendly, and professional. The venue wasn&#39;t too crowded and was relatively functional. For small events, it&#39;s easy to see and get close to the...
+            Whew the best Saturday night ever spent watching unhinged horny people find love on a stage 🤣 #Updating. I watch the recap shows on YouTube but seeing it live is hysterical. The venue was very breezy...
           </p>
       </a>
       
       <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJxeko4uS3t4kRuCl8NRL9YTE" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
           <div class="review-header">
-            <img src="https://lh3.googleusercontent.com/a-/ALV-UjVS7u0J7T-j5yY37yzu225uzLWAmiQ16T6D7PgWYLTckNn-eUFRcw=s128-c0x00000000-cc-rp-mo-ba5" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjUBQSpegjJd190BlTDipcTc9udp4Uf3sGQb5wCXHC9tMbt0OxAqvA=s128-c0x00000000-cc-rp-mo-ba4" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
             <div class="review-meta">
               <!-- Author name removed for privacy -->
-              <span class="review-time">2 months ago</span>
+              <span class="review-time">4 months ago</span>
             </div>
           </div>
           <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
@@ -424,7 +486,24 @@
             ★★★★★
           </div>
           <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
-            I&#39;ve been to nearly every venue in Baltimore and DC. Elbow was the act at the 9:30. The show was beyond expectations. The sound system was excellent. I wouldn&#39;t hesitate for a second to see any of my...
+            I saw Iniko, great show! The venue is unique with interesting decor. Sound was great, but I&#39;m no expert. Smaller venue with an intimate feel. Staff was pleasant. Metro nearby. Would definitely return.
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJxeko4uS3t4kRuCl8NRL9YTE" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjVsY7afWC1zqDVGPD03IJtIP5jMAq5cEs2UQcDYDFtRMroH56c=s128-c0x00000000-cc-rp-mo-ba3" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">3 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Photos are of All Them Witches from thecenter balcony above the soundboard. Staff has always been accommodating. I went to a show there a few days after I broke my foot,  they gave me a seat with a...
           </p>
       </a>
       
@@ -433,7 +512,7 @@
             <img src="https://lh3.googleusercontent.com/a-/ALV-UjWXKv8JcbMSzgEOxZ3AX0H_bggbbEqIIu8XA9PD9M3f7m3pbED4xQ=s128-c0x00000000-cc-rp-mo-ba5" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
             <div class="review-meta">
               <!-- Author name removed for privacy -->
-              <span class="review-time">a month ago</span>
+              <span class="review-time">5 months ago</span>
             </div>
           </div>
           <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
@@ -447,26 +526,7 @@
       
       <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJxeko4uS3t4kRuCl8NRL9YTE" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
           <div class="review-header">
-            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXjJ7GugKJ44zusoyFHv93vG-pmi3a05hRQvTjCuSdkTxpiJeV9=s128-c0x00000000-cc-rp-mo-ba4" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
-            <div class="review-meta">
-              <!-- Author name removed for privacy -->
-              <span class="review-time">2 months ago</span>
-            </div>
-          </div>
-          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
-            
-            ★★★★★
-          </div>
-          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
-            Fun place, awesome sound, great vibes!
-Saw the fantastic &quot;Elbow&quot; from the UK in concert there whole visiting DC, and would love to come back for another concert.
-The atmosphere feels very homy, and...
-          </p>
-      </a>
-      
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJxeko4uS3t4kRuCl8NRL9YTE" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
-          <div class="review-header">
-            <img src="https://lh3.googleusercontent.com/a-/ALV-UjVKl5rUvoZ4sP4Kb7czE_4NmtXaKTMbrapNzdmYFmgwcmgtxFUqAw=s128-c0x00000000-cc-rp-mo-ba3" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjWD45iwbkIjRfm8Ed9xKOlgJbHtaUQq48abb2c1TblhrRKlpxc=s128-c0x00000000-cc-rp-mo-ba5" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
             <div class="review-meta">
               <!-- Author name removed for privacy -->
               <span class="review-time">5 months ago</span>
@@ -477,9 +537,7 @@ The atmosphere feels very homy, and...
             ★★★★★
           </div>
           <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
-            Historic D.C. venue with great artist and great sound! Venue has a ton of rock acts, with a sprinkling of hip hop and pop artists.
-
-9:30 Club is the perfect size venue. A full show fits about 1200...
+            Have only been here once for one show. Staff was quick, friendly, and professional. The venue wasn&#39;t too crowded and was relatively functional. For small events, it&#39;s easy to see and get close to the...
           </p>
       </a>
       
@@ -563,7 +621,7 @@ The atmosphere feels very homy, and...
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": 4.6,
-    "reviewCount": 4713
+    "reviewCount": 4821
   },
   
   
@@ -576,9 +634,9 @@ The atmosphere feels very homy, and...
     },
     "author": {
       "@type": "Person",
-      "name": "Greg"
+      "name": "Krista _"
     },
-    "reviewBody": "Have only been here once for one show. Staff was quick, friendly, and professional. The venue wasn't too crowded and was relatively functional. For small events, it's easy to see and get close to the performers. Offers a decent amount of food and refreshments."
+    "reviewBody": "Whew the best Saturday night ever spent watching unhinged horny people find love on a stage 🤣 #Updating. I watch the recap shows on YouTube but seeing it live is hysterical. The venue was very breezy so I was happy I brought a jacket. I didn't drink or order food ...I was here for the chaos of comedy because of the contestants. Oh yeah to that cute Serbian gent that I sat next to who was late to the show ..I would of kissed you. I chickened out. 🤣 I hope Updating comes back to DC"
   },
   
   
@@ -642,6 +700,49 @@ The atmosphere feels very homy, and...
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

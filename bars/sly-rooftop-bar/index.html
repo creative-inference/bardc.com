@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -286,68 +287,29 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://hotelsmag.com/news/morrow-hotel-refinancing-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://secretdc.com/sly-rooftop-bar-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=hotelsmag.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>HOTELSMag.com</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 16, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=secretdc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Secret DC</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Washington’s The Morrow Hotel secures $53M refinancing</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">This Iron Chef Has Just Opened A New Rooftop Bar In DC Just In Time For Summer</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Sly’s Rooftop Bar offers panoramic city views from the top of The Morrow Hotel in Washington, D.C. The venue is part of a culinary program overseen by the Marcus Samuelsson Group and is located within a lifestyle property that recently secured $53 million in refinancing.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Sly Rooftop Bar has opened in Washington D.C., featuring a concept led by a celebrated Iron Chef. The venue offers elevated cocktails and seasonal bites in an upscale rooftop setting designed for the summer season.</p>
            
         </a>
       
-        <a href="https://stories.hilton.com/food-beverage/hottest-table-in-town-celebrated-chef-marcus-samuelsson-debuts-marcus-dc-at-the-morrow-hotel-curio-collection-by-hilton" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://fox5dc.com/video/1627767" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=stories.hilton.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Stories From Hilton</span>
-              <span style="margin-left:auto; text-transform:none;">Jun 24, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Chef Marcus Samuelsson Debuts Marcus DC at The Morrow Hotel, Curio Collection by Hilton</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Sly Rooftop Bar, located at The Morrow Hotel in Washington D.C.&#39;s NoMa neighborhood, offers a sultry atmosphere with panoramic skyline views and sunset vistas. Guests can enjoy inventive cocktails such as the Lychee Martini and Blackberry Old Fashioned alongside a selection of elevated bar snacks.</p>
-           
-        </a>
-      
-        <a href="https://washingtonian.com/2025/05/20/celebrity-chef-marcus-samuelsson-has-a-new-rooftop-bar-in-noma" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=fox5dc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>FOX 5 DC</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">May 20, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Celebrity Chef Marcus Samuelsson Has a New Rooftop Bar in NoMa</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">A Taste of &#39;Sly&#39; by Marcus Samuelsson</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Sly Rooftop Bar is a seafood-focused lounge by celebrity chef Marcus Samuelsson located atop the Morrow Hotel in DC&#39;s NoMa neighborhood. The menu features global fusion dishes like doro wat empanadas and tuna tostadas paired with inventive cocktails and 360-degree city views. The venue offers a vibrant, unpretentious atmosphere featuring jewel-toned decor and local DJ Afrobeat sets.</p>
-           
-        </a>
-      
-        <a href="https://axios.com/local/washington-dc/2025/05/02/new-rooftop-bar-happy-hour-dc-alexandria" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=axios.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Axios</span>
-              <span style="margin-left:auto; text-transform:none;">May 2, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">4 fresh rooftop bars to check out now</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Sly is a breezy rooftop bar located atop the Morrow Hotel in D.C.&#39;s Union Market District, featuring a menu by chef Marcus Samuelsson that blends his Ethiopian roots with rum-based cocktails. The venue offers a popular weekday happy hour with discounted oysters and sparkling wine, alongside unique snacks like doro wat empanadas.</p>
-           
-        </a>
-      
-        <a href="https://dc.eater.com/2025/4/17/24410516/marcus-samuelsson-rooftop-bar-sly-noma-dc-bar-restaurant-openings" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Apr 17, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Marcus Samuelsson’s Rooftop Bar Just Arrived in NoMa</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Sly Rooftop Bar is a vibrant destination by Chef Marcus Samuelsson located atop the Morrow Hotel in D.C.’s NoMa neighborhood. The venue offers expansive views of the U.S. Capitol alongside a menu featuring local oysters, crab cakes with kohlrabi apple slaw, and unique berbere-spiced cocktails.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Sly Rooftop Bar, located atop The Morrow Hotel in NoMa, offers hand-crafted cocktails, seasonal seafood, and panoramic views of the Washington D.C. skyline. Created by Marcus Samuelsson and Chef Anthony Jones, the venue provides a stylish atmosphere for golden hour drinks and dining.</p>
            
         </a>
       
@@ -623,6 +585,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -317,68 +318,42 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://bizjournals.com/washington/news/2024/07/25/sauf-haus-invic2s-john-issa-christian-cortes-johan.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://timesofisrael.com/hundreds-of-dc-jews-plan-to-spend-yom-kippur-in-a-beer-garden" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=bizjournals.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Business Journals</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 29, 2024</span>
+              <img src="https://www.google.com/s2/favicons?domain=timesofisrael.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The Times of Israel</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Team behind Sauf Haus, Public Bar Live launches hospitality business</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Hundreds of DC Jews plan to spend Yom Kippur in a beer garden</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Sauf Haus Bier Hall &amp; Garten&#39;s founders have launched Invic2s Hospitality Group to manage and expand their portfolio, which includes the popular D.C. beer hall and Public Bar Live. The formation of the new group coincided with Sauf Haus&#39;s 10th anniversary and is designed to create greater operational efficiencies for the venue’s continued growth.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Sauf Haus Bier Hall &amp; Garten hosts hundreds of Jewish D.C. residents for unconventional Yom Kippur services on its rooftop. The venue provides an inclusive, open-air environment for the community to observe the holiday through prayer and reflection.</p>
            
         </a>
       
-        <a href="https://dc.eater.com/maps/best-beer-gardens-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://dcnewsnow.com/news/local-news/maryland/prince-georges-county/pgpd-officer-suspended-after-off-duty-arrest-in-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 13, 2020</span>
+              <img src="https://www.google.com/s2/favicons?domain=dcnewsnow.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>DC News Now</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">15 Beer Gardens With Terrific Brews Around D.C.</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">PGPD officer suspended after off-duty arrest in DC</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Sauf Haus Bier Hall &amp; Garten in Dupont Circle provides a classic Bavarian atmosphere across multiple floors, specializing in refreshing European imports like Erdinger Weissbier. The venue offers traditional German snacks such as soft pretzels and sausages, with table reservations available for those looking to enjoy a communal beer hall experience.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Sauf Haus Bier Hall &amp; Garten was the site of an incident involving an off-duty Prince George’s County Police officer who was arrested following a dispute. The officer has since been suspended without pay as authorities investigate the circumstances surrounding the arrest at the Dupont Circle venue.</p>
            
         </a>
       
-        <a href="https://dcist.com/story/16/08/12/a-guide-to-the-dc-areas-10-best-bee" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://secretdc.com/beer-gardens" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=dcist.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>DCist</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 28, 2018</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">A Guide To The D.C. Area’s Best Beer Gardens</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Sauf Haus Bier Hall &amp; Garten features multiple floors and a festive rooftop beer garden in the heart of Dupont Circle. The venue serves a variety of traditional German draft beers, including selections from Hofbrau and Spaten, which can be paired with their signature two-pound monster pretzel.</p>
-           
-        </a>
-      
-        <a href="https://restaurantnews.com/5-washington-dc-restaurants-and-bars-with-retractable-roofs-081318" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=secretdc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Secret DC</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=restaurantnews.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>RestaurantNews.com</span>
-              <span style="margin-left:auto; text-transform:none;">Aug 13, 2018</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">5 Washington, D.C. Restaurants and Bars with Retractable Roofs</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">9 Brew-tiful Beer Gardens In DC That Will Make You Hoppy</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Sauf Haus Bier Hall &amp; Garten is an authentic German beer garden in Washington, D.C., featuring a rooftop bar equipped with a retractable skylight. This Roll-A-Cover enclosure allows the venue to offer year-round outdoor-style seating and protection from inclement weather while maintaining an open-air atmosphere.</p>
-           
-        </a>
-      
-        <a href="https://washingtonian.com/2014/07/24/sauf-haus-beer-garden-opens-in-dupont" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 24, 2014</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Sauf Haus Beer Garden Opens in Dupont</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Sauf Haus Bier Hall &amp; Garten is a two-story German-style beer garden in Dupont Circle featuring an indoor bar, an open rooftop, and 16 taps dedicated exclusively to German brews. The venue offers a traditional Bavarian atmosphere with long wooden picnic benches, foosball, and a menu focused on authentic soft pretzels and brats.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Sauf Haus Bier Hall &amp; Garten is featured as one of the premier beer garden destinations in Washington D.C. This Dupont Circle establishment provides an authentic Bavarian experience with an extensive selection of German beers and a spacious rooftop setting.</p>
            
         </a>
       
@@ -654,6 +629,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

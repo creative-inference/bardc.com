@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -287,78 +288,6 @@
   <!-- End Happy Hour Details Section -->
 
   <!-- [NEW] News Section -->
-  
-  <div class="news-section" style="margin-top:2rem; margin-bottom:2rem;">
-    <h3>📰 In the News</h3>
-    <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
-      
-        <a href="https://parklifedc.com/2025/12/16/snapshots-monaleo-union-stage-12-5-12-6-25" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=parklifedc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Parklife DC</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 16, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Snapshots: Monaleo @ Union Stage -- 12/5 + 12/6/25 | Parklife DC</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Union Stage hosted Houston rapper Monaleo for two consecutive nights in December 2025 as part of her DMV tour. The performances featured guest appearances by Stunna 4 Vegas and KT Smith, showcasing hits from her debut album and her sophomore release, Who Did the Body.</p>
-           
-        </a>
-      
-        <a href="https://dyingscene.com/dying-scene-photo-gallery-and-review-the-saints-73-78-des-demonas-and-chimers-union-stage-11-18-2025" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=dyingscene.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Dying Scene</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 1, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Dying Scene Photo Gallery and Review: The Saints ’73-’78, Des Demonas, and Chimers, Union Stage (11/18/2025).</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Union Stage hosted an energetic night of rock &#39;n&#39; roll on November 18, 2025, featuring a headline performance by The Saints ’73-’78. The show included sets from DC&#39;s garage punk group Des Demonas and the Australian duo Chimers, highlighting the venue&#39;s role as a hub for both local talent and international touring acts.</p>
-           
-        </a>
-      
-        <a href="https://parklifedc.com/2025/11/18/live-review-the-lone-bellow-w-nicole-atkins-union-stage-11-14-25" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=parklifedc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Parklife DC</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 18, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Live Review: The Lone Bellow w/ Nicole Atkins @ Union Stage -- 11/14/25 | Parklife DC</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Union Stage hosted an intimate evening of Americana and folk with performances by The Lone Bellow and Nicole Atkins on November 14, 2025. The concert featured powerful three-part harmonies, a special acoustic segment around a single microphone, and a soulful opening set that included a cover of Roy Orbison&#39;s &#39;Crying.&#39;</p>
-           
-        </a>
-      
-        <a href="https://parklifedc.com/2025/09/29/live-review-buzzcocks-w-dot-dash-and-pinkhouse-union-stage-9-23-25" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=parklifedc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Parklife DC</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 29, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Live Review: Buzzcocks w/ Dot Dash and Pinkhouse @ Union Stage -- 9/23/25 | Parklife DC</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Union Stage hosted the legendary Manchester punk band Buzzcocks on September 23, 2025, for a high-energy performance featuring classic hits and tracks from their recent album, Sonics in the Soul. The concert also highlighted local talent with opening sets from D.C.-based power pop bands Dot Dash and Pinkhouse.</p>
-           
-        </a>
-      
-        <a href="https://parklifedc.com/2025/09/21/preview-buzzcocks-union-stage-9-23-25" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=parklifedc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Parklife DC</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 21, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Preview: Buzzcocks @ Union Stage, 9/23/25 | Parklife DC</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Union Stage hosted legendary English punk pioneers Buzzcocks on September 23, 2025, as part of the band&#39;s U.S. tour. The intimate Washington, D.C. performance featured a lineup led by Steve Diggle with support from opening acts Pinkhouse and Dot Dash.</p>
-           
-        </a>
-      
-    </div>
-  </div>
   
   <!-- End News Section -->
   
@@ -631,6 +560,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

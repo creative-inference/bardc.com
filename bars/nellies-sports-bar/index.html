@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -425,68 +426,29 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://vice.com/en/article/dc-nellies-sports-bar-racism-protest-lgbtq-activist-interview" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://timeout.com/washington-dc/bars/nellies-sports-bar" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=vice.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>VICE</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 27, 2024</span>
+              <img src="https://www.google.com/s2/favicons?domain=timeout.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Time Out Worldwide</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">A Year After a Gay Bar Was Protested for Racism, Activists Say It Hasn’t Changed</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Nellie&#39;s Sports Bar</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Nellie&#39;s Sports Bar in Washington D.C. faced significant protests and calls for accountability following a 2021 incident where a Black patron was allegedly mistreated by security. Despite pledges for diversity training and inclusion, local activists argue the establishment has failed to implement systemic changes or meet community demands for equitable treatment. The ongoing controversy highlights broader tensions regarding anti-Blackness and gentrification within the city&#39;s LGBTQ+ nightlife scene.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Nellie&#39;s Sports Bar is a gay-friendly establishment in the U Street Corridor featuring a rooftop patio, karaoke nights, and trivia events. The venue offers a mix of classic sports bar fare like wings and burgers alongside Latin-themed specialties such as arepas and empanadas.</p>
            
         </a>
       
-        <a href="https://dcist.com/story/21/10/20/nellies-fined-and-short-suspension-over-pride-week-assault" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://secretdc.com/best-lgbtq-bars-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=dcist.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>DCist</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 20, 2021</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Nellie’s To Pay $5,000 Fine, Face Seven-Day Suspension For Pride Week Assault</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Nellie’s Sports Bar was ordered to pay a $5,000 fine and serve a seven-day liquor license suspension following a 2021 incident involving the assault of a patron by private security. In addition to the penalties, the bar agreed to implement mandatory conflict de-escalation training for staff and submit a formal security plan to city regulators.</p>
-           
-        </a>
-      
-        <a href="https://washingtonpost.com/local/nellies-bar-dc-protest-block-party/2021/08/30/d1e56f1c-0678-11ec-a654-900a78538242_story.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=secretdc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Secret DC</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtonpost.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Washington Post</span>
-              <span style="margin-left:auto; text-transform:none;">Aug 31, 2021</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Protests to boycott Nellie’s Sports Bar created summer-long ‘joy space’ for Black LGBTQ community</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The 9 Best LGBTQ+ Bars To Truly Be Yourself In D.C.</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Nellie&#39;s Sports Bar became the focal point of a summer-long boycott and protest movement in 2021 following an incident involving the mistreatment of a Black patron by security. These demonstrations transformed the sidewalk outside the venue into a community &#39;joy space&#39; dedicated to celebrating and protecting the Black LGBTQ community in D.C.</p>
-           
-        </a>
-      
-        <a href="https://georgetownvoice.com/2021/07/22/nellies-reopens-one-month-after-security-dragged-a-black-woman-down-the-stairs" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=georgetownvoice.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Georgetown Voice</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 22, 2021</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Nellie’s Sports Bar attempts to reopen one month after security dragged a Black woman down the stairs</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Nellie’s Sports Bar faced intense scrutiny and organized boycotts following a 2021 incident where security personnel were filmed dragging a Black woman down the establishment&#39;s stairs. In response to the backlash, the venue implemented de-escalation training and appointed community engagement leadership, though local activists remain critical of the bar&#39;s handling of systemic anti-Black racism.</p>
-           
-        </a>
-      
-        <a href="https://wjla.com/news/local/dc-bar-investigating-video-showing-woman-dragged-down-stairs-by-security" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=wjla.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WJLA</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 17, 2021</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Video shows security drag woman down stairs at Nellie&#39;s Sports Bar, investigation underway</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Nellie&#39;s Sports Bar terminated its contract with an independent security vendor after viral video footage showed a woman being dragged down the establishment&#39;s stairs by her hair. The incident sparked significant community protests and led to an investigation into the conduct of the bar&#39;s security personnel.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Nellie&#39;s Sports Bar is featured as one of the premier LGBTQ+ destinations in Washington, D.C., recognized for its welcoming and inclusive environment. The venue is celebrated for providing a space where patrons can enjoy the city&#39;s nightlife while being their authentic selves.</p>
            
         </a>
       
@@ -766,6 +728,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

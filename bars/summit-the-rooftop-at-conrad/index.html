@@ -50,7 +50,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -69,17 +69,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -105,7 +107,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -281,68 +282,16 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://epgn.com/2025/11/12/washington-d-c-delights-for-lgbtq-travelers-despite-political-turmoil" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://cntraveler.com/bars/washington-dc/summit" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=epgn.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Philadelphia Gay News</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 12, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Washington, D.C. delights for LGBTQ+ travelers — despite political turmoil</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Summit the Rooftop at Conrad offers a stylish garden atmosphere with panoramic views of the Washington D.C. skyline. The bar features a curated selection of spirits from local distillers, regional craft beers, and sustainably produced wines, making it a highlighted destination for seasonal visitors.</p>
-           
-        </a>
-      
-        <a href="https://forbes.com/sites/tarynwhite/2025/09/16/meet-the-culinary-master-taking-over-the-conrad-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=cntraveler.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Condé Nast Traveler</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=forbes.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Forbes</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 20, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Meet The Culinary Master Taking Over At The Conrad Washington, D.C.</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Summit – Bar Review</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Summit the Rooftop at Conrad is under the culinary leadership of Executive Chef Andrew Whiteside, who oversees the venue&#39;s seasonal programming and sustainability-driven menu. The rooftop experience focuses on high-quality craftsmanship and regional flavors, blending Chesapeake Bay ingredients with modern techniques and global influences.</p>
-           
-        </a>
-      
-        <a href="https://hospitalitynet.org/appointment/79030634.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=hospitalitynet.org" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Hospitality Net</span>
-              <span style="margin-left:auto; text-transform:none;">Aug 13, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Andrew Whiteside has been appointed Executive Chef at Conrad Washington, DC in Washington, D.C.</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Summit at Conrad has appointed Andrew Whiteside as Executive Chef to oversee its seasonal rooftop programming and culinary operations. Whiteside joins the Washington, D.C. hotel with nearly 20 years of experience in luxury hotel kitchens, including previous leadership roles at Four Seasons and Fairmont properties.</p>
-           
-        </a>
-      
-        <a href="https://hotel-online.com/news/andrew-whiteside-joins-conrad-washington-dc-as-executive-chef" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=hotel-online.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Hotel Online</span>
-              <span style="margin-left:auto; text-transform:none;">Aug 13, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Andrew Whiteside Joins Conrad Washington, DC as Executive Chef</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Summit the Rooftop at Conrad is under the culinary leadership of Executive Chef Andrew Whiteside, who oversees the venue&#39;s seasonal programming and menu development. The rooftop bar and lounge offers sweeping Washington D.C. skyline views alongside a sophisticated beverage and dining program rooted in craftsmanship and global inspiration.</p>
-           
-        </a>
-      
-        <a href="https://stories.hilton.com/food-beverage/summit-the-rooftop-stars-ecofriendly-solar-oven" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=stories.hilton.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Stories From Hilton</span>
-              <span style="margin-left:auto; text-transform:none;">May 5, 2022</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Solar Oven at Conrad Washington DC Rooftop Takes Eco‑Friendly Cooking to the Next Level</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Summit the Rooftop at Conrad Washington D.C. utilizes an innovative solar oven and an onsite rooftop garden to create a luxury, eco-conscious dining experience. Led by Chef Josh Murray, the restaurant focuses on zero-waste initiatives and sustainable practices, featuring dishes like sun-cooked BBQ pork and cocktails garnished with house-grown herbs.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Summit the Rooftop at Conrad offers an 11th-floor vantage point with stunning views of downtown Washington D.C. and the Capitol building. This modern venue features a variety of cocktails, including on-tap spritzes and specialty drinks, paired with elevated snacks like avocado fries and Maryland crab mac &#39;n&#39; cheese.</p>
            
         </a>
       
@@ -623,6 +572,49 @@ You should visit at sunset. so beautiful!
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

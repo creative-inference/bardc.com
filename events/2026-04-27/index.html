@@ -49,7 +49,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -68,17 +68,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -104,7 +106,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -1001,8 +1002,45 @@
                 
              
           
+             
+                
+             
+          
           
 
+          
+            <div class="masonry-item">
+               
+               <div class="event-header" style="padding: 1rem 1rem 0.5rem 1rem;">
+                   <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 0.5rem;">
+                       
+                          <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2F9-30-club%2Flogo-1766013174011-327435022_857429208884549_6604525457621227370_n.jpg?alt=media&amp;token=c0e2d533-bf9d-4759-ba00-4523a02fef39" alt="Logo" style="width: 24px; height: 24px; border-radius: 50%; object-fit: cover; border: 1px solid #444;">
+                       
+                       <a href="/bars/9-30-club/" class="event-masonry-venue-link">
+                          9:30 Club
+                       </a>
+                   </div>
+                   
+                   
+                   <h3 style="margin: 0; font-size: 1.2rem; line-height: 1.3;">
+                      <a href="/bars/9-30-club/" class="event-masonry-title-link">🎹 Oklou US Tour 2026</a>
+                   </h3>
+               </div>
+               
+               
+
+               
+              
+
+              <div class="masonry-content">
+                  
+                  <div class="event-desc-container">
+                      <div class="event-description-text collapsed" id="desc-1">Doors open at 7 PM. (Sold Out)</div>
+                      
+                      
+                  </div>
+              </div>
+            </div>
           
             <div class="masonry-item">
                
@@ -1030,7 +1068,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-1">Join us for daily morning caffeine jolts, breakfast, and lunch at a.cafe located in AKA Central Park.</div>
+                      <div class="event-description-text collapsed" id="desc-2">Join us for daily morning caffeine jolts, breakfast, and lunch at a.cafe located in AKA Central Park.</div>
                       
                       
                   </div>
@@ -1063,7 +1101,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-2">Unwind in the evening with a selection of fine wines and cocktails in the sophisticated setting of a.lounge at AKA Central Park.</div>
+                      <div class="event-description-text collapsed" id="desc-3">Unwind in the evening with a selection of fine wines and cocktails in the sophisticated setting of a.lounge at AKA Central Park.</div>
                       
                       
                   </div>
@@ -1096,7 +1134,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-3">Apéro offers a nightly selection of champagne, wine, and cocktails alongside French fare and a rotating selection of sustainably farmed caviar in an elegant yet playful atmosphere.</div>
+                      <div class="event-description-text collapsed" id="desc-4">Apéro offers a nightly selection of champagne, wine, and cocktails alongside French fare and a rotating selection of sustainably farmed caviar in an elegant yet playful atmosphere.</div>
                       
                       
                   </div>
@@ -1129,7 +1167,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-4">Tailored tasting experiences in the cozy basement bar with curated selections and rare pours, led by whiskey experts.</div>
+                      <div class="event-description-text collapsed" id="desc-5">Tailored tasting experiences in the cozy basement bar with curated selections and rare pours, led by whiskey experts.</div>
                       
                       
                   </div>
@@ -1162,7 +1200,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-5">Daily access to foosball ($1 for nine balls), three dart boards, and a variety of board games including Cards Against Humanity, Jenga, and Uno available for a $2 one-time rental fee.</div>
+                      <div class="event-description-text collapsed" id="desc-6">Daily access to foosball ($1 for nine balls), three dart boards, and a variety of board games including Cards Against Humanity, Jenga, and Uno available for a $2 one-time rental fee.</div>
                       
                       
                   </div>
@@ -1195,7 +1233,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-6">Access to foosball ($1 for nine balls), three dart boards, and a variety of board games for a $2 one-time rental, including Cards Against Humanity, Uno, Jenga, and Catan.</div>
+                      <div class="event-description-text collapsed" id="desc-7">Access to foosball ($1 for nine balls), three dart boards, and a variety of board games for a $2 one-time rental, including Cards Against Humanity, Uno, Jenga, and Catan.</div>
                       
                       
                   </div>
@@ -1228,7 +1266,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-7">Bedrock Billiards offers pool and shuffleboard with rates prorated to the minute of play. Sunday-Thursday rates range from $6-$16 per hour, and Friday-Saturday rates range from $10-$20 per hour depending on the number of players.</div>
+                      <div class="event-description-text collapsed" id="desc-8">Bedrock Billiards offers pool and shuffleboard with rates prorated to the minute of play. Sunday-Thursday rates range from $6-$16 per hour, and Friday-Saturday rates range from $10-$20 per hour depending on the number of players.</div>
                       
                       
                   </div>
@@ -1261,7 +1299,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-8">A neighborhood tradition at Bedrock Billiards: &#39;When it rains, we always have more beer!!&#39;</div>
+                      <div class="event-description-text collapsed" id="desc-9">A neighborhood tradition at Bedrock Billiards: &#39;When it rains, we always have more beer!!&#39;</div>
                       
                       
                   </div>
@@ -1294,7 +1332,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-9">Enjoy discounted weekday prorated rates for pool and shuffleboard. Rates: 1 Player ($6/hr), 2 Players ($12/hr), 3 Players ($15/hr), 4 Players ($16/hr).</div>
+                      <div class="event-description-text collapsed" id="desc-10">Enjoy discounted weekday prorated rates for pool and shuffleboard. Rates: 1 Player ($6/hr), 2 Players ($12/hr), 3 Players ($15/hr), 4 Players ($16/hr).</div>
                       
                       
                   </div>
@@ -1327,7 +1365,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-10">Priced by Quarters – $1 gives you nine foosballs</div>
+                      <div class="event-description-text collapsed" id="desc-11">Priced by Quarters – $1 gives you nine foosballs</div>
                       
                       
                   </div>
@@ -1360,7 +1398,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-11">Enjoy coffee, spirits, and quality comfort food during our daily brunch service.</div>
+                      <div class="event-description-text collapsed" id="desc-12">Enjoy coffee, spirits, and quality comfort food during our daily brunch service.</div>
                       
                       
                   </div>
@@ -1393,7 +1431,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-12">Nostalgic touches and a lived-in vibe accompany our late-night food menu.</div>
+                      <div class="event-description-text collapsed" id="desc-13">Nostalgic touches and a lived-in vibe accompany our late-night food menu.</div>
                       
                       
                   </div>
@@ -1426,7 +1464,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-13">Quick lunch combo: Choice of a 7&quot; mini pizza or half sandwich paired with a 1/2 Insalata Mista. Add a soda for $2 or a draft beer/prosecco for $7. Available at Dupont Circle, Georgetown, and Spring Valley.</div>
+                      <div class="event-description-text collapsed" id="desc-14">Quick lunch combo: Choice of a 7&quot; mini pizza or half sandwich paired with a 1/2 Insalata Mista. Add a soda for $2 or a draft beer/prosecco for $7. Available at Dupont Circle, Georgetown, and Spring Valley.</div>
                       
                       
                   </div>
@@ -1459,7 +1497,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-14">Open after every Mainstage event featuring a fully stocked bar, craft-brews, bourbon, scotch, darts, pinball, and a jukebox.</div>
+                      <div class="event-description-text collapsed" id="desc-15">Open after every Mainstage event featuring a fully stocked bar, craft-brews, bourbon, scotch, darts, pinball, and a jukebox.</div>
                       
                       
                   </div>
@@ -1492,7 +1530,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-15">Enjoy a free pool table and great music in a casual neighborhood atmosphere.</div>
+                      <div class="event-description-text collapsed" id="desc-16">Enjoy a free pool table and great music in a casual neighborhood atmosphere.</div>
                       
                       
                   </div>
@@ -1523,7 +1561,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-16">A tribute to the building&#39;s and Washington, D.C.&#39;s rich history, formal tea is served in the historic Wilkes Room, a proper drawing room featuring an original fireplace and antique furnishings.</div>
+                      <div class="event-description-text collapsed" id="desc-17">A tribute to the building&#39;s and Washington, D.C.&#39;s rich history, formal tea is served in the historic Wilkes Room, a proper drawing room featuring an original fireplace and antique furnishings.</div>
                       
                       
                   </div>
@@ -1556,7 +1594,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-17">A rotating cocktail series celebrating 45 years of Park Hyatt hotels around the world, featuring signature drinks like the Tidal Basin and Six &#39;n&#39; Sip.</div>
+                      <div class="event-description-text collapsed" id="desc-18">A rotating cocktail series celebrating 45 years of Park Hyatt hotels around the world, featuring signature drinks like the Tidal Basin and Six &#39;n&#39; Sip.</div>
                       
                       
                   </div>
@@ -1589,7 +1627,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-18">Experience live jazz at the nation&#39;s oldest continuing jazz supper club. Featuring two shows nightly in an intimate 18th-century carriage house. Dinner service begins at 6:00 PM featuring authentic Creole cuisine.</div>
+                      <div class="event-description-text collapsed" id="desc-19">Experience live jazz at the nation&#39;s oldest continuing jazz supper club. Featuring two shows nightly in an intimate 18th-century carriage house. Dinner service begins at 6:00 PM featuring authentic Creole cuisine.</div>
                       
                       
                   </div>
@@ -1622,7 +1660,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-19">A limited number of student tickets are available for half price with a valid student ID. Tickets must be purchased in person at the box office.</div>
+                      <div class="event-description-text collapsed" id="desc-20">A limited number of student tickets are available for half price with a valid student ID. Tickets must be purchased in person at the box office.</div>
                       
                       
                   </div>
@@ -1655,7 +1693,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-20">Experience live performances at the nation&#39;s oldest continuing jazz supper club, featuring authentic Creole cuisine, steak, and seafood. Dinner is served starting at 6:00 PM.</div>
+                      <div class="event-description-text collapsed" id="desc-21">Experience live performances at the nation&#39;s oldest continuing jazz supper club, featuring authentic Creole cuisine, steak, and seafood. Dinner is served starting at 6:00 PM.</div>
                       
                       
                   </div>
@@ -1688,7 +1726,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-21">Wildly popular chess events open to the public. All skill levels welcome.</div>
+                      <div class="event-description-text collapsed" id="desc-22">Wildly popular chess events open to the public. All skill levels welcome.</div>
                       
                       
                   </div>
@@ -1721,7 +1759,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-22">Wildly popular chess events.</div>
+                      <div class="event-description-text collapsed" id="desc-23">Wildly popular chess events.</div>
                       
                       
                   </div>
@@ -1754,7 +1792,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-23">A curated selection of Boqueria&#39;s best and quickest tapas served to share among the table, including dessert for $24 per person.</div>
+                      <div class="event-description-text collapsed" id="desc-24">A curated selection of Boqueria&#39;s best and quickest tapas served to share among the table, including dessert for $24 per person.</div>
                       
                       
                   </div>
@@ -1787,7 +1825,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-24">A selection of Boqueria&#39;s best and quickest tapas, served to share amongst the table. Includes 2 tapas per person and Churros con Chocolate for dessert for $24 per person.</div>
+                      <div class="event-description-text collapsed" id="desc-25">A selection of Boqueria&#39;s best and quickest tapas, served to share amongst the table. Includes 2 tapas per person and Churros con Chocolate for dessert for $24 per person.</div>
                       
                       
                   </div>
@@ -1820,7 +1858,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-25">DC&#39;s home for the Philadelphia Eagles. We always have a TV available for Philly sports, plus Six Nations Rugby coverage.</div>
+                      <div class="event-description-text collapsed" id="desc-26">DC&#39;s home for the Philadelphia Eagles. We always have a TV available for Philly sports, plus Six Nations Rugby coverage.</div>
                       
                       
                   </div>
@@ -1853,7 +1891,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-26">The Pub is now open for lunch Monday through Friday at 12:00 PM with special limited-time offerings.</div>
+                      <div class="event-description-text collapsed" id="desc-27">The Pub is now open for lunch Monday through Friday at 12:00 PM with special limited-time offerings.</div>
                       
                       
                   </div>
@@ -1886,7 +1924,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-27">Enjoy drinks and nightcaps on the patio next to the fire in Georgetown’s oldest neighborhood.</div>
+                      <div class="event-description-text collapsed" id="desc-28">Enjoy drinks and nightcaps on the patio next to the fire in Georgetown’s oldest neighborhood.</div>
                       
                       
                   </div>
@@ -1919,7 +1957,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-28">Free house tequila shots on your birthday and free bottle of house champagne with bottle purchase.</div>
+                      <div class="event-description-text collapsed" id="desc-29">Free house tequila shots on your birthday and free bottle of house champagne with bottle purchase.</div>
                       
                       
                   </div>
@@ -1952,7 +1990,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-29">Kick off the week with specialty margaritas and mojitos.</div>
+                      <div class="event-description-text collapsed" id="desc-30">Kick off the week with specialty margaritas and mojitos.</div>
                       
                       
                   </div>
@@ -1985,7 +2023,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-30">Earn dining rewards at all locations.</div>
+                      <div class="event-description-text collapsed" id="desc-31">Earn dining rewards at all locations.</div>
                       
                       
                   </div>
@@ -2018,7 +2056,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-31">Holiday Pop-Up Bar available at all locations (14th Street and Navy Yard).</div>
+                      <div class="event-description-text collapsed" id="desc-32">Holiday Pop-Up Bar available at all locations (14th Street and Navy Yard).</div>
                       
                       
                   </div>
@@ -2051,7 +2089,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-32">An immersive storybook-themed pop-up in partnership with Bacardi. Features greenery-filled decor, cascading book pages, whimsical cocktails, and cozy dishes.</div>
+                      <div class="event-description-text collapsed" id="desc-33">An immersive storybook-themed pop-up in partnership with Bacardi. Features greenery-filled decor, cascading book pages, whimsical cocktails, and cozy dishes.</div>
                       
                       
                   </div>
@@ -2084,7 +2122,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-33">Catch the game on 22 TVs and enjoy a unique sports bar experience at the Over Under Rooftop Sportsbar.</div>
+                      <div class="event-description-text collapsed" id="desc-34">Catch the game on 22 TVs and enjoy a unique sports bar experience at the Over Under Rooftop Sportsbar.</div>
                       
                       
                   </div>
@@ -2117,7 +2155,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-34">Catch the game on 22 TVs in a sports bar atmosphere (without entertainers) at the Over Under Rooftop Sports Bar.</div>
+                      <div class="event-description-text collapsed" id="desc-35">Catch the game on 22 TVs in a sports bar atmosphere (without entertainers) at the Over Under Rooftop Sports Bar.</div>
                       
                       
                   </div>
@@ -2150,7 +2188,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-35">Experience Washington D.C.’s premier adult entertainment with elevated service and performances in a multi-level venue.</div>
+                      <div class="event-description-text collapsed" id="desc-36">Experience Washington D.C.’s premier adult entertainment with elevated service and performances in a multi-level venue.</div>
                       
                       
                   </div>
@@ -2183,7 +2221,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-36">Free ping pong is available for guests to enjoy while they eat and drink.</div>
+                      <div class="event-description-text collapsed" id="desc-37">Free ping pong is available for guests to enjoy while they eat and drink.</div>
                       
                       
                   </div>
@@ -2216,7 +2254,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-37">Regularly scheduled live bands and music shows in a DIY-friendly atmosphere.</div>
+                      <div class="event-description-text collapsed" id="desc-38">Regularly scheduled live bands and music shows in a DIY-friendly atmosphere.</div>
                       
                       
                   </div>
@@ -2249,7 +2287,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-38">Experience the allure of live music in the bar and lounge, where a baby grand piano meets the artistry of world-class musicians.</div>
+                      <div class="event-description-text collapsed" id="desc-39">Experience the allure of live music in the bar and lounge, where a baby grand piano meets the artistry of world-class musicians.</div>
                       
                       
                   </div>
@@ -2282,7 +2320,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-39">Available during the winter months in the lobby, featuring sweet and savory bites curated by Chef Ligia Barros.</div>
+                      <div class="event-description-text collapsed" id="desc-40">Available during the winter months in the lobby, featuring sweet and savory bites curated by Chef Ligia Barros.</div>
                       
                       
                   </div>
@@ -2315,7 +2353,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-40">Gathering spot for Nationals, DC United, and Washington Spirit fans before and after home games at the Navy Yard location.</div>
+                      <div class="event-description-text collapsed" id="desc-41">Gathering spot for Nationals, DC United, and Washington Spirit fans before and after home games at the Navy Yard location.</div>
                       
                       
                   </div>
@@ -2348,7 +2386,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-41">Post a photo or video of the Nashville Hot Chicken Sausage built &#39;Your Way&#39; on Instagram or TikTok. Hashtag #DHYourWay and tag @doghausdogs to be entered to win a $25 gift card. Two winners are chosen on the 10th and the 20th of every month.</div>
+                      <div class="event-description-text collapsed" id="desc-42">Post a photo or video of the Nashville Hot Chicken Sausage built &#39;Your Way&#39; on Instagram or TikTok. Hashtag #DHYourWay and tag @doghausdogs to be entered to win a $25 gift card. Two winners are chosen on the 10th and the 20th of every month.</div>
                       
                       
                   </div>
@@ -2381,7 +2419,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-42">Every Nashville Hot Chicken Sausage purchased supports No Kid Hungry.</div>
+                      <div class="event-description-text collapsed" id="desc-43">Every Nashville Hot Chicken Sausage purchased supports No Kid Hungry.</div>
                       
                       
                   </div>
@@ -2412,7 +2450,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-43">Enjoy our late night menu and atmosphere.</div>
+                      <div class="event-description-text collapsed" id="desc-44">Enjoy our late night menu and atmosphere.</div>
                       
                       
                   </div>
@@ -2443,7 +2481,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-44">1/2 price bottles of wine available at Foggy Bottom and Dupont Circle locations.</div>
+                      <div class="event-description-text collapsed" id="desc-45">1/2 price bottles of wine available at Foggy Bottom and Dupont Circle locations.</div>
                       
                       
                   </div>
@@ -2476,7 +2514,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-45">Catch every match including live football (soccer), hockey, and other major fixtures live on big screens.</div>
+                      <div class="event-description-text collapsed" id="desc-46">Catch every match including live football (soccer), hockey, and other major fixtures live on big screens.</div>
                       
                       
                   </div>
@@ -2509,7 +2547,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-46">Official watch location for partner organizations including Buffalo Bills, UNC Tar Heels basketball, Liverpool FC (Exiles Reds), and Washington Irish Rugby club.</div>
+                      <div class="event-description-text collapsed" id="desc-47">Official watch location for partner organizations including Buffalo Bills, UNC Tar Heels basketball, Liverpool FC (Exiles Reds), and Washington Irish Rugby club.</div>
                       
                       
                   </div>
@@ -2542,7 +2580,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-47">Enjoy a special after-hours menu in Boston featuring hand-tossed flatbreads, truffle fries, and juicy burgers.</div>
+                      <div class="event-description-text collapsed" id="desc-48">Enjoy a special after-hours menu in Boston featuring hand-tossed flatbreads, truffle fries, and juicy burgers.</div>
                       
                       
                   </div>
@@ -2575,7 +2613,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-48">Experience the &#39;Washington Tradition&#39; with a lunch menu featuring handmade pastas, Italian sandwiches, and specialty entrees.</div>
+                      <div class="event-description-text collapsed" id="desc-49">Experience the &#39;Washington Tradition&#39; with a lunch menu featuring handmade pastas, Italian sandwiches, and specialty entrees.</div>
                       
                       
                   </div>
@@ -2608,7 +2646,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-49">A long-standing Filomena tradition where guests are invited to pour their own Sambucca or Amaretto at the end of their meal to feel like special &#39;company&#39; in the family home.</div>
+                      <div class="event-description-text collapsed" id="desc-50">A long-standing Filomena tradition where guests are invited to pour their own Sambucca or Amaretto at the end of their meal to feel like special &#39;company&#39; in the family home.</div>
                       
                       
                   </div>
@@ -2641,7 +2679,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-50">Dinner is served daily.</div>
+                      <div class="event-description-text collapsed" id="desc-51">Dinner is served daily.</div>
                       
                       
                   </div>
@@ -2674,7 +2712,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-51">A celebrated tradition where guests are invited to pour their own Sambucca or Amaretto at the end of their meal to feel like special company in the Filomena home.</div>
+                      <div class="event-description-text collapsed" id="desc-52">A celebrated tradition where guests are invited to pour their own Sambucca or Amaretto at the end of their meal to feel like special company in the Filomena home.</div>
                       
                       
                   </div>
@@ -2707,7 +2745,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-52">A Washington tradition since 1983, offering a menu of Antipasti, salads, pasta, meats, and sandwiches.</div>
+                      <div class="event-description-text collapsed" id="desc-53">A Washington tradition since 1983, offering a menu of Antipasti, salads, pasta, meats, and sandwiches.</div>
                       
                       
                   </div>
@@ -2738,7 +2776,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-53">Watch international soccer matches on any of the 30 available screens with a lively atmosphere.</div>
+                      <div class="event-description-text collapsed" id="desc-54">Watch international soccer matches on any of the 30 available screens with a lively atmosphere.</div>
                       
                       
                   </div>
@@ -2771,7 +2809,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-54">A festive four-course Chef&#39;s Menu celebrating Italian-American tradition with antipasti, Maryland clam linguine, baked Maryland lobster, and panettone.</div>
+                      <div class="event-description-text collapsed" id="desc-55">A festive four-course Chef&#39;s Menu celebrating Italian-American tradition with antipasti, Maryland clam linguine, baked Maryland lobster, and panettone.</div>
                       
                       
                   </div>
@@ -2804,7 +2842,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-55">A seasonal weekday lunch menu focused on fresh shellfish and local ingredients.</div>
+                      <div class="event-description-text collapsed" id="desc-56">A seasonal weekday lunch menu focused on fresh shellfish and local ingredients.</div>
                       
                       
                   </div>
@@ -2835,7 +2873,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-56">Experience a permanent outdoor installation by artist Liz Manicatide that uses color-changing LED lights to provide a captivating light show after dark.</div>
+                      <div class="event-description-text collapsed" id="desc-57">Experience a permanent outdoor installation by artist Liz Manicatide that uses color-changing LED lights to provide a captivating light show after dark.</div>
                       
                       
                   </div>
@@ -2866,7 +2904,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-57">Support local non-profit organizations. 20% of all purchases (dine-in, take-out, or general store) are donated to the featured organization when you notify your server or clerk.</div>
+                      <div class="event-description-text collapsed" id="desc-58">Support local non-profit organizations. 20% of all purchases (dine-in, take-out, or general store) are donated to the featured organization when you notify your server or clerk.</div>
                       
                       
                   </div>
@@ -2897,7 +2935,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-58">In partnership with the Hyattsville Community Arts Alliance (HCAA), Franklins showcases the work of local artists throughout the restaurant with exhibits rotating every 3 months.</div>
+                      <div class="event-description-text collapsed" id="desc-59">In partnership with the Hyattsville Community Arts Alliance (HCAA), Franklins showcases the work of local artists throughout the restaurant with exhibits rotating every 3 months.</div>
                       
                       
                   </div>
@@ -2928,7 +2966,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-59">Book your Franklins Fundraiser for a Monday or Tuesday and have your non-profit organization’s details ready. Supporters can dine in, take out, or shop at our general store from 11am to 9pm—every purchase counts toward your 20% donation.</div>
+                      <div class="event-description-text collapsed" id="desc-60">Book your Franklins Fundraiser for a Monday or Tuesday and have your non-profit organization’s details ready. Supporters can dine in, take out, or shop at our general store from 11am to 9pm—every purchase counts toward your 20% donation.</div>
                       
                       
                   </div>
@@ -2961,7 +2999,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-60">$10 Martinis available all night long.</div>
+                      <div class="event-description-text collapsed" id="desc-61">$10 Martinis available all night long.</div>
                       
                       
                   </div>
@@ -2994,7 +3032,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-61">An annual holiday tradition throughout December. Each week features new selections of bubbly from around the world. Complete a punch card to join the Sparkling December Hall of Fame.</div>
+                      <div class="event-description-text collapsed" id="desc-62">An annual holiday tradition throughout December. Each week features new selections of bubbly from around the world. Complete a punch card to join the Sparkling December Hall of Fame.</div>
                       
                       
                   </div>
@@ -3027,7 +3065,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-62">Gatsby Feast featuring Unlimited Wings, Ribs, Fried Chicken &amp; More. Includes Bottomless Drinks (Mon-Fri after 5pm, Sat-Sun All Day).</div>
+                      <div class="event-description-text collapsed" id="desc-63">Gatsby Feast featuring Unlimited Wings, Ribs, Fried Chicken &amp; More. Includes Bottomless Drinks (Mon-Fri after 5pm, Sat-Sun All Day).</div>
                       
                       
                   </div>
@@ -3060,7 +3098,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-63">Unlimited Wings, Ribs, Fried Chicken &amp; More. Includes Bottomless Drinks after 5pm Mon-Fri, and All Day Sat-Sun.</div>
+                      <div class="event-description-text collapsed" id="desc-64">Unlimited Wings, Ribs, Fried Chicken &amp; More. Includes Bottomless Drinks after 5pm Mon-Fri, and All Day Sat-Sun.</div>
                       
                       
                   </div>
@@ -3093,7 +3131,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-64">Every day, a bottle is open at the counter for customers to taste and discover new favorites.</div>
+                      <div class="event-description-text collapsed" id="desc-65">Every day, a bottle is open at the counter for customers to taste and discover new favorites.</div>
                       
                       
                   </div>
@@ -3126,7 +3164,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-65">Every day, Grand Cata has something open to taste at the counter. A great reason to stop by, taste something new, and discover your new favorites.</div>
+                      <div class="event-description-text collapsed" id="desc-66">Every day, Grand Cata has something open to taste at the counter. A great reason to stop by, taste something new, and discover your new favorites.</div>
                       
                       
                   </div>
@@ -3159,7 +3197,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-66">Enjoy half-priced mussels every Monday.</div>
+                      <div class="event-description-text collapsed" id="desc-67">Enjoy half-priced mussels every Monday.</div>
                       
                       
                   </div>
@@ -3192,7 +3230,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-67">Monday night karaoke starting at 9:30pm.</div>
+                      <div class="event-description-text collapsed" id="desc-68">Monday night karaoke starting at 9:30pm.</div>
                       
                       
                   </div>
@@ -3225,7 +3263,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-68">Home of the &#39;Lambeau on the Hill&#39; Green Bay Packers fan club. Enjoy game day specials and gather with fellow fans during games.</div>
+                      <div class="event-description-text collapsed" id="desc-69">Home of the &#39;Lambeau on the Hill&#39; Green Bay Packers fan club. Enjoy game day specials and gather with fellow fans during games.</div>
                       
                       
                   </div>
@@ -3258,7 +3296,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-69">A retro beach holiday pop-up bar at Hank’s Dupont Circle (2nd Floor) with over-the-top decor and tropical island-inspired drinks. $10 entry fee includes a secret Santa gift and a donation to Food and Friends. 21+ only.</div>
+                      <div class="event-description-text collapsed" id="desc-70">A retro beach holiday pop-up bar at Hank’s Dupont Circle (2nd Floor) with over-the-top decor and tropical island-inspired drinks. $10 entry fee includes a secret Santa gift and a donation to Food and Friends. 21+ only.</div>
                       
                       
                   </div>
@@ -3291,7 +3329,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-70">Family-friendly matinee seatings of the Snowglow visual experience.</div>
+                      <div class="event-description-text collapsed" id="desc-71">Family-friendly matinee seatings of the Snowglow visual experience.</div>
                       
                       
                   </div>
@@ -3324,7 +3362,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-71">An immersive 90-minute visual journey of animated holiday scenes projected 360 degrees inside a heated dome, featuring a menu of festive small plates and seasonal cocktails.</div>
+                      <div class="event-description-text collapsed" id="desc-72">An immersive 90-minute visual journey of animated holiday scenes projected 360 degrees inside a heated dome, featuring a menu of festive small plates and seasonal cocktails.</div>
                       
                       
                   </div>
@@ -3357,7 +3395,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-72">A heated and tented lounge open for walk-ins (no tickets required) offering the same Snowglow food and drink menu including spiced eggnog and Alpine fondue.</div>
+                      <div class="event-description-text collapsed" id="desc-73">A heated and tented lounge open for walk-ins (no tickets required) offering the same Snowglow food and drink menu including spiced eggnog and Alpine fondue.</div>
                       
                       
                   </div>
@@ -3390,7 +3428,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-73">Drop in at the Lobby Bar or VUE for a special menu featuring custom cocktails inspired by current productions onstage at the nearby National Theatre.</div>
+                      <div class="event-description-text collapsed" id="desc-74">Drop in at the Lobby Bar or VUE for a special menu featuring custom cocktails inspired by current productions onstage at the nearby National Theatre.</div>
                       
                       
                   </div>
@@ -3423,7 +3461,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-74">A shared culinary celebration inspired by Mediterranean Agriturismi and tavernas, highlighting seasonal Mid-Atlantic products.</div>
+                      <div class="event-description-text collapsed" id="desc-75">A shared culinary celebration inspired by Mediterranean Agriturismi and tavernas, highlighting seasonal Mid-Atlantic products.</div>
                       
                       
                   </div>
@@ -3456,7 +3494,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-75">Mediterranean-inspired cuisine featuring the finest products and seasonal ingredients of the Mid-Atlantic served nightly.</div>
+                      <div class="event-description-text collapsed" id="desc-76">Mediterranean-inspired cuisine featuring the finest products and seasonal ingredients of the Mid-Atlantic served nightly.</div>
                       
                       
                   </div>
@@ -3489,7 +3527,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-76">Dedicated sports viewing on Thursdays, Sundays, and Mondays during the football season.</div>
+                      <div class="event-description-text collapsed" id="desc-77">Dedicated sports viewing on Thursdays, Sundays, and Mondays during the football season.</div>
                       
                       
                   </div>
@@ -3522,7 +3560,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-77">Ivy and Coney is your home for watching sports. If it’s sports, they probably show it (no PPV events available). During football season, gamedays are prioritized on Thursdays, Sundays, and Mondays.</div>
+                      <div class="event-description-text collapsed" id="desc-78">Ivy and Coney is your home for watching sports. If it’s sports, they probably show it (no PPV events available). During football season, gamedays are prioritized on Thursdays, Sundays, and Mondays.</div>
                       
                       
                   </div>
@@ -3555,7 +3593,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-78">Ivy and Coney is your home for sports. If it’s sports, they probably show it (excluding PPV events).</div>
+                      <div class="event-description-text collapsed" id="desc-79">Ivy and Coney is your home for sports. If it’s sports, they probably show it (excluding PPV events).</div>
                       
                       
                   </div>
@@ -3588,7 +3626,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-79">Every time a new paella is ready from the open-fire wood grill, the team rings the famous Paella Cowbell. Wood-fired paellas change daily and are available by the plate.</div>
+                      <div class="event-description-text collapsed" id="desc-80">Every time a new paella is ready from the open-fire wood grill, the team rings the famous Paella Cowbell. Wood-fired paellas change daily and are available by the plate.</div>
                       
                       
                   </div>
@@ -3621,7 +3659,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-80">Authentic Midwest beef franks served all day, every day at the &#39;High Life and Hot Dog HQ&#39;.</div>
+                      <div class="event-description-text collapsed" id="desc-81">Authentic Midwest beef franks served all day, every day at the &#39;High Life and Hot Dog HQ&#39;.</div>
                       
                       
                   </div>
@@ -3654,7 +3692,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-81">The official East Coast HQ for the Cleveland Cavaliers, Browns, Guardians, Columbus Crew, Blue Jackets, and a supporter bar for the Washington Commanders and Capitals.</div>
+                      <div class="event-description-text collapsed" id="desc-82">The official East Coast HQ for the Cleveland Cavaliers, Browns, Guardians, Columbus Crew, Blue Jackets, and a supporter bar for the Washington Commanders and Capitals.</div>
                       
                       
                   </div>
@@ -3687,7 +3725,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-82">Official game watch location for the Cleveland Cavaliers, Cleveland Browns, Cleveland Guardians, Columbus Crew, Columbus Blue Jackets, Washington Commanders, and Washington Capitals.</div>
+                      <div class="event-description-text collapsed" id="desc-83">Official game watch location for the Cleveland Cavaliers, Cleveland Browns, Cleveland Guardians, Columbus Crew, Columbus Blue Jackets, Washington Commanders, and Washington Capitals.</div>
                       
                       
                   </div>
@@ -3720,7 +3758,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-83">Musical Mondays at JRs.</div>
+                      <div class="event-description-text collapsed" id="desc-84">Musical Mondays at JRs.</div>
                       
                       
                   </div>
@@ -3753,7 +3791,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-84">A long-standing DC tradition featuring musical theater clips and sing-alongs.</div>
+                      <div class="event-description-text collapsed" id="desc-85">A long-standing DC tradition featuring musical theater clips and sing-alongs.</div>
                       
                       
                   </div>
@@ -3786,7 +3824,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-85">The official gathering spot for Patriots fans in Washington DC to watch games throughout the NFL season.</div>
+                      <div class="event-description-text collapsed" id="desc-86">The official gathering spot for Patriots fans in Washington DC to watch games throughout the NFL season.</div>
                       
                       
                   </div>
@@ -3819,7 +3857,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-86">Kelly&#39;s Irish Times serves as a host venue for United Social Sports leagues and post-game social gatherings.</div>
+                      <div class="event-description-text collapsed" id="desc-87">Kelly&#39;s Irish Times serves as a host venue for United Social Sports leagues and post-game social gatherings.</div>
                       
                       
                   </div>
@@ -3852,7 +3890,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-87">Hosted by The Regular App, this &#39;least skill-based sport&#39; allows guests to win prizes like free drinks just for listening for letters and numbers. Buy a drink, grab a chair, and play!</div>
+                      <div class="event-description-text collapsed" id="desc-88">Hosted by The Regular App, this &#39;least skill-based sport&#39; allows guests to win prizes like free drinks just for listening for letters and numbers. Buy a drink, grab a chair, and play!</div>
                       
                       
                   </div>
@@ -3885,7 +3923,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-88">Participate in the world’s least skill-based sport! Buy a drink, sit in a chair, and listen for numbers to win prizes like free drinks. Hosted by The Regular App.</div>
+                      <div class="event-description-text collapsed" id="desc-89">Participate in the world’s least skill-based sport! Buy a drink, sit in a chair, and listen for numbers to win prizes like free drinks. Hosted by The Regular App.</div>
                       
                       
                   </div>
@@ -3918,7 +3956,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-89">Late night kitchen service featuring a selection of flatbreads, burgers, fish and chips, and traditional Irish curry.</div>
+                      <div class="event-description-text collapsed" id="desc-90">Late night kitchen service featuring a selection of flatbreads, burgers, fish and chips, and traditional Irish curry.</div>
                       
                       
                   </div>
@@ -3951,7 +3989,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-90">Partnered with DC&#39;s Pearl Fine Teas, enjoy bespoke brewed teas paired with a selection of light bites from the kitchen. Available for dine-in only.</div>
+                      <div class="event-description-text collapsed" id="desc-91">Partnered with DC&#39;s Pearl Fine Teas, enjoy bespoke brewed teas paired with a selection of light bites from the kitchen. Available for dine-in only.</div>
                       
                       
                   </div>
@@ -3984,7 +4022,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-91">Serving New Haven Style apizza in four flavors, including fall specials like Pumpkin &amp; Gorgonzola and Mushroom Gaucho. Available for dine-in and takeout.</div>
+                      <div class="event-description-text collapsed" id="desc-92">Serving New Haven Style apizza in four flavors, including fall specials like Pumpkin &amp; Gorgonzola and Mushroom Gaucho. Available for dine-in and takeout.</div>
                       
                       
                   </div>
@@ -4017,7 +4055,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-92">Upscale Mediterranean-coastal dinner experience in the Penthouse lounge.</div>
+                      <div class="event-description-text collapsed" id="desc-93">Upscale Mediterranean-coastal dinner experience in the Penthouse lounge.</div>
                       
                       
                   </div>
@@ -4050,7 +4088,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-93">Enjoy waterfront views in a unique, luxurious Igloo setting at the Penthouse.</div>
+                      <div class="event-description-text collapsed" id="desc-94">Enjoy waterfront views in a unique, luxurious Igloo setting at the Penthouse.</div>
                       
                       
                   </div>
@@ -4083,7 +4121,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-94">Kingbird transforms into a festive destination filled with culinary indulgence, sparkling ambiance, and holiday celebrations.</div>
+                      <div class="event-description-text collapsed" id="desc-95">Kingbird transforms into a festive destination filled with culinary indulgence, sparkling ambiance, and holiday celebrations.</div>
                       
                       
                   </div>
@@ -4116,7 +4154,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-95">Winter igloos are back for the holiday season! Enjoy refined elegance with a modern twist in a private outdoor igloo.</div>
+                      <div class="event-description-text collapsed" id="desc-96">Winter igloos are back for the holiday season! Enjoy refined elegance with a modern twist in a private outdoor igloo.</div>
                       
                       
                   </div>
@@ -4149,7 +4187,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-96">Monday sub-league pinball competition. Dues are $10 for the season. Players must play at least 4 weeks to qualify for WPPRs.</div>
+                      <div class="event-description-text collapsed" id="desc-97">Monday sub-league pinball competition. Dues are $10 for the season. Players must play at least 4 weeks to qualify for WPPRs.</div>
                       
                       
                   </div>
@@ -4182,7 +4220,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-97">DC Pinball League sub-league. $10 entry fee. Play 4 weeks to qualify for WPPRs.</div>
+                      <div class="event-description-text collapsed" id="desc-98">DC Pinball League sub-league. $10 entry fee. Play 4 weeks to qualify for WPPRs.</div>
                       
                       
                   </div>
@@ -4215,7 +4253,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-98">Weekly food special: All pitas are $11.00.</div>
+                      <div class="event-description-text collapsed" id="desc-99">Weekly food special: All pitas are $11.00.</div>
                       
                       
                   </div>
@@ -4248,7 +4286,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-99">Unlimited bowling all winter long.</div>
+                      <div class="event-description-text collapsed" id="desc-100">Unlimited bowling all winter long.</div>
                       
                       
                   </div>
@@ -4281,7 +4319,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-100">Enjoy free pool on the 2nd floor every day.</div>
+                      <div class="event-description-text collapsed" id="desc-101">Enjoy free pool on the 2nd floor every day.</div>
                       
                       
                   </div>
@@ -4314,7 +4352,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-101">Boozin, Bluesin &amp; Soul Foodin with live performances every night.</div>
+                      <div class="event-description-text collapsed" id="desc-102">Boozin, Bluesin &amp; Soul Foodin with live performances every night.</div>
                       
                       
                   </div>
@@ -4347,7 +4385,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-102">Live music 7 nights a week featuring blues, grooves, and soul food.</div>
+                      <div class="event-description-text collapsed" id="desc-103">Live music 7 nights a week featuring blues, grooves, and soul food.</div>
                       
                       
                   </div>
@@ -4380,7 +4418,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-103">Enjoy steak and eggs, seafood, signature dishes, soups, salads and other delicious surprises at this historic Georgetown landmark.</div>
+                      <div class="event-description-text collapsed" id="desc-104">Enjoy steak and eggs, seafood, signature dishes, soups, salads and other delicious surprises at this historic Georgetown landmark.</div>
                       
                       
                   </div>
@@ -4413,7 +4451,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-104">Watch MLB Baseball, NFL, NHL, and UEFA Soccer on one of our big screen TVs.</div>
+                      <div class="event-description-text collapsed" id="desc-105">Watch MLB Baseball, NFL, NHL, and UEFA Soccer on one of our big screen TVs.</div>
                       
                       
                   </div>
@@ -4446,7 +4484,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-105">Marx Cafe hosts nightly music events featuring superb live local talent performances and resident DJs.</div>
+                      <div class="event-description-text collapsed" id="desc-106">Marx Cafe hosts nightly music events featuring superb live local talent performances and resident DJs.</div>
                       
                       
                   </div>
@@ -4479,7 +4517,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-106">Watch MLB Baseball, NFL, NHL and UEFA Soccer on one of the big screen TVs.</div>
+                      <div class="event-description-text collapsed" id="desc-107">Watch MLB Baseball, NFL, NHL and UEFA Soccer on one of the big screen TVs.</div>
                       
                       
                   </div>
@@ -4512,7 +4550,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-107">Marx Cafe features resident performers like AC Montgomery for live music sessions every week.</div>
+                      <div class="event-description-text collapsed" id="desc-108">Marx Cafe features resident performers like AC Montgomery for live music sessions every week.</div>
                       
                       
                   </div>
@@ -4545,7 +4583,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-108">A featured monthly rotating wine list focusing on wines from places UNESCO deemed uniquely worth protecting.</div>
+                      <div class="event-description-text collapsed" id="desc-109">A featured monthly rotating wine list focusing on wines from places UNESCO deemed uniquely worth protecting.</div>
                       
                       
                   </div>
@@ -4578,7 +4616,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-109">Sommelier-led private tastings for groups of 4 to 40, featuring a selection of six wines paired with light fare.</div>
+                      <div class="event-description-text collapsed" id="desc-110">Sommelier-led private tastings for groups of 4 to 40, featuring a selection of six wines paired with light fare.</div>
                       
                       
                   </div>
@@ -4611,7 +4649,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-110">While the full menu of savory snacks and mains is available until 10 PM, a specialized late night menu is offered from 10 PM until the bar closes.</div>
+                      <div class="event-description-text collapsed" id="desc-111">While the full menu of savory snacks and mains is available until 10 PM, a specialized late night menu is offered from 10 PM until the bar closes.</div>
                       
                       
                   </div>
@@ -4644,7 +4682,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-111">A seasonal outdoor transformation on the patio featuring Argentine, Peruvian, Chilean, and Brazilian cuisines, warm cocktails, and an open fire surrounded by winter pines.</div>
+                      <div class="event-description-text collapsed" id="desc-112">A seasonal outdoor transformation on the patio featuring Argentine, Peruvian, Chilean, and Brazilian cuisines, warm cocktails, and an open fire surrounded by winter pines.</div>
                       
                       
                   </div>
@@ -4677,7 +4715,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-112">Reservations for El Chalet seating open every second Monday of the month, allowing bookings up to 14 days in advance.</div>
+                      <div class="event-description-text collapsed" id="desc-113">Reservations for El Chalet seating open every second Monday of the month, allowing bookings up to 14 days in advance.</div>
                       
                       
                   </div>
@@ -4710,7 +4748,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-113">A seasonal, heated outdoor pop-up experience inspired by the winter charm of Patagonia. Features Argentine, Peruvian, Chilean, and Brazilian cuisines and warm cocktails beside an open fire.</div>
+                      <div class="event-description-text collapsed" id="desc-114">A seasonal, heated outdoor pop-up experience inspired by the winter charm of Patagonia. Features Argentine, Peruvian, Chilean, and Brazilian cuisines and warm cocktails beside an open fire.</div>
                       
                       
                   </div>
@@ -4743,7 +4781,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-114">Specially priced weekday express lunch menu.</div>
+                      <div class="event-description-text collapsed" id="desc-115">Specially priced weekday express lunch menu.</div>
                       
                       
                   </div>
@@ -4776,7 +4814,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-115">Special offers for hospitality workers (50% off food in Virginia Beach).</div>
+                      <div class="event-description-text collapsed" id="desc-116">Special offers for hospitality workers (50% off food in Virginia Beach).</div>
                       
                       
                   </div>
@@ -4809,7 +4847,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-116">Half-off Mezcal Margaritas, Palomas, and more. Available all day at DC locations.</div>
+                      <div class="event-description-text collapsed" id="desc-117">Half-off Mezcal Margaritas, Palomas, and more. Available all day at DC locations.</div>
                       
                       
                   </div>
@@ -4842,7 +4880,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-117">$20 buckets of Bud Light, Michelob Ultra, Bell’s Two Hearted, or Montucky Cold Snacks (5 beers per bucket). $20 pitchers of Miller Lite.</div>
+                      <div class="event-description-text collapsed" id="desc-118">$20 buckets of Bud Light, Michelob Ultra, Bell’s Two Hearted, or Montucky Cold Snacks (5 beers per bucket). $20 pitchers of Miller Lite.</div>
                       
                       
                   </div>
@@ -4875,7 +4913,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-118">Home to the Michigan Wolverines and Detroit Lions. Showing all NFL games (NFL Sunday Ticket) and NCAA games. Drink specials include $20 buckets of domestic/craft beer and $20 pitchers of Miller Lite.</div>
+                      <div class="event-description-text collapsed" id="desc-119">Home to the Michigan Wolverines and Detroit Lions. Showing all NFL games (NFL Sunday Ticket) and NCAA games. Drink specials include $20 buckets of domestic/craft beer and $20 pitchers of Miller Lite.</div>
                       
                       
                   </div>
@@ -4908,7 +4946,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-119">Catch the game at DC&#39;s largest bar with a dedicated football menu.</div>
+                      <div class="event-description-text collapsed" id="desc-120">Catch the game at DC&#39;s largest bar with a dedicated football menu.</div>
                       
                       
                   </div>
@@ -4941,7 +4979,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-120">A nightly adults-only holiday experience featuring themed cocktail journeys (The Naughty List &amp; The Nice List) and elevated nostalgic bites like Pigs in a Blanket and Milk &amp; Cookies.</div>
+                      <div class="event-description-text collapsed" id="desc-121">A nightly adults-only holiday experience featuring themed cocktail journeys (The Naughty List &amp; The Nice List) and elevated nostalgic bites like Pigs in a Blanket and Milk &amp; Cookies.</div>
                       
                       
                   </div>
@@ -4974,7 +5012,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-121">A weekday afternoon and evening session of the family-friendly North Pole experience for all ages.</div>
+                      <div class="event-description-text collapsed" id="desc-122">A weekday afternoon and evening session of the family-friendly North Pole experience for all ages.</div>
                       
                       
                   </div>
@@ -5007,7 +5045,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-122">An adults-only holiday pop-up featuring two themed cocktail journeys: &#39;The Naughty List&#39; (bold/spicy) and &#39;The Nice List&#39; (frosty/elegant), plus nostalgic bites. Tickets are $15.</div>
+                      <div class="event-description-text collapsed" id="desc-123">An adults-only holiday pop-up featuring two themed cocktail journeys: &#39;The Naughty List&#39; (bold/spicy) and &#39;The Nice List&#39; (frosty/elegant), plus nostalgic bites. Tickets are $15.</div>
                       
                       
                   </div>
@@ -5040,7 +5078,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-123">Watch your favorite NFL teams, including the Giants, with Direct TV.</div>
+                      <div class="event-description-text collapsed" id="desc-124">Watch your favorite NFL teams, including the Giants, with Direct TV.</div>
                       
                       
                   </div>
@@ -5073,7 +5111,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-124">Made-to-order sandwiches, salads, and soups including the Spanish BLT, Broccolini Melt, and Nido Italian.</div>
+                      <div class="event-description-text collapsed" id="desc-125">Made-to-order sandwiches, salads, and soups including the Spanish BLT, Broccolini Melt, and Nido Italian.</div>
                       
                       
                   </div>
@@ -5106,7 +5144,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-125">Made-to-order lunch featuring items like the Spanish BLT, Broccolini Melt, and Nido Italian sandwich.</div>
+                      <div class="event-description-text collapsed" id="desc-126">Made-to-order lunch featuring items like the Spanish BLT, Broccolini Melt, and Nido Italian sandwich.</div>
                       
                       
                   </div>
@@ -5139,7 +5177,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-126">Monthly subscription box featuring two natural wines or ciders and two conservas curated by Sommelier Thea Merl.</div>
+                      <div class="event-description-text collapsed" id="desc-127">Monthly subscription box featuring two natural wines or ciders and two conservas curated by Sommelier Thea Merl.</div>
                       
                       
                   </div>
@@ -5172,7 +5210,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-127">The second floor lounge features DJs playing music videos as the night gets busier.</div>
+                      <div class="event-description-text collapsed" id="desc-128">The second floor lounge features DJs playing music videos as the night gets busier.</div>
                       
                       
                   </div>
@@ -5205,7 +5243,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-128">The second floor lounge gets busy with DJs playing music videos for the crowd.</div>
+                      <div class="event-description-text collapsed" id="desc-129">The second floor lounge gets busy with DJs playing music videos for the crowd.</div>
                       
                       
                   </div>
@@ -5238,7 +5276,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-129">Indulge in classic and rotating special pastas for just $15 in the dining room.</div>
+                      <div class="event-description-text collapsed" id="desc-130">Indulge in classic and rotating special pastas for just $15 in the dining room.</div>
                       
                       
                   </div>
@@ -5271,7 +5309,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-130">Rotating daily specials available all day long at the bar.</div>
+                      <div class="event-description-text collapsed" id="desc-131">Rotating daily specials available all day long at the bar.</div>
                       
                       
                   </div>
@@ -5304,7 +5342,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-131">A seasonal celebration featuring Oyamel&#39;s signature margaritas, including the classic Oyamel Margarita and the Pineapple Habanero Mezcalita, both topped with their unique &#39;Salt Air&#39; foam.</div>
+                      <div class="event-description-text collapsed" id="desc-132">A seasonal celebration featuring Oyamel&#39;s signature margaritas, including the classic Oyamel Margarita and the Pineapple Habanero Mezcalita, both topped with their unique &#39;Salt Air&#39; foam.</div>
                       
                       
                   </div>
@@ -5337,7 +5375,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-132">Community programming featuring academic lectures in Little Penn.</div>
+                      <div class="event-description-text collapsed" id="desc-133">Community programming featuring academic lectures in Little Penn.</div>
                       
                       
                   </div>
@@ -5370,7 +5408,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-133">Introducing Pisco Kendall&#39;s $45 Monday-Sunday 3-course prix-fixe dinner menu.</div>
+                      <div class="event-description-text collapsed" id="desc-134">Introducing Pisco Kendall&#39;s $45 Monday-Sunday 3-course prix-fixe dinner menu.</div>
                       
                       
                   </div>
@@ -5403,7 +5441,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-134">Dive into fresh and vibrant expertly crafted sushi rolls like Crocante de Camarón and Lomo Saltado.</div>
+                      <div class="event-description-text collapsed" id="desc-135">Dive into fresh and vibrant expertly crafted sushi rolls like Crocante de Camarón and Lomo Saltado.</div>
                       
                       
                   </div>
@@ -5436,7 +5474,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-135">Introducing a $45 3-course prix-fixe dinner menu available daily.</div>
+                      <div class="event-description-text collapsed" id="desc-136">Introducing a $45 3-course prix-fixe dinner menu available daily.</div>
                       
                       
                   </div>
@@ -5469,7 +5507,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-136">Experience full-nude entertainment with over 35+ hand-picked dancers from the DC Metro area performing daily on the main stage and in private suites.</div>
+                      <div class="event-description-text collapsed" id="desc-137">Experience full-nude entertainment with over 35+ hand-picked dancers from the DC Metro area performing daily on the main stage and in private suites.</div>
                       
                       
                   </div>
@@ -5502,7 +5540,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-137">Experience full-nude entertainment from the most beautiful and talented dancers in the DC Metro area, featuring over 35 entertainers daily on the main stage and in private suites.</div>
+                      <div class="event-description-text collapsed" id="desc-138">Experience full-nude entertainment from the most beautiful and talented dancers in the DC Metro area, featuring over 35 entertainers daily on the main stage and in private suites.</div>
                       
                       
                   </div>
@@ -5535,7 +5573,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-138">Enjoy world-class adult entertainment at Platinum DC Club with no cover charge.</div>
+                      <div class="event-description-text collapsed" id="desc-139">Enjoy world-class adult entertainment at Platinum DC Club with no cover charge.</div>
                       
                       
                   </div>
@@ -5568,7 +5606,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-139">Pay homage to the golden age of video games with 70s-80s music, pool tables, foosball, and pinball. Must be 21+ to play.</div>
+                      <div class="event-description-text collapsed" id="desc-140">Pay homage to the golden age of video games with 70s-80s music, pool tables, foosball, and pinball. Must be 21+ to play.</div>
                       
                       
                   </div>
@@ -5601,7 +5639,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-140">A gamer&#39;s paradise featuring pool tables, foosball, pinball, and a lineup of old-school arcade games paying homage to the golden age of video games.</div>
+                      <div class="event-description-text collapsed" id="desc-141">A gamer&#39;s paradise featuring pool tables, foosball, pinball, and a lineup of old-school arcade games paying homage to the golden age of video games.</div>
                       
                       
                   </div>
@@ -5634,7 +5672,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-141">A knowledgeable Sommelier guides each wine tasting, featuring a selection of six wines and light snacks. Following each tasting, all items can be purchased to-go at half price. Minimum of four participants required.</div>
+                      <div class="event-description-text collapsed" id="desc-142">A knowledgeable Sommelier guides each wine tasting, featuring a selection of six wines and light snacks. Following each tasting, all items can be purchased to-go at half price. Minimum of four participants required.</div>
                       
                       
                   </div>
@@ -5667,7 +5705,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-142">A monthly membership featuring a curated selection of fizzy cans or bottles selected by Owner &amp; Sommelier Brent Kroll, including tasting notes and pairing recommendations.</div>
+                      <div class="event-description-text collapsed" id="desc-143">A monthly membership featuring a curated selection of fizzy cans or bottles selected by Owner &amp; Sommelier Brent Kroll, including tasting notes and pairing recommendations.</div>
                       
                       
                   </div>
@@ -5698,7 +5736,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-143">A weekly fun run every Monday evening followed by drinks.</div>
+                      <div class="event-description-text collapsed" id="desc-144">A weekly fun run every Monday evening followed by drinks.</div>
                       
                       
                   </div>
@@ -5731,7 +5769,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-144">Authentic Bavarian dishes and craft cocktails available nightly.</div>
+                      <div class="event-description-text collapsed" id="desc-145">Authentic Bavarian dishes and craft cocktails available nightly.</div>
                       
                       
                   </div>
@@ -5764,7 +5802,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-145">Quill offers classic and signature cocktails, wine, and an elevated bar menu each night.</div>
+                      <div class="event-description-text collapsed" id="desc-146">Quill offers classic and signature cocktails, wine, and an elevated bar menu each night.</div>
                       
                       
                   </div>
@@ -5797,7 +5835,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-146">Full dinner service and signature cocktails offered nightly while The Greenhouse dinner service is seasonal.</div>
+                      <div class="event-description-text collapsed" id="desc-147">Full dinner service and signature cocktails offered nightly while The Greenhouse dinner service is seasonal.</div>
                       
                       
                   </div>
@@ -5830,7 +5868,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-147">Seasonal lunch menu served in The Greenhouse.</div>
+                      <div class="event-description-text collapsed" id="desc-148">Seasonal lunch menu served in The Greenhouse.</div>
                       
                       
                   </div>
@@ -5863,7 +5901,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-148">Enjoy breakfast at The Greenhouse.</div>
+                      <div class="event-description-text collapsed" id="desc-149">Enjoy breakfast at The Greenhouse.</div>
                       
                       
                   </div>
@@ -5896,7 +5934,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-149">Assemble your team and compete for prizes and bragging rights with the DMV&#39;s largest pub trivia business.</div>
+                      <div class="event-description-text collapsed" id="desc-150">Assemble your team and compete for prizes and bragging rights with the DMV&#39;s largest pub trivia business.</div>
                       
                       
                   </div>
@@ -5929,7 +5967,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-150">A seasonal wine program curated by local wine icon Meri Lugo, co-owner of Domestique Wine. The list is devoted to natural wines from the Loire Valley, featuring a wide selection of pét-nats, whites, oranges, and reds available all season long.</div>
+                      <div class="event-description-text collapsed" id="desc-151">A seasonal wine program curated by local wine icon Meri Lugo, co-owner of Domestique Wine. The list is devoted to natural wines from the Loire Valley, featuring a wide selection of pét-nats, whites, oranges, and reds available all season long.</div>
                       
                       
                   </div>
@@ -5962,7 +6000,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-151">Dinner is served Monday through Sunday with reservations recommended. Dining Room, Bar Seating, or Bar High Top seating available.</div>
+                      <div class="event-description-text collapsed" id="desc-152">Dinner is served Monday through Sunday with reservations recommended. Dining Room, Bar Seating, or Bar High Top seating available.</div>
                       
                       
                   </div>
@@ -5995,7 +6033,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-152">Tours are available at our Brookland production brewery. Contact bri@rightproperbrewing.com for more information.</div>
+                      <div class="event-description-text collapsed" id="desc-153">Tours are available at our Brookland production brewery. Contact bri@rightproperbrewing.com for more information.</div>
                       
                       
                   </div>
@@ -6028,7 +6066,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-153">Tours of the production brewery and tasting room are available by appointment.</div>
+                      <div class="event-description-text collapsed" id="desc-154">Tours of the production brewery and tasting room are available by appointment.</div>
                       
                       
                   </div>
@@ -6061,7 +6099,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-154">The premiere destination for all Washington Capitals games with a laid-back casual vibe and plenty of games.</div>
+                      <div class="event-description-text collapsed" id="desc-155">The premiere destination for all Washington Capitals games with a laid-back casual vibe and plenty of games.</div>
                       
                       
                   </div>
@@ -6094,7 +6132,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-155">The go-to spot for pre and post-concert gatherings in the city.</div>
+                      <div class="event-description-text collapsed" id="desc-156">The go-to spot for pre and post-concert gatherings in the city.</div>
                       
                       
                   </div>
@@ -6127,7 +6165,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-156">Rocket Bar is the premiere destination for all Washington Capitals games, Wizards games, and concerts occurring at the nearby arena.</div>
+                      <div class="event-description-text collapsed" id="desc-157">Rocket Bar is the premiere destination for all Washington Capitals games, Wizards games, and concerts occurring at the nearby arena.</div>
                       
                       
                   </div>
@@ -6160,7 +6198,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-157">Daily performances by local choirs and musical ensembles in the hotel lobby, running from December 1 through December 23, 2025.</div>
+                      <div class="event-description-text collapsed" id="desc-158">Daily performances by local choirs and musical ensembles in the hotel lobby, running from December 1 through December 23, 2025.</div>
                       
                       
                   </div>
@@ -6193,7 +6231,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-158">Traditional Afternoon Tea services served with harp music, canapés, and pastries.</div>
+                      <div class="event-description-text collapsed" id="desc-159">Traditional Afternoon Tea services served with harp music, canapés, and pastries.</div>
                       
                       
                   </div>
@@ -6226,7 +6264,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-159">Nightly Caroling Program featuring performances by local choirs and musical ensembles.</div>
+                      <div class="event-description-text collapsed" id="desc-160">Nightly Caroling Program featuring performances by local choirs and musical ensembles.</div>
                       
                       
                   </div>
@@ -6259,7 +6297,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-160">Sign up for the restaurant newsletter to be entered into a monthly drawing for a bottle of Veuve Clicquot.</div>
+                      <div class="event-description-text collapsed" id="desc-161">Sign up for the restaurant newsletter to be entered into a monthly drawing for a bottle of Veuve Clicquot.</div>
                       
                       
                   </div>
@@ -6292,7 +6330,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-161"></div>
+                      <div class="event-description-text collapsed" id="desc-162"></div>
                       
                       
                   </div>
@@ -6325,7 +6363,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-162">Budget-friendly lunch options featuring updated American classics. Available for dine-in only at participating locations.</div>
+                      <div class="event-description-text collapsed" id="desc-163">Budget-friendly lunch options featuring updated American classics. Available for dine-in only at participating locations.</div>
                       
                       
                   </div>
@@ -6358,7 +6396,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-163">Bond over good food and different classic games every week. Kids Club Members receive a Complimentary Kids Shake with the purchase of a kids entrée. Note: Returning in 2026.</div>
+                      <div class="event-description-text collapsed" id="desc-164">Bond over good food and different classic games every week. Kids Club Members receive a Complimentary Kids Shake with the purchase of a kids entrée. Note: Returning in 2026.</div>
                       
                       
                   </div>
@@ -6391,7 +6429,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-164">$5 Build-Your-Own Burger all day long.</div>
+                      <div class="event-description-text collapsed" id="desc-165">$5 Build-Your-Own Burger all day long.</div>
                       
                       
                   </div>
@@ -6424,7 +6462,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-165">$3 Miller Lite (Drafts &amp; Bottles) $3 Michelob Ultra (Drafts &amp; Bottles) $3 Bud Light Bottles $3 Coors Light Bottles $3 Yuengling</div>
+                      <div class="event-description-text collapsed" id="desc-166">$3 Miller Lite (Drafts &amp; Bottles) $3 Michelob Ultra (Drafts &amp; Bottles) $3 Bud Light Bottles $3 Coors Light Bottles $3 Yuengling</div>
                       
                       
                   </div>
@@ -6457,7 +6495,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-166">Watch professional baseball, hockey, basketball, golf, racing, soccer, and football on a 25 FT HD TV.</div>
+                      <div class="event-description-text collapsed" id="desc-167">Watch professional baseball, hockey, basketball, golf, racing, soccer, and football on a 25 FT HD TV.</div>
                       
                       
                   </div>
@@ -6490,7 +6528,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-167">3-course dinner for $35, BOGO deals on appetizers and drinks, and 15% off for Arena Stage members. Located a five-minute walk from Arena Stage.</div>
+                      <div class="event-description-text collapsed" id="desc-168">3-course dinner for $35, BOGO deals on appetizers and drinks, and 15% off for Arena Stage members. Located a five-minute walk from Arena Stage.</div>
                       
                       
                   </div>
@@ -6523,7 +6561,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-168">Choice of pizza, wild mushroom, or pepperoni pizza for $15.</div>
+                      <div class="event-description-text collapsed" id="desc-169">Choice of pizza, wild mushroom, or pepperoni pizza for $15.</div>
                       
                       
                   </div>
@@ -6556,7 +6594,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-169">Available for Arena Stage guests: enjoy a 3-course dinner for $35, BOGO deals on appetizers and drinks, and 15% off for Arena Stage members.</div>
+                      <div class="event-description-text collapsed" id="desc-170">Available for Arena Stage guests: enjoy a 3-course dinner for $35, BOGO deals on appetizers and drinks, and 15% off for Arena Stage members.</div>
                       
                       
                   </div>
@@ -6589,7 +6627,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-170">Cozy up near the fire or find an inviting table to enjoy a beverage and a meal while listening to live jazz.</div>
+                      <div class="event-description-text collapsed" id="desc-171">Cozy up near the fire or find an inviting table to enjoy a beverage and a meal while listening to live jazz.</div>
                       
                       
                   </div>
@@ -6622,7 +6660,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-171">The Admiral is a go-to spot for game watches and football viewing with multiple HD televisions.</div>
+                      <div class="event-description-text collapsed" id="desc-172">The Admiral is a go-to spot for game watches and football viewing with multiple HD televisions.</div>
                       
                       
                   </div>
@@ -6655,7 +6693,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-172">The Artemis Spotlight showcases local comedians every Monday.</div>
+                      <div class="event-description-text collapsed" id="desc-173">The Artemis Spotlight showcases local comedians every Monday.</div>
                       
                       
                   </div>
@@ -6688,7 +6726,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-173">Open early morning for Premier/Champions Soccer League Matches. By reservation.</div>
+                      <div class="event-description-text collapsed" id="desc-174">Open early morning for Premier/Champions Soccer League Matches. By reservation.</div>
                       
                       
                   </div>
@@ -6721,7 +6759,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-174">Opening early for Bayern Munich matches</div>
+                      <div class="event-description-text collapsed" id="desc-175">Opening early for Bayern Munich matches</div>
                       
                       
                   </div>
@@ -6754,7 +6792,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-175">台北北投雅樂軒酒店提供的溫泉放鬆療癒體驗。</div>
+                      <div class="event-description-text collapsed" id="desc-176">台北北投雅樂軒酒店提供的溫泉放鬆療癒體驗。</div>
                       
                       
                   </div>
@@ -6787,7 +6825,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-176">台北國泰萬怡酒店 MJ Kitchen 全新推出的日韓主題料理自助餐。</div>
+                      <div class="event-description-text collapsed" id="desc-177">台北國泰萬怡酒店 MJ Kitchen 全新推出的日韓主題料理自助餐。</div>
                       
                       
                   </div>
@@ -6820,7 +6858,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-177">Explore the historic pubs and cultural activities in Dublin, Ireland.</div>
+                      <div class="event-description-text collapsed" id="desc-178">Explore the historic pubs and cultural activities in Dublin, Ireland.</div>
                       
                       
                   </div>
@@ -6853,7 +6891,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-178">Experience authentic local flavors and premium spirits at Marriott All-Inclusive resorts in Cancun, Mexico.</div>
+                      <div class="event-description-text collapsed" id="desc-179">Experience authentic local flavors and premium spirits at Marriott All-Inclusive resorts in Cancun, Mexico.</div>
                       
                       
                   </div>
@@ -6886,7 +6924,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-179">Enjoy expertly paired dining experiences in Sonoma, California.</div>
+                      <div class="event-description-text collapsed" id="desc-180">Enjoy expertly paired dining experiences in Sonoma, California.</div>
                       
                       
                   </div>
@@ -6919,7 +6957,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-180">The best of Ireland live music featuring soulful ballads, airs, rousing jigs, and reels.</div>
+                      <div class="event-description-text collapsed" id="desc-181">The best of Ireland live music featuring soulful ballads, airs, rousing jigs, and reels.</div>
                       
                       
                   </div>
@@ -6952,7 +6990,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-181">The Dubliner features the very best in Irish entertainment seven nights a week, ranging from soulful ballads and airs to rousing jigs and reels.</div>
+                      <div class="event-description-text collapsed" id="desc-182">The Dubliner features the very best in Irish entertainment seven nights a week, ranging from soulful ballads and airs to rousing jigs and reels.</div>
                       
                       
                   </div>
@@ -6985,7 +7023,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-182">A guided tasting of the Blanton&#39;s lineup, including the standard single barrel release plus two rare expressions: Blanton&#39;s Gold and Blanton&#39;s Straight From The Barrel. Includes three 1oz pours.</div>
+                      <div class="event-description-text collapsed" id="desc-183">A guided tasting of the Blanton&#39;s lineup, including the standard single barrel release plus two rare expressions: Blanton&#39;s Gold and Blanton&#39;s Straight From The Barrel. Includes three 1oz pours.</div>
                       
                       
                   </div>
@@ -7018,7 +7056,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-183">An exploration of three cocktails that shaped history: Fish House Punch, Syllabub, and a rotating Seasonal Historical Cocktail.</div>
+                      <div class="event-description-text collapsed" id="desc-184">An exploration of three cocktails that shaped history: Fish House Punch, Syllabub, and a rotating Seasonal Historical Cocktail.</div>
                       
                       
                   </div>
@@ -7051,7 +7089,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-184">A journey through American history told via three curated zero-proof cocktails designed by historical spirits advisors.</div>
+                      <div class="event-description-text collapsed" id="desc-185">A journey through American history told via three curated zero-proof cocktails designed by historical spirits advisors.</div>
                       
                       
                   </div>
@@ -7084,7 +7122,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-185">Everyday is Gameday at the Turtle! Pitcher specials are available daily at select locations.</div>
+                      <div class="event-description-text collapsed" id="desc-186">Everyday is Gameday at the Turtle! Pitcher specials are available daily at select locations.</div>
                       
                       
                   </div>
@@ -7117,7 +7155,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-186">Dive into the season with our Tinseltown Toasts cocktail menu featuring five festive favorites designed to spark your holiday spirit.</div>
+                      <div class="event-description-text collapsed" id="desc-187">Dive into the season with our Tinseltown Toasts cocktail menu featuring five festive favorites designed to spark your holiday spirit.</div>
                       
                       
                   </div>
@@ -7150,7 +7188,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-187">Available during late-night hours, featuring a selection of starters and snacks including Hoisin Glazed Pork Belly, Angus Cheeseburger Sliders with bone marrow onion jam, and District Wings.</div>
+                      <div class="event-description-text collapsed" id="desc-188">Available during late-night hours, featuring a selection of starters and snacks including Hoisin Glazed Pork Belly, Angus Cheeseburger Sliders with bone marrow onion jam, and District Wings.</div>
                       
                       
                   </div>
@@ -7183,7 +7221,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-188">Experience a genteel Washington D.C. tradition with formal tea service in the historic Wilkes Room, featuring the hotel&#39;s original 1918 parlor ambiance and fireplace.</div>
+                      <div class="event-description-text collapsed" id="desc-189">Experience a genteel Washington D.C. tradition with formal tea service in the historic Wilkes Room, featuring the hotel&#39;s original 1918 parlor ambiance and fireplace.</div>
                       
                       
                   </div>
@@ -7216,7 +7254,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-189">Eclectic fare and all-day dining options available daily.</div>
+                      <div class="event-description-text collapsed" id="desc-190">Eclectic fare and all-day dining options available daily.</div>
                       
                       
                   </div>
@@ -7249,7 +7287,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-190">Creative cocktails, contemporary comfort food, and full dinner service.</div>
+                      <div class="event-description-text collapsed" id="desc-191">Creative cocktails, contemporary comfort food, and full dinner service.</div>
                       
                       
                   </div>
@@ -7282,7 +7320,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-191">Experience creative cocktails and contemporary comfort food with full dinner service nightly.</div>
+                      <div class="event-description-text collapsed" id="desc-192">Experience creative cocktails and contemporary comfort food with full dinner service nightly.</div>
                       
                       
                   </div>
@@ -7315,7 +7353,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-192">Buy One Get One Half Off pizzas. Dine-in only.</div>
+                      <div class="event-description-text collapsed" id="desc-193">Buy One Get One Half Off pizzas. Dine-in only.</div>
                       
                       
                   </div>
@@ -7348,7 +7386,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-193">20% off bottles of wine all night long.</div>
+                      <div class="event-description-text collapsed" id="desc-194">20% off bottles of wine all night long.</div>
                       
                       
                   </div>
@@ -7381,7 +7419,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-194">Elevated dining experience featuring American familiar classics with Caribbean flavors in a high-design space.</div>
+                      <div class="event-description-text collapsed" id="desc-195">Elevated dining experience featuring American familiar classics with Caribbean flavors in a high-design space.</div>
                       
                       
                   </div>
@@ -7414,7 +7452,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-195">Hosted inside every Monday. Reservations on Resy.com are recommended as it fills up fast. Bar seating is held for smaller walk-in teams.</div>
+                      <div class="event-description-text collapsed" id="desc-196">Hosted inside every Monday. Reservations on Resy.com are recommended as it fills up fast. Bar seating is held for smaller walk-in teams.</div>
                       
                       
                   </div>
@@ -7447,7 +7485,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-196">On any weekday afternoon gameday, The Salt Line opens early at least one hour prior to gametime with happy hour specials in effect.</div>
+                      <div class="event-description-text collapsed" id="desc-197">On any weekday afternoon gameday, The Salt Line opens early at least one hour prior to gametime with happy hour specials in effect.</div>
                       
                       
                   </div>
@@ -7480,7 +7518,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-197">On any weekday afternoon gameday, the restaurant opens early (at least one hour prior to gametime) and happy hour specials are in effect.</div>
+                      <div class="event-description-text collapsed" id="desc-198">On any weekday afternoon gameday, the restaurant opens early (at least one hour prior to gametime) and happy hour specials are in effect.</div>
                       
                       
                   </div>
@@ -7513,7 +7551,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-198">A rotating nightly dinner special featuring favorites like Peppercorn Burgers (Mon), Short Rib Meatballs (Tue), Chicken Kebab (Wed), Seared Tuna (Thu), Scallops (Fri), Baby Back Ribs (Sat), and Chicken Parm (Sun).</div>
+                      <div class="event-description-text collapsed" id="desc-199">A rotating nightly dinner special featuring favorites like Peppercorn Burgers (Mon), Short Rib Meatballs (Tue), Chicken Kebab (Wed), Seared Tuna (Thu), Scallops (Fri), Baby Back Ribs (Sat), and Chicken Parm (Sun).</div>
                       
                       
                   </div>
@@ -7546,7 +7584,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-199">Specialty lunch sandwiches available on weekdays: Chicken Parm (Mon), Peppercorn Burger (Tue), Short Rib Meatball (Wed), Chicken Kebab (Thu), and Crispy Fish Filet (Fri).</div>
+                      <div class="event-description-text collapsed" id="desc-200">Specialty lunch sandwiches available on weekdays: Chicken Parm (Mon), Peppercorn Burger (Tue), Short Rib Meatball (Wed), Chicken Kebab (Thu), and Crispy Fish Filet (Fri).</div>
                       
                       
                   </div>
@@ -7579,7 +7617,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-200">Open for Dinner</div>
+                      <div class="event-description-text collapsed" id="desc-201">Open for Dinner</div>
                       
                       
                   </div>
@@ -7612,7 +7650,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-201">Enjoy half-price bottles of wine from 5 PM to 10 PM.</div>
+                      <div class="event-description-text collapsed" id="desc-202">Enjoy half-price bottles of wine from 5 PM to 10 PM.</div>
                       
                       
                   </div>
@@ -7645,7 +7683,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-202">Discounted pitchers after 10 PM: Sunday (Busch Light $12), Monday (Coors Light $13), and Friday (Miller High Life $16).</div>
+                      <div class="event-description-text collapsed" id="desc-203">Discounted pitchers after 10 PM: Sunday (Busch Light $12), Monday (Coors Light $13), and Friday (Miller High Life $16).</div>
                       
                       
                   </div>
@@ -7678,7 +7716,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-203">Featured food special: Chicken Cheesesteak for $19.</div>
+                      <div class="event-description-text collapsed" id="desc-204">Featured food special: Chicken Cheesesteak for $19.</div>
                       
                       
                   </div>
@@ -7711,7 +7749,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-204">Weekly food special: Chicken Cheesesteak for $19.</div>
+                      <div class="event-description-text collapsed" id="desc-205">Weekly food special: Chicken Cheesesteak for $19.</div>
                       
                       
                   </div>
@@ -7744,7 +7782,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-205">Featuring $19 Chicken Cheesesteaks, 1/2 price bottles of wine from 5–10pm, and $13 Coors Light pitchers after 10pm.</div>
+                      <div class="event-description-text collapsed" id="desc-206">Featuring $19 Chicken Cheesesteaks, 1/2 price bottles of wine from 5–10pm, and $13 Coors Light pitchers after 10pm.</div>
                       
                       
                   </div>
@@ -7775,7 +7813,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-206">Enjoy complimentary morning coffee in the lobby as part of the daily urban resort fee.</div>
+                      <div class="event-description-text collapsed" id="desc-207">Enjoy complimentary morning coffee in the lobby as part of the daily urban resort fee.</div>
                       
                       
                   </div>
@@ -7808,7 +7846,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-207">Live undian pengeluaran sgp prize pertama bersumber dari situs resmi togel singapore pools.</div>
+                      <div class="event-description-text collapsed" id="desc-208">Live undian pengeluaran sgp prize pertama bersumber dari situs resmi togel singapore pools.</div>
                       
                       
                   </div>
@@ -7841,7 +7879,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-208">A diverse range of music including Jazz, Funk, Reggae, Latin hybrids, Pop, and House featuring regional and world-class DJ talent across four dance floors.</div>
+                      <div class="event-description-text collapsed" id="desc-209">A diverse range of music including Jazz, Funk, Reggae, Latin hybrids, Pop, and House featuring regional and world-class DJ talent across four dance floors.</div>
                       
                       
                   </div>
@@ -7874,7 +7912,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-209">Experience food, drinks, and vibes from favorite surf destinations around the world through our current seasonal menu.</div>
+                      <div class="event-description-text collapsed" id="desc-210">Experience food, drinks, and vibes from favorite surf destinations around the world through our current seasonal menu.</div>
                       
                       
                   </div>
@@ -7905,7 +7943,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-210">Enjoy a custom cocktail menu at the Lobby Bar or VUE inspired by the current performances at the National Theatre.</div>
+                      <div class="event-description-text collapsed" id="desc-211">Enjoy a custom cocktail menu at the Lobby Bar or VUE inspired by the current performances at the National Theatre.</div>
                       
                       
                   </div>
@@ -7938,7 +7976,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-211">Free to play with prizes awarded to winners.</div>
+                      <div class="event-description-text collapsed" id="desc-212">Free to play with prizes awarded to winners.</div>
                       
                       
                   </div>
@@ -7971,7 +8009,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-212">Free to play trivia with prizes for the winners.</div>
+                      <div class="event-description-text collapsed" id="desc-213">Free to play trivia with prizes for the winners.</div>
                       
                       
                   </div>
@@ -8004,7 +8042,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-213">Free to play with prizes for the winners.</div>
+                      <div class="event-description-text collapsed" id="desc-214">Free to play with prizes for the winners.</div>
                       
                       
                   </div>
@@ -8037,7 +8075,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-214">Free to play trivia with prizes on the 1st floor.</div>
+                      <div class="event-description-text collapsed" id="desc-215">Free to play trivia with prizes on the 1st floor.</div>
                       
                       
                   </div>
@@ -8070,7 +8108,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-215">The stage fills with trivia every Monday night.</div>
+                      <div class="event-description-text collapsed" id="desc-216">The stage fills with trivia every Monday night.</div>
                       
                       
                   </div>
@@ -8103,7 +8141,7 @@
               <div class="masonry-content">
                   
                   <div class="event-desc-container">
-                      <div class="event-description-text collapsed" id="desc-216">A specially curated selection of mezze reflecting the regional diversity of classical Mediterranean cuisines, designed for sharing.</div>
+                      <div class="event-description-text collapsed" id="desc-217">A specially curated selection of mezze reflecting the regional diversity of classical Mediterranean cuisines, designed for sharing.</div>
                       
                       
                   </div>
@@ -8248,6 +8286,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -329,68 +330,16 @@ Natural wine aficionados, sourcing unique dinner party bottles, educational tast
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://robbreport.com/food-drink/wine/washington-dc-niche-wine-culture-1236975605" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://foodandwine.com/wine/wine-should-be-accessible-to-everyone" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=robbreport.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Robb Report</span>
-              <span style="margin-left:auto; text-transform:none;">Aug 17, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Why Washington, D.C. Is an Amazing Place for Adventurous Oenophiles</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Domestique Wine is a natural wine shop in Washington, D.C., that leverages the District&#39;s unique liquor laws to bypass traditional distributors and source directly from over 100 artisanal producers. The shop offers a diverse selection of up to 500 wines, including niche labels from non-traditional regions like Texas and Colorado that are rarely available in other U.S. markets.</p>
-           
-        </a>
-      
-        <a href="https://veranda.com/food-recipes/g41967179/best-wine-shops" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=foodandwine.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Food &amp; Wine</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=veranda.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>veranda.com</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 20, 2024</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">These Are the 6 Best Wine Shops in the Country</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Wine Should Be Accessible to Everyone</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Domestique Wine in Washington D.C. is recognized as one of the top wine shops in the country, specializing in the natural wine movement. The shop exclusively offers bottles made from organic or biodynamic grapes fermented with native yeast and minimal sulfur to provide a unique tasting experience.</p>
-           
-        </a>
-      
-        <a href="https://daily.sevenfifty.com/why-independent-wine-retailers-are-making-custom-cuvees" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=daily.sevenfifty.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>go.sevenfifty.com</span>
-              <span style="margin-left:auto; text-transform:none;">Jun 27, 2023</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Why Independent Wine Retailers Are Making Custom Cuvées</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Domestique Wine in Washington, D.C. collaborates with boutique wineries to produce exclusive, limited-release custom cuvées. These partnerships allow the shop to support small-scale producers while providing customers with unique, creative bottles that are otherwise unavailable in the local market.</p>
-           
-        </a>
-      
-        <a href="https://whalebonemag.com/campfire-conversations-eric-moorer" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=whalebonemag.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Whalebone Magazine</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 14, 2021</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Campfire Conversations: Eric Moorer</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Domestique Wine is a Washington D.C. natural wine purveyor that emphasizes organic farming, approachable education, and diversity within the industry. The shop offers a curated selection of natural wines, zero-ABV beverages, and a digital wine club designed to demystify complex flavor profiles for every type of consumer.</p>
-           
-        </a>
-      
-        <a href="https://districtfray.com/articles/wines-of-the-world-in-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=districtfray.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>District Fray</span>
-              <span style="margin-left:auto; text-transform:none;">Jun 27, 2021</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Wines of the World Are Just Around the Corner</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Domestique Wine is a natural wine shop in Washington D.C. that exclusively features organic, sustainable bottles produced with minimal intervention and limited sulfur. The store offers personalized consultations to help customers select wines based on mood and memory, specializing in unique offerings like pét-nats and additive-free Bordeaux blends.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Domestique Wine is a natural-wine-focused shop in Washington, D.C., dedicated to making the wine retail experience more inclusive and accessible. The shop emphasizes sustainable production and fair labor practices while fostering diversity in the industry through initiatives like the Major Taylor Fellowship for people of color.</p>
            
         </a>
       
@@ -666,6 +615,49 @@ Natural wine aficionados, sourcing unique dinner party bottles, educational tast
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

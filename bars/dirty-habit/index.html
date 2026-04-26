@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -295,68 +296,55 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://insidehook.com/drinks/cheese-cocktails" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://fox5dc.com/video/1687629" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=insidehook.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>InsideHook</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 19, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=fox5dc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>FOX 5 DC</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Cocktails Have Entered Their Cheese Era</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Broadway at the National &amp; Dirty Habit Menu</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Dirty Habit in D.C. serves &#39;The Cheesy Grin,&#39; a flagship cocktail that incorporates upcycled Parmigiano and cheddar cheese rinds to create a savory, umami-rich foam. The drink balances sweet and salty elements by pairing the cheese foam with Rakija brandy, Pedro Ximenez sherry, and quince jam.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Dirty Habit has launched a collaboration with Broadway at the National to offer a specialized pre-theater menu. This partnership provides a curated dining experience designed for guests attending shows at the nearby theater in Washington, D.C.</p>
            
         </a>
       
-        <a href="https://washingtonblade.com/2025/07/20/lgbtq-summer-nightlife" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://washington.org/event/love-dirty-game" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtonblade.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washington Blade</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 20, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=washington.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Washington.org</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">D.C.’s summer happy hour scene in full swing</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Love is a Dirty Game</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Dirty Habit features an expansive, wraparound patio in Washington, D.C., which hosts a seasonal &quot;Yappy Hour&quot; on Saturdays for dogs and their owners to socialize. The events include food and drink specials, doggy goodie bags, and splash pools, with a portion of proceeds benefiting the Humane Rescue Alliance.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Dirty Habit hosts &quot;Love is a Dirty Game,&quot; a Valentine’s Day singles dinner on February 13, 2026, that pairs a multi-course meal with a social speed-dating format. Guests can expect rotating seats between courses, curated conversation prompts, and a welcome cocktail in a sophisticated, flirty atmosphere limited to 40 participants.</p>
            
         </a>
       
-        <a href="https://washingtonian.com/2025/07/14/summer-outdoor-cocktail-drinks-spots-in-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://fox5dc.com/video/1743592" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 14, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=fox5dc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>FOX 5 DC</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Best Outdoor Spots to Sip on a Cocktail in the DC Area</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Winter Chalet at Dirty Habit</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Dirty Habit features a stylish courtyard tucked into the Hotel Monaco in Penn Quarter, recognized as one of the city&#39;s premier outdoor drinking spots. The venue hosts a weekday happy hour from 3 to 7 p.m. with specials including $9 glasses of wine and $13 margaritas and old-fashioneds.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Dirty Habit has transformed its courtyard into a Winter Chalet, offering a festive atmosphere with snowy season vibes. The venue features a special seasonal menu of food and drinks for guests to enjoy throughout the winter months in Washington, D.C.</p>
            
         </a>
       
-        <a href="https://restaurantbusinessonline.com/leadership/taco-johns-bobbys-burgers-more-executive-movement" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://secretdc.com/dirty-habit-dc-outdoor-concerts-under-the-stars" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=restaurantbusinessonline.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Restaurant Business Magazine</span>
-              <span style="margin-left:auto; text-transform:none;">Jun 13, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Taco John&#39;s, Bobby&#39;s Burgers and more executive movement</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Dirty Habit D.C. has appointed Derek Watson as its new executive chef. Watson brings 15 years of industry experience to the role, having previously worked at high-profile restaurants including Morimoto, Momotaro, Rose’s Luxury, and Nama Ko.</p>
-           
-        </a>
-      
-        <a href="https://fsrmagazine.com/industry-news/dirty-habit-names-derek-watson-executive-chef" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=secretdc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Secret DC</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=fsrmagazine.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>FSR magazine</span>
-              <span style="margin-left:auto; text-transform:none;">Jun 9, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Dirty Habit Names Derek Watson Executive Chef</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">These Outdoor Concerts Under The Stars Is The Perfect Way To Enjoy Summer In D.C.</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Dirty Habit has appointed Derek Watson as its executive chef, tasking him with bringing a globally inspired menu influenced by Japanese, Latin, and American Southern flavors to the Washington, D.C. restaurant. Watson is focusing on evolving the venue into a dynamic culinary destination with highlights like the Riviera Royale courtyard activation, featuring fire-kissed small plates and shared roulette-style tasting plates.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Dirty Habit offers a sophisticated outdoor setting for concert series under the stars in its spacious Washington, D.C. courtyard. The venue combines live musical performances with its signature craft cocktail program to create a premier destination for seasonal entertainment.</p>
            
         </a>
       
@@ -638,6 +626,49 @@ Our server Ruben was a star: friendly, attentive, and kept those bottomless mimo
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

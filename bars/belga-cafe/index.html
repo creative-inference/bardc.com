@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -321,68 +322,68 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://nbcwashington.com/news/local/employees-attacked-working-dc-restaurant/4003587" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://hillrag.com/2025/08/08/belga-cafe-and-the-betsy-dc-a-culinary-masterpiece-in-capitol-hill" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=nbcwashington.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>NBC4 Washington</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 18, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=hillrag.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>HillRag</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Employees attacked while working at DC restaurant</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Belga Café and The Betsy DC: A Culinary Masterpiece in Capitol Hill</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Belga Café in Barracks Row was the site of a physical altercation that led to the arrest of four individuals for assaulting restaurant employees. The incident began behind the venue after a vehicle nearly struck workers, resulting in a confrontation that prompted police intervention and multiple assault charges.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Belga Café offers a sophisticated Belgian culinary experience on Capitol Hill, featuring a menu of classics like mussels, steak tartare, and waffles curated by award-winning Chef Bart Vandaele. The venue also hosts an exclusive monthly Wine Dinner Series and features a hidden rooftop sister bar, The Betsy DC, known for its refined gin-focused cocktail program.</p>
            
         </a>
       
-        <a href="https://wjla.com/news/local/dc-restaurants-low-traffic-national-guard-federal-takeover-gofundme-president-trump-mayor-bowser-as-you-are-belga-cafe-8th-street-dmv-dining-bar-inflation-cost-initiative-82-customers-queer-friendly" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://tripsavvy.com/dining-outdoors-in-dc-1039725" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=wjla.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WJLA</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 19, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=tripsavvy.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>TripSavvy</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">DC restaurants cite low customer traffic, one launches GoFundMe to stay afloat</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Best Places to Dine Outdoors in Washington DC</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Belga Cafe is experiencing a significant decline in foot traffic and customer spending due to a combination of inflation, legislative changes, and a decrease in local tourism. General Manager Rinata Gafarova reports that weekend brunch attendance has plummeted from historical highs of 500 patrons to as few as 100 as the long-standing 8th Street establishment navigates a challenging economic environment.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Belga Cafe is featured as one of the top destinations for outdoor dining in Washington, D.C. The venue is highlighted for its inviting al fresco atmosphere on Barracks Row, providing a classic European sidewalk cafe experience for guests to enjoy Belgian cuisine and craft beers.</p>
            
         </a>
       
-        <a href="https://kidfriendlydc.com/2023/07/02/kid-friendly-dc-restaurants" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://washington.org/places-to-eat/capitol-hill-barracks-row-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=kidfriendlydc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>KidFriendly DC</span>
-              <span style="margin-left:auto; text-transform:none;">Aug 14, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=washington.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>visit Washington DC</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">KFDC Picks for Kid Friendly DC Restaurants</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Best Places to Eat on Capitol Hill</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Belga Cafe is highlighted as a long-standing, kid-friendly dining option on Capitol Hill&#39;s Barracks Row, particularly noted for its Belgian waffles, mussels, and fries. While suitable for families at brunch, lunch, and dinner, the venue also features a rooftop back patio called Betsy that serves as a popular spot for cocktails.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Belga Cafe is a prominent Belgian restaurant on Capitol Hill&#39;s Barracks Row, led by chef Bart Vandaele. The venue is highlighted as a top destination for brunch, featuring a menu of classic omelets, mussel pots, and authentic Belgian waffles.</p>
            
         </a>
       
-        <a href="https://thrillist.com/eat/washington-dc/best-brunch-in-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://dcnewsnow.com/news/local-news/washington-dc/dc-police-arrest-4-accused-of-assaulting-workers-at-southeast-cafe" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=thrillist.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Thrillist</span>
-              <span style="margin-left:auto; text-transform:none;">Apr 11, 2023</span>
+              <img src="https://www.google.com/s2/favicons?domain=dcnewsnow.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>DC News Now</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Best Spots for Brunch in DC</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">DC police arrest 4 accused of assaulting workers at Southeast cafe</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Belga Cafe, a popular Belgian spot in Barracks Row led by chef Bart Vandaele, offers a charming outdoor patio setting for weekend brunch. The menu features authentic sweet and savory Belgian waffles alongside signature dishes like &#39;Beruchte&#39; Groene Eieren made with herb pesto, spinach, and Gruyère.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Belga Cafe was the site of an incident where Metropolitan Police arrested four individuals for allegedly assaulting staff members at the Southeast Washington location. The arrests followed a physical confrontation at the restaurant situated on the 500 block of 8th Street SE.</p>
            
         </a>
       
-        <a href="https://washingtonian.com/2021/02/11/61-neighborhood-restaurants-that-make-the-dc-area-a-better-place-to-eat-and-live" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://msn.com/en-us/news/us/dc-restaurateur-says-several-employees-were-attacked/ar-AA1KyyGA" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 23, 2021</span>
+              <img src="https://www.google.com/s2/favicons?domain=msn.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>MSN</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">61 Neighborhood Restaurants That Make the DC Area a Better Place to Eat—and Live</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">DC restaurateur says several employees were attacked</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Belga Cafe is a Belgian brasserie on Capitol Hill known for its hearty fare and comfortable style under Top Chef alum Bart Vandaele. Signature offerings include moules frites, lobster waffles, and Flemish beef stew, which can be enjoyed in a cozy setting featuring alfresco greenhouses.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Belga Cafe owner Bart Vandaele reported that several of his employees were victims of violent attacks near the Capitol Hill restaurant. The incidents have led the restaurateur to advocate for improved public safety and security measures in the surrounding neighborhood.</p>
            
         </a>
       
@@ -666,6 +667,49 @@ The skillet I ordered was quite nice, with the meat, sauce, eggs and...
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

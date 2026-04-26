@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -405,68 +406,42 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://washingtonblade.com/2025/10/16/best-of-lgbtq-community-dc-2025" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://washington.org/visit-dc/lgbtq-bars-check-out-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtonblade.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washington Blade</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 17, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=washington.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Washington.org</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Best of LGBTQ D.C. 2025</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">20 LGBTQ+ Bars to Check Out in Washington, DC</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">As You Are has been named the &quot;Best Neighborhood Bar&quot; in the Washington Blade&#39;s 2025 Best of LGBTQ D.C. awards. Owned by Jo McDaniel and Rach &quot;Coach&quot; Pike, the venue operates as a welcoming café and nightclub that serves as a dedicated safe space and community hub for the queer community in Southeast D.C.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">As You Are is a welcoming Eastern Market cafe that transforms into a lively lounge and dance floor dedicated to LGBTQIA+ expression and connection. The venue features an eclectic events calendar including themed karaoke, drag shows, and maker markets, while maintaining a safe environment through strict consent policies and mandatory bag checks.</p>
            
         </a>
       
-        <a href="https://today.com/video/inclusive-dc-bar-invites-patrons-to-come-as-you-are-241907269580" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://axios.com/local/washington-dc/2024/02/08/as-you-are-gofundme-queer-bar-capitol-hill" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=today.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>TODAY.com</span>
-              <span style="margin-left:auto; text-transform:none;">Jun 19, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=axios.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Axios</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Inclusive DC Bar Invites Patrons to Come ‘As You Are’</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">D.C. queer bar As You Are raises thousands to prevent closure</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">As You Are is an inclusive Washington, D.C. bar and Pride destination founded by Jo McDaniel and Rach “Coach” Pike to provide a safe space for all identities and cultures. When rising costs threatened the business with closure, the local community rallied to support the venue and ensure its mission of inclusivity continues.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">As You Are, a queer bar and community space in Washington D.C., successfully raised thousands of dollars through a community fundraising campaign to prevent its closure. The venue remains a vital inclusive hub for the LGBTQ+ community, offering a safe space for nightlife, daytime coworking, and local events.</p>
            
         </a>
       
-        <a href="https://wusa9.com/article/life/pride-matters/as-you-are-bar-owners-creating-safe-haven-queer-community-dc-world-pride/65-2019ae1f-bf49-4caa-a5d6-7f9ef4bef588" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://washington.org/visit-dc/lgbtq-things-to-do" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=wusa9.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WUSA9</span>
-              <span style="margin-left:auto; text-transform:none;">Jun 6, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Queer bar invites you to come &#39;as you are&#39; for WorldPride in DC</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">As You Are is a queer-owned cafe and bar in Capitol Hill, Washington D.C., that focuses on community, safety, and inclusivity. The venue features a relaxed daytime cafe with games downstairs and a high-energy dance floor with DJs upstairs, offering a &quot;choose your own adventure&quot; experience for the LGBTQ+ community. Owners Jo McDaniel and Rach &#39;Coach&#39; Pike founded the space to de-center alcohol and provide an authentic environment where patrons can express themselves freely.</p>
-           
-        </a>
-      
-        <a href="https://washingtonian.com/2025/05/07/a-guide-to-dcs-best-gay-and-lesbian-bars" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=washington.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>visit Washington DC</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">Jun 5, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">A Guide to DC’s Best Gay and Lesbian Bars</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Essential LGBTQ+ Experiences in Washington, DC</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">As You Are is a highly accessible Eastern Market venue that functions as an all-ages coffee shop and workspace during the day before transforming into a 21+ bar and dance club at night. The space features ASL interpreters for performances, a chill downstairs area, and an upstairs level with karaoke, dance parties, and video games.</p>
-           
-        </a>
-      
-        <a href="https://storymaps.arcgis.com/stories/6dc682a2420a4556bea5f74de421b850" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=storymaps.arcgis.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>ArcGIS StoryMaps</span>
-              <span style="margin-left:auto; text-transform:none;">Jun 5, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Queer Capital: Historic LGBTQ Spaces in Washington, DC</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">as you are. DC is a vital LGBTQ+ social hub in Washington, D.C., that functions as a coffee shop and cafe by day before transitioning into a bar and dance floor at night. The venue is celebrated for its commitment to providing an inclusive, safe environment for the queer community and fostering local connections in the capital.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">As You Are is recognized as an essential LGBTQ+ destination in Washington, D.C., specifically highlighted as a top spot for dancing. The venue is featured for its role in the District&#39;s vibrant queer nightlife and inclusive community atmosphere.</p>
            
         </a>
       
@@ -744,6 +719,49 @@ Along Barracks Row, as you are is in a larger building with...
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

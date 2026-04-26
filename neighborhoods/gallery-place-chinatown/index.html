@@ -49,7 +49,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -68,17 +68,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -104,7 +106,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -214,18 +215,6 @@
       
         
           {
-            name: "ART DC - Arlo Rooftop Bar",
-            slug: "art-dc-arlo-rooftop-bar",
-            lat: 38.8984889,
-            lng: -77.0158718,
-            address: "333 G St NW, Northwest Washington, DC 20001, United States",
-            category: "Rooftop Bars, Cocktail Bars, Happy Hour Spots",
-            logoUrl: ""
-          },
-        
-      
-        
-          {
             name: "Bulldog",
             slug: "bulldog",
             lat: 38.9000448,
@@ -250,18 +239,6 @@
       
         
           {
-            name: "Calico",
-            slug: "calico",
-            lat: 38.9062204,
-            lng: -77.02518979999999,
-            address: "50 Blagden Alley NW, Washington, DC 20001, USA",
-            category: "Beer Gardens, Cocktail Bars, Happy Hour Spots",
-            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcalico%2Flogo-1765902428444-358703315_795154215641660_1112383333380996313_n.png?alt=media&amp;token=4c0b54f0-474d-436e-8545-75819a4e72a6"
-          },
-        
-      
-        
-          {
             name: "City Tap House Penn Quarter",
             slug: "city-tap-house-penn-quarter",
             lat: 38.9010308,
@@ -269,18 +246,6 @@
             address: "901 9th St NW, Washington, DC 20001, United States",
             category: "Sports Bars, Gastropubs, Happy Hour Spots",
             logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcity-tap-house-penn-quarter%2Flogo-1766354203220-15538872_1831581947122785_8894210132745912320_a.jpg?alt=media&amp;token=e784729e-c078-414f-bc92-e23f726a2f28"
-          },
-        
-      
-        
-          {
-            name: "Cloakroom Gentlemen&#39;s Club",
-            slug: "cloakroom-gentlemen-s-club",
-            lat: 38.9023215,
-            lng: -77.0186969,
-            address: "476 K St NW, Washington, DC 20001, United States",
-            category: "Clubs, Upscale, Late Night",
-            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcloakroom-gentlemen-s-club%2Flogo-1766354328037-165050858_499542287873058_5770539640286896280_n.jpg?alt=media&amp;token=06f24ee4-5795-4f52-a52d-02d32201adfb"
           },
         
       
@@ -572,6 +537,42 @@
           },
         
       
+        
+          {
+            name: "Calico",
+            slug: "calico",
+            lat: 38.9062204,
+            lng: -77.02518979999999,
+            address: "50 Blagden Alley NW, Washington, DC 20001, USA",
+            category: "Beer Gardens, Cocktail Bars, Happy Hour Spots",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcalico%2Flogo-1765902428444-358703315_795154215641660_1112383333380996313_n.png?alt=media&amp;token=4c0b54f0-474d-436e-8545-75819a4e72a6"
+          },
+        
+      
+        
+          {
+            name: "Cloakroom Gentlemen&#39;s Club",
+            slug: "cloakroom-gentlemen-s-club",
+            lat: 38.9023215,
+            lng: -77.0186969,
+            address: "476 K St NW, Washington, DC 20001, United States",
+            category: "Clubs, Upscale, Late Night",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcloakroom-gentlemen-s-club%2Flogo-1766354328037-165050858_499542287873058_5770539640286896280_n.jpg?alt=media&amp;token=06f24ee4-5795-4f52-a52d-02d32201adfb"
+          },
+        
+      
+        
+          {
+            name: "ART DC - Arlo Rooftop Bar",
+            slug: "art-dc-arlo-rooftop-bar",
+            lat: 38.8984889,
+            lng: -77.0158718,
+            address: "333 G St NW, Northwest Washington, DC 20001, United States",
+            category: "Rooftop Bars, Cocktail Bars, Happy Hour Spots",
+            logoUrl: ""
+          },
+        
+      
     ];
 
     if (venues.length === 0) {
@@ -731,28 +732,6 @@
 
 <div class="venue-grid">
   
-      <a href="/bars/art-dc-arlo-rooftop-bar/" class="venue-card "
-         
-      >
-        <div class="card-content">
-            <!-- Card Header to group title and logo -->
-            <div class="card-header">
-              
-              <h3>ART DC - Arlo Rooftop Bar</h3>
-            </div>
-            <!-- End Card Header -->
-          
-          <p class="card-category">Rooftop Bars, Cocktail Bars, Happy Hour Spots</p>
-          <span class="card-cta">View Details &rarr;</span>
-        </div>
-
-        <div class="card-tags-container">
-          
-
-          
-        </div>
-      </a>
-  
       <a href="/bars/bulldog/" class="venue-card light-bg"
          
          style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbulldog%2Flogo-1766319624335-312972324_1449678205442783_2988574370001754442_n.jpg?alt=media&amp;token=2974d234-238b-4c78-9dba-d2fc0c16d0ac');"
@@ -805,36 +784,6 @@
         </div>
       </a>
   
-      <a href="/bars/calico/" class="venue-card light-bg"
-         
-         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcalico%2Flogo-1765902428444-358703315_795154215641660_1112383333380996313_n.png?alt=media&amp;token=4c0b54f0-474d-436e-8545-75819a4e72a6');"
-         
-      >
-        <div class="card-content">
-            <!-- Card Header to group title and logo -->
-            <div class="card-header">
-              
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcalico%2Flogo-1765902428444-358703315_795154215641660_1112383333380996313_n.png?alt=media&amp;token=4c0b54f0-474d-436e-8545-75819a4e72a6" alt="Calico logo" class="card-logo">
-              
-              <h3>Calico</h3>
-            </div>
-            <!-- End Card Header -->
-          
-          <p class="card-category">Beer Gardens, Cocktail Bars, Happy Hour Spots</p>
-          <span class="card-cta">View Details &rarr;</span>
-        </div>
-
-        <div class="card-tags-container">
-          
-            <div class="card-happy-hour-tag">
-              🎉 Happy Hour
-            </div>
-          
-
-          
-        </div>
-      </a>
-  
       <a href="/bars/city-tap-house-penn-quarter/" class="venue-card light-bg"
          
          style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcity-tap-house-penn-quarter%2Flogo-1766354203220-15538872_1831581947122785_8894210132745912320_a.jpg?alt=media&amp;token=e784729e-c078-414f-bc92-e23f726a2f28');"
@@ -855,36 +804,6 @@
         </div>
 
         <div class="card-tags-container">
-          
-
-          
-        </div>
-      </a>
-  
-      <a href="/bars/cloakroom-gentlemen-s-club/" class="venue-card light-bg"
-         
-         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcloakroom-gentlemen-s-club%2Flogo-1766354328037-165050858_499542287873058_5770539640286896280_n.jpg?alt=media&amp;token=06f24ee4-5795-4f52-a52d-02d32201adfb');"
-         
-      >
-        <div class="card-content">
-            <!-- Card Header to group title and logo -->
-            <div class="card-header">
-              
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcloakroom-gentlemen-s-club%2Flogo-1766354328037-165050858_499542287873058_5770539640286896280_n.jpg?alt=media&amp;token=06f24ee4-5795-4f52-a52d-02d32201adfb" alt="Cloakroom Gentlemen&#39;s Club logo" class="card-logo">
-              
-              <h3>Cloakroom Gentlemen's Club</h3>
-            </div>
-            <!-- End Card Header -->
-          
-          <p class="card-category">Clubs, Upscale, Late Night</p>
-          <span class="card-cta">View Details &rarr;</span>
-        </div>
-
-        <div class="card-tags-container">
-          
-            <div class="card-happy-hour-tag">
-              🎉 Happy Hour
-            </div>
           
 
           
@@ -1551,6 +1470,88 @@
         </div>
       </a>
   
+      <a href="/bars/calico/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcalico%2Flogo-1765902428444-358703315_795154215641660_1112383333380996313_n.png?alt=media&amp;token=4c0b54f0-474d-436e-8545-75819a4e72a6');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcalico%2Flogo-1765902428444-358703315_795154215641660_1112383333380996313_n.png?alt=media&amp;token=4c0b54f0-474d-436e-8545-75819a4e72a6" alt="Calico logo" class="card-logo">
+              
+              <h3>Calico</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Beer Gardens, Cocktail Bars, Happy Hour Spots</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+            <div class="card-happy-hour-tag">
+              🎉 Happy Hour
+            </div>
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/cloakroom-gentlemen-s-club/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcloakroom-gentlemen-s-club%2Flogo-1766354328037-165050858_499542287873058_5770539640286896280_n.jpg?alt=media&amp;token=06f24ee4-5795-4f52-a52d-02d32201adfb');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcloakroom-gentlemen-s-club%2Flogo-1766354328037-165050858_499542287873058_5770539640286896280_n.jpg?alt=media&amp;token=06f24ee4-5795-4f52-a52d-02d32201adfb" alt="Cloakroom Gentlemen&#39;s Club logo" class="card-logo">
+              
+              <h3>Cloakroom Gentlemen's Club</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Clubs, Upscale, Late Night</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+            <div class="card-happy-hour-tag">
+              🎉 Happy Hour
+            </div>
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/art-dc-arlo-rooftop-bar/" class="venue-card "
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+              <h3>ART DC - Arlo Rooftop Bar</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Rooftop Bars, Cocktail Bars, Happy Hour Spots</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
 </div>
 
 <div style="margin-top: 3rem; text-align: center;">
@@ -1609,6 +1610,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

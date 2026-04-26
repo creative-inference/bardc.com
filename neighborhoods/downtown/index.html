@@ -49,7 +49,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -68,17 +68,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -104,7 +106,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -211,66 +212,6 @@
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const venues = [
-      
-        
-          {
-            name: "21st Amendment Bar &amp; Grill",
-            slug: "21st-amendment-bar-grill",
-            lat: 38.8856811,
-            lng: -77.019722,
-            address: "550 C St SW, Washington, DC 20024, United States",
-            category: "Hotel Bars, American, Gastropubs",
-            logoUrl: ""
-          },
-        
-      
-        
-          {
-            name: "Abigail",
-            slug: "abigail",
-            lat: 38.9055204,
-            lng: -77.040009,
-            address: "1730 M St NW #100, Washington, DC 20036, United States",
-            category: "Nightclub, Hip Hop, Lounges",
-            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fabigail%2Flogo-1766014106254-305615155_407010268227310_4802619442028591549_n.png?alt=media&amp;token=4ce50b8b-1651-43a0-bebc-b2319ff1e280"
-          },
-        
-      
-        
-          {
-            name: "Allegory",
-            slug: "allegory",
-            lat: 38.9028816,
-            lng: -77.02831259999999,
-            address: "1201 K St NW #1, Washington, DC 20005, USA",
-            category: "Speakeasies, Cocktail Bars, Hotel Bars",
-            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fallegory%2Flogo-1766096278232-305315880_621119479457287_2637448131719755457_n.png?alt=media&amp;token=297e37c9-bb14-4b12-a249-85ca54aadeaf"
-          },
-        
-      
-        
-          {
-            name: "Astro Beer Hall",
-            slug: "astro-beer-hall",
-            lat: 38.8981165,
-            lng: -77.0302796,
-            address: "1306 G St NW, Washington, DC 20005, United States",
-            category: "Beer Gardens, Gastropubs, Burger Bars",
-            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fastro-beer-hall%2Flogo-1766104355454-300698758_745657426630126_4451759453779517410_n.jpg?alt=media&amp;token=1b573cd9-c749-4bcd-bf00-06abc75dd3e6"
-          },
-        
-      
-        
-          {
-            name: "Bar Chinois",
-            slug: "bar-chinois",
-            lat: 38.90167890000001,
-            lng: -77.0179489,
-            address: "455 I St NW #21, Washington, DC 20001, United States",
-            category: "Cocktail Bars, Asian Fusion, Happy Hour Spots",
-            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbar-chinois%2Flogo-1766148856068-240293860_923273261589669_9030014920518035234_n.png?alt=media&amp;token=1db00863-4deb-4f6d-8209-58d0bf210a35"
-          },
-        
       
         
           {
@@ -752,6 +693,66 @@
           },
         
       
+        
+          {
+            name: "21st Amendment Bar &amp; Grill",
+            slug: "21st-amendment-bar-grill",
+            lat: 38.8856811,
+            lng: -77.019722,
+            address: "550 C St SW, Washington, DC 20024, United States",
+            category: "Hotel Bars, American, Gastropubs",
+            logoUrl: ""
+          },
+        
+      
+        
+          {
+            name: "Abigail",
+            slug: "abigail",
+            lat: 38.9055204,
+            lng: -77.040009,
+            address: "1730 M St NW #100, Washington, DC 20036, United States",
+            category: "Nightclub, Hip Hop, Lounges",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fabigail%2Flogo-1766014106254-305615155_407010268227310_4802619442028591549_n.png?alt=media&amp;token=4ce50b8b-1651-43a0-bebc-b2319ff1e280"
+          },
+        
+      
+        
+          {
+            name: "Allegory",
+            slug: "allegory",
+            lat: 38.9028816,
+            lng: -77.02831259999999,
+            address: "1201 K St NW #1, Washington, DC 20005, USA",
+            category: "Speakeasies, Cocktail Bars, Hotel Bars",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fallegory%2Flogo-1766096278232-305315880_621119479457287_2637448131719755457_n.png?alt=media&amp;token=297e37c9-bb14-4b12-a249-85ca54aadeaf"
+          },
+        
+      
+        
+          {
+            name: "Bar Chinois",
+            slug: "bar-chinois",
+            lat: 38.90167890000001,
+            lng: -77.0179489,
+            address: "455 I St NW #21, Washington, DC 20001, United States",
+            category: "Cocktail Bars, Asian Fusion, Happy Hour Spots",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbar-chinois%2Flogo-1766148856068-240293860_923273261589669_9030014920518035234_n.png?alt=media&amp;token=1db00863-4deb-4f6d-8209-58d0bf210a35"
+          },
+        
+      
+        
+          {
+            name: "Astro Beer Hall",
+            slug: "astro-beer-hall",
+            lat: 38.8981165,
+            lng: -77.0302796,
+            address: "1306 G St NW, Washington, DC 20005, United States",
+            category: "Beer Gardens, Gastropubs, Burger Bars",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fastro-beer-hall%2Flogo-1766104355454-300698758_745657426630126_4451759453779517410_n.jpg?alt=media&amp;token=1b573cd9-c749-4bcd-bf00-06abc75dd3e6"
+          },
+        
+      
     ];
 
     if (venues.length === 0) {
@@ -910,136 +911,6 @@
 </script>
 
 <div class="venue-grid">
-  
-      <a href="/bars/21st-amendment-bar-grill/" class="venue-card "
-         
-      >
-        <div class="card-content">
-            <!-- Card Header to group title and logo -->
-            <div class="card-header">
-              
-              <h3>21st Amendment Bar & Grill</h3>
-            </div>
-            <!-- End Card Header -->
-          
-          <p class="card-category">Hotel Bars, American, Gastropubs</p>
-          <span class="card-cta">View Details &rarr;</span>
-        </div>
-
-        <div class="card-tags-container">
-          
-
-          
-        </div>
-      </a>
-  
-      <a href="/bars/abigail/" class="venue-card light-bg"
-         
-         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fabigail%2Flogo-1766014106254-305615155_407010268227310_4802619442028591549_n.png?alt=media&amp;token=4ce50b8b-1651-43a0-bebc-b2319ff1e280');"
-         
-      >
-        <div class="card-content">
-            <!-- Card Header to group title and logo -->
-            <div class="card-header">
-              
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fabigail%2Flogo-1766014106254-305615155_407010268227310_4802619442028591549_n.png?alt=media&amp;token=4ce50b8b-1651-43a0-bebc-b2319ff1e280" alt="Abigail logo" class="card-logo">
-              
-              <h3>Abigail</h3>
-            </div>
-            <!-- End Card Header -->
-          
-          <p class="card-category">Nightclub, Hip Hop, Lounges</p>
-          <span class="card-cta">View Details &rarr;</span>
-        </div>
-
-        <div class="card-tags-container">
-          
-
-          
-        </div>
-      </a>
-  
-      <a href="/bars/allegory/" class="venue-card light-bg"
-         
-         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fallegory%2Flogo-1766096278232-305315880_621119479457287_2637448131719755457_n.png?alt=media&amp;token=297e37c9-bb14-4b12-a249-85ca54aadeaf');"
-         
-      >
-        <div class="card-content">
-            <!-- Card Header to group title and logo -->
-            <div class="card-header">
-              
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fallegory%2Flogo-1766096278232-305315880_621119479457287_2637448131719755457_n.png?alt=media&amp;token=297e37c9-bb14-4b12-a249-85ca54aadeaf" alt="Allegory logo" class="card-logo">
-              
-              <h3>Allegory</h3>
-            </div>
-            <!-- End Card Header -->
-          
-          <p class="card-category">Speakeasies, Cocktail Bars, Hotel Bars</p>
-          <span class="card-cta">View Details &rarr;</span>
-        </div>
-
-        <div class="card-tags-container">
-          
-
-          
-        </div>
-      </a>
-  
-      <a href="/bars/astro-beer-hall/" class="venue-card light-bg"
-         
-         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fastro-beer-hall%2Flogo-1766104355454-300698758_745657426630126_4451759453779517410_n.jpg?alt=media&amp;token=1b573cd9-c749-4bcd-bf00-06abc75dd3e6');"
-         
-      >
-        <div class="card-content">
-            <!-- Card Header to group title and logo -->
-            <div class="card-header">
-              
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fastro-beer-hall%2Flogo-1766104355454-300698758_745657426630126_4451759453779517410_n.jpg?alt=media&amp;token=1b573cd9-c749-4bcd-bf00-06abc75dd3e6" alt="Astro Beer Hall logo" class="card-logo">
-              
-              <h3>Astro Beer Hall</h3>
-            </div>
-            <!-- End Card Header -->
-          
-          <p class="card-category">Beer Gardens, Gastropubs, Burger Bars</p>
-          <span class="card-cta">View Details &rarr;</span>
-        </div>
-
-        <div class="card-tags-container">
-          
-
-          
-        </div>
-      </a>
-  
-      <a href="/bars/bar-chinois/" class="venue-card light-bg"
-         
-         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbar-chinois%2Flogo-1766148856068-240293860_923273261589669_9030014920518035234_n.png?alt=media&amp;token=1db00863-4deb-4f6d-8209-58d0bf210a35');"
-         
-      >
-        <div class="card-content">
-            <!-- Card Header to group title and logo -->
-            <div class="card-header">
-              
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbar-chinois%2Flogo-1766148856068-240293860_923273261589669_9030014920518035234_n.png?alt=media&amp;token=1db00863-4deb-4f6d-8209-58d0bf210a35" alt="Bar Chinois logo" class="card-logo">
-              
-              <h3>Bar Chinois</h3>
-            </div>
-            <!-- End Card Header -->
-          
-          <p class="card-category">Cocktail Bars, Asian Fusion, Happy Hour Spots</p>
-          <span class="card-cta">View Details &rarr;</span>
-        </div>
-
-        <div class="card-tags-container">
-          
-            <div class="card-happy-hour-tag">
-              🎉 Happy Hour
-            </div>
-          
-
-          
-        </div>
-      </a>
   
       <a href="/bars/blackfinn-dc/" class="venue-card light-bg"
          
@@ -2129,6 +2000,136 @@
         </div>
       </a>
   
+      <a href="/bars/21st-amendment-bar-grill/" class="venue-card "
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+              <h3>21st Amendment Bar & Grill</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Hotel Bars, American, Gastropubs</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/abigail/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fabigail%2Flogo-1766014106254-305615155_407010268227310_4802619442028591549_n.png?alt=media&amp;token=4ce50b8b-1651-43a0-bebc-b2319ff1e280');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fabigail%2Flogo-1766014106254-305615155_407010268227310_4802619442028591549_n.png?alt=media&amp;token=4ce50b8b-1651-43a0-bebc-b2319ff1e280" alt="Abigail logo" class="card-logo">
+              
+              <h3>Abigail</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Nightclub, Hip Hop, Lounges</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/allegory/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fallegory%2Flogo-1766096278232-305315880_621119479457287_2637448131719755457_n.png?alt=media&amp;token=297e37c9-bb14-4b12-a249-85ca54aadeaf');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fallegory%2Flogo-1766096278232-305315880_621119479457287_2637448131719755457_n.png?alt=media&amp;token=297e37c9-bb14-4b12-a249-85ca54aadeaf" alt="Allegory logo" class="card-logo">
+              
+              <h3>Allegory</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Speakeasies, Cocktail Bars, Hotel Bars</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/bar-chinois/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbar-chinois%2Flogo-1766148856068-240293860_923273261589669_9030014920518035234_n.png?alt=media&amp;token=1db00863-4deb-4f6d-8209-58d0bf210a35');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbar-chinois%2Flogo-1766148856068-240293860_923273261589669_9030014920518035234_n.png?alt=media&amp;token=1db00863-4deb-4f6d-8209-58d0bf210a35" alt="Bar Chinois logo" class="card-logo">
+              
+              <h3>Bar Chinois</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Cocktail Bars, Asian Fusion, Happy Hour Spots</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+            <div class="card-happy-hour-tag">
+              🎉 Happy Hour
+            </div>
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/astro-beer-hall/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fastro-beer-hall%2Flogo-1766104355454-300698758_745657426630126_4451759453779517410_n.jpg?alt=media&amp;token=1b573cd9-c749-4bcd-bf00-06abc75dd3e6');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fastro-beer-hall%2Flogo-1766104355454-300698758_745657426630126_4451759453779517410_n.jpg?alt=media&amp;token=1b573cd9-c749-4bcd-bf00-06abc75dd3e6" alt="Astro Beer Hall logo" class="card-logo">
+              
+              <h3>Astro Beer Hall</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Beer Gardens, Gastropubs, Burger Bars</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
 </div>
 
 <div style="margin-top: 3rem; text-align: center;">
@@ -2187,6 +2188,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

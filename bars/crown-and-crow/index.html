@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -293,68 +294,16 @@ Large group celebrations, rehearsal dinners, craft beer enthusiasts, immersive d
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://popville.com/2025/12/missed-connection-crown-crow" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://wsj.com/business/dc-bars-government-shutdown-federal-workers-80512459?gaa_at=eafs&amp;gaa_n=AWEtsqdg7lsh03foZoHKBk-A-8cjv7xPnPYZh-Od6_rAMu5dEJ4HyZXdFDCM&amp;gaa_ts=695a56dc&amp;gaa_sig=8QGY1ixodHNAJzIWT1SQv49NcZzxcG_GnJNYcUpzgWErD9LAvIEcgBWQr0tBjcdGUHaPqNKIz7s_yp5mtSU2Fw%3D%3D" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=popville.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>PoPville</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 12, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Missed Connection – Crown &amp; Crow</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Crown &amp; Crow served as the setting for a social encounter featured in a missed connection, where patrons engaged in conversation while visiting the bar on a Thursday night. The venue is highlighted as a local spot for meeting new people and social interaction in Washington, D.C.</p>
-           
-        </a>
-      
-        <a href="https://washingtonpost.com/dc-md-va/2024/10/03/crown-crow-love-is-blind-dc-watch-party-season-7-premiere" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=wsj.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The Wall Street Journal</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtonpost.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Washington Post</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 12, 2024</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Guest column | Things we overheard at a ‘Love Is Blind’ watch party in D.C.</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Shutdown Specials and Unhappy Hours Are Taking Over the D.C. Bar Scene</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Crown &amp; Crow is a Victorian-pub-inspired bar in Washington, D.C., that served as a filming location for the local season of &#39;Love Is Blind.&#39; The venue hosts themed watch parties and is recognized for its lively atmosphere and connection to the reality dating series.</p>
-           
-        </a>
-      
-        <a href="https://thewash.org/2024/10/15/logan-circle-bar-increases-sales-by-50-during-love-is-blind-watch-parties" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=thewash.org" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Wash</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 15, 2024</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Logan Circle bar increases sales by 50% during ‘Love is Blind’ watch parties</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Crown &amp; Crow in Logan Circle saw a 50% increase in Wednesday revenue by hosting watch parties for the D.C.-based seventh season of Netflix&#39;s *Love is Blind*. The venue, which served as a filming location for the series, attracted crowds with themed cocktails and an immersive &#39;on-set&#39; viewing experience.</p>
-           
-        </a>
-      
-        <a href="https://dc.eater.com/2018/7/23/17604722/crown-crow-logan-circle-good-news-bad-news" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 23, 2018</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Crown &amp; Crow Reminds Patrons of an Underground London Pub</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Crown &amp; Crow is a Victorian-themed subterranean bar in Logan Circle that features a dual-room layout including the intimate Crow bar and the spacious Crown room. The alcohol-only venue offers an extensive selection of cocktails, wines, and beers, complemented by an elegant vintage atmosphere, live music, and a BYO food policy.</p>
-           
-        </a>
-      
-        <a href="https://dc.eater.com/2018/7/2/17528114/crown-and-crow-logan-circle-dc-openings" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 2, 2018</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Step Back in Time at D.C.’s Lovingly Recreated Victorian Era Bar</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Crown &amp; Crow is a subterranean, Victorian-themed bar in Logan Circle that features a meticulously designed atmosphere using salvaged antique decor and an authentic 19th-century wooden bar. The venue specializes in an extensive whiskey collection and draft beers across two distinct spaces, offering live music and a unique environment where guests can order food delivery from neighboring restaurants. </p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Crown &amp; Crow features &#39;shutdown specials&#39; and &#39;unhappy hour&#39; deals tailored for federal employees and contractors in Washington, D.C. The Logan Circle bar provides a communal space for those affected by government closures to gather and access discounted food and drink options.</p>
            
         </a>
       
@@ -637,6 +586,49 @@ It&#39;s located an awkward distance away from the...
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

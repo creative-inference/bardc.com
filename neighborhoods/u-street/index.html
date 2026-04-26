@@ -49,7 +49,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -68,17 +68,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -104,7 +106,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -219,7 +220,7 @@
             lat: 38.9168094,
             lng: -77.03556569999999,
             address: "1524 U St NW, Washington, DC 20009, United States",
-            category: "Ethiopian, Cocktail Bars",
+            category: "Ethiopian, Cocktail Bars, Romantic",
             logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fabuare-bar-and-restaurant%2Flogo-1766014231880-385870896_122105357582065079_1431779160270995317_n.jpg?alt=media&amp;token=68b3a462-5901-4c68-b833-88b1b28171b5"
           },
         
@@ -231,7 +232,7 @@
             lat: 38.9154148,
             lng: -77.0203866,
             address: "600 T St NW, Washington, DC 20001, USA",
-            category: "Speakeasies, Cocktail Bars, Comedy Clubs",
+            category: "Speakeasies, Cocktail Bars, Jazz Clubs",
             logoUrl: ""
           },
         
@@ -250,37 +251,13 @@
       
         
           {
-            name: "All Souls Bar",
-            slug: "all-souls-bar",
-            lat: 38.9157483,
-            lng: -77.022727,
-            address: "725 T St NW, Washington, DC 20001, United States",
-            category: "Neighborhood Bars, Cocktail Bars, Late Night",
-            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fall-souls-bar%2Flogo-1766095959123-301003006_567522488493583_6987044619440847649_n.jpg?alt=media&amp;token=9cc74086-6843-4bcf-af9e-debc85f8642d"
-          },
-        
-      
-        
-          {
-            name: "American Ice Company",
-            slug: "american-ice-company",
-            lat: 38.9184172,
-            lng: -77.0252773,
-            address: "917 V St NW, Washington, DC 20001, United States",
-            category: "Neighborhood Bars, Gastropubs, Happy Hour Spots",
-            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Famerican-ice-company%2Flogo-1766096620768-301482738_593850358989941_3481261664626494968_n.jpg?alt=media&amp;token=c2492dc8-42a3-4eb6-bbde-40a49330f98d"
-          },
-        
-      
-        
-          {
-            name: "Amsterdam Lounge",
-            slug: "amsterdam-lounge",
-            lat: 38.9167755,
-            lng: -77.0284523,
-            address: "1208 U St NW, Washington, DC 20009, United States",
-            category: "Lounges, Hip Hop, Nightclub",
-            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Famsterdam-lounge%2Flogo-1766096783199-300784858_390999339863473_3634020091973687147_n.jpg?alt=media&amp;token=4f502d9c-6bff-4bd4-a2d4-b2c36f6ee100"
+            name: "Ben&#39;s Next Door",
+            slug: "ben-s-next-door",
+            lat: 38.9171565,
+            lng: -77.0286876,
+            address: "1211 U St NW, Washington, DC 20009, United States",
+            category: "Brunch Spots, Cocktail Bars, Soul Food",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fben-s-next-door%2Flogo-1766150360473-325404685_702550268032452_4586824564107795568_n.jpg?alt=media&amp;token=6a6cc7bc-0e1f-4825-b513-f44d7047f03a"
           },
         
       
@@ -293,18 +270,6 @@
             address: "1939 12th St NW, Washington, DC 20009, United States",
             category: "Cocktail Bars, Wine Bars, Happy Hour Spots",
             logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbarkada-wine-and-cocktail-bar%2Flogo-1766149563906-302444778_543655144427348_5538802851831080822_n.png?alt=media&amp;token=9687c42b-d845-4d28-bf87-7cc622fb39bc"
-          },
-        
-      
-        
-          {
-            name: "Ben&#39;s Next Door",
-            slug: "ben-s-next-door",
-            lat: 38.9171565,
-            lng: -77.0286876,
-            address: "1211 U St NW, Washington, DC 20009, United States",
-            category: "Brunch Spots, Cocktail Bars, Soul Food",
-            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fben-s-next-door%2Flogo-1766150360473-325404685_702550268032452_4586824564107795568_n.jpg?alt=media&amp;token=6a6cc7bc-0e1f-4825-b513-f44d7047f03a"
           },
         
       
@@ -329,18 +294,6 @@
             address: "2001 14th St NW, Washington, DC 20009, United States",
             category: "Gay Bars, Drag Shows, Nightclub",
             logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbunker%2Flogo-1766320309947-383355280_843982090850489_1944582710131570943_n.jpg?alt=media&amp;token=6cdaa24a-bd68-470c-aa80-229355f91049"
-          },
-        
-      
-        
-          {
-            name: "Cafe Saint-Ex",
-            slug: "cafe-saint-ex",
-            lat: 38.9154146,
-            lng: -77.03170899999999,
-            address: "1847 14th St NW, Washington, DC 20009, USA",
-            category: "Nightclub, Comedy Clubs, Happy Hour Spots",
-            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcafe-saint-ex%2Flogo-1766320942126-10723947_810527112301496_1885290486_a.jpg?alt=media&amp;token=9e590009-2f8a-48b9-a487-9ee145439a2c"
           },
         
       
@@ -1131,8 +1084,56 @@
             lat: 38.917948,
             lng: -77.0237227,
             address: "815 V St NW, Washington, DC 20001, USA",
-            category: "Live Music Venues, Concert Halls, Rock",
+            category: "Live Music Venues, Nightclubs, Historic",
             logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2F9-30-club%2Flogo-1766013174011-327435022_857429208884549_6604525457621227370_n.jpg?alt=media&amp;token=c0e2d533-bf9d-4759-ba00-4523a02fef39"
+          },
+        
+      
+        
+          {
+            name: "All Souls Bar",
+            slug: "all-souls-bar",
+            lat: 38.9157483,
+            lng: -77.022727,
+            address: "725 T St NW, Washington, DC 20001, United States",
+            category: "Neighborhood Bars, Cocktail Bars, Late Night",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fall-souls-bar%2Flogo-1766095959123-301003006_567522488493583_6987044619440847649_n.jpg?alt=media&amp;token=9cc74086-6843-4bcf-af9e-debc85f8642d"
+          },
+        
+      
+        
+          {
+            name: "American Ice Company",
+            slug: "american-ice-company",
+            lat: 38.9184172,
+            lng: -77.0252773,
+            address: "917 V St NW, Washington, DC 20001, United States",
+            category: "Neighborhood Bars, Gastropubs, Happy Hour Spots",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Famerican-ice-company%2Flogo-1766096620768-301482738_593850358989941_3481261664626494968_n.jpg?alt=media&amp;token=c2492dc8-42a3-4eb6-bbde-40a49330f98d"
+          },
+        
+      
+        
+          {
+            name: "Cafe Saint-Ex",
+            slug: "cafe-saint-ex",
+            lat: 38.9154146,
+            lng: -77.03170899999999,
+            address: "1847 14th St NW, Washington, DC 20009, USA",
+            category: "Nightclub, Comedy Clubs, Happy Hour Spots",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcafe-saint-ex%2Flogo-1766320942126-10723947_810527112301496_1885290486_a.jpg?alt=media&amp;token=9e590009-2f8a-48b9-a487-9ee145439a2c"
+          },
+        
+      
+        
+          {
+            name: "Amsterdam Lounge",
+            slug: "amsterdam-lounge",
+            lat: 38.9167755,
+            lng: -77.0284523,
+            address: "1208 U St NW, Washington, DC 20009, United States",
+            category: "Lounges, Nightclubs, Hip Hop",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Famsterdam-lounge%2Flogo-1766096783199-300784858_390999339863473_3634020091973687147_n.jpg?alt=media&amp;token=4f502d9c-6bff-4bd4-a2d4-b2c36f6ee100"
           },
         
       
@@ -1310,7 +1311,7 @@
             </div>
             <!-- End Card Header -->
           
-          <p class="card-category">Ethiopian, Cocktail Bars</p>
+          <p class="card-category">Ethiopian, Cocktail Bars, Romantic</p>
           <span class="card-cta">View Details &rarr;</span>
         </div>
 
@@ -1332,7 +1333,7 @@
             </div>
             <!-- End Card Header -->
           
-          <p class="card-category">Speakeasies, Cocktail Bars, Comedy Clubs</p>
+          <p class="card-category">Speakeasies, Cocktail Bars, Jazz Clubs</p>
           <span class="card-cta">View Details &rarr;</span>
         </div>
 
@@ -1373,78 +1374,30 @@
         </div>
       </a>
   
-      <a href="/bars/all-souls-bar/" class="venue-card light-bg"
+      <a href="/bars/ben-s-next-door/" class="venue-card light-bg"
          
-         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fall-souls-bar%2Flogo-1766095959123-301003006_567522488493583_6987044619440847649_n.jpg?alt=media&amp;token=9cc74086-6843-4bcf-af9e-debc85f8642d');"
-         
-      >
-        <div class="card-content">
-            <!-- Card Header to group title and logo -->
-            <div class="card-header">
-              
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fall-souls-bar%2Flogo-1766095959123-301003006_567522488493583_6987044619440847649_n.jpg?alt=media&amp;token=9cc74086-6843-4bcf-af9e-debc85f8642d" alt="All Souls Bar logo" class="card-logo">
-              
-              <h3>All Souls Bar</h3>
-            </div>
-            <!-- End Card Header -->
-          
-          <p class="card-category">Neighborhood Bars, Cocktail Bars, Late Night</p>
-          <span class="card-cta">View Details &rarr;</span>
-        </div>
-
-        <div class="card-tags-container">
-          
-
-          
-        </div>
-      </a>
-  
-      <a href="/bars/american-ice-company/" class="venue-card light-bg"
-         
-         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Famerican-ice-company%2Flogo-1766096620768-301482738_593850358989941_3481261664626494968_n.jpg?alt=media&amp;token=c2492dc8-42a3-4eb6-bbde-40a49330f98d');"
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fben-s-next-door%2Flogo-1766150360473-325404685_702550268032452_4586824564107795568_n.jpg?alt=media&amp;token=6a6cc7bc-0e1f-4825-b513-f44d7047f03a');"
          
       >
         <div class="card-content">
             <!-- Card Header to group title and logo -->
             <div class="card-header">
               
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Famerican-ice-company%2Flogo-1766096620768-301482738_593850358989941_3481261664626494968_n.jpg?alt=media&amp;token=c2492dc8-42a3-4eb6-bbde-40a49330f98d" alt="American Ice Company logo" class="card-logo">
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fben-s-next-door%2Flogo-1766150360473-325404685_702550268032452_4586824564107795568_n.jpg?alt=media&amp;token=6a6cc7bc-0e1f-4825-b513-f44d7047f03a" alt="Ben&#39;s Next Door logo" class="card-logo">
               
-              <h3>American Ice Company</h3>
+              <h3>Ben's Next Door</h3>
             </div>
             <!-- End Card Header -->
           
-          <p class="card-category">Neighborhood Bars, Gastropubs, Happy Hour Spots</p>
+          <p class="card-category">Brunch Spots, Cocktail Bars, Soul Food</p>
           <span class="card-cta">View Details &rarr;</span>
         </div>
 
         <div class="card-tags-container">
           
-
-          
-        </div>
-      </a>
-  
-      <a href="/bars/amsterdam-lounge/" class="venue-card light-bg"
-         
-         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Famsterdam-lounge%2Flogo-1766096783199-300784858_390999339863473_3634020091973687147_n.jpg?alt=media&amp;token=4f502d9c-6bff-4bd4-a2d4-b2c36f6ee100');"
-         
-      >
-        <div class="card-content">
-            <!-- Card Header to group title and logo -->
-            <div class="card-header">
-              
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Famsterdam-lounge%2Flogo-1766096783199-300784858_390999339863473_3634020091973687147_n.jpg?alt=media&amp;token=4f502d9c-6bff-4bd4-a2d4-b2c36f6ee100" alt="Amsterdam Lounge logo" class="card-logo">
-              
-              <h3>Amsterdam Lounge</h3>
+            <div class="card-happy-hour-tag">
+              🎉 Happy Hour
             </div>
-            <!-- End Card Header -->
-          
-          <p class="card-category">Lounges, Hip Hop, Nightclub</p>
-          <span class="card-cta">View Details &rarr;</span>
-        </div>
-
-        <div class="card-tags-container">
           
 
           
@@ -1471,36 +1424,6 @@
         </div>
 
         <div class="card-tags-container">
-          
-
-          
-        </div>
-      </a>
-  
-      <a href="/bars/ben-s-next-door/" class="venue-card light-bg"
-         
-         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fben-s-next-door%2Flogo-1766150360473-325404685_702550268032452_4586824564107795568_n.jpg?alt=media&amp;token=6a6cc7bc-0e1f-4825-b513-f44d7047f03a');"
-         
-      >
-        <div class="card-content">
-            <!-- Card Header to group title and logo -->
-            <div class="card-header">
-              
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fben-s-next-door%2Flogo-1766150360473-325404685_702550268032452_4586824564107795568_n.jpg?alt=media&amp;token=6a6cc7bc-0e1f-4825-b513-f44d7047f03a" alt="Ben&#39;s Next Door logo" class="card-logo">
-              
-              <h3>Ben's Next Door</h3>
-            </div>
-            <!-- End Card Header -->
-          
-          <p class="card-category">Brunch Spots, Cocktail Bars, Soul Food</p>
-          <span class="card-cta">View Details &rarr;</span>
-        </div>
-
-        <div class="card-tags-container">
-          
-            <div class="card-happy-hour-tag">
-              🎉 Happy Hour
-            </div>
           
 
           
@@ -1549,32 +1472,6 @@
             <!-- End Card Header -->
           
           <p class="card-category">Gay Bars, Drag Shows, Nightclub</p>
-          <span class="card-cta">View Details &rarr;</span>
-        </div>
-
-        <div class="card-tags-container">
-          
-
-          
-        </div>
-      </a>
-  
-      <a href="/bars/cafe-saint-ex/" class="venue-card light-bg"
-         
-         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcafe-saint-ex%2Flogo-1766320942126-10723947_810527112301496_1885290486_a.jpg?alt=media&amp;token=9e590009-2f8a-48b9-a487-9ee145439a2c');"
-         
-      >
-        <div class="card-content">
-            <!-- Card Header to group title and logo -->
-            <div class="card-header">
-              
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcafe-saint-ex%2Flogo-1766320942126-10723947_810527112301496_1885290486_a.jpg?alt=media&amp;token=9e590009-2f8a-48b9-a487-9ee145439a2c" alt="Cafe Saint-Ex logo" class="card-logo">
-              
-              <h3>Cafe Saint-Ex</h3>
-            </div>
-            <!-- End Card Header -->
-          
-          <p class="card-category">Nightclub, Comedy Clubs, Happy Hour Spots</p>
           <span class="card-cta">View Details &rarr;</span>
         </div>
 
@@ -3358,7 +3255,115 @@
             </div>
             <!-- End Card Header -->
           
-          <p class="card-category">Live Music Venues, Concert Halls, Rock</p>
+          <p class="card-category">Live Music Venues, Nightclubs, Historic</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+            <div class="card-events-tag">
+              📅 Events
+            </div>
+          
+        </div>
+      </a>
+  
+      <a href="/bars/all-souls-bar/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fall-souls-bar%2Flogo-1766095959123-301003006_567522488493583_6987044619440847649_n.jpg?alt=media&amp;token=9cc74086-6843-4bcf-af9e-debc85f8642d');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fall-souls-bar%2Flogo-1766095959123-301003006_567522488493583_6987044619440847649_n.jpg?alt=media&amp;token=9cc74086-6843-4bcf-af9e-debc85f8642d" alt="All Souls Bar logo" class="card-logo">
+              
+              <h3>All Souls Bar</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Neighborhood Bars, Cocktail Bars, Late Night</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/american-ice-company/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Famerican-ice-company%2Flogo-1766096620768-301482738_593850358989941_3481261664626494968_n.jpg?alt=media&amp;token=c2492dc8-42a3-4eb6-bbde-40a49330f98d');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Famerican-ice-company%2Flogo-1766096620768-301482738_593850358989941_3481261664626494968_n.jpg?alt=media&amp;token=c2492dc8-42a3-4eb6-bbde-40a49330f98d" alt="American Ice Company logo" class="card-logo">
+              
+              <h3>American Ice Company</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Neighborhood Bars, Gastropubs, Happy Hour Spots</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/cafe-saint-ex/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcafe-saint-ex%2Flogo-1766320942126-10723947_810527112301496_1885290486_a.jpg?alt=media&amp;token=9e590009-2f8a-48b9-a487-9ee145439a2c');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcafe-saint-ex%2Flogo-1766320942126-10723947_810527112301496_1885290486_a.jpg?alt=media&amp;token=9e590009-2f8a-48b9-a487-9ee145439a2c" alt="Cafe Saint-Ex logo" class="card-logo">
+              
+              <h3>Cafe Saint-Ex</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Nightclub, Comedy Clubs, Happy Hour Spots</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
+      <a href="/bars/amsterdam-lounge/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Famsterdam-lounge%2Flogo-1766096783199-300784858_390999339863473_3634020091973687147_n.jpg?alt=media&amp;token=4f502d9c-6bff-4bd4-a2d4-b2c36f6ee100');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Famsterdam-lounge%2Flogo-1766096783199-300784858_390999339863473_3634020091973687147_n.jpg?alt=media&amp;token=4f502d9c-6bff-4bd4-a2d4-b2c36f6ee100" alt="Amsterdam Lounge logo" class="card-logo">
+              
+              <h3>Amsterdam Lounge</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Lounges, Nightclubs, Hip Hop</p>
           <span class="card-cta">View Details &rarr;</span>
         </div>
 
@@ -3427,6 +3432,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

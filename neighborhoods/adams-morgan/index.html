@@ -49,7 +49,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -68,17 +68,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -104,7 +106,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -219,7 +220,7 @@
             lat: 38.9202301,
             lng: -77.0415366,
             address: "2319 18th St NW, Washington, DC 20009, USA",
-            category: "Lesbian Bars, LGBTQ+ Bars, Game Bars",
+            category: "Lesbian Bars, Sports Bars, Dance Clubs",
             logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fa-league-of-her-own%2Flogo-1766013233987-309345581_509234564546172_135073121794137212_n.jpg?alt=media&amp;token=7ff49a2e-1950-4236-a13f-cfaeb03ff2ba"
           },
         
@@ -245,18 +246,6 @@
             address: "1841 Columbia Rd NW, Washington, DC 20009, USA",
             category: "Pool Halls, Dive Bars, Late Night",
             logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbedrock-billiards%2Flogo-1766150203974-293200596_555180479726900_6820353420101778171_n.jpg?alt=media&amp;token=302119b2-6756-4930-905b-e84ba7c8ee0a"
-          },
-        
-      
-        
-          {
-            name: "Bossa Bistro + Lounge",
-            slug: "bossa-bistro-lounge",
-            lat: 38.9220855,
-            lng: -77.0422006,
-            address: "2463 18th St NW, Washington, DC 20009, USA",
-            category: "Lounges, Live Music Venues, Latin",
-            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbossa-bistro-lounge%2Flogo-1766318621756-15625421_1823923897866406_9046235422220353536_a.jpg?alt=media&amp;token=6f1fd35a-358e-4ad2-8d30-860011ef9769"
           },
         
       
@@ -708,6 +697,18 @@
           },
         
       
+        
+          {
+            name: "Bossa Bistro + Lounge",
+            slug: "bossa-bistro-lounge",
+            lat: 38.9220855,
+            lng: -77.0422006,
+            address: "2463 18th St NW, Washington, DC 20009, USA",
+            category: "Lounges, Live Music Venues, Latin",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbossa-bistro-lounge%2Flogo-1766318621756-15625421_1823923897866406_9046235422220353536_a.jpg?alt=media&amp;token=6f1fd35a-358e-4ad2-8d30-860011ef9769"
+          },
+        
+      
     ];
 
     if (venues.length === 0) {
@@ -882,7 +883,7 @@
             </div>
             <!-- End Card Header -->
           
-          <p class="card-category">Lesbian Bars, LGBTQ+ Bars, Game Bars</p>
+          <p class="card-category">Lesbian Bars, Sports Bars, Dance Clubs</p>
           <span class="card-cta">View Details &rarr;</span>
         </div>
 
@@ -939,32 +940,6 @@
             <!-- End Card Header -->
           
           <p class="card-category">Pool Halls, Dive Bars, Late Night</p>
-          <span class="card-cta">View Details &rarr;</span>
-        </div>
-
-        <div class="card-tags-container">
-          
-
-          
-        </div>
-      </a>
-  
-      <a href="/bars/bossa-bistro-lounge/" class="venue-card light-bg"
-         
-         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbossa-bistro-lounge%2Flogo-1766318621756-15625421_1823923897866406_9046235422220353536_a.jpg?alt=media&amp;token=6f1fd35a-358e-4ad2-8d30-860011ef9769');"
-         
-      >
-        <div class="card-content">
-            <!-- Card Header to group title and logo -->
-            <div class="card-header">
-              
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbossa-bistro-lounge%2Flogo-1766318621756-15625421_1823923897866406_9046235422220353536_a.jpg?alt=media&amp;token=6f1fd35a-358e-4ad2-8d30-860011ef9769" alt="Bossa Bistro + Lounge logo" class="card-logo">
-              
-              <h3>Bossa Bistro + Lounge</h3>
-            </div>
-            <!-- End Card Header -->
-          
-          <p class="card-category">Lounges, Live Music Venues, Latin</p>
           <span class="card-cta">View Details &rarr;</span>
         </div>
 
@@ -2037,6 +2012,32 @@
         </div>
       </a>
   
+      <a href="/bars/bossa-bistro-lounge/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbossa-bistro-lounge%2Flogo-1766318621756-15625421_1823923897866406_9046235422220353536_a.jpg?alt=media&amp;token=6f1fd35a-358e-4ad2-8d30-860011ef9769');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbossa-bistro-lounge%2Flogo-1766318621756-15625421_1823923897866406_9046235422220353536_a.jpg?alt=media&amp;token=6f1fd35a-358e-4ad2-8d30-860011ef9769" alt="Bossa Bistro + Lounge logo" class="card-logo">
+              
+              <h3>Bossa Bistro + Lounge</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Lounges, Live Music Venues, Latin</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
 </div>
 
 <div style="margin-top: 3rem; text-align: center;">
@@ -2095,6 +2096,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

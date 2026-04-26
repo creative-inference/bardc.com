@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -297,68 +298,16 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://51st.news/washington-dc-history-interviews-proof-of-life-book" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://frieze.com/article/ian-bourland-washington-dc-256" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=51st.news" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The 51st</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 12, 2026</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Excerpts from Proof of Life, a new book highlighting D.C.&#39;s culture</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Congress Heights Arts and Culture Center and Shanklin Hall are highlighted as essential spaces for preserving D.C.&#39;s Black culture and fostering community through art and gathered experiences. These venues are featured in the &#39;Proof of Life&#39; project, which documents the resilient spirit and cultural heritage of the District&#39;s native residents.</p>
-           
-        </a>
-      
-        <a href="https://washingtonian.com/2026/01/29/culture-guide-things-to-do-in-dc-februrary-2026" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=frieze.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Frieze</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 29, 2026</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">February Culture Guide: 45 Things to Do in the DC Area</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Can Washington DC’s Cultural Institutions Survive Trump?</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Culture offers a wide range of activities in the DC area for February 2026, including a Miguel concert at the Anthem and a Galentine&#39;s Day celebration on February 13. The guide also features theater premieres, film festivals, and Nick Cave&#39;s &#39;Mammoth&#39; exhibit at the Smithsonian American Art Museum.</p>
-           
-        </a>
-      
-        <a href="https://puck.news/dcs-other-culture-war-aboriginal-art-vs-art-critics" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=puck.news" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Puck</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 11, 2026</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Washington’s Other Culture Wars</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The National Gallery of Art in Washington, D.C. is currently hosting &#39;The Stars We Do Not See,&#39; a major exhibition of Australian Aboriginal art from the National Gallery of Victoria. The show highlights how Indigenous art serves as both a preservation of Aboriginal culture and vital evidence of land rights, framing these works within the context of modernism.</p>
-           
-        </a>
-      
-        <a href="https://popville.com/2026/01/culture-district-dc-speakeasy-restaurant-coming-park-view-georgia-ave" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=popville.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>PoPville</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 8, 2026</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Yo!! Culture District DC, “Speakeasy &amp; Restaurant” coming to the old Mr. Braxton space on Georgia – You Know, The Old Blue Banana spot! (and of course the OG Walters)</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Culture District DC is an upcoming elevated speakeasy and restaurant slated to open by March 2026 at 3632 Georgia Ave, NW in the former Mr. Braxton space. The venue aims to provide an intimate environment for conversation and escape, featuring luxury cocktails and refined small plates.</p>
-           
-        </a>
-      
-        <a href="https://washingtonian.com/2026/01/05/culture-guide-things-to-do-in-dc-january-2026" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 5, 2026</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">January Culture Guide: 38 Things to Do in the DC Area</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Culture highlights 38 engaging events and activities in the D.C. area for January 2026, including the return of Winter Restaurant Week and the Alvin Ailey American Dance Theater residency. The guide features a diverse lineup of entertainment, ranging from musical performances by Cate Le Bon and Igor Levit to new exhibitions at the Phillips Collection and the Smithsonian.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Washington DC’s cultural institutions, including the Smithsonian and the Kennedy Center, are facing significant upheaval due to federal shutdowns, leadership dismissals, and executive orders targeting institutional programming. The city’s arts community is currently struggling with ideological shifts and political interference that threaten to reshape national historical narratives and the autonomy of major museums.</p>
            
         </a>
       
@@ -517,6 +466,18 @@
           </div>
         </a>
       
+        <a href="/bars/bar-sirenis/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbar-sirenis%2Flogo-1766149280662-254088171_3067048776905061_4149497667275098381_n.png?alt=media&amp;token=4101a450-b18c-4b52-9f55-e199de657ebf" alt="Bar Sirenis" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Bar Sirenis</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">308m away</p>
+          </div>
+        </a>
+      
         <a href="/bars/aqua/" class="venue-card" style="min-height: 200px;">
           
              <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
@@ -526,18 +487,6 @@
           <div class="card-content" style="padding: 1rem;">
             <h4 style="margin: 0; font-size: 1rem;">Aqua</h4>
             <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">828m away</p>
-          </div>
-        </a>
-      
-        <a href="/bars/treehouse-rooftop/" class="venue-card" style="min-height: 200px;">
-          
-             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
-               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Ftreehouse-rooftop%2Flogo-1767143628101-404603177_323992400369355_6959191257022268377_n.jpg?alt=media&amp;token=ac4c942b-d52e-4e6b-8f81-df0b8af49062" alt="Treehouse Rooftop" style="max-height: 80%; max-width: 80%; object-fit: contain;">
-             </div>
-          
-          <div class="card-content" style="padding: 1rem;">
-            <h4 style="margin: 0; font-size: 1rem;">Treehouse Rooftop</h4>
-            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">1126m away</p>
           </div>
         </a>
       
@@ -636,6 +585,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

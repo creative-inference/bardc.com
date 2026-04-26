@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -298,68 +299,55 @@ Cuban coffee, waterfront brunch, tropical cocktails, quick bites, afternoon happ
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://capitolskyline.com/cozy-cafes-in-washington-d-c-rest-and-refuel" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://fox5dc.com/video/1692000" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=capitolskyline.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>capitolskyline.com</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 11, 2026</span>
+              <img src="https://www.google.com/s2/favicons?domain=fox5dc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>FOX 5 DC</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Cozy Cafés in Washington D.C. – Rest and Refuel While Sightseeing</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Celebrate National Rum Day with Colada Shop!</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Colada Shop on 14th St. NW is highlighted as a scenic Cuban café ideal for resting and refueling while sightseeing in Washington D.C. The venue is noted for its vibrant décor and rooftop atmosphere, offering a visually appealing spot to enjoy coffee and Cuban-inspired snacks.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Colada Shop featured a variety of refreshing rum-based cocktails during a special appearance on FOX 5 DC&#39;s Liquid Lunch segment. The showcase highlighted the venue&#39;s signature drinks and creative mixology in celebration of National Rum Day.</p>
            
         </a>
       
-        <a href="https://washingtonian.com/2026/02/06/how-actor-wilmer-valderrama-ended-up-opening-a-cocktail-bar-in-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://wusa9.com/video/entertainment/television/programs/great-day-washington/the-inspiration-behind-colada-shops-colorful-cuban-flavors/65-ff259deb-b9c0-4fb1-96cd-e5b4f87eb52b" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 6, 2026</span>
+              <img src="https://www.google.com/s2/favicons?domain=wusa9.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>WUSA9</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">How Actor Wilmer Valderrama Ended Up Opening a Cocktail Bar in DC</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The inspiration behind Colada Shop’s colorful Cuban flavors</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Colada Shop owner Daniella Senior and chef Jova Urriola have partnered with actor Wilmer Valderrama to open Elegancia, a Latin American-inspired cocktail bar in DC’s La Cosecha food hall. The menu highlights Venezuelan and Dominican heritage through creative offerings like an avocado-based &#39;Oro Verde&#39; cocktail and traditional sancocho soup served to guests at last call.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Colada Shop founder Daniella Senior shares the inspiration behind her colorful Cuban-style cafe and her journey from the Dominican Republic to Washington, D.C. The venue focuses on bringing people together through authentic Caribbean flavors, vibrant decor, and traditional coffee culture.</p>
            
         </a>
       
-        <a href="https://axios.com/local/washington-dc/2026/02/05/dc-super-bowl-watch-parties-bar-specials" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://secretdc.com/dc-hot-chocolates" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=axios.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Axios</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 5, 2026</span>
+              <img src="https://www.google.com/s2/favicons?domain=secretdc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Secret DC</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">D.C.&#39;s Super Bowl gameplan</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">9 Best Hot Chocolate Spots Around D.C. To Keep You Cozy</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Colada Shop is offering four specialized catering packages for Super Bowl Sunday featuring a variety of Cuban dishes. Options include party-ready favorites such as sliders, empanadas, and croquetas.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Colada Shop is recognized as one of the top destinations in the D.C. area for hot chocolate, offering a cozy atmosphere to escape the winter cold. The venue provides a vibrant setting where guests can enjoy rich, flavorful seasonal beverages.</p>
            
         </a>
       
-        <a href="https://wtop.com/food-restaurant/2026/01/from-spicy-to-boozy-15-hot-chocolates-you-need-to-try-in-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://washington.org/visit-dc/we-the-people/daniella-senior" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=wtop.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WTOP</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 31, 2026</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">15 spots to sip some of DC’s best hot chocolates</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Colada Shop offers a well-spiced hot chocolate featuring subtle notes of cinnamon and a balanced, comforting flavor profile that is neither too thick nor overly sweet. This classic winter drink is available at multiple locations with optional marshmallows.</p>
-           
-        </a>
-      
-        <a href="https://washingtonpost.com/dc-md-va/2026/01/26/wilmer-valderrama-bar-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=washington.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Washington.org</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtonpost.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Washington Post</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 26, 2026</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Next up for actor Wilmer Valderrama? Opening a D.C. cocktail bar.</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">A Taste of Home: Daniella Senior&#39;s Culinary Journey in DC</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Colada Shop founder Daniella Senior is partnering with actor Wilmer Valderrama to open Elegancia, an upscale Latin American cocktail bar in Washington, D.C.’s Union Market. Scheduled to open in early February 2026 inside the La Cosecha complex, the venue will feature a menu designed to evoke personal memories through specialized cuisine and cocktails.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Colada Shop serves as a vibrant Cuban-inspired all-day cafe offering a taste of Havana in the heart of Washington, D.C. The menu features signature items like cafe con leche, guava pastelitos, and authentic Cuban sandwiches, providing a welcoming atmosphere at locations such as The Wharf.</p>
            
         </a>
       
@@ -635,6 +623,49 @@ Cuban coffee, waterfront brunch, tropical cocktails, quick bites, afternoon happ
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

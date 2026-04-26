@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -155,11 +156,11 @@
                 <p><strong>Category:</strong> 
                   
                   
-                    <a href="/categories/rooftop-bars/">Rooftop Bars</a>, 
-                  
                     <a href="/categories/pizza-bars/">Pizza Bars</a>, 
                   
-                    <a href="/categories/american/">American</a>
+                    <a href="/categories/rooftop-bars/">Rooftop Bars</a>, 
+                  
+                    <a href="/categories/waterfront/">Waterfront</a>
                   
                 </p>
                 
@@ -329,68 +330,16 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://blog.resy.com/2025/05/outdoor-dining-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://washington.org/visit-dc/waterfront-things-do-capitol-riverfront" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=blog.resy.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Resy | Right This Way</span>
-              <span style="margin-left:auto; text-transform:none;">Jun 17, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Resy Guide to Outdoor Dining in D.C. — Resy | Right This Way</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">All-Purpose Capitol Riverfront provides a scenic outdoor dining experience overlooking the Anacostia River, specializing in deck-oven pizzas and Italian-American favorites. This Navy Yard destination serves as an ideal pre- or post-game gathering spot due to its proximity to Nationals Park and Audi Field.</p>
-           
-        </a>
-      
-        <a href="https://mocoshow.com/2025/05/26/olney-resident-mike-friedman-is-finalist-for-chef-of-the-year-award" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=washington.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Washington.org</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=mocoshow.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The MoCo Show -</span>
-              <span style="margin-left:auto; text-transform:none;">May 26, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Olney Resident Mike Friedman is Finalist for “Chef of the Year” Award</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">10+ Exciting Things to Do On &amp; Around the Water in Capitol Riverfront</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">All-Purpose Capitol Riverfront is highlighted as a key establishment of Chef Mike Friedman, who was named a finalist for the 2025 Chef of the Year award by the Restaurant Association Metropolitan Washington. The venue, which opened in 2018, specializes in New Jersey-inspired antipasti and deck oven-fired pizzas as part of Friedman&#39;s celebrated D.C. restaurant group.</p>
-           
-        </a>
-      
-        <a href="https://dc.eater.com/2017/10/24/16072140/dc-dining-guide" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Apr 14, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">An Eater’s Guide to Dining in D.C.</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">All-Purpose Capitol Riverfront is highlighted as a premier destination for its creative pizzas and popular brunch service featuring egg-topped pies and Sicilian disco fries. The venue is recognized as an essential part of Washington D.C.&#39;s pizza renaissance, offering a unique style with inventive toppings in the Navy Yard neighborhood.</p>
-           
-        </a>
-      
-        <a href="https://mommypoppins.com/washington-dc-kids/best-pizza-in-dc-maryland-northern-virginia" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=mommypoppins.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Mommy Poppins</span>
-              <span style="margin-left:auto; text-transform:none;">Mar 14, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Where to Find the Best Pizza in DC, Maryland, &amp; Northern Virginia</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">All-Purpose Capitol Riverfront serves Jersey-style deck-oven pizza in a vibrant atmosphere featuring extensive outdoor seating. The restaurant is highlighted as an ideal dining destination for families, especially when visiting the area for a Washington Nationals game.</p>
-           
-        </a>
-      
-        <a href="https://totalfood.com/chef-michael-friedman-tasty-fare-to-dc-dining-scene" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=totalfood.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>totalfood.com</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 27, 2023</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Chef Michael Friedman Brings Tasty Fare To DC Dining Scene</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">All-Purpose Capitol Riverfront offers a menu of deck oven-fired pizzas and Italian-influenced dishes inspired by the Eastern U.S. and Amalfi Coastlines. Situated on the Anacostia River, the restaurant features award-winning pizza dough created by Chef Michael Friedman using high-quality specialty ingredients. This waterfront venue serves as a sibling to the original Shaw location, providing a mix of classic Italian-American fare and modern comfort food.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">All-Purpose Capitol Riverfront offers a scenic waterfront patio where guests can enjoy weekend brunch and bottomless mimosas overlooking the Anacostia River. The restaurant is highlighted as a prime dining destination for those exploring the neighborhood&#39;s outdoor and recreational activities.</p>
            
         </a>
       
@@ -668,6 +617,49 @@ Don’t waste your time go to Grazzie Nona that’s a real pizza place. I...
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

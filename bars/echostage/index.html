@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -299,68 +300,42 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://washingtonian.com/2025/12/29/things-to-do-in-the-dc-area-december-29-january-4-2026" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://shorefire.com/releases/entry/trixie-mattel-announces-world-pride-dc-solid-pink-disco-show" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 29, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=shorefire.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Shore Fire Media</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">25 Things to Do in the DC Area This Week and Weekend</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Trixie Mattel Announces WorldPride DC Solid Pink Disco Show</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Echostage hosts Dutch tech house DJ Mau P for a headline New Year&#39;s Eve electronic music performance in Washington, D.C.’s Langdon neighborhood. The event serves as a premier 2025 year-end celebration for the venue, which is known for bringing top-tier EDM talent to the district.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Echostage served as the host venue for Trixie Mattel&#39;s &#39;Solid Pink Disco: Blonde Edition&#39; as part of the WorldPride DC celebrations. The high-energy event featured sets by the drag icon and DJ Mateo Segade, blending signature pop aesthetics with disco music.</p>
            
         </a>
       
-        <a href="https://ticketnews.com/2025/10/subtronics-tickets-on-sale-for-two-nights-at-echostage-in-washington-d-c" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://secretdc.com/echostage-best-club" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=ticketnews.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>TicketNews</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 22, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=secretdc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Secret DC</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Subtronics tickets on sale for two nights at Echostage in Washington, D.C.</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Washington, D.C.’s Echostage Ranked #1 Club In The U.S. &amp; Among Top-5 In The World</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Echostage in Washington, D.C. will host electronic bass artist Subtronics for a two-night run on February 19 and 20, 2026. Tickets are currently on sale for these high-energy performances, which are set to feature the artist&#39;s signature genre-blending sets and cutting-edge visuals.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Echostage has been ranked as the #1 club in the United States and the #4 club globally in DJ Mag’s prestigious Top 100 Clubs poll. This recognition highlights the venue&#39;s massive 30,000-square-foot layout and state-of-the-art production capabilities that attract top-tier electronic dance music talent to Washington, D.C.</p>
            
         </a>
       
-        <a href="https://edm.com/news/eric-prydz-christoph-echostage-nye-2019" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://fox5dc.com/video/fmc-92n6gpa6tnrie94f" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=edm.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>edm.com</span>
-              <span style="margin-left:auto; text-transform:none;">Aug 6, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Eric Prydz to Bring in the New Year at Echostage in Washington, D.C.</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Echostage hosted a landmark New Year’s Eve celebration featuring an extended eight-hour performance by Swedish DJ Eric Prydz and his protégé Cristoph. The event highlighted the venue&#39;s role in hosting major progressive house productions and established it as a key destination for large-scale holiday events in Washington, D.C.</p>
-           
-        </a>
-      
-        <a href="https://edm.com/industry/washington-dc-to-lift-nightlife-capacity-restrictions-summer-2021" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=fox5dc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>FOX 5 DC</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=edm.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>edm.com</span>
-              <span style="margin-left:auto; text-transform:none;">Aug 6, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Washington, D.C. to Lift Capacity Restrictions for Nightlife Venues This Summer</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">DJ duo Two Friends hits DC tomorrow night</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Echostage announced its official return to Washington, D.C. on June 11th following the city&#39;s decision to lift pandemic-era capacity restrictions and midnight curfews. The move allows the venue to resume full-scale operations and return to its traditional late-night weekend hours.</p>
-           
-        </a>
-      
-        <a href="https://ticketnews.com/2025/07/chris-lake-tickets-on-sale-in-washington-at-echostage" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=ticketnews.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>TicketNews</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 14, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Chris Lake tickets on sale in Washington at Echostage</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Echostage is a 3,000-capacity warehouse venue in Washington, D.C., frequently ranked as one of the world&#39;s top EDM destinations. The venue features a massive 30-foot LED wall and a professional Funktion-One sound system designed for high-production electronic music sets and large-scale visual experiences.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Echostage hosted the DJ duo Two Friends for a performance on Friday, January 30, 2026. The event brought the popular electronic music act to the prominent Washington, D.C. venue for a headline show.</p>
            
         </a>
       
@@ -640,6 +615,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

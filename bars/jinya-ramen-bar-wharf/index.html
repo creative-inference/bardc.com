@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -291,68 +292,42 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://bizjournals.com/washington/news/2025/09/09/jinya-walter-reed-paraiso.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://fox5dc.com/video/1658251" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=bizjournals.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Business Journals</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 15, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=fox5dc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>FOX 5 DC</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Jinya Ramen Bar at Walter Reed to close, to be replaced by Paraiso taqueria concept</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">New specials, locations and more at JINYA Ramen Bar</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">JINYA Ramen Bar at The Parks at Walter Reed is closing to make way for a second location of the Capitol Hill taqueria, Paraiso. Restaurateur Sam Shoja and his hospitality group plan to transform the space into the new Mexican concept, replacing the popular ramen destination. This transition marks a significant change for the dining landscape in the Walter Reed development.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">JINYA Ramen Bar is highlighting new menu specials and expanding its footprint with additional locations throughout the Washington, D.C. metropolitan area. The restaurant continues to serve its signature slow-simmered broths, handmade noodles, and a variety of Japanese-inspired small plates to local diners.</p>
            
         </a>
       
-        <a href="https://popville.com/2025/09/jinya-ramen-bar-closing-september-14th-in-the-parks-at-walter-reed" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://fox5dc.com/video/1701024" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=popville.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>PoPville</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 3, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=fox5dc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>FOX 5 DC</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Jinya Ramen Bar closing September 14th in the Parks at Walter Reed</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Jinya Ramen Bar now open at The Wharf</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">JINYA Ramen Bar closed its location at The Parks at Walter Reed on September 14, 2025. The restaurant, situated at 1155 Dahlia Street NW, shuttered after being open for approximately two years.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">JINYA Ramen Bar has opened a new location at The Wharf in Washington, D.C., bringing its signature slow-cooked broths and authentic Japanese ramen to the waterfront. The restaurant team recently showcased their menu offerings and celebrated the launch during a segment on Good Day DC.</p>
            
         </a>
       
-        <a href="https://restaurantnews.com/jinya-ramen-bar-to-debut-at-the-wharf-in-washington-dc-081925" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://franchising.com/news/20250819_jinya_ramen_bar_to_debut_at_the_wharf_in_washington_dc.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=restaurantnews.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>RestaurantNews.com</span>
-              <span style="margin-left:auto; text-transform:none;">Aug 19, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=franchising.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Franchising.com</span>
+              
            </div>
            <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">JINYA Ramen Bar to Debut at The Wharf in Washington, D.C.</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">JINYA Ramen Bar expanded its Washington, D.C. presence with a new location at The Wharf featuring a spacious patio for waterfront dining. The restaurant specializes in authentic, slow-simmered broths and handcrafted noodles, complemented by a selection of Japanese small plates and craft beers.</p>
-           
-        </a>
-      
-        <a href="https://wtop.com/business-finance/2025/08/jinya-opens-another-dc-ramen-bar-this-one-replaces-a-burger-joint-at-the-wharf" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=wtop.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WTOP</span>
-              <span style="margin-left:auto; text-transform:none;">Aug 15, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">JINYA opens another DC ramen bar, this one replaces a burger joint at The Wharf</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">JINYA Ramen Bar opened a new location at The Wharf in Southwest D.C. on August 20, 2025, occupying the former Lucky Buns space. The restaurant features a large waterfront patio and serves signature ramen bowls made with broths slow-cooked for up to 20 hours using Fuji brand water.</p>
-           
-        </a>
-      
-        <a href="https://bizjournals.com/washington/news/2025/04/23/jinya-ramen-bar-sam-shoja-wharf.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=bizjournals.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Business Journals</span>
-              <span style="margin-left:auto; text-transform:none;">May 1, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Restaurateur Sam Shoja finally gets his wish: Prime space at The Wharf</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">JINYA Ramen Bar franchisee Sam Shoja has secured a prime location for the restaurant at The Wharf in Washington, D.C. The expansion into the waterfront development follows a long-standing search for the right space to bring the popular ramen concept to the area.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">JINYA Ramen Bar has debuted at The Wharf in Washington, D.C., offering authentic ramen with slow-simmered broths and handcrafted noodles. The restaurant features a spacious patio for waterfront dining and a menu that includes small plates, seasoned eggs, and craft beers.</p>
            
         </a>
       
@@ -631,6 +606,49 @@ When I first arrived the host was lively and inviting. When my actual waitress (
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

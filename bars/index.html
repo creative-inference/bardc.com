@@ -49,7 +49,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -68,17 +68,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -104,7 +106,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -189,7 +190,7 @@
                 
                 <h3>12 Stories</h3>
               </div>
-              <p class="card-category">Rooftop Bars, Lounges, Cocktail Bars</p>
+              <p class="card-category">Rooftop Bars, Cocktail Bars, Hotel Bars</p>
               <span class="card-cta">View Details &rarr;</span>
             </div>
           </a>
@@ -235,7 +236,7 @@
                 
                 <h3>600t</h3>
               </div>
-              <p class="card-category">Speakeasies, Cocktail Bars, Comedy Clubs</p>
+              <p class="card-category">Speakeasies, Cocktail Bars, Jazz Clubs</p>
               <span class="card-cta">View Details &rarr;</span>
             </div>
           </a>
@@ -261,7 +262,7 @@
                 
                 <h3>9:30 Club</h3>
               </div>
-              <p class="card-category">Live Music Venues, Concert Halls, Rock</p>
+              <p class="card-category">Live Music Venues, Nightclubs, Historic</p>
               <span class="card-cta">View Details &rarr;</span>
             </div>
           </a>
@@ -292,7 +293,7 @@
                 
                 <h3>A League of Her Own</h3>
               </div>
-              <p class="card-category">Lesbian Bars, LGBTQ+ Bars, Game Bars</p>
+              <p class="card-category">Lesbian Bars, Sports Bars, Dance Clubs</p>
               <span class="card-cta">View Details &rarr;</span>
             </div>
           </a>
@@ -331,7 +332,7 @@
                 
                 <h3>Abuare Bar and Restaurant</h3>
               </div>
-              <p class="card-category">Ethiopian, Cocktail Bars</p>
+              <p class="card-category">Ethiopian, Cocktail Bars, Romantic</p>
               <span class="card-cta">View Details &rarr;</span>
             </div>
           </a>
@@ -344,7 +345,7 @@
                 
                 <h3>Across the Pond</h3>
               </div>
-              <p class="card-category">Sports Bars, Irish Pubs, Neighborhood Bars</p>
+              <p class="card-category">Irish Pubs, Sports Bars, Neighborhood Bars</p>
               <span class="card-cta">View Details &rarr;</span>
             </div>
           </a>
@@ -381,7 +382,7 @@
                 
                 <h3>Alamo Drafthouse Cinema</h3>
               </div>
-              <p class="card-category">Live Music Venues, American, Event Spaces</p>
+              <p class="card-category">Themed, Burger Bars, Kid Friendly</p>
               <span class="card-cta">View Details &rarr;</span>
             </div>
           </a>
@@ -431,7 +432,7 @@
                 
                 <h3>All-Purpose Capitol Riverfront</h3>
               </div>
-              <p class="card-category">Rooftop Bars, Pizza Bars, American</p>
+              <p class="card-category">Pizza Bars, Rooftop Bars, Waterfront</p>
               <span class="card-cta">View Details &rarr;</span>
             </div>
           </a>
@@ -468,7 +469,7 @@
                 
                 <h3>Ama</h3>
               </div>
-              <p class="card-category">Italian, Brunch Spots, Romantic</p>
+              <p class="card-category">Italian, Romantic, Upscale</p>
               <span class="card-cta">View Details &rarr;</span>
             </div>
           </a>
@@ -481,7 +482,7 @@
                 
                 <h3>Amélie DC Bistro & Wine Bar</h3>
               </div>
-              <p class="card-category">Wine Bars, French, Happy Hour Spots</p>
+              <p class="card-category">Wine Bars, French, Romantic</p>
               <span class="card-cta">View Details &rarr;</span>
             </div>
           </a>
@@ -507,7 +508,7 @@
                 
                 <h3>Amsterdam Lounge</h3>
               </div>
-              <p class="card-category">Lounges, Hip Hop, Nightclub</p>
+              <p class="card-category">Lounges, Nightclubs, Hip Hop</p>
               <span class="card-cta">View Details &rarr;</span>
             </div>
           </a>
@@ -7630,6 +7631,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

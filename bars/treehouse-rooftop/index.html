@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -290,68 +291,42 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://bizjournals.com/washington/news/2025/07/11/hotel-nell-charlestowne-union-market.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://usa.boutiquehotelier.com/charlestowne-hotels-expands-with-takeover-of-hotel-nell-in-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=bizjournals.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Business Journals</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 18, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=usa.boutiquehotelier.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Boutique Hotelier USA</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Hotel Nell in Union Market taps Charlestowne to boost buzz and occupancy</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Charlestowne Hotels expands with takeover of Hotel Nell in Washington DC</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Treehouse Rooftop, located at Hotel Nell in Union Market, is part of a management transition to Charlestowne Hotels intended to increase the venue&#39;s occupancy and public profile. The property is set to receive several enhancements, including the addition of an Asian-themed concept and dedicated karaoke rooms.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Treehouse Rooftop is now under the management of Charlestowne Hotels following their takeover of Hotel Nell in Washington D.C.&#39;s Union Market District. The management transition aims to refine operations at the jungle-themed rooftop venue as part of a broader expansion into the D.C. hospitality market.</p>
            
         </a>
       
-        <a href="https://bizbash.com/food-beverage-trends/versus-raises-the-bar-for-d-c-hospitality-and-nightlife" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://washington.org/visit-dc/rooftop-bars-restaurants-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=bizbash.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>BizBash</span>
-              <span style="margin-left:auto; text-transform:none;">Jun 24, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=washington.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>visit Washington DC</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">VERSUS Raises the Bar for D.C. Hospitality and Nightlife</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Rooftop Bars &amp; Restaurants to Check Out in DC</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Treehouse Rooftop and Lounge is a Washington D.C. destination that offers Latin-inspired bites and lush decor designed to provide a sanctuary vibe. Managed by the VERSUS hospitality group, the venue focuses on creating immersive experiences within the city&#39;s historic landscape.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Treehouse Rooftop is an urban oasis located atop the Nell Hotel in Washington, D.C., offering a Tulum-inspired atmosphere with tropical vibes and international flavors. The venue features bold cocktails, DJ sets every Friday and Saturday, and monthly wellness Wednesday events.</p>
            
         </a>
       
-        <a href="https://hospitalitynet.org/news/4127742.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://dcnewsnow.com/news/local-news/washington-dc/dc-rooftop-lounges-the-ultimate-guide-to-elevate-your-social-scene" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=hospitalitynet.org" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Hospitality Net</span>
-              <span style="margin-left:auto; text-transform:none;">Jun 17, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Charlestowne Hotels Announces Management Takeover of Washington DC’s Hotel Nell</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Treehouse Rooftop is an urban escape located five stories above Washington DC at the historic Hotel Nell in the Union Market neighborhood. The venue provides an intimate jungle sanctuary atmosphere featuring a menu of Mexican-inspired bites and cocktails complemented by panoramic views of the city skyline.</p>
-           
-        </a>
-      
-        <a href="https://dc.eater.com/maps/best-dining-restaurants-noma-union-market" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=dcnewsnow.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>DC News Now</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 29, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Best Places to Dine in NoMa and Around Union Market</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">DC rooftop lounges: The ultimate guide to elevate your social scene</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Treehouse Rooftop, located atop the Hotel Nell in NoMa, offers a Tulum-inspired atmosphere featuring panoramic views and a state-of-the-art sound system. Guests can enjoy Mexican-leaning dishes like chicken or General Tso’s cauliflower tacos alongside weekday happy hour specials and a festive weekend brunch.</p>
-           
-        </a>
-      
-        <a href="https://hotelsmag.com/news/briefs-union-market-hotel-relaunches-conrad-adds-in-florida" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=hotelsmag.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>HOTELSMag.com</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 19, 2024</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Briefs: Union Market Hotel relaunches; Conrad adds in Florida</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Treehouse Rooftop Lounge is a foliage-rich industrial venue located on the fifth floor of the Union Market Hotel in Washington, D.C. The lounge pays homage to the building&#39;s history as a 1930s seed factory and serves as a key culinary feature of the hotel&#39;s relaunch in the Union Market District.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Treehouse Rooftop is featured as a premier destination in this guide to Washington D.C.’s elevated social scene. The venue provides a vibrant atmosphere and scenic views, making it a key location for guests looking to experience the city&#39;s best rooftop lounges.</p>
            
         </a>
       
@@ -627,6 +602,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

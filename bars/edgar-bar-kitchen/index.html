@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -285,68 +286,55 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://notion.online/mayflower-hotel-washington-dc-grande-dame-in-the-citys-beating-heart" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://savingplaces.org/stories/front-and-back-door-politics-at-dc-edgar-bar-mayflower-hotel" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=notion.online" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>notion.online</span>
-              <span style="margin-left:auto; text-transform:none;">Aug 15, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=savingplaces.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>National Trust for Historic Preservation</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Mayflower Hotel Washington DC: Grande Dame in the City’s Beating Heart</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Front- and Back-Door Politics at D.C.&#39;s Edgar Bar &amp; Kitchen</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Edgar Bar &amp; Kitchen serves as the social nucleus of the historic Mayflower Hotel, offering a modern-classic American brasserie experience in the heart of Washington D.C. The venue features locally sourced dishes and a buzzy atmosphere for everything from power lunches and brunch to late-night cocktails at its award-winning historic bar.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Edgar Bar &amp; Kitchen, located within D.C.’s historic Mayflower Hotel, serves innovative American cuisine in an elegant setting steeped in political history. Named after J. Edgar Hoover, the venue is famous for hosting historic negotiations and offers signature cocktails alongside upscale dishes like crab cakes and the Edgar burger. It provides a luxurious atmosphere that blends the hustle of Dupont Circle with the storied heritage of Capitol Hill.</p>
            
         </a>
       
-        <a href="https://modernluxury.com/best-brunch-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://costar.com/article/1479955568/mayflower-hotels-century-long-run-builds-on-its-history-connection-with-guests" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=modernluxury.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Modern Luxury</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 16, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=costar.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>CoStar</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Delicious Brunch Spots in DC You Must Try This Spring</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">News | Mayflower Hotel&#39;s century-long run builds on its history, connection with guests</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Edgar Bar &amp; Kitchen is an upscale American eatery in Dupont Circle that honors the legacy of J. Edgar Hoover with a lively dining atmosphere. The menu features the signature Mayflower banana bread, a popular brunch staple that has remained a fixture at the location since 1925.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Edgar Bar &amp; Kitchen at Washington D.C.’s Mayflower Hotel is celebrating the property&#39;s 100th anniversary with specialty Prohibition-themed cocktails and a menu featuring its famous, decades-old clam chowder. Named after former FBI Director J. Edgar Hoover, the venue continues to serve as a historic political landmark while catering to modern travelers.</p>
            
         </a>
       
-        <a href="https://washingtonian.com/2020/02/14/a-bar-devoted-to-fried-chicken-is-opening-in-the-mayflower-hotel" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://businesswire.com/news/home/20250721748081/en/The-2025-Top-25-Historic-Hotels-of-America-Most-Historic-Bars-Taverns-and-Speakeasies-List-Is-Announced" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 14, 2020</span>
+              <img src="https://www.google.com/s2/favicons?domain=businesswire.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Business Wire</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">A Fried Chicken Bar Inspired by J. Edgar Hoover’s Rumored Lover Is Opening in Downtown DC</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The 2025 Top 25 Historic Hotels of America® Most Historic Bars, Taverns, and Speakeasies List Is Announced</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Edgar Bar &amp; Kitchen, located in the Mayflower Hotel, is a sophisticated venue inspired by former FBI Director J. Edgar Hoover&#39;s daily dining habits. The restaurant features an &quot;alter ego&quot; space called Tolson Bird Bar, which offers a casual menu of draft cocktails and specialized fried chicken dishes, including a unique bucket served with caviar and Champagne.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Edgar Bar &amp; Kitchen, located within the historic Mayflower Hotel in Washington, D.C., has been named to the 2025 list of the Top 25 Historic Hotels of America Most Historic Bars. The venue is recognized for its sophisticated atmosphere and its legacy as a prominent gathering spot for political figures and travelers in the heart of the capital.</p>
            
         </a>
       
-        <a href="https://dc.eater.com/2013/1/14/6495485/the-early-word-on-edgar-bar-kitchen-at-the-mayflower" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://travelmarketreport.com/hotels-resorts/articles/the-mayflower-hotel-100-years-of-history-in-washington-d-c" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater Washington DC</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 14, 2013</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Early Word on Edgar Bar &amp; Kitchen at The Mayflower</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Edgar Bar &amp; Kitchen at the Mayflower Hotel offers a modern dining experience centered on craft cocktails, happy hours, and elevated comfort foods like tender homemade meatballs and crab cake BLTs. Replacing the historic Town &amp; Country bar, the venue features circular leather power booths and a series of weekly specials, including free flatbread on Fridays and complimentary bubbles for women on Thursdays.</p>
-           
-        </a>
-      
-        <a href="https://thrillist.com/eat/washington-dc/20036/edgar-bar-kitchen" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=travelmarketreport.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Travel Market Report</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=thrillist.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Thrillist</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 7, 2013</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Power-lunch like that guy in the Leo movie!</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Mayflower Hotel: 100 Years of History in Washington, D.C.</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Edgar Bar &amp; Kitchen at The Mayflower pays homage to J. Edgar Hoover with a vintage atmosphere featuring antique mirrors and golden-age decor. The menu highlights refined American fare such as mini crab cakes with smoked paprika sauce, seared Ahi tuna with ancient grains, and stone-oven flatbreads paired with classic cocktails.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Edgar Bar &amp; Kitchen, located within Washington D.C.’s historic Mayflower Hotel, is named after former FBI Director J. Edgar Hoover, who was a frequent patron of the restaurant. In celebration of the hotel&#39;s 2025 centennial, the venue is currently featuring special themed cocktails such as the Mayflower’s Bathtub Gin and a reimagined Vieux Carre.</p>
            
         </a>
       
@@ -626,6 +614,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

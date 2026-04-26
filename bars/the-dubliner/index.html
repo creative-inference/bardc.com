@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -328,68 +329,42 @@ Nightly live music, traditional Irish comfort food, lively group gatherings, and
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://nbcwashington.com/video/news/local/dc-irish-pub-the-dubliner-celebrates-50th-anniversary/3602701" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://localsyr.com/news/local-news/tipperary-hill-or-capitol-hill-lets-take-a-visit-to-colemans-brother-bar-in-washington-d-c" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=nbcwashington.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>NBC4 Washington</span>
-              <span style="margin-left:auto; text-transform:none;">Apr 26, 2024</span>
+              <img src="https://www.google.com/s2/favicons?domain=localsyr.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>WSYR</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">DC Irish pub The Dubliner celebrates 50th anniversary</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Tipperary Hill or Capitol Hill? Let’s take a visit to Coleman’s ‘brother’ bar in Washington, D.C.</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Dubliner is celebrating its 50th anniversary as a landmark Irish pub in Washington, D.C. The historic venue continues to serve as a cornerstone of the city&#39;s hospitality scene near Union Station, marking five decades of tradition and community.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Dubliner is an iconic Irish pub on Capitol Hill that shares a deep family connection and historic lineage with Coleman’s Authentic Irish Pub in Syracuse. This local staple offers an authentic Irish experience featuring traditional live music, a wide selection of whiskeys, and a classic atmosphere that has served as a gathering place for generations of locals and politicians.</p>
            
         </a>
       
-        <a href="https://wtop.com/dc/2024/03/dc-pub-the-dubliner-marks-its-50th-anniversary-during-st-patricks-day-weekend" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://politico.com/newsletters/west-wing-playbook/2024/03/15/pour-a-pint-00147385" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=wtop.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WTOP</span>
-              <span style="margin-left:auto; text-transform:none;">Mar 17, 2024</span>
+              <img src="https://www.google.com/s2/favicons?domain=politico.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Politico</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">DC pub The Dubliner marks its 50th anniversary during St. Patrick’s Day weekend</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Pour a pint</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Dubliner, a landmark Irish pub on Capitol Hill, celebrated its 50th anniversary in March 2024 after being founded by Danny Coleman in 1974. The historic venue has hosted notable guests such as former President Barack Obama and continues to be a destination for traditional Irish music, fare, and Guinness.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Dubliner is a historic Irish pub in Washington D.C. that has served as a central watering hole for the political class, including presidents, members of Congress, and international dignitaries for over 50 years. Located near Union Station and the Capitol, the family-run establishment is a renowned venue for political fundraisers and is home to the &quot;President’s Bar,&quot; which commemorates a 2012 visit by Barack Obama.</p>
            
         </a>
       
-        <a href="https://masslive.com/news/2023/03/dc-dubliner-sues-boston-pub-with-same-name-for-trademark-infringement-report-says.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://hillrag.com/2024/02/01/capitol-cuisine-9" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=masslive.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>MassLive.com</span>
-              <span style="margin-left:auto; text-transform:none;">Mar 17, 2023</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">DC Dubliner sues Boston pub with same name for trademark infringement, report says</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Dubliner in Washington, D.C., filed a trademark infringement lawsuit against a newer Boston-based pub using the same name, claiming the similarity causes brand confusion. The D.C. establishment, which has operated for nearly 50 years, is seeking a name change for the Boston location and the transfer of profits made under the Dubliner name.</p>
-           
-        </a>
-      
-        <a href="https://boston.eater.com/2023/3/16/23643114/boston-dubliner-irish-pub-lawsuit-washington-dc-trademark" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=hillrag.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>HillRag</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=boston.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater Boston</span>
-              <span style="margin-left:auto; text-transform:none;">Mar 16, 2023</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">D.C. Irish Pub to Boston Irish Pub: Stop Using Our Name</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Capitol Cuisine: Revisiting the Classics</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Dubliner in Washington, D.C. filed a trademark infringement lawsuit against a Boston pub of the same name, demanding a name change and the turnover of profits. The D.C. establishment argues that the identical naming causes customer confusion, particularly because it distributes its own branded Irish whiskey across the country.</p>
-           
-        </a>
-      
-        <a href="https://dc.eater.com/2018/8/16/17641852/the-dubliner-classic-irish-pub-dc-obama" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Aug 16, 2018</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Dubliner Lives On as the Patriarch of D.C.’s Irish Pub Community</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Dubliner is a legendary Irish pub on Capitol Hill that has remained a family-owned fixture of Washington D.C.’s hospitality scene since 1974. The venue is celebrated for its nightly live Irish music, authentic scratch-made cuisine, and extensive collection of rare Irish whiskeys.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Dubliner, a historic Irish pub located near Union Station, celebrated its 50th anniversary as a staple of Washington D.C.’s dining scene. The venue offers a traditional Gaelic atmosphere with a menu featuring classic dishes like shepherd’s pie, fish-and-chips, and corned beef on rye, often accompanied by live Irish music.</p>
            
         </a>
       
@@ -671,6 +646,49 @@ The...
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -408,68 +409,29 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://dc.eater.com/maps/best-gay-bars-dc-lgbtq" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://gwhatchet.com/2016/02/15/bear-with-me-two-new-gay-bars-open-in-d-c" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Jun 3, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=gwhatchet.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The GW Hatchet</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Best Gay Bars in D.C.</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Bear with me: Two new gay bars open in D.C.</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Uproar Lounge &amp; Restaurant is a Shaw neighborhood staple known for its popular &quot;Rooftop Beer Bust&quot; on Sunday afternoons. The venue caters to the bear community and hosts a variety of events, including Latinx parties, karaoke, Gaymer socials, and drag race watch parties.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Uproar Lounge &amp; Restaurant is a casual and trendy gathering space in the Shaw neighborhood that caters to the bear community while remaining inclusive to all. The venue features a rustic, wood-constructed rooftop patio with neighborhood views and an eclectic menu serving everything from sweet potato tots and sushi to sirloin steak.</p>
            
         </a>
       
-        <a href="https://lonelyplanet.com/articles/lgbtiq-guide-to-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://washington.org/visit-dc/lgbtq-bars-check-out-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=lonelyplanet.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Lonely Planet</span>
-              <span style="margin-left:auto; text-transform:none;">Apr 16, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The LGBTIQ+ guide to Washington, DC</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Uproar Lounge &amp; Restaurant is a welcoming bear bar in Washington, D.C.’s Shaw neighborhood, featuring a cozy first-floor cocktail space. The venue spans three levels, with the upper two floors known for becoming particularly busy and energetic during the weekends.</p>
-           
-        </a>
-      
-        <a href="https://metroweekly.com/2024/12/can-uproar-survive-owner-tammy-truong-speaks-out" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=washington.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>visit Washington DC</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=metroweekly.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Metro Weekly</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 31, 2024</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Can Uproar Survive? Owner Tammy Truong Speaks Out</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">20 LGBTQ+ Bars to Check Out in Washington, DC</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Uproar Lounge &amp; Restaurant, a staple of Washington, D.C.’s LGBTQ and bear communities, is facing a financial crisis due to surging insurance premiums, inflation, and decreased post-pandemic foot traffic. Owner Tammy Truong has launched a crowdfunding campaign to address mounting rent and utility debts while navigating the challenges of rising payroll costs and shifting nightlife trends.</p>
-           
-        </a>
-      
-        <a href="https://lgbtqnation.com/2024/12/beloved-bar-for-bears-asks-community-for-help-after-massive-insurance-hike" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=lgbtqnation.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>LGBTQ Nation</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 13, 2024</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Beloved bar for bears asks community for help after massive insurance hike</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Uproar Lounge &amp; Restaurant is seeking community support through a fundraiser following a significant insurance rate hike that has threatened the venue&#39;s ability to cover rent and utilities. A staple of Washington D.C.’s Shaw neighborhood for over nine years, the bar remains committed to supporting its staff and providing a sanctuary for the bear and leather communities.</p>
-           
-        </a>
-      
-        <a href="https://wusa9.com/article/news/community/uproar-lounge-dc-fundraiser/65-764fde98-5b12-4ea7-8da3-53ac9558f00b" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=wusa9.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WUSA9</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 9, 2024</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Uproar in DC calls on community to keep doors open</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Uproar Lounge &amp; Restaurant is calling on the D.C. community for financial support through an online fundraiser to address rising insurance and rent costs. Ownership aims to use the donations to maintain staff schedules, cover utility expenses, and preserve the venue as an inclusive space for the LGBTQIA+ bear community.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Uproar Lounge &amp; Restaurant is a Shaw neighborhood staple known as a &quot;Sunday Funday&quot; destination, especially for its popular rooftop. Visitors can enjoy music and dancing on the top floor alongside a menu featuring jumbo wings.</p>
            
         </a>
       
@@ -747,6 +709,49 @@ I love the more casual vibe and generally patrons and staff are all very...
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

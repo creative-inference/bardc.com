@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -293,68 +294,16 @@ Pre-game drinks for Nationals Stadium, dog-friendly weekend outings, lively grou
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://whatnow.com/washington-dc/restaurants/dacha-beer-garden-working-on-third-location" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://dc.alumni.columbia.edu/cagsn_social" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=whatnow.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WhatNow</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 26, 2026</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Dacha Beer Garden Working on Third Location</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Dacha Beer Garden (Navy Yard) is an established location for the DC-based brand, which is currently expanding with a third site in Silver Spring slated for summer 2026. The venue continues to offer its signature selection of beers, cocktails, and satiating food options.</p>
-           
-        </a>
-      
-        <a href="https://bethesdamagazine.com/2025/03/26/dacha-beer-garden-confirms-downtown-silver-spring" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=dc.alumni.columbia.edu" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Columbia University Club of Washington, D.C.</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=bethesdamagazine.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Bethesda Magazine</span>
-              <span style="margin-left:auto; text-transform:none;">Mar 26, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Dacha Beer Garden confirms new location in downtown Silver Spring</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Beat the Heat: CAGSN Happy Hour at the Beer Garden</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Dacha Beer Garden (Navy Yard) is part of a D.C.-based brand expanding with a third location in downtown Silver Spring at the former Denizens Brewing Co. site. The venue offers a traditional Bavarian-inspired menu of bratwurst and pretzels alongside craft beers and hosts regular community events such as social meetups and a weekly beer club.</p>
-           
-        </a>
-      
-        <a href="https://restaurantdive.com/news/dacha-beer-garden-national-franchise-expansion-plan/688353" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=restaurantdive.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Restaurant Dive</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 19, 2023</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Is America ready for franchised beer gardens? Dacha thinks so.</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Dacha Beer Garden (Navy Yard) serves as a primary model for the brand’s national franchising strategy, showcasing a proprietary all-weather canopy system designed for year-round outdoor comfort. The venue maintains a prestigious partnership with the Bavarian State Brewery Weihenstephan, serving as one of the historic German brewery&#39;s largest global customers. This location exemplifies the owners&#39; goal of providing a consistent, high-quality beer garden experience within a modern urban setting.</p>
-           
-        </a>
-      
-        <a href="https://northernvirginiamag.com/things-to-do/travel/2023/03/27/navy-yard-things-to-do" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=northernvirginiamag.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Northern Virginia Magazine</span>
-              <span style="margin-left:auto; text-transform:none;">Mar 27, 2023</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Navy Yard Is Full of New Pre-Game Dining and Shopping Spots</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Dacha Beer Garden (Navy Yard) is highlighted as a prime destination for a progressive dinner in the Capitol Riverfront neighborhood, where guests can enjoy unique pairings like chips and caviar from its sister restaurant, Jackie. The venue offers a vibrant outdoor atmosphere, making it a popular spot for pre-game drinks and dining near Nationals Park and Audi Field.</p>
-           
-        </a>
-      
-        <a href="https://dcist.com/story/19/06/18/drama-at-dacha-wage-theft-allegations-a-lawsuit-and-the-latest-on-that-14th-street-outpost" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=dcist.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>DCist</span>
-              <span style="margin-left:auto; text-transform:none;">Jun 18, 2019</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Drama At Dacha: Wage Theft Allegations, A Lawsuit, And The Latest On That 14th Street Outpost</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Dacha Beer Garden (Navy Yard) faces legal and financial scrutiny involving allegations of wage theft and a lawsuit from a restaurant supply company over hundreds of thousands of dollars in unpaid equipment bills. The controversy centers on the establishment&#39;s automatic gratuity system and reports of unpaid contractors following the location&#39;s opening.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Dacha Beer Garden (Navy Yard) serves as a frequent host for social gatherings, including the Capital Area Gay Solo Network (CAGSN) happy hours. The venue offers a spacious outdoor setting for community members to socialize and enjoy refreshments in the heart of Washington D.C.&#39;s Navy Yard neighborhood.</p>
            
         </a>
       
@@ -636,6 +585,49 @@ Only...
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

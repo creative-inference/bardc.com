@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -302,68 +303,42 @@ Award-winning cocktails, legendary fried chicken, casual date nights, pre-show d
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://wtop.com/business-finance/2025/05/3-dc-bars-on-a-list-of-north-americas-best-bars" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://timeout.com/washington-dc/bars/service-bar-1" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=wtop.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WTOP</span>
-              <span style="margin-left:auto; text-transform:none;">May 6, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=timeout.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Time Out Worldwide</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">3 DC bars on a list of North America’s Best Bars</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Service Bar | Bars in Washington DC</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Service Bar was ranked No. 23 on the 2025 list of North America’s 50 Best Bars, maintaining its reputation as a staple of D.C.’s Shaw neighborhood. The venue is celebrated for its unpretentious atmosphere, high-quality classic cocktails at reasonable prices, and its popular fried chicken offerings.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Service Bar is a top-rated cocktail bar in Washington D.C. known for its inventive craft drinks and an intimate atmosphere that shifts from relaxed to high-energy. The venue also features a standout food menu highlighted by fried chicken and buffalo chicken dip, alongside a popular weekday happy hour.</p>
            
         </a>
       
-        <a href="https://wusa9.com/article/news/local/dc/watch-woman-smacked-bar-patron-service-bar-dc/65-a6b7c49b-8ea5-4970-aad6-758608f8e11b" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://theworlds50best.com/bars/northamerica/the-list/service-bar.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=wusa9.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WUSA9</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 15, 2023</span>
+              <img src="https://www.google.com/s2/favicons?domain=theworlds50best.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The World&#39;s 50 Best Restaurants</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Worker smacked by bar patron she asked to stop blocking area near bathroom, staff says</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Service Bar | North America&#39;s 50 Best Bars 2025 | Ranked No. 23</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Service Bar DC reported an incident where a staff member was assaulted by a patron who had been asked to leave for disorderly conduct near the restrooms. The establishment collaborated with the Metropolitan Police Department to identify the individual and noted that local outdoor seating regulations have impacted their ability to maintain a fully secured patio environment.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Service Bar is ranked No. 23 on the 2025 list of North America’s 50 Best Bars, recognized for its unpretentious neighborhood atmosphere and high-quality, reasonably priced cocktails. The venue is celebrated for its famous fried chicken and a diverse drink menu that ranges from approachable happy hour classics to inventive signature creations like the Savory Sour.</p>
            
         </a>
       
-        <a href="https://districtfray.com/articles/service-bar-christine-kim-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://fox5dc.com/video/1648154" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=districtfray.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>District Fray</span>
-              <span style="margin-left:auto; text-transform:none;">Apr 3, 2023</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Service Bar’s Christine Kim Puts D.C.’s Cocktail Scene on the Map</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Service Bar is a renowned Washington D.C. cocktail destination led by beverage director and partner Christine Kim, known for its unpretentious atmosphere and elevated riffs on classic drinks. The venue gained international acclaim after being ranked among North America&#39;s 50 Best Bars, featuring unique elements like the private &#39;Snug Room&#39; and seasonal menus highlighting Asian-inspired ingredients.</p>
-           
-        </a>
-      
-        <a href="https://punchdrink.com/articles/tip-your-bartender-service-bar-washington-d-c" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=fox5dc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>FOX 5 DC</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=punchdrink.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>punchdrink.com</span>
-              <span style="margin-left:auto; text-transform:none;">Jun 15, 2020</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Tip Your Bartender: Service Bar, Washington, D.C.</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Cooking With Como Featuring Service Bar</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Service Bar in Washington, D.C. features a signature French 75 variation called Le Royale Baie, created by bartender Glendon Hartley. The recipe combines Dussé VSOP Cognac with Champagne, chamomile tea, and a house-made strawberry oleo saccharum to evoke the flavors of summer in the Cognac region.</p>
-           
-        </a>
-      
-        <a href="https://dc.eater.com/2016/10/18/13316580/service-bar-photos-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 18, 2016</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Inside Service Bar, Which Starts Serving Thursday</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Service Bar is an affordable cocktail destination on U Street in Washington D.C. featuring an all-night happy hour and a fried chicken-based bar menu. The venue includes a specialized six-seat tasting room called the &#39;Snug Room&#39; alongside a main bar area offering a rotating, seasonal beverage program.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Service Bar&#39;s team joined FOX 5 DC’s Erin Como to showcase a selection of creative cocktail and mocktail recipes. The feature highlights the venue&#39;s craft beverage program and provides a look at their signature summer drink preparations.</p>
            
         </a>
       
@@ -643,6 +618,49 @@ Award-winning cocktails, legendary fried chicken, casual date nights, pre-show d
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

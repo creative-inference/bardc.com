@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1776897556631">
+  <link rel="stylesheet" href="/css/style.css?v=1777163421556">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -184,7 +185,7 @@
                   
                   <div class="social-icons-inline">
                     
-                      <a href="https://www.instagram.com/blackcatdc" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
+                      <a href="https://www.instagram.com/dei_genetrix/" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
                     
                     
                       <a href="https://www.facebook.com/blackcatdc" target="_blank" rel="noopener noreferrer" class="social-icon facebook" title="Facebook"></a>
@@ -316,68 +317,29 @@ Live independent music, surprise pop-up shows, punk and rock fans, all-ages conc
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://edmidentity.com/2026/02/10/fox-stevenson-black-cat-interview" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=edmidentity.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>EDM Identity</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 10, 2026</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Fox Stevenson On &#39;Sunk Cost Fallacy&#39;: &quot;It&#39;s The Most Intimate I&#39;ve Ever Been&quot;</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Black Cat is an intimate, no-frills music venue in Washington, D.C. featuring a second-floor performance space with black-and-white checkered floors and a powerful sound system. The venue offers a close-up concert experience with no barricades, complemented by a side bar and accessible seating options for patrons between sets.</p>
-           
-        </a>
-      
-        <a href="https://yahoo.com/entertainment/music/articles/d-c-punk-music-festival-204502597.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=yahoo.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Yahoo</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 28, 2026</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">D.C. Punk Music Festival LIBERATION WEEKEND II Reveals Full Lineup and Dates</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Black Cat will host the main stage for Liberation Weekend II, a DIY trans-rights music festival scheduled for April 24–26, 2026. The venue is set to feature high-profile headliners including Laura Jane Grace, Ekko Astral, and Illuminati Hotties, with proceeds benefiting organizations like the Gender Liberation Movement and No More Dysphoria.</p>
-           
-        </a>
-      
-        <a href="https://popville.com/2026/01/archives-dc-skate-shop-opens" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=popville.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>PoPville</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 12, 2026</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Archives Skate shop Opens in former Common Wealth space at Black Cat</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Black Cat has welcomed Archives DC, a new skate shop occupying the former Commonwealth space at 1811 14th Street NW. The shop is now open daily, offering operating hours from 11 a.m. to 7 p.m. Monday through Saturday and 11 a.m. to 6 p.m. on Sundays.</p>
-           
-        </a>
-      
-        <a href="https://parklifedc.com/2025/10/27/live-review-lebanon-hanover-black-cat-10-23-25" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://parklifedc.com/2026/04/15/preview-the-chameleons-black-cat-4-17-26" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
               <img src="https://www.google.com/s2/favicons?domain=parklifedc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
               <span>Parklife DC</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 27, 2025</span>
+              <span style="margin-left:auto; text-transform:none;">Apr 15, 2026</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Live Review: Lebanon Hanover @ Black Cat -- 10/22/25 | Parklife DC</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Preview: The Chameleons @ Black Cat — 4/17/26</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Black Cat hosted the darkwave duo Lebanon Hanover for their debut Washington, D.C. performance in October 2025. The venue welcomed a large, captivated audience for a career-spanning setlist that featured hits like &#39;Gallowdance&#39; and tracks from their latest album, &#39;Asylum Lullabies&#39;.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Black Cat hosted the influential Manchester post-punk band The Chameleons on April 17, 2026, as part of their North American tour supporting the album Arctic Moon. The all-ages performance featured support from The Veldt and marked the band&#39;s return to Washington, D.C., with original members Mark Burgess and Reg Smithies.</p>
            
         </a>
       
-        <a href="https://parklifedc.com/2025/10/17/live-review-destroyer-black-cat-10-14-25" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://dcist.com/story/18/09/12/the-black-cat-is-closing-downstairs" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=parklifedc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Parklife DC</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 17, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=dcist.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>DCist</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Live Review: Destroyer @ Black Cat -- 10/14/25 | Parklife DC</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Black Cat Is Closing Its Downstairs Space</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Black Cat hosted a full-band performance by Destroyer on October 14, 2025, featuring a setlist that balanced new material from the album *Dan’s Boogie* with classic tracks like &quot;Kaputt.&quot; The show highlighted the venue&#39;s capacity for intimate yet expansive sound, showcasing extended instrumental jams and atmospheric trumpet solos.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Black Cat consolidated its operations by closing its downstairs Red Room bar and Backstage music space to focus on its upstairs venue. The shift was designed to adapt to rising labor costs and changing neighborhood dynamics on 14th Street NW while preserving the iconic club&#39;s independent spirit.</p>
            
         </a>
       
@@ -657,6 +619,49 @@ Live independent music, surprise pop-up shows, punk and rock fans, all-ages conc
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */
