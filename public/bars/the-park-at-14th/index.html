@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -363,32 +364,6 @@
   <div class="news-section" style="margin-top:2rem; margin-bottom:2rem;">
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
-      
-        <a href="https://timeout.com/washington-dc/music-nightlife/best-dance-clubs-in-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=timeout.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Time Out Worldwide</span>
-              <span style="margin-left:auto; text-transform:none;">Jun 17, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The best clubs in D.C. for dancing all night long</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Park at 14th is a sophisticated four-story &quot;clubstaurant&quot; in downtown D.C. known for its elegant atmosphere, high-end dress code, and music mix of hip-hop, afrobeats, and R&amp;B. Beyond its vibrant nightlife and bottle service, the venue is a popular destination for bottomless brunch and features an iconic flower wall for photos.</p>
-           
-        </a>
-      
-        <a href="https://washingtonian.com/2025/05/09/here-are-11-dc-airbnbs-you-can-still-book-for-worldpride" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">May 12, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Here Are 11 DC Airbnbs You Can Still Book for WorldPride</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Park at 14th is scheduled to host major official celebrations for WorldPride 2026, including the &quot;WorldPride Mega Party&quot; and &quot;Unraveled: The Official Women’s Party.&quot; Its central location along the 14th Street corridor makes it a primary hub for the festival&#39;s upcoming spring events and parade festivities.</p>
-           
-        </a>
       
         <a href="https://washington.org/meetings/find-dc-listings/park-14th" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
@@ -679,6 +654,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

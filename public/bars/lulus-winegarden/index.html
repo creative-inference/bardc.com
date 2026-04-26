@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -381,68 +382,29 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://thewash.org/2025/11/18/d-c-s-new-outdoor-dining-rules-aim-at-accessibility-will-they-deliver" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://fox5dc.com/video/fmc-eqayq8ziky6zav9n" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=thewash.org" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>thewash.org</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 18, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=fox5dc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>FOX 5 DC</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">D.C.’s new outdoor dining rules aim at accessibility. Will they deliver?</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Lulu&#39;s Winegarden Rings in 2026 with 5th Annual &quot;Sparkling NYE&quot;</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Lulu&#39;s Winegarden has dismantled its outdoor streatery in response to D.C.’s new permanent regulations and associated public-space rental fees. The venue serves as a key example of the trend among U Street establishments choosing to remove sidewalk structures rather than pay for mandatory accessibility upgrades.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Lulu’s Winegarden is hosting its fifth annual &quot;Sparkling NYE&quot; event to celebrate the arrival of 2026. The celebration features a specialized selection of sparkling wines and festive activities, as detailed by operations director Ben Bronstein.</p>
            
         </a>
       
-        <a href="https://blog.resy.com/2021/03/the-march-wine-hit-list-lulus-winegarden-oyster-oyster-lutece-and-more" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://secretdc.com/holiday-pop-up-bars" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=blog.resy.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Resy | Right This Way</span>
-              <span style="margin-left:auto; text-transform:none;">Mar 19, 2021</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The March Wine Hit List: Lulu’s Winegarden, Oyster Oyster, Lutèce, and More</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Lulu&#39;s Winegarden is a U Street wine garden from Paul and Brittany Carlson that features a Southwest desert-inspired backyard and an approachable $49 flat-rate bottle list. The venue offers a &quot;Fancy Stuff&quot; reserve list including premium selections like Cornas and Bandol Rosé to pair with dishes like smoked whitefish dip and pork-belly pastrami sandwiches.</p>
-           
-        </a>
-      
-        <a href="https://washingtonian.com/2020/01/31/a-group-friendly-wine-bar-with-two-patios-is-opening-near-u-street" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=secretdc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Secret DC</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 20, 2020</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">A Group-Friendly Wine Bar With Two Patios Is Opening Near U Street</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">D.C.’s Most Festive Holiday Bars Are Back For The Season – With Cozy Chalets, Life-Sized Snow Globes &amp; More</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Lulu’s Winegarden is a group-friendly, indoor-outdoor wine bar near U Street that emphasizes affordable bottle service and casual patio party-inspired eats. The venue features two large patios, communal tables with built-in ice buckets, and a Southwest-influenced menu featuring dishes like crab tostadas, white queso, and crispy chicken sandwiches.</p>
-           
-        </a>
-      
-        <a href="https://dc.eater.com/2020/2/14/21137572/lulus-wine-garden-opening-menu-pork-belly-pastrami-photos-vinoteca-u-street-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 14, 2020</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">U Street’s Chill, New Southwestern Wine Bar Isn’t Too Fancy for Queso</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Lulu’s Winegarden is a Southwestern-inspired wine bar in D.C.’s U Street neighborhood featuring a relaxed atmosphere and a menu of elevated comfort foods like white queso and pork belly pastrami sandwiches. The venue offers a simplified wine program with dozens of bottles priced at a flat rate, alongside a selection of craft beers and cocktails.</p>
-           
-        </a>
-      
-        <a href="https://dcist.com/story/20/01/31/a-new-wine-bar-is-coming-to-the-old-vinoteca-space-near-u-street" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=dcist.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>DCist</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 31, 2020</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">A New Wine Bar Is Coming To The Old Vinoteca Space Near U Street</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Lulu’s Winegarden is a bottle-driven wine bar near U Street featuring a communal beer garden atmosphere with indoor and outdoor seating equipped with built-in ice buckets. The venue offers a dog-friendly front patio and a menu of unique snacks such as French onion dip toast and fermented chile-smothered crispy chicken.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Lulu&#39;s Winegarden transforms its outdoor spaces into a festive &#39;Winter Garden&#39; featuring fire pits, cozy blankets, and seasonal decor. The D.C. venue offers a curated menu of holiday-themed cocktails and snacks, providing a warm atmosphere for winter gatherings.</p>
            
         </a>
       
@@ -722,6 +684,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

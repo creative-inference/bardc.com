@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -343,68 +344,16 @@ Sunset cocktails, upscale date nights, celebratory group outings, and impressive
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://modernluxury.com/navy-yard-dc-guide" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://washington.org/visit-dc/rooftop-bars-restaurants-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=modernluxury.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Modern Luxury</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 5, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Navy Yard DC: Top Eats, Stays, &amp; Activities</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Smoke &amp; Mirrors is a rooftop bar in the Navy Yard neighborhood that offers panoramic views of the U.S. Capitol and the D.C. cityscape. The venue serves creative cocktails such as the Dragon’s Kiss and the spicy Chica Del Diablo, providing both an outdoor terrace for sunset viewing and a cozy indoor bar area.</p>
-           
-        </a>
-      
-        <a href="https://fb101.com/ac-hotel-washington-dc-capitol-hill-navy-yard-debuts-new-rooftop-bar-restaurant-smoke-mirrors" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=washington.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>visit Washington DC</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=fb101.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Food &amp; Beverage Magazine</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 24, 2024</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">AC Hotel Washington DC Capitol Hill Navy Yard Debuts New Rooftop Bar &amp; Restaurant, Smoke &amp; Mirrors</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Rooftop Bars &amp; Restaurants to Check Out in DC</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Smoke &amp; Mirrors is a sophisticated rooftop bar and restaurant located atop the AC Hotel Washington DC Capitol Hill Navy Yard, offering panoramic views of the U.S. Capitol and the city skyline. The venue features an elevated American menu by Executive Chef Raymond Melendez, creative craft cocktails, and an expansive all-weather patio equipped with fire pits and a retractable canopy. Designed with a sleek aesthetic inspired by the U.S. Navy, the space accommodates both intimate dining and large-scale events for up to 350 guests.</p>
-           
-        </a>
-      
-        <a href="https://districtfray.com/articles/beyond-smoke-mirrors" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=districtfray.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>District Fray</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 23, 2022</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">​​Beyond Smoke &amp; Mirror​s at D.C.’s New Rooftop Bar​</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Smoke &amp; Mirrors is an expansive 11th-floor rooftop bar and restaurant at the Navy Yard AC Hotel, offering panoramic views of the U.S. Capitol and the Library of Congress. The venue features a sophisticated cocktail program using premium spirits and a refined food menu led by executive chef Raymond Melendez.</p>
-           
-        </a>
-      
-        <a href="https://dc.eater.com/2022/2/10/22926175/washingtont-dc-rooftop-smoke-and-mirrors-ac-hotel" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 10, 2022</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">An All-Weather Rooftop Bar With Birds-Eye Views Is Opening at D.C.’s New AC Hotel</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Smoke &amp; Mirrors is an all-weather rooftop bar located on the eleventh floor of the AC Hotel Washington DC Capitol Hill Navy Yard. The venue features unobstructed views of the U.S. Capitol, a retractable roof with fire pits, and a menu highlighting craft cocktails alongside elevated dishes like prime rib and spicy tuna with gold leaf.</p>
-           
-        </a>
-      
-        <a href="https://popville.com/2022/02/dc-rooftop-bar-restaurant-smoke-mirrors" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=popville.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>PoPville</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 4, 2022</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">“New Rooftop Bar and Restaurant, Smoke &amp; Mirrors, officially opening its doors on Thursday, February 17th”</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Smoke &amp; Mirrors is a rooftop bar and restaurant located atop the AC Hotel Washington DC Capitol Hill Navy Yard, offering panoramic views of the U.S. Capitol and the city skyline. The venue features an elevated menu of American fare by Executive Chef Raymond Melendez alongside a curated craft cocktail program and an all-weather outdoor patio.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Smoke &amp; Mirrors is a stylish rooftop destination located atop the AC Hotel in the Capitol Hill Navy Yard neighborhood, offering views of the U.S. Capitol Building. The venue features a menu of inventive craft cocktails alongside elevated shareable plates such as mumbo wings, pork belly deviled eggs, and lamb skewers.</p>
            
         </a>
       
@@ -685,6 +634,49 @@ This spot nails the ambiance—elevated views, sleek vibes, and flavors that imp
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

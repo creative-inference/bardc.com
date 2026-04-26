@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -343,68 +344,16 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://thewash.org/2025/11/11/after-12-years-right-proper-is-still-getting-it-right" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://timeout.com/washington-dc/bars/right-proper-brewing-company" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=thewash.org" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>thewash.org</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 11, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">After 12 years, Right Proper is still getting it right</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Right Proper Brewing Company - Shaw continues its legacy as a neighborhood staple by offering high-quality craft beer and a relaxed dining atmosphere near the Howard Theatre. After 12 years of success, the brewery is expanding its footprint in D.C. with a new location in Eckington while maintaining its commitment to simple, well-crafted brews.</p>
-           
-        </a>
-      
-        <a href="https://washingtonian.com/2025/09/16/neighborhood-guide-things-to-do-in-bloomingdale-and-eckington-2" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=timeout.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Time Out Worldwide</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 15, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Neighborhood Guide: Where to Eat, Shop, and Play in Bloomingdale and Eckington</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Right Proper Brewing Company</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Right Proper Brewing Company - Shaw&#39;s founders are expanding their community-focused brand with a third location in Eckington, which features a five-barrel brewing system dedicated to traditional ales and lagers. The new brewpub also offers a full kitchen serving hearty fare such as fried-chicken sandwiches and beer-battered cheese curds.</p>
-           
-        </a>
-      
-        <a href="https://stacker.com/stories/washington-dc/highest-rated-beer-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=stacker.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>stacker.com</span>
-              <span style="margin-left:auto; text-transform:none;">Aug 21, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Highest-rated Beer in Washington DC</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Right Proper Brewing Company - Shaw ranks among the top breweries in Washington D.C., with five of its beers featured on a list of the city&#39;s highest-rated brews. Notable selections include the &#39;Diamonds, Fur Coat, Champagne&#39; Berliner Weisse and the &#39;Ravaged by Wolves&#39; IPA. These rankings, based on user data from BeerAdvocate, showcase the brewpub&#39;s local popularity and craft innovation.</p>
-           
-        </a>
-      
-        <a href="https://wtop.com/dc/2025/02/federal-workers-whove-been-laid-off-can-catch-a-break-at-some-local-businesses" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=wtop.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WTOP</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 21, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Federal workers who’ve been laid off can catch a break at some local businesses</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Right Proper Brewing Company - Shaw launched the &#39;Executive Order Me a Beer&#39; initiative to support federal workers and contractors affected by layoffs. Customers can purchase a pint at happy hour prices for a community pool, allowing any federal employee with a valid ID to claim a free beer.</p>
-           
-        </a>
-      
-        <a href="https://wusa9.com/article/news/community/executive-order-local-brewery-pay-it-forward-laid-off-federal-employees/65-f5ec1eeb-c919-486a-90fb-97ec21186322" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=wusa9.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WUSA9</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 8, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Right Proper Brewing launches pay-it-forward $8 beer deal for laid-off federal employees</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Right Proper Brewing Company - Shaw launched a pay-it-forward initiative to support federal employees impacted by executive orders. For $8, patrons can purchase a beer for a laid-off worker, who can redeem the drink at the brewery by showing a federal ID or proof of layoff.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Right Proper Brewing Company - Shaw is a popular brewpub featuring a five-barrel brewing system with a constantly rotating selection of house-made beers. The venue offers signature drafts like Raised by Wolves and Haxan alongside seasonal releases, available in tasting sizes, pints, and growlers.</p>
            
         </a>
       
@@ -684,6 +633,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -319,68 +320,55 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://wtop.com/dc/2026/02/chinatown-coalition-brings-expanded-lunar-new-year-celebrations-to-d-c" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://fox5dc.com/video/1725322" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=wtop.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WTOP</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 13, 2026</span>
+              <img src="https://www.google.com/s2/favicons?domain=fox5dc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>FOX 5 DC</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Chinatown Coalition brings expanded Lunar New Year celebrations to DC</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">New fall cocktails at Bar Chinois</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bar Chinois is offering a $65 four-course special menu at its Washington, D.C. and Arlington locations to celebrate the Lunar New Year. The festive meal features a selection of dumplings, noodles, salmon, and duck, complemented by signature dishes like red chili wontons.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bar Chinois co-owner Margaux Donati and beverage director Frank Mills showcased the restaurant&#39;s creative fall cocktail menu during a segment on LION Lunch Hour. The feature highlights the Washington D.C. venue&#39;s seasonal drink offerings and the expertise of its leadership team.</p>
            
         </a>
       
-        <a href="https://dc.eater.com/openings/166745/katsumi-logan-circle-dc-restaurant-openings" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://fox5dc.com/video/1737721" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 11, 2026</span>
+              <img src="https://www.google.com/s2/favicons?domain=fox5dc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>FOX 5 DC</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">D.C.’s Hottest New Sushi Place Debuts in a Familiar Space</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Bold Bites at Bar Chinois National Landing</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bar Chinois remains a popular fixture in Mt. Vernon Triangle, continuing to serve its signature French-inspired cocktails and dumplings from happy hour until late. The team behind the venue recently expanded their D.C. footprint by opening Katsumi, a focused Japanese sushi and hot plate concept in Logan Circle.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bar Chinois has expanded its award-winning French-Chinese concept to a new location in National Landing. The venue features a menu of signature dishes and global cocktails that continue the brand&#39;s celebrated fusion of culture and cuisine.</p>
            
         </a>
       
-        <a href="https://popville.com/2025/10/more-dim-sum-news-bottomless-dim-sum-brunch-at-bar-chinois" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://costar.com/article/1719542900/popular-dc-bar-opens-new-location-near-amazons-second-headquarters-in-northern-virginia" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=popville.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>PoPville</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 30, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=costar.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>CoStar</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">More Dim-Sum News – Bottomless Dim Sum Brunch at Bar Chinois!!</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">News | Popular DC bar opens new location near Amazon&#39;s Northern Virginia headquarters</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bar Chinois offers a bottomless dim sum brunch every Saturday and Sunday from 11 a.m. to 5 p.m. featuring a variety of plates like red chili wontons and French onion beef gyoza. Guests can choose from unlimited dim sum for $37, select bottomless drinks for $23, or a combined package for $57.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bar Chinois, the popular Washington, D.C. bar and dumpling restaurant, has expanded its footprint with a new location at 244 19th Court S in Arlington&#39;s National Landing. This expansion brings the venue&#39;s signature French-Chinese fusion and cocktail program to the redeveloped area near Amazon’s second headquarters.</p>
            
         </a>
       
-        <a href="https://wjla.com/good-morning-washington/taste-of-the-dmv/dcs-bar-chinois-expands-to-national-landing-offering-popular-menu-and-happy-hour-deals" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://fox5dc.com/video/fmc-hfrqd9nlgpa4kei2" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=wjla.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WJLA</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 18, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">DC&#39;s Bar Chinois expands to National Landing, offering popular menu and happy hour deals</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bar Chinois has expanded from its original Washington, D.C. location to a second spot in National Landing, Northern Virginia. The new venue features the same popular menu items and happy hour deals that established the brand&#39;s reputation in the District.</p>
-           
-        </a>
-      
-        <a href="https://dc.eater.com/2025/5/21/24434119/dc-new-restaurant-openings-may-2025" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=fox5dc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>FOX 5 DC</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">May 21, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Biggest D.C.-Area Restaurant Openings in May</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Celebrate Dry January at Bar Chinois</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bar Chinois expanded its D.C.-area presence with a second location in National Landing, Arlington, which opened in May 2025. The 90-seat venue features a turquoise-toned interior and a large outdoor patio, serving the brand&#39;s signature French-influenced cocktails and dim sum favorites like black pepper duck, crab Rangoon, and bao buns.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bar Chinois is highlighting its non-alcoholic beverage program for Dry January with special features from Beverage Director Frank Mills and Service Manager Ian Grant. The venue showcased its creative spirit-free cocktails and seasonal offerings during an appearance on FOX 5&#39;s LION Lunch Hour.</p>
            
         </a>
       
@@ -665,6 +653,49 @@ What plates have I tried:
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

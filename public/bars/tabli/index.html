@@ -50,7 +50,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -69,17 +69,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -105,7 +107,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -295,78 +296,6 @@
   <!-- End Happy Hour Details Section -->
 
   <!-- [NEW] News Section -->
-  
-  <div class="news-section" style="margin-top:2rem; margin-bottom:2rem;">
-    <h3>📰 In the News</h3>
-    <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
-      
-        <a href="https://washingtonian.com/2023/09/18/neighborhood-guide-things-to-do-in-bloomingdale-and-eckington" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 11, 2023</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Neighborhood Guide: 11 Things to Do in Bloomingdale and Eckington</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">établi is a Bloomingdale wine bar offering a global selection of bottles and themed wine flights alongside a full-service menu featuring housemade pasta and rack of lamb. Located in the former Tyber Creek Wine Bar space, the venue specializes in diverse international labels and curated tastings centered on unique themes.</p>
-           
-        </a>
-      
-        <a href="https://dc.eater.com/2022/1/18/22889550/bloomingdale-bar-etabli-betty-white-golden-girls-cocktail-menu" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 18, 2022</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">A Bloomingdale Bar Honors Betty White With a New ‘Golden Girls’ Cocktail Menu</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Etabli, a wood-fired bar in Bloomingdale, D.C., features a themed cocktail menu inspired by The Golden Girls and the legacy of Betty White. The menu includes character-specific drinks like the aquavit-based &quot;St. Olaf&quot; daiquiri and the &quot;Sicily, 1922&quot; Negroni, alongside a signature &quot;Cheesecake in the Kitchen&quot; dessert cocktail.</p>
-           
-        </a>
-      
-        <a href="https://blog.resy.com/2021/06/now-open-on-resy-the-red-hen-whino-anxo-kennedy-st-and-more" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=blog.resy.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Resy | Right This Way</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 2, 2021</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Now Open on Resy: The Red Hen, Whino, Anxo Kennedy St, and More — Resy | Right This Way</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Établi is a wine bar located in D.C.&#39;s Bloomingdale neighborhood, occupying the former Tyber Creek space under the direction of restaurateurs Kathleen Davis and Thomas Boisvert. The venue specializes in an extensive selection of wine flights, offering nine different curated options that include bubbles, rosé, Pinot Noir, and skin-contact wines.</p>
-           
-        </a>
-      
-        <a href="https://popville.com/2021/05/etabli-dc-bloomingdale" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=popville.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>PoPville</span>
-              <span style="margin-left:auto; text-transform:none;">May 11, 2021</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">More Info on Etabli Opening Soon in Bloomingdale</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">établi is a wine bar and restaurant in Bloomingdale featuring Mediterranean-inspired dishes like house-made pasta and brick-oven pizza. The venue offers an extensive by-the-glass wine selection, curated wine flights, and a membership-based retail program called Carpe Vinum.</p>
-           
-        </a>
-      
-        <a href="https://dc.eater.com/2021/5/4/22418937/dc-vegan-pita-shouk-maryland-restaurant-expansions-am-intel" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">May 4, 2021</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Shouk Will Bring Its Beloved, Veggie-Stuffed Pitas to Maryland With Two New Stores</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Établi is a wine-centric restaurant and wine club located at 84 T Street NW in Washington, D.C.’s Bloomingdale neighborhood. It opened in the space formerly occupied by the neighborhood wine bar Tyber Creek.</p>
-           
-        </a>
-      
-    </div>
-  </div>
   
   <!-- End News Section -->
   
@@ -637,6 +566,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -355,78 +356,6 @@
   <!-- End Happy Hour Details Section -->
 
   <!-- [NEW] News Section -->
-  
-  <div class="news-section" style="margin-top:2rem; margin-bottom:2rem;">
-    <h3>📰 In the News</h3>
-    <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
-      
-        <a href="https://theinfatuation.com/washington-dc/guides/where-to-eat-and-drink-in-columbia-heights" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=theinfatuation.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Infatuation</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 12, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Best Restaurants In Columbia Heights &amp; Mt. Pleasant - Washington DC</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Nido Wine Shop + Market is a Mediterranean-inspired destination in Mt. Pleasant featuring Andalusian-style décor and shelves stocked with imported European pantry staples. The shop offers a curated selection of wines and tinned fish alongside a prepared menu of soups, snacks, and sandwiches, including a signature Spanish BLT.</p>
-           
-        </a>
-      
-        <a href="https://theinfatuation.com/washington-dc/reviews/nido-wine-shop-and-market" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=theinfatuation.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Infatuation</span>
-              <span style="margin-left:auto; text-transform:none;">Aug 28, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Nido Wine Shop &amp; Market - Review - Mt. Pleasant - Washington DC</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Nido Wine Shop &amp; Market is a Mediterranean-inspired shop and cafe in Mt. Pleasant featuring imported European pantry staples, tinned fish, and a curated wine selection. The venue offers a seasonal, sandwich-heavy lunch menu with highlights like a Serrano ham BLT on fresh-baked focaccia and Basque cheesecake.</p>
-           
-        </a>
-      
-        <a href="https://dc.eater.com/2025/3/25/24393047/best-spring-restaurant-pop-ups-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">May 8, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">A Jewish-Korean Crossover Featuring Red Bean Rugelach — And More Spring Pop-Ups</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Nido Wine Shop + Market in Mount Pleasant hosted the &quot;Both/And&quot; pop-up in May 2025, featuring a culinary collaboration between Magpie and the Tiger and storyteller Liz Kleinrock. The event showcased a fusion of Jewish and Korean flavors, with unique offerings such as red bean rugelach, soondubu shakshuka, and marbled rye steamed buns with kimchi sauerkraut and pastrami.</p>
-           
-        </a>
-      
-        <a href="https://timeout.com/washington-dc/news/mount-pleasant-was-just-named-the-coolest-neighborhood-in-washington-d-c-092524" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=timeout.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Time Out Worldwide</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 26, 2024</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Mount Pleasant was just named the coolest neighborhood in Washington, D.C.</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Nido Wine Shop + Market is featured as a premier shopping destination in Washington D.C.’s Mount Pleasant, which was named one of the world&#39;s coolest neighborhoods by Time Out. The shop is recommended as an essential stop for visitors looking to experience the local flavor and community character of the district.</p>
-           
-        </a>
-      
-        <a href="https://dcist.com/story/23/12/27/dcist-wamu-favorite-foods-restaurants-dishes-dc-md-va-2023" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=dcist.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>DCist</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 27, 2023</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">2023 In Food: The Best Things We Ate Around The D.C. Region This Year</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Nido Wine Shop + Market in Mount Pleasant is a neighborhood staple known for its Spanish-inspired snacks like tortilla española and its signature airy Basque burnt cheesecake. The shop features an expertly curated selection of natural wines and hosts weekly Friday night tastings led by a knowledgeable staff.</p>
-           
-        </a>
-      
-    </div>
-  </div>
   
   <!-- End News Section -->
   
@@ -698,6 +627,49 @@ with owners Thea or Morgan (both wine geniuses). If you’ve already discovered 
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

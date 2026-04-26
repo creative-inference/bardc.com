@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -289,68 +290,16 @@ Romantic date nights, celebratory anniversary dinners, aesthetic weekend brunche
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://georgetowner.com/articles/2025/07/16/the-latest-dish-sizzling-spicy-summer-sips" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://hillrag.com/2025/10/09/capitol-cuisine-11" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=georgetowner.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Georgetowner</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 16, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Latest Dish: Sizzling Spicy Summer Sips</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Tiffany’s Bar &amp; Bistro has opened at 709 H St. NE in Washington, D.C. The new establishment occupies the space formerly home to the restaurant Po Boy Jim.</p>
-           
-        </a>
-      
-        <a href="https://dc.eater.com/restaurant-news/159849/dc-va-biggest-best-restaurant-bar-openings-june-2025" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=hillrag.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>HillRag</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Jun 26, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Biggest D.C.-Area Restaurant Openings in June 2025</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Capitol Cuisine: New Menus, New Restaurants</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Tiffany’s Bar and Bistro is a Mediterranean, Middle Eastern, and American fusion restaurant on H Street NE that debuted in June 2025. The menu features creative dishes such as harissa fried chicken sandwiches, kabob melts, and za’atar grilled calamari, blending various cultures in a charming bistro setting.</p>
-           
-        </a>
-      
-        <a href="https://popville.com/2025/06/the-early-word-on-tiffanys-bistro-and-bar" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=popville.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>PoPville</span>
-              <span style="margin-left:auto; text-transform:none;">Jun 25, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Early Word on Tiffany’s Bistro and Bar: “Overall would 100% recommend”</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Tiffany’s Bar and Bistro on H Street NE features a spacious multi-level layout with a dining area, upstairs bar, and an outdoor patio. Early reviews highlight the solid food quality, particularly the chicken and hummus, while noting the venue&#39;s successful aim at a fine dining atmosphere with excellent service.</p>
-           
-        </a>
-      
-        <a href="https://washingtonian.com/2025/06/23/a-new-turkish-mediterranean-bar-and-bistro-embraces-fusion-on-h-street" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">Jun 24, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">A New Mediterranean Bar and Bistro Embraces Fusion on H Street</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Tiffany’s Bar and Bistro is a Mediterranean and American fusion restaurant on H Street NE, featuring a menu that blends Turkish flavors with American influences through dishes like kabob melts and harissa fried chicken. Founded by Mehmet Sukutli and Malti Chaudhari, the bistro offers a curated selection of seafood, global cocktails, and a coastal-inspired interior complete with a hand-painted mural of Istanbul.</p>
-           
-        </a>
-      
-        <a href="https://popville.com/2025/06/tiffanys-bistro-and-bar-opening-menus" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=popville.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>PoPville</span>
-              <span style="margin-left:auto; text-transform:none;">Jun 13, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Tiffany’s Bistro and Bar soft opening this Saturday on H Street, NE! Check out the Menus!!</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Tiffany’s Bar and Bistro opened at 709 H Street, NE, in the former Po Boy Jim&#39;s space, offering a variety of menus including food, cocktails, wine, and dessert. The establishment launched with a soft opening in June 2025, establishing itself as a new dining destination in the H Street neighborhood.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Tiffany’s Bar &amp; Bistro has introduced a new fall/winter menu at its H Street NE location, featuring dry-aged duck shawarma with forbidden rice and spicy grilled shish kebabs. The menu also highlights seasonal house-made ravioli with garlicky yogurt and decadent desserts like cardamom panna cotta and Dubai chocolate cheesecake.</p>
            
         </a>
       
@@ -626,6 +575,49 @@ Romantic date nights, celebratory anniversary dinners, aesthetic weekend brunche
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

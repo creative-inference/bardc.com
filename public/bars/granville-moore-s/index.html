@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -329,68 +330,29 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://blog.resy.com/2025/03/women-owned-restaurants-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://hillrag.com/2021/06/07/mussel-power-back-to-full-strength-on-h-street" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=blog.resy.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Resy | Right This Way</span>
-              <span style="margin-left:auto; text-transform:none;">May 7, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=hillrag.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>HillRag</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Women-Owned Restaurants in Washington DC</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Mussel Power Back to Full Strength on H Street</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Granville Moore’s is featured as a women-owned seafood restaurant located in Washington D.C.’s H Street Corridor, owned by Roneeka Bhagotra. The venue is recognized as a key destination in a curated guide highlighting the city&#39;s essential women-led dining establishments.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Granville Moore’s is a Belgian tavern in D.C.&#39;s Atlas District that features signature mussels and twice-fried pommes frites paired with a variety of house-made aiolis. The menu highlights diverse mussel preparations, such as white wine garlic and spicy Thai curry, complemented by an extensive Belgian beer list in a rustic, historical setting.</p>
            
         </a>
       
-        <a href="https://popville.com/2025/04/best-chicken-sandwich-fried-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://dctheatrescene.com/2015/07/13/fringe-binge-bar-tour" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=popville.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>PoPville</span>
-              <span style="margin-left:auto; text-transform:none;">Apr 2, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Quest for the Best: Fried Chicken Sandwich in DC?</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Granville Moore&#39;s is recognized as a top contender for the best fried chicken sandwich in Washington, D.C. by local food enthusiasts. The H Street gastropub is highlighted for its standout sandwich alongside other notable city favorites in a community-driven quest for the best poultry offerings.</p>
-           
-        </a>
-      
-        <a href="https://blog.resy.com/2025/01/dc-restaurants-feb-25" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=dctheatrescene.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>DC Theatre Scene</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=blog.resy.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Resy | Right This Way</span>
-              <span style="margin-left:auto; text-transform:none;">Mar 1, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Top Restaurants in Washington, D.C. Right Now — Resy | Right This Way</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Fringe Binge Bar Tour</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Granville Moore’s is featured on the Resy Hit List as a top dining destination in Washington, D.C.’s H Street Corridor. The venue is highlighted for its seafood offerings and remains a recommended staple for local diners seeking quality experiences at an accessible price point.</p>
-           
-        </a>
-      
-        <a href="https://dc.eater.com/maps/best-mussels-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 8, 2024</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">13 Succulent Mussel Dishes to Try Right Now in D.C.</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Granville Moore&#39;s is an Atlas District mainstay known for its fragrant pots of steamed mussels, with preparations ranging from classic mariniere to blue cheese and pork belly-spiked versions. The restaurant offers a unique option to add noodles to the leftover broth and features a weekly deal where all mussel dishes are half-price on Mondays.</p>
-           
-        </a>
-      
-        <a href="https://washingtonian.com/2020/08/21/how-joe-englert-changed-the-dc-bar-scene" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">Aug 21, 2020</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">9 Ways Joe Englert Changed the DC Bar Scene</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Granville Moore&#39;s is recognized as a cornerstone of the H Street corridor&#39;s revitalization, having been established by the late DC nightlife pioneer Joe Englert. The Belgian-themed eatery is celebrated for its signature mussels and its historically significant role in defining the Atlas District&#39;s early identity.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Granville Moore&#39;s features an excellent selection of Belgian beers on tap that are highly recommended for visitors. While the drinks are a highlight, the reviewer advises patrons to skip the food menu, describing the culinary offerings as subpar.</p>
            
         </a>
       
@@ -666,6 +628,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

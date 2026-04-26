@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -293,68 +294,16 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://theinfatuation.com/washington-dc/reviews/maison-bar-a-vins" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://secretdc.com/beli-dc-top-new-restaurants" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=theinfatuation.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Infatuation</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 3, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Maison Bar À Vins - Review - Adams Morgan - Washington DC</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Maison Bar À Vins is a sophisticated French wine bar in Adams Morgan housed in a meticulously restored Victorian row home. The venue features an extensive list of over a thousand vintages alongside elevated plates like smoked eel croquettes and brioche stuffed chicken.</p>
-           
-        </a>
-      
-        <a href="https://dc.eater.com/dining-out/164067/maison-bar-a-vins-adams-morgan-review" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=secretdc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Secret DC</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 7, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Whisper Over French Fare at This Adams Morgan Wine Bar</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Here Are The Top New Restaurants In 2025 According To Over 50 Million Ratings On Beli</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Maison Bar À Vins is a stylish three-story French wine bar in Adams Morgan featuring a moody, candle-lit atmosphere and a menu by Chef Matt Conroy. The venue offers inventive dishes like Chartreuse-infused escargots and fish-roe-filled choux buns alongside a massive cellar with over a thousand wine selections.</p>
-           
-        </a>
-      
-        <a href="https://restaurant-hospitality.com/new-restaurants/the-popal-group-s-newest-d-c-concept-is-maison-bar-vins-a-french-inspired-restaurant-and-wine-bar" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=restaurant-hospitality.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Restaurant Hospitality</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 24, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Popal Group’s newest D.C. concept is Maison Bar à Vins, a French-inspired restaurant and wine bar</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Maison Bar à Vins is a three-story French-inspired restaurant and wine bar located in a historic 19th-century brownstone in Washington, D.C.’s Adams Morgan neighborhood. The concept features an extensive beverage program centered on organic and biodynamic wines paired with French-inspired dishes like eel croquettes and brioche-stuffed chicken.</p>
-           
-        </a>
-      
-        <a href="https://blog.resy.com/2025/09/maison-restaurant-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=blog.resy.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Resy | Right This Way</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 24, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">With Maison, the Lutèce Team Brings Big French Energy to Adams Morgan</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Maison Bar À Vins is a French-inspired wine bar in Adams Morgan from the acclaimed Popal Group, offering a casual, walk-in-friendly alternative to its sibling restaurant, Lutèce. The menu features modern takes on classic French techniques, such as smoked eel croquettes and brioche-stuffed roast chicken, alongside an extensive 1,000-bottle wine cellar and wine-centric cocktails.</p>
-           
-        </a>
-      
-        <a href="https://dc.eater.com/openings/163523/maison-bar-a-vins-wine-bar-adams-morgan-dc-restaurant-openings" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 12, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">An Ambitious French Wine Destination Debuts in Adams Morgan</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Maison Bar à Vins is a sophisticated three-story French wine bar in Adams Morgan featuring a cellar with over a thousand labels and a robust program of wine-based cocktails. The kitchen serves a mix of small plates and hearty entrees, including smoked eel croquettes and brioche-stuffed chicken breast, within a transformed historic brownstone.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Maison Bar À Vins has been recognized as one of the top new restaurants of 2025 based on over 50 million user ratings on the Beli app. The Georgetown venue is highlighted as a premier dining and wine destination in Washington, D.C.</p>
            
         </a>
       
@@ -634,6 +583,49 @@ Here are is what we ordered after initial drinks - def get the gin martini - inc
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

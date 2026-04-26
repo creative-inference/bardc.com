@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -319,68 +320,29 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://theinfatuation.com/washington-dc/guides/best-ramen-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://washingtonian.com/2014/07/10/dumpling-shooters-mussel-ramen-and-more-to-expect-at-the-chaplin-photos-menu" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=theinfatuation.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Infatuation</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 12, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Washingtonian</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Best Ramen Spots In DC</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Dumpling Shooters, Mussel Ramen, and More to Expect at the Chaplin (Photos and Menu)</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Chaplin’s Restaurant &amp; Bar in Shaw offers a high-energy dining experience that pairs traditional ramen with an inventive cocktail program inspired by silent film era classics. The menu features standout dishes like the spicy Chaplin A.S.S. ramen, complemented by unique drinks such as the absinthe-based A Woman of Paris or the strawberry-infused Cure.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Chaplin&#39;s Restaurant &amp; Bar features a creative menu highlighted by unique offerings such as dumpling shooters and mussel ramen. The venue combines a 1920s silent film aesthetic with an extensive selection of Japanese-inspired dishes and craft cocktails in Washington D.C.</p>
            
         </a>
       
-        <a href="https://dc.eater.com/maps/best-dog-friendly-bars-restaurants-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://nbcwashington.com/news/local/co-owner-of-nw-dc-restaurant-fatally-struck-by-car/2002929" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">May 16, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Best Dog-Friendly Patios Around D.C.</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Chaplin&#39;s Restaurant &amp; Bar in the Shaw neighborhood offers a dog-friendly patio where pets are welcomed with water bowls while their owners enjoy ramen and craft cocktails. The venue&#39;s sister spot, Zeppelin, also features a 65-seat outdoor area that allows four-legged companions.</p>
-           
-        </a>
-      
-        <a href="https://insidehook.com/food-washington-dc/dc-best-ramen-bars" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=nbcwashington.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>NBC4 Washington</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=insidehook.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>InsideHook</span>
-              <span style="margin-left:auto; text-transform:none;">Jun 13, 2023</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Splurge on Wagyu Noodles and More at DC’s 7 Best Ramen Bars</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Armin Amin-Toomaji, Co-Owner of NW DC Restaurant, Fatally Struck by Car</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Chaplin&#39;s Restaurant &amp; Bar in Shaw features ramen inspired by chef and partner Myo Htun’s training under a master chef in Tokyo. The menu highlights the Stamina Spicy Ramen, a flavorful blend of spice, sliced pork, and miso, served within a unique Prohibition speakeasy-themed interior.</p>
-           
-        </a>
-      
-        <a href="https://districtfray.com/articles/zeppelin-chaplins-shaw-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=districtfray.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>District Fray</span>
-              <span style="margin-left:auto; text-transform:none;">Jun 6, 2023</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Zeppelin + Chaplin’s Provide the Perfect Two-for-One Night Out</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Chaplin’s Restaurant &amp; Bar in Shaw offers a buzzy atmosphere featuring Japanese-inspired flavors, signature cocktails like the Tokyo Tea, and unique late-night options such as whiskey-injected Pay Day Dumplings. Often paired with its sister restaurant Zeppelin for a complete night out, the venue provides a lively experience defined by its bustling patio and vibrant karaoke scene.</p>
-           
-        </a>
-      
-        <a href="https://washingtonpost.com/news/going-out-guide/wp/2014/08/22/charlie-chaplin-themed-restaurant-threatened-with-lawsuit-from-late-actors-estate" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=washingtonpost.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Washington Post</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 2, 2021</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Charlie Chaplin-themed restaurant threatened with lawsuit from late actor’s estate</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Chaplin&#39;s Restaurant &amp; Bar rebranded from its original name, &#39;The Chaplin,&#39; shortly after opening to resolve a legal dispute with the Charlie Chaplin estate. The Asian-themed establishment adjusted its branding to avoid litigation while maintaining its tribute to the silent-film legend.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Chaplin&#39;s Restaurant &amp; Bar co-owner Armin Amin-Toomaji has tragically passed away after being fatally struck by a vehicle in Northwest D.C. The loss marks a somber moment for the popular ramen and cocktail venue he helped establish and lead in the Shaw neighborhood.</p>
            
         </a>
       
@@ -664,6 +626,49 @@ Chaplins is...
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

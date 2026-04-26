@@ -49,7 +49,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -68,17 +68,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -104,7 +106,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -214,6 +215,18 @@
       
         
           {
+            name: "Binge Bar",
+            slug: "binge-bar",
+            lat: 38.9004289,
+            lng: -76.9991076,
+            address: "Lower Level, 506 H St NE LL, Washington, DC 20002, United States",
+            category: "Mocktails, Sober Friendly, Lounges",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbinge-bar%2Flogo-1766151728835-329029990_1236963247244451_7789339116514878158_n.jpg?alt=media&amp;token=59698e18-3494-4bc3-8c13-5d67b6461c6a"
+          },
+        
+      
+        
+          {
             name: "Ben&#39;s Upstairs",
             slug: "ben-s-upstairs",
             lat: 38.9000077,
@@ -233,18 +246,6 @@
             address: "421 H St NE, Washington, DC 20002, USA",
             category: "Sports Bars, Dive Bars, Neighborhood Bars",
             logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbig-board%2Flogo-1766151487478-211498472_4444142522271126_5528990392757769220_n.jpg?alt=media&amp;token=861ba640-0638-4b27-bf94-8a7d4771277e"
-          },
-        
-      
-        
-          {
-            name: "Binge Bar",
-            slug: "binge-bar",
-            lat: 38.9004289,
-            lng: -76.9991076,
-            address: "Lower Level, 506 H St NE LL, Washington, DC 20002, United States",
-            category: "Mocktails, Sober Friendly, Lounges",
-            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbinge-bar%2Flogo-1766151728835-329029990_1236963247244451_7789339116514878158_n.jpg?alt=media&amp;token=59698e18-3494-4bc3-8c13-5d67b6461c6a"
           },
         
       
@@ -743,6 +744,32 @@
 
 <div class="venue-grid">
   
+      <a href="/bars/binge-bar/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbinge-bar%2Flogo-1766151728835-329029990_1236963247244451_7789339116514878158_n.jpg?alt=media&amp;token=59698e18-3494-4bc3-8c13-5d67b6461c6a');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbinge-bar%2Flogo-1766151728835-329029990_1236963247244451_7789339116514878158_n.jpg?alt=media&amp;token=59698e18-3494-4bc3-8c13-5d67b6461c6a" alt="Binge Bar logo" class="card-logo">
+              
+              <h3>Binge Bar</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Mocktails, Sober Friendly, Lounges</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
       <a href="/bars/ben-s-upstairs/" class="venue-card light-bg"
          
          style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fben-s-upstairs%2Flogo-1766150420235-301691433_410584351209242_3954949647802151774_n.jpg?alt=media&amp;token=1e8df9e3-aeb8-4081-b8c2-609176514ed0');"
@@ -785,32 +812,6 @@
             <!-- End Card Header -->
           
           <p class="card-category">Sports Bars, Dive Bars, Neighborhood Bars</p>
-          <span class="card-cta">View Details &rarr;</span>
-        </div>
-
-        <div class="card-tags-container">
-          
-
-          
-        </div>
-      </a>
-  
-      <a href="/bars/binge-bar/" class="venue-card light-bg"
-         
-         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbinge-bar%2Flogo-1766151728835-329029990_1236963247244451_7789339116514878158_n.jpg?alt=media&amp;token=59698e18-3494-4bc3-8c13-5d67b6461c6a');"
-         
-      >
-        <div class="card-content">
-            <!-- Card Header to group title and logo -->
-            <div class="card-header">
-              
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbinge-bar%2Flogo-1766151728835-329029990_1236963247244451_7789339116514878158_n.jpg?alt=media&amp;token=59698e18-3494-4bc3-8c13-5d67b6461c6a" alt="Binge Bar logo" class="card-logo">
-              
-              <h3>Binge Bar</h3>
-            </div>
-            <!-- End Card Header -->
-          
-          <p class="card-category">Mocktails, Sober Friendly, Lounges</p>
           <span class="card-cta">View Details &rarr;</span>
         </div>
 
@@ -1623,6 +1624,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

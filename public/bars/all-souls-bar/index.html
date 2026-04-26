@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -314,68 +315,16 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://popville.com/2025/10/all-souls-bar-turning-twelve-celebrate-sunday" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://timeout.com/washington-dc/bars/all-souls-bar" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=popville.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>PoPville</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 31, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">All Souls Bar Turning Twelve!! Celebrate Sunday!</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">All Souls Bar celebrated its 12th anniversary in late 2025 with a fundraiser supporting DC Migrant Mutual Aid and EOR Mutual Aid. Located at the corner of 8th and T Streets NW, the neighborhood bar donated all proceeds from the celebration to support local community initiatives.</p>
-           
-        </a>
-      
-        <a href="https://modernluxury.com/best-bars-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=timeout.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Time Out Worldwide</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=modernluxury.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Modern Luxury</span>
-              <span style="margin-left:auto; text-transform:none;">May 7, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">33 Best Bars in Washington, DC for Top-Tier Drinks</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">All Souls Bar | Bars in Shaw, Washington DC</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">All Souls Bar is a welcoming neighborhood corner bar in Washington, DC, recognized for its friendly staff and relaxed atmosphere. It is highlighted as an ideal spot for grabbing a drink with friends after work, with the &quot;No. 2&quot; Perfect Manhattan being the recommended signature cocktail.</p>
-           
-        </a>
-      
-        <a href="https://washingtonian.com/2025/04/08/rfk-jr-fluoride-water-tariff-chaos-best-first-date-bar" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">Apr 8, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">RFK Jr. Buys House in City With Fluoridated Water, Tariffs Cause iPhone Rush, and We Reveal the Best First Date Bar in DC</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">All Souls Bar was recognized as a top contender in Washingtonian&#39;s bracket for the best first date bar in DC, reaching the Final Four of the competition. Located in the Shaw neighborhood, the venue is highlighted as one of the city&#39;s premier destinations for a first date despite a narrow loss to the eventual champion.</p>
-           
-        </a>
-      
-        <a href="https://washingtonian.com/2025/03/24/whats-the-best-first-date-bar-in-dc-you-decide" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">Apr 3, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">What’s the Best First Date Bar in DC? You Decide.</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">All Souls Bar was featured as a top contender in a bracket-style competition to determine the best first date destination in Washington, DC. The venue advanced through multiple rounds of the tournament, solidifying its reputation as one of the city&#39;s premier spots for a romantic evening.</p>
-           
-        </a>
-      
-        <a href="https://dcist.com/story/22/08/11/first-look-little-grand-restaurant-bar-pizza-h-street-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=dcist.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>DCist</span>
-              <span style="margin-left:auto; text-transform:none;">Aug 11, 2022</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">First Look: The Little Grand, D.C.’s Newest Alley Bar, Serves Up Seasonal Pizza With Sourdough Crust</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">All Souls Bar owners David Batista, Soung Wiser, and Joanna Brady have expanded their D.C. presence with a sister venue, The Little Grand, which features a beverage program overlapping with the original bar&#39;s classic cocktail standards. The historic Shaw establishment is noted for its distinct character, housed in a century-old building featuring original tin ceilings and natural textures.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">All Souls Bar is a no-nonsense drinking den in DC&#39;s Shaw neighborhood known for serving high-quality classic cocktails like the Negroni at affordable prices. While the bar does not serve its own food, patrons are encouraged to bring their own meals to enjoy in the welcoming, modestly decorated atmosphere.</p>
            
         </a>
       
@@ -654,6 +603,49 @@ They also have a pizza spot on H st called little Grand. AMAZING
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -292,78 +293,6 @@
   <!-- End Happy Hour Details Section -->
 
   <!-- [NEW] News Section -->
-  
-  <div class="news-section" style="margin-top:2rem; margin-bottom:2rem;">
-    <h3>📰 In the News</h3>
-    <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
-      
-        <a href="https://popville.com/2026/02/chacho-spirits-dc-permanently-close-tasting-room" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=popville.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>PoPville</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 18, 2026</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">“Chacho Spirits will permanently close tasting room in late March.” HOWEVER, “Chacho will continue to be locally produced and available at all your favorite bars and liquor stores.”</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Chacho Spirits permanently closed its tasting room at 6031 Kansas Ave, NW, in late March 2026 to focus on wholesale distribution and community events. While the physical venue is no longer open for tours or tastings, the brand continues to produce its spirits locally for availability at bars and liquor stores.</p>
-           
-        </a>
-      
-        <a href="https://georgetowner.com/articles/2025/07/16/the-latest-dish-sizzling-spicy-summer-sips" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=georgetowner.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Georgetowner</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 16, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Latest Dish: Sizzling Spicy Summer Sips</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Chacho Outpost has launched as a pop-up on the second level of Le Mont Royal in Adams Morgan, featuring jalapeño-infused aguardiente and a rotating menu of specialty cocktails. To complement the South American-inspired spirits, chef Maria Olimpia serves a variety of small plates, including tacos and arepas.</p>
-           
-        </a>
-      
-        <a href="https://modernluxury.com/best-bars-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=modernluxury.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Modern Luxury</span>
-              <span style="margin-left:auto; text-transform:none;">May 7, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">33 Best Bars in Washington, DC for Top-Tier Drinks</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Chacho Spirits is a cozy local distillery in Washington, DC, featuring a botanical-themed interior with greenery and soft lighting. The venue specializes in cocktails crafted from its signature jalapeño aguardiente, such as the Spicy Lemonade, and offers guests on-site distillery tours and tastings.</p>
-           
-        </a>
-      
-        <a href="https://axios.com/local/washington-dc/2024/03/15/distilleries-close-competition" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=axios.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Axios</span>
-              <span style="margin-left:auto; text-transform:none;">Mar 15, 2024</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Why D.C.&#39;s distillery boom went bust</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Chacho Spirits is a Latin aguardiente-style producer based in Washington D.C.’s Manor Park neighborhood. The distillery is recognized as a resilient niche operator that has successfully navigated the District&#39;s shifting craft spirits market by specializing in unique products rather than traditional whiskeys and gins.</p>
-           
-        </a>
-      
-        <a href="https://popville.com/2023/08/chacho-wins-two-city-paper-best-of-titles-best-distillery-best-marg-cha2" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=popville.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>PoPville</span>
-              <span style="margin-left:auto; text-transform:none;">Aug 31, 2023</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Chacho Wins Two City Paper ‘Best Of’ Titles: Best Distillery &amp; Best Marg!</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Chacho Spirits, located in DC&#39;s Manor Park neighborhood, earned the titles of Best Distillery and Best Margarita in Washington City Paper’s 2023 &quot;Best of DC&quot; awards. The distillery is known for its signature Jalapeño Aguardiente, a spicy South American-inspired spirit crafted on-site from cane sugar and natural peppers.</p>
-           
-        </a>
-      
-    </div>
-  </div>
   
   <!-- End News Section -->
   
@@ -638,6 +567,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

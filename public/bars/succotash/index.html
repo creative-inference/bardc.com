@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -319,68 +320,16 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://stacker.com/stories/washington-dc/highest-rated-southern-restaurants-washington-dc-diners" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://washington.org/find-dc-listings/succotash-restaurant" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=stacker.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>stacker.com</span>
-              <span style="margin-left:auto; text-transform:none;">May 13, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Highest-rated Southern Restaurants in Washington, D.C. by Diners</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Succotash Prime is ranked as one of the top three Southern restaurants in Washington, D.C., according to diner ratings and reviews. Located on F Street Northwest, the venue is recognized for its high 4.1-star rating and a menu that blends Southern traditions with steakhouse and American influences.</p>
-           
-        </a>
-      
-        <a href="https://galeriemagazine.com/edward-lees-succotash-dazzles-in-d-c" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=washington.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>visit Washington DC</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=galeriemagazine.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Galerie Magazine</span>
-              <span style="margin-left:auto; text-transform:none;">May 1, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Edward Lee’s Succotash Dazzles in D.C.</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Succotash Prime</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Succotash in Washington, D.C., showcases Chef Edward Lee’s inventive approach to Southern cuisine by blending traditional flavors with his Korean heritage and New York roots. Housed in a landmarked interior, the restaurant features unique dishes like Nashville-style hot fried oysters on brioche and collard greens with kimchi and country ham. This location serves as an opulent expansion of Lee&#39;s culinary vision, reflecting his belief that Southern food is the original fusion cuisine.</p>
-           
-        </a>
-      
-        <a href="https://washingtonian.com/2024/01/18/mi-vida-succotash-among-dc-restaurants-sued-for-allegedly-deceptive-menu-fees" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 22, 2024</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Mi Vida, Succotash Among DC Restaurants Sued for Allegedly Deceptive Menu Fees</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Succotash was named in a 2024 lawsuit against Knead Hospitality + Design regarding allegedly deceptive 3.5 percent &quot;Initiative 82&quot; menu fees. Following the legal challenge from the nonprofit Travelers United, the restaurant group eliminated the surcharge at all its full-service locations to provide more transparency for diners.</p>
-           
-        </a>
-      
-        <a href="https://dc.eater.com/2021/8/30/22647819/succotash-prime-menu-smoked-steaks-edward-lee" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Aug 30, 2021</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">At Revamped Succotash, Edward Lee Serves Smoked Steaks With a Southern-Korean Touch</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Succotash Prime in Penn Quarter has reopened with a revamped steakhouse-style menu featuring smoked steaks infused with Chef Edward Lee&#39;s signature Southern and Korean flavors. The restaurant, housed in a historic 10,000-square-foot bank building, also debuted design updates including new murals and structural repairs following a long-term closure.</p>
-           
-        </a>
-      
-        <a href="https://hospitalitydesign.com/news/f-b/succotash-dc-debuts-within-landmark-equitable-bank-building" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=hospitalitydesign.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Hospitality Design</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 27, 2020</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Succotash DC Debuts within Landmark Equitable Bank Building</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Succotash DC occupies the historic Equitable Bank Building in Penn Quarter, blending Greek Revival architecture with contemporary design elements like a 50-foot vaulted glass atrium. The multi-level restaurant features restored mahogany paneling, a private dining room inside the original bank vault, and a mezzanine balcony overlooking the grand main hall.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Succotash Prime in Penn Quarter features a progressive Southern menu with Korean influences by Chef Edward Lee, housed in a historic 1911 landmark building. The restaurant offers extensive bourbon selections and a variety of unique private dining options, including the Big Easy Bar mezzanine and the intimate Vault Room.</p>
            
         </a>
       
@@ -664,6 +613,49 @@ Chicken and waffles very...
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

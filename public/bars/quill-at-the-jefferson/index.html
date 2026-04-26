@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -364,68 +365,16 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://wtop.com/food-restaurant/2023/08/most-expensive-dc-cocktail" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://washington.org/visit-dc/historic-hotel-bars-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=wtop.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WTOP</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 3, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">This $100 drink could be DC’s most expensive cocktail</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Quill at The Jefferson introduced a $100 &#39;Centennial Cocktail&#39; to celebrate the hotel’s 100th anniversary, featuring premium ingredients like 24-karat gold-encapsulated ice and coconut-oil-washed bourbon. The drink, developed by bar manager Chrissy Sheffey, highlights the venue&#39;s sophisticated mixology and luxury positioning within the Washington, D.C. cocktail scene.</p>
-           
-        </a>
-      
-        <a href="https://chowhound.com/1909211/best-hotel-bars-in-us" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=washington.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>visit Washington DC</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=chowhound.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Chowhound</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 13, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The 15 Best Hotel Bars In The US</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Historic DC Hotel Bars with Character &amp; Cocktails</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Quill at The Jefferson is a refined Washington, D.C. hideaway featuring a literary-inspired atmosphere with polished brass accents and a library wall. This sophisticated lounge offers a smart selection of seasonal cocktails made with exotic ingredients, served at a distinctive amber-toned lighted glass bar.</p>
-           
-        </a>
-      
-        <a href="https://northernvirginiamag.com/things-to-do/travel/2021/07/06/iconic-dc-luxury-hotel-the-jefferson-reopens" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=northernvirginiamag.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Northern Virginia Magazine</span>
-              <span style="margin-left:auto; text-transform:none;">Jun 4, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Iconic DC luxury hotel The Jefferson reopens</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Quill at The Jefferson is a cozy bar and lounge in Washington D.C. that offers craft cocktails, dinner, and an extensive collection of historic Madeira dating back to the 18th century. Located within the luxury Jefferson hotel, the venue provides a sophisticated atmosphere for guests to enjoy upscale libations and light bites just a few blocks from the White House.</p>
-           
-        </a>
-      
-        <a href="https://dc.eater.com/2022/5/11/23052769/the-jefferson-hotel-greenhouse-reopens-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">May 11, 2022</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Jefferson Hotel’s New Greenhouse Has Big Michelin-Starred Shoes to Fill</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Quill at The Jefferson is led by Executive Chef Fabio Salvatore, who also oversees the hotel&#39;s Greenhouse restaurant. Located just past the lobby of the historic Beaux Arts-era hotel, the lounge is part of a refined dining program that incorporates Mediterranean and coastal Italian culinary influences.</p>
-           
-        </a>
-      
-        <a href="https://hospitalitynet.org/appointment/79023720.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=hospitalitynet.org" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Hospitality Net</span>
-              <span style="margin-left:auto; text-transform:none;">Mar 30, 2022</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Fabio Salvatore has been appointed Executive Chef at The Jefferson, Washington, DC</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Fabio Salvatore has been appointed as Executive Chef at The Jefferson, where he oversees the culinary direction for the award-winning Quill Bar &amp; Lounge. He introduces a focus on seasonal ingredients and light Italian-inspired flavors, featuring new menu additions like Warm Zucchini Crab Soufflé and Forest Mushroom Risotto.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Quill at The Jefferson is an upscale cocktail bar located within the historic Jefferson Hotel, which originally opened as an apartment building in 1923. The lounge offers a sophisticated atmosphere with a seasonal drink menu featuring elevated flavors like fig, smoked cherrywood, and specialty bitters.</p>
            
         </a>
       
@@ -710,6 +659,49 @@ Pro:
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

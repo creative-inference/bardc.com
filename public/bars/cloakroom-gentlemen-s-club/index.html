@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -353,68 +354,42 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://fox5dc.com/news/dc-attorney-general-investigating-strip-club-owners-accused-violating-workers-rights" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://yogonet.com/international/news/2023/01/02/65547-elys-expands-small-businesses-sportsbook-model-in-dc-with-launch-at-cloakroom-gentlemens-club" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=fox5dc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>FOX 5 DC</span>
-              <span style="margin-left:auto; text-transform:none;">Mar 14, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=yogonet.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Yogonet</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">DC Attorney General investigating strip club owners accused of violating workers&#39; rights</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Elys expands small businesses sportsbook model in DC with launch at Cloakroom Gentlemen’s Club</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Cloakroom Gentlemen&#39;s Club is facing a lawsuit from the D.C. Attorney General alleging widespread sexual harassment, wage theft, and worker exploitation. The investigation details a hostile work environment involving physical assault, tip misappropriation through a &#39;Cloak bucks&#39; system, and management&#39;s failure to address employee abuse.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Cloakroom Gentlemen&#39;s Club in Washington D.C. has partnered with Elys Game Technology to launch Cloakbook, a licensed sportsbook located within the club and its Over Under rooftop lounge. This venue is the first gentlemen&#39;s club in the United States to offer an integrated sports wagering experience, allowing guests to place bets while enjoying the club&#39;s amenities.</p>
            
         </a>
       
-        <a href="https://wusa9.com/article/news/crime/dc-sues-cloakroom-strip-club-sexual-harassment-stealing-tips-wages/65-ba5f251b-2f0b-4125-8c7d-e0d862cdc7c6" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://wusa9.com/video/news/local/dc/dc-sues-strip-club-cloakroom-for-sexual-harassment-wage-theft/65-875e5534-bab2-44e6-b398-eb8ee2539a01" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
               <img src="https://www.google.com/s2/favicons?domain=wusa9.com" alt="" style="width:14px; height:14px; opacity:0.7;">
               <span>WUSA9</span>
-              <span style="margin-left:auto; text-transform:none;">Mar 12, 2025</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">DC strip club sued over rampant sexual harassment and wage theft</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">DC sues strip club Cloakroom for sexual harassment, wage theft</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Cloakroom Gentlemen&#39;s Club is facing a lawsuit from the District of Columbia’s Attorney General alleging rampant sexual harassment, physical assault, and systemic wage theft. Owners and management are accused of creating a hostile work environment by misappropriating employee tips through a fake currency system and retaliating against those who reported abuse. The legal action seeks to address widespread violations of several D.C. labor and human rights laws.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Cloakroom Gentlemen&#39;s Club is the subject of a lawsuit filed by D.C. Attorney General Brian Schwalb alleging sexual harassment, verbal abuse, and physical assault against employees. The legal action further accuses the club&#39;s management of wage theft and maintaining a hostile work environment.</p>
            
         </a>
       
-        <a href="https://wtop.com/dc/2025/03/a-dc-strip-club-sued-by-dc-for-violating-employees-civil-rights" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://dcnewsnow.com/news/local-news/washington-dc/dc-strip-club-sued-for-routine-sexual-harassment-wage-theft-oag-says" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=wtop.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WTOP</span>
-              <span style="margin-left:auto; text-transform:none;">Mar 12, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">DC files lawsuit against strip club for violating employees civil rights</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Cloakroom Gentlemen’s Club is the subject of a lawsuit filed by the D.C. Attorney General’s Office alleging a hostile work environment, widespread wage theft, and sexual harassment. The complaint claims management withheld tips through a proprietary currency system and retaliated against employees who reported physical abuse or safety concerns.</p>
-           
-        </a>
-      
-        <a href="https://yahoo.com/news/dc-strip-club-sued-routine-222838916.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=dcnewsnow.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>DC News Now</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=yahoo.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Yahoo</span>
-              <span style="margin-left:auto; text-transform:none;">Mar 11, 2025</span>
            </div>
            <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">DC strip club sued for ‘routine’ sexual harassment, wage theft, OAG says</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Cloakroom Gentlemen&#39;s Club is the subject of a lawsuit filed by the D.C. Attorney General alleging routine sexual harassment, physical assault, and systemic wage theft against its female employees. The legal action claims the club&#39;s owners misappropriated hundreds of thousands of dollars in tips through various schemes, including the use of a proprietary fake currency and illegal commission deductions.</p>
-           
-        </a>
-      
-        <a href="https://washingtonian.com/2025/03/11/dc-sues-strip-club-for-sexual-exploitation-and-wage-theft" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">Mar 11, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">DC Sues Strip Club For Sexual Exploitation and Wage Theft</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Cloakroom Gentlemen&#39;s Club is the subject of a lawsuit by the D.C. Attorney General alleging pervasive sexual exploitation, wage theft, and civil rights violations. The legal action details systemic harassment, physical assault by management, and deceptive practices such as a &#39;Cloakbucks&#39; scheme used to withhold employee tips.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Cloakroom Gentlemen&#39;s Club is the subject of a lawsuit filed by the D.C. Office of the Attorney General alleging routine sexual harassment and systemic wage theft. The legal action claims the venue fostered a hostile work environment and mismanaged employee compensation in violation of District labor laws.</p>
            
         </a>
       
@@ -690,6 +665,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

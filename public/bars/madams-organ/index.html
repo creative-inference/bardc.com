@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -417,68 +418,16 @@ Live music enthusiasts, soulful comfort food, late-night dancing, group celebrat
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://popville.com/2024/09/madams-organ-owner-streatery-opinion" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://insidenova.com/calendar/?_evDiscoveryPath=%2Fevent%2F106278896n-eric-sommer-music-eric-sommer-at-madam-s-organ" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=popville.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>PoPville</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 16, 2024</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Madam’s Organ Owner: “We, local businesses deserve better, and you, the Adams Morgan community, deserve better”</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Madam&#39;s Organ owner Bill Duggan has voiced strong opposition to the installation of new modular streeteries along 18th Street in Washington D.C.’s Adams Morgan neighborhood. He contends that the government-led project disregards the area&#39;s historic designation while creating concerns regarding public safety, sanitation, and the loss of local parking.</p>
-           
-        </a>
-      
-        <a href="https://wusa9.com/article/news/crime/owner-of-popular-bar-in-adams-morgan-recalls-diving-for-cover-during-a-deadly-shooting-outside-his-business/65-f8ba8ddb-bf96-4856-8e31-1ea634cd4896" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=insidenova.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>InsideNoVa.com</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=wusa9.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WUSA9</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 20, 2022</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Fatal shootings in Adams Morgan prompt safety concerns, frustration</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">ERIC SOMMER MUSIC: Eric Sommer at Madam&#39;s Organ</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Madam&#39;s Organ owner Bill Duggan witnessed a fatal shooting outside the venue in late 2022 and reported being personally threatened by the gunman while seeking cover. Following the incident, Duggan advocated for increased police presence and improved safety measures in the Adams Morgan neighborhood to better protect residents and nightlife patrons.</p>
-           
-        </a>
-      
-        <a href="https://wjla.com/news/local/madams-organ-doormen-allegedly-steal-cover-charges-venmo-cash-app" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=wjla.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WJLA</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 9, 2021</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Madam&#39;s Organ fires two doormen after they allegedly took cover charges</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Madam&#39;s Organ owner Bill Duggan fired two longtime doormen who allegedly redirected cover charges meant for performing musicians into their personal Venmo and Cashapp accounts. The venue filed a police report and committed to reimbursing the affected bands for the stolen funds after discovering the scheme through security footage and public payment records.</p>
-           
-        </a>
-      
-        <a href="https://washingtonpost.com/dc-md-va/2021/05/04/dc-music-venues-photo-essay" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=washingtonpost.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Washington Post</span>
-              <span style="margin-left:auto; text-transform:none;">May 4, 2021</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Frozen in silence: A look inside D.C.’s still shuttered music venues</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Madam&#39;s Organ is highlighted as a quintessential D.C. blues bar that remained &quot;frozen in time&quot; during the COVID-19 pandemic lockdowns. The venue chose to stay completely shuttered rather than offer takeout, preserving its eclectic interior of taxidermy, instruments, and burlesque paintings until live music crowds could return.</p>
-           
-        </a>
-      
-        <a href="https://wtop.com/dc/2021/04/blues-bar-madams-organ-asks-to-reopen-with-vaccine-passports" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=wtop.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WTOP</span>
-              <span style="margin-left:auto; text-transform:none;">Apr 22, 2021</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Blues bar Madam’s Organ asks DC for OK to reopen with vaccine passports</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Madam&#39;s Organ owner Bill Duggan petitioned the D.C. mayor for permission to fully reopen the blues bar by implementing a self-mandated vaccine passport system for all patrons, staff, and musicians. The proposal suggested that verifying proof of vaccination would serve as a safe, cost-free incentive for residents while allowing the venue to bypass then-current capacity restrictions on live entertainment.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Madam&#39;s Organ hosts musician Eric Sommer for a live performance at its historic Washington, D.C. location. The venue continues to serve as a staple for live blues and soul food in the heart of the Adams Morgan neighborhood.</p>
            
         </a>
       
@@ -758,6 +707,49 @@ Live music enthusiasts, soulful comfort food, late-night dancing, group celebrat
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

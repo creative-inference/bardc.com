@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -289,68 +290,29 @@ GoGo music enthusiasts, indoor-outdoor parties, affordable nights out, and catch
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://wjla.com/news/local/aqua-nightclub-shooting-christopher-cherry-charges-1800-block-of-new-york-avenue-northeast-washington-dc-mpd-metropolitan-police-department-gun-threat-body-cam-fled" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://hillrag.com/2025/03/07/neighbors-push-for-anc-6b-protest-against-aqua-al-2-license" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=wjla.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WJLA</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 19, 2026</span>
+              <img src="https://www.google.com/s2/favicons?domain=hillrag.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>HillRag</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">New details emerge in Northeast DC nightclub shooting</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Neighbors Push for ANC 6B Protest Against Aqua Al 2 License</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Aqua nightclub was the site of a police-involved shooting following a dispute over entrance fees where a suspect allegedly threatened security and attempted to strike officers with his vehicle. The incident resulted in the suspect being hospitalized with multiple gunshot wounds and facing several felony charges, including assault on a police officer.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Acqua Al 2 is planning to return to its former location at 212 Seventh St. SE in Washington D.C.&#39;s Eastern Market corridor. Local residents and ANC 6B are seeking a settlement agreement to address concerns regarding noise, trash, and late-night hours before supporting the restaurant&#39;s application for a new liquor license and entertainment endorsement.</p>
            
         </a>
       
-        <a href="https://nbcwashington.com/news/local/man-shot-by-police-faces-charges-after-threatening-dc-club-over-entrance-fee/4044390" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://dcnewsnow.com/news/local-news/washington-dc/mpd-man-shot-by-police-after-driving-toward-officer-outside-dc-nightclub-investigation-underway" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=nbcwashington.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>NBC4 Washington</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 19, 2026</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Man shot by police faces charges after threatening DC club over entrance fee</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Aqua was the site of a police-involved shooting on January 18, 2026, after a dispute over an entrance fee escalated into a violent confrontation. A suspect allegedly threatened security and repeatedly drove his vehicle toward officers and pedestrians before being struck by police gunfire.</p>
-           
-        </a>
-      
-        <a href="https://wjla.com/news/local/aqua-nightclub-shooting-1800-block-of-new-york-avenue-northeast-washington-dc-mpd-metropolitan-police-department-gun-threat-body-cam-fled" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=dcnewsnow.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>DC News Now</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=wjla.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WJLA</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 18, 2026</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Man shot by MPD after dispute with security outside Aqua nightclub in Northeast DC</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Man shot by police after driving toward officer outside DC nightclub</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Aqua nightclub in Northeast D.C. was the site of a police-involved shooting early Sunday morning following a dispute over an entrance fee. After allegedly threatening security and attempting to strike officers and pedestrians with his vehicle, the suspect was shot by police and subsequently arrested for felony assault.</p>
-           
-        </a>
-      
-        <a href="https://foxbaltimore.com/news/local/aqua-nightclub-shooting-1800-block-of-new-york-avenue-northeast-washington-dc-mpd-metropolitan-police-department-gun-threat-body-cam-fled" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=foxbaltimore.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WBFF</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 18, 2026</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Man shot by MPD after dispute with security outside Aqua nightclub in Northeast DC</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Aqua was the site of a police-involved shooting in early 2026 after a patron engaged in a dispute with security over an entrance fee. The individual was shot and arrested by the Metropolitan Police Department after he allegedly threatened personnel and attempted to hit an officer with his vehicle.</p>
-           
-        </a>
-      
-        <a href="https://axios.com/local/washington-dc/2025/09/08/michael-mina-aqua-bistecca-dc-new-italian-restaurant" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=axios.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Axios</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 8, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Bourbon Steak restaurateur Michael Mina opens splashy D.C. Italian restaurant</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Aqua Bistecca by Michael Mina is a high-energy Italian surf-n-turf restaurant in D.C.’s City Ridge neighborhood, featuring a festive atmosphere and a menu of shareable &quot;showstopper&quot; dishes. Highlights include a two-foot mozzarella stick topped with caviar, butter-poached steaks with a Lambrusco twist, and coastal Italian-inspired cocktails.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Aqua was the site of a police-involved shooting after a man reportedly drove his vehicle toward an officer outside the Northeast D.C. nightclub. The incident resulted in the driver being hospitalized and prompted a significant law enforcement investigation at the venue&#39;s location.</p>
            
         </a>
       
@@ -627,6 +589,49 @@ Only issue is that your permitted to smoke in the venue although there are no sm
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

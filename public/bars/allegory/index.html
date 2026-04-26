@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -295,68 +296,68 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://washingtonpost.com/dc-md-va/2025/11/08/inspired-cocktails-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://washington.org/find-dc-listings/allegory-eaton-hotel" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtonpost.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Washington Post</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 10, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=washington.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Washington.org</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">These 5 bars are elevating their cocktails through art</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Allegory @ Eaton Hotel</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Allegory is highlighted as one of several Washington, D.C. venues that blend visual storytelling with innovative mixology. The lounge offers unique creations such as the cornflakes-topped &#39;Saturday Morning Cartoons,&#39; showcasing an art-focused approach to the cocktail experience.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Allegory is a moody speakeasy tucked behind the Eaton Hotel&#39;s Radical Library in Washington, DC, offering literary-inspired cocktails in a sophisticated, windowless setting. The space features striking murals by local artist Erik Thor-Sandberg that pay tribute to civil rights icon Ruby Bridges.</p>
            
         </a>
       
-        <a href="https://wtop.com/food-restaurant/2025/02/allegory-ruby-bridges-alice-in-wonderland-menu" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://drinksint.com/news/fullstory.php/aid/11621/Allegory_launches_new_cocktail_menu.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=wtop.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WTOP</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 3, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=drinksint.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Drinks International</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Allegory, one of DC’s most ambitious cocktail bars, debuts new concept menu</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Allegory launches new cocktail menu</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Allegory, a speakeasy-style cocktail bar in D.C.&#39;s Eaton Hotel, has introduced a new &quot;Banned in D.C.&quot; concept menu inspired by themes of censorship and the legacy of civil rights activist Ruby Bridges. The menu features 15 pages of intricate toy-based digital photography and a range of ambitious drinks, including the tropical &quot;Mardi Gras&quot; and the apple-flavored &quot;Black Dove.&quot;</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Allegory has launched a new cocktail menu titled &#39;Banned in DC,&#39; which draws inspiration from the aesthetic of the iconic DC alternative band Bad Brains. The menu, developed by creative director Deke Dunne, emphasizes advanced mixology techniques such as enzyme treatments and clarification while nearly tripling the bar&#39;s selection of zero-proof cocktails.</p>
            
         </a>
       
-        <a href="https://teachingforchange.org/teaching-for-change-featured-in-eaton-dc-allegory-banned-in-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://secretdc.com/3-dc-bars-50-best-north-america" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=teachingforchange.org" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Teaching for Change</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 18, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=secretdc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Secret DC</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Teaching for Change Featured in Eaton DC Allegory’s &quot;Banned in D.C.&quot; 2025 Illustrated Story Menu</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">3 Washington, D.C. Bars Have Been Ranked Among The Top 50 Best In North America</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Allegory, a speakeasy-style bar inside Eaton DC, launched its &quot;Banned in D.C.&quot; 2025 illustrated story menu featuring intricate dioramas by artist Katie Miller that follow a dystopian journey of civil rights activist Ruby Bridges. The menu was developed in collaboration with the non-profit Teaching for Change to highlight the fight against book bans and celebrate D.C.&#39;s punk and go-go culture.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Allegory has been recognized as one of the top 50 bars in North America, highlighting its standing as a premier cocktail destination in Washington, D.C. The venue is celebrated for its innovative mixology and immersive storytelling atmosphere located within the Eaton DC hotel.</p>
            
         </a>
       
-        <a href="https://modernluxury.com/restaurant-news-dc-april-2025" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://cntraveler.com/bars/washington/allegory" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=modernluxury.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Modern Luxury</span>
-              <span style="margin-left:auto; text-transform:none;">May 6, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=cntraveler.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Condé Nast Traveler</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Spring&#39;s Best New Cocktails &amp; Dining in DC</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Allegory – Bar Review</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Allegory has debuted its &quot;Banned in DC&quot; mixology menu, which utilizes advanced techniques like enzyme treatment and clarification to explore the fictionalized journey of civil rights icon Ruby Bridges. Developed by Creative and Beverage Director Deke Dunne in collaboration with artist Katie Miller, the menu integrates historical storytelling and activism into a sophisticated cocktail experience.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Allegory is a moody, &quot;Alice in Wonderland&quot;-inspired speakeasy hidden behind a library door in the Eaton DC hotel. The bar offers a sophisticated cocktail menu categorized by flavor profiles alongside whimsical snacks like ranch-flavored popcorn and caviar-topped Pringles. Its intimate atmosphere and detailed murals by artist Erik Thor-Sandberg make it a premier destination for date nights and quiet conversation.</p>
            
         </a>
       
-        <a href="https://fox5dc.com/news/3-dc-bars-named-north-americas-50-best-bars-2025-list" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://theworlds50best.com/bars/northamerica/the-list/Allegory.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=fox5dc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>FOX 5 DC</span>
-              <span style="margin-left:auto; text-transform:none;">May 2, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=theworlds50best.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The World&#39;s 50 Best Restaurants</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">3 DC bars named in North America’s 50 Best Bars 2025 list</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Allegory | North America&#39;s 50 Best Bars 2025 | Ranked No. 45</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Allegory earned a spot on the 2025 list of North America’s 50 Best Bars, ranking forty-fifth for its unique Alice in Wonderland-themed speakeasy concept. Located in Washington, D.C., the bar is celebrated for providing an immersive, high-concept cocktail experience.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Allegory is a speakeasy-style bar located in DC’s Eaton Hotel that pairs mid-century modern design with striking murals depicting civil rights icon Ruby Bridges as Alice in Wonderland. The venue features an elite bar team that utilizes molecular techniques to craft whimsical, narrative-driven cocktails inspired by their &quot;Banned in DC&quot; menu theme. Recognized for its commitment to inclusivity and artistry, it was ranked No. 45 on the 2025 list of North America’s 50 Best Bars.</p>
            
         </a>
       
@@ -634,6 +635,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -297,68 +298,29 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://parklifedc.com/2026/01/29/live-review-modern-nature-dc9-1-22-26" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://newsontheneck.com/local-events/?_evDiscoveryPath=%2Fevent%2F107622939n-hiroe-dc9-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=parklifedc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Parklife DC</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 29, 2026</span>
+              <img src="https://www.google.com/s2/favicons?domain=newsontheneck.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>News on the Neck</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Live Review: Modern Nature @ DC9 — 1/22/26</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">News on the Neck Events - Hiroe: DC9 - Washington DC</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">DC9 hosted an intimate concert by Modern Nature on January 22, 2026, highlighting tracks from their latest album, *The Heat Warps*. The performance showcased the band&#39;s evolving sound with intricate guitar work and included a surprise cover of The Beatles’ &quot;Don’t Let Me Down&quot; alongside their nature-inspired originals.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">DC9 in Washington D.C. is scheduled to host a live performance by the musical act Hiroe. The event is featured as part of the regional area event listings for late January 2026.</p>
            
         </a>
       
-        <a href="https://washingtoncitypaper.com/article/777853/daffo-at-dc9-and-ryan-conner-comes-home-city-lights-for-jan-22-28" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://nytimes.com/2025/02/07/style/federal-workers-happy-hour.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtoncitypaper.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washington City Paper</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 21, 2026</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Daffo at DC9 and Ryan Conner Comes Home: City Lights for Jan. 22–28</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">DC9 hosts a headlining performance by indie-rock artist Daffo on January 25, 2026, following the release of their debut album, *Where the Earth Bends*. The show highlights the classically trained violinist&#39;s sharp songwriting and emotional range as they transition from a supporting act to a featured headliner at the venue.</p>
-           
-        </a>
-      
-        <a href="https://parklifedc.com/2026/01/20/preview-marilyn-hucek-dc9-1-24-26" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=nytimes.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The New York Times</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=parklifedc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Parklife DC</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 20, 2026</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Preview: Marilyn Hucek @ DC9, 1/24/26</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Yes to Beer, No to Buyouts</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">DC9 hosts American-Chilean singer-songwriter Marilyn Hucek on Saturday, Jan. 24, 2026, for a performance celebrating her debut album, MARILYN. This all-ages show includes supporting acts Megan Winsor and Maddie, with doors opening at 7 p.m.</p>
-           
-        </a>
-      
-        <a href="https://parklifedc.com/2026/01/15/preview-modern-nature-dc9-1-22-26" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=parklifedc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Parklife DC</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 15, 2026</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Preview: Modern Nature @ DC9, 1/22/26</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">DC9 hosts a live performance by Modern Nature on Thursday, Jan. 22, 2026, featuring support from Brigid Dawson &amp; The Mothers Network. The all-ages show follows the release of the band’s acclaimed album, &#39;The Heat Warps,&#39; and their recent single &#39;Shasta.&#39;</p>
-           
-        </a>
-      
-        <a href="https://parklifedc.com/2025/12/10/live-review-steve-gunn-w-chris-forsyth-dc9-12-6-25" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=parklifedc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Parklife DC</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 10, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Live Review: Steve Gunn w/ Chris Forsyth @ DC9 -- 12/6/25 | Parklife DC</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">DC9 hosted guitar virtuoso Steve Gunn and opener Chris Forsyth for a live performance on December 6, 2025. Gunn showcased material from his new album, Daylight Daylight, alongside traditional folk covers, while Forsyth provided a contrasting electric opening set.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">DC9 navigates complex licensing challenges and community scrutiny while reaffirming its commitment to remaining an independent venue. The establishment&#39;s owners prioritized maintaining their business identity and rejected buyout offers to ensure the club remained a staple of the Washington D.C. music scene.</p>
            
         </a>
       
@@ -642,6 +604,49 @@ Love that there are 3 floors to enjoy. The bartenders and staff were very friend
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

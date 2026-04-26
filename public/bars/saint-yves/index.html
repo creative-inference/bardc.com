@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -293,68 +294,16 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://dailymail.co.uk/news/article-15250937/DC-MAGA-Halloween-young-Republican-ICE-Rick-Ross.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://secretdc.com/best-nightclubs-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=dailymail.co.uk" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Daily Mail</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 2, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">At DC&#39;s most MAGA Halloween Party with young Republicans &amp; Rick Ross</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Saint Yves hosted a high-profile Halloween event in 2025 that drew over 600 conservative notables and young Republicans to its Dupont Circle location. The party, which celebrated the return of the Trump administration, featured a massive crowd that snaked around the block to enter the nightclub.</p>
-           
-        </a>
-      
-        <a href="https://thehypemagazine.com/2022/07/29/how-david-s-chung-built-an-inclusive-nightlife-industry-within-the-washington-d-c-area" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=secretdc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Secret DC</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=thehypemagazine.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Hype Magazine</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 29, 2022</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">How David S. Chung Built an Inclusive Nightlife Industry Within the Washington D.C. Area The Hype Magazine: Unveiling the Pulse of Urban Culture - From Hip Hop to Hollywood! Explore a Diverse Tapestry of Stories, Interviews, and Impactful Editorials Span</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">13 Best Night Clubs In Washington, D.C. To Party And Dance All Night Long</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Saint Yves is a buzzworthy Washington D.C. nightlife destination founded by entrepreneur David S. Chung. The venue is known for its luxurious bottle service and inclusive atmosphere, hosting a variety of themed events ranging from hip-hop and electronic dance parties to international and LGBTQ+ nights.</p>
-           
-        </a>
-      
-        <a href="https://business-standard.com/content/specials/how-d-c-nightclub-mogul-david-s-chung-runs-his-venues-like-a-law-firm-122010500463_1.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=business-standard.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Business Standard</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 7, 2022</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">How D.C. Nightclub Mogul David S. Chung Runs His Venues Like a Law Firm</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Saint Yves is a 5,000-square-foot nightclub in Dupont Circle that operates with a unique, legal-minded approach to management and professional accountability. The venue offers a high-end experience characterized by rigorous safety standards and exclusive table service, establishing it as a long-standing fixture of Washington D.C. nightlife.</p>
-           
-        </a>
-      
-        <a href="https://dc.eater.com/2017/7/13/15964838/saint-yves-happy-hour" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 13, 2017</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Clubstaurant Saint Yves Adds Happy Hour and More Menu Items</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Saint Yves offers a weekday happy hour from Tuesday through Friday featuring gourmet snacks, various types of caviar, and specialty cocktails served in vintage glassware. The 5,000-square-foot downtown D.C. &quot;clubstaurant&quot; features a striking interior design with a custom gold chain chandelier and a ceiling tulle sculpture.</p>
-           
-        </a>
-      
-        <a href="https://popville.com/2017/05/st-yves-caviar-club-dupont-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=popville.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>PoPville</span>
-              <span style="margin-left:auto; text-transform:none;">May 12, 2017</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">“Lobbyists, lawyers, and the politically influential as well as DC’s thriving creative class and professionals, will all enjoy St. Yves social atmosphere”</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Saint Yves is a sophisticated clubhouse and nightlife destination in Washington, D.C., located in a historically restored building at the intersection of Connecticut Avenue and Jefferson Street. The venue features elegant design elements like soaring arched windows and custom art installations, offering a menu of caviar service, house-cured charcuterie, and classic cocktails for a professional and creative clientele.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Saint Yves is recognized as one of the premier nightlife destinations in Washington, D.C., offering a sophisticated and high-energy atmosphere for dancing. The venue is celebrated for its luxury decor and upscale environment, making it a top choice for those looking to experience the city&#39;s elite club scene.</p>
            
         </a>
       
@@ -630,6 +579,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

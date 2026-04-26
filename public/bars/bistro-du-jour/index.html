@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -295,68 +296,29 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://blog.resy.com/2025/02/french-restaurants-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://hillrag.com/2021/11/04/bistro-du-jour-open-on-district-square" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=blog.resy.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Resy | Right This Way</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 1, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=hillrag.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>HillRag</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Resy Guide to D.C.’s Great French Restaurants — Resy | Right This Way</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Bistro Du Jour Open on District Square</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bistro Du Jour’s Capitol Hill location offers a warm, wood-paneled dining room and an Art Deco bar within the Royal Sonesta hotel. This all-day French eatery features a menu ranging from classic coq au vin and butter-poached lobster to refined pastries and herb-infused cocktails.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bistro Du Jour brings a contemporary twist to the classic Parisian bistro at The Wharf, featuring an all-day menu of French classics and fresh pastries. The venue includes a unique four-season enclosed patio with waterfront views and a curated cocktail program by KNEAD Hospitality + Design.</p>
            
         </a>
       
-        <a href="https://washingtonian.com/2025/06/18/jazz-brunch-in-the-dc-area" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://hillrag.com/2021/01/28/bistro-du-jour-brings-paris-to-the-wharf" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">Jun 20, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Jazz Brunch Is Back. Sip and Sway at These Spots Around DC.</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bistro Du Jour&#39;s Capitol Hill location features a Sunday jazz brunch from noon to 3 p.m. with live performances by singer Sara Zhu. The menu offers classic French fare such as foie-gras-filled raspberry macarons and smoked salmon Paris-Brest alongside specialty cocktails like mango-and-rhubarb punch.</p>
-           
-        </a>
-      
-        <a href="https://blog.resy.com/2025/05/lgbtq-restaurants-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=hillrag.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>HillRag</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=blog.resy.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Resy | Right This Way</span>
-              <span style="margin-left:auto; text-transform:none;">Jun 4, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Ten Wonderful LGBTQ+-Owned Restaurants in Washington, D.C.</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Bistro du Jour Brings Paris to the Wharf</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bistro Du Jour – Capitol Hill is a sprawling, Art Deco-inspired French bistro located within the Royal Sonesta hotel. This KNEAD Hospitality + Design venue is celebrated for its $32.99 bottomless weekend brunch, which pairs 90 minutes of free-flowing cocktails with Parisian classics like steak frites and tarte flambée.</p>
-           
-        </a>
-      
-        <a href="https://blog.resy.com/2025/05/72-hours-in-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=blog.resy.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Resy | Right This Way</span>
-              <span style="margin-left:auto; text-transform:none;">May 16, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">How to Spend a Perfect 72 Hours Eating Your Way Through D.C.</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bistro Du Jour offers a Parisian-style breakfast experience on D.C.&#39;s Southwest Waterfront, featuring views of the Potomac River and a menu of croissants, quiche, and omelets. The cafe opens early at 8 a.m., providing both a leisurely sit-down experience on the cobblestone patio and grab-and-go options for those heading to the National Mall.</p>
-           
-        </a>
-      
-        <a href="https://modernluxury.com/best-french-restaurants-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=modernluxury.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Modern Luxury</span>
-              <span style="margin-left:auto; text-transform:none;">May 7, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">9 Authentic French Restaurants in Washington, D.C.</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bistro Du Jour is a French waterfront bistro located at The Wharf that offers daily breakfast, weekend brunch, and casual French fare. The menu features pastries from the New York City-born bakery Mah-Ze-Dahr alongside classic dishes like quiche florentine and elevated dinner selections.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bistro du Jour is a Parisian-style café and bistro located at 99 District Square SW in Washington D.C.’s Wharf neighborhood. Modeled after the chic Paris café Carette, the venue features pastries from New York’s Mah-Ze-Dahr bakery by day and transitions to a classic French dinner menu featuring steak frites and coq au vin.</p>
            
         </a>
       
@@ -634,6 +596,49 @@ We were promptly greeted by the lovely hostess who offered us to sit indoor or o
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

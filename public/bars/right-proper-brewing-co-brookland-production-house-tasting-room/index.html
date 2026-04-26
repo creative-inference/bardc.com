@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -341,68 +342,42 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://thewash.org/2025/11/11/after-12-years-right-proper-is-still-getting-it-right" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://dc.urbanturf.com/articles/blog/how-a-brookland-warehouse-became-a-brewery/15197" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=thewash.org" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>thewash.org</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 11, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=dc.urbanturf.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>UrbanTurf</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">After 12 years, Right Proper is still getting it right</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">How a Brookland Warehouse Became a Brewery</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Right Proper Brewing Company Brookland operates as a neighborhood bar and production facility housed in a former autobody shop, featuring an on-site partnership with Zeke’s Coffee. Known for its focus on high-quality &quot;beer flavored beer&quot; and a resident working cat named Prima, the venue serves as the company&#39;s primary brewing hub with ongoing plans to increase production capacity.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Right Proper Brewing Company Brookland is a production house and tasting room housed in an adaptively reused post-WWII bakery and former auto shop. The 6,500-square-foot facility emphasizes sustainability through its solar-powered roof and a partnership that provides spent grain to local farms for livestock feed.</p>
            
         </a>
       
-        <a href="https://51st.news/dc-breweries-bottle-deposit-tax" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://pos.toasttab.com/blog/on-the-line/best-washington-dc-breweries" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=51st.news" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The 51st</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 9, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=pos.toasttab.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Toast POS</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">D.C. breweries worry about effects of a bottle-deposit bill</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Complete List of Washington, D.C Breweries (2025 Guide)</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Right Proper Brewing Company Brookland&#39;s co-founder Thor Cheston expressed concerns that a proposed D.C. bottle-deposit bill could impose unsustainable logistical and inventory costs on the local brewery. Despite the facility&#39;s existing commitment to sustainability through solar panels and carbon footprint monitoring, management fears that the bill&#39;s specific labeling requirements could threaten the business&#39;s survival.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Right Proper Brewing Company Brookland is featured in this comprehensive guide to Washington, D.C.’s top craft breweries. The Girard Street location operates as a production house and tasting room, serving as a key community gathering spot for locally brewed beer enthusiasts.</p>
            
         </a>
       
-        <a href="https://dc.eater.com/2023/12/14/24001874/brookland-born-right-proper-northeast-brewery-coming-attractions" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://timeout.com/washington-dc/bars/right-proper-brewing-company" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 14, 2023</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Right Proper Doubles Down on Northeast With a Brand New Brewery</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Right Proper Brewing Company Brookland continues to operate as the brand&#39;s core production house and taproom, featuring a dozen drafts of its signature farmhouse ales and experimental brews. The facility serves as the foundation for the brewery&#39;s Northeast D.C. presence, offering a rotation of rustic styles alongside its established wild-fermentation program.</p>
-           
-        </a>
-      
-        <a href="https://dcist.com/story/23/12/14/right-proper-brewing-signs-lease-new-brewery-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=timeout.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Time Out Worldwide</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=dcist.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>DCist</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 14, 2023</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Right Proper Brewing To Open A New Location In D.C.</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Right Proper Brewing Company</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Right Proper Brewing Company Brookland serves as the brewery&#39;s primary production hub, utilizing a 15-barrel system to manufacture its core beers. This location handles the mass production of traditional-style ales and lagers that are piloted at the company’s smaller neighborhood brewpubs.</p>
-           
-        </a>
-      
-        <a href="https://washingtonpost.com/news/going-out-guide/wp/2015/11/19/right-proper-brewing-will-open-its-brookland-brewery-and-tasting-room-on-dec-3" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=washingtonpost.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Washington Post</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 2, 2021</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Right Proper Brewing will open its Brookland brewery and tasting room on Dec. 3</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Right Proper Brewing Company Brookland is a production brewery and tasting room housed in a former car repair shop. The venue features a rotating selection of house-made beers on tap and serves as the primary brewing facility for the local brand.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Right Proper Brewing Company Brookland serves as the brewery&#39;s production house and taproom, featuring a 15-barrel brewing system and facility tours. The venue offers a rotating selection of a dozen draft beers, including core classics like Raised by Wolves and Haxan alongside seasonal and limited releases available in pints, flights, and growlers.</p>
            
         </a>
       
@@ -678,6 +653,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

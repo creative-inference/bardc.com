@@ -50,7 +50,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -69,17 +69,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -105,7 +107,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -283,68 +284,42 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://capitolskyline.com/top-hotels-in-dcs-southwest-waterfront" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://washington.org/visit-dc/rooftop-bars-restaurants-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=capitolskyline.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>https://capitolskyline.com/</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 21, 2026</span>
+              <img src="https://www.google.com/s2/favicons?domain=washington.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>visit Washington DC</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Top Hotels in DC’s Southwest Waterfront – Best Spots for Sunset Views</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Rooftop Bars &amp; Restaurants to Check Out in DC</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Canopy by Hilton Washington at The Wharf offers an energetic and artsy atmosphere featuring a rooftop lounge with expansive sunset views of the marina and skyline. Located one block from the waterfront, the hotel provides guests with stylish accommodations, local art touches, and Canopy Central, a dining spot specializing in small plates and waterfront access.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Whiskey Charlie, the nautical-themed rooftop bar at the Canopy by Hilton at The Wharf, offers panoramic views of the Washington Channel and the sunset. Guests can enjoy a curated cocktail menu featuring drinks like the espresso-based &#39;To The Nines&#39; and the hibiscus-infused &#39;The Siren&#39; in a sophisticated waterfront setting.</p>
            
         </a>
       
-        <a href="https://upgradedpoints.com/travel/hotels/canopy-by-hilton-hotels" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=upgradedpoints.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Upgraded Points</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 5, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Canopy by Hilton: 10 Best Hotel Redemptions [In-Depth Guide]</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Canopy by Hilton Washington, D.C. Embassy Row is highlighted as a premier lifestyle hotel located just five blocks from the White House. The property offers guest perks such as complimentary Canopy Bikes for city exploration and focuses on a hyper-local experience through its design and service.</p>
-           
-        </a>
-      
-        <a href="https://modernluxury.com/the-wharf-dc-neighborhood-guide" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=modernluxury.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Modern Luxury</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 4, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Wharf: Top Places to Eat, Stay, and Relax in DC</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Canopy by Hilton Washington DC The Wharf features maritime-inspired design elements like wood barn-style doors and offers sprawling views of the marina. The hotel provides upscale amenities including a state-of-the-art fitness center and the Canopy Central Bistro &amp; Bar for evening dining.</p>
-           
-        </a>
-      
-        <a href="https://dc.eater.com/maps/best-new-restaurant-rooftops-patios-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://dc.eater.com/maps/best-bars-restaurants-southwest-waterfront-wharf-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
               <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
               <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">May 9, 2025</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Best New Restaurant Rooftops and Patios in D.C.</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Where to Eat and Drink on D.C.’s Southwest Waterfront</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Whiskey Charlie, the rooftop bar at the Canopy by Hilton at the Wharf, has unveiled a revamped terrace featuring a sleek new look and a retractable roof system. The venue provides panoramic, Instagrammable views of the D.C. waterfront and monuments, offering a refreshed setting for cocktails and scenic gatherings.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Canopy Bar by Hilton is featured as a key destination for dining and drinks on Washington D.C.’s Southwest Waterfront. The venue offers guests a sophisticated setting to enjoy cocktails and elevated fare with panoramic views of the Potomac River.</p>
            
         </a>
       
-        <a href="https://stories.hilton.com/releases/canopy-by-hilton-washington-dc-embassy-row-debuts" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://bizjournals.com/washington/news/2017/10/16/hilton-s-first-canopy-in-the-u-s-comes-to-the.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=stories.hilton.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Stories From Hilton</span>
-              <span style="margin-left:auto; text-transform:none;">Apr 8, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=bizjournals.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The Business Journals</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Canopy by Hilton Washington DC Embassy Row Debuts</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Hilton&#39;s first Canopy in the U.S. comes to The Wharf with swanky public spaces, sweeping views</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Canopy by Hilton Washington DC Embassy Row offers a boutique stay in the heart of the capital, featuring locally inspired design and the globally-influenced restaurant, Truno. This upscale property provides unique amenities such as evening tastings of local spirits, complimentary bikes for neighborhood exploration, and intimate meeting spaces.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Canopy by Hilton at The Wharf features a versatile public space that transitions from a breakfast bar to a casual full-service restaurant and bar. The venue offers a boutique aesthetic with a living room-inspired lobby and sweeping views of the Washington D.C. waterfront.</p>
            
         </a>
       
@@ -624,6 +599,49 @@ Canopy Central Cafe at the Hilton literally hit all the marks and it...
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

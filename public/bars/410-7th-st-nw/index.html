@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -244,68 +245,42 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://wjla.com/good-morning-washington/pubkey-hosts-community-big-game-watch-party-in-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://thecourierexpress.com/local-events?_evDiscoveryPath=%2Fevent%2F130075v-monday-night-trivia-at-pubkey-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=wjla.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WJLA</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 6, 2026</span>
+              <img src="https://www.google.com/s2/favicons?domain=thecourierexpress.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The Courier Express</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">PubKey Hosts Community Big Game Watch Party in DC</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Monday Night Trivia at PubKey DC</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">PubKey is a 12,000-square-foot &quot;bitcoin bar&quot; and community hub in DC’s Penn Quarter that features a full bar, podcast studio, karaoke room, and a massive event screen. The venue blends cryptocurrency culture with traditional pub amenities, hosting large-scale community events like game-day watch parties in its versatile 500-person capacity space.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">PubKey DC hosts Monday Night Trivia, providing a weekly social and entertainment option for patrons in Washington, D.C. The recurring event serves as a regular gathering spot for the local community and visitors to the venue.</p>
            
         </a>
       
-        <a href="https://technical.ly/entrepreneurship/dc-bitcoin-bar-pubkey-penn-quarter" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://galaxy.com/insights/podcasts/galaxy-brains/pubkey-s-place-in-bitcoin-culture-with-thomas-pacchia" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=technical.ly" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Technical.ly</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 22, 2026</span>
+              <img src="https://www.google.com/s2/favicons?domain=galaxy.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Galaxy</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">A $100 mug drink and a High Life ‘pleb’: My night at DC’s new Bitcoin bar</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Pubkey’s Place in Bitcoin Culture with Thomas Pacchia</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Pubkey is a sprawling 12,000-square-foot Bitcoin-themed bar in DC’s Penn Quarter featuring themed cocktails, a podcast studio, and karaoke rooms. The venue offers a range of experiences from the $100 &#39;Orange Pill Whale&#39; tiki drink to the budget-friendly &#39;Pleb&#39; Miller High Life, aiming to serve as a bipartisan gathering spot for digital currency enthusiasts and policymakers alike.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Pubkey DC marks the expansion of the Bitcoin-themed bar culture into Washington, D.C., serving as a physical gathering place for the crypto community. Founder Thomas Pacchia explores the venue&#39;s role in fostering Bitcoin culture and its significance within the nation&#39;s capital.</p>
            
         </a>
       
-        <a href="https://wtop.com/food-restaurant/2026/01/a-bitcoin-bar-opened-in-dc-but-what-does-that-mean" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://secretdc.com/hill-country" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=wtop.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WTOP</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 22, 2026</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">A ‘Bitcoin bar’ opened in DC — but what does that mean?</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">PubKey is a Bitcoin-centric bar and cultural hub in D.C.’s Penn Quarter neighborhood featuring a podcast studio, event space, and the headquarters of the Bitcoin Policy Institute. The venue maintains a classic dive-bar aesthetic while offering a 21% discount to customers who pay with Bitcoin.</p>
-           
-        </a>
-      
-        <a href="https://axios.com/local/washington-dc/2026/01/13/pubkey-bitcoin-bar-review-trump-penn-quarter" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=secretdc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Secret DC</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=axios.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Axios</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 13, 2026</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Taste Test: Penn Quarter&#39;s new &quot;not a MAGA&quot; Bitcoin bar</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">This Iconic D.C. Destination For BBQ &amp; Good Times Is Being Replaced By A ‘Crypto’ Bar</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">PubKey is a Bitcoin-themed tavern in Penn Quarter that offers a &quot;nerd bar&quot; atmosphere with an Americana-inspired menu featuring smashburgers, Chicago dogs, and tallow-fried sides. The venue serves as a hub for the crypto community, housing a podcasting studio and think tank, while remaining a group-friendly neighborhood spot that accepts cash, card, and Bitcoin.</p>
-           
-        </a>
-      
-        <a href="https://theverge.com/policy/849133/pubkey-dc-opening-bitcoin-bar" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=theverge.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Verge</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 22, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Bitcoin does cultural diplomacy in a dive bar</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Pubkey DC is a Bitcoin-themed dive bar and event space located in the heart of Washington D.C.&#39;s lobbying district that serves as a hub for cultural diplomacy and policy advocacy. The venue features a hidden headquarters for the Bitcoin Policy Institute, a podcast studio, and a basement chophouse, aiming to bridge the gap between the crypto community and federal lawmakers.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Pubkey is replacing the former Hill Country BBQ location in Washington, D.C., establishing a new dedicated Bitcoin-themed bar in the city. The venue aims to serve as a social hub for the cryptocurrency community, offering a space for networking, events, and drinks.</p>
            
         </a>
       
@@ -412,6 +387,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

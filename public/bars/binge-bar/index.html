@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -297,68 +298,68 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://them.us/story/washington-dc-nightlife-scene-insiders-guide-femme-fatale-takoma-station-rhizome" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://tripsavvy.com/best-non-alcoholic-bars-united-states-7643945" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=them.us" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>www.them.us</span>
-              <span style="margin-left:auto; text-transform:none;">Mar 14, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=tripsavvy.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>TripSavvy</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">From Go-Go Bands to Bike Parties, How to Spend a Night Out in D.C.</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">These Are the 13 Best Non-Alcoholic Bars in the US</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Binge Bar is Washington D.C.’s first alcohol-free bar, offering a chic H Street space for mocktails, vegan bites, and board games. The venue serves as a vibrant community hub, hosting regular events like the Seltzer Comedy stand-up show and Queer Sober Singles Meet-Ups for those seeking a nightlife experience without alcohol.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Binge Bar is recognized as one of the premier non-alcoholic bars in the United States, offering a curated selection of zero-proof cocktails and a vibrant social atmosphere in Washington D.C. The venue is celebrated for providing a sophisticated, inclusive environment and creative drink menus for those seeking high-quality alcohol-free experiences.</p>
            
         </a>
       
-        <a href="https://wjla.com/news/local/new-years-eve-drinking-alocohol-sobriety-cocktail-mocktail-non-alocoholic-binge-bar-mental-health-wellness-liquor-sober-bar-mindful-drinking-dry-bar-h-street-dc-dmv" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://pos.toasttab.com/es-us/blog/on-the-line/mocktail-bars" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=wjla.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WJLA</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 31, 2024</span>
+              <img src="https://www.google.com/s2/favicons?domain=pos.toasttab.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Toast POS</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">DC&#39;s first non-alcoholic bar, Binge Bar, offers sober socializing on H street</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Best Mocktail Bars to Visit in 2025</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Binge Bar is Washington D.C.’s first fully non-alcoholic bar and bistro, offering a &quot;come as you are&quot; environment for sober socializing on H Street. Founded by Vergie “Gigi” Arandid, the venue serves as a community space for those in recovery or anyone seeking a health-conscious alternative to traditional nightlife.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Binge Bar is Washington, D.C.’s first alcohol-free bar, located in the vibrant H Street Corridor. The venue doubles as a Filipino bistro, pairing creative spirit-free cocktails like the Green Apple Mule with traditional dishes such as lumpia and seitan adobo.</p>
            
         </a>
       
-        <a href="https://washingtonpost.com/dc-md-va/2024/01/13/dry-january-dc-gigi-arandid" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://pos.toasttab.com/blog/on-the-line/mocktail-bars" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtonpost.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Washington Post</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 13, 2024</span>
+              <img src="https://www.google.com/s2/favicons?domain=pos.toasttab.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Toast POS</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">After DUI, she quit drinking and opened a bar</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Best Mocktail Bars to Visit in 2025</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Binge Bar is an alcohol-free establishment in Washington, D.C., founded by Vergie “Gigi” Arandid as part of a mission to provide sober social spaces. The venue caters to the rising demand for no-alcohol environments fueled by changing drinking habits among younger generations.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Binge Bar is Washington D.C.’s first alcohol-free bar, featuring a menu of alcohol-free craft cocktails like the Green Apple Mule. Located in the artsy H Street Corridor, the venue doubles as a Filipino bistro serving traditional bites such as lumpia and seitan adobo.</p>
            
         </a>
       
-        <a href="https://washingtonian.com/2022/10/20/binge-bar-alcohol-free-bar" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://washington.org/visit-dc/mocktails-non-alcoholic-drinks-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 27, 2023</span>
+              <img src="https://www.google.com/s2/favicons?domain=washington.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>visit Washington DC</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">DC&#39;s First Alcohol-Free Bar Is Coming Soon</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Places to Enjoy Delicious Mocktails and Non-Alcoholic Drinks in Washington, DC</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Binge Bar is Washington DC’s first alcohol-free bar and event space, located on H Street Northeast. Founded by Gigi Arandid, the venue offers zero-proof cocktails and non-alcoholic beers alongside Filipino-inspired snacks like lumpia in a community-focused environment featuring local art.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Binge Bar provides an exclusively alcohol-free experience in Washington, D.C., featuring an inventive selection of spirit-free cocktails, non-alcoholic wines, and beers. This booze-less destination also serves small bites and hosts various community events for those seeking a responsible social atmosphere.</p>
            
         </a>
       
-        <a href="https://districtfray.com/articles/binge-bar-dc-booze-free" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://hillrag.com/2026/01/05/go-dry-this-january-close-to-home" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=districtfray.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>District Fray</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 1, 2022</span>
+              <img src="https://www.google.com/s2/favicons?domain=hillrag.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>HillRag</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Welcome to D.C.’s First Booze-Free Bar</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Go Dry This January, Close to Home</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Binge Bar is Washington D.C.’s first entirely alcohol-free bar, located on H Street NE and founded by Vergie “Gigi” Arandid. The venue offers a curated selection of zero-proof cocktails, craft non-alcoholic beers, and Filipino-inspired small plates in a social space designed for inclusivity and live entertainment like karaoke and burlesque.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Binge Bar, located on H Street NE, offers an elevated spirit-free experience featuring house-made craft cocktails like the Cucumber Mangorita and a diverse plant-based menu. Founded by Vergie Arandid in 2023, the venue provides a welcoming space for the non-alcoholic lifestyle with dedicated happy hour specials and a selection of NA wines and beers.</p>
            
         </a>
       
@@ -640,6 +641,49 @@ Note,...
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

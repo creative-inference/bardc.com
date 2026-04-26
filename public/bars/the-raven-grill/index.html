@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -289,68 +290,16 @@ Budget-friendly beers, casual late-night yapping, board game enthusiasts, and lo
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://popville.com/2025/09/dc-90th-year-the-raven-grill-open-friday-saturday-afternoons" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://urbandaddy.com/articles/25399/washington-dc/byo-f-bars-that-let-you-bring-your-own-food" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=popville.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>PoPville</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 25, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">“In honor of our 90th year, the Raven will be OPEN Friday &amp; Saturday afternoons for the rest of our anniversary year”!! And about those jukeboxes…</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Raven Grill is celebrating its 90th anniversary by opening for Friday and Saturday afternoon service throughout its anniversary year. To honor its history, the bar is offering free music requests from its vintage booth jukeboxes, featuring songs dating up to 1988 that are streamed via laptop upon request.</p>
-           
-        </a>
-      
-        <a href="https://dctheaterarts.org/2025/05/30/dc-i-love-you-folgers-true-rom-com-series-kicks-off-in-mount-pleasant" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=urbandaddy.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>UrbanDaddy</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=dctheaterarts.org" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>DC Theater Arts</span>
-              <span style="margin-left:auto; text-transform:none;">May 30, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">‘DC, I Love You,’ Folger’s true rom-com series, kicks off in Mount Pleasant</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">BYO... F | Bars That Let You Bring Your Own Food</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Raven Grill served as a central location for the Folger Shakespeare Library’s site-specific theater series, &#39;DC, I Love You: First Dates.&#39; The venue hosted romantic comedy vignettes that incorporated the bar&#39;s local history and atmosphere into live performances based on true community stories.</p>
-           
-        </a>
-      
-        <a href="https://dc.eater.com/maps/best-mount-pleasant-restaurants-bars" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 30, 2024</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Where to Eat and Drink in Mount Pleasant</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Raven Grill is a historic Mount Pleasant dive bar that has maintained its classic character since opening in 1935. The cash-only establishment offers affordable beer and rail drinks in a red-lit setting featuring cozy booths and a collection of board games.</p>
-           
-        </a>
-      
-        <a href="https://vice.com/en/article/the-10-best-dive-bars-in-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=vice.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>VICE</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 27, 2024</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The 10 Best Dive Bars in Washington, DC</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Raven Grill is the oldest operating bar in Washington, D.C., serving as a quintessential neighborhood dive known for its unpretentious, surly charm. This cash-only establishment offers a classic experience with cheap drinks and a simple atmosphere that remains resistant to modern renovation trends.</p>
-           
-        </a>
-      
-        <a href="https://insidehook.com/washington-dc/dc-best-dive-bars" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=insidehook.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>InsideHook</span>
-              <span style="margin-left:auto; text-transform:none;">Apr 21, 2023</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Visit 8 of DC’s Best Dive Bars If You&#39;re Feeling Nostalgic</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Raven Grill is a long-standing Mount Pleasant institution celebrated for its straightforward, no-frills atmosphere. Known for focusing on bottled beers and shots rather than a food menu, it remains a popular neighborhood destination for a diverse crowd of D.C. locals and newcomers alike.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Raven Grill is highlighted as a local dive bar that allows patrons to bring in outside food, specifically recommending a spicy panang curry bowl from the nearby Beau Thai. Visitors can enjoy a classic boilermaker at the tiny bar while dining on their own brought-in meals.</p>
            
         </a>
       
@@ -630,6 +579,49 @@ Budget-friendly beers, casual late-night yapping, board game enthusiasts, and lo
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

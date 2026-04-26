@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -321,68 +322,29 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://districtfray.com/articles/old-ebbitt-grills-oyster-riot-returns-for-its-28th-year" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://finedininglovers.com/explore/lists/where-eat-president-5-historic-restaurants-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=districtfray.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>District Fray</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 29, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=finedininglovers.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Fine Dining Lovers</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Old Ebbitt Grill’s Oyster Riot Returns for Its 28th Year</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Where to Eat Like a President: 5 Historic Restaurants in DC</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Old Ebbitt Grill hosts its annual Oyster Riot, a long-standing Washington D.C. tradition featuring over 20 oyster varieties paired with competition-winning wines and live entertainment. This high-energy event also serves a conservation purpose, partnering with the Oyster Recovery Partnership to recycle shells and restore the Chesapeake Bay.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Old Ebbitt Grill, Washington’s oldest saloon founded in 1856, offers a historic dining experience featuring stalwart American classics like Oysters Rockefeller and crab cakes. This iconic institution is celebrated for its timeless atmosphere and traditional menu, making it a staple for those seeking a meal with historical gravitas in the capital.</p>
            
         </a>
       
-        <a href="https://whatnow.com/washington-dc/restaurants/ebbitt-house-eying-early-2026-opening" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://foodandwine.com/old-ebbitt-grill-11817363" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=whatnow.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WhatNow</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 10, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Ebbitt House Eying Early 2026 Opening</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Old Ebbitt Grill is launching its first-ever offshoot, Ebbitt House, in Reston, Virginia, with an opening scheduled for the first quarter of 2026. The modern 12,000-square-foot venue will feature a 300-seat dining room, an expansive outdoor patio bar, and the brand&#39;s signature oyster and raw bar program.</p>
-           
-        </a>
-      
-        <a href="https://thezebra.org/2025/09/19/spirits-of-d-c-haunted-pub-crawl-brings-history-to-life" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=foodandwine.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Food &amp; Wine</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=thezebra.org" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>thezebra.org</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 19, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Spirits of D.C.: Haunted Pub Crawl Brings History to Life</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Old Ebbitt Grill</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Old Ebbitt Grill is a featured stop on US Ghost Adventures&#39; haunted pub crawl, highlighting its history as Washington D.C.&#39;s oldest saloon and its association with presidents like Ulysses S. Grant. The establishment is the subject of local ghost lore, including tales of a spectral figure on a winged horse that reportedly appears within the restaurant.</p>
-           
-        </a>
-      
-        <a href="https://tastingtable.com/1840330/washington-dc-historic-restaurant" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=tastingtable.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Tasting Table</span>
-              <span style="margin-left:auto; text-transform:none;">Apr 30, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The 150-Year-Old Watering Hole For Presidents In Washington DC</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Old Ebbitt Grill stands as Washington, D.C.&#39;s oldest operational bar, famously hosting numerous U.S. presidents and historical figures since its founding in 1856. The venue features a classic, antique-filled interior and offers an extensive menu ranging from traditional American steaks to a renowned raw bar famous for its annual Oyster Riot event.</p>
-           
-        </a>
-      
-        <a href="https://washingtonian.com/2025/01/21/inside-dcs-most-storied-restaurant-on-inauguration-day" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 21, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Inside DC’s Most Storied Restaurant on Inauguration Day</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Old Ebbitt Grill served as a central gathering place for supporters during the 2025 inauguration, reflecting the immediate shift in clientele that Washington’s oldest saloon experience during political transitions. The White House-adjacent venue hosted a boisterous crowd that filled the historic space with chants and celebrations while watching the swearing-in ceremony from the bars.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Old Ebbitt Grill is a historic Washington, D.C. saloon located near the White House, renowned for its classic wood-paneled interior and American Mid-Atlantic cuisine. The menu features a popular oyster happy hour, a signature raw bar, and late-night cheeseburgers, serving as a timeless destination for both tourists and locals.</p>
            
         </a>
       
@@ -665,6 +627,49 @@ Definitely try the signature crab...
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

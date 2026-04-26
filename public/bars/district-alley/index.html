@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -298,68 +299,16 @@ Premium hookah service, high-energy DJ sets, happy hour cocktails, and late-nigh
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://davisvanguard.org/2025/08/dc-crime-trump-federal-control" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://savingplaces.org/stories/the-hidden-history-inside-washington-dc-blagden-alley" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=davisvanguard.org" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Davis Vanguard</span>
-              <span style="margin-left:auto; text-transform:none;">Aug 21, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">DC Residents Voice Concerns as Trump’s Federal Takeover Sparks Protests and Checkpoints</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">District Alley co-owner Nathaniel Long reports that federal checkpoints and a heavy National Guard presence have transformed the lively Northwest D.C. neighborhood into what feels like a &quot;takeover.&quot; Long criticizes the heavy-handed federal approach, noting that the increased security measures have significantly disrupted the local social scene and business environment.</p>
-           
-        </a>
-      
-        <a href="https://pbs.org/newshour/show/how-d-c-residents-feel-about-crime-and-the-federal-takeover-of-their-city" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=savingplaces.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>National Trust for Historic Preservation</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=pbs.org" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>PBS</span>
-              <span style="margin-left:auto; text-transform:none;">Aug 18, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">How D.C. residents feel about crime and the federal takeover of their city</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Hidden History Inside Washington, D.C.&#39;s Blagden Alley</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">District Alley, a bar in Washington D.C.’s U Street nightlife area, is navigating the impact of federal checkpoints and a heightened National Guard presence following a presidential takeover of the city&#39;s police. Co-owner Nathaniel Long describes the atmosphere as disruptive to local business and characterizes the aggressive federal approach as a &#39;bull in a china shop&#39; that lacks collaboration with the community.</p>
-           
-        </a>
-      
-        <a href="https://wusa9.com/article/news/crime/washington-dc-business-teen-takeover-crime-northwest-navy-yard/65-093edc5d-2cd9-43eb-b760-0336607b6c88" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=wusa9.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WUSA9</span>
-              <span style="margin-left:auto; text-transform:none;">May 25, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">DC officials, business owners seek solutions amid surge in teen takeovers</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">District Alley Bar co-owner Nate Long reports that frequent &quot;teen takeovers&quot; and violent incidents along the U Street corridor are negatively impacting business by driving customers away. The venue is calling for improved crowd control and proactive youth engagement programs to help address the root causes of these neighborhood safety concerns.</p>
-           
-        </a>
-      
-        <a href="https://popville.com/2021/08/district-alley-coming-dc-u-street" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=popville.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>PoPville</span>
-              <span style="margin-left:auto; text-transform:none;">Aug 24, 2021</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">District Alley coming to U Street</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">District Alley is an American tavern located at 1351 U Street NW that features live entertainment and dancing. The establishment offers indoor seating for approximately 50 guests and includes a seasonal summer garden for outdoor dining.</p>
-           
-        </a>
-      
-        <a href="https://dcist.com/story/18/12/26/the-hidden-history-of-d-c-s-alleyways" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=dcist.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>DCist</span>
-              <span style="margin-left:auto; text-transform:none;">Jun 17, 2019</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Hidden History of D.C.’s Alleyways</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">District Alley offers a historical look at Washington D.C.’s alleyway system, tracing its evolution from overcrowded 19th-century dwellings to contemporary hubs of art and commerce. These hidden spaces have been transformed into buzzy destinations featuring Michelin-starred restaurants, murals, and architectural studios while retaining a unique sense of community hidden from the main city grid.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">District Alley offers a unique blend of historic 19th-century architecture and a modern commercial core in Washington, D.C.’s Shaw neighborhood. The area features a variety of craft coffee shops, cocktail bars, and acclaimed restaurants such as The Dabney, all housed within a system of beautifully preserved alleyways.</p>
            
         </a>
       
@@ -635,6 +584,49 @@ Premium hookah service, high-energy DJ sets, happy hour cocktails, and late-nigh
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

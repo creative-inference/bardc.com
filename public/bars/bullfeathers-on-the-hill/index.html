@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -293,68 +294,42 @@ Hill staffers, post-tour lunches, affordable happy hours, outdoor patio dining, 
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://timesofindia.indiatimes.com/etimes/trending/when-power-meets-play-where-trump-supporters-go-to-get-a-drink/articleshow/121775116.cms" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://hillrag.com/2024/02/01/capitol-cuisine-9" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=timesofindia.indiatimes.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Times of India</span>
-              <span style="margin-left:auto; text-transform:none;">Jun 11, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=hillrag.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>HillRag</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">When power meets play: Where Trump supporters go to get a drink</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Capitol Cuisine: Revisiting the Classics</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bullfeathers On The Hill is a longstanding establishment near the U.S. Capitol that is frequently visited by Capitol Hill staffers, particularly Republicans. Its close proximity to the legislative heart of the city makes it a primary location for political discussions and casual social drinks.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bullfeathers On The Hill remains a Capitol Hill staple, offering a menu of classic pub fare like fish-and-chips with lemon-dill aioli and hearty burgers. Located across from the Capitol South Metro station, the long-standing watering hole provides a reliable dining experience popular with members of Congress and locals alike.</p>
            
         </a>
       
-        <a href="https://spectator.com.au/2024/11/where-trumps-washington-will-actually-be-hanging-out" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://thehill.com/capital-living/23871-rs-ds-drink-from-different-troughs" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=spectator.com.au" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Spectator Australia</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 27, 2024</span>
+              <img src="https://www.google.com/s2/favicons?domain=thehill.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The Hill</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Where Trump’s Washington will actually be hanging out</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">R’s, D’s drink from different troughs</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bullfeathers On The Hill is a historic Capitol Hill restaurant and bar recognized as a popular gathering spot for Republican lawmakers and staffers. Named after Theodore Roosevelt&#39;s signature euphemism, the venue is known for its proximity to the U.S. Capitol and its long-standing reputation as a social hub for conservative political circles.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bullfeathers On The Hill is highlighted as a quintessential Capitol Hill watering hole where political affiliations often dictate the social atmosphere. The venue serves as a primary example of how Washington D.C.&#39;s partisan divide extends to the preferred gathering spots of staffers and lawmakers.</p>
            
         </a>
       
-        <a href="https://spectator.com/article/where-trumps-washington-will-actually-be-hanging-out" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://politico.com/interactives/2025/congress-washington-dc-restaurants-guide" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=spectator.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Spectator</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 26, 2024</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Where Trump’s Washington will actually be hanging out</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bullfeathers On The Hill is a long-standing Capitol Hill bar and restaurant established in 1979 that serves as a popular hub for Republican politicians and staffers. Located just steps from the Capitol, the venue is known for its Theodore Roosevelt-inspired branding and its reputation as a staple of the D.C. conservative social scene.</p>
-           
-        </a>
-      
-        <a href="https://washingtonian.com/2024/06/20/intern-guide-happy-hour-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=politico.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Politico</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 16, 2024</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Intern’s Guide to Happy Hour in DC</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">How To Dine Like a Washington Insider</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bullfeathers on the Hill is a long-standing Capitol Hill tavern that has served neighbors and Hill staffers since 1979. Located across from the Capitol South Metro station, the venue offers affordable pricing all day long with wines ranging from $9 to $10 and a variety of beers and ciders between $6 and $10.</p>
-           
-        </a>
-      
-        <a href="https://washingtonpost.com/archive/local/1984/07/26/partisan-politics-is-on-tap-at-many-bars-in-capitol-hill/ad3782d7-9ae2-4526-9d2c-41e25bf1524f" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=washingtonpost.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Washington Post</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 28, 2024</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Partisan Politics Is On Tap at Many Bars in Capitol Hill</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bullfeathers On The Hill is recognized as a primary gathering spot for Republican lawmakers, lobbyists, and staffers on Capitol Hill. The venue is known for its distinct partisan atmosphere, serving as a social hub for party members to congregate after working in Congress.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bullfeathers On The Hill is a classic Washington D.C. tavern and a premier destination for Republican House members, ranking as one of the most-visited establishments for campaign-related dining. Located steps from the Capitol South Metro and House office buildings, it serves as a frequent hub for political networking and post-work drinks.</p>
            
         </a>
       
@@ -630,6 +605,49 @@ Hill staffers, post-tour lunches, affordable happy hours, outdoor patio dining, 
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

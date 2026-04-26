@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -340,68 +341,29 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://fridaythings.com/recent-posts/epstein-files-pizzagate-conspiracy-theories" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://evrimagaci.org/gpt/epstein-files-spark-pizzagate-revival-in-2026-526649" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=fridaythings.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Friday Things</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 6, 2026</span>
+              <img src="https://www.google.com/s2/favicons?domain=evrimagaci.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Evrim Ağacı</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Epstein Files Are Giving Pizzagate</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Epstein Files Spark Pizzagate Revival In 2026</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Comet Ping Pong is featured as the central historical reference in an analysis of the 2026 release of the Epstein Files and the resurgence of the Pizzagate conspiracy theory. The article examines the Washington D.C. venue&#39;s past as a target of disinformation while noting how new evidence of elite criminality is shifting the public&#39;s understanding of systemic sexual abuse.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Comet Ping Pong is once again the focus of online controversy in 2026 as the release of Jeffrey Epstein&#39;s court documents has reignited interest in the debunked Pizzagate conspiracy theory. The Washington D.C. restaurant remains a target for misinformation despite law enforcement&#39;s repeated confirmation that no illegal activity ever occurred at the venue.</p>
            
         </a>
       
-        <a href="https://vanityfair.com/news/story/epstein-files-pizzagate" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://secretdc.com/diners-drive-ins-and-dives-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=vanityfair.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Vanity Fair</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 5, 2026</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The New Epstein Files Are Reopening the Pizzagate Box</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Comet Ping Pong is facing a resurgence of online conspiracy theories following the release of Department of Justice files related to Jeffrey Epstein that contain hundreds of references to &#39;pizza.&#39; The Washington, D.C. venue, which was the site of a 2016 shooting linked to the Pizzagate hoax, is being re-examined by digital sleuths due to newly revealed connections between Epstein and the founders of 4chan.</p>
-           
-        </a>
-      
-        <a href="https://timesnownews.com/world/us/us-news/why-pizzagate-claims-resurfaced-after-john-podestas-name-appeared-in-epstein-files-article-153540031" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=secretdc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Secret DC</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=timesnownews.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Times Now</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 31, 2026</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Why &#39;Pizzagate&#39; Claims Resurfaced After John Podesta’s Name Appeared In Epstein Files?</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">These D.C. Restaurants Were Featured On Guy Fieri’s ‘Diners, Drive-Ins &amp; Dives’</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Comet Ping Pong remains at the center of renewed, though debunked, conspiracy theories following the release of documents related to Jeffrey Epstein. While online claims suggest mundane references to &#39;pizza&#39; in the files are coded messages, investigators and fact-checkers confirm there is no evidence linking the Washington DC pizzeria to any illicit activity.</p>
-           
-        </a>
-      
-        <a href="https://britannica.com/topic/Pizzagate" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=britannica.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Britannica</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 5, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Pizzagate | Conspiracy Theory, WikiLeaks, Child Pornography, Hillary Clinton, &amp; QAnon</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Comet Ping Pong is a family-friendly pizzeria in Washington, D.C., that gained international notoriety as the central target of the debunked &#39;Pizzagate&#39; conspiracy theory. The venue, which offers food and ping-pong, remains a significant example of the real-world consequences of online misinformation following a 2016 incident where an armed individual entered the premises.</p>
-           
-        </a>
-      
-        <a href="https://mercurynews.com/2025/12/04/today-in-history-december-4-pizzagate-shooting" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=mercurynews.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Mercury News</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 4, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Today in History: December 4, ‘Pizzagate’ shooting</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Comet Ping Pong was the target of a 2016 shooting by a man investigating a conspiracy theory, an event detailed in this historical retrospective. The report highlights the restaurant&#39;s role in the incident and provides an update that the perpetrator was later killed during a 2025 police confrontation.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Comet Ping Pong is recognized as one of the premier Washington, D.C. establishments featured on the Food Network series &#39;Diners, Drive-Ins and Dives.&#39; The venue is celebrated for its distinctive combination of wood-fired pizzas, live performance space, and namesake ping pong tables.</p>
            
         </a>
       
@@ -681,6 +643,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

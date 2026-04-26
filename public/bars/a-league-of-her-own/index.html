@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -295,68 +296,55 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://metroweekly.com/2026/02/pitchers-aloho-owner-dave-perruzza-on-selling" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://washington.org/visit-dc/lgbtq-bars-check-out-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=washington.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>visit Washington DC</span>
+              
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">20 LGBTQ+ Bars to Check Out in Washington, DC</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">A League of Her Own is a lesbian and queer women&#39;s bar situated in Adams Morgan, sharing a large 10,000-square-foot space with its sibling venue, Pitchers. The sports-themed establishment offers two patios, various games, and a menu featuring stadium-style favorites like burgers and chicken tenders.</p>
+           
+        </a>
+      
+        <a href="https://metroweekly.com/scene/?k=3022" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
               <img src="https://www.google.com/s2/favicons?domain=metroweekly.com" alt="" style="width:14px; height:14px; opacity:0.7;">
               <span>Metro Weekly</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 5, 2026</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Pitchers’ Dave Perruzza on Selling, Survival, and What’s Next</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Pitchers and A League of Her Own</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">A League of Her Own is currently seeking a buyer for its lease and liquor license as owner Dave Perruzza navigates financial challenges and rising operating costs in Adams Morgan. The venue remains committed to fulfilling all operations through at least March 30, 2026, while Perruzza intends to retain the naming rights for the lesbian bar and the connected Pitchers complex.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">A League of Her Own, alongside Pitchers DC, hosted a social event on December 26, 2025, capturing the vibrant atmosphere of Washington D.C.’s LGBTQ nightlife. This scene report highlights the venue&#39;s active role as a community gathering space through a series of exclusive event photographs.</p>
            
         </a>
       
-        <a href="https://washingtonblade.com/2026/01/30/pitchers-listed-for-sale" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://parade.com/living/lesbian-bars" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtonblade.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washington Blade</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 30, 2026</span>
+              <img src="https://www.google.com/s2/favicons?domain=parade.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Parade</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">D.C. LGBTQ sports bar Pitchers listed for sale</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">‘Lesbian Bars Near Me’: Where the 36 Remaining Lesbian Bars Are in America</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">A League of Her Own, Washington D.C.’s only dedicated lesbian bar, has been listed for sale alongside its adjoining LGBTQ sports bar, Pitchers. Located in the Adams Morgan neighborhood, the multi-level venue is being marketed as a cornerstone of the city&#39;s modern queer nightlife. The sale follows recent economic challenges in the District, though the business continues to serve as a vital community space.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">A League of Her Own is recognized as one of the few remaining lesbian bars in the United States, serving as a vital inclusive space for the LGBTQ+ community in Washington, D.C. Located in Adams Morgan, the venue provides a dedicated environment for queer women to gather and socialize in the capital.</p>
            
         </a>
       
-        <a href="https://lonelyplanet.com/articles/best-lesbian-bars-us" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://dcnewsnow.com/news/local-news/washington-dc/dc-takeover/dc-gay-bar-owners-report-thousands-in-losses-due-to-federal-presence" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=lonelyplanet.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Lonely Planet</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 24, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">14 of the best lesbian bars in the USA</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">A League of Her Own is a safe and sporty lesbian lounge located in the historic Adams Morgan neighborhood of Washington, DC. The venue hosts weekly events and drink specials, offering a dedicated space for late-night dancing and queer community connection.</p>
-           
-        </a>
-      
-        <a href="https://metroweekly.com/2025/08/dc-lgbtq-venues-federal-police-takeover" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=dcnewsnow.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>DC News Now</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=metroweekly.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Metro Weekly</span>
-              <span style="margin-left:auto; text-transform:none;">Aug 28, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">‘Miserable’: D.C. LGBTQ Venues Hit Hard by Federal Police Takeover</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">DC gay bar owners report thousands in losses due to federal presence</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">A League of Her Own reported significant revenue losses and a sharp decline in foot traffic following a federal police takeover in Washington, D.C. in August 2025. Owner David Perruzza noted that the venue’s status as a dedicated lesbian bar makes it particularly reliant on out-of-town visitors, who were deterred by checkpoints and fears of profiling.</p>
-           
-        </a>
-      
-        <a href="https://advocate.com/news/dc-business-struggle-trump-crackdown" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=advocate.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Advocate.com</span>
-              <span style="margin-left:auto; text-transform:none;">Aug 16, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">D.C. bar owners say Trump’s federal law enforcement crackdown is killing their business</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">A League of Her Own is experiencing a significant decline in revenue and patronage due to a federal law enforcement crackdown and immigration sweeps in Washington, D.C. Owner Dave Perruzza has implemented strict security protocols, requiring federal agents to produce a warrant before entering the premises to ensure the bar remains a safe space for the LGBTQ+ community.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">A League of Her Own reports significant financial losses resulting from an increased federal presence and security measures in Washington, D.C. The venue&#39;s management highlights how these disruptions have impacted customer turnout and the overall economic health of the Adams Morgan landmark.</p>
            
         </a>
       
@@ -636,6 +624,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

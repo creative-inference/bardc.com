@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -326,68 +327,29 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://wjla.com/news/local/dc-remembers-grammy-artist-musician-icon-roberta-flack-died-age-88-february-24-hbu-howard-university-mr-henrys-restaurant-capitol-hill-killing-me-softly-with-his-song-feel-like-makin-love-tonight-i-celebrate-my-love" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://hillrag.com/2021/06/10/live-jazz-is-back-at-mr-henrys-friday" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=wjla.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WJLA</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 28, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=hillrag.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>HillRag</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">DC remembers Roberta Flack: From singing at Mr. Henry&#39;s to Grammy-winning fame</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Live Jazz is Back at Mr. Henry’s</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Mr. Henry&#39;s on Capitol Hill is highlighted as the historic venue where Roberta Flack was discovered and launched her Grammy-winning career. The restaurant famously built a dedicated performance space for Flack, which served as the setting for her debut album cover and remains a key part of D.C.&#39;s musical legacy.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Mr. Henry’s is a historic Capitol Hill landmark known for its long-standing tradition of live jazz and its connection to legendary performers like Roberta Flack. The venue features a diverse calendar of musical acts, including the weekly Capitol Hill Jazz Jam and performances from acclaimed local jazz musicians.</p>
            
         </a>
       
-        <a href="https://georgetowner.com/articles/2025/02/27/remembering-roberta-flack-1937-2025" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://savingplaces.org/stories/historic-bars-mr-henrys-in-washington-d-c" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=georgetowner.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Georgetowner</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 27, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Remembering Roberta Flack (1937-2025)</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Mr. Henry&#39;s played a pivotal role in the early career of legendary singer Roberta Flack, who performed at the club&#39;s former Georgetown location and its current Capitol Hill site. The venue’s owner, Henry Yaffe, famously created a dedicated performance space for Flack, which served as the setting where she was discovered by Les McCann and signed to Atlantic Records in 1968.</p>
-           
-        </a>
-      
-        <a href="https://wtop.com/dc/2025/02/dc-club-where-roberta-flack-was-discovered-mourns-her-loss" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=savingplaces.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>National Trust for Historic Preservation</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=wtop.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WTOP</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 25, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">‘She’s left an indelible mark’: DC club where Roberta Flack was discovered mourns her loss</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Mr. Henry&#39;s in Washington, D.C.</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Mr. Henry&#39;s in Washington, D.C. is famously known as the venue where music icon Roberta Flack was discovered, maintaining a dedicated second-floor music room that was originally built to accommodate her early crowds. The historic club continues to celebrate her legacy through its live music programming and remains a landmark on Pennsylvania Avenue where she is remembered as being woven into the fabric of the establishment.</p>
-           
-        </a>
-      
-        <a href="https://northernvirginiamag.com/news/2025/02/24/roberta-flack-who-was-raised-in-arlington-dies-at-age-88" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=northernvirginiamag.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Northern Virginia Magazine</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 24, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Roberta Flack, Who Was Raised in Arlington, Dies at Age 88</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Mr. Henry&#39;s served as a foundational performance venue and &quot;home base&quot; for legendary Grammy-winning singer Roberta Flack during the early years of her career in Washington, DC. The historic venue hosted Flack as she balanced her time between performing and teaching in the DC public school system.</p>
-           
-        </a>
-      
-        <a href="https://fox5dc.com/news/mr-henrys-restaurant-targeted-in-overnight-burglary-surveillance-video-released" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=fox5dc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>FOX 5 DC</span>
-              <span style="margin-left:auto; text-transform:none;">Aug 31, 2023</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Mr. Henry&#39;s restaurant targeted in overnight burglary; surveillance video released</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Mr. Henry&#39;s, a long-standing Capitol Hill restaurant, was targeted in an overnight burglary where a suspect broke through a window to steal high-end liquor. The incident forced the iconic establishment to temporarily close for repairs and cleaning, a rare occurrence for the venue which typically only closes on Thanksgiving and Christmas.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Mr. Henry&#39;s is a historic Capitol Hill landmark that has operated continuously since 1966, famously serving as the venue where Roberta Flack launched her career. This neighborhood staple features Victorian-inspired decor and continues to host live jazz performances on its refurbished second floor alongside a menu of pub favorites and signature cocktails.</p>
            
         </a>
       
@@ -667,6 +629,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

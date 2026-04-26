@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -340,68 +341,16 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://bocamag.com/washington-d-c-exploring-history-at-the-dupont-circle-hotel" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://savingplaces.org/stories/drink-like-a-statesman-at-the-round-robin-bar-in-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=bocamag.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Boca Raton Magazine</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 3, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Washington D.C.: Exploring History at The Dupont Circle Hotel</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Round Robin Bar, located inside the Willard InterContinental, is a historic Washington institution known for its polished mahogany and distinctive circular bar. The venue serves classic cocktails like the Old Fashioned and refined dishes such as tuna tartare in a space steeped in political and literary history.</p>
-           
-        </a>
-      
-        <a href="https://liveandletsfly.com/willard-intercontinental-hotel-memories" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=savingplaces.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>National Trust for Historic Preservation</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=liveandletsfly.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Live and Let&#39;s Fly</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 14, 2023</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Why The Willard InterContinental Is My Favorite Hotel In Washington, DC</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Drink Like a Statesman at the Round Robin Bar in Washington, D.C.</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Round Robin Bar, located within the Willard InterContinental in Washington, D.C., is a historic establishment that famously served as a watering hole for Union leaders during the Civil War. It remains a key destination for visitors looking to experience the District&#39;s rich political legacy and historical ambiance.</p>
-           
-        </a>
-      
-        <a href="https://insidehook.com/washington-dc/drinking-tour-cocktail-history" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=insidehook.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>InsideHook</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 17, 2021</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">A Drink-by-Drink Tour of DC’s Most Historic Cocktail Bars</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Round Robin Bar, located within The Willard InterContinental, is a historic landmark known as the &#39;Oval Office of Bars&#39; where the Mint Julep was first introduced to Washington, D.C. The venue offers a deep dive into political history, featuring stories of past presidents and hosting &#39;History Happy Hours&#39; led by legendary bartender Jim Hewes.</p>
-           
-        </a>
-      
-        <a href="https://thrillist.com/drink/washington-dc/cocktail-bars-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=thrillist.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Thrillist</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 17, 2020</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Best Cocktail Bars in DC</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Round Robin Bar is a historic DC institution at Metro Center that has been in operation since 1850, offering a classic atmosphere steeped in political history. Famous for its signature mint juleps, the bar also features modern cocktail trends and a menu of upscale bar fare like crab cake sliders and truffle fries.</p>
-           
-        </a>
-      
-        <a href="https://cntraveler.com/gallery/best-bars-in-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=cntraveler.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Condé Nast Traveler</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 22, 2019</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">15 Best Bars in Washington, D.C.</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Round Robin Bar, located inside the historic Willard InterContinental, is a classic D.C. institution featuring a mahogany round bar and portraits of political figures. This storied venue is famous for being the place where the Mint Julep was introduced to Washington and hosts History Happy Hours featuring guest authors and journalists.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Round Robin Bar, located within the Willard InterContinental Hotel, is a historic Washington, D.C. landmark that has hosted presidents and power players since 1847. This iconic venue is celebrated for its classic mahogany circular bar, a wide selection of whiskeys, and its signature Mint Juleps.</p>
            
         </a>
       
@@ -685,6 +634,49 @@ Their signature mint julep drink tasted super fresh! Historic bar with grand int
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

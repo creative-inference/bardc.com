@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -343,68 +344,29 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://gayety.com/sidepiece-pride-performance-tres-chic" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://metroweekly.com/scene/?k=3009" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=gayety.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Gayety</span>
-              <span style="margin-left:auto; text-transform:none;">May 21, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=metroweekly.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Metro Weekly</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">SIDEPIECE to Headline First-Ever Pride Performance at TRÈS CHIC WorldPride Tea Dance in D.C.</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">WorldPride Ball 2025 presented by Revry</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Hook Hall hosted the TRÈS CHIC WorldPride Tea Dance in June 2025, featuring the first-ever Pride headline performance by Grammy-nominated house duo SIDEPIECE. The event transformed the venue into an inclusive, technicolor daytime playground as a key part of the official WorldPride DC 2025 celebrations.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Hook Hall hosted the WorldPride Ball 2025 presented by Revry on June 5, 2025, as part of the city&#39;s major LGBTQ celebrations. The venue served as the site for this high-profile event, which featured photography coverage by Sean Burgandy for Metro Weekly.</p>
            
         </a>
       
-        <a href="https://washingtonian.com/2023/12/07/lets-talk-about-the-dc-bar-that-now-has-a-hot-tub" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://washington.org/find-dc-listings/hook-hall" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 7, 2024</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Let’s Talk About the DC Bar That Now Has a Hot Tub</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Hook Hall features a &#39;Northern Lights&#39; winter pop-up in Park View, highlighted by a private outdoor cabana equipped with a hot tub, changing room, and fire pits. The experience includes themed cocktails and whiskey-branded robes, alongside larger dry cabanas decorated to mimic the aurora borealis.</p>
-           
-        </a>
-      
-        <a href="https://bizjournals.com/washington/news/2023/01/11/hook-hall-team-takes-over-national-union-building.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=washington.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>visit Washington DC</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=bizjournals.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Business Journals</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 12, 2023</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Pirate Ventures launches new event space from historic downtown D.C. building</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Hook Hall</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The team behind Hook Hall, Pirate Ventures, has launched a new event space in the historic former LivingSocial headquarters in downtown Washington, D.C. The venue is designed to host corporate meetings and social gatherings, providing flexible options for companies as they return to in-person events.</p>
-           
-        </a>
-      
-        <a href="https://restaurantbusinessonline.com/power-20-pandemic-heroes-2021/anna-valero" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=restaurantbusinessonline.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Restaurant Business</span>
-              <span style="margin-left:auto; text-transform:none;">Mar 10, 2021</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Anna Valero</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Hook Hall serves as a community and industry support hub in Washington, D.C., notably through its &quot;Hook Hall Helps&quot; initiative launched to support hospitality workers. The venue transitioned into a distribution center providing thousands of meals and raising over $750,000 in relief funds for the local restaurant industry.</p>
-           
-        </a>
-      
-        <a href="https://dc.eater.com/2020/7/15/21324338/hook-hall-patio-bar-the-oasis-opening-park-view-caribbean-cocktails-pizza" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 15, 2020</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Hook Hall Reboots Its Massive Patio in Park View With a New Island Style</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Hook Hall has transformed its 7,000-square-foot outdoor patio into &quot;The Oasis,&quot; a tropical-themed space featuring Caribbean-inspired food and drinks like guava gin rickeys and seafood fritters. The venue offers private cabana rentals with amenities like ceiling fans and contactless ordering, while continuing to serve as a vital relief center for D.C. hospitality workers.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Hook Hall is a premier event venue, beer garden, and tavern in Washington, D.C., featuring expansive pillar-free indoor and outdoor spaces with seasonal themed gardens and private cabanas. The venue offers diverse weekly programming, including drag bingo, trivia, and exclusive cocktail experiences, while providing flexible spaces for large-scale events with a capacity of up to 1,375 guests.</p>
            
         </a>
       
@@ -684,6 +646,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

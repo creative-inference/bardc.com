@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -293,32 +294,6 @@ Birthday celebrations, live Go-Go music, large group outings, weekend brunch, in
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://prnewswire.com/news-releases/thrw-social-a-female-founded-experiential-hospitality-concept-hailing-from-washington-dc-hits-record-success-with-expansion-to-south-florida-301595236.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=prnewswire.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>PR Newswire</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 28, 2022</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">THRōW SOCIAL®, A FEMALE-FOUNDED EXPERIENTIAL HOSPITALITY CONCEPT HAILING FROM WASHINGTON, DC, HITS RECORD SUCCESS WITH EXPANSION TO SOUTH FLORIDA</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">THRōW Social DC is an experiential hospitality venue that combines competitive social games, such as axe throwing and darts, with live entertainment and chef-driven cuisine. The concept, founded by entrepreneur Ginger Flesher-Sonnier, offers a tropical-themed atmosphere and a mixologist-led beverage program designed for multi-generational socializing.</p>
-           
-        </a>
-      
-        <a href="https://dcist.com/story/20/01/23/this-huge-ivy-city-venue-will-offer-axe-throwing-curling-and-something-called-footbowl" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=dcist.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>DCist</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 27, 2020</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">This Huge Ivy City Venue Will Offer Ax Throwing, Curling, And Something Called ‘FootBowl’</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">THRōW Social DC is a 22,000-square-foot entertainment venue in Ivy City that combines a tropical-themed atmosphere with a ski-lodge-inspired ax-throwing area. The space features unique activities such as iceless curling, traditional ax throwing, and &#39;FootBowl,&#39; a hybrid sport that blends the rules of football and bowling. Guests can enjoy themed cocktails, full-service bars, and a menu of small bites within various rentable cabanas and lounge areas.</p>
-           
-        </a>
-      
         <a href="https://recordingacademy.com/news/washington-dc-chapter-2023-block-party-recap-advocacy-artistry" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
@@ -492,6 +467,18 @@ Pros:
           </div>
         </a>
       
+        <a href="/bars/bar-sirenis/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbar-sirenis%2Flogo-1766149280662-254088171_3067048776905061_4149497667275098381_n.png?alt=media&amp;token=4101a450-b18c-4b52-9f55-e199de657ebf" alt="Bar Sirenis" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Bar Sirenis</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">453m away</p>
+          </div>
+        </a>
+      
         <a href="/bars/aqua/" class="venue-card" style="min-height: 200px;">
           
              <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
@@ -501,18 +488,6 @@ Pros:
           <div class="card-content" style="padding: 1rem;">
             <h4 style="margin: 0; font-size: 1rem;">Aqua</h4>
             <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">688m away</p>
-          </div>
-        </a>
-      
-        <a href="/bars/echostage/" class="venue-card" style="min-height: 200px;">
-          
-             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
-               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fechostage%2Flogo-1766402572849-518166353_18516492496001378_777603439572054660_n.jpg?alt=media&amp;token=c38e3856-4046-41c3-84e8-900fb082f4c8" alt="Echostage" style="max-height: 80%; max-width: 80%; object-fit: contain;">
-             </div>
-          
-          <div class="card-content" style="padding: 1rem;">
-            <h4 style="margin: 0; font-size: 1rem;">Echostage</h4>
-            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">1097m away</p>
           </div>
         </a>
       
@@ -609,6 +584,49 @@ Pros:
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

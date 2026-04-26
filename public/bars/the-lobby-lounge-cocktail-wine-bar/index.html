@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -289,68 +290,29 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://axios.com/local/washington-dc/2025/05/16/new-restaurants-dc-casamara-lobby-bar" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://dcnewsnow.com/news/local-news/washington-dc/the-lobby-in-georgetown-promises-elevated-wine-and-cocktail-experience" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=axios.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Axios</span>
-              <span style="margin-left:auto; text-transform:none;">May 16, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=dcnewsnow.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>DC News Now</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">May&#39;s hottest D.C. bar and restaurant openings</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">‘The Lobby’ in Georgetown promises ‘elevated wine and cocktail experience’</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Lobby Lounge (referred to as Lobby Bar) opened in Eastern Market in May 2025, taking over the former Boxcar Tavern space. The venue features a martini-heavy menu curated by cocktail expert Tory Pratt and offers playful, Instagram-friendly dishes such as &quot;clothesline bacon&quot; and caviar-topped chicken nuggets.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Lobby Lounge | Cocktail &amp; Wine Bar in Georgetown offers an elevated beverage experience featuring a curated selection of wines and craft cocktails. The venue provides a sophisticated atmosphere designed for guests seeking a refined social setting in the heart of Washington D.C.</p>
            
         </a>
       
-        <a href="https://georgetowner.com/articles/2025/05/14/the-latest-dish-39" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://washington.org/visit-dc/historic-hotel-bars-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=georgetowner.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Georgetowner</span>
-              <span style="margin-left:auto; text-transform:none;">May 14, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Latest Dish</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Lobby Lounge | Cocktail &amp; Wine Bar, located in the former Boxcar Tavern space in Capitol Hill, features a cocktail program by Tory Pratt that utilizes fresh ingredients from the neighboring Eastern Market. Founded by nightlife veteran Adam Shulman, the venue offers a mix of indoor booth and bar seating alongside a communal table and an outdoor patio.</p>
-           
-        </a>
-      
-        <a href="https://dc.eater.com/2025/3/12/24383347/most-anticipated-spring-restaurant-openings-2025-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=washington.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>visit Washington DC</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Mar 12, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Most Exciting D.C. Restaurant Openings to Look Forward to This Spring</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Historic DC Hotel Bars with Character &amp; Cocktails</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Lobby Bar is an American restaurant and cocktail lounge located in Capitol Hill’s historic Barracks Row. The venue features a specialty martini menu designed by Tori Pratt, an 18-seat bar, and an outdoor patio, with a food program that sources ingredients from the neighboring Eastern Market.</p>
-           
-        </a>
-      
-        <a href="https://washingtonian.com/2024/12/05/the-best-places-to-drink-by-a-fire-patios-with-fire-pits-around-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 13, 2024</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Best Places to Drink by a Fire Around DC</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Lobby Lounge | Cocktail &amp; Wine Bar, located within the Ritz-Carlton Georgetown, is highlighted as a premier destination for fireside drinks in Washington D.C. due to its massive 130-foot-tall wood-burning hearth. The venue offers a cozy, upscale atmosphere reminiscent of an Aspen resort, making it an ideal spot for enjoying martinis and classic cocktails during the winter months.</p>
-           
-        </a>
-      
-        <a href="https://popville.com/2024/11/the-lobby-cocktail-bar-wine-opening-later-this-month" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=popville.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>PoPville</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 7, 2024</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">“The Lobby promises an experience of elegance, flavor, and charm.”</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Lobby Lounge | Cocktail &amp; Wine Bar is a Georgetown destination offering an elevated wine and cocktail experience in a modern bohemian setting at 1660 33rd Street NW. The menu features handcrafted signature cocktails, an exceptional global wine selection, and thoughtfully designed small bites intended to complement the drinks.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Lobby Lounge | Cocktail &amp; Wine Bar at Hotel Washington offers a luxurious blend of modern design and historic 1918 architecture, featuring violet-hued lighting, velvet seating, and iconic checkerboard floors. Guests can enjoy light fare and craft drinks in a high-ceilinged space marked by grand arches and a trendy, upscale atmosphere.</p>
            
         </a>
       
@@ -627,6 +589,49 @@ Danny is truly a master behind the...
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

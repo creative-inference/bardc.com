@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -293,68 +294,42 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://popville.com/2025/12/press-club-psa-dupont-circle-hours" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://fox5dc.com/video/1756648" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=popville.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>PoPville</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 29, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=fox5dc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>FOX 5 DC</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Press Club PSA – No Longer Open Sundays</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Seasonal Cocktails for Holiday Entertaining</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Press Club Cocktail Bar in Dupont Circle has updated its operating hours and will no longer be open on Sundays. Starting in 2026, the 70s-inspired record lounge and cocktail bar will be open to guests Tuesday through Saturday.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Press Club Cocktail Bar Managing Partner Will Patton showcased creative seasonal drink recipes and techniques for festive entertaining during a segment on FOX 5 DC&#39;s LION Lunch Hour. The feature highlights the venue&#39;s innovative approach to mixology and offers inspiration for holiday-themed cocktails.</p>
            
         </a>
       
-        <a href="https://forbes.com/sites/katiechang/2025/10/31/why-a-trip-to-washington-dc-during-the-shutdown-might-surprise-you" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://thespiritsbusiness.com/2025/10/press-club-creates-oasis-themed-menu" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=forbes.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Forbes</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 6, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=thespiritsbusiness.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The Spirits Business</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Why A Trip To Washington, D.C. During The Shutdown Might Surprise You</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Press Club creates Oasis-themed menu</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Press Club Cocktail Bar in Dupont Circle is a music-focused venue where cocktails are inspired by vinyl records&#39; A- and B-sides. Founded by industry veterans Will Patton and Devin Kennedy, the bar features a house record player and offers a &quot;Play List&quot; menu that pairs rotating drinks with izakaya-inspired small bites.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Press Club Cocktail Bar has introduced a new Oasis-themed menu, drawing inspiration from the iconic British rock band. The special offerings include creative cocktails and drinks that celebrate the group&#39;s musical legacy and cultural impact.</p>
            
         </a>
       
-        <a href="https://businesstraveller.com/news/review-press-club-washington" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://secretdc.com/press-club-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=businesstraveller.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Business Traveller</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 5, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Cocktails &amp; Vinyl: Why Press Club is Washington DC’s Coolest New Bar</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Press Club Cocktail Bar is an intimate, subterranean &quot;listening room&quot; in Washington D.C.’s Dupont Circle that pairs a curated vinyl record collection with a sophisticated beverage program. Founded by industry veterans Will Patton and Devin Kennedy, the lounge offers creative cocktails named after musical tracks alongside upscale snacks in a warm, &#39;70s-inspired setting.</p>
-           
-        </a>
-      
-        <a href="https://washingtonian.com/2025/07/15/bars-spinning-vinyl-around-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=secretdc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Secret DC</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 16, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">5 Vinyls Bars Around DC Spinning Groovy Records</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">This New D.C. Record Bar Takes You On A Nostalgic Journey Back To The ‘90s</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Press Club Cocktail Bar in Dupont Circle features a unique menu styled like a vinyl record, offering sophisticated cocktails categorized as &#39;track lists&#39; and curated &#39;playlist&#39; tastings. Owners Will Patton and Devin Kennedy spin an eclectic collection of LPs—ranging from &#39;70s disco to &#39;90s rap—playing full albums to ensure a high-fidelity listening experience for guests.</p>
-           
-        </a>
-      
-        <a href="https://insidehook.com/cocktails/press-club-dc-vinyl-listening-bar-lounge" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=insidehook.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>InsideHook</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 27, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Impeccable Hospitality Is Part of the Soundtrack at Press Club</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Press Club Cocktail Bar is a subterranean vinyl listening lounge in Dupont Circle that pairs a high-fidelity audio experience with technical, layered cocktails. Led by industry veterans from Michelin-starred Bresca and Jônt, the venue emphasizes intimate hospitality and features an extensive, staff-curated record collection.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Press Club Cocktail Bar is a Washington D.C. record lounge that offers a nostalgic journey through the &#39;90s with vinyl-only DJ sets and high-fidelity audio. The venue combines a sleek, minimalist design with a sophisticated cocktail program, creating an immersive listening-room experience for music and drink enthusiasts.</p>
            
         </a>
       
@@ -636,6 +611,49 @@ This place is incredible. The drinks are unique and playfully inspired by classi
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

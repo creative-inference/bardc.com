@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -293,68 +294,42 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://timeout.com/usa/music-nightlife/best-jazz-clubs-in-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://tadias.com/12/14/2019/in-dc-ethiopian-jazz-supergroup-feedel-band-is-keeping-traditional-sounds-alive" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=timeout.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Time Out Worldwide</span>
-              <span style="margin-left:auto; text-transform:none;">Aug 20, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=tadias.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Tadias Magazine</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The best jazz clubs in D.C.</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">In DC, Ethiopian Jazz Supergroup Feedel Band Is Keeping Traditional Sounds Alive</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bossa Bistro + Lounge is a lively Adams Morgan destination that blends traditional Brazilian bossa nova with jazz, R&amp;B, and blues performances. The eclectic venue offers a vibrant atmosphere complemented by authentic Brazilian tapas and specialty caipirinhas.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bossa Bistro + Lounge serves as the long-standing home for the Feedel Band, a premier Ethiopian jazz supergroup in Washington, D.C. The venue hosts the band&#39;s regular performances, which are essential to preserving and celebrating traditional Ethio-jazz sounds within the city&#39;s music scene.</p>
            
         </a>
       
-        <a href="https://metromontage.com/concert-venues" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://kennedy-center.org/artists/d/da-dn/District-of-Raga" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=metromontage.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Metro Montage</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 24, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=kennedy-center.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The Kennedy Center</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">List of Concert Venues In D.C., Baltimore, and Northern Virginia</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">District of Raga</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bossa Bistro &amp; Lounge is recognized as a key concert venue located in the Adams Morgan neighborhood of Washington, D.C. The establishment serves as a dedicated space for live music and cultural performances within the D.C. metropolitan area.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bossa Bistro + Lounge serves as the host venue for the District of Raga concert series, which brings traditional Indian classical music to the heart of Adams Morgan. The venue provides an intimate setting for these cultural performances, solidifying its reputation as a hub for diverse global sounds in Washington, D.C.</p>
            
         </a>
       
-        <a href="https://hypebot.com/live-music-society-shares-impact" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://tripsavvy.com/adams-morgan-nightclubs-dc-1040575" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=hypebot.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Hypebot</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 13, 2024</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Live Music Society shares impact of $1M in funding for small venues</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bossa Bistro + Lounge received a Music in Action grant from the Live Music Society to support the Bossa Tributary Project. This initiative showcases culturally diverse ensembles and global musical influences through a concert series and a unique compilation record release that highlights the rich diversity of the Washington, D.C. music scene.</p>
-           
-        </a>
-      
-        <a href="https://afar.com/magazine/washington-dc-best-music-venues" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=tripsavvy.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>TripSavvy</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=afar.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>AFAR</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 15, 2024</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Washington, D.C.’s Best Live Music Venues, According to the Musicians Who Live There</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Discover the Best Bars in Washington DC&#39;s Adams Morgan Neighborhood</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bossa Bistro &amp; Lounge in Adams Morgan is a long-standing venue known for its nightly live music spanning diverse genres, with a particular focus on Latin beats. Guests can enjoy performances ranging from salsa and samba to cumbia while savoring Brazilian tapas and caipirinhas in an intimate setting.</p>
-           
-        </a>
-      
-        <a href="https://dc.eater.com/maps/summer-dc-delicious-caipirinha" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Jun 13, 2023</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Celebrate Summer With a Delicious Caipirinha in D.C.</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bossa Bistro &amp; Lounge is an Adams Morgan institution known for hosting live music, salsa dancing, and art shows alongside a menu of Brazilian tapas. The bar specializes in crowd-pleasing cocktails, specifically focusing on traditional caipirinhas and mojitos.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bossa Bistro and Lounge is a cozy neighborhood venue in Washington, D.C.&#39;s Adams Morgan area. The establishment offers a combination of Italian cuisine and live jazz performances most nights throughout the week.</p>
            
         </a>
       
@@ -636,6 +611,49 @@ My friends brought me here and I couldn’t have asked for a better experience! 
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

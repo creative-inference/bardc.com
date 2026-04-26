@@ -49,7 +49,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -68,17 +68,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -104,7 +106,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -226,18 +227,6 @@
       
         
           {
-            name: "Aslin Beer Company",
-            slug: "aslin-beer-company",
-            lat: 38.9139393,
-            lng: -77.0323214,
-            address: "1740 14th St NW, Washington, DC 20009, USA",
-            category: "Breweries, Taproom, Groups",
-            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Faslin-beer-company%2Flogo-1766098901772-432766671_766392562254514_959598454251244589_n.jpg?alt=media&amp;token=4a2ad8f8-9841-42ee-ac83-eb4ecf1f3ef0"
-          },
-        
-      
-        
-          {
             name: "Barcelona Wine Bar - 14th Street",
             slug: "barcelona-wine-bar",
             lat: 38.9121143,
@@ -262,6 +251,18 @@
       
         
           {
+            name: "Aslin Beer Company",
+            slug: "aslin-beer-company",
+            lat: 38.9139393,
+            lng: -77.0323214,
+            address: "1740 14th St NW, Washington, DC 20009, USA",
+            category: "Breweries, Taproom, Groups",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Faslin-beer-company%2Flogo-1766098901772-432766671_766392562254514_959598454251244589_n.jpg?alt=media&amp;token=4a2ad8f8-9841-42ee-ac83-eb4ecf1f3ef0"
+          },
+        
+      
+        
+          {
             name: "Black Jack",
             slug: "black-jack",
             lat: 38.9116189,
@@ -269,18 +270,6 @@
             address: "1612 14th St NW, Washington, DC 20009, United States",
             category: "Cocktail Bars, Oyster Bars, Happy Hour Spots",
             logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fblack-jack%2Flogo-1766236773029-305486161_389789713317773_2828370103688079786_n.jpg?alt=media&amp;token=f796a859-5dd1-46bf-aed0-29b994280c67"
-          },
-        
-      
-        
-          {
-            name: "Black Whiskey",
-            slug: "black-whiskey",
-            lat: 38.909274,
-            lng: -77.03226,
-            address: "1410 14th St NW, Washington, DC 20005, United States",
-            category: "Cocktail Bars, Whiskey Bars, Late Night",
-            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fblack-whiskey%2Flogo-1766241049238-310762775_512919770847919_588704509666158971_n.jpg?alt=media&amp;token=f56c46ad-349b-40af-9695-6926a62ab204"
           },
         
       
@@ -560,6 +549,18 @@
           },
         
       
+        
+          {
+            name: "Black Whiskey",
+            slug: "black-whiskey",
+            lat: 38.909274,
+            lng: -77.03226,
+            address: "1410 14th St NW, Washington, DC 20005, United States",
+            category: "Cocktail Bars, Whiskey Bars, Late Night",
+            logoUrl: "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fblack-whiskey%2Flogo-1766241049238-310762775_512919770847919_588704509666158971_n.jpg?alt=media&amp;token=f56c46ad-349b-40af-9695-6926a62ab204"
+          },
+        
+      
     ];
 
     if (venues.length === 0) {
@@ -749,36 +750,6 @@
         </div>
       </a>
   
-      <a href="/bars/aslin-beer-company/" class="venue-card light-bg"
-         
-         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Faslin-beer-company%2Flogo-1766098901772-432766671_766392562254514_959598454251244589_n.jpg?alt=media&amp;token=4a2ad8f8-9841-42ee-ac83-eb4ecf1f3ef0');"
-         
-      >
-        <div class="card-content">
-            <!-- Card Header to group title and logo -->
-            <div class="card-header">
-              
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Faslin-beer-company%2Flogo-1766098901772-432766671_766392562254514_959598454251244589_n.jpg?alt=media&amp;token=4a2ad8f8-9841-42ee-ac83-eb4ecf1f3ef0" alt="Aslin Beer Company logo" class="card-logo">
-              
-              <h3>Aslin Beer Company</h3>
-            </div>
-            <!-- End Card Header -->
-          
-          <p class="card-category">Breweries, Taproom, Groups</p>
-          <span class="card-cta">View Details &rarr;</span>
-        </div>
-
-        <div class="card-tags-container">
-          
-            <div class="card-happy-hour-tag">
-              🎉 Happy Hour
-            </div>
-          
-
-          
-        </div>
-      </a>
-  
       <a href="/bars/barcelona-wine-bar/" class="venue-card light-bg"
          
          style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbarcelona-wine-bar%2Flogo-1766149357187-284396333_1856196207918703_6945342909125011361_n.jpg?alt=media&amp;token=3c4a147f-8fe0-4bd7-ae5e-0d17f4844993');"
@@ -831,6 +802,36 @@
         </div>
       </a>
   
+      <a href="/bars/aslin-beer-company/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Faslin-beer-company%2Flogo-1766098901772-432766671_766392562254514_959598454251244589_n.jpg?alt=media&amp;token=4a2ad8f8-9841-42ee-ac83-eb4ecf1f3ef0');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Faslin-beer-company%2Flogo-1766098901772-432766671_766392562254514_959598454251244589_n.jpg?alt=media&amp;token=4a2ad8f8-9841-42ee-ac83-eb4ecf1f3ef0" alt="Aslin Beer Company logo" class="card-logo">
+              
+              <h3>Aslin Beer Company</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Breweries, Taproom, Groups</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+            <div class="card-happy-hour-tag">
+              🎉 Happy Hour
+            </div>
+          
+
+          
+        </div>
+      </a>
+  
       <a href="/bars/black-jack/" class="venue-card light-bg"
          
          style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fblack-jack%2Flogo-1766236773029-305486161_389789713317773_2828370103688079786_n.jpg?alt=media&amp;token=f796a859-5dd1-46bf-aed0-29b994280c67');"
@@ -855,32 +856,6 @@
             <div class="card-happy-hour-tag">
               🎉 Happy Hour
             </div>
-          
-
-          
-        </div>
-      </a>
-  
-      <a href="/bars/black-whiskey/" class="venue-card light-bg"
-         
-         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fblack-whiskey%2Flogo-1766241049238-310762775_512919770847919_588704509666158971_n.jpg?alt=media&amp;token=f56c46ad-349b-40af-9695-6926a62ab204');"
-         
-      >
-        <div class="card-content">
-            <!-- Card Header to group title and logo -->
-            <div class="card-header">
-              
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fblack-whiskey%2Flogo-1766241049238-310762775_512919770847919_588704509666158971_n.jpg?alt=media&amp;token=f56c46ad-349b-40af-9695-6926a62ab204" alt="Black Whiskey logo" class="card-logo">
-              
-              <h3>Black Whiskey</h3>
-            </div>
-            <!-- End Card Header -->
-          
-          <p class="card-category">Cocktail Bars, Whiskey Bars, Late Night</p>
-          <span class="card-cta">View Details &rarr;</span>
-        </div>
-
-        <div class="card-tags-container">
           
 
           
@@ -1517,6 +1492,32 @@
         </div>
       </a>
   
+      <a href="/bars/black-whiskey/" class="venue-card light-bg"
+         
+         style="background-image: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fblack-whiskey%2Flogo-1766241049238-310762775_512919770847919_588704509666158971_n.jpg?alt=media&amp;token=f56c46ad-349b-40af-9695-6926a62ab204');"
+         
+      >
+        <div class="card-content">
+            <!-- Card Header to group title and logo -->
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fblack-whiskey%2Flogo-1766241049238-310762775_512919770847919_588704509666158971_n.jpg?alt=media&amp;token=f56c46ad-349b-40af-9695-6926a62ab204" alt="Black Whiskey logo" class="card-logo">
+              
+              <h3>Black Whiskey</h3>
+            </div>
+            <!-- End Card Header -->
+          
+          <p class="card-category">Cocktail Bars, Whiskey Bars, Late Night</p>
+          <span class="card-cta">View Details &rarr;</span>
+        </div>
+
+        <div class="card-tags-container">
+          
+
+          
+        </div>
+      </a>
+  
 </div>
 
 <div style="margin-top: 3rem; text-align: center;">
@@ -1575,6 +1576,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

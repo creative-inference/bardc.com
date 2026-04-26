@@ -2,31 +2,36 @@
 .masonry-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    /* slightly smaller min-width too */
     grid-auto-rows: 10px;
-    /* Small row unit for packing */
     gap: 1rem;
-    /* Reduced from 1.5rem */
     padding-bottom: 2rem;
 }
 
 .masonry-item {
+    position: relative;
     background: rgba(var(--surface-color-rgb), 0.85);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    backdrop-filter: blur(5px);
-    /* Default span (fallback), adjusted by JS */
+    border: 1px solid var(--border-subtle);
+    transition: transform 0.25s var(--ease-out), box-shadow 0.25s var(--ease-out), border-color 0.25s var(--ease-out);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
     grid-row-end: span 20;
     height: max-content;
 }
 
 .masonry-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
-    border-color: var(--accent-color);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--border-strong);
     z-index: 2;
+}
+
+.masonry-link {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
 }
 
 .masonry-content {
@@ -34,121 +39,213 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
-    /* Ensure padding is included in height */
 }
 
-/* Specific Block Styles */
+/* --- VENUE block --- */
+.masonry-item.is-venue .venue-image-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.3);
+}
 
-/* VENUE */
 .masonry-item.is-venue .venue-image {
     width: 100%;
-    height: 150px;
+    height: 100%;
     object-fit: cover;
     display: block;
+    transition: transform 0.5s var(--ease-out);
+}
+
+.masonry-item.is-venue:hover .venue-image {
+    transform: scale(1.04);
 }
 
 .masonry-item.is-venue h3 {
-    margin: 0 0 0.25rem 0;
-    font-size: 1.3rem;
+    margin: 0;
+    font-size: 1.15rem;
     color: var(--text-primary);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    line-height: 1.3;
+    flex-grow: 1;
+    min-width: 0;
+    word-break: break-word;
 }
 
-.masonry-item.is-venue .card-category {
-    font-size: 0.85rem;
-    color: var(--text-secondary);
+.masonry-item.is-venue .card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
     margin-bottom: 0.5rem;
 }
 
-/* NEIGHBORHOOD */
+.masonry-item.is-venue .card-logo {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--border-default);
+    background: var(--surface-elevated);
+    flex-shrink: 0;
+}
+
+.masonry-item.is-venue .card-category {
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+    margin: 0 0 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-weight: 500;
+}
+
+.masonry-item.is-venue .card-tags-container {
+    display: flex;
+    gap: 0.4rem;
+    margin-top: auto;
+    padding-top: 0.5rem;
+}
+
+.masonry-item.is-venue .card-happy-hour-tag {
+    background: rgba(var(--secondary-color-rgb), 0.15);
+    color: var(--secondary-color);
+    border: 1px solid rgba(var(--secondary-color-rgb), 0.4);
+    padding: 0.2rem 0.6rem;
+    border-radius: var(--radius-pill);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    box-shadow: none;
+}
+
+/* --- NEIGHBORHOOD block --- */
 .masonry-item.is-neighborhood {
-    background: linear-gradient(135deg, var(--primary-color) 0%, #4a0000 100%);
+    background: linear-gradient(135deg, rgba(var(--primary-color-rgb), 0.85) 0%, rgba(var(--primary-color-rgb), 0.55) 100%);
+    border: 1px solid rgba(var(--primary-color-rgb), 0.4);
     text-align: center;
-    /* Removed min-height from here */
+}
+
+.masonry-item.is-neighborhood:hover {
+    background: linear-gradient(135deg, rgba(var(--primary-color-rgb), 1) 0%, rgba(var(--primary-color-rgb), 0.75) 100%);
+    box-shadow: var(--shadow-glow-primary);
 }
 
 .masonry-item.is-neighborhood .masonry-content {
     min-height: 100px;
-    /* Apply min-height to content wrapper */
     padding: 0;
     justify-content: center;
     align-items: center;
-    /* Force horizontal center for children */
 }
 
 .masonry-item.is-neighborhood a {
-    color: white;
-    font-size: 1.4rem;
-    font-weight: 800;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 1rem;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     text-align: center;
-    /* Ensure multiline text centers */
 }
 
-/* CATEGORY */
+/* --- CATEGORY block --- */
 .masonry-item.is-category {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid var(--accent-color);
+    background: rgba(var(--accent-color-rgb), 0.06);
+    border: 1px solid rgba(var(--accent-color-rgb), 0.4);
+}
+
+.masonry-item.is-category:hover {
+    background: rgba(var(--accent-color-rgb), 0.95);
+    border-color: var(--accent-color);
+    box-shadow: var(--shadow-glow-accent);
 }
 
 .masonry-item.is-category .masonry-content {
     min-height: 80px;
-    /* Apply min-height to content wrapper */
     padding: 0;
     justify-content: center;
     align-items: center;
-    /* Force horizontal center for children */
 }
 
 .masonry-item.is-category a {
     color: var(--accent-color);
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     font-weight: 700;
     text-transform: uppercase;
+    letter-spacing: 0.04em;
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    /* Ensure multiline text centers */
-}
-
-.masonry-item.is-category:hover {
-    background: var(--accent-color);
+    padding: 0.5rem;
+    transition: color 0.2s var(--ease-out);
 }
 
 .masonry-item.is-category:hover a {
-    color: #fff;
+    color: #0b0c10;
 }
 
-/* EVENT */
+/* --- EVENT block --- */
 .masonry-item.is-event {
-    background: linear-gradient(to bottom, rgba(3, 169, 244, 0.1), rgba(var(--surface-color-rgb), 0.9));
+    background: linear-gradient(180deg, rgba(var(--accent-color-rgb), 0.08) 0%, rgba(var(--surface-color-rgb), 0.95) 100%);
     border-top: 3px solid var(--accent-color);
 }
 
 .masonry-item.is-event h4 {
-    margin: 0.5rem 0;
+    margin: 0.4rem 0 0.5rem;
     color: var(--text-primary);
-    font-size: 1.1rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+.masonry-item.is-event h4 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.masonry-item.is-event:hover h4 a {
+    color: var(--accent-color);
 }
 
 .masonry-item.is-event .event-time {
     color: var(--secondary-color);
-    font-weight: bold;
-    font-size: 0.9rem;
+    font-weight: 600;
+    font-size: 0.75rem;
     text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin: 0 0 0.25rem;
+}
+
+.event-venue-line {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    margin: 0.5rem 0 0;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.event-venue-logo-sm {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--border-default);
+    background: var(--surface-elevated);
+    flex-shrink: 0;
 }
 
 @media (max-width: 600px) {
     .masonry-grid {
-        gap: 0.5rem;
+        gap: 0.6rem;
     }
+    .masonry-content { padding: 0.85rem; }
 }

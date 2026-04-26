@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -317,68 +318,16 @@ Michelin Bib Gourmand dining, Instagrammable brunch dates, seasonal outdoor cock
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://blog.resy.com/2025/11/washington-dc-michelin-2025" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://dcnewsnow.com/news/local-news/washington-dc/d-c-restaurant-preference-older-crowd" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=blog.resy.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Resy</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 19, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Washington DC Michelin Guide Restaurants and Stars</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Residents Cafe &amp; Bar has earned a Michelin Bib Gourmand designation for providing high-quality dining at an affordable price point in Washington D.C.&#39;s DuPont Circle. The venue is highly regarded for its immigrant-founded heritage and exceptional beverage program, featuring a renowned espresso martini and a creative cocktail selection.</p>
-           
-        </a>
-      
-        <a href="https://travelawaits.com/3012456/best-fine-dining-in-washington-dc-from-michelin-bib-gourmand" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=dcnewsnow.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>DC News Now</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=travelawaits.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>TravelAwaits</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 14, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Best Fine Dining in Washington DC: 13 Affordable Michelin-Approved Restaurants</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">DC restaurant prefers people over 30 years old; some residents question legality</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Residents Cafe &amp; Bar is a chic Dupont Circle eatery highlighted for its inclusion in the Michelin Bib Gourmand guide as an affordable fine dining option. The venue features a picturesque, Instagrammable design and offers a versatile menu suitable for brunch, dinner, or curated cocktails.</p>
-           
-        </a>
-      
-        <a href="https://washingtonian.com/2024/03/11/the-beauty-of-cherry-blossom-season-at-residents-d-c" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">Mar 8, 2024</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Beauty of Cherry Blossom Season at Residents D.C.</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Residents Cafe &amp; Bar celebrates cherry blossom season with a vibrant transformation of its outdoor patio featuring floral decor and lush greenery. The venue is also introducing a new seasonal menu inspired by fresh spring flavors and innovative cocktails to complement its scenic atmosphere.</p>
-           
-        </a>
-      
-        <a href="https://guide.michelin.com/us/en/article/dining-out/residents-cafe-and-car-washington-d-c-menu-restaurant-michelin-guide-bib-gourmand" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=guide.michelin.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>MICHELIN Guide</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 23, 2023</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">This D.C. Bib Gourmand Serves Up Tastes of the Middle East and Europe for Less than $60</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Residents Cafe &amp; Bar is a Washington D.C. Bib Gourmand destination featuring a globally inspired, hyper-seasonal menu founded by immigrants. The restaurant offers unique dishes like charred octopus and Turkish eggs in a chic row house setting with a focus on high-quality ingredients and sustainable cooking techniques. Guests can expect a multi-course experience for under $60, making it a standout for both value and culinary innovation.</p>
-           
-        </a>
-      
-        <a href="https://wjla.com/good-morning-washington/residents-cafe-bar-showcases-cherry-blossom-themed-cocktails-and-decor" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=wjla.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WJLA</span>
-              <span style="margin-left:auto; text-transform:none;">Apr 4, 2022</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Residents Cafe &amp; Bar showcases Cherry Blossom themed cocktails and decor</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Residents Cafe &amp; Bar in Northwest D.C. features a specialized spring experience with cherry blossom-themed cocktails and immersive floral decor. The venue showcases a unique seasonal menu and atmosphere designed to celebrate Washington D.C.&#39;s iconic bloom season.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Residents Cafe &amp; Bar has sparked debate in Washington, D.C. after implementing a policy that prefers patrons over the age of 30. While the establishment aims to curate a specific atmosphere for an older demographic, the move has prompted residents and legal experts to question the legality of age-based entry restrictions.</p>
            
         </a>
       
@@ -656,6 +605,49 @@ The watermelon &amp; heirloom tomato salad was the standout — fresh, bright, a
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -186,6 +187,8 @@
                     
                       <a href="https://www.instagram.com/pendrywharfdc/" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
                     
+                    
+                      <a href="https://www.facebook.com/pendrywharfdc" target="_blank" rel="noopener noreferrer" class="social-icon facebook" title="Facebook"></a>
                     
                     
                   </div>
@@ -329,68 +332,29 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://dc.eater.com/maps/best-afternoon-tea-dc-hotels" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://cntraveler.com/hotels/washington-dc/pendry-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 7, 2026</span>
+              <img src="https://www.google.com/s2/favicons?domain=cntraveler.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Condé Nast Traveler</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Where to Enjoy the Best Afternoon Tea Around D.C.</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Pendry Washington DC — Hotel Review</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bar Pendry at the Wharf hosts a boozy Saturday afternoon tea service featuring seasonal cocktails like the lavender-infused Indigo Bloom and a ginger-cranberry Chamomile Dream. For $80, guests can enjoy a selection of tea bites including duck prosciutto on brioche with pumpkin mascarpone and autumn-spiced chicken salad tarts.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bar Pendry is an intimate ground-floor lounge at the Pendry Washington DC – The Wharf, featuring a cozy fireplace and private nooks for enjoying classic cocktails and light bites. The venue is particularly noted for its Saturday &#39;Boozy Tea&#39; service, which offers tiered snacks alongside creative tea-based cocktails like matcha fizzes.</p>
            
         </a>
       
-        <a href="https://timeout.com/washington-dc/hotels/best-washington-dc-hotels" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://timeout.com/washington-dc/hotels/pendry-washington-dc-the-wharf" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
               <img src="https://www.google.com/s2/favicons?domain=timeout.com" alt="" style="width:14px; height:14px; opacity:0.7;">
               <span>Time Out Worldwide</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 9, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The 15 best hotels in Washington, D.C. for 2025</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bar Pendry, located on the lower level of the Pendry Washington DC - The Wharf, specializes in mezcal-packed signature cocktails and whiskey flights. The venue offers a sophisticated atmosphere that complements the hotel&#39;s contemporary luxury and nautical design in the heart of The Wharf.</p>
-           
-        </a>
-      
-        <a href="https://modernluxury.com/pendry-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=modernluxury.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Modern Luxury</span>
-              <span style="margin-left:auto; text-transform:none;">May 7, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Pendry Washington DC: Luxury &amp; Dining at The Wharf</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Pendry Washington DC - The Wharf Review: You Won’t Find Better Waterfront Views Than This</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bar Pendry, located near the lobby of the Pendry Washington DC – The Wharf, offers an intimate atmosphere ideal for date nights and social gatherings. The sophisticated space is designed with plush velvet textiles, antique mirrors, and a vintage mantel carved from dark Emperador marble.</p>
-           
-        </a>
-      
-        <a href="https://northernvirginiamag.com/things-to-do/travel/2023/09/05/pendry-washington-dc-weekend-getaway" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=northernvirginiamag.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Northern Virginia Magazine</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 7, 2023</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Try a Staycation at the Pendry Washington DC</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bar Pendry offers an intimate, living room-inspired salon atmosphere at The Wharf, specializing in premium champagne service including Dom Pérignon. Guests can relax in comfortable banquettes while watching activity on the plaza from this sophisticated hotel bar.</p>
-           
-        </a>
-      
-        <a href="https://districtfray.com/articles/inside-washingtons-latest-luxury-addition-pendry-washington-dc-the-wharf" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=districtfray.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>District Fray</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 27, 2023</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Inside Washington’s Latest Luxury Addition, Pendry Washington DC</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bar Pendry is an intimate, ground-level cocktail lounge located within the Pendry Washington DC – The Wharf. This cosmopolitan nook features velvety, low-lit interiors reminiscent of a classic New York or Chicago speakeasy, making it an ideal destination for a trendy nightcap.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bar Pendry, located on the lobby level of the Pendry Washington DC - The Wharf, serves signature cocktails like the mezcal-based &#39;Where There’s Smoke&#39; alongside whiskey and bourbon flights. The venue also hosts a weekly Boozy Tea on Saturdays, offering tea-infused cocktails and a tiered selection of savory and sweet pastries in a refined atmosphere.</p>
            
         </a>
       
@@ -668,6 +632,49 @@ Bar Pendry has an upscale feel yet down to earth, welcoming appeal (we were very
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

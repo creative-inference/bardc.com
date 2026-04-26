@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -312,68 +313,42 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://washingtonian.com/2025/04/21/washingtonian-recommends-where-to-eat-and-drink-around-capital-one-arena" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://secretdc.com/sports-bars" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">Apr 28, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=secretdc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Secret DC</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Where to Eat and Drink Around DC’s Capital One Arena</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">11 Best Sports Bars In D.C. To Watch The Washington Commanders’ Playoff Football</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">City Tap House Penn Quarter is a craft brewhouse located near Capital One Arena that features an extensive beer selection and a daily happy hour from 3 to 6 PM. The venue also offers a weekend late-night menu with options like pizzas and wings, making it a top choice for pre- and post-game dining.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">City Tap House Penn Quarter is featured as one of the top destinations in Washington, D.C. for watching Washington Commanders&#39; playoff football. The venue is recognized for providing an ideal game-day atmosphere and experience for fans during the NFL postseason.</p>
            
         </a>
       
-        <a href="https://colorandchic.com/weekend-in-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://secretdc.com/dc-sports-bars" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=colorandchic.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Color &amp; Chic</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 7, 2018</span>
+              <img src="https://www.google.com/s2/favicons?domain=secretdc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Secret DC</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">A Weekend in Washington, D.C. :: Travel &amp; Food Guide</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">11 Best Sports Bars Around Washington, D.C. To Watch The Big Game At This Weekend</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">City Tap House Penn Quarter is an elevated gastropub in Washington, D.C. featuring a lively atmosphere and rustic decor made of reclaimed barnwood. The menu highlights include ten spice wings, corn and crab hushpuppies with honey-thyme butter, and a variety of brunch options like steak and eggs.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">City Tap House Penn Quarter is recognized as one of the top sports bars in Washington, D.C. for watching major sporting events like the Super Bowl. The venue offers a high-energy environment with an extensive craft beer selection and prime viewing for game-day enthusiasts.</p>
            
         </a>
       
-        <a href="https://dc.eater.com/2017/10/10/16447454/city-tap-house-dupont-opens" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://washington.org/visit-dc/best-sports-bars-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 10, 2017</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">City Tap Dupont Opens, Plus More Intel</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">City Tap House Penn Quarter is the original Washington, D.C. location for the craft beer-focused restaurant group, featuring 40 draft lines and a signature copper-topped bar. The venue serves as the anchor for the brand&#39;s local presence, which expanded to include a second large-scale outpost in Dupont Circle.</p>
-           
-        </a>
-      
-        <a href="https://dc.eater.com/2017/9/13/16301918/city-tap-house-dupont-circle-opening" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=washington.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>visit Washington DC</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 13, 2017</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Beer Haven City Tap House’s Second D.C. Bar Arrives Next Month</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">15+ Great Sports Bars &amp; Restaurants in Washington, DC</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">City Tap House Penn Quarter serves as the established anchor for the brand’s D.C. presence, featuring an extensive selection of 40 draft lines and 30 bottled beers. The venue is known for its American fare, including seasonal specialties like rabbit Bolognese and apple salad, as well as a popular weekend brunch with a make-your-own bloody mary bar.</p>
-           
-        </a>
-      
-        <a href="https://thrillist.com/drink/washington-dc/10-hour-happy-hour-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=thrillist.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Thrillist</span>
-              <span style="margin-left:auto; text-transform:none;">Mar 30, 2015</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">How to Be at Happy Hour for 10 Straight Hours in DC</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">City Tap House Penn Quarter offers late-night happy hour specials including discounted craft beers and beer-and-a-shot combos. The menu features substantial bar snacks such as duck fat fries with truffle aioli, bacon popcorn with candied peanuts, and fried pickles with Cajun remoulade.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">City Tap House Penn Quarter is featured as a premier Washington, DC gastropub offering a rustic and open atmosphere for sports viewing. The venue provides an extensive craft beer selection and an innovative menu featuring items like elote dip, teriyaki-mumbo ribs, and spicy shrimp tacos.</p>
            
         </a>
       
@@ -655,6 +630,49 @@ I stopped by the 9th Street City Tap House Penn Quarter and tried the meatballs 
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

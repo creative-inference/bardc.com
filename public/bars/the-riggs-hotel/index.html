@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -293,68 +294,42 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://modernluxury.com/a-golden-masterpiece-riggs-washington-dc-introduces-its-2025-designer-holiday-tree-by-david-laport" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://theluxuryeditor.com/location/north-america/usa/district-of-columbia/washington" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=modernluxury.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Modern Luxury</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 9, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=theluxuryeditor.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The Luxury Editor</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">A Golden Masterpiece: Riggs Washington DC Introduces Its 2025 Designer Holiday Tree by David Laport</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Best Luxury Hotels In Washington D.C. 2025</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Riggs Washington DC is featuring its 2025 holiday installation, &#39;Golden Origins,&#39; a towering designer tree created by Dutch couture designer David Laport. The sculptural display in the hotel lobby incorporates Laport’s signature pleating techniques and handmade ornaments, drawing inspiration from his recent runway collections and the hotel&#39;s dramatic architecture.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Riggs Hotel is featured as one of the premier luxury destinations in Washington, D.C., recognized for its high-end accommodations and service. The property is highlighted as a top-tier choice for travelers seeking sophisticated lodging in the nation&#39;s capital.</p>
            
         </a>
       
-        <a href="https://timeout.com/washington-dc/hotels/best-washington-dc-hotels" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://hotelsabovepar.com/travel-guides/silver-lyan-riggs-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=timeout.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Time Out Worldwide</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 9, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=hotelsabovepar.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Hotels Above Par</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The 15 best hotels in Washington, D.C. for 2025</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Silver Lyan Cocktail Bar Review</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Riggs Washington DC is a grand hotel housed in the historic 1891 Riggs National Bank headquarters, featuring Art Deco interiors and rooms designed with a &quot;safety-deposit-box&quot; aesthetic. The venue offers a French-American dining experience at Café Riggs and inventive cocktails at Silver Lyan, a basement bar situated behind an original bank vault door.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Silver Lyan, located in the subterranean vault of the Riggs Washington D.C., offers a sultry atmosphere characterized by red-tinted marble and a provocative cocktail menu designed by award-winning bartender Ryan Chetiyawardana. The bar complements its unique, history-inspired libations with elevated snacks such as Everything Pretzel Bites and Wagyu beef hot dogs.</p>
            
         </a>
       
-        <a href="https://guide.michelin.com/us/en/article/travel/best-hotels-washington-dc-michelin-keys" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://washington.org/visit-dc/featured-hotel-deals-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=guide.michelin.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>MICHELIN Guide</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 11, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Best Hotels in Washington, D.C.</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Riggs Washington DC is a One MICHELIN Key hotel housed in a historic 19th-century Romanesque Revival bank building in the Penn Quarter district. The property blends stately architectural preservation with a playful, modern design that draws inspiration from the capital&#39;s storied history.</p>
-           
-        </a>
-      
-        <a href="https://observer.com/list/the-riggs-hotel-washington-dc-review" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=washington.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>visit Washington DC</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=observer.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Observer</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 25, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Riggs Hotel Washington: Presidential Luxury, Parental Reality</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Featured Hotel Deals in Washington, DC</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Riggs Hotel in Washington, D.C., occupies the historic 1891 &#39;Bank of Presidents&#39; building, offering a luxury experience that blends Richardsonian Romanesque architecture with family-friendly hospitality. The property features the grand Cafe Riggs restaurant, spacious Gallery Suites with panoramic city views, and unique amenities for children including a ten-foot gumball machine and custom &#39;passports.&#39;</p>
-           
-        </a>
-      
-        <a href="https://afar.com/magazine/the-10-best-hotels-in-washington-d-c" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=afar.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>AFAR</span>
-              <span style="margin-left:auto; text-transform:none;">Apr 14, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">These Are the 14 Best Hotels in Washington, D.C.</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Riggs Washington DC is a transformed historic bank building in Penn Quarter that blends Romanesque Revival architecture with whimsical, modern design. The hotel features the acclaimed Silver Lyan cocktail lounge in the former basement vault and unique guest suites inspired by the interests of former first ladies.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Riggs Washington, DC, located in the former Riggs National Bank building in Penn Quarter, offers seasonal packages such as the &#39;Suite Dreams&#39; promotion, which includes up to 15% off suites, valet parking, and daily breakfast. The hotel also features festive experiences like cookie decorating and a signature Riggsy bear for guests booking a holiday getaway.</p>
            
         </a>
       
@@ -636,6 +611,49 @@ From the moment I arrived on Sunday, the hospitality at Riggs DC was top notch. 
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

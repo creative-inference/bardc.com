@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -285,68 +286,55 @@ Executive dinners, celebratory events, high-end craft cocktails, and late-night 
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://dc.eater.com/dining-out-in-dc/160546/bourbon-steak-michael-mina-georgetown-corn-gummy-dc-cocktail-trends" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://fox5dc.com/video/1687598" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 24, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=fox5dc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>FOX 5 DC</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">It’s All About Realistic Corn Gummies in Cocktails at This D.C. Bar</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Bourbon Steak DC&#39;s new summer cocktail menu</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Lounge at Bourbon Steak in Georgetown features an imaginative summer cocktail program highlighted by the &#39;It’s A-Maiz-Ing&#39; drink, which uses a hyper-realistic, house-made corn gummy garnish. Head bartender Engi Alebachew also offers other creative pairings like a matcha-dusted rice paper garnish and a lemongrass Bee’s Knees served with real honeycomb.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Lounge at BOURBON STEAK in Washington, D.C. introduced a refreshed summer cocktail menu featuring innovative seasonal drinks. Engidawork Alebachew showcased the new beverage offerings, highlighting the venue&#39;s creative approach to mixology.</p>
            
         </a>
       
-        <a href="https://tastingtable.com/1720397/ina-garten-cheeseburger-georgetown-bourbon-steak-review" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://press.fourseasons.com/washington/hotel-news/2025/employees-only-bar-pop-up" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=tastingtable.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Tasting Table</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 29, 2024</span>
+              <img src="https://www.google.com/s2/favicons?domain=press.fourseasons.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Four Seasons Press Room</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">I Tried The Best Cheeseburger Ina Garten Ever Had And I Think She Needs To Eat A Few More</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Bourbon Steak DC to Host Bar Pop-Up with NYC’s Acclaimed Employees Only at Four Seasons Hotel Washington, DC</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bourbon Steak in Georgetown offers a specialized lunch menu featuring a Prime black Angus burger with red wine compote and a Wagyu double burger. Visitors seated at the bar can access a high-value burger deal that includes fries or a side salad, a house-made beverage, and an ice cream sandwich for dessert.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Lounge at BOURBON STEAK hosted an exclusive two-night cocktail pop-up featuring the acclaimed team from New York City’s iconic speakeasy, Employees Only. The event showcased a curated menu of signature NYC cocktails, such as the Manhattan and Besos Calientes, bringing a taste of New York’s world-class mixology to the Georgetown neighborhood.</p>
            
         </a>
       
-        <a href="https://chowhound.com/1703624/ina-garten-favorite-cheeseburger-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://press.fourseasons.com/washington/hotel-news/2025/bourbon-steak-wine-spectator-award" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=chowhound.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Chowhound</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 8, 2024</span>
+              <img src="https://www.google.com/s2/favicons?domain=press.fourseasons.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Four Seasons Press Room</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Ina Garten&#39;s Favorite Cheeseburger Is From An Iconic Washington DC Restaurant</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Bourbon Steak at Four Seasons Hotel Washington, DC Earns 2025 Wine Spectator Restaurant Award</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">BOURBON STEAK, located in Georgetown&#39;s Four Seasons, features a cheeseburger that celebrity chef Ina Garten recently named as her personal favorite. The restaurant offers two gourmet options: a Prime Steak Burger with aged white cheddar and red wine shallot compote, and a Wagyu Double Burger topped with a high-end secret sauce and sautéed onions.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bourbon Steak at Four Seasons Hotel Washington, DC has earned the 2025 Wine Spectator Best of Award of Excellence, recognizing its exceptional wine program and curated selection. The venue has maintained this prestigious distinction since 2009, highlighting a wine experience designed to be both approachable and exciting for guests.</p>
            
         </a>
       
-        <a href="https://wtop.com/business-finance/2023/11/its-giving-apres-ski-georgetowns-bourbon-steak-embraces-cooler-weather-with-mini-chalets" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://press.fourseasons.com/washington/hotel-news/2025/top-100-hotel-restaurants-in-the-us-bourbon-steak" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=wtop.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WTOP</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 28, 2023</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">It’s giving après-ski: Georgetown’s Bourbon Steak embraces cooler weather with mini chalets</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bourbon Steak at Georgetown’s Four Seasons Hotel offers an après-ski experience with its private &quot;Macallan Chalets&quot; located on the outdoor patio. These heated seasonal spaces accommodate groups of four to ten and feature exclusive whiskey-paired menus including lobster pot pie and tomahawk steaks.</p>
-           
-        </a>
-      
-        <a href="https://forbes.com/sites/katiechang/2020/10/04/bourbon-steak-at-four-seasons-hotel-washington-dc-welcomes-in-fall-with-surprising-new-changes" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=press.fourseasons.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Four Seasons Press Room</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=forbes.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Forbes</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 4, 2020</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Bourbon Steak At Four Seasons Hotel Washington, DC, Welcomes In Fall With A New General Manager And Menu Items</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Bourbon Steak at Four Seasons Hotel Washington, DC Named One of OpenTable’s Top 100 Hotel Restaurants in the US</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bourbon Steak at the Four Seasons Hotel Washington, DC, has introduced new seasonal menu items, including a Yemenite 38oz Porterhouse and craft cocktails like the mezcal-based Lost Treasure. The contemporary steakhouse also expanded its outdoor seating into a picturesque courtyard and appointed Jose Gonzalez as the new General Manager.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bourbon Steak at Four Seasons Hotel Washington, DC has been named one of OpenTable’s Top 100 Hotel Restaurants in the US for 2025. This recognition highlights the restaurant&#39;s modern American menu, expertly sourced steaks, and acclaimed wine program, cementing its status as a premier dining destination in the nation&#39;s capital.</p>
            
         </a>
       
@@ -626,6 +614,49 @@ Both...
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

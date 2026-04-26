@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -317,68 +318,16 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://georgetownvoice.com/2023/10/06/wingos-to-return-to-o-st-after-2018-fire-forced-them-to-flee-the-coop" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://fox5dc.com/video/891475" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=georgetownvoice.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Georgetown Voice</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 6, 2023</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Wingo’s to return to O Street after 2018 fire forced them to flee the coop</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Wingo’s Glover Park on Wisconsin Avenue operates as a full-service restaurant featuring sit-down dining, karaoke, and live music. Established following a fire at the brand&#39;s original Georgetown location, this venue offers a different atmosphere than the traditional carry-out model while serving their signature buffalo wings, burgers, and sides.</p>
-           
-        </a>
-      
-        <a href="https://streetsensemedia.org/article/come-on-in-and-eat-the-best-wings-in-the-district-wingos-has-been-a-dc-institution-for-20-years" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=fox5dc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>FOX 5 DC</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=streetsensemedia.org" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Street Sense Media</span>
-              <span style="margin-left:auto; text-transform:none;">Aug 7, 2023</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Come on in and eat the best wings in the District! Wingo’s has been a DC institution for 20 years</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">TAKEOUT TUESDAY: Grab some wings at Wingos</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Wingo’s Glover Park is a long-standing D.C. institution known for its extensive menu of 24 wing varieties, vegan options, and casual sports bar atmosphere. The two-story venue on Wisconsin Avenue features indoor dining, gaming, and community events, catering to a diverse crowd of students, locals, and sports fans.</p>
-           
-        </a>
-      
-        <a href="https://georgetowner.com/articles/2018/06/26/2-alarm-fire-wingos-shuts-wisconsin-o" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=georgetowner.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Georgetowner</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 11, 2021</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">2-Alarm Fire at Wingo’s Shuts Down Wisconsin &amp; O</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Wingo&#39;s Glover Park was established as a new location for the local eatery following a major fire that destroyed its original Georgetown storefront in 2018. The restaurant expanded into the neighborhood by taking over the space previously occupied by Mad Fox.</p>
-           
-        </a>
-      
-        <a href="https://hoodline.com/2018/09/wingo-s-adds-new-location-in-glover-park" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=hoodline.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Hoodline</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 23, 2020</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Wingo&#39;s adds new location in Glover Park</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Wingo&#39;s Glover Park offers an extensive menu of wings, burgers, and sandwiches, featuring 24 different sauces ranging from mild honey mustard to the fiery &#39;Nuclear.&#39; This location expands on the original Georgetown institution&#39;s concept by including a full bar with classic cocktails and 16 beers on tap.</p>
-           
-        </a>
-      
-        <a href="https://georgetowner.com/articles/2018/09/20/glover-park-welcomes-wingos" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=georgetowner.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Georgetowner</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 12, 2018</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Glover Park Welcomes a Wingo’s</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Wingo&#39;s Glover Park offers a casual, neighborhood pub atmosphere on Wisconsin Avenue NW, specializing in its famous chicken wings alongside comfort foods like corn dogs, burgers, and beignets. The spacious sports bar serves as an unpretentious local hangout with affordable pricing and a variety of draft beers.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Wingo&#39;s Glover Park offers a wide selection of chicken wings and classic bar food ideal for takeout. The local spot is highlighted as a go-to destination for fans looking to enjoy game-day favorites or satisfy everyday comfort food cravings at home.</p>
            
         </a>
       
@@ -656,6 +605,49 @@ We ordered a burger, wings, and a mix of fries and...
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

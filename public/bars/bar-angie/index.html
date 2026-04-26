@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -295,68 +296,42 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://dc.eater.com/openings/167092/anticipated-dc-restaurant-openings-spring-2026-preview" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://fox5dc.com/video/1683287" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Mar 18, 2026</span>
+              <img src="https://www.google.com/s2/favicons?domain=fox5dc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>FOX 5 DC</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Most Exciting D.C. Restaurant Openings to Look Forward to This Spring</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Liquid lunch: Bar Angie</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bar Angie is a year-old West End hot spot that is expanding with a new sister location, The Angie, set to open in Ballston in May 2026. The upcoming French-influenced bistro will mirror the D.C. original’s European style, offering signature dishes like lobster frites and roasted Dover sole in a large, indoor-outdoor space.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bar Angie provides a behind-the-scenes look at its unique atmosphere and cocktail offerings in Washington, D.C. Featured on FOX 5’s &quot;Liquid Lunch&quot; segment with Erin Como, the venue showcases its style and beverage program for the local community.</p>
            
         </a>
       
-        <a href="https://washingtonian.com/2026/01/14/16-hot-new-dining-spots-to-check-out-during-dc-winter-restaurant-week" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://msn.com/en-us/travel/news/the-balos-team-wants-to-bring-new-york-energy-to-dc-with-bar-angie/ar-AA1CthJg?apiversion=v2&amp;domshim=1&amp;noservercache=1&amp;noservertelemetry=1&amp;batchservertelemetry=1&amp;renderwebcomponents=1&amp;wcseo=1" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 16, 2026</span>
+              <img src="https://www.google.com/s2/favicons?domain=msn.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>MSN</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">16 Hot New Dining Spots to Check Out During DC Winter Restaurant Week</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Balos Team Wants to Bring New York Energy to DC With Bar Angie</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bar Angie in the West End channels an upscale New York City bistro with Mediterranean and Western European influences. During DC Winter Restaurant Week, the restaurant offers $35 brunch and lunch prix fixes and a $65 dinner menu featuring signature dishes like lobster pasta, burrata pizzelle, and blue-crab rangoon.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bar Angie is a New York-inspired concept from the Balos team designed to bring a high-energy social atmosphere to Washington D.C. The venue aims to blend sophisticated dining with the vibrant nightlife characteristic of NYC&#39;s most popular establishments.</p>
            
         </a>
       
-        <a href="https://dc.eater.com/dining-out-in-dc/165720/dc-restaurants-tableside-service-dining-trend" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://citylifestyle.com/articles/bar-angie" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 16, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">These D.C. Dinners Come With Tableside Flair</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bar Angie features a theatrical tableside French dip service where servers artfully pour au jus in front of guests to create a memorable dining spectacle. This signature presentation is part of a larger trend of dining room showmanship at the Northwest D.C. restaurant designed to engage diners and social media audiences.</p>
-           
-        </a>
-      
-        <a href="https://dc.eater.com/dining-report/164864/bar-angie-west-end-review" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=citylifestyle.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>City Lifestyle</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 13, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">A Glam Destination Bar Lights Up the West End</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Bar Angie</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bar Angie brings a touch of New York glamour to D.C.&#39;s West End with a menu featuring wagyu pigs in a blanket, crab Rangoon, and a signature triple-patty smash burger. This chic, Sinatra-inspired hideaway offers a sophisticated atmosphere for cocktails and a daily &quot;happy meal&quot; deal that pairs martinis with high-end bar fare.</p>
-           
-        </a>
-      
-        <a href="https://theinfatuation.com/washington-dc/reviews/bar-angie" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=theinfatuation.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Infatuation</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 31, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Bar Angie - Review - West End - Washington DC</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bar Angie brings a glammed-up, bistro-style atmosphere to DC’s West End, featuring live jazz, a spacious patio, and a design inspired by New York’s SoHo. While the venue is highly recommended for group outings and corporate gatherings, the French and Italian-inspired food and signature martinis receive mixed reviews compared to the upscale pricing.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bar Angie is a chic day-to-night bistro in Washington, D.C., that blends classic New York eatery vibes with European elegance. The venue features a diverse menu of hearty bistro favorites, an extensive martini selection, and live jazz music designed to evoke the atmosphere of modern Parisian clubs.</p>
            
         </a>
       
@@ -632,6 +607,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

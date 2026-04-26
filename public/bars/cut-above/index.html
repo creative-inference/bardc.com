@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -340,68 +341,68 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://wtop.com/food-restaurant/2026/01/from-spicy-to-boozy-15-hot-chocolates-you-need-to-try-in-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://washington.org/event/lodge-cut-above" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=wtop.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WTOP</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 31, 2026</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">15 spots to sip some of DC’s best hot chocolates</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">CUT Above, located in the penthouse level of the Rosewood Hotel, features a seasonal &quot;Hot Chocolate Ritual&quot; with decadent options like the Gingerbread Bliss and S’more the Merrier. These elevated drinks use Valrhona cocoa and offer optional spirit additions such as Ron Zacapa 23 or Laphroaig 10, served alongside themed treats like graham-cracker cookies and toasted marshmallows.</p>
-           
-        </a>
-      
-        <a href="https://modernluxury.com/new-years-eve-events-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=washington.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>visit Washington DC</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=modernluxury.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Modern Luxury</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 5, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">New Year&#39;s Eve Celebrations: Dine, Dance, and Celebrate 2025</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">CUT Above by Wolfgang Puck at the Rosewood Hotel is hosting an after-dinner New Year’s Eve dance party featuring unlimited Champagne, a seafood tower, and a live DJ. Guests can enjoy housemade churros and panoramic views of the Capitol from the rooftop lounge as they ring in the new year.</p>
-           
-        </a>
-      
-        <a href="https://georgetowndc.com/event/the-lodge-at-cut-above/2024-12-22" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=georgetowndc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Georgetown DC</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 18, 2024</span>
            </div>
            <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Lodge at CUT Above</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">CUT Above at Rosewood Washington, D.C. transforms into &quot;The Lodge at CUT Above,&quot; a seasonal rooftop hideaway featuring festive décor by Jarrod Design and panoramic city views. The winter-themed experience offers a curated menu of holiday-inspired cocktails and gourmet snacks, including braised short rib grilled cheese and house-made bratwurst.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">CUT Above at the Rosewood hotel in Georgetown presents &quot;The Lodge,&quot; a festive, ski-inspired rooftop pop-up featuring seasonal cocktails and light bites. The immersive space includes a red ski-lift chair for photo opportunities and offers panoramic views of the Washington Monument and Kennedy Center.</p>
            
         </a>
       
-        <a href="https://georgetowndc.com/event/the-lodge-at-cut-above/2024-12-17" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://usatoday.com/story/travel/2025/05/27/washington-dc-rooftop-bars/82273711007" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=georgetowndc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Georgetown DC</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 18, 2024</span>
+              <img src="https://www.google.com/s2/favicons?domain=usatoday.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>USA Today</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Lodge at CUT Above</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Raise a glass at D.C.&#39;s hottest rooftop bars</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">CUT Above at Rosewood Washington DC transforms into &#39;The Lodge&#39; during the winter season, offering a cozy rooftop atmosphere with holiday decor, fur blankets, and a red ski-lift photo op. The venue features a seasonal menu including braised short rib grilled cheese and festive drinks like the tequila-based Winter Mule.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">CUT Above offers an elevated rooftop experience at the Rosewood Washington D.C., featuring a culinary program by Wolfgang Puck. Guests can enjoy artistic cocktails and refined bar bites while taking in enchanting views of Georgetown, the Potomac River, and the Kennedy Center.</p>
            
         </a>
       
-        <a href="https://hotelsmag.com/news/rosewood-d-c-s-new-spaces-are-a-cut-above" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://washington.org/event/new-years-eve-dance-party" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=hotelsmag.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>HOTELSMag.com</span>
-              <span style="margin-left:auto; text-transform:none;">Aug 4, 2021</span>
+              <img src="https://www.google.com/s2/favicons?domain=washington.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>visit Washington DC</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Rosewood D.C.’s new spaces are a Cut Above</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">New Year&#39;s Eve Dance Party</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">CUT Above is a rooftop bar and lounge space situated atop the Rosewood Washington, D.C. overlooking the Georgetown neighborhood. Part of a property-wide renovation, the venue offers panoramic city views alongside a sophisticated atmosphere designed to complement the hotel&#39;s signature restaurant, CUT D.C.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">CUT Above hosts an elevated New Year&#39;s Eve dance party featuring sweeping views of the Washington Monument and Kennedy Center. Guests can ring in 2026 with unlimited champagne alongside a selection of seafood towers, charcuterie, and house-made churros.</p>
+           
+        </a>
+      
+        <a href="https://washington.org/event/nightstand-tea-cut-above" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=washington.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>visit Washington DC</span>
+              
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Nightstand Tea at CUT Above</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">CUT Above offers an iconic rooftop Tea Service featuring a menu of savory and sweet items crafted by Executive Pastry Chef Ligia Barros. Guests can enjoy sweeping views of the capital alongside signature cocktails or featured champagnes during this special weekend event.</p>
+           
+        </a>
+      
+        <a href="https://luxurytravelmagazine.com/news-articles/cherry-blossom-package-tea-at-rosewood-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=luxurytravelmagazine.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Luxury Travel Magazine</span>
+              
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Cherry Blossom Package &amp; Tea at Rosewood Washington, D.C.</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">CUT Above offers a specialty cocktail experience as part of the Rosewood Washington, D.C.’s seasonal Cherry Blossom Package in Georgetown. Guests can enjoy the rooftop concept alongside other premium amenities, including a multi-course meal at CUT by Wolfgang Puck and a year-round afternoon tea service.</p>
            
         </a>
       
@@ -681,6 +682,49 @@ We took desserts and it was so good ! We had the...
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

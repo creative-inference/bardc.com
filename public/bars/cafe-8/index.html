@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -293,58 +294,6 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://wjla.com/news/local/washington-dc-southeast-cafe-brawl-fight-metropolitan-police-department-4-people-arrested-8th-street-capitol-hill-violent-crimes-investigations-bookings-charges-injured-victims" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=wjla.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WJLA</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 18, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">4 arrested after assault involving workers breaks out at Southeast DC café</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Cafe 8 was the site of a violent incident in October 2025 that led to the arrest of four individuals on charges of assault and making threats. The confrontation began after a vehicle nearly struck pedestrians behind the venue, resulting in a physical altercation involving several victims in the 500 block of 8th Street Southeast.</p>
-           
-        </a>
-      
-        <a href="https://dc.eater.com/daily-restaurant-news/163819/jose-andres-marion-barry-market-cafe-anacostia-dc-openings" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 25, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">A José Andrés-Backed Cafe Named for Marion Barry Opens in Ward 8</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Marion Barry Avenue Market is a food justice project in Anacostia that features a fast-casual cafe serving soul food for breakfast, lunch, and dinner. Backed by chef José Andrés’s Longer Tables Fund, the venue offers communal indoor seating, a garden patio, and a market providing locally grown produce at sliding-scale prices.</p>
-           
-        </a>
-      
-        <a href="https://secretdc.com/cafe-8-washington-dc-age-restrictions" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=secretdc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Secret DC</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 18, 2024</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">This D.C. Bar’s Answer To Noise After 9pm? No One Under 30 Is Allowed In</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Cafe 8, a restaurant and hookah bar in Capitol Hill, has implemented a policy banning patrons under the age of 30 after 8:30 pm to mitigate late-night noise issues in its residential neighborhood. This decision has sparked significant social media controversy and raised legal questions regarding potential violations of the D.C. Human Rights Act&#39;s protections against age discrimination.</p>
-           
-        </a>
-      
-        <a href="https://washingtonpost.com/food/2024/12/17/dc-restaurants-bans-young-patrons" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=washingtonpost.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Washington Post</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 18, 2024</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">A D.C. cafe is banning patrons under 30. Is it legal?</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Café 8, a Mediterranean restaurant and hookah bar on Capitol Hill, implemented a policy restricting evening entry to patrons aged 30 and older. The establishment introduced the age minimum to address noise concerns and maintain a more controlled environment for the surrounding residential neighborhood.</p>
-           
-        </a>
-      
         <a href="https://redlakenationnews.com/story/2024/12/18/news/a-dc-cafe-is-banning-patrons-under-30-is-it-legal/127798.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
@@ -355,6 +304,58 @@
            <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">A D.C. cafe is banning patrons under 30. Is it legal?</h4>
            
              <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Café 8, a Mediterranean restaurant and hookah bar on Capitol Hill, has implemented a policy restricting entry to patrons aged 30 and older after 8:30 p.m. The venue introduced this measure to address noise concerns and rowdy behavior from younger crowds in the surrounding residential neighborhood.</p>
+           
+        </a>
+      
+        <a href="https://bizjournals.com/baltimore/news/2025/03/25/8-things-to-know-krazy-sweet-cafe-closes-mt-vernon.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=bizjournals.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The Business Journals</span>
+              
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">8 things to know: Dessert cafe closes in Mt. Vernon</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Cafe 8 has closed its dessert cafe location in the Mt. Vernon neighborhood of Washington, D.C. The closure marks the end of operations for the establishment at this site.</p>
+           
+        </a>
+      
+        <a href="https://hillrag.com/2024/12/16/cafe-8-ups-minimum-age-to-30-at-night" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=hillrag.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>HillRag</span>
+              
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Café 8 Ups Minimum Age to 30 at Night</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Café 8 has implemented a policy requiring patrons to be at least 30 years old for entry after 8:30 p.m. to foster a more mature atmosphere. The Barracks Row bistro and hookah lounge is also expanding its seated capacity to accommodate 180 guests as it transitions toward a more dining-focused establishment.</p>
+           
+        </a>
+      
+        <a href="https://travelnoire.com/cafe-8-dc-under-30-policy" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=travelnoire.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Travel Noire</span>
+              
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">D.C. Lounge Bans Patrons Under 30 To &#39;Ensure A Safe And Enjoyable Environment&#39;</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Cafe 8, a Mediterranean restaurant and hookah lounge in Washington D.C.’s Barracks Row, has implemented a policy requiring patrons to be at least 30 years old for entry after 8:30 p.m. The establishment adopted this age restriction to prioritize guest safety and maintain a more controlled environment following a series of neighborhood security concerns.</p>
+           
+        </a>
+      
+        <a href="https://dcnewsnow.com/news/local-news/washington-dc/dc-police-arrest-4-accused-of-assaulting-workers-at-southeast-cafe" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              
+              <img src="https://www.google.com/s2/favicons?domain=dcnewsnow.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>DC News Now</span>
+              
+           </div>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">DC police arrest 4 accused of assaulting workers at Southeast cafe</h4>
+           
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Cafe 8 was the site of a violent incident in which four individuals were arrested for allegedly assaulting staff members at the Southeast Washington D.C. location. Local law enforcement responded to the scene following reports of the physical confrontation at the Mediterranean eatery.</p>
            
         </a>
       
@@ -633,6 +634,49 @@ They charged me 45 and service is very I asked two person to change my coal stil
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

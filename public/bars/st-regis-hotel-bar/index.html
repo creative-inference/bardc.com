@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -288,78 +289,6 @@ Sophisticated pre-dinner drinks, romantic dates, festive holiday outings, high-e
   <!-- End Happy Hour Details Section -->
 
   <!-- [NEW] News Section -->
-  
-  <div class="news-section" style="margin-top:2rem; margin-bottom:2rem;">
-    <h3>📰 In the News</h3>
-    <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
-      
-        <a href="https://hotel-online.com/news/the-st-regis-washington-d-c-welcomes-jason-galbao-as-executive-chef" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=hotel-online.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Hotel Online</span>
-              <span style="margin-left:auto; text-transform:none;">May 15, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The St. Regis Washington, D.C. Welcomes Jason Galbao as Executive Chef</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The St. Regis Bar in Washington, D.C. is under the leadership of Executive Chef Jason Galbao, who was appointed in May 2025 to oversee the hotel’s culinary program. Chef Galbao brings experience from Michelin-starred kitchens to elevate the bar&#39;s offerings with bold flavors and a vision rooted in both Spanish gastronomy and modern techniques.</p>
-           
-        </a>
-      
-        <a href="https://hotel-online.com/news/the-st-regis-washington-d-c-appoints-alaina-sweeney-as-general-manager" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=hotel-online.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Hotel Online</span>
-              <span style="margin-left:auto; text-transform:none;">Apr 21, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The St. Regis Washington, D.C. Appoints Alaina Sweeney as General Manager</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">St. Regis Hotel Bar is managed by Alaina Sweeney, who was appointed General Manager of The St. Regis Washington, D.C. in April 2025. Sweeney, the youngest GM in the brand&#39;s portfolio, oversees operations at the historic property as it celebrates its 100th anniversary in 2026.</p>
-           
-        </a>
-      
-        <a href="https://alexandrialivingmagazine.com/food-and-dining/the-st-regis-offers-cherry-blossom-experiences" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=alexandrialivingmagazine.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Alexandria Living Magazine</span>
-              <span style="margin-left:auto; text-transform:none;">Mar 7, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The St. Regis Offers Cherry Blossom Experiences</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">St. Regis Hotel Bar in Washington, D.C. offers a specialty &quot;When in Tokyo&quot; cocktail and an interactive Cherry Blossom Dessert Wheel featuring a gold Ferris wheel tower of seasonal treats. These Japanese-inspired offerings are part of the hotel&#39;s annual spring celebrations, which also include a themed afternoon tea service.</p>
-           
-        </a>
-      
-        <a href="https://life.marriott.com/blog/jane-food-beverage" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=life.marriott.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Life at Marriott Blog</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 18, 2024</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">For This Acclaimed Bartender, It’s All About Going Above &amp; Beyond for Her Guests</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The St. Regis Washington, DC features an ornately decorated bar known for its swanky atmosphere, complete with red and gold velvet chairs, gilded fixtures, and a modern fireplace. Head Bartender Jane T. offers bespoke service and a signature cocktail menu that often incorporates Asian-inspired ingredients and seasonal flavors.</p>
-           
-        </a>
-      
-        <a href="https://townandcountrymag.com/leisure/travel-guide/a61475368/best-room-at-st-regis-washington-dc-hotel" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=townandcountrymag.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Town &amp; Country Magazine</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 2, 2024</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Best Room At... The St. Regis Washington D.C. - Review</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">St. Regis Hotel Bar in Washington D.C. offers a glamorous setting where heads of state and travelers gather for signature cocktails just steps from the White House. The bar features the &#39;Capital Mary,&#39; a unique local take on the brand&#39;s iconic Bloody Mary, and hosts a nightly champagne sabrage ritual to celebrate the transition from afternoon to evening.</p>
-           
-        </a>
-      
-    </div>
-  </div>
   
   <!-- End News Section -->
   
@@ -634,6 +563,49 @@ Sophisticated pre-dinner drinks, romantic dates, festive holiday outings, high-e
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

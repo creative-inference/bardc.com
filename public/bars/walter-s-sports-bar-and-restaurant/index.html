@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -293,68 +294,29 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://dc.eater.com/maps/best-sports-bars-dc-dmv" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://washington.org/visit-dc/best-sports-bars-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Aug 12, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=washington.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>visit Washington DC</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">D.C.’s Best Sports Bars</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">15+ Great Sports Bars &amp; Restaurants in Washington, DC</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Walter’s Sports Bar and Restaurant is recognized as one of D.C.’s essential sports bars, ideally situated across from Nationals Park in the Navy Yard. The venue features 24 self-pour beer stations and massive 4K TV displays, drawing neighborhood fans for game-day favorites like green tea shooters, subs, and buckets of beer.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Walter’s Sports Bar in Navy Yard features 24 self-pour taps and 30 high-definition TVs for a comprehensive sports-watching experience. Named after Washington Senators pitcher Walter Perry Johnson, the venue has been a neighborhood staple for nearly 40 years.</p>
            
         </a>
       
-        <a href="https://wjla.com/news/local/washington-nationals-park-mlb-baseball-season-food-gatsby-restaurant-silver-diner-mission_chickenwhiskey-basebowl-walters-sports-bar-and-restaurant-jackie-all-purpose-pizza-andys-pizza-el-bebe-tacostequila" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://theufl.com/news/dc-defenders-announce-bar-network-partners" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=wjla.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WJLA</span>
-              <span style="margin-left:auto; text-transform:none;">Mar 18, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">LIST | Here&#39;s where you can eat near Nationals Park as baseball season returns</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Walter’s Sports Bar and Restaurant is a popular Navy Yard destination for sports fans, named after legendary Washington Senators pitcher Walter Perry Johnson. The menu features a variety of American staples including smash burgers, wings, and chicken sandwiches. The venue also offers a weekday happy hour from 4 to 7 p.m. with discounts on select draft beers, house wines, and rail cocktails.</p>
-           
-        </a>
-      
-        <a href="https://insidehook.com/drinks/dc-sports-bars" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=theufl.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The UFL</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=insidehook.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>InsideHook</span>
-              <span style="margin-left:auto; text-transform:none;">Mar 17, 2023</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">DC’s 9 Best Neighborhood Sports Bars</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Defenders Announce Bar Network Partners</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Walter’s Sports Bar and Restaurant is a premier destination north of Nationals Park in D.C., known for screening a wide range of sports including MLB, MLS, NBA, NHL, and UFC. The venue features ample seating, an 11 a.m. daily opening time, and a weekday happy hour from 4 p.m. to 7 p.m.</p>
-           
-        </a>
-      
-        <a href="https://thrillist.com/drink/washington-dc/best-sports-bars-in-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=thrillist.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Thrillist</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 6, 2023</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">12 of the Absolute Best Sports Bars in DC</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Walter’s Sports Bar and Restaurant in the Navy Yard features over 30 TVs, a massive 220-inch 4K screen, and a unique self-pour beer wall. The venue offers classic bar fare like wings and burgers alongside signature cocktails and bottomless drink packages for weekend afternoon games.</p>
-           
-        </a>
-      
-        <a href="https://washingtoncitypaper.com/article/182548/walters-is-back-from-the-dead-hopes-to-open-in-navy-yard-for-baseball-season" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=washingtoncitypaper.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washington City Paper</span>
-              <span style="margin-left:auto; text-transform:none;">Aug 28, 2020</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Walters Is Back From the Dead, Hopes to Open in Navy Yard for Baseball Season</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Walter’s Sports Bar and Restaurant is a spacious 6,000-square-foot venue in Navy Yard that features a focus on American fare and local sports. The bar offers a unique 24-tap, self-pour beer system allowing guests to pay by the ounce while receiving assistance from knowledgeable staff. Located near Nationals Park and Audi Field, the establishment serves as a neighborhood hub for fans looking to watch games on numerous televisions.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Walter’s Sports Bar and Restaurant is an official partner in the DC Defenders Bar Network, serving as a primary gathering spot for fans in the Navy Yard. The venue hosts official watch parties for away games and features special team events, including player meet-and-greets and merchandise giveaways.</p>
            
         </a>
       
@@ -634,6 +596,49 @@ It’s great for a family dinner too.
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

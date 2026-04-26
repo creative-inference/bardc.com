@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -357,68 +358,16 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://destinationlesstravel.com/georgetown-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://thegeorgetowndish.com/articles/join-crowd-georgetown-piano-bar" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=destinationlesstravel.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Destinationless Travel</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 1, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">15 BEST Things to do in Georgetown, Washington, DC</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Georgetown Piano Bar offers live piano music every night from Wednesday to Sunday, opening at 5 p.m. The venue is highlighted for its dueling piano performances on Friday and Saturday nights after 9 p.m., providing a lively entertainment option in the heart of the neighborhood.</p>
-           
-        </a>
-      
-        <a href="https://washingtoncitypaper.com/article/334773/no-food-just-booze-and-music-at-georgetown-piano-bar" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=thegeorgetowndish.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The Georgetown Dish</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtoncitypaper.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washington City Paper</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 19, 2020</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">No Food, Just Booze and Music at Georgetown Piano Bar</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Join the Crowd at Georgetown Piano Bar</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Georgetown Piano Bar is a dedicated singalong venue in Washington D.C. that centers its experience around live nightly performances and a signature red piano. The establishment focuses on a themed cocktail menu named after famous lounge singers and allows guests to bring in their own food or order delivery from nearby restaurants.</p>
-           
-        </a>
-      
-        <a href="https://northernvirginiamag.com/culture/culture-features/2018/01/12/georgetown-piano-bars-jay-angoff-on-politics-and-music" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=northernvirginiamag.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Northern Virginia Magazine</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 6, 2018</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Georgetown Piano Bar’s Jay Angoff on politics and music</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Georgetown Piano Bar features regular Saturday night performances by Jay Angoff, a prominent litigator and former health care official who brings a unique blend of politics and music to the stage. The venue offers a high-energy dueling pianos atmosphere where a diverse crowd gathers for a mix of classic singalongs and unexpected modern covers.</p>
-           
-        </a>
-      
-        <a href="https://thehoya.com/city/classic-underclassmen-mistakes-at-bars" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=thehoya.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Hoya</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 11, 2017</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Classic Underclassmen Mistakes at Bars</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Georgetown Piano Bar is a central fixture of the local student nightlife scene, famously hosting a popular &quot;Jersey Night&quot; every Wednesday. The venue offers a lively atmosphere for both underclassmen and seniors, though patrons are advised to manage their bar tabs wisely and ensure they have valid identification.</p>
-           
-        </a>
-      
-        <a href="https://georgetowner.com/articles/2014/09/25/new-piano-man-georgetown" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=georgetowner.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Georgetowner</span>
-              <span style="margin-left:auto; text-transform:none;">Jun 1, 2017</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The New Piano Man in Georgetown</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Georgetown Piano Bar features a signature bright red piano and a warm, wood-toned interior designed to foster a communal singing environment. Located on M Street in the former Modern dance club space, the venue offers live music where patrons are encouraged to engage with performers and participate in classic sing-alongs.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Georgetown Piano Bar offers nightly live entertainment in Washington D.C., featuring an interactive sing-along atmosphere centered around a signature red piano. The venue showcases talented pianists like Hunter Lang and Spencer Bates, providing a lively space for guests to gather, perform solo, and enjoy music with no cover charge.</p>
            
         </a>
       
@@ -701,6 +650,49 @@ Love music... guy playing piano was friendly...
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -293,68 +294,16 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://blogs.cisco.com/news/cisco-growth-in-washington-unveiling-the-dc-cisco-showcase" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://eventsdc.com/news/legends-and-legacy-celebration-womens-sports-returns-wharf" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=blogs.cisco.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Cisco Blogs</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 19, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Cisco Growth in Washington: Unveiling the DC Cisco Showcase</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Cisco has unveiled its new DC Showcase at 1000 Maine at The Wharf, more than doubling its office footprint in the District. This future-proofed workplace serves as a hub for customers and partners to experience Cisco&#39;s latest AI-integrated collaboration, security, and networking technologies firsthand.</p>
-           
-        </a>
-      
-        <a href="https://chesapeakebaymagazine.com/dc-surprise-alligator-caught-in-washington-channel-at-the-wharf" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=eventsdc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Events DC</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=chesapeakebaymagazine.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Chesapeake Bay Magazine</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 24, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">DC Surprise: Alligator Caught in Washington Channel at the Wharf</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Legends &amp; Legacy: A Celebration of Women’s Sports Returns to The Wharf</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Wharf DC became the site of an unusual wildlife encounter when a houseboat resident captured a small alligator in the Washington Channel. Metropolitan Police and Animal Control responded to the scene, safely transporting the reptile to an animal sanctuary.</p>
-           
-        </a>
-      
-        <a href="https://washingtonspirit.com/blog/2025/09/23/washington-spirit-and-hilton-washington-dc-national-mall-the-wharf-announce-partnership" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=washingtonspirit.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washington Spirit</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 23, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Washington Spirit and Hilton Washington DC National Mall The Wharf Announce Partnership</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Hilton Washington DC National Mall The Wharf has entered a partnership with the Washington Spirit to become the professional soccer team&#39;s preferred hotel. The collaboration provides fans with discounted room rates, matchday guide integrations, and special &#39;Ticket and a Bed&#39; VIP sweepstakes for home games at Audi Field.</p>
-           
-        </a>
-      
-        <a href="https://nbcwashington.com/news/local/alligator-removed-washington-channel-wharf/3990791" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=nbcwashington.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>NBC4 Washington</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 19, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">See you later: Alligator removed from Washington Channel at The Wharf</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Wharf DC was the site of an unusual wildlife encounter when a juvenile alligator was discovered and captured in the waters of the Washington Channel. The reptile, likely a discarded pet, was safely removed by a local resident and transported to an animal sanctuary.</p>
-           
-        </a>
-      
-        <a href="https://fox5dc.com/news/youth-curfew-wharf-dc-announced-memorial-day-weekend" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=fox5dc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>FOX 5 DC</span>
-              <span style="margin-left:auto; text-transform:none;">May 24, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Youth curfew at the Wharf in DC announced for Memorial Day Weekend</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Wharf DC implemented a 5 p.m. to 5 a.m. youth curfew for individuals under 18 during Memorial Day Weekend 2025 following reports of disturbances and robberies in the area. The measure was accompanied by city-sponsored alternative activities for teens at the Banneker Recreation Center, including music, food, and games.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Wharf DC hosted the second annual &quot;Legends &amp; Legacy: A Celebration of Women’s Sports,&quot; an empowering event featuring panel discussions with sports legends and WNBA stars like Kiki Iriafen and Sonia Citron. Hosted by Jemele Hill, the celebration included interactive golf simulators, family-friendly games, and a U.S. Open Women’s Final watch party.</p>
            
         </a>
       
@@ -630,6 +579,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -379,68 +380,42 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://wjla.com/good-morning-washington/el-techo-celebrates-national-tequila-day-with-new-specials-bar-drinks-606-florida-ave-nw-owner-louie-hankins-and-bar-manager-gabe-torres" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://cntraveler.com/bars/washington-dc/el-techo" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=wjla.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WJLA</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 24, 2024</span>
+              <img src="https://www.google.com/s2/favicons?domain=cntraveler.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Condé Nast Traveler</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">El Techo celebrates National Tequila Day with new specials</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">El Techo — Bar Review</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">El Techo owner Louie Hankins and bar manager Gabe Torres showcase the restaurant&#39;s extensive tequila selection and signature cocktails. The Washington, D.C. venue introduced special drink deals, including $7 margaritas, to celebrate its seventh anniversary.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">El Techo offers a Tulum-inspired atmosphere in Washington D.C., featuring a retractable roof, lush greenery, and high-energy club music. The venue specializes in house-made tacos and a variety of margaritas, including signature eight-serving skull bowls and passion fruit options. It serves as a popular destination for young crowds and celebratory groups looking to kick off a night out near U Street.</p>
            
         </a>
       
-        <a href="https://washingtonian.com/2020/09/15/a-pop-up-celebrating-standout-thai-and-japanese-chefs-is-coming-to-el-techo" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://tripsavvy.com/great-rooftop-bars-in-washington-dc-4164372" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 15, 2020</span>
+              <img src="https://www.google.com/s2/favicons?domain=tripsavvy.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>TripSavvy</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">A Pop-Up Celebrating Standout Thai and Japanese Chefs Is Coming to El Techo</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">15 Great Rooftop Bars in Washington, DC</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">El Techo, a rooftop restaurant in D.C.&#39;s Shaw neighborhood, hosted a collaborative six-course pop-up dinner featuring chefs from Esaan, Otabe, and Yume. The event highlighted a fusion of Thai and Japanese culinary traditions, paired with specialty cocktails like a lemongrass and cilantro mezcal drink.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">El Techo is a 1,100-square-foot rooftop deck in Washington, D.C., located above Rito Loco and designed with an &quot;adult treehouse&quot; theme. The venue features vibrant graffiti murals and a rooftop herb garden, offering a menu that includes fried avocado tacos, seafood paella, and spicy mezcal margaritas. It serves as a lively destination for open-air dining and DJ-hosted events.</p>
            
         </a>
       
-        <a href="https://popville.com/2019/10/el-techo-wintertime-enclosed-rooftop-new-menus" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://hillrag.com/2025/10/14/spotlight-el-techo" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=popville.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>PoPville</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 29, 2019</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">“El Techo is Bringing the Heat All Year Long with Their Wintertime-Enclosed Rooftop and New Menus Launching 10/30”</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">El Techo transforms its Shaw rooftop into &#39;Selva,&#39; a wintertime rainforest-inspired getaway featuring a retractable ceiling and lush hanging wisteria. The seasonal update introduces a new menu highlighted by smoked brisket tacos, festive hot cocktails, and a signature spiked Nutella-style warm drink.</p>
-           
-        </a>
-      
-        <a href="https://dc.eater.com/2018/12/13/18139729/el-techo-yoga" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=hillrag.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>HillRag</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 13, 2018</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Shaw Bar Reinvents Itself As a Latin Jungle Club With Daytime Yoga</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Spotlight: El Techo</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">El Techo has rebranded for the winter season as Selva, a Latin jungle-themed club featuring weatherproof siding and decorations sourced from Mexico. The venue transitions from a rooftop bar at night to a daytime yoga studio offering cold-press juices, aiming to capture a wellness-oriented Tulum vibe.</p>
-           
-        </a>
-      
-        <a href="https://dc.eater.com/2017/8/25/16202096/rito-loco-el-techo-rooftop-shaw-opening" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Aug 25, 2017</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Shaw Burrito Shop Outfits New Rooftop Bar With Stiff Drinks and Lots of Greenery</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">El Techo is a lush, tropical-themed rooftop bar in Shaw that serves as an extension of the popular burrito shop Rito Loco. The venue features a vibrant atmosphere filled with greenery and cacti, offering a seafood-heavy menu with lobster tacos and ceviche alongside a selection of mezcal-based cocktails and margaritas.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">El Techo is a tropical &quot;treehouse&quot; bar and restaurant in DC’s Shaw neighborhood that offers an Ibiza-inspired atmosphere with hanging plants and high ceilings. The menu features affordable, house-made Mexican favorites like specialty tacos and signature cocktails, including guava Collins and spicy mezcalitas. Originally a lively music venue, it has evolved into a family-friendly destination while maintaining its airy, island-style vibe.</p>
            
         </a>
       
@@ -720,6 +695,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

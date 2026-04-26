@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -293,68 +294,29 @@ Waterfront dates, girls' nights, lively weekend brunches, and happy hours with a
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://whatnow.com/washington-dc/restaurants/bartaco-preparing-to-greet-bethesda" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://washington.org/find-dc-listings/bartaco-wharf" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=whatnow.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WhatNow</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 24, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=washington.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>visit Washington DC</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Bartaco Preparing to Greet Bethesda</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">bartaco - The Wharf</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">bartaco is preparing to open a new location in North Bethesda’s Pike &amp; Rose development, taking over the space formerly occupied by Nada at 11886 Grand Park Avenue. The restaurant will offer its signature &#39;upscale street tacos&#39; alongside a coastal-inspired menu featuring rice bowls, poke, and roasted duck tacos.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">bartaco at The Wharf offers a coastal-inspired dining experience featuring fresh, upscale street food like glazed pork belly tacos and duck birria. This community-focused restaurant pairs its eclectic menu with specialty cocktails and a relaxed, upbeat atmosphere designed to feel like an island escape.</p>
            
         </a>
       
-        <a href="https://whatnow.com/washington-dc/restaurants/bartaco-readying-for-bethesda-debut" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://hillrag.com/2023/06/08/ukrainian-restaurant-ruta-shines-near-eastern-market" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=whatnow.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WhatNow</span>
-              <span style="margin-left:auto; text-transform:none;">Mar 27, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Bartaco Readying for Bethesda Debut</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bartaco is opening a new location at the Pike &amp; Rose development in North Bethesda, taking over the space previously occupied by Nada. This expansion marks the fifth DMV-area outpost for the chain, joining existing locations at The Wharf and Mount Vernon in Washington, D.C.</p>
-           
-        </a>
-      
-        <a href="https://arlnow.com/2025/03/25/bartaco-closes-after-four-years-at-the-ballston-quarter" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=hillrag.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>HillRag</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=arlnow.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>ARLnow</span>
-              <span style="margin-left:auto; text-transform:none;">Mar 25, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Bartaco closes after four years at Ballston Quarter</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Ukrainian Restaurant Ruta Shines Near Eastern Market</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">bartaco has permanently closed its location at Ballston Quarter in Arlington after four years of operation. While this specific outpost is shuttered, the restaurant&#39;s other nearby locations in Washington D.C., Reston, and the Mosaic District remain open.</p>
-           
-        </a>
-      
-        <a href="https://dc.eater.com/2023/1/25/23571612/new-dc-restaurant-openings-2023" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 26, 2023</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Bartaco Adds a Waterfront Location at the Wharf — And More Openings</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">bartaco has opened a waterfront location at The Wharf in Southwest D.C., featuring a 40-seat bar overlooking the Potomac River and a year-round patio with private cabanas. The menu highlights beach-inspired Latin street food such as duck birria and Baja fish tacos, complemented by fresh-squeezed cocktails and local craft beers.</p>
-           
-        </a>
-      
-        <a href="https://popville.com/2022/10/about-last-night-wharf-fireworks" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=popville.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>PoPville</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 13, 2022</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">About Last Night – Five Year Wharf Anniversary (Check out all the restaurants coming soon)</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">bartaco at The Wharf offers a curated menu featuring unique tacos, rice bowls, and margaritas. Located at 645 Wharf Street, this venue represents the brand&#39;s fourth location in the DMV region.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">bartaco at the District Wharf offers a variety of flavorful small tacos, including fried oyster and seared chorizo, alongside standout dishes like spicy ceviche and key lime pie jars. The restaurant provides an outstanding Latino dining experience with prompt service and reasonable prices in a lively, attractive atmosphere.</p>
            
         </a>
       
@@ -632,6 +594,49 @@ From the moment I stepped in, I was swept up in their...
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

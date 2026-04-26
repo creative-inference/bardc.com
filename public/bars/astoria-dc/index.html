@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -307,55 +308,42 @@
            
         </a>
       
-        <a href="https://axios.com/local/washington-dc/2026/03/19/jose-andres-bazaar-meat-dc-opening" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://bizjournals.com/washington/news/2026/01/28/old-post-office-trump-administration-gsa.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=axios.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Axios</span>
-              <span style="margin-left:auto; text-transform:none;">Mar 19, 2026</span>
+              <img src="https://www.google.com/s2/favicons?domain=bizjournals.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The Business Journals</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">José Andrés&#39; maximalist, mega bro-tein steakhouse opens in old Trump Hotel</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">GSA prepares to sell Old Post Office to leaseholder</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Bazaar Meat by José Andrés has opened inside the Waldorf Astoria DC, occupying the marbled lobby of the historic Old Post Office. The maximalist steakhouse features a Japanese Wagyu program, raw bars for beef and seafood, and signature &#39;Freezer Martinis&#39; in a high-energy, &#39;see-and-be-seen&#39; environment.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Waldorf Astoria Washington DC is the current occupant of the historic Old Post Office building, which the GSA is preparing to sell to the property&#39;s leaseholder. This transaction marks a significant ownership transition for the landmark Pennsylvania Avenue site.</p>
            
         </a>
       
-        <a href="https://cassiuslife.com/1391787/experience-cherry-blossom-season-at-the-waldorf-astoria-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://costar.com/article/15938665/5-things-to-know-for-date" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=cassiuslife.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Cassius Life</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 27, 2026</span>
+              <img src="https://www.google.com/s2/favicons?domain=costar.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>CoStar</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Experience Cherry Blossom Season At The Waldorf Astoria Washington DC</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">News | 5 things to know for Jan. 29</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Waldorf Astoria Washington DC is celebrating cherry blossom season through May 10, 2026, featuring themed floral decor and a specialized afternoon tea at Peacock Alley with savory and sweet cherry-inspired bites. The seasonal experience also includes curated hotel stay packages and a variety of themed spa rituals, such as the Sakura Body Treatment.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Waldorf Astoria Washington, D.C. is set to remain under Hilton management as the U.S. government moves to sell the historic Old Post Office building that houses the venue. Current lease holder BDT &amp; MSD Partners has first rights to purchase the property, which the administration has deemed non-essential to the federal footprint.</p>
            
         </a>
       
-        <a href="https://petergreenberg.com/2026/01/17/eye-on-travel-waldorf-astoria-in-washington-dc-january-17-2026" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://bisnow.com/washington-dc/news/capital-markets/feds-working-to-sell-old-post-office-building-132983" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=petergreenberg.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Peter Greenberg Travel Detective</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 17, 2026</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Eye on Travel — Waldorf Astoria in Washington, DC — January 17, 2026</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Waldorf Astoria in Washington, D.C. served as the broadcast location for Peter Greenberg’s Eye on Travel, featuring an in-depth conversation with Hilton CEO Chris Nassetta about hospitality service and the impact of AI. The program also includes insights from global travel leaders regarding airline cost predictions, international tourism trends, and recent storm recovery efforts.</p>
-           
-        </a>
-      
-        <a href="https://blog.resy.com/2025/01/washington-dc-regulars" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=bisnow.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Bisnow</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=blog.resy.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Resy | Right This Way</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 8, 2026</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The D.C. Area Restaurants Where We Want To Be Regulars — Resy | Right This Way</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Trump Administration In Talks To Sell Old Post Office Building</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Astoria DC is a sleek DuPont Circle hideaway specializing in fiery Sichuan cuisine paired with creative cocktails. The menu features expertly prepared classics like chili wontons, dan dan noodles, and mapo tofu, with vegan options available for heat seekers and flavor enthusiasts.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Waldorf Astoria Washington D.C., located in the historic Old Post Office building, is currently the subject of negotiations as the federal government seeks to sell the property to its leaseholder. The potential sale is part of an effort to reduce the government&#39;s real estate footprint following a 2024 foreclosure auction involving the hotel&#39;s previous lease rights.</p>
            
         </a>
       
@@ -638,6 +626,49 @@ I ordered from the vegan options ....
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

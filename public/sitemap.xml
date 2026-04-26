@@ -31,11 +31,6 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://bardc.com/events/2026-04-25/</loc>
-    <priority>0.8</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
     <loc>https://bardc.com/events/2026-04-26/</loc>
     <priority>0.8</priority>
     <changefreq>daily</changefreq>
@@ -62,6 +57,11 @@
   </url>
   <url>
     <loc>https://bardc.com/events/2026-05-01/</loc>
+    <priority>0.8</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://bardc.com/events/2026-05-02/</loc>
     <priority>0.8</priority>
     <changefreq>daily</changefreq>
   </url>
@@ -161,37 +161,7 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://bardc.com/categories/oyster-bars/</loc>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/taverns/</loc>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/romantic/</loc>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/sports-bars/</loc>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/speakeasies/</loc>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/happy-hour-spots/</loc>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/late-night/</loc>
+    <loc>https://bardc.com/categories/taproom/</loc>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
@@ -201,17 +171,7 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://bardc.com/categories/cocktail-bars/</loc>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/french/</loc>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/irish-pubs/</loc>
+    <loc>https://bardc.com/categories/dance-clubs/</loc>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
@@ -221,37 +181,7 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://bardc.com/categories/groups/</loc>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/brunch-spots/</loc>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/latin/</loc>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/live-music-venues/</loc>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/neighborhood-bars/</loc>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/taco-bars/</loc>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/event-spaces/</loc>
+    <loc>https://bardc.com/categories/lounges/</loc>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
@@ -261,32 +191,12 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://bardc.com/categories/karaoke-bars/</loc>
+    <loc>https://bardc.com/categories/nightclub/</loc>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://bardc.com/categories/upscale/</loc>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/hotel-bars/</loc>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/wine-bars/</loc>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/waterfront/</loc>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/american/</loc>
+    <loc>https://bardc.com/categories/french/</loc>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
@@ -296,47 +206,7 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://bardc.com/categories/dive-bars/</loc>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/lounges/</loc>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/dog-friendly/</loc>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/lgbtq+-bars/</loc>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/breweries/</loc>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/beer-gardens/</loc>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/pizza-bars/</loc>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/burger-bars/</loc>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://bardc.com/categories/italian/</loc>
+    <loc>https://bardc.com/categories/neighborhood-bars/</loc>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
@@ -346,17 +216,147 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://bardc.com/categories/taproom/</loc>
+    <loc>https://bardc.com/categories/event-spaces/</loc>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://bardc.com/categories/dance-clubs/</loc>
+    <loc>https://bardc.com/categories/upscale/</loc>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://bardc.com/categories/nightclub/</loc>
+    <loc>https://bardc.com/categories/karaoke-bars/</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/italian/</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/late-night/</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/cocktail-bars/</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/waterfront/</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/groups/</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/wine-bars/</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/sports-bars/</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/oyster-bars/</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/taco-bars/</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/pizza-bars/</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/latin/</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/burger-bars/</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/taverns/</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/dog-friendly/</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/brunch-spots/</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/hotel-bars/</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/beer-gardens/</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/live-music-venues/</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/breweries/</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/romantic/</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/happy-hour-spots/</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/lgbtq+-bars/</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/speakeasies/</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/dive-bars/</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/american/</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://bardc.com/categories/irish-pubs/</loc>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>

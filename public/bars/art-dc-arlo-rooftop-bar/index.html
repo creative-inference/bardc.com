@@ -50,7 +50,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -69,17 +69,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -105,7 +107,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -289,68 +290,55 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://popville.com/events/arlos-living-room-gallery-chris-pyrate-at-art-dc-arlo-washington-dc-22337" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://dcnewsnow.com/news/local-news/washington-dc/dc-rooftop-lounges-the-ultimate-guide-to-elevate-your-social-scene" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=popville.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>PoPville</span>
-              <span style="margin-left:auto; text-transform:none;">Feb 9, 2026</span>
+              <img src="https://www.google.com/s2/favicons?domain=dcnewsnow.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>DC News Now</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Arlo’s Living Room Gallery: Chris Pyrate at ART DC, Arlo Washington DC</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">DC rooftop lounges: The ultimate guide to elevate your social scene</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">ART DC - Arlo Rooftop Bar hosts a special edition of Arlo’s Living Room Gallery on February 26, 2026, featuring new works by acclaimed DC artist Chris Pyrate. The public reception includes an artist talk, live music, and curated drink specials set against the venue’s signature rooftop views.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">ART DC - Arlo Rooftop Bar is featured as a premier destination in Washington D.C. for its panoramic city views and sophisticated social atmosphere. The venue offers guests an elevated experience with a curated selection of craft cocktails and modern decor atop the Arlo hotel.</p>
            
         </a>
       
-        <a href="https://washingtonian.com/2025/07/14/summer-outdoor-cocktail-drinks-spots-in-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://travelmarketreport.com/hotels-resorts/articles/arlo-hotels-appoints-new-president-opens-d-c-hotel" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 14, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=travelmarketreport.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Travel Market Report</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Best Outdoor Spots to Sip on a Cocktail in the DC Area</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Arlo Hotels Appoints New President, Opens D.C. Hotel</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">ART DC - Arlo Rooftop Bar is an indoor-outdoor lounge at the Arlo hotel in Judiciary Square offering Japanese-inspired small bites like hand rolls and yakitori alongside views of the Capitol. The venue features sake-infused cocktails and hosts a variety of events, including DJ sets, art activations, and late-night happy hour deals.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">ART DC - Arlo Rooftop Bar is a Japanese and Pan-Asian dining destination located atop the Arlo Washington D.C. Led by Michelin-starred Chef Pepe Moncayo, the venue offers signature cocktails with both indoor and outdoor seating overlooking downtown.</p>
            
         </a>
       
-        <a href="https://dc.eater.com/maps/best-new-restaurant-rooftops-patios-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://washington.org/event/arlos-living-room-gallery-chris-pyrate" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">May 9, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=washington.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Washington.org</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Best New Restaurant Rooftops and Patios in D.C.</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Arlo&#39;s Living Room Gallery: Chris Pyrate</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Art DC is the Arlo hotel’s indoor-outdoor rooftop bar and lounge featuring a Japanese-influenced menu of hand rolls, yakitori, dumplings, and mochi. The venue offers a vibrant atmosphere with summer day parties, DJ sets, and late-night happy hour specials.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">ART DC - Arlo Rooftop Bar is hosting an opening reception on February 26, 2026, for the latest installation of Arlo’s Living Room Gallery series featuring D.C. artist Chris Pyrate. The event celebrates Black History Month with an evening of contemporary art, artist discussions, curated cocktails, and live music. Attendees can explore Pyrate&#39;s signature floral designs and murals while enjoying the rooftop atmosphere and participating in exclusive giveaways.</p>
            
         </a>
       
-        <a href="https://washingtonian.com/2025/04/29/5-new-rooftop-bars-to-check-out-around-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://usatoday.com/story/travel/2025/05/27/washington-dc-rooftop-bars/82273711007" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">Apr 29, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">5 New Rooftop Bars to Check Out Around DC</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">ART DC - Arlo Rooftop Bar is an indoor-outdoor lounge atop the Arlo hotel featuring a Japanese-inspired menu of yakitori, hand rolls, and sake-infused cocktails. The space offers views of the Capitol and hosts regular events including DJ sets, art activations, and late-night happy hour deals.</p>
-           
-        </a>
-      
-        <a href="https://lodgingmagazine.com/arlo-hotels-celebrates-the-official-grand-opening-of-washington-dc-hotel" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=usatoday.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>USA Today</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=lodgingmagazine.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>LODGING Magazine</span>
-              <span style="margin-left:auto; text-transform:none;">Apr 7, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Arlo Hotels Celebrates the Official Grand Opening of Washington, D.C. Hotel</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Raise a glass at D.C.&#39;s hottest rooftop bars</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">ART DC - Arlo Rooftop Bar is a destination lounge and resort-style pool located atop the Arlo Washington DC hotel, featuring Japanese-style hand rolls, yakitori, and expertly crafted cocktails. The venue serves as a cultural hub, hosting year-round art exhibitions by local artists alongside live music, comedy shows, and wellness activations.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">ART DC - Arlo Rooftop Bar features Japanese and Pan-American cuisine such as miso salmon rolls and yakitori alongside signature cocktails like Kitsune&#39;s Elixir. Located near the National Mall and Union Station, the venue offers a &#39;reverse happy hour&#39; starting at 8:30 p.m. and boasts a bewitching view of the U.S. Capitol.</p>
            
         </a>
       
@@ -628,6 +616,49 @@ I took the opportunity to visit during Restaurant Week, and Chef...
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

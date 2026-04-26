@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -312,68 +313,29 @@ Romantic dates, milestone celebrations, sophisticated group brunches, pre-show d
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://theinfatuation.com/washington-dc/guides/best-dc-restaurants-special-occasions" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://restaurant-hospitality.com/chef-profiles/ilili-chef-and-owner-philippe-massoud-uses-his-family-s-restaurant-background-to-elevate-lebanese-cuisine-in-the-united-states" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=theinfatuation.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Infatuation</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 12, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=restaurant-hospitality.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Restaurant Hospitality</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The 14 Best DC Restaurants For Special Occasions - Washington DC</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Ilili chef and owner Philippe Massoud uses his family’s restaurant bac</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">ilili DC is recognized as one of the city&#39;s most beautiful dining destinations, featuring a lush, glass-enclosed space at the Wharf complete with hanging greenery and a trickling stone fountain. The Lebanese menu excels in celebratory dishes like the mixed grill platter and honeyed knafe, making it an ideal spot for romantic dates or milestone celebrations. </p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">ilili DC owner and chef Philippe Massoud utilizes his Lebanese heritage and family recipes to elevate Middle Eastern cuisine at his Wharf-based location. The restaurant offers a sophisticated dining experience and boasts one of the largest selections of Lebanese wines in the United States.</p>
            
         </a>
       
-        <a href="https://tastingtable.com/1628959/best-middle-eastern-restaurants-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://bizjournals.com/washington/news/2021/09/23/wharf-restaurant-replacing-isabella-s-opens-soon.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=tastingtable.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Tasting Table</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 30, 2024</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">A DC Local Shares The 19 Best Spots For Middle Eastern Food In The City</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">ilili DC at The Wharf offers a refined Lebanese dining experience featuring traditional hot and cold mezze, such as hindbeh and steak tartare Beirut kibbeh. The menu highlights sophisticated flavors like the samkeh harra seared sea bass, all served within a stylishly designed space that balances natural light with intimate evening ambiance.</p>
-           
-        </a>
-      
-        <a href="https://hospitalitydesign.com/news/f-b/ilili-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=bizjournals.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The Business Journals</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=hospitalitydesign.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Hospitality Design</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 27, 2021</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">ilili DC Recalls the Lush Courtyards of Lebanon</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Ilili, replacing Mike Isabella&#39;s former Wharf restaurant, sets opening date</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">ilili DC at the Wharf channels the charm of Lebanese courtyard gardens through a design that features citrus trees, a central water fountain, and hanging plants. The restaurant’s interior combines sustainable materials with custom artisanal décor, including white dove sculptures and late 19th-century inspired daisy floor tiles, to create a seamless indoor-outdoor dining experience.</p>
-           
-        </a>
-      
-        <a href="https://districtfray.com/articles/ilili-opens-at-wharf" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=districtfray.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>District Fray</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 14, 2021</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Wharf Welcomes Highly-Anticipated Lebanese Spot ilili</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">ilili DC brings a sophisticated blend of Lebanese and Mediterranean cuisine to The Wharf, featuring a menu that highlights signature dishes like Brussels sprouts with fig jam and kibbeh nayeh. The restaurant’s vibrant interior offers a courtyard-garden aesthetic with fountains and waterfront views, complemented by a beverage program focused on Arak-based cocktails and wines from the Bekaa Valley.</p>
-           
-        </a>
-      
-        <a href="https://dc.eater.com/2021/10/8/22714637/ilili-lebanese-restaurant-design-garden-fountain-wharf" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 8, 2021</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">How D.C.’s Hot New Lebanese Restaurant Turned a Glass Cube Into an Enchanted Courtyard</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">ilili DC is a high-end Lebanese restaurant at the Wharf that features a striking &quot;enchanted garden&quot; interior with citrus trees, a 19th-century French limestone fountain, and hanging steel bird cages. Chef Philippe Massoud’s menu offers modern meze and creative Mediterranean cocktails in a 4,500-square-foot space designed to transport guests to old Beirut.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">ilili DC opened its doors on October 7, 2021, in a prominent stand-alone building at The Wharf. The New York-based restaurant brings its signature Lebanese cuisine to the waterfront development, occupying the space formerly held by Mike Isabella’s Rephalle.</p>
            
         </a>
       
@@ -649,6 +611,49 @@ Romantic dates, milestone celebrations, sophisticated group brunches, pre-show d
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

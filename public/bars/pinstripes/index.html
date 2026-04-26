@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -329,68 +330,16 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://silive.com/business/2025/09/popular-entertainment-venue-chain-closes-10-locations-after-filing-for-bankruptcy.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://costar.com/article/2073182516/eatertainment-venue-pinstripes-shuts-10-locations-as-it-files-for-chapter-11" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=silive.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>SILive.com</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 17, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Popular entertainment venue chain closes 10 locations after filing for bankruptcy</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Pinstripes continues to operate its Washington, D.C. location following the company&#39;s Chapter 11 bankruptcy filing and the closure of ten other venues nationwide in late 2025. The D.C. site remains one of only eight locations staying open, where guests can still access dining, bowling, and bocce services.</p>
-           
-        </a>
-      
-        <a href="https://popville.com/2025/09/pinstripes-bankruptcy-still-open-dc-georgetown" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=costar.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>CoStar</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=popville.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>PoPville</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 15, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Fear Not Bowling Fans – Though Company Declared Bankruptcy, Pinstripes Lives in Georgetown</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">‘Eatertainment’ venue Pinstripes shuts 10 locations as it files for Chapter 11</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Pinstripes in Georgetown remains open and operational despite its parent company, Pinstripes Holdings, Inc., filing for Chapter 11 bankruptcy protection in late 2025. The venue continues to welcome guests for bowling, dining, and events as one of the key locations retained during the company&#39;s restructuring process.</p>
-           
-        </a>
-      
-        <a href="https://bondoro.com/pinstripes" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=bondoro.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Bondoro</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 12, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Case Summary: Pinstripes Chapter 11</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Pinstripes filed for Chapter 11 bankruptcy in late 2025 following liquidity pressures from declining sales and costs associated with its aggressive expansion. The company entered into a restructuring support agreement for an expedited $16.6 million sale to preserve its remaining operating locations and brand.</p>
-           
-        </a>
-      
-        <a href="https://nbcchicago.com/news/local/popular-bowling-restaurant-venue-pinstripes-declares-bankruptcy-as-chicago-location-closes/3822132" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=nbcchicago.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>NBC 5 Chicago</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 10, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Popular bowling, restaurant venue Pinstripes files for bankruptcy; Chicago location closed</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Pinstripes has filed for Chapter 11 bankruptcy protection to restructure its debt, though its Georgetown location in Washington, D.C. remains open and operational. The company is currently seeking a buyer for its continuing venues and will continue to honor all gift cards and event deposits.</p>
-           
-        </a>
-      
-        <a href="https://mocoshow.com/2025/09/09/pinstripes-files-for-bankruptcy-pike-rose-location-to-remain-open" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=mocoshow.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The MoCo Show -</span>
-              <span style="margin-left:auto; text-transform:none;">Sep 9, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Pinstripes Files for Bankruptcy, Pike &amp; Rose Location to Remain Open</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Pinstripes continues to operate its Georgetown and North Bethesda locations following a strategic Chapter 11 bankruptcy filing by its parent company. While several national branches have closed as part of the restructuring, these local venues remain open for regular hours, honoring all gift cards and event deposits.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Pinstripes has filed for Chapter 11 bankruptcy and shuttered 10 of its 18 locations as it faces rising labor costs and reduced consumer spending. The company, which maintains a presence in Washington, D.C., is currently restructuring its leases and seeking a stalking-horse bidder to stabilize its remaining restaurant and entertainment venues.</p>
            
         </a>
       
@@ -668,6 +617,49 @@ Happy hour was great. We...
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

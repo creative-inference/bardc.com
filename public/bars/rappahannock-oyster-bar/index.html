@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -293,68 +294,16 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://popville.com/2025/10/dc-union-market-cowbell-seafood-oyster-opening" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://airport-world.com/stylish-new-restaurants-open-at-washington-dulles" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=popville.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>PoPville</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 22, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Oysters and more Return to Union Market with Cowbell Seafood &amp; Oyster Opening Tomorrow (Thurs.)!!</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Rappahannock Oyster Bar&#39;s location at Union Market has permanently closed and was replaced by Cowbell Seafood &amp; Oyster in October 2025. The new venue features a tide-to-table menu focused on Chesapeake-sourced seafood, including freshly shucked oysters and Baltimore-inspired crab cakes.</p>
-           
-        </a>
-      
-        <a href="https://10best.usatoday.com/food-drink/10-best-oyster-bars-new-jersey-maryland-delaware-pennsylvania" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=airport-world.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Airport World</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=10best.usatoday.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>USA TODAY 10BEST</span>
-              <span style="margin-left:auto; text-transform:none;">Jun 25, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">These oyster bars are 10 of the best in the Mid-Atlantic</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Stylish new restaurants open at Washington Dulles</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Rappahannock Oyster Bar, located in Washington D.C.’s Union Market, serves a variety of proprietary shellfish farmed along the Atlantic and Chesapeake. This Michelin Guide-recognized destination specializes in local favorites such as briny Olde Salts, sweet Rappahannock River Oysters, and soft-salt Rochambeaus.</p>
-           
-        </a>
-      
-        <a href="https://airportxnews.com/iad-unveils-two-new-restaurants" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=airportxnews.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Airport Experience News</span>
-              <span style="margin-left:auto; text-transform:none;">Apr 29, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">IAD Unveils Two New Restaurants</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Rappahannock Oyster Bar has opened a 2,349-square-foot location at Washington Dulles International Airport&#39;s Gate B37. The venue features a signature raw bar with oysters sourced directly from Rappahannock Oyster Co., alongside a menu of seafood small plates, craft cocktails, and a dedicated takeout section.</p>
-           
-        </a>
-      
-        <a href="https://richmondmagazine.com/restaurants-in-richmond/food-news/rappahannock-oyster-co-fire-oyster-bar-rapp-session" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=richmondmagazine.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>richmondmagazine.com</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 12, 2023</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">New Waters</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Rappahannock Oyster Bar is expanding its presence in the D.C. metro area with a 90-seat outpost in the international terminal of Washington Dulles International Airport. This location features a modern-meets-casual seafood concept with a wraparound bar, joining the company&#39;s existing portfolio which includes its popular restaurant at The Wharf.</p>
-           
-        </a>
-      
-        <a href="https://washingtonian.com/2022/08/08/rappahannock-oyster-bar-is-closing-at-union-market-after-a-decade" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">Aug 8, 2022</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Rappahannock Oyster Bar Is Closing at Union Market After a Decade</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Rappahannock Oyster Bar closed its long-standing Union Market location in August 2022 after a decade of service, following a request from the landlord to vacate the space. The restaurant continues to operate its flagship Washington D.C. location at The Wharf, serving sustainably raised Chesapeake oysters, crab cakes, and craft cocktails.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Rappahannock Oyster Bar has opened a new location in Concourse B of Washington Dulles International Airport. The restaurant serves a variety of celebrated regional dishes, including fresh oysters sourced directly from the company&#39;s Chesapeake Bay farm.</p>
            
         </a>
       
@@ -632,6 +581,49 @@ We started...
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

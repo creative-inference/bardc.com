@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -301,68 +302,29 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://nbcwashington.com/news/local/dc-streateries-could-dwindle-as-city-increases-costs-changes-regulations/4016023" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://newsontheneck.com/local-events?_evDiscoveryPath=%2Fevent%2F107719581n-argo-and-the-violet-queens-mancala-skrom-and-arid-bloom-at-marx-cafe" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=nbcwashington.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>NBC4 Washington</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 14, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=newsontheneck.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>News on the Neck</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">DC streateries could dwindle as city increases costs, changes regulations</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Argo And The Violet Queens, Mancala, Skrom, and Arid Bloom at Marx Cafe</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Marx Cafe faces a potential 25% to 30% loss in revenue due to new District regulations and increased fees for outdoor dining &quot;streateries.&quot; Owner Daniel Quiroz expressed concern that the higher costs and stricter construction requirements could force the removal of outdoor setups that have become a vital part of the business&#39;s income.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Marx Cafe hosts a live music event featuring performances by Argo and the Violet Queens, Mancala, Skrom, and Arid Bloom. The showcase highlights the venue&#39;s role as a community hub for local indie and experimental music in Washington D.C.</p>
            
         </a>
       
-        <a href="https://wusa9.com/article/news/local/dc/dc-restaurant-launches-food-bank-neighbors-need/65-3560e351-516f-4b46-a19a-2aba69d67225" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://wusa9.com/video/news/local/dc/dc-business-helping-to-feed-the-hungry/65-aba96d78-f0e6-4fd3-9a2d-3d11f908cc6c" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
               <img src="https://www.google.com/s2/favicons?domain=wusa9.com" alt="" style="width:14px; height:14px; opacity:0.7;">
               <span>WUSA9</span>
-              <span style="margin-left:auto; text-transform:none;">Nov 13, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">DC restaurant launches food bank for neighbors in need</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Marx Café in Mt. Pleasant has launched an outdoor community food bank to provide essential groceries to neighbors in need. Spearheaded by co-owner Daniel Quiroz, the initiative invites community members to donate items to the outdoor bins to help combat local food insecurity.</p>
-           
-        </a>
-      
-        <a href="https://washingtonian.com/2025/05/28/this-comedic-play-about-dating-in-dc-turns-mt-pleasant-street-into-a-stage" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtonian.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washingtonian</span>
-              <span style="margin-left:auto; text-transform:none;">May 28, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">This Comedic Play About Dating in DC Turns Mount Pleasant Street Into a Stage</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">DC business helping to feed the hungry</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Marx Cafe hosted a political trivia-themed scene for the immersive play &quot;DC, I Love You: First Dates,&quot; a production that turned Mount Pleasant Street into a live stage. The venue served as a key location for the Folger Shakespeare Library project, which utilized the neighborhood&#39;s authentic atmosphere to present vignettes about dating in Washington.</p>
-           
-        </a>
-      
-        <a href="https://them.us/story/washington-dc-nightlife-scene-insiders-guide-femme-fatale-takoma-station-rhizome" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=them.us" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>www.them.us</span>
-              <span style="margin-left:auto; text-transform:none;">Mar 14, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">From Go-Go Bands to Bike Parties, How to Spend a Night Out in D.C.</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Marx Cafe is a Mount Pleasant neighborhood staple that transitions from a chill Mediterranean cafe by day to a vibrant live music hub at night. The wood-paneled venue emphasizes Latin genres such as psychedelic cumbia and salsa, inviting guests to hit the intimate dance floor under a disco ball.</p>
-           
-        </a>
-      
-        <a href="https://washingtoncitypaper.com/article/744612/swing-beat-a-thriving-jazz-subscene-in-mount-pleasant" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=washingtoncitypaper.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Washington City Paper</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 26, 2024</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Swing Beat: A Thriving Jazz Subscene in Mount Pleasant</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Marx Cafe in Mount Pleasant hosts a popular weekly jazz jam session every Tuesday night, currently led by singer Tibyron Quinn. The neighborhood venue also serves as a key hub for the D.C. Jazz Collective, which holds bimonthly performances as part of a unique musical exchange with the jazz scene in Bangkok.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Marx Cafe in Washington D.C. is collecting food donations to help feed and support neighbors in the local community. This initiative highlights the venue&#39;s commitment to charitable outreach and addressing food insecurity in the area.</p>
            
         </a>
       
@@ -585,6 +547,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

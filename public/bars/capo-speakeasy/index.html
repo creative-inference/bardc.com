@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -293,68 +294,55 @@
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://patch.com/district-columbia/washingtondc/calendar/event/20260507/4b325634-0a5e-4567-91c1-52d7564b9b19/plot-twist-stories-we-didnt-see-coming" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://washington.org/visit-dc/hidden-bars-speakeasies" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=patch.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Patch</span>
-              <span style="margin-left:auto; text-transform:none;">Mar 24, 2026</span>
+              <img src="https://www.google.com/s2/favicons?domain=washington.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>visit Washington DC</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Local Event: Plot Twist: Stories We Didn&#39;t See Coming</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">DC’s Best Speakeasy Bars &amp; Hidden Lounges</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Capo Speakeasy will host &quot;Plot Twist: Stories We Didn&#39;t See Coming&quot; on May 7, 2026, featuring a multi-generational lineup of six storytellers. The event offers an evening of original true tales focused on unexpected life transformations and transitions in an intimate setting.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The Backroom at Capo Deli is a hidden speakeasy located behind a freezer door in a Shaw neighborhood Italian deli. This candlelit lounge offers a cozy atmosphere for enjoying house cocktails alongside freshly prepared Italian subs, with the venue staying open until 3 a.m. or later on weekends.</p>
            
         </a>
       
-        <a href="https://washingtonpost.com/dc-md-va/2025/04/30/best-late-night-dining-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://secretdc.com/hidden-bars-washington-dc" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtonpost.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Washington Post</span>
-              <span style="margin-left:auto; text-transform:none;">Apr 30, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=secretdc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Secret DC</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">15 of the best late-night dining spots in the D.C. area</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">5 Hidden Bars In D.C. You Have To Try</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Capo Speakeasy is featured as one of the top late-night dining destinations in the Washington D.C. area. The venue offers a prime spot for a post-imbibing meal, serving the city&#39;s night owls long after other kitchens have closed.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Capo Speakeasy is featured as a top hidden destination in Washington, D.C., accessible through a secret freezer door inside an Italian deli. The venue provides an intimate, retro atmosphere where guests can enjoy expertly crafted cocktails in a sophisticated lounge setting.</p>
            
         </a>
       
-        <a href="https://dc.eater.com/maps/best-speakeasy-bars-dc-1" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://gwhatchet.com/2019/04/01/best-speakeasy-backroom-at-capo-deli" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Dec 2, 2024</span>
+              <img src="https://www.google.com/s2/favicons?domain=gwhatchet.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The GW Hatchet</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">14 Must-Try Speakeasies in D.C.</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Best speakeasy: BackRoom at Capo Deli</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">The BackRoom at Capo Deli is a sleek speakeasy hidden behind an industrial fridge door that transforms into a high-energy lounge with live DJ sets from Thursday through Saturday. The venue offers an exclusive nightlife experience in the U Street corridor, featuring signature cocktails such as the strawberry gin-infused Strawberry Fields.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Capo Speakeasy, hidden behind a refrigerator door at Capo Italian Deli on Florida Avenue NW, offers a prohibition-style cocktail experience featuring vintage decor and a posh interior. Guests can enjoy expertly crafted drinks and classic Italian sandwiches in a secluded atmosphere that transitions into a lively space for dancing on the weekends.</p>
            
         </a>
       
-        <a href="https://washingtonpost.com/dc-md-va/2024/03/28/dc-speakeasy-bar-guide" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://nytimes.com/2021/06/17/style/espresso-martini-comeback.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=washingtonpost.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Washington Post</span>
-              <span style="margin-left:auto; text-transform:none;">Mar 27, 2024</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Pssssst … How to find 11 of the best speakeasy bars in the D.C. area</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Capo Speakeasy is featured as one of the premier hidden bars in Washington, D.C., offering a Prohibition-era experience with low lights and fancy cocktails. The venue is highlighted for its exclusive, &#39;in the know&#39; atmosphere that captures the historic glamour of the 1920s.</p>
-           
-        </a>
-      
-        <a href="https://thedailymeal.com/1332272/best-speakeasies-united-states" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=nytimes.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The New York Times</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=thedailymeal.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Daily Meal</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 6, 2023</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The 15 Best Speakeasies In The United States</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">The Espresso Martini Is Everywhere (Again) (Published 2021)</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Capo Italian Deli’s &#39;The Backroom&#39; is a high-energy speakeasy hidden behind a freezer door in Washington, D.C.’s U Street Corridor. The venue features a large dance floor, two bars, and a soundtrack of hip-hop and Top 40 music, making it a popular destination for late-night dancing and bottle service. While the speakeasy focuses on drinks, patrons can enjoy sandwiches from the attached deli when it is open.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Capo Speakeasy is recognized for its contribution to the espresso martini resurgence, specifically gaining national attention for its innovative bottled versions of the cocktail. Located behind a hidden freezer door within a D.C. Italian deli, the venue remains a key destination for enthusiasts of the classic coffee-infused drink.</p>
            
         </a>
       
@@ -634,6 +622,49 @@
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

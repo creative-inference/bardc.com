@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -355,68 +356,55 @@ Whiskey connoisseurs, impressive date nights, group celebrations on the rooftop,
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://shababeek.org/newserx/34328-best-places-to-drink-in-dc-a-comprehensive-guide-to-washington-amp-039-s-vibrant-bar-scene" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://timeout.com/washington-dc/bars/jack-rose-dining-saloon" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=shababeek.org" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>shababeek.org</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 7, 2026</span>
+              <img src="https://www.google.com/s2/favicons?domain=timeout.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Time Out Worldwide</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Best Places To Drink In DC: A Comprehensive Guide To Washington&#39;s Vibrant Bar Scene-</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Jack Rose Dining Saloon | Bars in Adams Morgan, Washington DC</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Jack Rose Dining Saloon is recognized as a top late-night destination in Washington, D.C., specifically highlighted for its extensive whiskey selection and inviting rooftop bar. The venue is noted for its welcoming atmosphere, making it an ideal spot for enthusiasts looking to unwind with a wide variety of spirits.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Jack Rose Dining Saloon is a premier whiskey destination in Adams Morgan, boasting a massive collection of over 2,700 bottles and a sophisticated, library-like atmosphere on its main floor. The venue offers elegant Mid-Atlantic cuisine and a lively upstairs terrace, complemented by one of the city&#39;s best happy hours that runs until 7:30pm on weekdays.</p>
            
         </a>
       
-        <a href="https://thewhiskeywash.com/whiskey-news/legendary-whiskey-bars-dcs-jack-rose-dining-saloon" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://mensjournal.com/drink/best-whiskey-bars-in-america" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=thewhiskeywash.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>The Whiskey Wash</span>
-              <span style="margin-left:auto; text-transform:none;">Aug 18, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=mensjournal.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Men&#39;s Journal</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Legendary Whiskey Bars: DC’s Jack Rose Dining Saloon</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">We Visited the Best Whiskey Bars Across America. These Are Worth Traveling to in 2026</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Jack Rose Dining Saloon in DC&#39;s Adams Morgan neighborhood boasts one of the largest whiskey collections in the Western Hemisphere, featuring over 2,300 hand-selected bottles. The multi-level venue offers a variety of experiences, ranging from its grand, high-ceilinged main bar and retractable roof terrace to an intimate, 20-person speakeasy called Dram &amp; Grain.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Jack Rose Dining Saloon is recognized as one of the premier whiskey destinations in America to visit in 2026. The venue is celebrated for its massive selection of spirits and its reputation as a must-visit establishment for whiskey enthusiasts traveling to Washington D.C.</p>
            
         </a>
       
-        <a href="https://wjla.com/good-morning-washington/dish-drink/jack-rose-dining-saloon-adams-morgan-dc-dmv-whiskey-bar-jameson-hot-drinks-winter-patio-food-cinnamon-whiskey-hot-chocolate" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://cntraveler.com/bars/washington/jack-rose-dining-saloon" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=wjla.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>WJLA</span>
-              <span style="margin-left:auto; text-transform:none;">Jan 14, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=cntraveler.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Condé Nast Traveler</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Sip and savor at Jack Rose: the ultimate winter haven for food and drink in Adams Morgan</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Jack Rose Dining Saloon — Bar Review</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Jack Rose Dining Saloon in Adams Morgan offers a variety of warm, boozy beverages and seasonal food specials designed for the winter months. The establishment is highlighted as a cozy destination for diners seeking a cold-weather haven in Washington, D.C.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Jack Rose Dining Saloon in Washington D.C. boasts an extensive collection of over 2,000 whiskey bottles and a versatile open-air terrace with a retractable roof. Visitors can enjoy custom whiskey flights, seasonal cocktails, and a diverse menu ranging from crispy chicken skins to full entrees like flat-iron steaks.</p>
            
         </a>
       
-        <a href="https://dc.eater.com/2020/5/15/21258544/jack-rose-whiskey-bar-reopening-takeout-menu-the-imperial-bar-adams-morgan" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://theworlds50best.com/discovery/Establishments/US/Washington-DC/Jack-Rose-Dining-Saloon.html" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">May 15, 2020</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Adams Morgan Favorite Jack Rose Returns With Takeout Packs Full of Southern Snacks</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Jack Rose Dining Saloon in Adams Morgan has introduced a new takeout menu featuring Southern-inspired snacks like pimento cheese, whiskey-glazed wings, and lump crab rolls. The venue is also offering bottled cocktails and DIY mint julep kits as it continues to restock its legendary whiskey library following a massive collection sale.</p>
-           
-        </a>
-      
-        <a href="https://insidehook.com/washington-dc/jack-rose-selling-2700-bottle-whiskey-collection" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=theworlds50best.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The World&#39;s 50 Best Restaurants</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=insidehook.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>InsideHook</span>
-              <span style="margin-left:auto; text-transform:none;">Mar 26, 2020</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">DC’s Jack Rose Is Selling Off Its Entire 2,700-Bottle Whiskey Collection</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Jack Rose Dining Saloon -Washington DC-Bar-50BestDiscovery</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Jack Rose Dining Saloon transitioned to selling its massive 2,700-bottle whiskey collection to-go to support staff and maintain operations during the 2020 pandemic lockdown. The initiative featured rare, high-end whiskies and house-bottled single barrels offered at significant discounts alongside required food items.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Jack Rose Dining Saloon is a premier whiskey destination in DC’s Adams Morgan neighborhood, boasting an extensive collection of over 3,000 labels ranging from rare scotches to international spirits. The venue features a masculine, steakhouse-inspired atmosphere where guests can explore an academic-style whiskey index alongside craft cocktails and Southern-style bar snacks.</p>
            
         </a>
       
@@ -697,6 +685,49 @@ I had to try the house single barrel flight, and it was delicious. The bartender
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */

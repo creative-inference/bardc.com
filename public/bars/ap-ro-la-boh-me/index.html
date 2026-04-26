@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777150500958">
+  <link rel="stylesheet" href="/css/style.css?v=1777162759451">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -71,17 +71,19 @@
 </head>
 <body>
   <div class="container">
-    <header>
+    <header id="siteHeader">
       <div class="header-branding">
         <a href="/" class="branding-link">
           <img src="/img/bardc_logo.jpeg" alt="Bar DC Logo" class="logo">
-          <span class="site-title">Washington D.C. Bars & Clubs</span>
+          <span class="site-title">Washington D.C. Bars &amp; Clubs</span>
         </a>
       </div>
-      <nav class="main-nav">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
         <a href="/bars/">Bars</a>
         <a href="/map/">Map</a>
-        
 
         <div class="nav-dropdown">
           <a href="/neighborhoods/" class="dropdown-trigger">Neighborhoods <span class="arrow">▾</span></a>
@@ -107,7 +109,6 @@
             <a href="/neighborhoods/" class="view-all">View All →</a>
           </div>
         </div>
-
 
         <a href="/events/">Events</a>
         <a href="/happy-hour/">Happy Hour</a>
@@ -319,68 +320,29 @@ Elegant date nights, milestone birthday celebrations, caviar enthusiasts, and ad
     <h3>📰 In the News</h3>
     <div class="news-list" style="display:flex; flex-direction:column; gap:1rem; margin-top:1rem;">
       
-        <a href="https://dc.eater.com/maps/dc-best-wine-bars-maps" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://washingtonclassicalreview.com/2023/05/14/boisterous-and-glamorous-la-boheme-takes-back-the-opera-house-for-wno" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 14, 2025</span>
+              <img src="https://www.google.com/s2/favicons?domain=washingtonclassicalreview.com" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>Washington Classical Review</span>
+              
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">18 Best Wine Bars in D.C.</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Boisterous and glamorous “La Bohème” takes back the Opera House for WNO</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">La Bohème is a prix fixe dining concept situated on the upper level of Apéro, a historic row house wine bar in Georgetown. Known as a &quot;perch up top,&quot; the venue joined the award-winning Champagne and caviar destination in 2023.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">Washington National Opera’s production of La Bohème at the Kennedy Center transforms Puccini’s classic melodrama into a 1920s Parisian spectacle featuring impressive sets and a talented young cast. Led by soprano Gabriella Reyes and tenor Kang Wang, the production balances vocal power with cinematic homages, providing a visually striking and accessible experience for both new and returning audiences.</p>
            
         </a>
       
-        <a href="https://mdtheatreguide.com/2025/04/opera-review-la-boheme-presented-by-the-rome-school-of-music-drama-and-art-at-hartke-theatre-catholic-university-of-america" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
+        <a href="https://kennedy-center.org/education/performances-and-more/performances-for-prek-12-school-groups/22-23-season/230518-wno-look-in-la-boheme" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
               
-              <img src="https://www.google.com/s2/favicons?domain=mdtheatreguide.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Maryland Theatre Guide</span>
-              <span style="margin-left:auto; text-transform:none;">Apr 1, 2025</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Opera Review: ‘La Bohème’ presented by The Rome School of Music, Drama, and Art at Hartke Theatre, Catholic University of America</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">La Bohème was presented by The Rome School of Music, Drama, and Art at the Hartke Theatre, featuring a stellar performance by students and the CUA orchestra under Maestro Simeone Tartaglione. This production of Puccini&#39;s classic opera was noted for its atmospheric set designs, Victorian-style costumes, and strong vocal performances by lead singers Hyo-Chang An and Natalie Barsoum.</p>
-           
-        </a>
-      
-        <a href="https://dctheaterarts.org/2025/03/29/a-daunting-classic-opera-comes-to-life-in-la-boheme-at-catholic-university" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
+              <img src="https://www.google.com/s2/favicons?domain=kennedy-center.org" alt="" style="width:14px; height:14px; opacity:0.7;">
+              <span>The Kennedy Center</span>
               
-              <img src="https://www.google.com/s2/favicons?domain=dctheaterarts.org" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>DC Theater Arts</span>
-              <span style="margin-left:auto; text-transform:none;">Mar 29, 2025</span>
            </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">A daunting classic opera comes to life in ‘La Bohème’ at Catholic University</h4>
+           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">WNO Look-In: La bohème</h4>
            
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">La Bohème at Catholic University’s Hartke Theater showcases a powerful student production of Puccini&#39;s classic opera, featuring standout vocal performances and a live pit orchestra. The production by the Rome School of Music, Drama, and Art successfully captures the emotional trials of bohemian life in 19th-century Paris through impressive staging and understated acting.</p>
-           
-        </a>
-      
-        <a href="https://secretdc.com/la-boheme-tarantino-tasting-menu" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=secretdc.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Secret DC</span>
-              <span style="margin-left:auto; text-transform:none;">Jul 26, 2024</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">We Got A First Look At This Tarantino-Themed Tasting Menu Inside A Georgetown Row Home</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">La Bohème offers an immersive, rotating tasting menu experience in a Georgetown row home situated above its sister restaurant, Apéro. Led by an all-female and Latina executive team, the venue features themed seasonal menus, such as a multi-course culinary tribute to the films of Quentin Tarantino.</p>
-           
-        </a>
-      
-        <a href="https://dc.eater.com/2023/10/16/23918368/georgetown-la-boheme-apero-new-tasting-room-tim-burton-menu-dc-restaurant-openings" target="_blank" rel="noopener noreferrer" class="news-card" style="display:block; padding:1.2rem; background:rgba(255,255,255,0.03); border-radius:12px; text-decoration:none; color:inherit; border:1px solid rgba(255,255,255,0.08); transition: background 0.2s;">
-           <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.8rem; color:#aaa; text-transform:uppercase; letter-spacing:0.5px;">
-              
-              <img src="https://www.google.com/s2/favicons?domain=dc.eater.com" alt="" style="width:14px; height:14px; opacity:0.7;">
-              <span>Eater DC</span>
-              <span style="margin-left:auto; text-transform:none;">Oct 16, 2023</span>
-           </div>
-           <h4 style="margin:0 0 0.5rem 0; font-size:1.1rem; line-height:1.4; color:#fff;">Georgetown’s Chic New Tasting Room Opens With a Tim Burton-Themed Menu</h4>
-           
-             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">La Bohème is a stylish tasting room located above the Michelin-listed Apéro in Georgetown, offering immersive, artist-themed dining experiences. The venue features rotating seasonal prix-fixe menus that celebrate iconic figures like Tim Burton through modern American cuisine and rare French spirits.</p>
+             <p style="margin:0; font-size:0.95rem; line-height:1.5; color:#ddd;">La Bohème was presented by the Washington National Opera at the Kennedy Center as an educational &#39;Look-In&#39; event designed to introduce audiences to the art of opera. The production featured performances by the WNO Cafritz Young Artist Program and provided a behind-the-scenes look at the music, theater, and technical collaboration required for Puccini’s classic work.</p>
            
         </a>
       
@@ -626,6 +588,49 @@ Elegant date nights, milestone birthday celebrations, caviar enthusiasts, and ad
             window.closeImageModal();
         }
     });
+
+    // Header: condense on scroll
+    (function() {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var ticking = false;
+      function update() {
+        if (window.scrollY > 24) header.classList.add('is-scrolled');
+        else header.classList.remove('is-scrolled');
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(update);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    // Mobile nav drawer
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      function setOpen(open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        nav.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      }
+      toggle.addEventListener('click', function() {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+      nav.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (link && !link.classList.contains('dropdown-trigger')) setOpen(false);
+      });
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 860) setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
   </script>
   <style>
     /* Modal Styles (Global) */
