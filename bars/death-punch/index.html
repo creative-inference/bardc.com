@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777256404840">
+  <link rel="stylesheet" href="/css/style.css?v=1777285237810">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -184,6 +184,10 @@
                       <a href="https://www.instagram.com/deathpunchbar/" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
                     
                     
+                      <a href="https://www.facebook.com/DeathPunchBar/" target="_blank" rel="noopener noreferrer" class="social-icon facebook" title="Facebook"></a>
+                    
+                    
+                      <a href="https://twitter.com/intent/tweet?url=https://www.deathpunchbar.com/event-details/revolant-concert&amp;amp;text=Check%20out%20this%20event.%20Hope%20to%20see%20you%20there!" target="_blank" rel="noopener noreferrer" class="social-icon twitter" title="Twitter/X"></a>
                     
                   </div>
                   
@@ -191,6 +195,49 @@
             </div>
             
             <!-- Side Map -->
+            
+            <div style="width:220px; flex-shrink:0; margin-top: 0.5rem;">
+               <div id="venue-mini-map" style="width:100%; height:220px; border-radius:12px; border:1px solid rgba(255,255,255,0.1); box-shadow:0 4px 15px rgba(0,0,0,0.3); z-index:0; cursor: pointer;"></div>
+               <script>
+                 document.addEventListener('DOMContentLoaded', function() {
+                    var lat = 38.9202752;
+                    var lng = -77.04158149999999;
+                    var map = L.map('venue-mini-map', {
+                        center: [lat, lng],
+                        zoom: 16,
+                        zoomControl: false, 
+                        attributionControl: false,
+                        dragging: false,
+                        scrollWheelZoom: false,
+                        doubleClickZoom: false,
+                        boxZoom: false,
+                        keyboard: false
+                    });
+                     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                        subdomains: 'abcd',
+                        maxZoom: 20
+                     }).addTo(map);
+
+                    var iconHTML = `<div class="pin-wrapper"><img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fdeath-punch%2Flogo-1766363506623-72196962_741021453034336_4072645211640037376_n.jpg?alt=media&amp;token=d0df6a2c-d27f-4794-8cd3-376fa913fb0c" onerror="this.style.display='none'; this.parentElement.classList.add('no-logo');"></div>`;
+                    var icon = L.divIcon({
+                        className: 'custom-pin-icon',
+                        html: iconHTML,
+                        iconSize: [40, 40],
+                        iconAnchor: [20, 20]
+                    });
+                    
+                    L.marker([lat, lng], {icon: icon}).addTo(map);
+                    
+                    // Click to open Google Maps
+                    document.getElementById('venue-mini-map').addEventListener('click', function() {
+                        window.open('https://www.google.com/maps/search/?api=1&amp;query=Death%20Punch%202321%2018th%20St%20NW%2C%20Washington%2C%20DC%2020009%2C%20USA', '_blank');
+                    });
+                 });
+               </script>
+               <div style="text-align:center; margin-top:0.5rem;">
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=Death%20Punch%202321%2018th%20St%20NW%2C%20Washington%2C%20DC%2020009%2C%20USA" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; color:#aaa; text-decoration:none;">View on Google Maps &rarr;</a>
+               </div>
+            </div>
             
         </div>
       </div>
@@ -334,9 +381,9 @@ Immersive holiday pop-ups, high-value happy hours, group billiard sessions, and 
       <div class="google-rating" style="margin-bottom: 2rem;">
         <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJk-tcOFi3t4kRRzF5fDUEsqY" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: block;">
           <div class="rating-header">
-            <span class="rating-stars" style="--rating: 4.1;">★★★★★</span>
-            <span class="rating-value">4.1</span>
-            <span class="rating-count">(244 reviews)</span>
+            <span class="rating-stars" style="--rating: 4;">★★★★★</span>
+            <span class="rating-value">4</span>
+            <span class="rating-count">(252 reviews)</span>
             <span class="btn-read-reviews" style="margin-left: auto; margin-top: 0;">View on Google</span>
           </div>
         </a>
@@ -349,10 +396,10 @@ Immersive holiday pop-ups, high-value happy hours, group billiard sessions, and 
       
       <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJk-tcOFi3t4kRRzF5fDUEsqY" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
           <div class="review-header">
-            <img src="" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjVXpgNRc4XrRxsgFfTrNieJ4fuzsTfyZNhSu48TSvFrYigKXea4wA=s128-c0x00000000-cc-rp-mo-ba3" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
             <div class="review-meta">
               <!-- Author name removed for privacy -->
-              <span class="review-time">a year ago</span>
+              <span class="review-time">2 years ago</span>
             </div>
           </div>
           <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
@@ -366,24 +413,7 @@ Immersive holiday pop-ups, high-value happy hours, group billiard sessions, and 
       
       <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJk-tcOFi3t4kRRzF5fDUEsqY" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
           <div class="review-header">
-            <img src="" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
-            <div class="review-meta">
-              <!-- Author name removed for privacy -->
-              <span class="review-time">11 months ago</span>
-            </div>
-          </div>
-          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
-            
-            ★★★★★
-          </div>
-          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
-            If you’re coming here for the Miracle Popup … it’s totally worth it! The atmosphere is great, and the holiday cocktails are totally awesome. Plus those cups they come in … hysterical. Highly...
-          </p>
-      </a>
-      
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJk-tcOFi3t4kRRzF5fDUEsqY" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
-          <div class="review-header">
-            <img src="" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocI4-XeJkTfPEj_wVJzupR6p8CQy9YR0_GlFAAm9cge4LbcfD0U=s128-c0x00000000-cc-rp-mo-ba4" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
             <div class="review-meta">
               <!-- Author name removed for privacy -->
               <span class="review-time">3 years ago</span>
@@ -400,10 +430,27 @@ Immersive holiday pop-ups, high-value happy hours, group billiard sessions, and 
       
       <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJk-tcOFi3t4kRRzF5fDUEsqY" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
           <div class="review-header">
-            <img src="" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocInzITBbs1kXHipsTJdwwrMde7hDOKObbB0vpNxOQgGNOJiyWnr=s128-c0x00000000-cc-rp-mo-ba7" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
             <div class="review-meta">
               <!-- Author name removed for privacy -->
               <span class="review-time">a year ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            If you’re coming here for the Miracle Popup … it’s totally worth it! The atmosphere is great, and the holiday cocktails are totally awesome. Plus those cups they come in … hysterical. Highly...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJk-tcOFi3t4kRRzF5fDUEsqY" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjUlUuw82CVRSYAsishnwJiyPHEq47HwJczkJMq5B1GkD8S7Mg0x2Q=s128-c0x00000000-cc-rp-mo-ba3" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">2 years ago</span>
             </div>
           </div>
           <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
@@ -418,7 +465,7 @@ I also planned to have a drink...
       
       <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJk-tcOFi3t4kRRzF5fDUEsqY" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
           <div class="review-header">
-            <img src="" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXLNIwDP2Optjd8wl_7O1hIhbAV3INqebozdD0of1rognwW56dC=s128-c0x00000000-cc-rp-mo-ba5" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
             <div class="review-meta">
               <!-- Author name removed for privacy -->
               <span class="review-time">2 years ago</span>
@@ -443,6 +490,61 @@ I also planned to have a drink...
   <!-- [NEW] Nearby Bars Section -->
   
   
+  <div class="nearby-section" style="margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+    <h3 style="margin-bottom: 1.5rem;">📍 Nearby Spots (Walking Distance)</h3>
+    <div class="venue-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
+      
+        <a href="/bars/dans-cafe/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fdans-cafe%2Flogo-1766361957330-280042700_1306104489883708_5821779353376664786_n.jpg?alt=media&amp;token=b0a9d970-3b34-4804-8e00-c0d5fc4e8b96" alt="Dan&#39;s Cafe" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Dan&#39;s Cafe</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">0m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/a-league-of-her-own/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fa-league-of-her-own%2Flogo-1766013233987-309345581_509234564546172_135073121794137212_n.jpg?alt=media&amp;token=7ff49a2e-1950-4236-a13f-cfaeb03ff2ba" alt="A League of Her Own" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">A League of Her Own</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">6m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/town-tavern-dc/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Ftown-tavern-dc%2Flogo-1766239070190-10349819_1511618622393199_940625756_a.jpg?alt=media&amp;token=462f6d1c-0e51-4690-b09e-334d9809aef5" alt="Town Tavern DC" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Town Tavern DC</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">8m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/pitchers-dc/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fpitchers-dc%2Flogo-1767025288603-190307393_508604223626853_2069364525923041445_n.jpg?alt=media&amp;token=f937fcbf-4bb8-4d54-a8bb-c9d591cad78d" alt="Pitchers DC" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Pitchers DC</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">10m away</p>
+          </div>
+        </a>
+      
+    </div>
+  </div>
+  
 
   <a href="/" class="btn-back">← Back to Home</a>
 </article>
@@ -457,8 +559,8 @@ I also planned to have a drink...
   
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": 4.1,
-    "reviewCount": 244
+    "ratingValue": 4,
+    "reviewCount": 252
   },
   
   
