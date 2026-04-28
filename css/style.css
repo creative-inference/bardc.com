@@ -1532,6 +1532,447 @@ span.hero-slide-title:hover {
 }
 
 /* =========================================================
+   TONIGHT HERO — homepage primary hierarchy
+   ========================================================= */
+
+.tonight-hero {
+  margin: 0 0 2.5rem;
+  padding: 1.75rem 1.5rem 2rem;
+  background:
+    radial-gradient(ellipse 70% 80% at 0% 0%, rgba(var(--primary-color-rgb), 0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 70% at 100% 0%, rgba(var(--secondary-color-rgb), 0.08) 0%, transparent 60%),
+    rgba(var(--surface-color-rgb), 0.7);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .tonight-hero { padding: 2.25rem 2.25rem 2.5rem; }
+}
+
+.tonight-hero-head {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .tonight-hero-head {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+}
+
+.tonight-hero-headline {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.85rem;
+}
+
+.tonight-flame {
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  filter: drop-shadow(0 0 12px rgba(239, 68, 68, 0.45));
+  align-self: center;
+}
+
+.tonight-count {
+  margin: 0;
+  font-size: clamp(1.7rem, 4.5vw, 2.4rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+  color: var(--text-primary);
+}
+
+.tonight-count-num {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+
+.tonight-date {
+  margin: 0;
+  width: 100%;
+  font-size: 1rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.tonight-cta {
+  white-space: nowrap;
+  align-self: flex-start;
+}
+
+@media (min-width: 768px) {
+  .tonight-cta { align-self: flex-end; }
+}
+
+/* Daily chip — today highlight */
+.daily-chip-small.is-today {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #fff;
+  box-shadow: var(--shadow-glow-primary);
+}
+
+.daily-chip-small.is-today:hover {
+  background: var(--primary-hover);
+  border-color: var(--primary-hover);
+  color: #fff;
+}
+
+/* Editorial card */
+.tonight-editorial {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  margin: 0 0 1.75rem;
+  background: rgba(var(--surface-elevated-rgb), 0.85);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.25s var(--ease-out), box-shadow 0.25s var(--ease-out), border-color 0.25s var(--ease-out);
+}
+
+.tonight-editorial:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--border-strong);
+}
+
+@media (min-width: 768px) {
+  .tonight-editorial {
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+}
+
+.tonight-editorial-image {
+  width: 100%;
+  min-height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--surface-color);
+}
+
+@media (min-width: 768px) {
+  .tonight-editorial-image { min-height: 260px; }
+}
+
+.tonight-editorial-body {
+  padding: 1.25rem 1.4rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  justify-content: center;
+}
+
+.tonight-editorial-eyebrow {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+}
+
+.tonight-editorial-title {
+  margin: 0;
+  font-size: clamp(1.2rem, 2.6vw, 1.6rem);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  color: var(--text-primary);
+}
+
+.tonight-editorial-summary {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.tonight-editorial-cta {
+  margin-top: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent-color);
+}
+
+/* Today's events grid */
+.tonight-events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+}
+
+@media (min-width: 768px) {
+  .tonight-events-grid { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.1rem; }
+}
+
+.tonight-event-card {
+  display: flex;
+  flex-direction: column;
+  background: rgba(var(--surface-color-rgb), 0.95);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+  transition: transform 0.25s var(--ease-out), box-shadow 0.25s var(--ease-out), border-color 0.25s var(--ease-out);
+}
+
+.tonight-event-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--border-strong);
+}
+
+.tonight-event-image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background: rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+}
+
+.tonight-event-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s var(--ease-out);
+}
+
+.tonight-event-card:hover .tonight-event-image img {
+  transform: scale(1.04);
+}
+
+.tonight-event-image-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(var(--primary-color-rgb), 0.25), rgba(var(--accent-color-rgb), 0.18));
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.tonight-event-body {
+  padding: 0.85rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.tonight-event-time {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+}
+
+.tonight-event-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--text-primary);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.tonight-event-venue {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.2rem;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  min-width: 0;
+}
+
+.tonight-event-venue span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tonight-event-venue-logo {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border-default);
+  background: var(--surface-elevated);
+  flex-shrink: 0;
+}
+
+/* Quiet-night message */
+.tonight-quiet-message {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  background: rgba(var(--surface-color-rgb), 0.5);
+  border: 1px dashed var(--border-default);
+  border-radius: var(--radius-md);
+}
+
+/* Tonight strips (HH + recurring) */
+.tonight-strip {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.tonight-strip-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.85rem;
+}
+
+.tonight-strip-head h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+.tonight-strip-all {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s var(--ease-out);
+}
+
+.tonight-strip-all:hover { color: var(--accent-color); }
+
+/* Happy-hour chips */
+.tonight-strip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tonight-hh-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.85rem 0.45rem 0.5rem;
+  background: rgba(var(--secondary-color-rgb), 0.1);
+  border: 1px solid rgba(var(--secondary-color-rgb), 0.4);
+  border-radius: var(--radius-pill);
+  text-decoration: none;
+  color: var(--text-primary);
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.2s var(--ease-out);
+  max-width: 100%;
+}
+
+.tonight-hh-chip:hover {
+  background: rgba(var(--secondary-color-rgb), 0.2);
+  border-color: var(--secondary-color);
+  transform: translateY(-1px);
+}
+
+.tonight-hh-logo {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border-default);
+  background: var(--surface-elevated);
+  flex-shrink: 0;
+}
+
+.tonight-hh-name {
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 14ch;
+}
+
+.tonight-hh-time {
+  font-size: 0.75rem;
+  color: var(--secondary-color);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Recurring tonight grid */
+.tonight-recurring-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.75rem;
+}
+
+.tonight-recurring-card {
+  display: block;
+  padding: 0.85rem 1rem;
+  background: rgba(var(--accent-color-rgb), 0.06);
+  border: 1px solid rgba(var(--accent-color-rgb), 0.3);
+  border-left: 3px solid var(--accent-color);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s var(--ease-out);
+}
+
+.tonight-recurring-card:hover {
+  transform: translateY(-2px);
+  background: rgba(var(--accent-color-rgb), 0.1);
+}
+
+.tonight-recurring-card h4 {
+  margin: 0 0 0.3rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.3;
+}
+
+/* Mobile compactness */
+@media (max-width: 600px) {
+  .tonight-hero { padding: 1.25rem 1rem 1.5rem; }
+  .tonight-events-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 0.75rem; }
+  .tonight-event-body { padding: 0.7rem 0.85rem 0.85rem; }
+  .tonight-event-title { font-size: 0.92rem; }
+  .tonight-strip-head h3 { font-size: 1rem; }
+  .tonight-recurring-grid { grid-template-columns: 1fr; }
+}
+
+/* Below-the-fold demoted welcome / A-Z */
+.welcome-message-section {
+  margin-top: 3rem;
+  opacity: 0.92;
+}
+
+/* =========================================================
    MODERN ADDITIONS — hero dots/arrows, welcome, news,
    masonry venue logo badge, daily chips, etc.
    ========================================================= */

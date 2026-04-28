@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777285237810">
+  <link rel="stylesheet" href="/css/style.css?v=1777379986835">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -181,9 +181,13 @@
                   
                   <div class="social-icons-inline">
                     
-                      <a href="https://www.instagram.com/ivycitysmokehouse/" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
+                      <a href="https://www.instagram.com/ivycitysmokehouse" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
                     
                     
+                      <a href="https://www.facebook.com/ivycitysmokehouse" target="_blank" rel="noopener noreferrer" class="social-icon facebook" title="Facebook"></a>
+                    
+                    
+                      <a href="https://twitter.com/icshdc" target="_blank" rel="noopener noreferrer" class="social-icon twitter" title="Twitter/X"></a>
                     
                   </div>
                   
@@ -191,6 +195,49 @@
             </div>
             
             <!-- Side Map -->
+            
+            <div style="width:220px; flex-shrink:0; margin-top: 0.5rem;">
+               <div id="venue-mini-map" style="width:100%; height:220px; border-radius:12px; border:1px solid rgba(255,255,255,0.1); box-shadow:0 4px 15px rgba(0,0,0,0.3); z-index:0; cursor: pointer;"></div>
+               <script>
+                 document.addEventListener('DOMContentLoaded', function() {
+                    var lat = 38.9145381;
+                    var lng = -76.9854629;
+                    var map = L.map('venue-mini-map', {
+                        center: [lat, lng],
+                        zoom: 16,
+                        zoomControl: false, 
+                        attributionControl: false,
+                        dragging: false,
+                        scrollWheelZoom: false,
+                        doubleClickZoom: false,
+                        boxZoom: false,
+                        keyboard: false
+                    });
+                     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                        subdomains: 'abcd',
+                        maxZoom: 20
+                     }).addTo(map);
+
+                    var iconHTML = `<div class="pin-wrapper"><img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fivy-city-smokehouse%2Flogo-1766592628055-467703055_1287959995695151_2251992149821767539_n.jpg?alt=media&amp;token=403429a4-8e9a-43ad-9542-6a6a73743fb5" onerror="this.style.display='none'; this.parentElement.classList.add('no-logo');"></div>`;
+                    var icon = L.divIcon({
+                        className: 'custom-pin-icon',
+                        html: iconHTML,
+                        iconSize: [40, 40],
+                        iconAnchor: [20, 20]
+                    });
+                    
+                    L.marker([lat, lng], {icon: icon}).addTo(map);
+                    
+                    // Click to open Google Maps
+                    document.getElementById('venue-mini-map').addEventListener('click', function() {
+                        window.open('https://www.google.com/maps/search/?api=1&amp;query=Ivy%20City%20Smokehouse%201356%20Okie%20St%20NE%2C%20Washington%2C%20DC%2020002%2C%20USA', '_blank');
+                    });
+                 });
+               </script>
+               <div style="text-align:center; margin-top:0.5rem;">
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=Ivy%20City%20Smokehouse%201356%20Okie%20St%20NE%2C%20Washington%2C%20DC%2020002%2C%20USA" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; color:#aaa; text-decoration:none;">View on Google Maps &rarr;</a>
+               </div>
+            </div>
             
         </div>
       </div>
@@ -318,7 +365,7 @@
           <div class="rating-header">
             <span class="rating-stars" style="--rating: 4.3;">★★★★★</span>
             <span class="rating-value">4.3</span>
-            <span class="rating-count">(2646 reviews)</span>
+            <span class="rating-count">(2680 reviews)</span>
             <span class="btn-read-reviews" style="margin-left: auto; margin-top: 0;">View on Google</span>
           </div>
         </a>
@@ -331,44 +378,10 @@
       
       <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJCRSgFHO4t4kR-LVTtPHfsAI" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
           <div class="review-header">
-            <img src="" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjUVlosgZsSjJMze9g4Tl5JhEbY0FJdBEA76MchROwodZZzdyzE8=s128-c0x00000000-cc-rp-mo" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
             <div class="review-meta">
               <!-- Author name removed for privacy -->
-              <span class="review-time">a month ago</span>
-            </div>
-          </div>
-          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
-            
-            ★★★★★
-          </div>
-          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
-            Regardless of the time of day, be it brunch, lunch, or dinner, the experience consistently delivers exceptional energy. The atmosphere is vibrant, fostering connections with individuals from diverse...
-          </p>
-      </a>
-      
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJCRSgFHO4t4kR-LVTtPHfsAI" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
-          <div class="review-header">
-            <img src="" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
-            <div class="review-meta">
-              <!-- Author name removed for privacy -->
-              <span class="review-time">a month ago</span>
-            </div>
-          </div>
-          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
-            
-            ★★★☆☆
-          </div>
-          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
-            Definitely a hit and mix food experience for my group. Not sure what flavor is used for the waffles, but we were no fans of the waffles or the biscuits. The hand cut fries were a hit. Great customer...
-          </p>
-      </a>
-      
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJCRSgFHO4t4kR-LVTtPHfsAI" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
-          <div class="review-header">
-            <img src="" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
-            <div class="review-meta">
-              <!-- Author name removed for privacy -->
-              <span class="review-time">2 months ago</span>
+              <span class="review-time">6 months ago</span>
             </div>
           </div>
           <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
@@ -382,27 +395,61 @@
       
       <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJCRSgFHO4t4kR-LVTtPHfsAI" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
           <div class="review-header">
-            <img src="" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjW9TSgvq507IRhzCDaZfRUgk3url7M7FbMVbyv1hj5i1QZj0zhs=s128-c0x00000000-cc-rp-mo-ba5" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
             <div class="review-meta">
               <!-- Author name removed for privacy -->
-              <span class="review-time">a week ago</span>
+              <span class="review-time">5 months ago</span>
             </div>
           </div>
           <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
             
-            ★★★★☆
+            ★★★★★
           </div>
           <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
-            The place is very nice.  Great atmosphere. The live band was fantastic and the drinks were on point. Definitely will return in 2026!
+            Regardless of the time of day, be it brunch, lunch, or dinner, the experience consistently delivers exceptional energy. The atmosphere is vibrant, fostering connections with individuals from diverse...
           </p>
       </a>
       
       <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJCRSgFHO4t4kR-LVTtPHfsAI" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
           <div class="review-header">
-            <img src="" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjW95XjhH7-M9u2woO2HHuxq1hMJQ9h2IvGmHSVfB8-i0QvGWQbc=s128-c0x00000000-cc-rp-mo-ba5" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
             <div class="review-meta">
               <!-- Author name removed for privacy -->
-              <span class="review-time">6 months ago</span>
+              <span class="review-time">a month ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            This place is freaking rock solid. I came up here not knowing the area but damn I landed in the right spot. Samantha is rocking this place keeping smiles on everyone and slanging some of the best...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJCRSgFHO4t4kR-LVTtPHfsAI" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocIy8C7jZIB9wLuF4-XiKdQeoiLQPFQFse7UsasN_riMsSAthg=s128-c0x00000000-cc-rp-mo" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">2 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★☆☆☆☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Would never eat from here AGAIN! PETER LOFTUS the OPERATIONAL MANAGER WAS VERY RUDE AND USED SARCASM FOR OUR ENTIRE CONVERSATION! WHEN I SAID MY VEHICLE WAS STOLEN HE LAUGHED! LOW BLOW! The server...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJCRSgFHO4t4kR-LVTtPHfsAI" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXo2nkuYU8Ks69YpLy2dn5IjLHFlG9EZhebR8BdinkJ3_u0Uwk=s128-c0x00000000-cc-rp-mo-ba5" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a month ago</span>
             </div>
           </div>
           <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
@@ -410,7 +457,7 @@
             ★★★★☆
           </div>
           <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
-            Make reservations for a large group 60 kids. The restaurant is nice.  Our group was seated upstairs which had inside and outside seating. From my perspective the food was just ok. We had barbecue beef...
+            I have brought a couple of school groups here for meals. They are very accommodating, giving them their own special space. The barbecue, however, leaves very much to be desired. Pork is absolutely...
           </p>
       </a>
       
@@ -423,6 +470,61 @@
 
   <!-- [NEW] Nearby Bars Section -->
   
+  
+  <div class="nearby-section" style="margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+    <h3 style="margin-bottom: 1.5rem;">📍 Nearby Spots (Walking Distance)</h3>
+    <div class="venue-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
+      
+        <a href="/bars/culture/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fculture%2Flogo-1766360227949-129790827_685422032338187_4683375292546158267_n.jpg?alt=media&amp;token=c9a73444-ae15-434c-98c4-f80b5b828378" alt="Culture" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Culture</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">23m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/other-half-brewing-co/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fother-half-brewing-co%2Flogo-1767023369749-539966141_18320803780239059_2995121060115064344_n.jpg?alt=media&amp;token=9388307f-7fd5-40f2-896f-219b4bffa1fd" alt="Other Half Brewing Co." style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Other Half Brewing Co.</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">145m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/thr-w-social-dc/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthr-w-social-dc%2Flogo-1767142566225-72463866_405308213704135_3119715418902626304_n.jpg?alt=media&amp;token=72bc87f8-9732-485b-b3a1-2612c1f05a75" alt="THRōW Social DC" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">THRōW Social DC</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">173m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/bar-sirenis/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbar-sirenis%2Flogo-1766149280662-254088171_3067048776905061_4149497667275098381_n.png?alt=media&amp;token=4101a450-b18c-4b52-9f55-e199de657ebf" alt="Bar Sirenis" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Bar Sirenis</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">286m away</p>
+          </div>
+        </a>
+      
+    </div>
+  </div>
   
 
   <a href="/" class="btn-back">← Back to Home</a>
@@ -439,7 +541,7 @@
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": 4.3,
-    "reviewCount": 2646
+    "reviewCount": 2680
   },
   
   
@@ -447,19 +549,21 @@
     "@type": "Review",
     "reviewRating": {
       "@type": "Rating",
-      "ratingValue": 5,
+      "ratingValue": 2,
       "bestRating": 5
     },
     "author": {
       "@type": "Person",
-      "name": "Alyssia King"
+      "name": "Chela Henderson"
     },
-    "reviewBody": "Regardless of the time of day, be it brunch, lunch, or dinner, the experience consistently delivers exceptional energy. The atmosphere is vibrant, fostering connections with individuals from diverse backgrounds. The culinary offerings are consistently outstanding, and we highly recommend experiencing it firsthand. Sorry no pictures of the food but I did see a band that night."
+    "reviewBody": "So my cousin and I decided to take a little trip across town for some good barbecue. We asked around, read a few reviews online, and figured Ivy City Smokehouse had to be the spot. We even fought through that wild Chris Brown concert traffic — talk about dedication!\nWhen we finally got there, we took the elevator up to the second floor and were immediately greeted by a friendly hostess who asked if we wanted to dine in or order to go. Since we were grabbing takeout, she sent us over to the bar. The bartender was super welcoming, told us it was his first time seeing us there, and gave a few recommendations — always a good start.\nI ended up ordering the P.E.I. Mussels ($19), a half rack of smoked spareribs ($26) with a mac and cheese upgrade ($4), smoked/grilled wings ($18), and a Strawberry Hennessy Margarita ($22).\nNow here’s where things got… complicated.\nThe ribs were tough — like, chewing-on-a-leather-belt tough. The outside had this jerky-like texture that made it hard to enjoy. The wings didn’t hit either; I was hoping for that smoky, juicy flavor that makes you lick your fingers clean, but they were dry and pretty bland. The white sauce that came with the cucumbers was actually really nice though — light, tangy, and a good contrast to the heavier dishes.\nThe mussels were fine — not bad, but nothing to rave about. And then came the mac and cheese… the heartbreak of the night. Dry, flavorless, and oddly spiced with what tasted like pumpkin spice or nutmeg. I was so confused — I came for comfort food, not a fall dessert.\nHonestly, I wanted to love this place — the staff was friendly, the vibe was cool, and the service was fast. But the food just didn’t live up to the hype or the price tag."
   },
   
   
   "priceRange": "MODERATE", 
   
+  
+  "telephone": "(202) 529-3300",
   
   "url": "https://bardc.com/venues/ivy-city-smokehouse/"
 }

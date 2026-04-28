@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777285237810">
+  <link rel="stylesheet" href="/css/style.css?v=1777379986835">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -192,6 +192,49 @@
             
             <!-- Side Map -->
             
+            <div style="width:220px; flex-shrink:0; margin-top: 0.5rem;">
+               <div id="venue-mini-map" style="width:100%; height:220px; border-radius:12px; border:1px solid rgba(255,255,255,0.1); box-shadow:0 4px 15px rgba(0,0,0,0.3); z-index:0; cursor: pointer;"></div>
+               <script>
+                 document.addEventListener('DOMContentLoaded', function() {
+                    var lat = 38.915356;
+                    var lng = -77.02017699999999;
+                    var map = L.map('venue-mini-map', {
+                        center: [lat, lng],
+                        zoom: 16,
+                        zoomControl: false, 
+                        attributionControl: false,
+                        dragging: false,
+                        scrollWheelZoom: false,
+                        doubleClickZoom: false,
+                        boxZoom: false,
+                        keyboard: false
+                    });
+                     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                        subdomains: 'abcd',
+                        maxZoom: 20
+                     }).addTo(map);
+
+                    var iconHTML = `<div class="pin-wrapper"><img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Feebee-s-corner-bar%2Flogo-1767190330380-569203124_17873315874441602_1858076122602692079_n.jpg?alt=media&amp;token=b85f9afc-6117-48a3-997d-054bcafb1b39" onerror="this.style.display='none'; this.parentElement.classList.add('no-logo');"></div>`;
+                    var icon = L.divIcon({
+                        className: 'custom-pin-icon',
+                        html: iconHTML,
+                        iconSize: [40, 40],
+                        iconAnchor: [20, 20]
+                    });
+                    
+                    L.marker([lat, lng], {icon: icon}).addTo(map);
+                    
+                    // Click to open Google Maps
+                    document.getElementById('venue-mini-map').addEventListener('click', function() {
+                        window.open('https://www.google.com/maps/search/?api=1&amp;query=Eebee&#39;s%20Corner%20Bar%201840%206th%20St%20NW%2C%20Washington%2C%20DC%2020001%2C%20USA', '_blank');
+                    });
+                 });
+               </script>
+               <div style="text-align:center; margin-top:0.5rem;">
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=Eebee&#39;s%20Corner%20Bar%201840%206th%20St%20NW%2C%20Washington%2C%20DC%2020001%2C%20USA" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; color:#aaa; text-decoration:none;">View on Google Maps &rarr;</a>
+               </div>
+            </div>
+            
         </div>
       </div>
     </div>
@@ -259,9 +302,9 @@
       <div class="google-rating" style="margin-bottom: 2rem;">
         <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJXRpbfyS3t4kRM5IQFBmi4vk" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: block;">
           <div class="rating-header">
-            <span class="rating-stars" style="--rating: 4.9;">★★★★★</span>
-            <span class="rating-value">4.9</span>
-            <span class="rating-count">(150 reviews)</span>
+            <span class="rating-stars" style="--rating: 4.7;">★★★★★</span>
+            <span class="rating-value">4.7</span>
+            <span class="rating-count">(297 reviews)</span>
             <span class="btn-read-reviews" style="margin-left: auto; margin-top: 0;">View on Google</span>
           </div>
         </a>
@@ -274,7 +317,7 @@
       
       <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJXRpbfyS3t4kRM5IQFBmi4vk" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
           <div class="review-header">
-            <img src="" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXx64N8o-OPmmmCDMkiDkYx1qMz6qvrcZlMZkV76ELdQnshEoI=s128-c0x00000000-cc-rp-mo-ba4" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
             <div class="review-meta">
               <!-- Author name removed for privacy -->
               <span class="review-time">a month ago</span>
@@ -285,13 +328,13 @@
             ★★★★★
           </div>
           <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
-            AMAZING experience checking out this new spot! Came here for my birthday and was blown away. My wife and I started with the caesar salad and it was delicious! Perfectly dressed, perfect amount of...
+            It’s been a while since I had to plan my arrival right when the doors open just to guarantee a table. Making a mad dash across town to try the burger and soak in the bustling atmosphere was entirely...
           </p>
       </a>
       
       <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJXRpbfyS3t4kRM5IQFBmi4vk" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
           <div class="review-header">
-            <img src="" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjUUXyJqYIucdHE-iyKWQGNGkfzxNmsNI1Qk5b1WogDKX5aozJyh=s128-c0x00000000-cc-rp-mo-ba4" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
             <div class="review-meta">
               <!-- Author name removed for privacy -->
               <span class="review-time">a month ago</span>
@@ -299,36 +342,36 @@
           </div>
           <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
             
-            ★★★★★
+            ★★★★☆
           </div>
           <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
-            Great atmosphere! Burger is very good - it&#39;s simple, but in that simplicity, well crafted. The Caesar salad was surprisingly very good. It&#39;s a fine line between over saturation of dressing. It was...
+            It’s great to have a bar like Eebee’s in DC. Good food served until late and great vibe. We arrived at 11pm, waited for a short while to be seated and had the crab and artichoke dip which was super...
           </p>
       </a>
       
       <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJXRpbfyS3t4kRM5IQFBmi4vk" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
           <div class="review-header">
-            <img src="" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXxMNveVydyEm932HS7VyHeuIUZbz5gxAxtcdwpf3LOSDAwRbIDBQ=s128-c0x00000000-cc-rp-mo-ba8" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
             <div class="review-meta">
               <!-- Author name removed for privacy -->
-              <span class="review-time">a month ago</span>
+              <span class="review-time">2 months ago</span>
             </div>
           </div>
           <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
             
-            ★★★★★
+            ★★★★☆
           </div>
           <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
-            What an amazing space and blessing to the neighborhood! So comfortable and with great vibes. Have been a few times and the service and hospitality are top notch. Want a nice cocktail? Check. Want a...
+            I stumbled upon Eebee’s Corner Bar while craving a great burger in DC, and this place absolutely delivers! The cheeseburger here is one of the best I’ve had in the city — juicy, perfectly seasoned,...
           </p>
       </a>
       
       <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJXRpbfyS3t4kRM5IQFBmi4vk" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
           <div class="review-header">
-            <img src="" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjWWN795XEbKJ8kuhC-r4Gbr479OYzffGu9scEQCZFvuJHLaz65ZQw=s128-c0x00000000-cc-rp-mo-ba6" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
             <div class="review-meta">
               <!-- Author name removed for privacy -->
-              <span class="review-time">a month ago</span>
+              <span class="review-time">3 months ago</span>
             </div>
           </div>
           <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
@@ -336,18 +379,16 @@
             ★★★★★
           </div>
           <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
-            I simply cannot say enough great things about this spot. It’s been open for less than a week, I have already been twice and am making plans to go again with friends this weekend.
-
-There is so much...
+            ITS A BURGER! A simple cheese burger but it was beyond well seasoned. Super T H I C K and moist. This mouth watering mammoth was really tasty. My only down fall is it doesn&#39;t come with condiments;...
           </p>
       </a>
       
       <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJXRpbfyS3t4kRM5IQFBmi4vk" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
           <div class="review-header">
-            <img src="" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjUic_vh6O2H8gaV2mtpmlu0OLJpH-eU28X1Ln0ZPhzek8xRUT2x=s128-c0x00000000-cc-rp-mo-ba8" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
             <div class="review-meta">
               <!-- Author name removed for privacy -->
-              <span class="review-time">a month ago</span>
+              <span class="review-time">2 months ago</span>
             </div>
           </div>
           <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
@@ -355,7 +396,7 @@ There is so much...
             ★★★★★
           </div>
           <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
-            I have been very excited about this opening and it exceeded my expectations: What will surely be known as the best burger in DC, an awesome drinks menu, a quirky and cozy design, and friendly staff....
+            Walk into Eebee&#39;s Corner Bar and you&#39;ll feel the energy. It&#39;s not the crowded bar or the noise of people laughing and enjoying each other. What you feel is the energy of passion, the satisfaction of...
           </p>
       </a>
       
@@ -368,6 +409,61 @@ There is so much...
 
   <!-- [NEW] Nearby Bars Section -->
   
+  
+  <div class="nearby-section" style="margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+    <h3 style="margin-bottom: 1.5rem;">📍 Nearby Spots (Walking Distance)</h3>
+    <div class="venue-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
+      
+        <a href="/bars/el-techo/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fel-techo%2Flogo-1766403145367-491894521_18354591166198838_2474938255140552296_n.jpg?alt=media&amp;token=2d90821c-8f13-4d8f-b3ec-15d27afda18f" alt="El Techo" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">El Techo</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">13m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/600t/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; background: #333; display: flex; align-items: center; justify-content: center;">
+                <span style="font-size: 2rem;">🍸</span>
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">600t</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">19m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/shaw-s-tavern/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fshaw-s-tavern%2Flogo-1767110549213-11371005_1031629866861742_840981624_a.jpg?alt=media&amp;token=066332d4-12e4-4a08-a6ec-8ee7d2b6b557" alt="Shaw&#39;s Tavern" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Shaw&#39;s Tavern</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">50m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/the-howard-theatre/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-howard-theatre%2Flogo-1766580502436-463469241_1081954233330816_3412621488745797170_n.jpg?alt=media&amp;token=766e878d-015d-478d-878e-4f0883f3ff1a" alt="The Howard Theatre" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">The Howard Theatre</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">79m away</p>
+          </div>
+        </a>
+      
+    </div>
+  </div>
   
 
   <a href="/" class="btn-back">← Back to Home</a>
@@ -383,8 +479,8 @@ There is so much...
   
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": 4.9,
-    "reviewCount": 150
+    "ratingValue": 4.7,
+    "reviewCount": 297
   },
   
   
@@ -397,14 +493,16 @@ There is so much...
     },
     "author": {
       "@type": "Person",
-      "name": "William Shanklin"
+      "name": "Dish, Don&#39;t Kill My Vibe"
     },
-    "reviewBody": "AMAZING experience checking out this new spot! Came here for my birthday and was blown away. My wife and I started with the caesar salad and it was delicious! Perfectly dressed, perfect amount of cheese, so great! The martini? DONT GET ME STARTED!! The ambiance of this place is exactly why they’re going for. Divey, intimate space, with great food options, cheap drinks, baseball stickers on the bathroom walls, I’ll definitely be back! If not for any of those things, for the burger. I’ve had many burgers, and this is EASILY top 3 in my life. It was PERFECTION. Juicy, cheesy, perfect balance with the slice of onion, toasted bun, it’s what other burger joints wished they could pull off."
+    "reviewBody": "It’s been a while since I had to plan my arrival right when the doors open just to guarantee a table. Making a mad dash across town to try the burger and soak in the bustling atmosphere was entirely worth it. The place gets absolutely packed, but the acoustics are surprisingly great—you can actually hear your own conversation. Go grab a seat and see why this place has so much motion. Oh, and the bacon burger? Absolute Vibranium."
   },
   
   
   "priceRange": "$$", 
   
+  
+  "telephone": "(202) 506-5711",
   
   "url": "https://bardc.com/venues/eebee-s-corner-bar/"
 }
