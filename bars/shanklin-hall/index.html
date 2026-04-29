@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777379986835">
+  <link rel="stylesheet" href="/css/style.css?v=1777422011774">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -192,6 +192,49 @@
             
             <!-- Side Map -->
             
+            <div style="width:220px; flex-shrink:0; margin-top: 0.5rem;">
+               <div id="venue-mini-map" style="width:100%; height:220px; border-radius:12px; border:1px solid rgba(255,255,255,0.1); box-shadow:0 4px 15px rgba(0,0,0,0.3); z-index:0; cursor: pointer;"></div>
+               <script>
+                 document.addEventListener('DOMContentLoaded', function() {
+                    var lat = 38.9203766;
+                    var lng = -77.0415828;
+                    var map = L.map('venue-mini-map', {
+                        center: [lat, lng],
+                        zoom: 16,
+                        zoomControl: false, 
+                        attributionControl: false,
+                        dragging: false,
+                        scrollWheelZoom: false,
+                        doubleClickZoom: false,
+                        boxZoom: false,
+                        keyboard: false
+                    });
+                     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                        subdomains: 'abcd',
+                        maxZoom: 20
+                     }).addTo(map);
+
+                    var iconHTML = `<div class="pin-wrapper"><img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fshanklin-hall%2Flogo-1767110306722-209624746_345208187279835_966581784541499236_n.jpg?alt=media&amp;token=68e415ce-2911-4166-b19f-c1a1fc752128" onerror="this.style.display='none'; this.parentElement.classList.add('no-logo');"></div>`;
+                    var icon = L.divIcon({
+                        className: 'custom-pin-icon',
+                        html: iconHTML,
+                        iconSize: [40, 40],
+                        iconAnchor: [20, 20]
+                    });
+                    
+                    L.marker([lat, lng], {icon: icon}).addTo(map);
+                    
+                    // Click to open Google Maps
+                    document.getElementById('venue-mini-map').addEventListener('click', function() {
+                        window.open('https://www.google.com/maps/search/?api=1&amp;query=Shanklin%20Hall%202325%2018th%20St%20NW%2C%20Washington%2C%20DC%2020009%2C%20USA', '_blank');
+                    });
+                 });
+               </script>
+               <div style="text-align:center; margin-top:0.5rem;">
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=Shanklin%20Hall%202325%2018th%20St%20NW%2C%20Washington%2C%20DC%2020009%2C%20USA" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; color:#aaa; text-decoration:none;">View on Google Maps &rarr;</a>
+               </div>
+            </div>
+            
         </div>
       </div>
     </div>
@@ -310,9 +353,9 @@
       <div class="google-rating" style="margin-bottom: 2rem;">
         <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJ_RMTYx63t4kRt7_ybppYnQY" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: block;">
           <div class="rating-header">
-            <span class="rating-stars" style="--rating: 4.5;">★★★★★</span>
-            <span class="rating-value">4.5</span>
-            <span class="rating-count">(86 reviews)</span>
+            <span class="rating-stars" style="--rating: 4.4;">★★★★★</span>
+            <span class="rating-value">4.4</span>
+            <span class="rating-count">(107 reviews)</span>
             <span class="btn-read-reviews" style="margin-left: auto; margin-top: 0;">View on Google</span>
           </div>
         </a>
@@ -325,10 +368,27 @@
       
       <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJ_RMTYx63t4kRt7_ybppYnQY" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
           <div class="review-header">
-            <img src="" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjWWIvDyYlnJHvNHVa9HXMtJK4YnM1fyzakYG-ODKJt_YWOXgN0u=s128-c0x00000000-cc-rp-mo-ba7" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
             <div class="review-meta">
               <!-- Author name removed for privacy -->
-              <span class="review-time">5 months ago</span>
+              <span class="review-time">4 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Parking in the area is definitely tricky, but once you step inside, it&#39;s absolutely worth the effort. The space has a modern, cozy vibe that works well for mingling, trying new drinks, and enjoying...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJ_RMTYx63t4kRt7_ybppYnQY" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocLFN7de1f_kX0hWmrf7JRT3UvSEKQuE4eMzbUWrx1gkUjprx3ky=s128-c0x00000000-cc-rp-mo-ba3" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">10 months ago</span>
             </div>
           </div>
           <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
@@ -342,26 +402,45 @@
       
       <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJ_RMTYx63t4kRt7_ybppYnQY" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
           <div class="review-header">
-            <img src="" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjUJGVYpjcq6NWXBq6RGEjEiUA8JETxsAbrnzFCFCRzsyQarpQ0z=s128-c0x00000000-cc-rp-mo" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
             <div class="review-meta">
               <!-- Author name removed for privacy -->
-              <span class="review-time">2 months ago</span>
+              <span class="review-time">3 months ago</span>
             </div>
           </div>
           <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
             
-            ★★★★☆
+            ★★★★★
           </div>
           <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
-            I love the ambiance here and how Black-centric it is. The music is a vibe and the staff was friendly and attentive.
-
-The food menu is limited to four offerings so your best bet is the drinks here....
+            First time at Shanklin Hall, I’m visiting in town with some friends. This spot is really cool, and they have a nice space and vibe. Music was great by the way! The staff was very friendly and helpful....
           </p>
       </a>
       
       <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJ_RMTYx63t4kRt7_ybppYnQY" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
           <div class="review-header">
-            <img src="" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXhNNdF7hwO3AWxL_8txblfIxvihFeqfAQjYZNOswaxKoUEC70=s128-c0x00000000-cc-rp-mo-ba2" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">3 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★☆☆☆
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            PLEASE NOTE: this review is for their nighttime club service.
+
+In the spirit of fairness. let’s start with the positives in a negative review.
+
+The music: fantastic - I came on a night that featured...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJ_RMTYx63t4kRt7_ybppYnQY" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjWpy90J9nhOlR0Yh_xfkaeSzYc5j0K-JAzGSVYEqaNMg0v9xlOpGQ=s128-c0x00000000-cc-rp-mo-ba5" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
             <div class="review-meta">
               <!-- Author name removed for privacy -->
               <span class="review-time">2 years ago</span>
@@ -376,40 +455,6 @@ The food menu is limited to four offerings so your best bet is the drinks here..
           </p>
       </a>
       
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJ_RMTYx63t4kRt7_ybppYnQY" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
-          <div class="review-header">
-            <img src="" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
-            <div class="review-meta">
-              <!-- Author name removed for privacy -->
-              <span class="review-time">3 months ago</span>
-            </div>
-          </div>
-          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
-            
-            ★★★★★
-          </div>
-          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
-            Great place! My partner and I went here on our day off for a drink and the Bartender, Dom, remembered me from the day before at my restaurant. Wonderful cocktails, great vibes, great music, attention...
-          </p>
-      </a>
-      
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJ_RMTYx63t4kRt7_ybppYnQY" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
-          <div class="review-header">
-            <img src="" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
-            <div class="review-meta">
-              <!-- Author name removed for privacy -->
-              <span class="review-time">6 months ago</span>
-            </div>
-          </div>
-          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
-            
-            ★★★★★
-          </div>
-          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
-            The drinks and food are savory and tasty. The atmosphere was  welcoming, comfortable, and inclusive.  This place is definitely a space that you could drop in at any time and feel great just being you...
-          </p>
-      </a>
-      
     </div>
     <div class="reviews-footer">
       <small>Reviews provided by Google</small>
@@ -419,6 +464,61 @@ The food menu is limited to four offerings so your best bet is the drinks here..
 
   <!-- [NEW] Nearby Bars Section -->
   
+  
+  <div class="nearby-section" style="margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+    <h3 style="margin-bottom: 1.5rem;">📍 Nearby Spots (Walking Distance)</h3>
+    <div class="venue-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
+      
+        <a href="/bars/town-tavern-dc/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Ftown-tavern-dc%2Flogo-1766239070190-10349819_1511618622393199_940625756_a.jpg?alt=media&amp;token=462f6d1c-0e51-4690-b09e-334d9809aef5" alt="Town Tavern DC" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Town Tavern DC</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">4m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/green-island-cafe/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fgreen-island-cafe%2Flogo-1766495391040-256881497_581744406432713_2181915326425259046_n.jpg?alt=media&amp;token=142e368d-7234-4de3-b231-168f1cd99d5a" alt="Green Island Cafe" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Green Island Cafe</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">9m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/dans-cafe/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fdans-cafe%2Flogo-1766361957330-280042700_1306104489883708_5821779353376664786_n.jpg?alt=media&amp;token=b0a9d970-3b34-4804-8e00-c0d5fc4e8b96" alt="Dan&#39;s Cafe" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Dan&#39;s Cafe</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">11m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/death-punch/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fdeath-punch%2Flogo-1766363506623-72196962_741021453034336_4072645211640037376_n.jpg?alt=media&amp;token=d0df6a2c-d27f-4794-8cd3-376fa913fb0c" alt="Death Punch" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Death Punch</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">11m away</p>
+          </div>
+        </a>
+      
+    </div>
+  </div>
   
 
   <a href="/" class="btn-back">← Back to Home</a>
@@ -434,8 +534,8 @@ The food menu is limited to four offerings so your best bet is the drinks here..
   
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": 4.5,
-    "reviewCount": 86
+    "ratingValue": 4.4,
+    "reviewCount": 107
   },
   
   
@@ -448,9 +548,9 @@ The food menu is limited to four offerings so your best bet is the drinks here..
     },
     "author": {
       "@type": "Person",
-      "name": "Tye Grant"
+      "name": "SuJin Choi"
     },
-    "reviewBody": "We had the kale salad with shrimp and the lemon pepper wings. We also ordered a few cocktails, juniper street , why don’t we fall in love and the rare essence all well put together. Loved that the wings are fried hard. I love kale so I enjoyed the salad. I did not particularly enjoy the added shrimp that could just be me though. I think all around they curate some very lovely vibes, everyone on staff is very hospitable and friendly. The music 10/10. The bathrooms were clean. We ubered so I can speak for parking but it’s well located in Adam’s Morgan i believe. It’s a good time highly recommend."
+    "reviewBody": "Parking in the area is definitely tricky, but once you step inside, it's absolutely worth the effort. The space has a modern, cozy vibe that works well for mingling, trying new drinks, and enjoying the atmosphere without feeling crowded.\n\nThe staffs  were welcoming, organized, and attentive, making sure everyone had what they needed. The happy hour selections were impressive, with well-crafted cocktails and tasty bites that felt a step above typical bar offerings. Everything we tried was flavorful, fresh, and generously portioned.\n\nShanklin Hall proved to be a wonderful venue gathering, a night out, and a spot I'd happily return to. Despite the parking challenges, the experience, service, and drinks made it totally worth the visit."
   },
   
   

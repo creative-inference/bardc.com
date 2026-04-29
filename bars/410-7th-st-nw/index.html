@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777379986835">
+  <link rel="stylesheet" href="/css/style.css?v=1777422011774">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -185,6 +185,8 @@
                     
                     
                     
+                      <a href="https://x.com/pubkey" target="_blank" rel="noopener noreferrer" class="social-icon twitter" title="Twitter/X"></a>
+                    
                   </div>
                   
                 </div>
@@ -192,12 +194,57 @@
             
             <!-- Side Map -->
             
+            <div style="width:220px; flex-shrink:0; margin-top: 0.5rem;">
+               <div id="venue-mini-map" style="width:100%; height:220px; border-radius:12px; border:1px solid rgba(255,255,255,0.1); box-shadow:0 4px 15px rgba(0,0,0,0.3); z-index:0; cursor: pointer;"></div>
+               <script>
+                 document.addEventListener('DOMContentLoaded', function() {
+                    var lat = 38.8951909;
+                    var lng = -77.02223359999999;
+                    var map = L.map('venue-mini-map', {
+                        center: [lat, lng],
+                        zoom: 16,
+                        zoomControl: false, 
+                        attributionControl: false,
+                        dragging: false,
+                        scrollWheelZoom: false,
+                        doubleClickZoom: false,
+                        boxZoom: false,
+                        keyboard: false
+                    });
+                     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                        subdomains: 'abcd',
+                        maxZoom: 20
+                     }).addTo(map);
+
+                    var iconHTML = `<div class="pin-wrapper"><img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2F410-7th-st-nw%2Flogo-1767191054124-535555871_17852372910525647_7662685895419438569_n.jpg?alt=media&amp;token=9bdb2337-b51d-4442-9da8-f79998b870c0" onerror="this.style.display='none'; this.parentElement.classList.add('no-logo');"></div>`;
+                    var icon = L.divIcon({
+                        className: 'custom-pin-icon',
+                        html: iconHTML,
+                        iconSize: [40, 40],
+                        iconAnchor: [20, 20]
+                    });
+                    
+                    L.marker([lat, lng], {icon: icon}).addTo(map);
+                    
+                    // Click to open Google Maps
+                    document.getElementById('venue-mini-map').addEventListener('click', function() {
+                        window.open('https://www.google.com/maps/search/?api=1&amp;query=Pubkey%20410%207th%20St%20NW%2C%20Washington%2C%20DC%2020004%2C%20USA', '_blank');
+                    });
+                 });
+               </script>
+               <div style="text-align:center; margin-top:0.5rem;">
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=Pubkey%20410%207th%20St%20NW%2C%20Washington%2C%20DC%2020004%2C%20USA" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; color:#aaa; text-decoration:none;">View on Google Maps &rarr;</a>
+               </div>
+            </div>
+            
         </div>
       </div>
     </div>
   </div>
 
     <!-- [MOVED] Google Rating Display (Moved to Reviews Section) -->
+  
+    <!-- Rating moved below -->
   
   <!-- End Google Rating Display -->
 
@@ -300,10 +347,112 @@
 
     <!-- [MOVED] Google Rating Display -->
     
+      <div class="google-rating" style="margin-bottom: 2rem;">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJAwVNjf-3t4kRmUp-iawOgzI" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: block;">
+          <div class="rating-header">
+            <span class="rating-stars" style="--rating: 4.8;">★★★★★</span>
+            <span class="rating-value">4.8</span>
+            <span class="rating-count">(126 reviews)</span>
+            <span class="btn-read-reviews" style="margin-left: auto; margin-top: 0;">View on Google</span>
+          </div>
+        </a>
+      </div>
+    
     <!-- End Google Rating Display -->
 
     <h3>Recent Reviews from Google</h3>
     <div class="reviews-grid">
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJAwVNjf-3t4kRmUp-iawOgzI" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjVgUO9BIloNAMj-DVdR1Y-2zLOe7HPAP7XY9dvlotXIfta-Dm28=s128-c0x00000000-cc-rp-mo-ba5" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">4 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Checked out this new pub on 7th St in downtown DC. The exterior could be more inviting - the fully opaque vinyl on the door makes it easy to miss and felt unwelcoming.
+
+Inside, the space is cozy and...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJAwVNjf-3t4kRmUp-iawOgzI" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjV5ziQklJnV-OAte0Nf2jdabOXFQtFuHZ8S2jKpBepycRiZgl4Y=s128-c0x00000000-cc-rp-mo-ba4" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">4 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Walk into the place feeling like 0cool
+Bar humming like an old CRT playing a Twin Peaks episode
+Order a burger, sesame seed delight (TALLOW ONLY)
+VHS scan lines, cold beer, late nites
+What&#39;re you...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJAwVNjf-3t4kRmUp-iawOgzI" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjWKEhwQzDipv_7Z4t667T4mFNn9gJ6DvgxUSwRd2VpF3UT5Cn8=s128-c0x00000000-cc-rp-mo-ba3" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">2 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            The SBR is delicious! I had two! The atmosphere is cozy and meme-y. Really enjoyed popping in during the cold weather. Bartenders and bar backs are friendly and recommended great drinks. I can&#39;t speak...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJAwVNjf-3t4kRmUp-iawOgzI" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocKBCU_TsPx6fk1f7pR-pF_gqAtkT01QOEP8_sABH3wF-CtRU7A=s128-c0x00000000-cc-rp-mo" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">4 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Great venue, and the team led by Dan and Matt ensure that quality stays consistent and service is above and beyond
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJAwVNjf-3t4kRmUp-iawOgzI" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocKVzRgW7_S1FZIIOt2m4r7qTJlre9ltA4fI30m59asQF68Lsg=s128-c0x00000000-cc-rp-mo" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">2 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            I had a wonderful time here. The bartenders are amazing. Shoutout to Pablo, Moises and the entire bartender team. Even though it was really busy they were incredibly attentive!
+          </p>
+      </a>
       
     </div>
     <div class="reviews-footer">
@@ -314,6 +463,61 @@
 
   <!-- [NEW] Nearby Bars Section -->
   
+  
+  <div class="nearby-section" style="margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+    <h3 style="margin-bottom: 1.5rem;">📍 Nearby Spots (Walking Distance)</h3>
+    <div class="venue-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
+      
+        <a href="/bars/oyamel-cocina-mexicana/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Foyamel-cocina-mexicana%2Flogo-1767023669749-142074378_444874216875208_3591705719108114275_n.jpg?alt=media&amp;token=9c058833-2991-467b-8f8b-c51a10177d87" alt="Oyamel Cocina Mexicana" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Oyamel Cocina Mexicana</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">47m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/jaleo/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fjaleo%2Flogo-1766592989796-11380296_1668019756746023_930705774_a.jpg?alt=media&amp;token=457a2392-21ad-45dd-9e9b-ed68b9398920" alt="Jaleo" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Jaleo</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">82m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/rasika/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Frasika%2Flogo-1767105909150-52700614_358328738093059_7951396727452336128_n.jpg?alt=media&amp;token=48db19fd-e7f9-4f6e-a0a4-3eaa6894f0a1" alt="Rasika" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Rasika</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">88m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/penn-quarter-sports-tavern/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fpenn-quarter-sports-tavern%2Flogo-1767024231089-553354346_18400348648187360_3275332626905056169_n.jpg?alt=media&amp;token=61cc8337-338a-4bde-b62e-2772ce077a3f" alt="Penn Quarter Sports Tavern" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Penn Quarter Sports Tavern</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">122m away</p>
+          </div>
+        </a>
+      
+    </div>
+  </div>
   
 
   <a href="/" class="btn-back">← Back to Home</a>
@@ -327,10 +531,32 @@
   "image": "https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2F410-7th-st-nw%2Flogo-1767191054124-535555871_17852372910525647_7662685895419438569_n.jpg?alt=media&token=9bdb2337-b51d-4442-9da8-f79998b870c0",
   "address": "410 7th St NW, Washington, DC 20004, USA",
   
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.8,
+    "reviewCount": 126
+  },
+  
+  
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": 5,
+      "bestRating": 5
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Liam B"
+    },
+    "reviewBody": "Checked out this new pub on 7th St in downtown DC. The exterior could be more inviting - the fully opaque vinyl on the door makes it easy to miss and felt unwelcoming.\n\nInside, the space is cozy and comfortable like a warm dive bar, though some of the decor feels overengineered and incohesive. Given the bitcoin theme, I expected more retro arcade or video game elements; things like vintage hockey gear and fencing masks felt disconnected.\n\nBeer prices are relatively reasonable for the neighborhood ($5-11 for drafts), though I was disappointed the pours are 10oz instead of full pints. Didn’t try the food, but the menu sounded solid. I’m not sure if they have a happy hour menu or deals but hopefully they add one soon.\n\nThe space itself is large, with a big back area and stage. While it seems to only host bitcoin events, it would also make a great small concert or comedy venue. Hopefully Pubkey gets creative and expands beyond the crypto niche - the area could really use more intimate live venues.\n\nI’d stop back if I’m in the neighborhood and hope the place succeeds."
+  },
   
   
   "priceRange": "$$", 
   
+  
+  "telephone": "(305) 773-4249",
   
   "url": "https://bardc.com/venues/410-7th-st-nw/"
 }

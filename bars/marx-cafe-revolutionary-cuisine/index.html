@@ -52,7 +52,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777379986835">
+  <link rel="stylesheet" href="/css/style.css?v=1777422011774">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -184,6 +184,10 @@
                       <a href="https://www.instagram.com/marxcafe/" target="_blank" rel="noopener noreferrer" class="social-icon instagram" title="Instagram"></a>
                     
                     
+                      <a href="https://facebook.com/marxcafe.mtpleasant" target="_blank" rel="noopener noreferrer" class="social-icon facebook" title="Facebook"></a>
+                    
+                    
+                      <a href="https://x.com/@marxcafemtp" target="_blank" rel="noopener noreferrer" class="social-icon twitter" title="Twitter/X"></a>
                     
                   </div>
                   
@@ -191,6 +195,49 @@
             </div>
             
             <!-- Side Map -->
+            
+            <div style="width:220px; flex-shrink:0; margin-top: 0.5rem;">
+               <div id="venue-mini-map" style="width:100%; height:220px; border-radius:12px; border:1px solid rgba(255,255,255,0.1); box-shadow:0 4px 15px rgba(0,0,0,0.3); z-index:0; cursor: pointer;"></div>
+               <script>
+                 document.addEventListener('DOMContentLoaded', function() {
+                    var lat = 38.931352;
+                    var lng = -77.03814109999999;
+                    var map = L.map('venue-mini-map', {
+                        center: [lat, lng],
+                        zoom: 16,
+                        zoomControl: false, 
+                        attributionControl: false,
+                        dragging: false,
+                        scrollWheelZoom: false,
+                        doubleClickZoom: false,
+                        boxZoom: false,
+                        keyboard: false
+                    });
+                     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                        subdomains: 'abcd',
+                        maxZoom: 20
+                     }).addTo(map);
+
+                    var iconHTML = `<div class="pin-wrapper"><img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fmarx-cafe-revolutionary-cuisine%2Flogo-1767203562018-377814052_6662695007157166_6671966441670163273_n.jpg?alt=media&amp;token=7b4d1abe-7df2-4f78-9036-28a5980844d0" onerror="this.style.display='none'; this.parentElement.classList.add('no-logo');"></div>`;
+                    var icon = L.divIcon({
+                        className: 'custom-pin-icon',
+                        html: iconHTML,
+                        iconSize: [40, 40],
+                        iconAnchor: [20, 20]
+                    });
+                    
+                    L.marker([lat, lng], {icon: icon}).addTo(map);
+                    
+                    // Click to open Google Maps
+                    document.getElementById('venue-mini-map').addEventListener('click', function() {
+                        window.open('https://www.google.com/maps/search/?api=1&amp;query=Marx%20Cafe%203203%20Mt%20Pleasant%20St%20NW%2C%20Washington%2C%20DC%2020010%2C%20USA', '_blank');
+                    });
+                 });
+               </script>
+               <div style="text-align:center; margin-top:0.5rem;">
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=Marx%20Cafe%203203%20Mt%20Pleasant%20St%20NW%2C%20Washington%2C%20DC%2020010%2C%20USA" target="_blank" rel="noopener noreferrer" style="font-size:0.85rem; color:#aaa; text-decoration:none;">View on Google Maps &rarr;</a>
+               </div>
+            </div>
             
         </div>
       </div>
@@ -349,7 +396,7 @@
           <div class="rating-header">
             <span class="rating-stars" style="--rating: 4.3;">★★★★★</span>
             <span class="rating-value">4.3</span>
-            <span class="rating-count">(399 reviews)</span>
+            <span class="rating-count">(401 reviews)</span>
             <span class="btn-read-reviews" style="margin-left: auto; margin-top: 0;">View on Google</span>
           </div>
         </a>
@@ -362,27 +409,10 @@
       
       <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJzb4-RCHIt4kRAicxyUoU3bI" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
           <div class="review-header">
-            <img src="" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjWHe5vsj8X_I31hfoE4NVC19lyb_kc_FWxDZwYpmV6KMnhIPfe8=s128-c0x00000000-cc-rp-mo-ba2" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
             <div class="review-meta">
               <!-- Author name removed for privacy -->
-              <span class="review-time">6 months ago</span>
-            </div>
-          </div>
-          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
-            
-            ★★★★★
-          </div>
-          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
-            Really good atmosphere, great server, and I don&#39;t know how or why, but they lit my cheese on fire, and it was awesome. Recommend something off the small plates menu.
-          </p>
-      </a>
-      
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJzb4-RCHIt4kRAicxyUoU3bI" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
-          <div class="review-header">
-            <img src="" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
-            <div class="review-meta">
-              <!-- Author name removed for privacy -->
-              <span class="review-time">a month ago</span>
+              <span class="review-time">5 months ago</span>
             </div>
           </div>
           <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
@@ -396,7 +426,41 @@
       
       <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJzb4-RCHIt4kRAicxyUoU3bI" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
           <div class="review-header">
-            <img src="" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXjb6P_u9I8aeOFQd58Ep774riYVF7fylVU26p5KuX1iRd8cDNgoQ=s128-c0x00000000-cc-rp-mo-ba2" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">a month ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Marx is just what you want in a neighborhood bar/restaurant/event space. They care for each other and the community. Everyone feels welcome, and the events can seriously bring it with their level of...
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJzb4-RCHIt4kRAicxyUoU3bI" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocI8ccZACHH6IGECTGUmDfDWBln2RTlu3e8fAMVzgtBwe1w_NQ=s128-c0x00000000-cc-rp-mo-ba4" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <div class="review-meta">
+              <!-- Author name removed for privacy -->
+              <span class="review-time">10 months ago</span>
+            </div>
+          </div>
+          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
+            
+            ★★★★★
+          </div>
+          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
+            Really good atmosphere, great server, and I don&#39;t know how or why, but they lit my cheese on fire, and it was awesome. Recommend something off the small plates menu.
+          </p>
+      </a>
+      
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJzb4-RCHIt4kRAicxyUoU3bI" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
+          <div class="review-header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocL1mwCIBmlZSzRT-sUuVotsLN2wSiDeZs2prAuCD4DjTGskuZ4=s128-c0x00000000-cc-rp-mo-ba4" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
             <div class="review-meta">
               <!-- Author name removed for privacy -->
               <span class="review-time">8 years ago</span>
@@ -413,10 +477,10 @@
       
       <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJzb4-RCHIt4kRAicxyUoU3bI" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
           <div class="review-header">
-            <img src="" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocJZBhbajPOyYIZ9tbg7tHCcOPvJjXfSLH-jEGqiLGrL39LHuA=s128-c0x00000000-cc-rp-mo-ba3" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
             <div class="review-meta">
               <!-- Author name removed for privacy -->
-              <span class="review-time">3 months ago</span>
+              <span class="review-time">7 months ago</span>
             </div>
           </div>
           <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
@@ -425,23 +489,6 @@
           </div>
           <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
             Decent food and drinks. Great jazz nights! Would love to see more live music please
-          </p>
-      </a>
-      
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJzb4-RCHIt4kRAicxyUoU3bI" target="_blank" rel="noopener noreferrer" class="review-card" style="text-decoration: none; color: inherit; display: block;">
-          <div class="review-header">
-            <img src="" alt="Reviewer" class="review-avatar" onerror="this.style.display='none'">
-            <div class="review-meta">
-              <!-- Author name removed for privacy -->
-              <span class="review-time">8 months ago</span>
-            </div>
-          </div>
-          <div class="review-stars" style="color: #fbbf24; margin-bottom: 0.5rem; font-size: 1rem;">
-            
-            ★★☆☆☆
-          </div>
-          <p class="review-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--text-color); margin: 0;">
-            Would not return. The food was ok (chicken gyro, farmer veggie burger, grilled chicken lemon pasta), but service was terrible. Server never brought ordered appetizer and brought wrong entree. She left...
           </p>
       </a>
       
@@ -454,6 +501,61 @@
 
   <!-- [NEW] Nearby Bars Section -->
   
+  
+  <div class="nearby-section" style="margin-top: 3rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+    <h3 style="margin-bottom: 1.5rem;">📍 Nearby Spots (Walking Distance)</h3>
+    <div class="venue-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
+      
+        <a href="/bars/okpb/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fokpb%2Flogo-1767022764450-273650877_481680406664534_8403195882827841288_n.jpg?alt=media&amp;token=dc73489f-c2fa-4cc7-a8ee-b817e02d100c" alt="OKPB" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">OKPB</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">73m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/nido-wine-shop-market/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fnido-wine-shop-market%2Flogo-1767021753181-202807030_310014180844675_4185453734100359315_n.jpg?alt=media&amp;token=c78d1ef1-8f19-48ae-a3c4-7472ec1a778e" alt="Nido Wine Shop + Market" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Nido Wine Shop + Market</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">89m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/the-raven-grill/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-raven-grill%2Flogo-1767106008413-gvPQOk-y_400x400.jpg?alt=media&amp;token=b33ef961-7164-4902-bbf9-f4a5b8615f8b" alt="The Raven Grill" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">The Raven Grill</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">229m away</p>
+          </div>
+        </a>
+      
+        <a href="/bars/zeba-bar/" class="venue-card" style="min-height: 200px;">
+          
+             <div style="height: 120px; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+               <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fzeba-bar%2Flogo-1767025407226-444788985_981256523603857_1387529479737583571_n.jpg?alt=media&amp;token=25df3596-8caf-4723-8be3-c282ebd23318" alt="Zeba Bar" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+             </div>
+          
+          <div class="card-content" style="padding: 1rem;">
+            <h4 style="margin: 0; font-size: 1rem;">Zeba Bar</h4>
+            <p style="font-size: 0.8rem; color: #aaa; margin-top: 5px;">502m away</p>
+          </div>
+        </a>
+      
+    </div>
+  </div>
   
 
   <a href="/" class="btn-back">← Back to Home</a>
@@ -470,7 +572,7 @@
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": 4.3,
-    "reviewCount": 399
+    "reviewCount": 401
   },
   
   
@@ -478,19 +580,21 @@
     "@type": "Review",
     "reviewRating": {
       "@type": "Rating",
-      "ratingValue": 5,
+      "ratingValue": 2,
       "bestRating": 5
     },
     "author": {
       "@type": "Person",
-      "name": "Alex Flowers"
+      "name": "Marcea Ennamorato"
     },
-    "reviewBody": "Really good atmosphere, great server, and I don't know how or why, but they lit my cheese on fire, and it was awesome. Recommend something off the small plates menu."
+    "reviewBody": "Monday of last week my group got the $19 wine special and made sure to choose a wine that was in that price range. Unfortunately I was overcharged, likely for the full price of the bottle, and I didn’t realize it in the moment. When I went back the next day the Bartender was super friendly and said they’d try to sort it out, took my number and I left. Unfortunately I never heard from them again and I’m out my ~$20. Just a bummer because otherwise we enjoyed this spot."
   },
   
   
   "priceRange": "MODERATE", 
   
+  
+  "telephone": "(202) 518-7600",
   
   "url": "https://bardc.com/venues/marx-cafe-revolutionary-cuisine/"
 }
