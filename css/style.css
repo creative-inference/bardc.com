@@ -1771,6 +1771,28 @@ span.hero-slide-title:hover {
   letter-spacing: -0.03em;
 }
 
+.tonight-event-image-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(var(--primary-color-rgb), 0.12), rgba(var(--accent-color-rgb), 0.08));
+  padding: 1rem;
+}
+
+.tonight-event-image-logo img {
+  width: auto;
+  height: auto;
+  max-width: 70%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.3));
+  transition: transform 0.5s var(--ease-out);
+}
+
+.tonight-event-card:hover .tonight-event-image-logo img {
+  transform: scale(1.04);
+}
+
 .tonight-event-body {
   padding: 0.85rem 1rem 1rem;
   display: flex;
