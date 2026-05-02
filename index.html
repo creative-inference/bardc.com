@@ -49,7 +49,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css?v=1777718257984">
+  <link rel="stylesheet" href="/css/style.css?v=1777721448319">
   <link rel="stylesheet" href="/css/masonry.css">
 
   <!-- Google tag (gtag.js) -->
@@ -187,12 +187,15 @@
   
   <a href="/events/2026-05-02/" class="tonight-editorial">
     
-      <div class="tonight-editorial-image" style="background-image: url('/images/editorial-hero-2026-05-01.png');"></div>
+      <div class="tonight-editorial-image tonight-editorial-image-fallback" aria-hidden="true">
+        <span class="fallback-icon">🌃</span>
+        <span class="fallback-label">Bar DC · Tonight</span>
+      </div>
     
     <div class="tonight-editorial-body">
       <span class="tonight-editorial-eyebrow">Today's Read · by Hermes</span>
-      <h3 class="tonight-editorial-title">Eurovision Icons, Go-Go Legends, and Total Friday Chaos</h3>
-      <p class="tonight-editorial-summary">It’s May 1st and the District is vibrating with everything from Dutch pop mayhem to high-octane hometown go-go. Whether you’re chasing a sweat-soaked rave or a smooth jazz retreat, tonight is officially a choose-your-own-adventure marathon.</p>
+      <h3 class="tonight-editorial-title">DC’s Saturday: From Dutch Pop to Go-Go Legends</h3>
+      <p class="tonight-editorial-summary">The District is hitting peak spring energy tonight with a chaotic mix of global pop, legendary cumbia, and local go-go celebrations. Whether you’re hunting for a packed club floor or a chill jazz corner, the city is fully loaded.</p>
       <span class="tonight-editorial-cta">Read more &rarr;</span>
     </div>
   </a>
@@ -540,6 +543,99 @@
 
 
 
+<div class="hero-slider-container">
+  <div class="hero-slides-wrapper" id="heroSlidesWrapper">
+    
+      <div class="hero-slide active" data-index="0">
+        
+            <div class="hero-slide-bg" style="background-image: url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/site-assets%2Fhero-1767362264601-Generated%20Image%20January%2002%2C%202026%20-%208_57AM.jpeg?alt=media&amp;token=bdf997ce-144a-4998-a4f6-7d2a8d88d4ed');"></div>
+        
+
+        <div class="hero-slide-content">
+           
+             <span class="hero-slide-title">Welcome to Bar DC</span>
+           
+
+           
+             <p class="hero-slide-subtitle">Your Guide to Washington DC Bars and Clubs</p>
+           
+        </div>
+      </div>
+    
+      <div class="hero-slide " data-index="1">
+        
+            <a href="/map/" class="hero-slide-link" aria-label="DC Bars Map">
+                <div class="hero-slide-bg" style="background-image: url('https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/site-assets%2Fhero-1767362359113-Screenshot%202026-01-02%20085900.png?alt=media&amp;token=d27d62f1-2848-4830-8d5b-0f68b9fe00c9');"></div>
+            </a>
+        
+
+        <div class="hero-slide-content">
+           
+             <a href="/map/" class="hero-slide-title">DC Bars Map</a>
+           
+
+           
+             <p class="hero-slide-subtitle">Explore the map of all DC bars and clubs</p>
+           
+        </div>
+      </div>
+    
+  </div>
+
+  <button class="hero-arrow hero-arrow-prev" type="button" aria-label="Previous slide">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+  </button>
+  <button class="hero-arrow hero-arrow-next" type="button" aria-label="Next slide">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+  </button>
+
+  <div class="hero-dots" role="tablist" aria-label="Slide indicators">
+    
+      <button type="button" class="hero-dot active" data-index="0" aria-label="Go to slide 1"></button>
+    
+      <button type="button" class="hero-dot " data-index="1" aria-label="Go to slide 2"></button>
+    
+  </div>
+</div>
+<script>
+  (function(){
+    var currentSlide = 0;
+    var slidesCount = 2;
+    var slideInterval;
+
+    function goToSlide(index) {
+      if (index < 0 || index >= slidesCount) return;
+      var slides = document.querySelectorAll('.hero-slide');
+      var dots = document.querySelectorAll('.hero-dot');
+      slides.forEach(function(s){ s.classList.remove('active'); });
+      dots.forEach(function(d){ d.classList.remove('active'); });
+      slides[index].classList.add('active');
+      if (dots[index]) dots[index].classList.add('active');
+      currentSlide = index;
+      resetTimer();
+    }
+    window.goToSlide = goToSlide;
+
+    function nextSlide() { goToSlide((currentSlide + 1) % slidesCount); }
+    function prevSlide() { goToSlide((currentSlide - 1 + slidesCount) % slidesCount); }
+
+    function resetTimer() {
+      clearInterval(slideInterval);
+      slideInterval = setInterval(nextSlide, 6000);
+    }
+
+    document.querySelectorAll('.hero-dot').forEach(function(d){
+      d.addEventListener('click', function(){ goToSlide(parseInt(d.dataset.index, 10)); });
+    });
+    var prev = document.querySelector('.hero-arrow-prev');
+    var next = document.querySelector('.hero-arrow-next');
+    if (prev) prev.addEventListener('click', prevSlide);
+    if (next) next.addEventListener('click', nextSlide);
+
+    resetTimer();
+  })();
+</script>
+
 
 
 
@@ -641,10 +737,10 @@
     
     
       
-      <div class="masonry-item is-category">
+      <div class="masonry-item is-neighborhood">
         <div class="masonry-content">
-          <a href="/categories/oyster-bars/">
-            Oyster Bars
+          <a href="/neighborhoods/columbia-heights/">
+            Columbia Heights Bars
           </a>
         </div>
       </div>
@@ -656,135 +752,19 @@
     
     
       
-      <div class="masonry-item is-event">
-        <div class="masonry-content">
-          <p class="event-time">Saturday, May 2nd</p>
-          <h4><a href="/bars/diosa-dc/">Diosa International 🌍</a></h4>
-          <p class="event-venue-line">
-            
-              <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fdiosa-dc%2Flogo-1766400524385-519496570_18017887496738738_4206528687276831898_n.jpg?alt=media&amp;token=aef38c9e-8058-4701-867f-7ce345ea5f26" alt="" class="event-venue-logo-sm" loading="lazy">
-            
-            @ Diosa DC
-          </p>
-        </div>
-      </div>
-
-    
-  
-
-    
-    
-      
-      <div class="masonry-item is-event">
-        <div class="masonry-content">
-          <p class="event-time">Saturday, May 2nd</p>
-          <h4><a href="/bars/penn-social/">Singles Trivia Night — Jigsaw® Dating 🧩❤️</a></h4>
-          <p class="event-venue-line">
-            
-              <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fpenn-social%2Flogo-1767024284355-280293322_133482415943313_1748606337458269375_n.jpg?alt=media&amp;token=9f77a499-e184-4695-b8bc-11eae59a6569" alt="" class="event-venue-logo-sm" loading="lazy">
-            
-            @ Penn Social
-          </p>
-        </div>
-      </div>
-
-    
-  
-
-    
-    
-      
       <div class="masonry-item is-venue">
-        <a href="/bars/haven-llc/" class="masonry-link">
+        <a href="/bars/the-mirror/" class="masonry-link">
           
           <div class="masonry-content">
             <div class="card-header">
               
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fhaven-llc%2Flogo-1766510602671-524384344_17941792281032071_3010766186774475742_n.jpg?alt=media&amp;token=6d0dc0c7-e8cf-4d88-a27d-689c390f6c99" alt="" class="card-logo" loading="lazy">
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-mirror%2Flogo-1767019326874-46693914_2286356958146670_5201506326634561536_n.jpg?alt=media&amp;token=8131f1b5-ec2e-4e0e-8982-ccaa92db8efd" alt="" class="card-logo" loading="lazy">
               
-              <h3>Haven</h3>
+              <h3>The Mirror</h3>
             </div>
-            <p class="card-category">Lounges, Cocktail Bars, Event Spaces</p>
+            <p class="card-category">Speakeasies, Cocktail Bars, Lounges</p>
 
             <div class="card-tags-container">
-              
-            </div>
-          </div>
-        </a>
-      </div>
-
-    
-    
-  
-
-    
-    
-      
-      <div class="masonry-item is-venue">
-        <a href="/bars/sost/" class="masonry-link">
-          
-          <div class="masonry-content">
-            <div class="card-header">
-              
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fsost%2Flogo-1767137534040-523836543_17892137580282559_8150223230290502876_n.jpg?alt=media&amp;token=5660b5bd-5655-47a5-a02f-29c5f51f6065" alt="" class="card-logo" loading="lazy">
-              
-              <h3>SOST</h3>
-            </div>
-            <p class="card-category">Live Music Venues, Speakeasies, Rooftop Bars</p>
-
-            <div class="card-tags-container">
-              
-            </div>
-          </div>
-        </a>
-      </div>
-
-    
-    
-  
-
-    
-    
-      
-      <div class="masonry-item is-venue">
-        <a href="/bars/h-street-pub/" class="masonry-link">
-          
-          <div class="masonry-content">
-            <div class="card-header">
-              
-              <h3>H Street Pub</h3>
-            </div>
-            <p class="card-category">Neighborhood Bars, Dive Bars, Taproom</p>
-
-            <div class="card-tags-container">
-              
-            </div>
-          </div>
-        </a>
-      </div>
-
-    
-    
-  
-
-    
-    
-      
-      <div class="masonry-item is-venue">
-        <a href="/bars/royal-sands-social-club/" class="masonry-link">
-          
-          <div class="masonry-content">
-            <div class="card-header">
-              
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Froyal-sands-social-club%2Flogo-1767109216230-275915054_678960683448819_2125448430975971597_n.jpg?alt=media&amp;token=748270ad-c52c-4060-8a00-ce678ce59a90" alt="" class="card-logo" loading="lazy">
-              
-              <h3>Royal Sands Social Club</h3>
-            </div>
-            <p class="card-category">Tiki Bars, Happy Hour Spots, Event Spaces</p>
-
-            <div class="card-tags-container">
-              
-                <span class="card-happy-hour-tag">🎉 Happy Hour</span>
               
             </div>
           </div>
@@ -800,8 +780,8 @@
       
       <div class="masonry-item is-neighborhood">
         <div class="masonry-content">
-          <a href="/neighborhoods/petworth/">
-            Petworth Bars
+          <a href="/neighborhoods/u-street/">
+            U Street Bars
           </a>
         </div>
       </div>
@@ -814,16 +794,16 @@
     
       
       <div class="masonry-item is-venue">
-        <a href="/bars/paste-rind/" class="masonry-link">
+        <a href="/bars/the-mayflower-club/" class="masonry-link">
           
           <div class="masonry-content">
             <div class="card-header">
               
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fpaste-rind%2Flogo-1767024048600-568688988_18160138747386845_8608389741422788640_n.jpg?alt=media&amp;token=77013e8e-cbcb-4669-8d03-16fcd40c27f0" alt="" class="card-logo" loading="lazy">
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-mayflower-club%2Flogo-1767017785892-449063405_1155325629139380_7487515603253004913_n.jpg?alt=media&amp;token=16d5478c-04d3-4ac9-8a3f-f745233baf9b" alt="" class="card-logo" loading="lazy">
               
-              <h3>Paste & Rind</h3>
+              <h3>The Mayflower Club</h3>
             </div>
-            <p class="card-category">Wine Bars, Romantic, Happy Hour Spots</p>
+            <p class="card-category">Nightclub, Cocktail Bars, Latin</p>
 
             <div class="card-tags-container">
               
@@ -840,110 +820,18 @@
     
       
       <div class="masonry-item is-venue">
-        <a href="/bars/shaw-s-tavern/" class="masonry-link">
+        <a href="/bars/barmini/" class="masonry-link">
           
           <div class="masonry-content">
             <div class="card-header">
               
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fshaw-s-tavern%2Flogo-1767110549213-11371005_1031629866861742_840981624_a.jpg?alt=media&amp;token=066332d4-12e4-4a08-a6ec-8ee7d2b6b557" alt="" class="card-logo" loading="lazy">
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbarmini%2Flogo-1766149753394-273679564_606136680740824_1210897538895892842_n.jpg?alt=media&amp;token=03aa83bd-2ba4-4395-9269-475da351b36e" alt="" class="card-logo" loading="lazy">
               
-              <h3>Shaw's Tavern</h3>
+              <h3>Barmini</h3>
             </div>
-            <p class="card-category">Taverns, Karaoke Bars, LGBTQ+ Bars</p>
+            <p class="card-category">Cocktail Bars, Lounges, Upscale</p>
 
             <div class="card-tags-container">
-              
-                <span class="card-happy-hour-tag">🎉 Happy Hour</span>
-              
-            </div>
-          </div>
-        </a>
-      </div>
-
-    
-    
-  
-
-    
-    
-      
-      <div class="masonry-item is-neighborhood">
-        <div class="masonry-content">
-          <a href="/neighborhoods/barracks-row/">
-            Barracks Row Bars
-          </a>
-        </div>
-      </div>
-
-    
-    
-  
-
-    
-    
-      
-      <div class="masonry-item is-event">
-        <div class="masonry-content">
-          <p class="event-time">Saturday, May 2nd</p>
-          <h4><a href="/bars/the-howard-theatre/">💃 Best of Both Worlds Rave: Hannah Montana Nostalgia Celebration</a></h4>
-          <p class="event-venue-line">
-            
-              <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-howard-theatre%2Flogo-1766580502436-463469241_1081954233330816_3412621488745797170_n.jpg?alt=media&amp;token=766e878d-015d-478d-878e-4f0883f3ff1a" alt="" class="event-venue-logo-sm" loading="lazy">
-            
-            @ The Howard Theatre
-          </p>
-        </div>
-      </div>
-
-    
-  
-
-    
-    
-      
-      <div class="masonry-item is-venue">
-        <a href="/bars/as-you-are-dc/" class="masonry-link">
-          
-          <div class="masonry-content">
-            <div class="card-header">
-              
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fas-you-are-dc%2Flogo-1766098734347-227874022_165761315648721_8465099167954490044_n.png?alt=media&amp;token=d4dfd2fd-1b65-4aa5-b297-eb98c7acd07e" alt="" class="card-logo" loading="lazy">
-              
-              <h3>as you are. DC</h3>
-            </div>
-            <p class="card-category">LGBTQ+ Bars, Neighborhood Bars, Event Spaces</p>
-
-            <div class="card-tags-container">
-              
-                <span class="card-happy-hour-tag">🎉 Happy Hour</span>
-              
-            </div>
-          </div>
-        </a>
-      </div>
-
-    
-    
-  
-
-    
-    
-      
-      <div class="masonry-item is-venue">
-        <a href="/bars/ben-s-next-door/" class="masonry-link">
-          
-          <div class="masonry-content">
-            <div class="card-header">
-              
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fben-s-next-door%2Flogo-1766150360473-325404685_702550268032452_4586824564107795568_n.jpg?alt=media&amp;token=6a6cc7bc-0e1f-4825-b513-f44d7047f03a" alt="" class="card-logo" loading="lazy">
-              
-              <h3>Ben's Next Door</h3>
-            </div>
-            <p class="card-category">Brunch Spots, Cocktail Bars, Soul Food</p>
-
-            <div class="card-tags-container">
-              
-                <span class="card-happy-hour-tag">🎉 Happy Hour</span>
               
             </div>
           </div>
@@ -983,10 +871,142 @@
     
     
       
-      <div class="masonry-item is-neighborhood">
+      <div class="masonry-item is-venue">
+        <a href="/bars/next-level-dc/" class="masonry-link">
+          
+          <div class="masonry-content">
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fnext-level-dc%2Flogo-1767021393562-355865163_624837569711731_1142522300556688935_n.jpg?alt=media&amp;token=0f026868-8933-411f-87d1-ab237297609e" alt="" class="card-logo" loading="lazy">
+              
+              <h3>Next Level DC</h3>
+            </div>
+            <p class="card-category">Live Music Venues, Nightclub, Hookah Lounges</p>
+
+            <div class="card-tags-container">
+              
+            </div>
+          </div>
+        </a>
+      </div>
+
+    
+    
+  
+
+    
+    
+      
+      <div class="masonry-item is-venue">
+        <a href="/bars/no-goodbyes/" class="masonry-link">
+          
+          <div class="masonry-content">
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fno-goodbyes%2Flogo-1767021805129-202268446_806283186947666_3873099856751768668_n.jpg?alt=media&amp;token=c1a49384-af97-439e-bfdc-2d5eeddb03db" alt="" class="card-logo" loading="lazy">
+              
+              <h3>No Goodbyes</h3>
+            </div>
+            <p class="card-category">Hotel Bars, Cocktail Bars, Brunch Spots</p>
+
+            <div class="card-tags-container">
+              
+                <span class="card-happy-hour-tag">🎉 Happy Hour</span>
+              
+            </div>
+          </div>
+        </a>
+      </div>
+
+    
+    
+  
+
+    
+    
+      
+      <div class="masonry-item is-venue">
+        <a href="/bars/diosa-dc/" class="masonry-link">
+          
+          <div class="masonry-content">
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fdiosa-dc%2Flogo-1766400524385-519496570_18017887496738738_4206528687276831898_n.jpg?alt=media&amp;token=aef38c9e-8058-4701-867f-7ce345ea5f26" alt="" class="card-logo" loading="lazy">
+              
+              <h3>Diosa DC</h3>
+            </div>
+            <p class="card-category">Dance Clubs, Nightclub, Latin</p>
+
+            <div class="card-tags-container">
+              
+                <span class="card-happy-hour-tag">🎉 Happy Hour</span>
+              
+            </div>
+          </div>
+        </a>
+      </div>
+
+    
+    
+  
+
+    
+    
+      
+      <div class="masonry-item is-venue">
+        <a href="/bars/bliss-nightclub/" class="masonry-link">
+          
+          <div class="masonry-content">
+            <div class="card-header">
+              
+              <h3>Bliss Nightclub</h3>
+            </div>
+            <p class="card-category">Nightclub, Dance Clubs, Late Night</p>
+
+            <div class="card-tags-container">
+              
+            </div>
+          </div>
+        </a>
+      </div>
+
+    
+    
+  
+
+    
+    
+      
+      <div class="masonry-item is-venue">
+        <a href="/bars/new-vegas-lounge/" class="masonry-link">
+          
+          <div class="masonry-content">
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fnew-vegas-lounge%2Flogo-1767021347153-66199513_2306344242816378_4625750743536631808_n.jpg?alt=media&amp;token=8f318d55-84f0-4a79-b100-4500c371c793" alt="" class="card-logo" loading="lazy">
+              
+              <h3>New Vegas Lounge</h3>
+            </div>
+            <p class="card-category">Lounges, Live Music Venues, Blues Bars</p>
+
+            <div class="card-tags-container">
+              
+            </div>
+          </div>
+        </a>
+      </div>
+
+    
+    
+  
+
+    
+    
+      
+      <div class="masonry-item is-category">
         <div class="masonry-content">
-          <a href="/neighborhoods/u-street/">
-            U Street Bars
+          <a href="/categories/groups/">
+            Groups
           </a>
         </div>
       </div>
@@ -999,16 +1019,16 @@
     
       
       <div class="masonry-item is-venue">
-        <a href="/bars/district-champagne/" class="masonry-link">
+        <a href="/bars/abigail/" class="masonry-link">
           
           <div class="masonry-content">
             <div class="card-header">
               
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fdistrict-champagne%2Flogo-1766401310281-436592663_437260872231968_977319635826643267_n.jpg?alt=media&amp;token=5189a9b1-4578-4842-b020-c8b664102c7b" alt="" class="card-logo" loading="lazy">
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fabigail%2Flogo-1766014106254-305615155_407010268227310_4802619442028591549_n.png?alt=media&amp;token=4ce50b8b-1651-43a0-bebc-b2319ff1e280" alt="" class="card-logo" loading="lazy">
               
-              <h3>District Champagne</h3>
+              <h3>Abigail</h3>
             </div>
-            <p class="card-category">Wine Bars, Bottle Shops</p>
+            <p class="card-category">Nightclub, Hip Hop, Lounges</p>
 
             <div class="card-tags-container">
               
@@ -1025,16 +1045,76 @@
     
       
       <div class="masonry-item is-venue">
-        <a href="/bars/the-henley-park-hotel/" class="masonry-link">
+        <a href="/bars/riff-raff-dc/" class="masonry-link">
           
           <div class="masonry-content">
             <div class="card-header">
               
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-henley-park-hotel%2Flogo-1766511823368-376768377_1427543327820596_1219693128510034810_n.jpg?alt=media&amp;token=c37e64a8-3118-4713-8ac6-774f47a3af42" alt="" class="card-logo" loading="lazy">
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Friff-raff-dc%2Flogo-1767108132075-551498742_17983519091892234_3329806668154676670_n.jpg?alt=media&amp;token=a30e841f-e2ae-4d72-9cd4-ed4ac72fd3d0" alt="" class="card-logo" loading="lazy">
               
-              <h3>Blue Bar Lounge</h3>
+              <h3>Riff Raff DC</h3>
             </div>
-            <p class="card-category">Hotel Bars, Happy Hour Spots, Luxury</p>
+            <p class="card-category">Cocktail Bars, Speakeasies, Neighborhood Bars</p>
+
+            <div class="card-tags-container">
+              
+            </div>
+          </div>
+        </a>
+      </div>
+
+    
+    
+  
+
+    
+    
+      
+      <div class="masonry-item is-category">
+        <div class="masonry-content">
+          <a href="/categories/waterfront/">
+            Waterfront
+          </a>
+        </div>
+      </div>
+
+    
+    
+  
+
+    
+    
+      
+      <div class="masonry-item is-event">
+        <div class="masonry-content">
+          <p class="event-time">Saturday, May 2nd</p>
+          <h4><a href="/bars/dc9/">🎸 Essenger</a></h4>
+          <p class="event-venue-line">
+            
+              <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fdc9%2Flogo-1766362148061-82450152_599791904151275_260478535162920960_n.jpg?alt=media&amp;token=ab3b315f-4cb9-40ca-8a6b-4016327a9757" alt="" class="event-venue-logo-sm" loading="lazy">
+            
+            @ DC9
+          </p>
+        </div>
+      </div>
+
+    
+  
+
+    
+    
+      
+      <div class="masonry-item is-venue">
+        <a href="/bars/binge-bar/" class="masonry-link">
+          
+          <div class="masonry-content">
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbinge-bar%2Flogo-1766151728835-329029990_1236963247244451_7789339116514878158_n.jpg?alt=media&amp;token=59698e18-3494-4bc3-8c13-5d67b6461c6a" alt="" class="card-logo" loading="lazy">
+              
+              <h3>Binge Bar</h3>
+            </div>
+            <p class="card-category">Mocktails, Sober Friendly, Lounges</p>
 
             <div class="card-tags-container">
               
@@ -1051,16 +1131,40 @@
     
       
       <div class="masonry-item is-venue">
-        <a href="/bars/the-craft-dc/" class="masonry-link">
+        <a href="/bars/lucha-lounge-rooftop/" class="masonry-link">
           
           <div class="masonry-content">
             <div class="card-header">
               
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-craft-dc%2Flogo-1766358849106-457144756_3338569626444901_6756408095920835299_n.jpg?alt=media&amp;token=52308fe2-1dfe-4259-a62f-b19c6ad975df" alt="" class="card-logo" loading="lazy">
-              
-              <h3>The Craft DC</h3>
+              <h3>Lucha Lounge Rooftop</h3>
             </div>
-            <p class="card-category">Speakeasies, Cocktail Bars, Happy Hour Spots</p>
+            <p class="card-category">Rooftop Bars, Lounges, Event Spaces</p>
+
+            <div class="card-tags-container">
+              
+            </div>
+          </div>
+        </a>
+      </div>
+
+    
+    
+  
+
+    
+    
+      
+      <div class="masonry-item is-venue">
+        <a href="/bars/kbird-dc/" class="masonry-link">
+          
+          <div class="masonry-content">
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fkbird-dc%2Flogo-1766707891950-496002547_17904184293156414_6639329650122108035_n.jpg?alt=media&amp;token=72348e6a-441a-46b1-832c-ca63fc4cdee4" alt="" class="card-logo" loading="lazy">
+              
+              <h3>Kbird DC</h3>
+            </div>
+            <p class="card-category">Cocktail Bars, Lounges, Happy Hour Spots</p>
 
             <div class="card-tags-container">
               
@@ -1079,12 +1183,12 @@
       <div class="masonry-item is-event">
         <div class="masonry-content">
           <p class="event-time">Saturday, May 2nd</p>
-          <h4><a href="/bars/the-kennedy-center/">🎷 Christylez Bacon</a></h4>
+          <h4><a href="/bars/the-howard-theatre/">💃 Best of Both Worlds Rave: Hannah Montana Nostalgia Celebration</a></h4>
           <p class="event-venue-line">
             
-              <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-kennedy-center%2Flogo-1766708008594-598717408_18550372012016706_1237801048914204616_n.jpg?alt=media&amp;token=37df001d-a7f8-4eb1-bb7a-06d196a3573b" alt="" class="event-venue-logo-sm" loading="lazy">
+              <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-howard-theatre%2Flogo-1766580502436-463469241_1081954233330816_3412621488745797170_n.jpg?alt=media&amp;token=766e878d-015d-478d-878e-4f0883f3ff1a" alt="" class="event-venue-logo-sm" loading="lazy">
             
-            @ The Kennedy Center
+            @ The Howard Theatre
           </p>
         </div>
       </div>
@@ -1096,16 +1200,42 @@
     
       
       <div class="masonry-item is-venue">
-        <a href="/bars/el-rey/" class="masonry-link">
+        <a href="/bars/jackie-lees/" class="masonry-link">
           
           <div class="masonry-content">
             <div class="card-header">
               
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fel-rey%2Flogo-1766403099500-306233439_505706018227251_4661515482386234110_n.jpg?alt=media&amp;token=53f0c426-cf99-4121-858b-1b84eaec22e3" alt="" class="card-logo" loading="lazy">
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fjackie-lees%2Flogo-1766592739413-20687922_267634327085665_5720061118672535552_a.jpg?alt=media&amp;token=c102fd2c-1cef-4b17-adc5-2f1932f68a32" alt="" class="card-logo" loading="lazy">
               
-              <h3>El Rey</h3>
+              <h3>Jackie Lee's</h3>
             </div>
-            <p class="card-category">Taco Bars, Beer Gardens, Happy Hour Spots</p>
+            <p class="card-category">Neighborhood Bars, Dive Bars, Game Bars</p>
+
+            <div class="card-tags-container">
+              
+            </div>
+          </div>
+        </a>
+      </div>
+
+    
+    
+  
+
+    
+    
+      
+      <div class="masonry-item is-venue">
+        <a href="/bars/succotash/" class="masonry-link">
+          
+          <div class="masonry-content">
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fsuccotash%2Flogo-1767138383302-192152248_169634348499125_1902888413155553160_n.jpg?alt=media&amp;token=14ff5631-a828-4113-859a-124f83a41144" alt="" class="card-logo" loading="lazy">
+              
+              <h3>Succotash</h3>
+            </div>
+            <p class="card-category">Supper Clubs, Cocktail Bars, American</p>
 
             <div class="card-tags-container">
               
@@ -1114,6 +1244,107 @@
             </div>
           </div>
         </a>
+      </div>
+
+    
+    
+  
+
+    
+    
+      
+      <div class="masonry-item is-event">
+        <div class="masonry-content">
+          <p class="event-time">Saturday, May 2nd</p>
+          <h4><a href="/bars/the-wharf-dc/">Running of the Chihuahuas 🐕</a></h4>
+          <p class="event-venue-line">
+            
+              <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-wharf-dc%2Flogo-1767145340576-14693667_761920017279695_7295859085994360832_a.jpg?alt=media&amp;token=29944098-6a56-4803-80d1-5008ccbfa95c" alt="" class="event-venue-logo-sm" loading="lazy">
+            
+            @ The Wharf DC
+          </p>
+        </div>
+      </div>
+
+    
+  
+
+    
+    
+      
+      <div class="masonry-item is-venue">
+        <a href="/bars/henceforth/" class="masonry-link">
+          
+          <div class="masonry-content">
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fhenceforth%2Flogo-1766511540776-376768377_1427543327820596_1219693128510034810_n.jpg?alt=media&amp;token=6c0e28c2-aa29-46b2-a191-47d24c12ba9c" alt="" class="card-logo" loading="lazy">
+              
+              <h3>Henceforth,</h3>
+            </div>
+            <p class="card-category">Breweries, Gastropubs, Taproom</p>
+
+            <div class="card-tags-container">
+              
+            </div>
+          </div>
+        </a>
+      </div>
+
+    
+    
+  
+
+    
+    
+      
+      <div class="masonry-item is-neighborhood">
+        <div class="masonry-content">
+          <a href="/neighborhoods/adams-morgan/">
+            Adams Morgan Bars
+          </a>
+        </div>
+      </div>
+
+    
+    
+  
+
+    
+    
+      
+      <div class="masonry-item is-venue">
+        <a href="/bars/gold-clover-bar/" class="masonry-link">
+          
+          <div class="masonry-content">
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fgold-clover-bar%2Flogo-1766494859422-449573942_486720970509274_1288459472678795657_n.jpg?alt=media&amp;token=45edcbbe-244b-419b-8670-354252ec4377" alt="" class="card-logo" loading="lazy">
+              
+              <h3>Gold Clover Bar</h3>
+            </div>
+            <p class="card-category">Neighborhood Bars, Cocktail Bars, Dive Bars</p>
+
+            <div class="card-tags-container">
+              
+            </div>
+          </div>
+        </a>
+      </div>
+
+    
+    
+  
+
+    
+    
+      
+      <div class="masonry-item is-category">
+        <div class="masonry-content">
+          <a href="/categories/lounges/">
+            Lounges
+          </a>
+        </div>
       </div>
 
     
@@ -1150,16 +1381,16 @@
     
       
       <div class="masonry-item is-venue">
-        <a href="/bars/cafe-milano/" class="masonry-link">
+        <a href="/bars/district-champagne/" class="masonry-link">
           
           <div class="masonry-content">
             <div class="card-header">
               
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcafe-milano%2Flogo-1766320819577-400395112_1880703428990686_870316195084604714_n.jpg?alt=media&amp;token=eeccf48e-b1be-4ed5-8f4c-f8f924dea906" alt="" class="card-logo" loading="lazy">
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fdistrict-champagne%2Flogo-1766401310281-436592663_437260872231968_977319635826643267_n.jpg?alt=media&amp;token=5189a9b1-4578-4842-b020-c8b664102c7b" alt="" class="card-logo" loading="lazy">
               
-              <h3>Cafe Milano</h3>
+              <h3>District Champagne</h3>
             </div>
-            <p class="card-category">Italian, Romantic, Upscale</p>
+            <p class="card-category">Wine Bars, Bottle Shops</p>
 
             <div class="card-tags-container">
               
@@ -1175,17 +1406,32 @@
     
     
       
+      <div class="masonry-item is-category">
+        <div class="masonry-content">
+          <a href="/categories/sports-bars/">
+            Sports Bars
+          </a>
+        </div>
+      </div>
+
+    
+    
+  
+
+    
+    
+      
       <div class="masonry-item is-venue">
-        <a href="/bars/decades/" class="masonry-link">
+        <a href="/bars/smoke-and-mirrors/" class="masonry-link">
           
           <div class="masonry-content">
             <div class="card-header">
               
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fdecades%2Flogo-1766363721464-13741181_1255687494455989_1589591070_a.jpg?alt=media&amp;token=0a653984-612e-40b0-b066-2598bb9b8079" alt="" class="card-logo" loading="lazy">
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fsmoke-and-mirrors%2Flogo-1767111463812-264478704_601871547684393_685785464520706061_n.jpg?alt=media&amp;token=55c05886-be78-4f97-bcaa-4a3b6b676f55" alt="" class="card-logo" loading="lazy">
               
-              <h3>Decades</h3>
+              <h3>Smoke & Mirrors</h3>
             </div>
-            <p class="card-category">Dance Clubs, Nightclub, Themed</p>
+            <p class="card-category">Rooftop Bars, Cocktail Bars, Lounges</p>
 
             <div class="card-tags-container">
               
@@ -1203,120 +1449,12 @@
     
     
       
-      <div class="masonry-item is-venue">
-        <a href="/bars/the-pocket/" class="masonry-link">
-          
-          <div class="masonry-content">
-            <div class="card-header">
-              
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-pocket%2Flogo-1767102274947-586395216_18083274884043519_2030940411481905414_n.jpg?alt=media&amp;token=815f2211-5bd4-4e84-8b2a-e9188514dd76" alt="" class="card-logo" loading="lazy">
-              
-              <h3>The Pocket</h3>
-            </div>
-            <p class="card-category">Live Music Venues, Neighborhood Bars</p>
-
-            <div class="card-tags-container">
-              
-            </div>
-          </div>
-        </a>
-      </div>
-
-    
-    
-  
-
-    
-    
-      
-      <div class="masonry-item is-venue">
-        <a href="/bars/proper-21-k-street/" class="masonry-link">
-          
-          <div class="masonry-content">
-            <div class="card-header">
-              
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fproper-21-k-street%2Flogo-1767103204073-242491232_463408991422265_2815431240688019843_n%20(1).jpg?alt=media&amp;token=57feee22-d1d8-47b1-874f-3710d6caf82e" alt="" class="card-logo" loading="lazy">
-              
-              <h3>Proper 21-K Street</h3>
-            </div>
-            <p class="card-category">Cocktail Bars, Happy Hour Spots, American</p>
-
-            <div class="card-tags-container">
-              
-            </div>
-          </div>
-        </a>
-      </div>
-
-    
-    
-  
-
-    
-    
-      
-      <div class="masonry-item is-event">
+      <div class="masonry-item is-category">
         <div class="masonry-content">
-          <p class="event-time">Saturday, May 2nd</p>
-          <h4><a href="/bars/dc9/">🎸 Essenger</a></h4>
-          <p class="event-venue-line">
-            
-              <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fdc9%2Flogo-1766362148061-82450152_599791904151275_260478535162920960_n.jpg?alt=media&amp;token=ab3b315f-4cb9-40ca-8a6b-4016327a9757" alt="" class="event-venue-logo-sm" loading="lazy">
-            
-            @ DC9
-          </p>
+          <a href="/categories/rooftop-bars/">
+            Rooftop Bars
+          </a>
         </div>
-      </div>
-
-    
-  
-
-    
-    
-      
-      <div class="masonry-item is-venue">
-        <a href="/bars/kbird-dc/" class="masonry-link">
-          
-          <div class="masonry-content">
-            <div class="card-header">
-              
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fkbird-dc%2Flogo-1766707891950-496002547_17904184293156414_6639329650122108035_n.jpg?alt=media&amp;token=72348e6a-441a-46b1-832c-ca63fc4cdee4" alt="" class="card-logo" loading="lazy">
-              
-              <h3>Kbird DC</h3>
-            </div>
-            <p class="card-category">Cocktail Bars, Lounges, Happy Hour Spots</p>
-
-            <div class="card-tags-container">
-              
-            </div>
-          </div>
-        </a>
-      </div>
-
-    
-    
-  
-
-    
-    
-      
-      <div class="masonry-item is-venue">
-        <a href="/bars/gold-clover-bar/" class="masonry-link">
-          
-          <div class="masonry-content">
-            <div class="card-header">
-              
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fgold-clover-bar%2Flogo-1766494859422-449573942_486720970509274_1288459472678795657_n.jpg?alt=media&amp;token=45edcbbe-244b-419b-8670-354252ec4377" alt="" class="card-logo" loading="lazy">
-              
-              <h3>Gold Clover Bar</h3>
-            </div>
-            <p class="card-category">Neighborhood Bars, Cocktail Bars, Dive Bars</p>
-
-            <div class="card-tags-container">
-              
-            </div>
-          </div>
-        </a>
       </div>
 
     
@@ -1342,16 +1480,115 @@
     
       
       <div class="masonry-item is-venue">
-        <a href="/bars/9-30-club/" class="masonry-link">
+        <a href="/bars/level-1-cocktail-lab/" class="masonry-link">
           
           <div class="masonry-content">
             <div class="card-header">
               
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2F9-30-club%2Flogo-1766013174011-327435022_857429208884549_6604525457621227370_n.jpg?alt=media&amp;token=c0e2d533-bf9d-4759-ba00-4523a02fef39" alt="" class="card-logo" loading="lazy">
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Flevel-1-cocktail-lab%2Flogo-1766858506389-455751838_26332349183076952_8737272518417697350_n.jpg?alt=media&amp;token=7f5bd03b-c5cb-4cd0-8d3c-cb1e0998e873" alt="" class="card-logo" loading="lazy">
               
-              <h3>9:30 Club</h3>
+              <h3>Level 1 Cocktail Lab</h3>
             </div>
-            <p class="card-category">Live Music Venues, Nightclubs, Historic</p>
+            <p class="card-category">Cocktail Bars, Happy Hour Spots, Late Night</p>
+
+            <div class="card-tags-container">
+              
+            </div>
+          </div>
+        </a>
+      </div>
+
+    
+    
+  
+
+    
+    
+      
+      <div class="masonry-item is-venue">
+        <a href="/bars/la-vie/" class="masonry-link">
+          
+          <div class="masonry-content">
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fla-vie%2Flogo-1766857758239-20184924_464073877292040_702404745498722304_a.jpg?alt=media&amp;token=a62efecc-f448-4b7e-b706-51fa9054acd7" alt="" class="card-logo" loading="lazy">
+              
+              <h3>La Vie</h3>
+            </div>
+            <p class="card-category">Brunch Spots, Cocktail Bars, Waterfront</p>
+
+            <div class="card-tags-container">
+              
+                <span class="card-happy-hour-tag">🎉 Happy Hour</span>
+              
+            </div>
+          </div>
+        </a>
+      </div>
+
+    
+    
+  
+
+    
+    
+      
+      <div class="masonry-item is-event">
+        <div class="masonry-content">
+          <p class="event-time">Saturday, May 2nd</p>
+          <h4><a href="/bars/diosa-dc/">Diosa International 🌍</a></h4>
+          <p class="event-venue-line">
+            
+              <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fdiosa-dc%2Flogo-1766400524385-519496570_18017887496738738_4206528687276831898_n.jpg?alt=media&amp;token=aef38c9e-8058-4701-867f-7ce345ea5f26" alt="" class="event-venue-logo-sm" loading="lazy">
+            
+            @ Diosa DC
+          </p>
+        </div>
+      </div>
+
+    
+  
+
+    
+    
+      
+      <div class="masonry-item is-venue">
+        <a href="/bars/no-kisses-bar/" class="masonry-link">
+          
+          <div class="masonry-content">
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fno-kisses-bar%2Flogo-1767021862153-29404115_152448778912563_805762321728143360_n.jpg?alt=media&amp;token=c7716624-91b0-4df4-9896-61b1e18ad46e" alt="" class="card-logo" loading="lazy">
+              
+              <h3>No Kisses Bar</h3>
+            </div>
+            <p class="card-category">Cocktail Bars, Neighborhood Bars, Patios</p>
+
+            <div class="card-tags-container">
+              
+            </div>
+          </div>
+        </a>
+      </div>
+
+    
+    
+  
+
+    
+    
+      
+      <div class="masonry-item is-venue">
+        <a href="/bars/onyx-rooftop-lounge/" class="masonry-link">
+          
+          <div class="masonry-content">
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fonyx-rooftop-lounge%2Flogo-1767023137999-527306495_17892984549285449_7786789891769703201_n.jpg?alt=media&amp;token=ea165b76-5540-47a1-8671-b074aae37ec6" alt="" class="card-logo" loading="lazy">
+              
+              <h3>ONYX Rooftop Lounge</h3>
+            </div>
+            <p class="card-category">Rooftop Bars, Lounges, Hookah Lounges</p>
 
             <div class="card-tags-container">
               
@@ -1386,58 +1623,17 @@
     
     
       
-      <div class="masonry-item is-neighborhood">
-        <div class="masonry-content">
-          <a href="/neighborhoods/logan-circle/">
-            Logan Circle Bars
-          </a>
-        </div>
-      </div>
-
-    
-    
-  
-
-    
-    
-      
       <div class="masonry-item is-venue">
-        <a href="/bars/rooftop-at-the-thompson/" class="masonry-link">
+        <a href="/bars/little-blackbird/" class="masonry-link">
           
           <div class="masonry-content">
             <div class="card-header">
               
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Frooftop-at-the-thompson%2Flogo-1767108902494-69356050_393906497986766_6997194554948452352_n.jpg?alt=media&amp;token=0baed219-c1e0-45f1-8406-e72df77114c1" alt="" class="card-logo" loading="lazy">
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Flittle-blackbird%2Flogo-1766858670481-374360015_821648662675286_761817777791178585_n.jpg?alt=media&amp;token=9da4b726-72bd-41d7-a30d-77c3870ca6b3" alt="" class="card-logo" loading="lazy">
               
-              <h3>Rooftop at the Thompson</h3>
+              <h3>Little Blackbird</h3>
             </div>
-            <p class="card-category">Rooftop Bars, Cocktail Bars, Happy Hour Spots</p>
-
-            <div class="card-tags-container">
-              
-            </div>
-          </div>
-        </a>
-      </div>
-
-    
-    
-  
-
-    
-    
-      
-      <div class="masonry-item is-venue">
-        <a href="/bars/amsterdam-lounge/" class="masonry-link">
-          
-          <div class="masonry-content">
-            <div class="card-header">
-              
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Famsterdam-lounge%2Flogo-1766096783199-300784858_390999339863473_3634020091973687147_n.jpg?alt=media&amp;token=4f502d9c-6bff-4bd4-a2d4-b2c36f6ee100" alt="" class="card-logo" loading="lazy">
-              
-              <h3>Amsterdam Lounge</h3>
-            </div>
-            <p class="card-category">Lounges, Nightclubs, Hip Hop</p>
+            <p class="card-category">Wine Bars, Romantic, Happy Hour Spots</p>
 
             <div class="card-tags-container">
               
@@ -1468,10 +1664,107 @@
     
     
       
+      <div class="masonry-item is-venue">
+        <a href="/bars/qrtzbar/" class="masonry-link">
+          
+          <div class="masonry-content">
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fqrtzbar%2Flogo-1767103916113-286027817_392607202794332_654127490419347130_n.jpg?alt=media&amp;token=eb344de0-803f-4dc4-88bd-42c3297036a9" alt="" class="card-logo" loading="lazy">
+              
+              <h3>QrtzBar</h3>
+            </div>
+            <p class="card-category">Tiki Bars, Hookah Lounges, Cocktail Bars</p>
+
+            <div class="card-tags-container">
+              
+            </div>
+          </div>
+        </a>
+      </div>
+
+    
+    
+  
+
+    
+    
+      
+      <div class="masonry-item is-venue">
+        <a href="/bars/grand-cata/" class="masonry-link">
+          
+          <div class="masonry-content">
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fgrand-cata%2Flogo-1766495091274-517245085_18516989278062419_3181961714893821019_n.jpg?alt=media&amp;token=2aa9dbeb-cb7c-438a-ab28-6c4936e0f443" alt="" class="card-logo" loading="lazy">
+              
+              <h3>Grand Cata</h3>
+            </div>
+            <p class="card-category">Wine Bars, Latin, Happy Hour Spots</p>
+
+            <div class="card-tags-container">
+              
+            </div>
+          </div>
+        </a>
+      </div>
+
+    
+    
+  
+
+    
+    
+      
+      <div class="masonry-item is-venue">
+        <a href="/bars/last-call/" class="masonry-link">
+          
+          <div class="masonry-content">
+            <div class="card-header">
+              
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Flast-call%2Flogo-1766858283357-272033214_672096037291452_2257023177077771872_n.jpg?alt=media&amp;token=bda0d983-507f-4b8a-a172-6c0e55530f9f" alt="" class="card-logo" loading="lazy">
+              
+              <h3>Last Call</h3>
+            </div>
+            <p class="card-category">Dive Bars, Neighborhood Bars, Happy Hour Spots</p>
+
+            <div class="card-tags-container">
+              
+            </div>
+          </div>
+        </a>
+      </div>
+
+    
+    
+  
+
+    
+    
+      
+      <div class="masonry-item is-event">
+        <div class="masonry-content">
+          <p class="event-time">Saturday, May 2nd</p>
+          <h4><a href="/bars/the-sovereign/">⛪ Guided Trappist Ale Tasting with Greg Engert</a></h4>
+          <p class="event-venue-line">
+            
+              <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fthe-sovereign%2Flogo-1767137656569-343885318_1044480349867739_8370730358606004313_n.jpg?alt=media&amp;token=cf554b97-baec-465a-aef6-d990a7ff8d5c" alt="" class="event-venue-logo-sm" loading="lazy">
+            
+            @ The Sovereign
+          </p>
+        </div>
+      </div>
+
+    
+  
+
+    
+    
+      
       <div class="masonry-item is-category">
         <div class="masonry-content">
-          <a href="/categories/game-bars/">
-            Game Bars
+          <a href="/categories/breweries/">
+            Breweries
           </a>
         </div>
       </div>
@@ -1510,44 +1803,20 @@
     
       
       <div class="masonry-item is-venue">
-        <a href="/bars/little-blackbird/" class="masonry-link">
+        <a href="/bars/city-tap-house-penn-quarter/" class="masonry-link">
           
           <div class="masonry-content">
             <div class="card-header">
               
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Flittle-blackbird%2Flogo-1766858670481-374360015_821648662675286_761817777791178585_n.jpg?alt=media&amp;token=9da4b726-72bd-41d7-a30d-77c3870ca6b3" alt="" class="card-logo" loading="lazy">
+                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fcity-tap-house-penn-quarter%2Flogo-1766354203220-15538872_1831581947122785_8894210132745912320_a.jpg?alt=media&amp;token=e784729e-c078-414f-bc92-e23f726a2f28" alt="" class="card-logo" loading="lazy">
               
-              <h3>Little Blackbird</h3>
+              <h3>City Tap House Penn Quarter</h3>
             </div>
-            <p class="card-category">Wine Bars, Romantic, Happy Hour Spots</p>
+            <p class="card-category">Sports Bars, Gastropubs, Happy Hour Spots</p>
 
             <div class="card-tags-container">
               
-            </div>
-          </div>
-        </a>
-      </div>
-
-    
-    
-  
-
-    
-    
-      
-      <div class="masonry-item is-venue">
-        <a href="/bars/bukom-cafe/" class="masonry-link">
-          
-          <div class="masonry-content">
-            <div class="card-header">
-              
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbukom-cafe%2Flogo-1766319578512-470312165_1107240920511083_2896386572970859226_n.jpg?alt=media&amp;token=0401fd7d-31b0-4d48-8323-ccc5849408f0" alt="" class="card-logo" loading="lazy">
-              
-              <h3>Bukom Restaurant & Lounge</h3>
-            </div>
-            <p class="card-category">Live Music Venues, Soul Food</p>
-
-            <div class="card-tags-container">
+                <span class="card-happy-hour-tag">🎉 Happy Hour</span>
               
             </div>
           </div>
@@ -1593,198 +1862,6 @@
             <p class="card-category">Lounges, Cocktail Bars, Happy Hour Spots</p>
 
             <div class="card-tags-container">
-              
-            </div>
-          </div>
-        </a>
-      </div>
-
-    
-    
-  
-
-    
-    
-      
-      <div class="masonry-item is-venue">
-        <a href="/bars/riff-raff-dc/" class="masonry-link">
-          
-          <div class="masonry-content">
-            <div class="card-header">
-              
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Friff-raff-dc%2Flogo-1767108132075-551498742_17983519091892234_3329806668154676670_n.jpg?alt=media&amp;token=a30e841f-e2ae-4d72-9cd4-ed4ac72fd3d0" alt="" class="card-logo" loading="lazy">
-              
-              <h3>Riff Raff DC</h3>
-            </div>
-            <p class="card-category">Cocktail Bars, Speakeasies, Neighborhood Bars</p>
-
-            <div class="card-tags-container">
-              
-            </div>
-          </div>
-        </a>
-      </div>
-
-    
-    
-  
-
-    
-    
-      
-      <div class="masonry-item is-category">
-        <div class="masonry-content">
-          <a href="/categories/wine-bars/">
-            Wine Bars
-          </a>
-        </div>
-      </div>
-
-    
-    
-  
-
-    
-    
-      
-      <div class="masonry-item is-venue">
-        <a href="/bars/district-alley/" class="masonry-link">
-          
-          <div class="masonry-content">
-            <div class="card-header">
-              
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fdistrict-alley%2Flogo-1766400976531-272142982_623140788739742_5343647936950137680_n.jpg?alt=media&amp;token=bdbc5338-4857-4d53-b413-fe24051ca147" alt="" class="card-logo" loading="lazy">
-              
-              <h3>District Alley</h3>
-            </div>
-            <p class="card-category">Lounges, Hookah Lounges, Happy Hour Spots</p>
-
-            <div class="card-tags-container">
-              
-                <span class="card-happy-hour-tag">🎉 Happy Hour</span>
-              
-            </div>
-          </div>
-        </a>
-      </div>
-
-    
-    
-  
-
-    
-    
-      
-      <div class="masonry-item is-category">
-        <div class="masonry-content">
-          <a href="/categories/karaoke-bars/">
-            Karaoke Bars
-          </a>
-        </div>
-      </div>
-
-    
-    
-  
-
-    
-    
-      
-      <div class="masonry-item is-venue">
-        <a href="/bars/union-stage/" class="masonry-link">
-          
-          <div class="masonry-content">
-            <div class="card-header">
-              
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Funion-stage%2Flogo-1767144326887-463361534_863567252585356_3700628265280754102_n.jpg?alt=media&amp;token=17804262-6603-4c0f-821a-4043f07c810c" alt="" class="card-logo" loading="lazy">
-              
-              <h3>Union Stage</h3>
-            </div>
-            <p class="card-category">Live Music Venues, Dive Bars, Basements</p>
-
-            <div class="card-tags-container">
-              
-            </div>
-          </div>
-        </a>
-      </div>
-
-    
-    
-  
-
-    
-    
-      
-      <div class="masonry-item is-venue">
-        <a href="/bars/trouble-bird/" class="masonry-link">
-          
-          <div class="masonry-content">
-            <div class="card-header">
-              
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Ftrouble-bird%2Flogo-1767143702695-330667404_204404708913277_297625666186504283_n.jpg?alt=media&amp;token=1cabf81e-4a9a-4482-856a-2da10270fbce" alt="" class="card-logo" loading="lazy">
-              
-              <h3>Trouble Bird</h3>
-            </div>
-            <p class="card-category">Cocktail Bars, Speakeasies, Neighborhood Bars</p>
-
-            <div class="card-tags-container">
-              
-                <span class="card-happy-hour-tag">🎉 Happy Hour</span>
-              
-            </div>
-          </div>
-        </a>
-      </div>
-
-    
-    
-  
-
-    
-    
-      
-      <div class="masonry-item is-venue">
-        <a href="/bars/mordecai-booth-s-public-house/" class="masonry-link">
-          
-          <div class="masonry-content">
-            <div class="card-header">
-              
-              <h3>Mordecai Booth's Public House</h3>
-            </div>
-            <p class="card-category">Neighborhood Bars, Karaoke Bars, Game Bars</p>
-
-            <div class="card-tags-container">
-              
-                <span class="card-happy-hour-tag">🎉 Happy Hour</span>
-              
-            </div>
-          </div>
-        </a>
-      </div>
-
-    
-    
-  
-
-    
-    
-      
-      <div class="masonry-item is-venue">
-        <a href="/bars/bar-sirenis/" class="masonry-link">
-          
-          <div class="masonry-content">
-            <div class="card-header">
-              
-                <img src="https://firebasestorage.googleapis.com/v0/b/www.bardc.com/o/venues%2Fbar-sirenis%2Flogo-1766149280662-254088171_3067048776905061_4149497667275098381_n.png?alt=media&amp;token=4101a450-b18c-4b52-9f55-e199de657ebf" alt="" class="card-logo" loading="lazy">
-              
-              <h3>Bar Sirenis</h3>
-            </div>
-            <p class="card-category"></p>
-
-            <div class="card-tags-container">
-              
-                <span class="card-happy-hour-tag">🎉 Happy Hour</span>
               
             </div>
           </div>
@@ -1876,7 +1953,7 @@
 
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script>
-  window.BARDC_CATEGORY_DATA = [{"name":"Karaoke Bars","count":19,"sizeClass":"size-1","description":"Take center stage and belt out your favorite tunes at these fun-filled bars dedicated to amateur singing glory."},{"name":"Breweries","count":12,"sizeClass":"size-1","description":"Sample fresh, locally crafted beers directly from the source at these production breweries and taprooms."},{"name":"Sports Bars","count":64,"sizeClass":"size-2","description":"Catch the game at these energetic venues featuring wall-to-wall screens, cold pitchers, and classic game-day grub for every fan."},{"name":"Wine Bars","count":29,"sizeClass":"size-2","description":"Sip and savor diverse vintages at these curated wine bars, often accompanied by artisanal cheese plates and knowledgeable staff."},{"name":"Game Bars","count":21,"sizeClass":"size-1","description":"Unleash your inner child with arcade games, board games, and competitive socializing at these fun-forward destinations."},{"name":"Oyster Bars","count":10,"sizeClass":"size-1","description":"Slurp fresh oysters and sip crisp wines at these specialized raw bars."},{"name":"Speakeasies","count":36,"sizeClass":"size-2","description":"Step back in time at these hidden gems, accessible only to those in the know, featuring prohibition-style cocktails and intimate, secretive vibes."},{"name":"Rooftop Bars","count":54,"sizeClass":"size-2","description":"Elevate your night out with stunning views of the capital skyline, fresh air, and refreshing seasonal cocktails at these rooftop destinations."},{"name":"Dive Bars","count":47,"sizeClass":"size-2","description":"Unpretentious, affordable, and full of character, these local watering holes offer cheap drinks, good company, and a classic no-frills atmosphere."},{"name":"Gastropubs","count":31,"sizeClass":"size-2","description":"Where culinary excellence meets the comfort of a pub, offering high-quality food menus alongside craft beers and artisanal spirits."},{"name":"Cocktail Bars","count":167,"sizeClass":"size-5","description":"Expert mixology, creative menus, and sophisticated atmospheres define DC's cocktail scene, ranging from hidden speakeasies to high-end lounges."},{"name":"Brunch Spots","count":50,"sizeClass":"size-2","description":"Celebrate the weekend with bottomless mimosas, savory bloody marys, and indulgent daytime dishes."},{"name":"French","count":9,"sizeClass":"size-1","description":"Transport yourself to Paris with champagne, wine, and classic French spirits in an elegant bistro setting."},{"name":"Waterfront","count":28,"sizeClass":"size-1","description":"Enjoy the breeze and the views at these scenic bars located along the Potomac and Anacostia rivers."},{"name":"Happy Hour Spots","count":143,"sizeClass":"size-4","description":"Discover the best deals in town with unbeatable discounts on drinks and bites during DC's favorite time of day."},{"name":"Groups","count":9,"sizeClass":"size-1","description":null},{"name":"Live Music Venues","count":53,"sizeClass":"size-2","description":"Experience the rhythm of the city at these venues hosting live bands, jazz ensembles, DJ sets, and intimate acoustic performances."},{"name":"Romantic","count":29,"sizeClass":"size-2","description":"Set the mood with dim lighting, cozy seating, and an intimate ambiance perfect for date night."},{"name":"Dance Clubs","count":20,"sizeClass":"size-1","description":"Get moving at these high-energy clubs featuring top DJs, pulsating dance floors, and late-night vibes for the ultimate party experience."},{"name":"Late Night","count":29,"sizeClass":"size-2","description":"Keep the party going well into the early morning hours at these venues that stay open when others have closed."},{"name":"Lounges","count":88,"sizeClass":"size-3","description":"Relax in style at these comfortable venues perfect for conversation, date nights, and enjoying premium spirits in a laid-back setting."},{"name":"Event Spaces","count":22,"sizeClass":"size-1","description":"Versatile venues perfect for hosting private parties, corporate gatherings, and celebrations."},{"name":"Taproom","count":16,"sizeClass":"size-1","description":"Focusing purely on the beer, these taprooms offer a wide rotation of drafts for the beer enthusiast."},{"name":"Dog Friendly","count":10,"sizeClass":"size-1","description":"Bring your furry best friend along to these welcoming spots that offer treats, water bowls, and patio space for pups."},{"name":"Taco Bars","count":11,"sizeClass":"size-1","description":"Quick, delicious, and fun, these spots serve up tacos and margaritas for a perfect casual outing."},{"name":"Italian","count":13,"sizeClass":"size-1","description":"Savor the flavors of Italy with extensive wine lists, aperitivos, and classic cocktails in a warm, inviting atmosphere."},{"name":"Latin","count":15,"sizeClass":"size-1","description":"Immerse yourself in Latin rhythms, flavors, and spirits at these lively spots featuring tequila, mezcal, and dancing."},{"name":"Irish Pubs","count":9,"sizeClass":"size-1","description":"Experience traditional Irish hospitality, Guinness on tap, and hearty fare at these authentic pubs throughout the city."},{"name":"Whiskey Bars","count":13,"sizeClass":"size-1","description":"For the connoisseur, these bars offer extensive selections of bourbon, scotch, and rye in a refined setting."},{"name":"Upscale","count":17,"sizeClass":"size-1","description":"Dress to impress and enjoy premium service, top-shelf spirits, and elegant decor."},{"name":"Burger Bars","count":13,"sizeClass":"size-1","description":"Indulge in juicy burgers and craft shakes or beers at these casual favorites."},{"name":"Nightclub","count":49,"sizeClass":"size-2","description":"Immerse yourself in the nightlife scene with high-energy beats, premium bottle service, and a vibrant crowd."},{"name":"Hotel Bars","count":45,"sizeClass":"size-2","description":"Experience the sophisticated side of the city at these upscale hotel venues, perfect for a business drink or a nightcap."},{"name":"Taverns","count":12,"sizeClass":"size-1","description":"Historic, hearty, and hospitable, these taverns offer a timeless DC drinking experience."},{"name":"LGBTQ+ Bars","count":18,"sizeClass":"size-1","description":"Inclusive, vibrant, and proud, these venues are the heart of DC's LGBTQ+ community, offering drag shows, dance parties, and welcoming spaces for all."},{"name":"Hookah Lounges","count":28,"sizeClass":"size-1","description":"Relax and unwind with flavorful shisha and tea in a comfortable, social atmosphere."},{"name":"American","count":52,"sizeClass":"size-2","description":"Celebrate classic American spirits and comfort food in these familiar and welcoming establishments."},{"name":"Neighborhood Bars","count":89,"sizeClass":"size-3","description":"The heart of the community, these reliable local spots are where everybody knows your name."},{"name":"Pizza Bars","count":10,"sizeClass":"size-1","description":"Enjoy the perfect pairing of hot slices and cold brews at these casual, fun-filled pizzerias."},{"name":"Beer Gardens","count":19,"sizeClass":"size-1","description":"Gather outdoors at these communal spots offering extensive beer lists, picnic tables, and a festive, relaxed social environment."}];
+  window.BARDC_CATEGORY_DATA = [{"name":"Breweries","count":12,"sizeClass":"size-1","description":"Sample fresh, locally crafted beers directly from the source at these production breweries and taprooms."},{"name":"Sports Bars","count":64,"sizeClass":"size-2","description":"Catch the game at these energetic venues featuring wall-to-wall screens, cold pitchers, and classic game-day grub for every fan."},{"name":"Lounges","count":88,"sizeClass":"size-3","description":"Relax in style at these comfortable venues perfect for conversation, date nights, and enjoying premium spirits in a laid-back setting."},{"name":"Waterfront","count":28,"sizeClass":"size-1","description":"Enjoy the breeze and the views at these scenic bars located along the Potomac and Anacostia rivers."},{"name":"Groups","count":9,"sizeClass":"size-1","description":null},{"name":"Rooftop Bars","count":54,"sizeClass":"size-2","description":"Elevate your night out with stunning views of the capital skyline, fresh air, and refreshing seasonal cocktails at these rooftop destinations."},{"name":"Karaoke Bars","count":19,"sizeClass":"size-1","description":"Take center stage and belt out your favorite tunes at these fun-filled bars dedicated to amateur singing glory."},{"name":"Whiskey Bars","count":13,"sizeClass":"size-1","description":"For the connoisseur, these bars offer extensive selections of bourbon, scotch, and rye in a refined setting."},{"name":"French","count":9,"sizeClass":"size-1","description":"Transport yourself to Paris with champagne, wine, and classic French spirits in an elegant bistro setting."},{"name":"Wine Bars","count":29,"sizeClass":"size-2","description":"Sip and savor diverse vintages at these curated wine bars, often accompanied by artisanal cheese plates and knowledgeable staff."},{"name":"Pizza Bars","count":10,"sizeClass":"size-1","description":"Enjoy the perfect pairing of hot slices and cold brews at these casual, fun-filled pizzerias."},{"name":"Taverns","count":12,"sizeClass":"size-1","description":"Historic, hearty, and hospitable, these taverns offer a timeless DC drinking experience."},{"name":"Dance Clubs","count":20,"sizeClass":"size-1","description":"Get moving at these high-energy clubs featuring top DJs, pulsating dance floors, and late-night vibes for the ultimate party experience."},{"name":"Cocktail Bars","count":167,"sizeClass":"size-5","description":"Expert mixology, creative menus, and sophisticated atmospheres define DC's cocktail scene, ranging from hidden speakeasies to high-end lounges."},{"name":"Dog Friendly","count":10,"sizeClass":"size-1","description":"Bring your furry best friend along to these welcoming spots that offer treats, water bowls, and patio space for pups."},{"name":"Taproom","count":16,"sizeClass":"size-1","description":"Focusing purely on the beer, these taprooms offer a wide rotation of drafts for the beer enthusiast."},{"name":"Upscale","count":17,"sizeClass":"size-1","description":"Dress to impress and enjoy premium service, top-shelf spirits, and elegant decor."},{"name":"Game Bars","count":21,"sizeClass":"size-1","description":"Unleash your inner child with arcade games, board games, and competitive socializing at these fun-forward destinations."},{"name":"Gastropubs","count":31,"sizeClass":"size-2","description":"Where culinary excellence meets the comfort of a pub, offering high-quality food menus alongside craft beers and artisanal spirits."},{"name":"Happy Hour Spots","count":143,"sizeClass":"size-4","description":"Discover the best deals in town with unbeatable discounts on drinks and bites during DC's favorite time of day."},{"name":"Irish Pubs","count":9,"sizeClass":"size-1","description":"Experience traditional Irish hospitality, Guinness on tap, and hearty fare at these authentic pubs throughout the city."},{"name":"Live Music Venues","count":53,"sizeClass":"size-2","description":"Experience the rhythm of the city at these venues hosting live bands, jazz ensembles, DJ sets, and intimate acoustic performances."},{"name":"Brunch Spots","count":50,"sizeClass":"size-2","description":"Celebrate the weekend with bottomless mimosas, savory bloody marys, and indulgent daytime dishes."},{"name":"Burger Bars","count":13,"sizeClass":"size-1","description":"Indulge in juicy burgers and craft shakes or beers at these casual favorites."},{"name":"Dive Bars","count":47,"sizeClass":"size-2","description":"Unpretentious, affordable, and full of character, these local watering holes offer cheap drinks, good company, and a classic no-frills atmosphere."},{"name":"Oyster Bars","count":10,"sizeClass":"size-1","description":"Slurp fresh oysters and sip crisp wines at these specialized raw bars."},{"name":"American","count":52,"sizeClass":"size-2","description":"Celebrate classic American spirits and comfort food in these familiar and welcoming establishments."},{"name":"Hookah Lounges","count":28,"sizeClass":"size-1","description":"Relax and unwind with flavorful shisha and tea in a comfortable, social atmosphere."},{"name":"Neighborhood Bars","count":89,"sizeClass":"size-3","description":"The heart of the community, these reliable local spots are where everybody knows your name."},{"name":"Italian","count":13,"sizeClass":"size-1","description":"Savor the flavors of Italy with extensive wine lists, aperitivos, and classic cocktails in a warm, inviting atmosphere."},{"name":"Event Spaces","count":22,"sizeClass":"size-1","description":"Versatile venues perfect for hosting private parties, corporate gatherings, and celebrations."},{"name":"Nightclub","count":49,"sizeClass":"size-2","description":"Immerse yourself in the nightlife scene with high-energy beats, premium bottle service, and a vibrant crowd."},{"name":"Romantic","count":29,"sizeClass":"size-2","description":"Set the mood with dim lighting, cozy seating, and an intimate ambiance perfect for date night."},{"name":"Beer Gardens","count":19,"sizeClass":"size-1","description":"Gather outdoors at these communal spots offering extensive beer lists, picnic tables, and a festive, relaxed social environment."},{"name":"Speakeasies","count":36,"sizeClass":"size-2","description":"Step back in time at these hidden gems, accessible only to those in the know, featuring prohibition-style cocktails and intimate, secretive vibes."},{"name":"Taco Bars","count":11,"sizeClass":"size-1","description":"Quick, delicious, and fun, these spots serve up tacos and margaritas for a perfect casual outing."},{"name":"LGBTQ+ Bars","count":18,"sizeClass":"size-1","description":"Inclusive, vibrant, and proud, these venues are the heart of DC's LGBTQ+ community, offering drag shows, dance parties, and welcoming spaces for all."},{"name":"Late Night","count":29,"sizeClass":"size-2","description":"Keep the party going well into the early morning hours at these venues that stay open when others have closed."},{"name":"Latin","count":15,"sizeClass":"size-1","description":"Immerse yourself in Latin rhythms, flavors, and spirits at these lively spots featuring tequila, mezcal, and dancing."},{"name":"Hotel Bars","count":45,"sizeClass":"size-2","description":"Experience the sophisticated side of the city at these upscale hotel venues, perfect for a business drink or a nightcap."}];
 </script>
 <script src="/js/d3-category-cloud.js"></script>
 
